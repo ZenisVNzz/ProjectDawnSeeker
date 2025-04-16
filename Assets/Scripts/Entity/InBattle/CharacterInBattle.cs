@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 
 public class CharacterInBattle : MonoBehaviour
@@ -49,7 +49,7 @@ public class CharacterInBattle : MonoBehaviour
         }
     }
     
-    public void Die()
+    public void Die() // Hàm event khi chết
     {
         OnDeath?.Invoke();
     }

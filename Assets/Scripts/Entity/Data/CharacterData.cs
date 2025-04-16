@@ -10,7 +10,7 @@ public class CharacterData : ScriptableObject
     public string characterName;
     public characterType characterType;
     public Sprite characterSprite;
-    public Animator animator;
+    public Animator characterAnimation;
     public float ATK;
     public float HP;
     public float DEF;
