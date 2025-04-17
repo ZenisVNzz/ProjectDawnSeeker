@@ -17,7 +17,7 @@ public class CharacterInBattle : MonoBehaviour
 
     public event Action OnDeath;
 
-    public CharacterInBattle(CharacterData characterData)
+    public void Initialize(CharacterData characterData)
     {
         this.characterData = characterData;
         this.charName = characterData.characterName;
