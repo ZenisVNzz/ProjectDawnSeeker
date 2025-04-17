@@ -12,7 +12,7 @@ public class CharacterData : ScriptableObject
     public characterType characterType;
     public characterTier characterTier;
     public Sprite characterSprite;
-    public Animator characterAnimation;
+    public RuntimeAnimatorController characterAnimation;
     public float ATK;
     public float HP;
     public float DEF;
