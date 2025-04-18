@@ -1,0 +1,7467 @@
+fileFormatVersion: 2
+guid: 9f6f7b243b2827b47a9e9e5452991fb1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4444837435559095872
+    second: NS_UI_Iron_C_NoBorder_0
+  - first:
+      213: -3555487063534904347
+    second: NS_UI_Iron_C_NoBorder_1
+  - first:
+      213: -6619153580956628073
+    second: NS_UI_Iron_C_NoBorder_2
+  - first:
+      213: -8471359720445168688
+    second: NS_UI_Iron_C_NoBorder_3
+  - first:
+      213: 4601533497973884339
+    second: NS_UI_Iron_C_NoBorder_4
+  - first:
+      213: -1263636349100669748
+    second: NS_UI_Iron_C_NoBorder_5
+  - first:
+      213: -3142887161178946999
+    second: NS_UI_Iron_C_NoBorder_6
+  - first:
+      213: -2438665774294283841
+    second: NS_UI_Iron_C_NoBorder_7
+  - first:
+      213: 3131765928683816997
+    second: NS_UI_Iron_C_NoBorder_8
+  - first:
+      213: 3626160309529406396
+    second: NS_UI_Iron_C_NoBorder_9
+  - first:
+      213: 1632571610283157381
+    second: NS_UI_Iron_C_NoBorder_10
+  - first:
+      213: -907054809351287455
+    second: NS_UI_Iron_C_NoBorder_11
+  - first:
+      213: -691409433428278841
+    second: NS_UI_Iron_C_NoBorder_12
+  - first:
+      213: 9027152596200331335
+    second: NS_UI_Iron_C_NoBorder_13
+  - first:
+      213: -5802838672681135515
+    second: NS_UI_Iron_C_NoBorder_14
+  - first:
+      213: 2456394679232064257
+    second: NS_UI_Iron_C_NoBorder_15
+  - first:
+      213: 4488926008797763608
+    second: NS_UI_Iron_C_NoBorder_16
+  - first:
+      213: 7945203169776902150
+    second: NS_UI_Iron_C_NoBorder_17
+  - first:
+      213: -5512038047569464553
+    second: NS_UI_Iron_C_NoBorder_18
+  - first:
+      213: -4041306216754956316
+    second: NS_UI_Iron_C_NoBorder_19
+  - first:
+      213: 6997522509489340259
+    second: NS_UI_Iron_C_NoBorder_20
+  - first:
+      213: 3447821929674599538
+    second: NS_UI_Iron_C_NoBorder_21
+  - first:
+      213: -3588775970918835845
+    second: NS_UI_Iron_C_NoBorder_22
+  - first:
+      213: 5170562776214184692
+    second: NS_UI_Iron_C_NoBorder_23
+  - first:
+      213: 2513126100513173075
+    second: NS_UI_Iron_C_NoBorder_24
+  - first:
+      213: 2227634336762385779
+    second: NS_UI_Iron_C_NoBorder_25
+  - first:
+      213: -372297193540363095
+    second: NS_UI_Iron_C_NoBorder_26
+  - first:
+      213: -273522429364239419
+    second: NS_UI_Iron_C_NoBorder_27
+  - first:
+      213: -8653050742123979892
+    second: NS_UI_Iron_C_NoBorder_28
+  - first:
+      213: 7028612690886556239
+    second: NS_UI_Iron_C_NoBorder_29
+  - first:
+      213: 1655602684825575225
+    second: NS_UI_Iron_C_NoBorder_30
+  - first:
+      213: -7897617482425874657
+    second: NS_UI_Iron_C_NoBorder_31
+  - first:
+      213: -4773619799065458484
+    second: NS_UI_Iron_C_NoBorder_32
+  - first:
+      213: -7451856727697917233
+    second: NS_UI_Iron_C_NoBorder_33
+  - first:
+      213: -2874831361209659860
+    second: NS_UI_Iron_C_NoBorder_34
+  - first:
+      213: 637578467329519838
+    second: NS_UI_Iron_C_NoBorder_35
+  - first:
+      213: 8595887621730443878
+    second: NS_UI_Iron_C_NoBorder_36
+  - first:
+      213: 7742492855065032153
+    second: NS_UI_Iron_C_NoBorder_37
+  - first:
+      213: 8783401063615150349
+    second: NS_UI_Iron_C_NoBorder_38
+  - first:
+      213: 7161006760354150917
+    second: NS_UI_Iron_C_NoBorder_39
+  - first:
+      213: 5076112381569941389
+    second: NS_UI_Iron_C_NoBorder_40
+  - first:
+      213: 4795056077177370375
+    second: NS_UI_Iron_C_NoBorder_41
+  - first:
+      213: -2632201116723927357
+    second: NS_UI_Iron_C_NoBorder_42
+  - first:
+      213: -2543116039329785769
+    second: NS_UI_Iron_C_NoBorder_43
+  - first:
+      213: 4762980100238774130
+    second: NS_UI_Iron_C_NoBorder_44
+  - first:
+      213: -1998003459613576772
+    second: NS_UI_Iron_C_NoBorder_45
+  - first:
+      213: 4882353850005153568
+    second: NS_UI_Iron_C_NoBorder_46
+  - first:
+      213: -6796278692724549250
+    second: NS_UI_Iron_C_NoBorder_47
+  - first:
+      213: -4751692537158528477
+    second: NS_UI_Iron_C_NoBorder_48
+  - first:
+      213: -7879171146606335621
+    second: NS_UI_Iron_C_NoBorder_49
+  - first:
+      213: -2975840639696931911
+    second: NS_UI_Iron_C_NoBorder_50
+  - first:
+      213: 5078572128995013682
+    second: NS_UI_Iron_C_NoBorder_51
+  - first:
+      213: -6837416420213834165
+    second: NS_UI_Iron_C_NoBorder_52
+  - first:
+      213: -2560183176585253134
+    second: NS_UI_Iron_C_NoBorder_53
+  - first:
+      213: -7261680327934960915
+    second: NS_UI_Iron_C_NoBorder_54
+  - first:
+      213: 1232738137290137760
+    second: NS_UI_Iron_C_NoBorder_55
+  - first:
+      213: 6901235453166019157
+    second: NS_UI_Iron_C_NoBorder_56
+  - first:
+      213: -8673803420061698073
+    second: NS_UI_Iron_C_NoBorder_57
+  - first:
+      213: -796112015261649936
+    second: NS_UI_Iron_C_NoBorder_58
+  - first:
+      213: 3085454994705030415
+    second: NS_UI_Iron_C_NoBorder_59
+  - first:
+      213: 632030684424412039
+    second: NS_UI_Iron_C_NoBorder_60
+  - first:
+      213: 3699121429779051504
+    second: NS_UI_Iron_C_NoBorder_61
+  - first:
+      213: -3721855593710531761
+    second: NS_UI_Iron_C_NoBorder_62
+  - first:
+      213: -74691502338639469
+    second: NS_UI_Iron_C_NoBorder_63
+  - first:
+      213: 2603514395385356562
+    second: NS_UI_Iron_C_NoBorder_64
+  - first:
+      213: 154869205452096032
+    second: NS_UI_Iron_C_NoBorder_65
+  - first:
+      213: -1739159461966889342
+    second: NS_UI_Iron_C_NoBorder_66
+  - first:
+      213: -1361736239631947631
+    second: NS_UI_Iron_C_NoBorder_67
+  - first:
+      213: -3187316335924175586
+    second: NS_UI_Iron_C_NoBorder_68
+  - first:
+      213: 6713097723282055185
+    second: NS_UI_Iron_C_NoBorder_69
+  - first:
+      213: -3165582307076528542
+    second: NS_UI_Iron_C_NoBorder_70
+  - first:
+      213: 6208733827913572287
+    second: NS_UI_Iron_C_NoBorder_71
+  - first:
+      213: 1557696191087923956
+    second: NS_UI_Iron_C_NoBorder_72
+  - first:
+      213: -1195944231255038106
+    second: NS_UI_Iron_C_NoBorder_73
+  - first:
+      213: 7030592391296735473
+    second: NS_UI_Iron_C_NoBorder_74
+  - first:
+      213: -947141405294092127
+    second: NS_UI_Iron_C_NoBorder_75
+  - first:
+      213: -4635905738714702339
+    second: NS_UI_Iron_C_NoBorder_76
+  - first:
+      213: -4199942448425051165
+    second: NS_UI_Iron_C_NoBorder_77
+  - first:
+      213: -7114474722443530023
+    second: NS_UI_Iron_C_NoBorder_78
+  - first:
+      213: 7371324415568197923
+    second: NS_UI_Iron_C_NoBorder_79
+  - first:
+      213: 4343372761401742206
+    second: NS_UI_Iron_C_NoBorder_80
+  - first:
+      213: -6307853255915043124
+    second: NS_UI_Iron_C_NoBorder_81
+  - first:
+      213: -2080259196880815279
+    second: NS_UI_Iron_C_NoBorder_82
+  - first:
+      213: 4665107972287586759
+    second: NS_UI_Iron_C_NoBorder_83
+  - first:
+      213: -2808981014512707535
+    second: NS_UI_Iron_C_NoBorder_84
+  - first:
+      213: 1244114528634370139
+    second: NS_UI_Iron_C_NoBorder_85
+  - first:
+      213: -5869753819476505902
+    second: NS_UI_Iron_C_NoBorder_86
+  - first:
+      213: -6339350919419573569
+    second: NS_UI_Iron_C_NoBorder_87
+  - first:
+      213: -1183762141486450202
+    second: NS_UI_Iron_C_NoBorder_88
+  - first:
+      213: 468267952505527119
+    second: NS_UI_Iron_C_NoBorder_89
+  - first:
+      213: -2322982667189313530
+    second: NS_UI_Iron_C_NoBorder_90
+  - first:
+      213: 8692447851103205512
+    second: NS_UI_Iron_C_NoBorder_91
+  - first:
+      213: 5458471507316235008
+    second: NS_UI_Iron_C_NoBorder_92
+  - first:
+      213: -7050220727738261944
+    second: NS_UI_Iron_C_NoBorder_93
+  - first:
+      213: -5548052922197131959
+    second: NS_UI_Iron_C_NoBorder_94
+  - first:
+      213: -7139491604481286126
+    second: NS_UI_Iron_C_NoBorder_95
+  - first:
+      213: -7210503550262180799
+    second: NS_UI_Iron_C_NoBorder_96
+  - first:
+      213: 7964020872928496469
+    second: NS_UI_Iron_C_NoBorder_97
+  - first:
+      213: -1644448348244988936
+    second: NS_UI_Iron_C_NoBorder_98
+  - first:
+      213: -5119554474688026890
+    second: NS_UI_Iron_C_NoBorder_99
+  - first:
+      213: 6766005324831492597
+    second: NS_UI_Iron_C_NoBorder_100
+  - first:
+      213: 3283473024436603040
+    second: NS_UI_Iron_C_NoBorder_101
+  - first:
+      213: 4225831579281956015
+    second: NS_UI_Iron_C_NoBorder_102
+  - first:
+      213: -571973471357359626
+    second: NS_UI_Iron_C_NoBorder_103
+  - first:
+      213: -3195444753924756879
+    second: NS_UI_Iron_C_NoBorder_104
+  - first:
+      213: 4953503424626130699
+    second: NS_UI_Iron_C_NoBorder_105
+  - first:
+      213: 2775032084638952992
+    second: NS_UI_Iron_C_NoBorder_106
+  - first:
+      213: 3188585755953118349
+    second: NS_UI_Iron_C_NoBorder_107
+  - first:
+      213: 7373320537417371757
+    second: NS_UI_Iron_C_NoBorder_108
+  - first:
+      213: 8957399723544574792
+    second: NS_UI_Iron_C_NoBorder_109
+  - first:
+      213: 617440343005943323
+    second: NS_UI_Iron_C_NoBorder_110
+  - first:
+      213: 7879160822710235206
+    second: NS_UI_Iron_C_NoBorder_111
+  - first:
+      213: 8101653947220441042
+    second: NS_UI_Iron_C_NoBorder_112
+  - first:
+      213: -318424174668191975
+    second: NS_UI_Iron_C_NoBorder_113
+  - first:
+      213: -9187955420598890561
+    second: NS_UI_Iron_C_NoBorder_114
+  - first:
+      213: -5311241608461533156
+    second: NS_UI_Iron_C_NoBorder_115
+  - first:
+      213: -1000597858993455048
+    second: NS_UI_Iron_C_NoBorder_116
+  - first:
+      213: -7132799700632291456
+    second: NS_UI_Iron_C_NoBorder_117
+  - first:
+      213: -4878651165586838992
+    second: NS_UI_Iron_C_NoBorder_118
+  - first:
+      213: 7204472813115117660
+    second: NS_UI_Iron_C_NoBorder_119
+  - first:
+      213: 9216642685990277052
+    second: NS_UI_Iron_C_NoBorder_120
+  - first:
+      213: 4279385612702781758
+    second: NS_UI_Iron_C_NoBorder_121
+  - first:
+      213: -4601916569388494949
+    second: NS_UI_Iron_C_NoBorder_122
+  - first:
+      213: -2204792528466521867
+    second: NS_UI_Iron_C_NoBorder_123
+  - first:
+      213: 5070215042501405472
+    second: NS_UI_Iron_C_NoBorder_124
+  - first:
+      213: 2946714701833778866
+    second: NS_UI_Iron_C_NoBorder_125
+  - first:
+      213: -2517959269429909176
+    second: NS_UI_Iron_C_NoBorder_126
+  - first:
+      213: 6504631382443126404
+    second: NS_UI_Iron_C_NoBorder_127
+  - first:
+      213: -4665664899946039004
+    second: NS_UI_Iron_C_NoBorder_128
+  - first:
+      213: 6936353557456635900
+    second: NS_UI_Iron_C_NoBorder_129
+  - first:
+      213: -138916060130335992
+    second: NS_UI_Iron_C_NoBorder_130
+  - first:
+      213: -2368263790205547751
+    second: NS_UI_Iron_C_NoBorder_131
+  - first:
+      213: -8766566907499950799
+    second: NS_UI_Iron_C_NoBorder_132
+  - first:
+      213: -7347815368613770850
+    second: NS_UI_Iron_C_NoBorder_133
+  - first:
+      213: -8975412013616459371
+    second: NS_UI_Iron_C_NoBorder_134
+  - first:
+      213: -7545237962705670981
+    second: NS_UI_Iron_C_NoBorder_135
+  - first:
+      213: 8510181766071248837
+    second: NS_UI_Iron_C_NoBorder_136
+  - first:
+      213: -6912033240019271254
+    second: NS_UI_Iron_C_NoBorder_137
+  - first:
+      213: -1664918201787050787
+    second: NS_UI_Iron_C_NoBorder_138
+  - first:
+      213: 1622349993509362368
+    second: NS_UI_Iron_C_NoBorder_139
+  - first:
+      213: 399652509323498771
+    second: NS_UI_Iron_C_NoBorder_140
+  - first:
+      213: 6533715185575198819
+    second: NS_UI_Iron_C_NoBorder_141
+  - first:
+      213: -6566163292884678267
+    second: NS_UI_Iron_C_NoBorder_142
+  - first:
+      213: -9091421213924262197
+    second: NS_UI_Iron_C_NoBorder_143
+  - first:
+      213: 1510401441192741566
+    second: NS_UI_Iron_C_NoBorder_144
+  - first:
+      213: 8754891351656331256
+    second: NS_UI_Iron_C_NoBorder_145
+  - first:
+      213: 5841439231227494626
+    second: NS_UI_Iron_C_NoBorder_146
+  - first:
+      213: -7947045192742005483
+    second: NS_UI_Iron_C_NoBorder_147
+  - first:
+      213: -4305299025407425100
+    second: NS_UI_Iron_C_NoBorder_148
+  - first:
+      213: 8951586392439739710
+    second: NS_UI_Iron_C_NoBorder_149
+  - first:
+      213: 4396593167172186868
+    second: NS_UI_Iron_C_NoBorder_150
+  - first:
+      213: -5969389627218581721
+    second: NS_UI_Iron_C_NoBorder_151
+  - first:
+      213: 5040727983074334622
+    second: NS_UI_Iron_C_NoBorder_152
+  - first:
+      213: 2433279587723375313
+    second: NS_UI_Iron_C_NoBorder_153
+  - first:
+      213: 2504050141088154290
+    second: NS_UI_Iron_C_NoBorder_154
+  - first:
+      213: 721016109460484138
+    second: NS_UI_Iron_C_NoBorder_155
+  - first:
+      213: 7236186434321185185
+    second: NS_UI_Iron_C_NoBorder_156
+  - first:
+      213: -9096477798994398966
+    second: NS_UI_Iron_C_NoBorder_157
+  - first:
+      213: 6339965741253003024
+    second: NS_UI_Iron_C_NoBorder_158
+  - first:
+      213: 6281654134549516453
+    second: NS_UI_Iron_C_NoBorder_159
+  - first:
+      213: 1933557702599034242
+    second: NS_UI_Iron_C_NoBorder_160
+  - first:
+      213: 4096097012095891487
+    second: NS_UI_Iron_C_NoBorder_161
+  - first:
+      213: 3088099348371710645
+    second: NS_UI_Iron_C_NoBorder_162
+  - first:
+      213: 1745743759391467461
+    second: NS_UI_Iron_C_NoBorder_163
+  - first:
+      213: -3999399818715386335
+    second: NS_UI_Iron_C_NoBorder_164
+  - first:
+      213: 4791017148268832029
+    second: NS_UI_Iron_C_NoBorder_165
+  - first:
+      213: 7149501416210478753
+    second: NS_UI_Iron_C_NoBorder_166
+  - first:
+      213: -7705200589226769300
+    second: NS_UI_Iron_C_NoBorder_167
+  - first:
+      213: -7924475879513348339
+    second: NS_UI_Iron_C_NoBorder_168
+  - first:
+      213: 6708023184065497379
+    second: NS_UI_Iron_C_NoBorder_169
+  - first:
+      213: 727869383775401586
+    second: NS_UI_Iron_C_NoBorder_170
+  - first:
+      213: 4676264685043743091
+    second: NS_UI_Iron_C_NoBorder_171
+  - first:
+      213: 8305614353405735723
+    second: NS_UI_Iron_C_NoBorder_172
+  - first:
+      213: -5993044697146589
+    second: NS_UI_Iron_C_NoBorder_173
+  - first:
+      213: 7854838490475726845
+    second: NS_UI_Iron_C_NoBorder_174
+  - first:
+      213: 5495872210484532398
+    second: NS_UI_Iron_C_NoBorder_175
+  - first:
+      213: -5432494765934879067
+    second: NS_UI_Iron_C_NoBorder_176
+  - first:
+      213: -2554761037678703636
+    second: NS_UI_Iron_C_NoBorder_177
+  - first:
+      213: -8931497067844597849
+    second: NS_UI_Iron_C_NoBorder_178
+  - first:
+      213: -7959269894176782911
+    second: NS_UI_Iron_C_NoBorder_179
+  - first:
+      213: -2686282832553020880
+    second: NS_UI_Iron_C_NoBorder_180
+  - first:
+      213: -2736798889894832683
+    second: NS_UI_Iron_C_NoBorder_181
+  - first:
+      213: 5732198229797616040
+    second: NS_UI_Iron_C_NoBorder_182
+  - first:
+      213: -1590876130321885525
+    second: NS_UI_Iron_C_NoBorder_183
+  - first:
+      213: -8556293099646797552
+    second: NS_UI_Iron_C_NoBorder_184
+  - first:
+      213: 8543617972448941024
+    second: NS_UI_Iron_C_NoBorder_185
+  - first:
+      213: -4006245657272733252
+    second: NS_UI_Iron_C_NoBorder_186
+  - first:
+      213: -2050181989254508592
+    second: NS_UI_Iron_C_NoBorder_187
+  - first:
+      213: -8681498744046465600
+    second: NS_UI_Iron_C_NoBorder_188
+  - first:
+      213: -4557979130000690763
+    second: NS_UI_Iron_C_NoBorder_189
+  - first:
+      213: -9078210465126307161
+    second: NS_UI_Iron_C_NoBorder_190
+  - first:
+      213: -8286652964300715141
+    second: NS_UI_Iron_C_NoBorder_191
+  - first:
+      213: 829244838683632769
+    second: NS_UI_Iron_C_NoBorder_192
+  - first:
+      213: 1882808505193104744
+    second: NS_UI_Iron_C_NoBorder_193
+  - first:
+      213: -7677295233904070909
+    second: NS_UI_Iron_C_NoBorder_194
+  - first:
+      213: 5845606361542733549
+    second: NS_UI_Iron_C_NoBorder_195
+  - first:
+      213: 5701203725343727386
+    second: NS_UI_Iron_C_NoBorder_196
+  - first:
+      213: 4596686448206844469
+    second: NS_UI_Iron_C_NoBorder_197
+  - first:
+      213: 2834632166759613899
+    second: NS_UI_Iron_C_NoBorder_198
+  - first:
+      213: -2474687596817373126
+    second: NS_UI_Iron_C_NoBorder_199
+  - first:
+      213: 6009927524333380752
+    second: NS_UI_Iron_C_NoBorder_200
+  - first:
+      213: 4056635252230216123
+    second: NS_UI_Iron_C_NoBorder_201
+  - first:
+      213: 6973974354141071467
+    second: NS_UI_Iron_C_NoBorder_202
+  - first:
+      213: -7148164309162939297
+    second: NS_UI_Iron_C_NoBorder_203
+  - first:
+      213: -5325260292400959788
+    second: NS_UI_Iron_C_NoBorder_204
+  - first:
+      213: 7288647936800272025
+    second: NS_UI_Iron_C_NoBorder_205
+  - first:
+      213: -7873562049992872334
+    second: NS_UI_Iron_C_NoBorder_206
+  - first:
+      213: 5353078444807427334
+    second: NS_UI_Iron_C_NoBorder_207
+  - first:
+      213: -565559060681351148
+    second: NS_UI_Iron_C_NoBorder_208
+  - first:
+      213: 4755425072150254935
+    second: NS_UI_Iron_C_NoBorder_209
+  - first:
+      213: -3446800318603821164
+    second: NS_UI_Iron_C_NoBorder_210
+  - first:
+      213: -4422468248656803615
+    second: NS_UI_Iron_C_NoBorder_211
+  - first:
+      213: 2416834732340180027
+    second: NS_UI_Iron_C_NoBorder_212
+  - first:
+      213: 7370549500005808562
+    second: NS_UI_Iron_C_NoBorder_213
+  - first:
+      213: 4845166647223284623
+    second: NS_UI_Iron_C_NoBorder_214
+  - first:
+      213: 4221092421232808400
+    second: NS_UI_Iron_C_NoBorder_215
+  - first:
+      213: 6062629441141501981
+    second: NS_UI_Iron_C_NoBorder_216
+  - first:
+      213: 3409705286045683283
+    second: NS_UI_Iron_C_NoBorder_217
+  - first:
+      213: -5049781499053969517
+    second: NS_UI_Iron_C_NoBorder_218
+  - first:
+      213: -202256179830000635
+    second: NS_UI_Iron_C_NoBorder_219
+  - first:
+      213: 869277176572905106
+    second: NS_UI_Iron_C_NoBorder_220
+  - first:
+      213: -8537252492720963636
+    second: NS_UI_Iron_C_NoBorder_221
+  - first:
+      213: 1315184257513782440
+    second: NS_UI_Iron_C_NoBorder_222
+  - first:
+      213: -7778589253560162030
+    second: NS_UI_Iron_C_NoBorder_223
+  - first:
+      213: -2050717084560315560
+    second: NS_UI_Iron_C_NoBorder_224
+  - first:
+      213: 138742124353458628
+    second: NS_UI_Iron_C_NoBorder_225
+  - first:
+      213: -3321347971281827667
+    second: NS_UI_Iron_C_NoBorder_226
+  - first:
+      213: -5570855132441541417
+    second: NS_UI_Iron_C_NoBorder_227
+  - first:
+      213: 6445761819454344305
+    second: NS_UI_Iron_C_NoBorder_228
+  - first:
+      213: 6294991221024710731
+    second: NS_UI_Iron_C_NoBorder_229
+  - first:
+      213: -509108513176287324
+    second: NS_UI_Iron_C_NoBorder_230
+  - first:
+      213: -2990483394674248664
+    second: NS_UI_Iron_C_NoBorder_231
+  - first:
+      213: -6122581495999257227
+    second: NS_UI_Iron_C_NoBorder_232
+  - first:
+      213: -1486044081660017236
+    second: NS_UI_Iron_C_NoBorder_233
+  - first:
+      213: -1110974306246625042
+    second: NS_UI_Iron_C_NoBorder_234
+  - first:
+      213: 8795911185676795854
+    second: NS_UI_Iron_C_NoBorder_235
+  - first:
+      213: -1664875919857493436
+    second: NS_UI_Iron_C_NoBorder_236
+  - first:
+      213: -8824449386676175861
+    second: NS_UI_Iron_C_NoBorder_237
+  - first:
+      213: -172402817269489528
+    second: NS_UI_Iron_C_NoBorder_238
+  - first:
+      213: 8892533770221212408
+    second: NS_UI_Iron_C_NoBorder_239
+  - first:
+      213: -1832611326885968040
+    second: NS_UI_Iron_C_NoBorder_240
+  - first:
+      213: -4578093040892050081
+    second: NS_UI_Iron_C_NoBorder_241
+  - first:
+      213: 9115764785593222811
+    second: NS_UI_Iron_C_NoBorder_242
+  - first:
+      213: 4818199851208264475
+    second: NS_UI_Iron_C_NoBorder_243
+  - first:
+      213: 8094643936660281520
+    second: NS_UI_Iron_C_NoBorder_244
+  - first:
+      213: -3862094354502830654
+    second: NS_UI_Iron_C_NoBorder_245
+  - first:
+      213: 8732584887341086795
+    second: NS_UI_Iron_C_NoBorder_246
+  - first:
+      213: -4387821353126752739
+    second: NS_UI_Iron_C_NoBorder_247
+  - first:
+      213: 861381696084125210
+    second: NS_UI_Iron_C_NoBorder_248
+  - first:
+      213: 1241234246965581431
+    second: NS_UI_Iron_C_NoBorder_249
+  - first:
+      213: 4768243730380198563
+    second: NS_UI_Iron_C_NoBorder_250
+  - first:
+      213: 4520713722845032138
+    second: NS_UI_Iron_C_NoBorder_251
+  - first:
+      213: 5696270421895631834
+    second: NS_UI_Iron_C_NoBorder_252
+  - first:
+      213: -3018590553137992228
+    second: NS_UI_Iron_C_NoBorder_253
+  - first:
+      213: 7100649853193826612
+    second: NS_UI_Iron_C_NoBorder_254
+  - first:
+      213: 7750872211850822374
+    second: NS_UI_Iron_C_NoBorder_255
+  - first:
+      213: 1766581465159327585
+    second: NS_UI_Iron_C_NoBorder_256
+  - first:
+      213: -6765726894100951115
+    second: NS_UI_Iron_C_NoBorder_257
+  - first:
+      213: 100355301836546387
+    second: NS_UI_Iron_C_NoBorder_258
+  - first:
+      213: 7084118546617271090
+    second: NS_UI_Iron_C_NoBorder_259
+  - first:
+      213: -6499079264272764695
+    second: NS_UI_Iron_C_NoBorder_260
+  - first:
+      213: 7566044679286669693
+    second: NS_UI_Iron_C_NoBorder_261
+  - first:
+      213: -1995906171363449654
+    second: NS_UI_Iron_C_NoBorder_262
+  - first:
+      213: -930002605476505377
+    second: NS_UI_Iron_C_NoBorder_263
+  - first:
+      213: -1255481274410501717
+    second: NS_UI_Iron_C_NoBorder_264
+  - first:
+      213: 728503834233101742
+    second: NS_UI_Iron_C_NoBorder_265
+  - first:
+      213: 7621066614780728901
+    second: NS_UI_Iron_C_NoBorder_266
+  - first:
+      213: 3209377126884273258
+    second: NS_UI_Iron_C_NoBorder_267
+  - first:
+      213: -5418438620634511871
+    second: NS_UI_Iron_C_NoBorder_268
+  - first:
+      213: -2988211580018466063
+    second: NS_UI_Iron_C_NoBorder_269
+  - first:
+      213: -2775869883243408329
+    second: NS_UI_Iron_C_NoBorder_270
+  - first:
+      213: -4779229706711988538
+    second: NS_UI_Iron_C_NoBorder_271
+  - first:
+      213: 5239724384531075654
+    second: NS_UI_Iron_C_NoBorder_272
+  - first:
+      213: 9190054972182539605
+    second: NS_UI_Iron_C_NoBorder_273
+  - first:
+      213: 1682644283132250323
+    second: NS_UI_Iron_C_NoBorder_274
+  - first:
+      213: -3276873055513406918
+    second: NS_UI_Iron_C_NoBorder_275
+  - first:
+      213: 4593524083831419788
+    second: NS_UI_Iron_C_NoBorder_276
+  - first:
+      213: -6394169943208883734
+    second: NS_UI_Iron_C_NoBorder_277
+  - first:
+      213: -9181155998493526199
+    second: NS_UI_Iron_C_NoBorder_278
+  - first:
+      213: 8063737130194507372
+    second: NS_UI_Iron_C_NoBorder_279
+  - first:
+      213: 5297269725085188618
+    second: NS_UI_Iron_C_NoBorder_280
+  - first:
+      213: 3800246212384306279
+    second: NS_UI_Iron_C_NoBorder_281
+  - first:
+      213: 1307612894919725515
+    second: NS_UI_Iron_C_NoBorder_282
+  - first:
+      213: -1450887399592880605
+    second: NS_UI_Iron_C_NoBorder_283
+  - first:
+      213: -3086530213664703147
+    second: NS_UI_Iron_C_NoBorder_284
+  - first:
+      213: -486593170180644136
+    second: NS_UI_Iron_C_NoBorder_285
+  - first:
+      213: -2402054016488946584
+    second: NS_UI_Iron_C_NoBorder_286
+  - first:
+      213: -6739722904911017392
+    second: NS_UI_Iron_C_NoBorder_287
+  - first:
+      213: -6487154667176741768
+    second: NS_UI_Iron_C_NoBorder_288
+  - first:
+      213: 3403556198404534696
+    second: NS_UI_Iron_C_NoBorder_289
+  - first:
+      213: 1710374252590160650
+    second: NS_UI_Iron_C_NoBorder_290
+  - first:
+      213: -7618317387655644913
+    second: NS_UI_Iron_C_NoBorder_291
+  - first:
+      213: -4545059829635405070
+    second: NS_UI_Iron_C_NoBorder_292
+  - first:
+      213: -5126980994010361192
+    second: NS_UI_Iron_C_NoBorder_293
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c15421f6e3c052c0800000000000000
+      internalID: -4444837435559095872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb518e7a5f58aec0800000000000000
+      internalID: -3555487063534904347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b435d43ea0424a0800000000000000
+      internalID: -6619153580956628073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3305aa73faf6a80800000000000000
+      internalID: -8471359720445168688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b54bc0265eebdf30800000000000000
+      internalID: 4601533497973884339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4459e7f69a67ee0800000000000000
+      internalID: -1263636349100669748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9420bc457c83264d0800000000000000
+      internalID: -3142887161178946999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb9494d166e182ed0800000000000000
+      internalID: -2438665774294283841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528ced2f484467b20800000000000000
+      internalID: 3131765928683816997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbbee1cd695b25230800000000000000
+      internalID: 3626160309529406396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587a055da3f08a610800000000000000
+      internalID: 1632571610283157381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d8ec8e47e7963f0800000000000000
+      internalID: -907054809351287455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1472698ce9766f0800000000000000
+      internalID: -691409433428278841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74814c55573e64d70800000000000000
+      internalID: 9027152596200331335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56211f1d8fc287fa0800000000000000
+      internalID: -5802838672681135515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b69cb32fdd61220800000000000000
+      internalID: 2456394679232064257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8181761fb6edb4e30800000000000000
+      internalID: 4488926008797763608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6002cdaff28034e60800000000000000
+      internalID: 7945203169776902150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7133f2a899e4183b0800000000000000
+      internalID: -5512038047569464553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e73eb958656ae7c0800000000000000
+      internalID: -4041306216754956316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f79edd5a13c1160800000000000000
+      internalID: 6997522509489340259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c6e0717cf19df20800000000000000
+      internalID: 3447821929674599538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_22
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79dce2c44b123ec0800000000000000
+      internalID: -3588775970918835845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_23
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2aa1d337781c740800000000000000
+      internalID: 5170562776214184692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ea9d09fda60e220800000000000000
+      internalID: 2513126100513173075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_25
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3755f2470a52aee10800000000000000
+      internalID: 2227634336762385779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_26
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9acd62ccca555daf0800000000000000
+      internalID: -372297193540363095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_27
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c384a7bcc0443cf0800000000000000
+      internalID: -273522429364239419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_28
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b154422303ae780800000000000000
+      internalID: -8653050742123979892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_29
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a7810d006aa8160800000000000000
+      internalID: 7028612690886556239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_30
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f163ebed1e9f610800000000000000
+      internalID: 1655602684825575225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_31
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f17471c3eb6066290800000000000000
+      internalID: -7897617482425874657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_32
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc88eef9512b0cdb0800000000000000
+      internalID: -4773619799065458484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_33
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcaf57ca9cfa59890800000000000000
+      internalID: -7451856727697917233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_34
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e02f5cb1c8a18d0800000000000000
+      internalID: -2874831361209659860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_35
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed03d9dec3229d800800000000000000
+      internalID: 637578467329519838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662ab6ebf3aba4770800000000000000
+      internalID: 8595887621730443878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5b62eea3cd27b60800000000000000
+      internalID: 7742492855065032153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09b19c1bb8e4e970800000000000000
+      internalID: 8783401063615150349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a741935b1016360800000000000000
+      internalID: 7161006760354150917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f307f0159f17640800000000000000
+      internalID: 5076112381569941389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7073c3ec8167b8240800000000000000
+      internalID: 4795056077177370375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6a844c70b887bd0800000000000000
+      internalID: -2632201116723927357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 758562daf6905bcd0800000000000000
+      internalID: -2543116039329785769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f8cf27a21891240800000000000000
+      internalID: 4762980100238774130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_45
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb13bb9707aa544e0800000000000000
+      internalID: -1998003459613576772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_46
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 027615175fa91c340800000000000000
+      internalID: 4882353850005153568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_47
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79d8958984cea1a0800000000000000
+      internalID: -6796278692724549250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3229ac020d89e0eb0800000000000000
+      internalID: -4751692537158528477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_49
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79a50a769f87a290800000000000000
+      internalID: -7879171146606335621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_50
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b371b274b0b3b6d0800000000000000
+      internalID: -2975840639696931911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_51
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23472f2a176ba7640800000000000000
+      internalID: 5078572128995013682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e3bb3fdfd9c11a0800000000000000
+      internalID: -6837416420213834165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_53
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe64bf17f6687cd0800000000000000
+      internalID: -2560183176585253134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_54
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea9efc3734593b90800000000000000
+      internalID: -7261680327934960915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_55
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a06146fdc09b1110800000000000000
+      internalID: 1232738137290137760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_56
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552ea41941d16cf50800000000000000
+      internalID: 6901235453166019157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_57
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e777a7ceb570a780800000000000000
+      internalID: -8673803420061698073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_58
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3b8e01754a3f4f0800000000000000
+      internalID: -796112015261649936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_59
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d19d168fcb1da20800000000000000
+      internalID: 3085454994705030415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_60
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b93401f8c65c800800000000000000
+      internalID: 632030684424412039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_61
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3f303775be55330800000000000000
+      internalID: 3699121429779051504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_62
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b45978e00595cc0800000000000000
+      internalID: -3721855593710531761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_63
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3997d5f6974a6fef0800000000000000
+      internalID: -74691502338639469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_64
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2116f807c8a812420800000000000000
+      internalID: 2603514395385356562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_65
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0228e99c8b4362200800000000000000
+      internalID: 154869205452096032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_66
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e34bd0fa34dd7e0800000000000000
+      internalID: -1739159461966889342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_67
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19826f6da142a1de0800000000000000
+      internalID: -1361736239631947631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_68
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d907afda064c3d0800000000000000
+      internalID: -3187316335924175586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_69
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110e5b2dfc6b92d50800000000000000
+      internalID: 6713097723282055185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_70
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2662177e9a79114d0800000000000000
+      internalID: -3165582307076528542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_71
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf5dbd658ad92650800000000000000
+      internalID: 6208733827913572287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f256c9ce6c0e9510800000000000000
+      internalID: 1557696191087923956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667addcde07276fe0800000000000000
+      internalID: -1195944231255038106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_74
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f85ecbb78ea19160800000000000000
+      internalID: 7030592391296735473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_75
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0a169f8e31bd2f0800000000000000
+      internalID: -947141405294092127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_76
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd17bfea44f9afb0800000000000000
+      internalID: -4635905738714702339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_77
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb5a8c689ec6b5c0800000000000000
+      internalID: -4199942448425051165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_78
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0f14d1fee444d90800000000000000
+      internalID: -7114474722443530023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_79
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3293b1240843c4660800000000000000
+      internalID: 7371324415568197923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_80
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73557aa382c64c30800000000000000
+      internalID: 4343372761401742206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_81
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc684e952e00678a0800000000000000
+      internalID: -6307853255915043124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_82
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15bfd29384f6123e0800000000000000
+      internalID: -2080259196880815279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_83
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c16b07ebfacdb040800000000000000
+      internalID: 4665107972287586759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_84
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138572166ae7409d0800000000000000
+      internalID: -2808981014512707535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_85
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58772b729bf34110800000000000000
+      internalID: 1244114528634370139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_86
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da4c1f10027a8ea0800000000000000
+      internalID: -5869753819476505902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_87
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba43751de91608a0800000000000000
+      internalID: -6339350919419573569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9f42aaa9e629fe0800000000000000
+      internalID: -1183762141486450202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_89
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b9ac8c83f9f7600800000000000000
+      internalID: 468267952505527119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_90
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600aac6629b13cfd0800000000000000
+      internalID: -2322982667189313530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_91
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8883d991447c1a870800000000000000
+      internalID: 8692447851103205512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_92
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00bdc2a6ae260cb40800000000000000
+      internalID: 5458471507316235008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_93
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e901f0a95982e90800000000000000
+      internalID: -7050220727738261944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_94
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d3f59134b5103b0800000000000000
+      internalID: -5548052922197131959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_95
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210620e563e6bec90800000000000000
+      internalID: -7139491604481286126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_96
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1440ee259352feb90800000000000000
+      internalID: -7210503550262180799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_97
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b03bae9c2e58e60800000000000000
+      internalID: 7964020872928496469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_98
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb216f90febd29e0800000000000000
+      internalID: -1644448348244988936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_99
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f665ff6450b3f8b0800000000000000
+      internalID: -5119554474688026890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_100
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f98bfebefda5ed50800000000000000
+      internalID: 6766005324831492597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_101
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a80f13b15d319d20800000000000000
+      internalID: 3283473024436603040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_102
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac9ab39e6b25aa30800000000000000
+      internalID: 4225831579281956015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_103
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f92cc28821ff08f0800000000000000
+      internalID: -571973471357359626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_104
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17aedee2def77a3d0800000000000000
+      internalID: -3195444753924756879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_105
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f7582be116eb440800000000000000
+      internalID: 4953503424626130699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_106
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e673d6af4e28620800000000000000
+      internalID: 2775032084638952992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_107
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8cb477e9d1204c20800000000000000
+      internalID: 3188585755953118349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60dad796fb435660800000000000000
+      internalID: 7373320537417371757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_109
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b7e0917931f4c70800000000000000
+      internalID: 8957399723544574792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_110
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b165dda78b6919800800000000000000
+      internalID: 617440343005943323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_111
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64071ddc507685d60800000000000000
+      internalID: 7879160822710235206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_112
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d73731375bde6070800000000000000
+      internalID: 8101653947220441042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_113
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 917610576eab49bf0800000000000000
+      internalID: -318424174668191975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_114
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf041f8933dd7080800000000000000
+      internalID: -9187955420598890561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_115
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c104063b5edaa46b0800000000000000
+      internalID: -5311241608461533156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_116
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830cda37c892d12f0800000000000000
+      internalID: -1000597858993455048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_117
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087bcc5a674330d90800000000000000
+      internalID: -7132799700632291456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_118
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03aa624fc9c8b4cb0800000000000000
+      internalID: -4878651165586838992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_119
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c509fa34add6bf360800000000000000
+      internalID: 7204472813115117660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_120
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf0728e0b718ef70800000000000000
+      internalID: 9216642685990277052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_121
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e311116aa8e636b30800000000000000
+      internalID: 4279385612702781758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_122
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f4d9b1345b220c0800000000000000
+      internalID: -4601916569388494949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_123
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0515970e00761e0800000000000000
+      internalID: -2204792528466521867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_124
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b632fc7b50d5640800000000000000
+      internalID: 5070215042501405472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_125
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b63931b865d4e820800000000000000
+      internalID: 2946714701833778866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_126
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8496aba92696e0dd0800000000000000
+      internalID: -2517959269429909176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_127
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e616187c7154a50800000000000000
+      internalID: 6504631382443126404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_128
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42935b54e7a304fb0800000000000000
+      internalID: -4665664899946039004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_129
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf748b46fc0e24060800000000000000
+      internalID: 6936353557456635900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_130
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803a55e4498721ef0800000000000000
+      internalID: -138916060130335992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_131
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91bc06261ac322fd0800000000000000
+      internalID: -2368263790205547751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_132
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d45ca48d5e65680800000000000000
+      internalID: -8766566907499950799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_133
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99ce964ad0570a90800000000000000
+      internalID: -7347815368613770850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_134
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5911e9fc35ee07380800000000000000
+      internalID: -8975412013616459371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_135
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbce22f9c0ee94790800000000000000
+      internalID: -7545237962705670981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_136
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7eea43a3d3a1670800000000000000
+      internalID: 8510181766071248837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_137
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa185f4c3668310a0800000000000000
+      internalID: -6912033240019271254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_138
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4966277b505e8e0800000000000000
+      internalID: -1664918201787050787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_139
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca9b7839beb38610800000000000000
+      internalID: 1622349993509362368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_140
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31512dbf6d9db8500800000000000000
+      internalID: 399652509323498771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_141
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36009cb185b6caa50800000000000000
+      internalID: 6533715185575198819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_142
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589466e264d40e4a0800000000000000
+      internalID: -6566163292884678267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_143
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcef7980398c4d180800000000000000
+      internalID: -9091421213924262197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba088abb1606f410800000000000000
+      internalID: 1510401441192741566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f77d968c4f9f7970800000000000000
+      internalID: 8754891351656331256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_146
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e088521806f01150800000000000000
+      internalID: 5841439231227494626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_147
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51513a0a08c66b190800000000000000
+      internalID: -7947045192742005483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_148
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b541cac8518044c0800000000000000
+      internalID: -4305299025407425100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_149
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e355799756c6a3c70800000000000000
+      internalID: 8951586392439739710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_150
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2353ff036d30d30800000000000000
+      internalID: 4396593167172186868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_151
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7272cbfd2c7782da0800000000000000
+      internalID: -5969389627218581721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_152
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e975488c46344f540800000000000000
+      internalID: 5040727983074334622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_153
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2f57994eeb4c120800000000000000
+      internalID: 2433279587723375313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_154
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b28357165c20c220800000000000000
+      internalID: 2504050141088154290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_155
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20f9b9d450910a00800000000000000
+      internalID: 721016109460484138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_156
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9f63a19391c6460800000000000000
+      internalID: 7236186434321185185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_157
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0136b313a1d2c180800000000000000
+      internalID: -9096477798994398966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_158
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017088740451cf750800000000000000
+      internalID: 6339965741253003024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_159
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a010bb572bec2750800000000000000
+      internalID: 6281654134549516453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_160
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285c2207c7065da10800000000000000
+      internalID: 1933557702599034242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_161
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18b38bc78248d830800000000000000
+      internalID: 4096097012095891487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_162
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2afc2fef12bda20800000000000000
+      internalID: 3088099348371710645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_163
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7226723b02a3810800000000000000
+      internalID: 1745743759391467461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_164
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e25bafd074f78c0800000000000000
+      internalID: -3999399818715386335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_165
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d156e5366bc1d7240800000000000000
+      internalID: 4791017148268832029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_166
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a6b06a88a1283360800000000000000
+      internalID: 7149501416210478753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_167
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c64020453e0a11590800000000000000
+      internalID: -7705200589226769300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_168
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07a47a5c2b960290800000000000000
+      internalID: -7924475879513348339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_169
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3290f479b8fa71d50800000000000000
+      internalID: 6708023184065497379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_170
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276b0de1959e91a00800000000000000
+      internalID: 727869383775401586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_171
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3797cb384fd65e040800000000000000
+      internalID: 4676264685043743091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_172
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b237228df38734370800000000000000
+      internalID: 8305614353405735723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_173
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b14bb8b55baeff0800000000000000
+      internalID: -5993044697146589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_174
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df70fd88dfdf10d60800000000000000
+      internalID: 7854838490475726845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_175
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea41fd438a2454c40800000000000000
+      internalID: 5495872210484532398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_176
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae58400bc6eb94b0800000000000000
+      internalID: -5432494765934879067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_177
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb07273f5aab8cd0800000000000000
+      internalID: -2554761037678703636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_178
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a70ea6ecb2fc0480800000000000000
+      internalID: -8931497067844597849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_179
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5c126833efa8190800000000000000
+      internalID: -7959269894176782911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032727f0ff768bad0800000000000000
+      internalID: -2686282832553020880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_181
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5922ae8efe40ad0800000000000000
+      internalID: -2736798889894832683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_182
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9b5356bebdc8f40800000000000000
+      internalID: 5732198229797616040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_183
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6148a96921ce9e0800000000000000
+      internalID: -1590876130321885525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_184
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0193d6152c0f14980800000000000000
+      internalID: -8556293099646797552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_185
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e35678a747019670800000000000000
+      internalID: 8543617972448941024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_186
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1be4bfcc4f668c0800000000000000
+      internalID: -4006245657272733252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_187
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dfc495d75a4c83e0800000000000000
+      internalID: -2050181989254508592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_188
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd4c1b83ee158780800000000000000
+      internalID: -8681498744046465600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_189
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b13aa6612eceb0c0800000000000000
+      internalID: -4557979130000690763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_190
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aaa9ed2ea7b30280800000000000000
+      internalID: -9078210465126307161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_191
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b0be59805effc80800000000000000
+      internalID: -8286652964300715141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_192
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184609989c1128b00800000000000000
+      internalID: 829244838683632769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_193
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8658e142c54112a10800000000000000
+      internalID: 1882808505193104744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_194
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f295b29a4c47590800000000000000
+      internalID: -7677295233904070909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_195
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deea484b304cf1150800000000000000
+      internalID: 5845606361542733549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_196
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f1f39f49ebe1f40800000000000000
+      internalID: 5701203725343727386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_197
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532983968f5bacf30800000000000000
+      internalID: 4596686448206844469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_198
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc54a98efe2a65720800000000000000
+      internalID: 2834632166759613899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_199
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38a2adfdb428add0800000000000000
+      internalID: -2474687596817373126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_200
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094ebbdcd3d876350800000000000000
+      internalID: 6009927524333380752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_201
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb95288d4401c4830800000000000000
+      internalID: 4056635252230216123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_202
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b684343b9b888c060800000000000000
+      internalID: 6973974354141071467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_203
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ca734fe6e9ccc90800000000000000
+      internalID: -7148164309162939297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_204
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dea2fe7affd816b0800000000000000
+      internalID: -5325260292400959788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_205
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e2ddd7eaa762560800000000000000
+      internalID: 7288647936800272025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_206
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ead2d080d7bb290800000000000000
+      internalID: -7873562049992872334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_207
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6051c85db74f94a40800000000000000
+      internalID: 5353078444807427334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_208
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410a590e70bb628f0800000000000000
+      internalID: -565559060681351148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_209
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755908568e9aef140800000000000000
+      internalID: 4755425072150254935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_210
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f7ae54f518a20d0800000000000000
+      internalID: -3446800318603821164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_211
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e80e502f8c30a2c0800000000000000
+      internalID: -4422468248656803615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_212
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3476f552625a8120800000000000000
+      internalID: 2416834732340180027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_213
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9774b28b3794660800000000000000
+      internalID: 7370549500005808562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_214
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f837055156d7d3340800000000000000
+      internalID: 4845166647223284623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_215
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1dcab5135549a30800000000000000
+      internalID: 4221092421232808400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_216
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1070140b59c22450800000000000000
+      internalID: 6062629441141501981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_217
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e468b64e4b15f20800000000000000
+      internalID: 3409705286045683283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_218
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39f6c834b729be9b0800000000000000
+      internalID: -5049781499053969517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_219
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504fa977311713df0800000000000000
+      internalID: -202256179830000635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_220
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2968bf88cfa401c00800000000000000
+      internalID: 869277176572905106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_221
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf7c851716958980800000000000000
+      internalID: -8537252492720963636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_222
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac7b433d19704210800000000000000
+      internalID: 1315184257513782440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_223
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21920ef5946ec0490800000000000000
+      internalID: -7778589253560162030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_224
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b25ff3da36a83e0800000000000000
+      internalID: -2050717084560315560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_225
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1987d1a39ece100800000000000000
+      internalID: 138742124353458628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_226
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8484c0e9338e1d0800000000000000
+      internalID: -3321347971281827667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_227
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d409afc5c850b2b0800000000000000
+      internalID: -5570855132441541417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_228
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c0a534932f37950800000000000000
+      internalID: 6445761819454344305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_229
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b406169c92d4c5750800000000000000
+      internalID: 6294991221024710731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_230
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7000031884fe8f0800000000000000
+      internalID: -509108513176287324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_231
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824bcb1623baf76d0800000000000000
+      internalID: -2990483394674248664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_232
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575a5967198380ba0800000000000000
+      internalID: -6122581495999257227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_233
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca54518f7c2806be0800000000000000
+      internalID: -1486044081660017236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_234
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee8759131c60590f0800000000000000
+      internalID: -1110974306246625042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_235
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf7622ee9a511a70800000000000000
+      internalID: 8795911185676795854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_236
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44adac9fb2c25e8e0800000000000000
+      internalID: -1664875919857493436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_237
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cb0c86902498580800000000000000
+      internalID: -8824449386676175861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_238
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88020661d808b9df0800000000000000
+      internalID: -172402817269489528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_239
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2533f6950a86b70800000000000000
+      internalID: 8892533770221212408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_240
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857ca9135b14196e0800000000000000
+      internalID: -1832611326885968040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_241
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5501f492a85770c0800000000000000
+      internalID: -4578093040892050081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_242
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b968c4d66c3b18e70800000000000000
+      internalID: 9115764785593222811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_243
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1bcb1c9c3fadd240800000000000000
+      internalID: 4818199851208264475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_244
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8d7ebe5c3f55070800000000000000
+      internalID: 8094643936660281520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_245
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c531d695a5176ac0800000000000000
+      internalID: -3862094354502830654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_246
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48f8e410bf503970800000000000000
+      internalID: 8732584887341086795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_247
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e810d1ab35b13c0800000000000000
+      internalID: -4387821353126752739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_248
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a162e1bb61e34fb00800000000000000
+      internalID: 861381696084125210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_249
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 776de65a8ffb93110800000000000000
+      internalID: 1241234246965581431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_250
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a29bc7d8643c2240800000000000000
+      internalID: 4768243730380198563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_251
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace696ddd2dccbe30800000000000000
+      internalID: 4520713722845032138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_252
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad357a1c4c73d0f40800000000000000
+      internalID: 5696270421895631834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_253
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd2cd592efcb16d0800000000000000
+      internalID: -3018590553137992228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_254
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4313c0eab639a8260800000000000000
+      internalID: 7100649853193826612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_255
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e280d6f531a09b60800000000000000
+      internalID: 7750872211850822374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_256
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f5c999b78248810800000000000000
+      internalID: 1766581465159327585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_257
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf4ec57c3f4b12a0800000000000000
+      internalID: -6765726894100951115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_258
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3516b458d98846100800000000000000
+      internalID: 100355301836546387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_259
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23301ede848df4260800000000000000
+      internalID: 7084118546617271090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_260
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e03aedb7d1aec5a0800000000000000
+      internalID: -6499079264272764695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_261
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71cd979c8dfff860800000000000000
+      internalID: 7566044679286669693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_262
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac42fd279ed1d44e0800000000000000
+      internalID: -1995906171363449654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_263
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd89264ce87f713f0800000000000000
+      internalID: -930002605476505377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_264
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba97b98ce62a39ee0800000000000000
+      internalID: -1255481274410501717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_265
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead59f0a06a2c1a00800000000000000
+      internalID: 728503834233101742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_266
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546189f35b773c960800000000000000
+      internalID: 7621066614780728901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_267
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c633e2e7ff98c20800000000000000
+      internalID: 3209377126884273258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_268
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10682db58c6ddc4b0800000000000000
+      internalID: -5418438620634511871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_269
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f26a43766db786d0800000000000000
+      internalID: -2988211580018466063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_270
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73452926c012a79d0800000000000000
+      internalID: -2775869883243408329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_271
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6007737e3ccadb0800000000000000
+      internalID: -4779229706711988538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_272
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6425de4019d37b840800000000000000
+      internalID: 5239724384531075654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_273
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55da0436e42a98f70800000000000000
+      internalID: 9190054972182539605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_274
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8807b7f04f95710800000000000000
+      internalID: 1682644283132250323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_275
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a32131051553682d0800000000000000
+      internalID: -3276873055513406918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_276
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8339f311d97fbf30800000000000000
+      internalID: 4593524083831419788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_277
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae90e8d70585347a0800000000000000
+      internalID: -6394169943208883734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_278
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947b852634bf59080800000000000000
+      internalID: -9181155998493526199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_279
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c661f57423628ef60800000000000000
+      internalID: 8063737130194507372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_280
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a024223bfbea38940800000000000000
+      internalID: 5297269725085188618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_281
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764b03cabcf2db430800000000000000
+      internalID: 3800246212384306279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_282
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc11969fff2952210800000000000000
+      internalID: 1307612894919725515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_283
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3261d22e8996ddbe0800000000000000
+      internalID: -1450887399592880605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_284
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d3102bf117a25d0800000000000000
+      internalID: -3086530213664703147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_285
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2604df6164f39f0800000000000000
+      internalID: -486593170180644136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_286
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86440ef39903aaed0800000000000000
+      internalID: -2402054016488946584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_287
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a07300ab1b772a0800000000000000
+      internalID: -6739722904911017392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_288
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874b9eb533ff8f5a0800000000000000
+      internalID: -6487154667176741768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_289
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a13bf2645cdb3f20800000000000000
+      internalID: 3403556198404534696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_290
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b5c9e12587cb710800000000000000
+      internalID: 1710374252590160650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_291
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f097a9213bc464690800000000000000
+      internalID: -7618317387655644913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_292
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa2fab6a24bce0c0800000000000000
+      internalID: -4545059829635405070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NS_UI_Iron_C_NoBorder_293
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89255d923fd49d8b0800000000000000
+      internalID: -5126980994010361192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

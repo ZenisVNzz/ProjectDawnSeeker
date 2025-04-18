@@ -1,0 +1,7467 @@
+fileFormatVersion: 2
+guid: d11df7ad46e3b824a9364364963f4a61
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4093453486816263897
+    second: UI_Iron_B_NoBorder_0
+  - first:
+      213: -3870156570683534113
+    second: UI_Iron_B_NoBorder_1
+  - first:
+      213: -6487035197098665279
+    second: UI_Iron_B_NoBorder_2
+  - first:
+      213: 6715526326844596696
+    second: UI_Iron_B_NoBorder_3
+  - first:
+      213: 5394402079112341018
+    second: UI_Iron_B_NoBorder_4
+  - first:
+      213: 2324012055742144843
+    second: UI_Iron_B_NoBorder_5
+  - first:
+      213: -5207853364771918332
+    second: UI_Iron_B_NoBorder_6
+  - first:
+      213: 5485595120216260225
+    second: UI_Iron_B_NoBorder_7
+  - first:
+      213: -1838960118163769179
+    second: UI_Iron_B_NoBorder_8
+  - first:
+      213: 3672206621128407288
+    second: UI_Iron_B_NoBorder_9
+  - first:
+      213: 564351182951558253
+    second: UI_Iron_B_NoBorder_10
+  - first:
+      213: -3201611899296077156
+    second: UI_Iron_B_NoBorder_11
+  - first:
+      213: 8661923153536450766
+    second: UI_Iron_B_NoBorder_12
+  - first:
+      213: 9161963666439542830
+    second: UI_Iron_B_NoBorder_13
+  - first:
+      213: -8207677270032288616
+    second: UI_Iron_B_NoBorder_14
+  - first:
+      213: -327890921315664767
+    second: UI_Iron_B_NoBorder_15
+  - first:
+      213: -389251406824877847
+    second: UI_Iron_B_NoBorder_16
+  - first:
+      213: 1278707454728772979
+    second: UI_Iron_B_NoBorder_17
+  - first:
+      213: 3871036353379146265
+    second: UI_Iron_B_NoBorder_18
+  - first:
+      213: 3520077057296882419
+    second: UI_Iron_B_NoBorder_19
+  - first:
+      213: 3880710971869297393
+    second: UI_Iron_B_NoBorder_20
+  - first:
+      213: 243011873919091206
+    second: UI_Iron_B_NoBorder_21
+  - first:
+      213: 219875676144581869
+    second: UI_Iron_B_NoBorder_22
+  - first:
+      213: 2678299710013282059
+    second: UI_Iron_B_NoBorder_23
+  - first:
+      213: 2678851924008087100
+    second: UI_Iron_B_NoBorder_24
+  - first:
+      213: -6400416275246700382
+    second: UI_Iron_B_NoBorder_25
+  - first:
+      213: 8157716604935532196
+    second: UI_Iron_B_NoBorder_26
+  - first:
+      213: 8137718341757326294
+    second: UI_Iron_B_NoBorder_27
+  - first:
+      213: -4783969978039158387
+    second: UI_Iron_B_NoBorder_28
+  - first:
+      213: 5829640569858572681
+    second: UI_Iron_B_NoBorder_29
+  - first:
+      213: 5541668442866423028
+    second: UI_Iron_B_NoBorder_30
+  - first:
+      213: 5117493298293383910
+    second: UI_Iron_B_NoBorder_31
+  - first:
+      213: 1483675894904108797
+    second: UI_Iron_B_NoBorder_32
+  - first:
+      213: 4399484698483685861
+    second: UI_Iron_B_NoBorder_33
+  - first:
+      213: -2654340254505535813
+    second: UI_Iron_B_NoBorder_34
+  - first:
+      213: 3480868396316568366
+    second: UI_Iron_B_NoBorder_35
+  - first:
+      213: 8301914491572263124
+    second: UI_Iron_B_NoBorder_36
+  - first:
+      213: -1255016292212127940
+    second: UI_Iron_B_NoBorder_37
+  - first:
+      213: 7251642017246402113
+    second: UI_Iron_B_NoBorder_38
+  - first:
+      213: 7019868170687091353
+    second: UI_Iron_B_NoBorder_39
+  - first:
+      213: 8051423761451266077
+    second: UI_Iron_B_NoBorder_40
+  - first:
+      213: 2391501764990163969
+    second: UI_Iron_B_NoBorder_41
+  - first:
+      213: 3570830117568437326
+    second: UI_Iron_B_NoBorder_42
+  - first:
+      213: 7891416588361262859
+    second: UI_Iron_B_NoBorder_43
+  - first:
+      213: 2419493238341399015
+    second: UI_Iron_B_NoBorder_44
+  - first:
+      213: -3152915402786989801
+    second: UI_Iron_B_NoBorder_45
+  - first:
+      213: 2943708843672411592
+    second: UI_Iron_B_NoBorder_46
+  - first:
+      213: 7992923258893224389
+    second: UI_Iron_B_NoBorder_47
+  - first:
+      213: 9154134885854703805
+    second: UI_Iron_B_NoBorder_48
+  - first:
+      213: -9048334733796797489
+    second: UI_Iron_B_NoBorder_49
+  - first:
+      213: 4991782259030785540
+    second: UI_Iron_B_NoBorder_50
+  - first:
+      213: -6302326173457612063
+    second: UI_Iron_B_NoBorder_51
+  - first:
+      213: 5508938269525846247
+    second: UI_Iron_B_NoBorder_52
+  - first:
+      213: -2550025590322012017
+    second: UI_Iron_B_NoBorder_53
+  - first:
+      213: 2442652430651351895
+    second: UI_Iron_B_NoBorder_54
+  - first:
+      213: 889142482408419131
+    second: UI_Iron_B_NoBorder_55
+  - first:
+      213: -5499208881641504066
+    second: UI_Iron_B_NoBorder_56
+  - first:
+      213: 2504888533843432142
+    second: UI_Iron_B_NoBorder_57
+  - first:
+      213: 2429368109732387861
+    second: UI_Iron_B_NoBorder_58
+  - first:
+      213: -3214521464326871271
+    second: UI_Iron_B_NoBorder_59
+  - first:
+      213: 3929317196203353225
+    second: UI_Iron_B_NoBorder_60
+  - first:
+      213: 7153461301051885519
+    second: UI_Iron_B_NoBorder_61
+  - first:
+      213: -6456956039755940359
+    second: UI_Iron_B_NoBorder_62
+  - first:
+      213: -8637193582006465400
+    second: UI_Iron_B_NoBorder_63
+  - first:
+      213: 8011943938234536401
+    second: UI_Iron_B_NoBorder_64
+  - first:
+      213: -637020568545672446
+    second: UI_Iron_B_NoBorder_65
+  - first:
+      213: -7935765016242774174
+    second: UI_Iron_B_NoBorder_66
+  - first:
+      213: 280746141899476842
+    second: UI_Iron_B_NoBorder_67
+  - first:
+      213: -3871106745247605394
+    second: UI_Iron_B_NoBorder_68
+  - first:
+      213: 5579932346065059486
+    second: UI_Iron_B_NoBorder_69
+  - first:
+      213: -4275317546276433311
+    second: UI_Iron_B_NoBorder_70
+  - first:
+      213: -3577357485406470103
+    second: UI_Iron_B_NoBorder_71
+  - first:
+      213: 1477863353925637170
+    second: UI_Iron_B_NoBorder_72
+  - first:
+      213: -5566018529451613194
+    second: UI_Iron_B_NoBorder_73
+  - first:
+      213: -5104395039502800026
+    second: UI_Iron_B_NoBorder_74
+  - first:
+      213: 1701735011013241377
+    second: UI_Iron_B_NoBorder_75
+  - first:
+      213: -1254739791439047027
+    second: UI_Iron_B_NoBorder_76
+  - first:
+      213: -2075324732254692900
+    second: UI_Iron_B_NoBorder_77
+  - first:
+      213: -2883690141432064764
+    second: UI_Iron_B_NoBorder_78
+  - first:
+      213: 316336238913477514
+    second: UI_Iron_B_NoBorder_79
+  - first:
+      213: 950080662730741349
+    second: UI_Iron_B_NoBorder_80
+  - first:
+      213: 5321889939805945096
+    second: UI_Iron_B_NoBorder_81
+  - first:
+      213: -4500844111056458257
+    second: UI_Iron_B_NoBorder_82
+  - first:
+      213: 3499970237884757616
+    second: UI_Iron_B_NoBorder_83
+  - first:
+      213: -4196250597382938860
+    second: UI_Iron_B_NoBorder_84
+  - first:
+      213: 4376920116581560927
+    second: UI_Iron_B_NoBorder_85
+  - first:
+      213: 959422815530602043
+    second: UI_Iron_B_NoBorder_86
+  - first:
+      213: -4268544265064689317
+    second: UI_Iron_B_NoBorder_87
+  - first:
+      213: -6692931418800589973
+    second: UI_Iron_B_NoBorder_88
+  - first:
+      213: -8501560075089684292
+    second: UI_Iron_B_NoBorder_89
+  - first:
+      213: -4106606610175361718
+    second: UI_Iron_B_NoBorder_90
+  - first:
+      213: 6286267808185717532
+    second: UI_Iron_B_NoBorder_91
+  - first:
+      213: -389876636638642743
+    second: UI_Iron_B_NoBorder_92
+  - first:
+      213: 3940729038322809943
+    second: UI_Iron_B_NoBorder_93
+  - first:
+      213: -8444552068116762815
+    second: UI_Iron_B_NoBorder_94
+  - first:
+      213: 5048209850336185390
+    second: UI_Iron_B_NoBorder_95
+  - first:
+      213: 2477347006215157152
+    second: UI_Iron_B_NoBorder_96
+  - first:
+      213: -5203141910303752332
+    second: UI_Iron_B_NoBorder_97
+  - first:
+      213: 1571851882650954744
+    second: UI_Iron_B_NoBorder_98
+  - first:
+      213: 4249400486738897594
+    second: UI_Iron_B_NoBorder_99
+  - first:
+      213: -2037291114374733055
+    second: UI_Iron_B_NoBorder_100
+  - first:
+      213: 2587152056808657948
+    second: UI_Iron_B_NoBorder_101
+  - first:
+      213: 8399555674342357126
+    second: UI_Iron_B_NoBorder_102
+  - first:
+      213: 3087166424364964997
+    second: UI_Iron_B_NoBorder_103
+  - first:
+      213: -5899049600148940985
+    second: UI_Iron_B_NoBorder_104
+  - first:
+      213: -6529646642159209479
+    second: UI_Iron_B_NoBorder_105
+  - first:
+      213: -8939471697412761800
+    second: UI_Iron_B_NoBorder_106
+  - first:
+      213: 2260383166197672236
+    second: UI_Iron_B_NoBorder_107
+  - first:
+      213: 9023108120243306834
+    second: UI_Iron_B_NoBorder_108
+  - first:
+      213: 4328774822172427163
+    second: UI_Iron_B_NoBorder_109
+  - first:
+      213: -8515775056090247913
+    second: UI_Iron_B_NoBorder_110
+  - first:
+      213: -6302314988070887485
+    second: UI_Iron_B_NoBorder_111
+  - first:
+      213: -7374814972026929254
+    second: UI_Iron_B_NoBorder_112
+  - first:
+      213: -6310944192008853567
+    second: UI_Iron_B_NoBorder_113
+  - first:
+      213: -5941075401074943091
+    second: UI_Iron_B_NoBorder_114
+  - first:
+      213: 2804098654591998070
+    second: UI_Iron_B_NoBorder_115
+  - first:
+      213: -4782407837598414630
+    second: UI_Iron_B_NoBorder_116
+  - first:
+      213: -7036919521166878231
+    second: UI_Iron_B_NoBorder_117
+  - first:
+      213: 5247674495272828429
+    second: UI_Iron_B_NoBorder_118
+  - first:
+      213: 945916102956683340
+    second: UI_Iron_B_NoBorder_119
+  - first:
+      213: -7483367951807556906
+    second: UI_Iron_B_NoBorder_120
+  - first:
+      213: 6230128990773337703
+    second: UI_Iron_B_NoBorder_121
+  - first:
+      213: 4642535768721972201
+    second: UI_Iron_B_NoBorder_122
+  - first:
+      213: 6531821157644239015
+    second: UI_Iron_B_NoBorder_123
+  - first:
+      213: 4560023497204084737
+    second: UI_Iron_B_NoBorder_124
+  - first:
+      213: 2237822264883994342
+    second: UI_Iron_B_NoBorder_125
+  - first:
+      213: -7916641330162975199
+    second: UI_Iron_B_NoBorder_126
+  - first:
+      213: -2310833093417696654
+    second: UI_Iron_B_NoBorder_127
+  - first:
+      213: 7542139523969793201
+    second: UI_Iron_B_NoBorder_128
+  - first:
+      213: 9179348099120279595
+    second: UI_Iron_B_NoBorder_129
+  - first:
+      213: 1599164939880165108
+    second: UI_Iron_B_NoBorder_130
+  - first:
+      213: 5952705957056619732
+    second: UI_Iron_B_NoBorder_131
+  - first:
+      213: -3526415220370216098
+    second: UI_Iron_B_NoBorder_132
+  - first:
+      213: 8554178047713318119
+    second: UI_Iron_B_NoBorder_133
+  - first:
+      213: -4620567875171171788
+    second: UI_Iron_B_NoBorder_134
+  - first:
+      213: -944208036518668488
+    second: UI_Iron_B_NoBorder_135
+  - first:
+      213: -7317115248595334886
+    second: UI_Iron_B_NoBorder_136
+  - first:
+      213: -8887141519625074051
+    second: UI_Iron_B_NoBorder_137
+  - first:
+      213: 3034145425932498040
+    second: UI_Iron_B_NoBorder_138
+  - first:
+      213: -6644212431163910480
+    second: UI_Iron_B_NoBorder_139
+  - first:
+      213: 5785006160687831659
+    second: UI_Iron_B_NoBorder_140
+  - first:
+      213: 7572290449412496849
+    second: UI_Iron_B_NoBorder_141
+  - first:
+      213: 787229424990633336
+    second: UI_Iron_B_NoBorder_142
+  - first:
+      213: 1284325945926399354
+    second: UI_Iron_B_NoBorder_143
+  - first:
+      213: -3979440183406310158
+    second: UI_Iron_B_NoBorder_144
+  - first:
+      213: 4434095952991199779
+    second: UI_Iron_B_NoBorder_145
+  - first:
+      213: 4756610435944271995
+    second: UI_Iron_B_NoBorder_146
+  - first:
+      213: -7904533604468543903
+    second: UI_Iron_B_NoBorder_147
+  - first:
+      213: -343801367682011374
+    second: UI_Iron_B_NoBorder_148
+  - first:
+      213: 9192601725269620332
+    second: UI_Iron_B_NoBorder_149
+  - first:
+      213: -7208891159877919361
+    second: UI_Iron_B_NoBorder_150
+  - first:
+      213: -2848612176821440977
+    second: UI_Iron_B_NoBorder_151
+  - first:
+      213: 9221147677439548260
+    second: UI_Iron_B_NoBorder_152
+  - first:
+      213: -676595399572591243
+    second: UI_Iron_B_NoBorder_153
+  - first:
+      213: -8556744387774228524
+    second: UI_Iron_B_NoBorder_154
+  - first:
+      213: 3747155419474095907
+    second: UI_Iron_B_NoBorder_155
+  - first:
+      213: -2603748728190593917
+    second: UI_Iron_B_NoBorder_156
+  - first:
+      213: -5946716653117056975
+    second: UI_Iron_B_NoBorder_157
+  - first:
+      213: 1340645196758419660
+    second: UI_Iron_B_NoBorder_158
+  - first:
+      213: 3117507817583605765
+    second: UI_Iron_B_NoBorder_159
+  - first:
+      213: 1721363505478454635
+    second: UI_Iron_B_NoBorder_160
+  - first:
+      213: 6388528898934838772
+    second: UI_Iron_B_NoBorder_161
+  - first:
+      213: 5550598586311774367
+    second: UI_Iron_B_NoBorder_162
+  - first:
+      213: 2517964321934343600
+    second: UI_Iron_B_NoBorder_163
+  - first:
+      213: -6605025153201568704
+    second: UI_Iron_B_NoBorder_164
+  - first:
+      213: 5719981347837906573
+    second: UI_Iron_B_NoBorder_165
+  - first:
+      213: -3034956413839471640
+    second: UI_Iron_B_NoBorder_166
+  - first:
+      213: 6642841041031984835
+    second: UI_Iron_B_NoBorder_167
+  - first:
+      213: -6585131306111929766
+    second: UI_Iron_B_NoBorder_168
+  - first:
+      213: 7155450546965056815
+    second: UI_Iron_B_NoBorder_169
+  - first:
+      213: 8830669124446974467
+    second: UI_Iron_B_NoBorder_170
+  - first:
+      213: 6911088229423524738
+    second: UI_Iron_B_NoBorder_171
+  - first:
+      213: -3652085626870715134
+    second: UI_Iron_B_NoBorder_172
+  - first:
+      213: -3155950908011255268
+    second: UI_Iron_B_NoBorder_173
+  - first:
+      213: 6043032582064833164
+    second: UI_Iron_B_NoBorder_174
+  - first:
+      213: 412108480329271134
+    second: UI_Iron_B_NoBorder_175
+  - first:
+      213: 6357620605026926230
+    second: UI_Iron_B_NoBorder_176
+  - first:
+      213: -2036216545026230266
+    second: UI_Iron_B_NoBorder_177
+  - first:
+      213: 7293039735907543230
+    second: UI_Iron_B_NoBorder_178
+  - first:
+      213: -5546658147350549764
+    second: UI_Iron_B_NoBorder_179
+  - first:
+      213: 5631082158451728488
+    second: UI_Iron_B_NoBorder_180
+  - first:
+      213: 2656108922412622872
+    second: UI_Iron_B_NoBorder_181
+  - first:
+      213: 6557521403393733013
+    second: UI_Iron_B_NoBorder_182
+  - first:
+      213: -7221976811162037075
+    second: UI_Iron_B_NoBorder_183
+  - first:
+      213: 447477894583349793
+    second: UI_Iron_B_NoBorder_184
+  - first:
+      213: -849365389234820240
+    second: UI_Iron_B_NoBorder_185
+  - first:
+      213: -6997645064013541717
+    second: UI_Iron_B_NoBorder_186
+  - first:
+      213: -6106379013538427359
+    second: UI_Iron_B_NoBorder_187
+  - first:
+      213: 5305515140385707769
+    second: UI_Iron_B_NoBorder_188
+  - first:
+      213: -4383369016118133999
+    second: UI_Iron_B_NoBorder_189
+  - first:
+      213: -3205875274353868753
+    second: UI_Iron_B_NoBorder_190
+  - first:
+      213: 8412188856011326632
+    second: UI_Iron_B_NoBorder_191
+  - first:
+      213: -926322703259330777
+    second: UI_Iron_B_NoBorder_192
+  - first:
+      213: -2990873028884438799
+    second: UI_Iron_B_NoBorder_193
+  - first:
+      213: -7918697734397744708
+    second: UI_Iron_B_NoBorder_194
+  - first:
+      213: 489102806078093877
+    second: UI_Iron_B_NoBorder_195
+  - first:
+      213: 9196760057733357180
+    second: UI_Iron_B_NoBorder_196
+  - first:
+      213: 8749374591408649488
+    second: UI_Iron_B_NoBorder_197
+  - first:
+      213: 6244747626801557517
+    second: UI_Iron_B_NoBorder_198
+  - first:
+      213: -1247577063632816046
+    second: UI_Iron_B_NoBorder_199
+  - first:
+      213: 6145503132305704967
+    second: UI_Iron_B_NoBorder_200
+  - first:
+      213: -5440785814101004071
+    second: UI_Iron_B_NoBorder_201
+  - first:
+      213: -5634905049371544314
+    second: UI_Iron_B_NoBorder_202
+  - first:
+      213: 3501985685699525509
+    second: UI_Iron_B_NoBorder_203
+  - first:
+      213: -3659982620050217988
+    second: UI_Iron_B_NoBorder_204
+  - first:
+      213: -2302596201770069736
+    second: UI_Iron_B_NoBorder_205
+  - first:
+      213: -6033309095862779236
+    second: UI_Iron_B_NoBorder_206
+  - first:
+      213: -1181380554071932518
+    second: UI_Iron_B_NoBorder_207
+  - first:
+      213: 406296312065235143
+    second: UI_Iron_B_NoBorder_208
+  - first:
+      213: 7075806210841026625
+    second: UI_Iron_B_NoBorder_209
+  - first:
+      213: 8285607585163180593
+    second: UI_Iron_B_NoBorder_210
+  - first:
+      213: 4803937605968777730
+    second: UI_Iron_B_NoBorder_211
+  - first:
+      213: -2594794008948644781
+    second: UI_Iron_B_NoBorder_212
+  - first:
+      213: 2220070800847716696
+    second: UI_Iron_B_NoBorder_213
+  - first:
+      213: -655509593129984044
+    second: UI_Iron_B_NoBorder_214
+  - first:
+      213: 705418913638082638
+    second: UI_Iron_B_NoBorder_215
+  - first:
+      213: -1593795812048799753
+    second: UI_Iron_B_NoBorder_216
+  - first:
+      213: -8535978703504504694
+    second: UI_Iron_B_NoBorder_217
+  - first:
+      213: 2154642870432208751
+    second: UI_Iron_B_NoBorder_218
+  - first:
+      213: 982066492562023697
+    second: UI_Iron_B_NoBorder_219
+  - first:
+      213: -306396894117710018
+    second: UI_Iron_B_NoBorder_220
+  - first:
+      213: 6146330085927163155
+    second: UI_Iron_B_NoBorder_221
+  - first:
+      213: 5951936463219516168
+    second: UI_Iron_B_NoBorder_222
+  - first:
+      213: 2740041945609558239
+    second: UI_Iron_B_NoBorder_223
+  - first:
+      213: 5702573641947674526
+    second: UI_Iron_B_NoBorder_224
+  - first:
+      213: 8296136153093332974
+    second: UI_Iron_B_NoBorder_225
+  - first:
+      213: 3026927636027520379
+    second: UI_Iron_B_NoBorder_226
+  - first:
+      213: 1544050057675621586
+    second: UI_Iron_B_NoBorder_227
+  - first:
+      213: 4728751873135114625
+    second: UI_Iron_B_NoBorder_228
+  - first:
+      213: 1212248558859299611
+    second: UI_Iron_B_NoBorder_229
+  - first:
+      213: 8580115833079817715
+    second: UI_Iron_B_NoBorder_230
+  - first:
+      213: 2193864340044341889
+    second: UI_Iron_B_NoBorder_231
+  - first:
+      213: 6586381837118714760
+    second: UI_Iron_B_NoBorder_232
+  - first:
+      213: -5801780709594569332
+    second: UI_Iron_B_NoBorder_233
+  - first:
+      213: 506949103271514573
+    second: UI_Iron_B_NoBorder_234
+  - first:
+      213: -4749306803888366792
+    second: UI_Iron_B_NoBorder_235
+  - first:
+      213: -4969974287251146567
+    second: UI_Iron_B_NoBorder_236
+  - first:
+      213: 4090070316636893086
+    second: UI_Iron_B_NoBorder_237
+  - first:
+      213: -7372303410978935426
+    second: UI_Iron_B_NoBorder_238
+  - first:
+      213: 8590131080368129186
+    second: UI_Iron_B_NoBorder_239
+  - first:
+      213: -5289245829688804494
+    second: UI_Iron_B_NoBorder_240
+  - first:
+      213: 930496058556293801
+    second: UI_Iron_B_NoBorder_241
+  - first:
+      213: -3838525249710322130
+    second: UI_Iron_B_NoBorder_242
+  - first:
+      213: 7220277533029757478
+    second: UI_Iron_B_NoBorder_243
+  - first:
+      213: -5577372592392368853
+    second: UI_Iron_B_NoBorder_244
+  - first:
+      213: 1226721486419521770
+    second: UI_Iron_B_NoBorder_245
+  - first:
+      213: -6743905040439563999
+    second: UI_Iron_B_NoBorder_246
+  - first:
+      213: 7389298511459147415
+    second: UI_Iron_B_NoBorder_247
+  - first:
+      213: -671579848954228331
+    second: UI_Iron_B_NoBorder_248
+  - first:
+      213: 1274133669137572797
+    second: UI_Iron_B_NoBorder_249
+  - first:
+      213: 1879193819617406110
+    second: UI_Iron_B_NoBorder_250
+  - first:
+      213: -3941159630073498242
+    second: UI_Iron_B_NoBorder_251
+  - first:
+      213: 5957763283895543402
+    second: UI_Iron_B_NoBorder_252
+  - first:
+      213: -5771093306886557257
+    second: UI_Iron_B_NoBorder_253
+  - first:
+      213: 5702655826726549570
+    second: UI_Iron_B_NoBorder_254
+  - first:
+      213: -8234674534596360646
+    second: UI_Iron_B_NoBorder_255
+  - first:
+      213: -4153646117468461872
+    second: UI_Iron_B_NoBorder_256
+  - first:
+      213: -3976280296642961141
+    second: UI_Iron_B_NoBorder_257
+  - first:
+      213: 3308821057365280780
+    second: UI_Iron_B_NoBorder_258
+  - first:
+      213: -8680394926823551821
+    second: UI_Iron_B_NoBorder_259
+  - first:
+      213: 3178963420434853369
+    second: UI_Iron_B_NoBorder_260
+  - first:
+      213: 9216589333072173534
+    second: UI_Iron_B_NoBorder_261
+  - first:
+      213: -1278910553110170186
+    second: UI_Iron_B_NoBorder_262
+  - first:
+      213: 4332296720164975367
+    second: UI_Iron_B_NoBorder_263
+  - first:
+      213: -7542754961761223828
+    second: UI_Iron_B_NoBorder_264
+  - first:
+      213: -6406303698429724963
+    second: UI_Iron_B_NoBorder_265
+  - first:
+      213: -5464798595279411037
+    second: UI_Iron_B_NoBorder_266
+  - first:
+      213: 2375950942164579179
+    second: UI_Iron_B_NoBorder_267
+  - first:
+      213: -5621150050858695784
+    second: UI_Iron_B_NoBorder_268
+  - first:
+      213: -7308192478684808810
+    second: UI_Iron_B_NoBorder_269
+  - first:
+      213: -2402665144356310241
+    second: UI_Iron_B_NoBorder_270
+  - first:
+      213: -6592462057074901176
+    second: UI_Iron_B_NoBorder_271
+  - first:
+      213: 7974589596360235776
+    second: UI_Iron_B_NoBorder_272
+  - first:
+      213: -615035396747144789
+    second: UI_Iron_B_NoBorder_273
+  - first:
+      213: -959500050125840378
+    second: UI_Iron_B_NoBorder_274
+  - first:
+      213: -4696670826975877625
+    second: UI_Iron_B_NoBorder_275
+  - first:
+      213: 3997728089975261487
+    second: UI_Iron_B_NoBorder_276
+  - first:
+      213: -611663045489561833
+    second: UI_Iron_B_NoBorder_277
+  - first:
+      213: 7324269946193176913
+    second: UI_Iron_B_NoBorder_278
+  - first:
+      213: -7346366865148054606
+    second: UI_Iron_B_NoBorder_279
+  - first:
+      213: -4054351322143185484
+    second: UI_Iron_B_NoBorder_280
+  - first:
+      213: -4459644252417157161
+    second: UI_Iron_B_NoBorder_281
+  - first:
+      213: -2457252661599198149
+    second: UI_Iron_B_NoBorder_282
+  - first:
+      213: -2079167930622218893
+    second: UI_Iron_B_NoBorder_283
+  - first:
+      213: -3473730079375199327
+    second: UI_Iron_B_NoBorder_284
+  - first:
+      213: -4018165429099036396
+    second: UI_Iron_B_NoBorder_285
+  - first:
+      213: -871405758568542201
+    second: UI_Iron_B_NoBorder_286
+  - first:
+      213: -972800329092419314
+    second: UI_Iron_B_NoBorder_287
+  - first:
+      213: 810191142025240641
+    second: UI_Iron_B_NoBorder_288
+  - first:
+      213: -6058278493133014745
+    second: UI_Iron_B_NoBorder_289
+  - first:
+      213: 6060440364830684399
+    second: UI_Iron_B_NoBorder_290
+  - first:
+      213: 2164535591392326172
+    second: UI_Iron_B_NoBorder_291
+  - first:
+      213: -680804665175469597
+    second: UI_Iron_B_NoBorder_292
+  - first:
+      213: 864261209953728104
+    second: UI_Iron_B_NoBorder_293
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7218bb5edb12137c0800000000000000
+      internalID: -4093453486816263897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4934b9a117a4ac0800000000000000
+      internalID: -3870156570683534113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca5a77abdb69f5a0800000000000000
+      internalID: -6487035197098665279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d12b572d97523d50800000000000000
+      internalID: 6715526326844596696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16ae153c14ccda40800000000000000
+      internalID: 5394402079112341018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b416c3cc6ac804020800000000000000
+      internalID: 2324012055742144843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e627605fcf9b7b0800000000000000
+      internalID: -5207853364771918332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e3b1aa2bfb02c40800000000000000
+      internalID: 5485595120216260225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8fcb80483ba76e0800000000000000
+      internalID: -1838960118163769179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f8323a377c46f230800000000000000
+      internalID: 3672206621128407288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c266c296af4d700800000000000000
+      internalID: 564351182951558253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a2bc1c0f69193d0800000000000000
+      internalID: -3201611899296077156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0854e1735553870800000000000000
+      internalID: 8661923153536450766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e281a279965d52f70800000000000000
+      internalID: 9161963666439542830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8947da05209781e80800000000000000
+      internalID: -8207677270032288616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c77edb1f8137bf0800000000000000
+      internalID: -327890921315664767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0d1e768e9199af0800000000000000
+      internalID: -389251406824877847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d90cab7a1eeb110800000000000000
+      internalID: 1278707454728772979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a99c3cd0fa8b530800000000000000
+      internalID: 3871036353379146265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fade26fe63d9d030800000000000000
+      internalID: 3520077057296882419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fafa3a611e0bd530800000000000000
+      internalID: 3880710971869297393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6024625030a5f5300800000000000000
+      internalID: 243011873919091206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_22
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: decb85333c72d0300800000000000000
+      internalID: 219875676144581869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_23
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b079f51656b3b2520800000000000000
+      internalID: 2678299710013282059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3eaf58b1a13d2520800000000000000
+      internalID: 2678851924008087100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_25
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8aa4bfe472d27a0800000000000000
+      internalID: -6400416275246700382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_26
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aeec7fd708063170800000000000000
+      internalID: 8157716604935532196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_27
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d350a267bbfee070800000000000000
+      internalID: 8137718341757326294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_28
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d89b7dac6aceb9db0800000000000000
+      internalID: -4783969978039158387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_29
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98140a6263b07e050800000000000000
+      internalID: 5829640569858572681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_30
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f49b087616f7ec40800000000000000
+      internalID: 5541668442866423028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_31
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e228398a0df40740800000000000000
+      internalID: 5117493298293383910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_32
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6b1959d53179410800000000000000
+      internalID: 1483675894904108797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_33
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9f2e7160c1e0d30800000000000000
+      internalID: 4399484698483685861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_34
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 511
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb67d211a93e92bd0800000000000000
+      internalID: -2654340254505535813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_35
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 479
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b25503d578e4030800000000000000
+      internalID: 3480868396316568366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d815d1ae33563370800000000000000
+      internalID: 8301914491572263124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c374e53e459459ee0800000000000000
+      internalID: -1255016292212127940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146d44c6ef103a460800000000000000
+      internalID: 7251642017246402113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99210eb88e49b6160800000000000000
+      internalID: 7019868170687091353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d103175b0476cbf60800000000000000
+      internalID: 8051423761451266077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c55fd3f22503120800000000000000
+      internalID: 2391501764990163969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4cdee6a2132e8130800000000000000
+      internalID: 3570830117568437326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07e5eb9391f38d60800000000000000
+      internalID: 7891416588361262859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e17ccff744c39120800000000000000
+      internalID: 2419493238341399015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_45
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719160265289e34d0800000000000000
+      internalID: -3152915402786989801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_46
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd154dc8972ad820800000000000000
+      internalID: 2943708843672411592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_47
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9c94b0b519cee60800000000000000
+      internalID: 7992923258893224389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db071619d250a0f70800000000000000
+      internalID: 9154134885854703805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_49
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3963fef7bdd6280800000000000000
+      internalID: -9048334733796797489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_50
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e70a9548f564540800000000000000
+      internalID: 4991782259030785540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_51
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e289648cb3a988a0800000000000000
+      internalID: -6302326173457612063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8a4a42b2ea37c40800000000000000
+      internalID: 5508938269525846247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_53
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8063b87c3d7c9cd0800000000000000
+      internalID: -2550025590322012017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_54
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753e7b6a17b06e120800000000000000
+      internalID: 2442652430651351895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_55
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3fa9aa706ed65c00800000000000000
+      internalID: 889142482408419131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_56
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2c51088a2eea3b0800000000000000
+      internalID: -5499208881641504066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_57
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2dfad99d623c220800000000000000
+      internalID: 2504888533843432142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_58
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51cd249ac69d6b120800000000000000
+      internalID: 2429368109732387861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_59
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 917adeb62c9b363d0800000000000000
+      internalID: -3214521464326871271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_60
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 984e889eb2db78630800000000000000
+      internalID: 3929317196203353225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_61
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc783b31723364360800000000000000
+      internalID: 7153461301051885519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_62
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fdb80831b84466a0800000000000000
+      internalID: -6456956039755940359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_63
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c8830f236822880800000000000000
+      internalID: -8637193582006465400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_64
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d150de0094203f60800000000000000
+      internalID: 8011943938234536401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_65
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203c7310b29d827f0800000000000000
+      internalID: -637020568545672446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_66
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f90e163cf7ed190800000000000000
+      internalID: -7935765016242774174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_67
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6fcafbe02965e300800000000000000
+      internalID: 280746141899476842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_68
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6dd5e9dce0174ac0800000000000000
+      internalID: -3871106745247605394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_69
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e7beda7e6ef6d40800000000000000
+      internalID: 5579932346065059486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_70
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 447
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162d230e7550ba4c0800000000000000
+      internalID: -4275317546276433311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_71
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 415
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92043c7125caa5ec0800000000000000
+      internalID: -3577357485406470103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2341e4de3ec628410800000000000000
+      internalID: 1477863353925637170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f36bc233a781c2b0800000000000000
+      internalID: -5566018529451613194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_74
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b6b2d71cb8929b0800000000000000
+      internalID: -5104395039502800026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_75
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a2a41f9f6cd9710800000000000000
+      internalID: 1701735011013241377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_76
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d865abdbec4469ee0800000000000000
+      internalID: -1254739791439047027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_77
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9506cc627f233e0800000000000000
+      internalID: -2075324732254692900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_78
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40555a548131bf7d0800000000000000
+      internalID: -2883690141432064764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_79
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b550e122ad36400800000000000000
+      internalID: 316336238913477514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_80
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 566980a345d5f2d00800000000000000
+      internalID: 950080662730741349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_81
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80dbbd324b62bd940800000000000000
+      internalID: 5321889939805945096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_82
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed2213a02ac981c0800000000000000
+      internalID: -4500844111056458257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_83
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0767f814364629030800000000000000
+      internalID: 3499970237884757616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_84
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f187a705ce3c5c0800000000000000
+      internalID: -4196250597382938860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_85
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f52fa17f7a1fdbc30800000000000000
+      internalID: 4376920116581560927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_86
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e4b1da7fd805d00800000000000000
+      internalID: 959422815530602043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_87
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51d9cc4b9513c4c0800000000000000
+      internalID: -4268544265064689317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b63f654d55eed13a0800000000000000
+      internalID: -6692931418800589973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_89
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8d2a7a724640a80800000000000000
+      internalID: -8501560075089684292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_90
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4df938bb076207c0800000000000000
+      internalID: -4106606610175361718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_91
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1312e5f34f4d3750800000000000000
+      internalID: 6286267808185717532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_92
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cdfdeeb341e69af0800000000000000
+      internalID: -389876636638642743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_93
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c3c457e2840b630800000000000000
+      internalID: 3940729038322809943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_94
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f2c9c92aceeca80800000000000000
+      internalID: -8444552068116762815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_95
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c8ae0cc18de0640800000000000000
+      internalID: 5048209850336185390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_96
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5f4d20afd416220800000000000000
+      internalID: 2477347006215157152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_97
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47fb560000abac7b0800000000000000
+      internalID: -5203141910303752332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_98
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb60f095f650d510800000000000000
+      internalID: 1571851882650954744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_99
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abaa1787a37e8fa30800000000000000
+      internalID: 4249400486738897594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_100
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10362a786861ab3e0800000000000000
+      internalID: -2037291114374733055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_101
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14500e961967e320800000000000000
+      internalID: 2587152056808657948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_102
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688fa401267319470800000000000000
+      internalID: 8399555674342357126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_103
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c59c6a181d7da20800000000000000
+      internalID: 3087166424364964997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_104
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74756b6a4ad522ea0800000000000000
+      internalID: -5899049600148940985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_105
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3374979f80265a0800000000000000
+      internalID: -6529646642159209479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_106
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 383
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837dd04cadd90f380800000000000000
+      internalID: -8939471697412761800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_107
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 351
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c292c7d738e7e5f10800000000000000
+      internalID: 2260383166197672236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2518b056705883d70800000000000000
+      internalID: 9023108120243306834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_109
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b930e3414c5e21c30800000000000000
+      internalID: 4328774822172427163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_110
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71dcb9a74b3e1d980800000000000000
+      internalID: -8515775056090247913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_111
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf1a61d8eda988a0800000000000000
+      internalID: -6302314988070887485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_112
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f3a1c3bd467a990800000000000000
+      internalID: -7374814972026929254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_113
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c76ff5b1b50b68a0800000000000000
+      internalID: -6310944192008853567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_114
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8bdd1f566f0d8da0800000000000000
+      internalID: -5941075401074943091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_115
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6785b1e9ed82ae620800000000000000
+      internalID: 2804098654591998070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_116
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad807e4f86971adb0800000000000000
+      internalID: -4782407837598414630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_117
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e916db8af6d75e90800000000000000
+      internalID: -7036919521166878231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_118
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e3d9b662c73d840800000000000000
+      internalID: 5247674495272828429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_119
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c401e081fa1902d00800000000000000
+      internalID: 945916102956683340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_120
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2d7f41f7cb52890800000000000000
+      internalID: -7483367951807556906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_121
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e58e7fe4dd57650800000000000000
+      internalID: 6230128990773337703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_122
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ebd7b73fa99d6040800000000000000
+      internalID: 4642535768721972201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_123
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a004cd5cb0b5aa50800000000000000
+      internalID: 6531821157644239015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_124
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100b84ee535784f30800000000000000
+      internalID: 4560023497204084737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_125
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eeded05e775e0f10800000000000000
+      internalID: 2237822264883994342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_126
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12eb57587a0722290800000000000000
+      internalID: -7916641330162975199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_127
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2720f9b7b854eefd0800000000000000
+      internalID: -2310833093417696654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_128
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc37a4efef0ba860800000000000000
+      internalID: 7542139523969793201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_129
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b20b8bd3678936f70800000000000000
+      internalID: 9179348099120279595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_130
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fee0d24a00613610800000000000000
+      internalID: 1599164939880165108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_131
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d426b677824c9250800000000000000
+      internalID: 5952705957056619732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_132
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b6d437a08af0fc0800000000000000
+      internalID: -3526415220370216098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_133
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e49567cc9b86b670800000000000000
+      internalID: 8554178047713318119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_134
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43247d39ff170efb0800000000000000
+      internalID: -4620567875171171788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_135
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8375c3d1bcf75e2f0800000000000000
+      internalID: -944208036518668488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_136
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1981eaf272647a90800000000000000
+      internalID: -7317115248595334886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_137
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a4f1ebfd78aa480800000000000000
+      internalID: -8887141519625074051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_138
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874359570337b1a20800000000000000
+      internalID: 3034145425932498040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_139
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b69d341ff30bc3a0800000000000000
+      internalID: -6644212431163910480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_140
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a9e3fe378784050800000000000000
+      internalID: 5785006160687831659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_141
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd90554b0e261960800000000000000
+      internalID: 7572290449412496849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_142
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 319
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d3d49bdfcccea00800000000000000
+      internalID: 787229424990633336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_143
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 287
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75b2c6a4a7d2d110800000000000000
+      internalID: 1284325945926399354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fcc627bc3036c8c0800000000000000
+      internalID: -3979440183406310158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322a902c6c2198d30800000000000000
+      internalID: 4434095952991199779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_146
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70df596dffd20240800000000000000
+      internalID: 4756610435944271995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_147
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ea38611947d4290800000000000000
+      internalID: -7904533604468543903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_148
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f25064a729a3bf0800000000000000
+      internalID: -343801367682011374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_149
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66b65c809ea29f70800000000000000
+      internalID: 9192601725269620332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_150
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7dd5073fafd4fb90800000000000000
+      internalID: -7208891159877919361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_151
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ea4b95152b778d0800000000000000
+      internalID: -2848612176821440977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_152
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46bd337f4f818ff70800000000000000
+      internalID: 9221147677439548260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_153
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57defcf91104c96f0800000000000000
+      internalID: -676595399572591243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_154
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d756ec9056504980800000000000000
+      internalID: -8556744387774228524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_155
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32feeef2002900430800000000000000
+      internalID: 3747155419474095907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_156
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38413d3b350addbd0800000000000000
+      internalID: -2603748728190593917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_157
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138de0706b4097da0800000000000000
+      internalID: -5946716653117056975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_158
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc88e9214bdea9210800000000000000
+      internalID: 1340645196758419660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_159
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508f293c7dc934b20800000000000000
+      internalID: 3117507817583605765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_160
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d4d51fcf283e710800000000000000
+      internalID: 1721363505478454635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_161
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5145a8f2d98a850800000000000000
+      internalID: 6388528898934838772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_162
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9016e38100b70d40800000000000000
+      internalID: 5550598586311774367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_163
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bdf006c53b91f220800000000000000
+      internalID: 2517964321934343600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_164
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04486ea3e9c3654a0800000000000000
+      internalID: -6605025153201568704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_165
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e0db7eab4716f40800000000000000
+      internalID: 5719981347837906573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_166
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb0e44b83ba1e5d0800000000000000
+      internalID: -3034956413839471640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_167
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6f8164bbc103c50800000000000000
+      internalID: 6642841041031984835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_168
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52f4e377f9ec94a0800000000000000
+      internalID: -6585131306111929766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_169
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d0abb7c544d4360800000000000000
+      internalID: 7155450546965056815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_170
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302fba328c6dc8a70800000000000000
+      internalID: 8830669124446974467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_171
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28b2c2ec02e19ef50800000000000000
+      internalID: 6911088229423524738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_172
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20daf01d87f215dc0800000000000000
+      internalID: -3652085626870715134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_173
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1aea6fbe5fc334d0800000000000000
+      internalID: -3155950908011255268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_174
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c820614bd1a2dd350800000000000000
+      internalID: 6043032582064833164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_175
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57c3faba7a18b500800000000000000
+      internalID: 412108480329271134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_176
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e7553914eca3850800000000000000
+      internalID: 6357620605026926230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_177
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60830f337d7edb3e0800000000000000
+      internalID: -2036216545026230266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_178
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 255
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8e397eff4163560800000000000000
+      internalID: 7293039735907543230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_179
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 223
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfae4ac6dcf4603b0800000000000000
+      internalID: -5546658147350549764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8602e8b636f952e40800000000000000
+      internalID: 5631082158451728488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_181
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81466250ef46cd420800000000000000
+      internalID: 2656108922412622872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_182
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591fd4029fef00b50800000000000000
+      internalID: 6557521403393733013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_183
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da4149a9a5266cb90800000000000000
+      internalID: -7221976811162037075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_184
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122fa7736c2c53600800000000000000
+      internalID: 447477894583349793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_185
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ba52abda27634f0800000000000000
+      internalID: -849365389234820240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_186
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae053fa3ee53ee90800000000000000
+      internalID: -6997645064013541717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_187
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e4422e3a8c14ba0800000000000000
+      internalID: -6106379013538427359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_188
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f6952d09e9f0a940800000000000000
+      internalID: 5305515140385707769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_189
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b33da9a152b23c0800000000000000
+      internalID: -4383369016118133999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_190
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f200ee56c617283d0800000000000000
+      internalID: -3205875274353868753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_191
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a40e02e1391eb470800000000000000
+      internalID: 8412188856011326632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_192
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72719d4c86a0523f0800000000000000
+      internalID: -926322703259330777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_193
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0eb0993d84e76d0800000000000000
+      internalID: -2990873028884438799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_194
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb928899d522b1290800000000000000
+      internalID: -7918697734397744708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_195
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a7ee62964a9c600800000000000000
+      internalID: 489102806078093877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_196
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e92b5cb8471af70800000000000000
+      internalID: 9196760057733357180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_197
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015bdbfa5d50c6970800000000000000
+      internalID: 8749374591408649488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_198
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00787761ecc9a650800000000000000
+      internalID: 6244747626801557517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_199
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 258bd344547bfaee0800000000000000
+      internalID: -1247577063632816046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_200
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708c12fd986394550800000000000000
+      internalID: 6145503132305704967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_201
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0768be0227e74b0800000000000000
+      internalID: -5440785814101004071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_202
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605772d66bbccc1b0800000000000000
+      internalID: -5634905049371544314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_203
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b7f944d6d899030800000000000000
+      internalID: 3501985685699525509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_204
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3adcfc231253dc0800000000000000
+      internalID: -3659982620050217988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_205
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811d45444f88b00e0800000000000000
+      internalID: -2302596201770069736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_206
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9247f8d751654ca0800000000000000
+      internalID: -6033309095862779236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_207
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a910df135a4ea9fe0800000000000000
+      internalID: -1181380554071932518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_208
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8133ad75473a500800000000000000
+      internalID: 406296312065235143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_209
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140aea07240523260800000000000000
+      internalID: 7075806210841026625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_210
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13afeed13346cf270800000000000000
+      internalID: 8285607585163180593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_211
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202d8eedcc30ba240800000000000000
+      internalID: 4803937605968777730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_212
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354ed4fb8907dfbd0800000000000000
+      internalID: -2594794008948644781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_213
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851ceb481a64fce10800000000000000
+      internalID: 2220070800847716696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_214
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 191
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df50a28f7927e6f0800000000000000
+      internalID: -655509593129984044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_215
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 159
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e486d35b3c62ac900800000000000000
+      internalID: 705418913638082638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_216
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7735a3723b1e9e0800000000000000
+      internalID: -1593795812048799753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_217
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88805f389c1a8980800000000000000
+      internalID: -8535978703504504694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_218
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6790fd5644d6ed10800000000000000
+      internalID: 2154642870432208751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_219
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11529f2954001ad00800000000000000
+      internalID: 982066492562023697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_220
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37b4dde5a57fbbf0800000000000000
+      internalID: -306396894117710018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_221
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3151cf306a62c4550800000000000000
+      internalID: 6146330085927163155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_222
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803e4e7bda6899250800000000000000
+      internalID: 5951936463219516168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_223
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd85ab5d1a5960620800000000000000
+      internalID: 2740041945609558239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_224
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97fbc9838c932f40800000000000000
+      internalID: 5702573641947674526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_225
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef576d50ebc12370800000000000000
+      internalID: 8296136153093332974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_226
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75bb3ac5aec10a20800000000000000
+      internalID: 3026927636027520379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_227
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d44d23c8519d6510800000000000000
+      internalID: 1544050057675621586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_228
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1897e2d46c6ef9140800000000000000
+      internalID: 4728751873135114625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_229
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ba94a34a5c2d010800000000000000
+      internalID: 1212248558859299611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_230
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f56d6a04e1b21770800000000000000
+      internalID: 8580115833079817715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_231
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1826db16efb227e10800000000000000
+      internalID: 2193864340044341889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_232
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883bb8c7267876b50800000000000000
+      internalID: 6586381837118714760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_233
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85e6eb0f2feb7fa0800000000000000
+      internalID: -5801780709594569332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_234
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc193b3068b090700800000000000000
+      internalID: 506949103271514573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_235
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b53e0ff92171eb0800000000000000
+      internalID: -4749306803888366792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_236
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8f191c7ba170bb0800000000000000
+      internalID: -4969974287251146567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_237
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fe2896849d2c830800000000000000
+      internalID: 4090070316636893086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_238
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d233c9b1150b990800000000000000
+      internalID: -7372303410978935426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_239
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4826384b6463770800000000000000
+      internalID: 8590131080368129186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_240
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27bbea701f2d896b0800000000000000
+      internalID: -5289245829688804494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_241
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2262b3c39c9ec00800000000000000
+      internalID: 930496058556293801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_242
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e06ad6f91dabac0800000000000000
+      internalID: -3838525249710322130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_243
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622f8ff5924933460800000000000000
+      internalID: 7220277533029757478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_244
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d047a6d213992b0800000000000000
+      internalID: -5577372592392368853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_245
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0ff5441b0360110800000000000000
+      internalID: 1226721486419521770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_246
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12922a1b816d862a0800000000000000
+      internalID: -6743905040439563999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_247
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e58d298df0c8660800000000000000
+      internalID: 7389298511459147415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_248
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591d5c08fa11ea6f0800000000000000
+      internalID: -671579848954228331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_249
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db36f4942d1aea110800000000000000
+      internalID: 1274133669137572797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_250
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ca76292dc341a10800000000000000
+      internalID: 1879193819617406110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_251
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75fb5692303e49c0800000000000000
+      internalID: -3941159630073498242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_252
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a666570242a3ea250800000000000000
+      internalID: 5957763283895543402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_253
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b17465c635f8efa0800000000000000
+      internalID: -5771093306886557257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_254
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 248f85ca247e32f40800000000000000
+      internalID: 5702655826726549570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_255
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36cd64d32f88bd80800000000000000
+      internalID: -8234674534596360646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_256
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4ac95fcd84b56c0800000000000000
+      internalID: -4153646117468461872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_257
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b01263f232a61d8c0800000000000000
+      internalID: -3976280296642961141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_258
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c080795883b4bed20800000000000000
+      internalID: 3308821057365280780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_259
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc44940eca098780800000000000000
+      internalID: -8680394926823551821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_260
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fdeaf45362fd1c20800000000000000
+      internalID: 3178963420434853369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_261
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed9db66ba27e7ef70800000000000000
+      internalID: 9216589333072173534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_262
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5be5eb0a5604ee0800000000000000
+      internalID: -1278910553110170186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_263
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703f50bd9e86f1c30800000000000000
+      internalID: 4332296720164975367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_264
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b38645350c25790800000000000000
+      internalID: -7542754961761223828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_265
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd633d37abc3817a0800000000000000
+      internalID: -6406303698429724963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_266
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8215f91a22924b0800000000000000
+      internalID: -5464798595279411037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_267
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6379772bc219f020800000000000000
+      internalID: 2375950942164579179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_268
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89306659fc9adf1b0800000000000000
+      internalID: -5621150050858695784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_269
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6997fcd39a5149a90800000000000000
+      internalID: -7308192478684808810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_270
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13fd64f7c408aed0800000000000000
+      internalID: -2402665144356310241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_271
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f3fccffaed284a0800000000000000
+      internalID: -6592462057074901176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_272
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00bd3989cfe6bae60800000000000000
+      internalID: 7974589596360235776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_273
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba15894b094f677f0800000000000000
+      internalID: -615035396747144789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_274
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600a74eb9cb2fa2f0800000000000000
+      internalID: -959500050125840378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_275
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 706a92354c212deb0800000000000000
+      internalID: -4696670826975877625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_276
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2983975488ca7730800000000000000
+      internalID: 3997728089975261487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_277
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f6c5b63bfe287f0800000000000000
+      internalID: -611663045489561833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_278
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 159e9edd5b805a560800000000000000
+      internalID: 7324269946193176913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_279
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3762542467c0a90800000000000000
+      internalID: -7346366865148054606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_280
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5250114fc0cb7c0800000000000000
+      internalID: -4054351322143185484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_281
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d7101e3e292c12c0800000000000000
+      internalID: -4459644252417157161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_282
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b342ffd29b516edd0800000000000000
+      internalID: -2457252661599198149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_283
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37de0e278cf4523e0800000000000000
+      internalID: -2079167930622218893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_284
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3704db5e4dacfc0800000000000000
+      internalID: -3473730079375199327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_285
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4110cc5d4db9c38c0800000000000000
+      internalID: -4018165429099036396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_286
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 63
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 700da49541528e3f0800000000000000
+      internalID: -871405758568542201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_287
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01301b314bef72f0800000000000000
+      internalID: -972800329092419314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_288
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14025941d806e3b00800000000000000
+      internalID: 810191142025240641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_289
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729fa620fcbaceba0800000000000000
+      internalID: -6058278493133014745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_290
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4fb28f6620b1450800000000000000
+      internalID: 6060440364830684399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_291
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1231a4f6a9f90e10800000000000000
+      internalID: 2164535591392326172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_292
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e199ca93cb4d86f0800000000000000
+      internalID: -680804665175469597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Iron_B_NoBorder_293
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 866f07ccdf87efb00800000000000000
+      internalID: 864261209953728104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
