@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public enum characterType { Player, Enemy }
@@ -10,7 +11,8 @@ public class CharacterData : ScriptableObject
     public string characterName;
     public characterType characterType;
     public Sprite characterSprite;
-    public Animator characterAnimation;
+    public RuntimeAnimatorController characterAnimation;
+    public List<SkillBase> skillList;
     public float ATK;
     public float HP;
     public float DEF;
