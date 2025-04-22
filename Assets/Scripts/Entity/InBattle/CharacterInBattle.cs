@@ -46,6 +46,7 @@ public class CharacterInBattle : MonoBehaviour
         this.CD = characterData.CD;
         this.DC = characterData.DC;
         this.PC = characterData.PC;
+        this.skillList = characterData.skillList;
     }
 
     public void ApplyStatusEffect(StatusEffect effect)
