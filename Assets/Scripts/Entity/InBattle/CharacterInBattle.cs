@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class CharacterInBattle : MonoBehaviour
 {
-    public CharacterData characterData {  get; private set; }
-    public string charName {  get; private set; }
+    public CharacterData characterData { get; private set; }
+    public string charName { get; private set; }
     public Sprite characterSprite { get; private set; }
-    public RuntimeAnimatorController characterAnimation {  get; private set; } 
+    public RuntimeAnimatorController characterAnimation { get; private set; }
     public float ATK { get; private set; }
     public float HP { get; private set; }
     public float DEF { get; private set; }
@@ -46,6 +46,34 @@ public class CharacterInBattle : MonoBehaviour
         this.CD = characterData.CD;
         this.DC = characterData.DC;
         this.PC = characterData.PC;
+    }
+
+    public void ApplyStatusEffect(StatusEffect effect)
+    {
+        effect.OnApply(this);
+        activeStatusEffect.Add(effect);
+    }
+
+    public void StartTurn()
+    {
+        foreach(var effect in activeStatusEffect)
+        {
+            effect.OnTurn(this);
+        }    
+    }
+
+    public void OnEndTurn()
+    {
+        for (int i = activeStatusEffect.Count - 1; i >= 0; i--)
+        {
+            activeStatusEffect[i].Tick(this);
+
+            if (activeStatusEffect[i].duration <= 0)
+            {
+                activeStatusEffect[i].OnRemove(this);
+                activeStatusEffect.RemoveAt(i);
+            }
+        }
     }
 
     public void TakeDamage(int damage)
