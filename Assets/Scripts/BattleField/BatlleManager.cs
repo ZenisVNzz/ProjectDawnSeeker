@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 public class BattleManager : MonoBehaviour
 {
-    public List<BattleCharacter> TeamPlayer = new List<BattleCharacter>();
-    public List<BattleCharacter> TeamAI = new List<BattleCharacter>();
+    public List<CharacterInBattle> TeamPlayer = new List<CharacterInBattle>();
+    public List<CharacterInBattle> TeamAI = new List<CharacterInBattle>();
 
-    private BattleCharacter selectedCharacter = null;
+    private CharacterInBattle selectedCharacter = null;
     public bool BossLevel = false;
     private bool isPlayerTurn = true;
     private int NormalMaxTurn = 15;
@@ -19,7 +20,7 @@ public class BattleManager : MonoBehaviour
         EnablePlayerTeam(true);
     }
 
-    public void OnCharacterClicked(BattleCharacter character)
+    public void OnCharacterClicked(CharacterInBattle character)
     {
         if (!character.isAlive) return;
 
@@ -28,12 +29,12 @@ public class BattleManager : MonoBehaviour
             if (TeamPlayer.Contains(character))
             {
                 selectedCharacter = character;
-                Debug.Log("Đã chọn: " + character.characterName);
+                Debug.Log("Đã chọn: " + character.charName);
             }
             else if (selectedCharacter != null && TeamAI.Contains(character))
             {
                 selectedCharacter.Attack(character, selectedCharacter);
-                Debug.Log(selectedCharacter.characterName + " tấn công " + character.characterName);
+                Debug.Log(selectedCharacter.charName + " tấn công " + character.charName);
 
                 selectedCharacter = null;
                 isPlayerTurn = false;
@@ -45,23 +46,23 @@ public class BattleManager : MonoBehaviour
 
     void EnemyTurn()
     {
-        BattleCharacter enemy = GetFirstAlive(TeamAI);
-        BattleCharacter target = GetFirstAlive(TeamPlayer);
+        CharacterInBattle enemy = GetFirstAlive(TeamAI);
+        CharacterInBattle target = GetFirstAlive(TeamPlayer);
 
         if (enemy != null && target != null)
         {
             enemy.Attack(target, enemy);
-            Debug.Log(enemy.characterName + " (máy) tấn công " + target.characterName);
+            Debug.Log(enemy.charName + " (máy) tấn công " + target.charName);
         }
 
         CheckWinLose();
-        NormalTurn++;
-        BossTurn++;
+        NormalCurrentTurn++;
+        BossCurrentTurn++;
         isPlayerTurn = true;
         EnablePlayerTeam(true);
     }
 
-    BattleCharacter GetFirstAlive(List<BattleCharacter> team)
+    CharacterInBattle GetFirstAlive(List<CharacterInBattle> team)
     {
         foreach (var c in team)
         {
@@ -94,7 +95,7 @@ public class BattleManager : MonoBehaviour
                 EnablePlayerTeam(false);
             }
         }
-        else if (NormalTurn >= NormalMaxTurn)
+        else if (NormalCurrentTurn >= NormalMaxTurn)
         {
             if(GetTotalHP(TeamPlayer) >= GetTotalHP(TeamAI))
             {
@@ -117,9 +118,9 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    int GetTotalHP(List<BattleCharacter> team)
+    float GetTotalHP(List<CharacterInBattle> team)
     {
-        int totalHP = 0;
+        float totalHP = 0;
         foreach (var character in team)
         {
             totalHP += character.HP;

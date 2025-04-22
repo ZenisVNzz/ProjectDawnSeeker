@@ -7,12 +7,15 @@ public class CharacterInBattle : MonoBehaviour
 {
     public CharacterData characterData { get; private set; }
     public string charName { get; private set; }
+    public characterType characterType;
     public Sprite characterSprite { get; private set; }
     public RuntimeAnimatorController characterAnimation { get; private set; }
     public float ATK { get; private set; }
     public float HP { get; private set; }
+    public float currentHP;
     public float DEF { get; private set; }
     public float MP { get; private set; }
+    public float currentMP;
     public float CR { get; private set; }
     public float CD { get; private set; }
     public float DC { get; private set; }
@@ -49,6 +52,82 @@ public class CharacterInBattle : MonoBehaviour
         this.skillList = characterData.skillList;
     }
 
+    private SpriteRenderer sr;
+    private BattleManager battleManager;
+    private bool isClickable = false;
+
+    void Start()
+    {
+        currentHP = HP;
+        sr = GetComponent<SpriteRenderer>(); // để thay đổi màu
+        battleManager = FindObjectOfType<BattleManager>(); // tìm script quản lý trận đấu
+    }
+
+    void OnMouseDown()
+    {
+        if (isClickable && isAlive)
+        {
+            battleManager.OnCharacterClicked(this); // Gọi hàm từ BattleManager khi click vào nhân vật
+        }
+    }
+
+    public void SetClickable(bool value)
+    {
+        isClickable = value;
+        if (characterType == characterType.Player)
+            sr.color = value ? Color.cyan : Color.gray;
+        else if (characterType == characterType.Enemy)
+            sr.color = value ? Color.red : Color.gray;
+    }
+
+    public void TakeDamage(float damage, CharacterInBattle attacker, CharacterInBattle target)
+    {
+        if (!isAlive || attacker == null || !attacker.isAlive)
+        {
+            if (UnityEngine.Random.value < PC)
+            {
+                Attack(attacker, target);
+                Debug.Log(charName + " đã phản đòn");
+                return; // Không nhận sát thương
+            }
+            else if (UnityEngine.Random.value < DC)
+            {
+                Debug.Log(charName + " đã né đòn");
+                return;
+            }
+        }
+        currentHP -= (damage - DEF);
+        if (currentHP <= 0)
+        {
+            currentHP = 0;
+            isAlive = false;
+            Die();
+        }
+    }
+
+    public void TakeDamagePercent(int Percent)
+    {
+        float amount = HP * (Percent / 100);
+        HP -= amount;
+        if (HP <= 0)
+        {
+            Die();
+        }
+    }
+
+    public void Attack(CharacterInBattle target, CharacterInBattle attacker)
+    {
+        float damage = ATK;
+        if (isAlive && target != null && target.isAlive)
+        {
+            if (UnityEngine.Random.value < CR)
+            {
+                damage = ATK * CD;
+            }
+            target.TakeDamage(damage, attacker, target);
+        }
+    }
+
     public void ApplyStatusEffect(StatusEffect effect)
     {
         effect.OnApply(this);
@@ -57,10 +136,10 @@ public class CharacterInBattle : MonoBehaviour
 
     public void StartTurn()
     {
-        foreach(var effect in activeStatusEffect)
+        foreach (var effect in activeStatusEffect)
         {
             effect.OnTurn(this);
-        }    
+        }
     }
 
     public void OnEndTurn()
@@ -77,35 +156,16 @@ public class CharacterInBattle : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
-    {
-        HP -= damage;
-        if (HP <= 0)
-        {
-            Die();
-        }
-    }
-
-    public void TakeDamagePercent(int Percent)
-    {
-        float amount = HP * (Percent / 100);
-        HP -= amount;
-        if (HP <= 0)
-        {
-            Die();
-        }
-    }
-
     public void Heal(int healAmount)
     {
         if (isDeepWound)
         {
             healAmount = healAmount / 2;
-        }    
-        HP += healAmount;
-        if (HP > characterData.HP)
+        }
+        currentHP += healAmount;
+        if (currentHP > (int)characterData.HP)
         {
-            HP = characterData.HP;
+            currentHP = (int)characterData.HP;
         }
     }
 
@@ -114,12 +174,12 @@ public class CharacterInBattle : MonoBehaviour
         if (isMPRecoveryAble)
         {
             float amount = characterData.MP * (percentAmount / 100);
-            MP += amount;
-            if (MP > characterData.MP)
+            currentMP += amount;
+            if (currentMP > characterData.MP)
             {
-                MP = characterData.MP;
+                currentMP = characterData.MP;
             }
-        }          
+        }
     }
 
     public void IncreaseATK(int percentAmount)
