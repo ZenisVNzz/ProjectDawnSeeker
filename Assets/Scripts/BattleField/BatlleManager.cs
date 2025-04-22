@@ -7,27 +7,16 @@ public class BattleManager : MonoBehaviour
     public List<BattleCharacter> TeamAI = new List<BattleCharacter>();
 
     private BattleCharacter selectedCharacter = null;
+    public bool BossLevel = false;
     private bool isPlayerTurn = true;
-
-    public bool isAutoBattle = false;
-
-    public bool isAuto = false;
-
-    public void ToggleAutoMode()
-    {
-        isAuto = !isAuto;
-        Debug.Log("Chế độ Auto: " + isAuto);
-    }
-
+    private int NormalMaxTurn = 15;
+    private int NormalCurrentTurn = 1;
+    private int BossMaxTurn = 30;
+    private int BossCurrentTurn = 1;
 
     void Start()
     {
         EnablePlayerTeam(true);
-
-        if (isAutoBattle)
-        {
-            Invoke("AutoPlayerTurn", 1f);
-        }
     }
 
     public void OnCharacterClicked(BattleCharacter character)
@@ -66,15 +55,10 @@ public class BattleManager : MonoBehaviour
         }
 
         CheckWinLose();
+        NormalTurn++;
+        BossTurn++;
         isPlayerTurn = true;
-        if (isAutoBattle)
-        {
-            AutoPlayerTurn(); //Invoke("AutoPlayerTurn", 1.5f); // gọi lại auto sau khi máy đánh
-        }
-        else
-        {
-            EnablePlayerTeam(true);
-        }
+        EnablePlayerTeam(true);
     }
 
     BattleCharacter GetFirstAlive(List<BattleCharacter> team)
@@ -98,12 +82,31 @@ public class BattleManager : MonoBehaviour
         {
             character.SetClickable(enable); // Có thể chỉnh thành false nếu không muốn click địch luôn
         }
-
-        CheckWinLose();
     }
 
     void CheckWinLose()
     {
+        if (BossLevel == true)
+        {
+            if (BossCurrentTurn >= BossMaxTurn)
+            {
+                Debug.Log("Thất Bại!");
+                EnablePlayerTeam(false);
+            }
+        }
+        else if (NormalTurn >= NormalMaxTurn)
+        {
+            if(GetTotalHP(TeamPlayer) >= GetTotalHP(TeamAI))
+            {
+                Debug.Log("Chiến Thắng!");
+            }
+            else
+            {
+                Debug.Log("Thất Bại!");
+
+            }
+            EnablePlayerTeam(false);
+        }
         if (GetFirstAlive(TeamPlayer) == null)
         {
             Debug.Log("Thất Bại!");
@@ -114,20 +117,13 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    void AutoPlayerTurn()
+    int GetTotalHP(List<BattleCharacter> team)
     {
-        if (!isPlayerTurn) return;
-
-        BattleCharacter playerChar = GetFirstAlive(TeamPlayer);
-        BattleCharacter target = GetFirstAlive(TeamAI);
-
-        if (playerChar != null && target != null)
+        int totalHP = 0;
+        foreach (var character in team)
         {
-            playerChar.Attack(target, playerChar);
-            Debug.Log(playerChar.characterName + " (auto) tấn công " + target.characterName);
+            totalHP += character.HP;
         }
-
-        isPlayerTurn = false;
-        Invoke("EnemyTurn", 1.5f);
+        return totalHP;
     }
 }
