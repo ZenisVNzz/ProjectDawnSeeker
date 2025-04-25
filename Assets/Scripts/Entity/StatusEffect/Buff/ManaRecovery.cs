@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "NewManaRecovery", menuName = "StatusEffect/ManaRecovery")]
 public class ManaRecovery : StatusEffect
 {
     public int MPPercentAmount;

@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ef0f3323c8b53147a892c06f8e228ed, type: 3}
-  m_Name: Knight
+  m_Name: Archer
   m_EditorClassIdentifier: 
-  characterID: 100001
-  characterName: Knight
+  characterID: 100002
+  characterName: Archer
   characterType: 0
-  characterSprite: {fileID: -5711848221618334454, guid: 12aaf5d75bfedee4ebadf491b95b4012, type: 3}
-  characterAnimation: {fileID: 9100000, guid: e7de961809d85ae44814d06b620aff2e, type: 2}
+  characterSprite: {fileID: -7132172409892320828, guid: 7faeb3d6dd4d76e408b48653971d6259, type: 3}
+  characterAnimation: {fileID: 9100000, guid: 15e4d1c589805b144972eb24c85c11f4, type: 2}
   skillList: []
-  ATK: 7
-  HP: 15
-  DEF: 6
-  MP: 4
-  CR: 10
-  CD: 120
-  DC: 4
-  PC: 10
+  ATK: 9
+  HP: 14
+  DEF: 3
+  MP: 3
+  CR: 12
+  CD: 140
+  DC: 7
+  PC: 5
