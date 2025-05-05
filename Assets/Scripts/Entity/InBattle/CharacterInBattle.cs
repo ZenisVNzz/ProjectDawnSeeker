@@ -55,7 +55,11 @@ public class CharacterInBattle : MonoBehaviour
     private SpriteRenderer sr;
     private BattleManager battleManager;
     public BattleUI battleUI;
+    public DmgPopUp dmgPopUp;
     private bool isClickable = false;
+
+    private float savedDmg;
+    private Vector3 targetPosition;
 
     void Start()
     {
@@ -121,6 +125,7 @@ public class CharacterInBattle : MonoBehaviour
 
     public void Attack(CharacterInBattle target, CharacterInBattle attacker)
     {
+        AttackState();
         float damage = ATK;
         if (isAlive && target != null && target.isAlive)
         {
@@ -129,8 +134,8 @@ public class CharacterInBattle : MonoBehaviour
                 damage = ATK * CD;
             }
             target.TakeDamage(damage, attacker, target);
-            AttackState();
-            Debug.Log($"{charName} tấn công {target.charName} với sát thương {damage}");
+            targetPosition = target.transform.position;
+            savedDmg = damage - target.DEF;
         }  
     }
 
@@ -199,13 +204,14 @@ public class CharacterInBattle : MonoBehaviour
     public void AttackState()
     {
         Animator animator = GetComponent<Animator>();
-        animator.runtimeAnimatorController = characterAnimation;
-        battleUI.RefreshBattleUI();
+        animator.runtimeAnimatorController = characterAnimation;  
         animator.Play("Attack01");
     }
 
     public void OnAttackHit()
     {
+        battleUI.RefreshBattleUI();
+        dmgPopUp.ShowDmgPopUp(savedDmg, targetPosition);
     }    
 
     public void OnAttackEnd()
