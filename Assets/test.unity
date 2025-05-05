@@ -348,6 +348,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430865118}
   m_CullTransparentMesh: 1
+--- !u!1 &440414057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 440414059}
+  - component: {fileID: 440414058}
+  m_Layer: 0
+  m_Name: Initialize
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &440414058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440414057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a55584076d5f940b895d895606d5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCharacter: {fileID: 11400000, guid: 666e1ad216a14db409314d65dac8d327, type: 2}
+  enemyCharacter: {fileID: 11400000, guid: c8339f5a4fbd2014bbdbd39b19184a57, type: 2}
+  playerCharacterInBattle: {fileID: 554530855}
+  enemyCharacterInBattle: {fileID: 1172855266}
+--- !u!4 &440414059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440414057}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.33172315, y: -1.247663, z: 0.03971289}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &453254591
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,6 +557,7 @@ GameObject:
   - component: {fileID: 554530852}
   - component: {fileID: 554530853}
   - component: {fileID: 554530854}
+  - component: {fileID: 554530855}
   m_Layer: 0
   m_Name: Player_1
   m_TagString: Untagged
@@ -623,6 +672,30 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!114 &554530855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554530851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3cd4873d5ee02140a21ac969723f6fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterType: 0
+  currentHP: 0
+  currentMP: 0
+  isAlive: 1
+  isActionAble: 1
+  isLifeSteal: 0
+  isAggroUp: 0
+  isBleeding: 0
+  isMPRecoveryAble: 1
+  isDeepWound: 0
+  isSilent: 0
+  activeStatusEffect: []
 --- !u!1 &587159866
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,9 +726,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TeamPlayer:
-  - {fileID: 0}
+  - {fileID: 554530855}
   TeamAI:
-  - {fileID: 0}
+  - {fileID: 1172855266}
   BossLevel: 0
 --- !u!4 &587159868
 Transform:
@@ -1155,6 +1228,7 @@ GameObject:
   - component: {fileID: 1172855263}
   - component: {fileID: 1172855264}
   - component: {fileID: 1172855265}
+  - component: {fileID: 1172855266}
   m_Layer: 0
   m_Name: AI_1
   m_TagString: Untagged
@@ -1269,6 +1343,30 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!114 &1172855266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172855262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3cd4873d5ee02140a21ac969723f6fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterType: 1
+  currentHP: 0
+  currentMP: 0
+  isAlive: 1
+  isActionAble: 1
+  isLifeSteal: 0
+  isAggroUp: 0
+  isBleeding: 0
+  isMPRecoveryAble: 1
+  isDeepWound: 0
+  isSilent: 0
+  activeStatusEffect: []
 --- !u!1 &1685652047
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,3 +1737,4 @@ SceneRoots:
   - {fileID: 2044974005}
   - {fileID: 1725231605}
   - {fileID: 587159868}
+  - {fileID: 440414059}

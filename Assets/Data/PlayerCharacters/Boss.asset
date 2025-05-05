@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ef0f3323c8b53147a892c06f8e228ed, type: 3}
-  m_Name: Priest
+  m_Name: Boss
   m_EditorClassIdentifier: 
-  characterID: 100003
-  characterName: Priest
-  characterType: 0
-  characterSprite: {fileID: -4749681873034518491, guid: f878d6cc18d8b774dbc73bc3e78ea8b1, type: 3}
-  characterAnimation: {fileID: 9100000, guid: 0d7008f66d0f66446b2266e7103f1564, type: 2}
+  characterID: 100004
+  characterName: Boss
+  characterType: 1
+  characterSprite: {fileID: -855298285791758126, guid: 2020c0d778cbdb4479c00951efd5cd4f, type: 3}
+  characterAnimation: {fileID: 9100000, guid: 15e4d1c589805b144972eb24c85c11f4, type: 2}
   skillList: []
-  ATK: 5
-  HP: 14
-  DEF: 3
-  MP: 6
-  CR: 0.08
+  ATK: 1
+  HP: 25
+  DEF: 1
+  MP: 999
+  CR: 0.1
   CD: 1.1
-  DC: 3
-  PC: 0
+  DC: 10
+  PC: 10

@@ -125,7 +125,8 @@ public class CharacterInBattle : MonoBehaviour
                 damage = ATK * CD;
             }
             target.TakeDamage(damage, attacker, target);
-        }
+            Debug.Log($"{charName} tấn công {target.charName} với sát thương {damage}");
+        }  
     }
 
     public void ApplyStatusEffect(StatusEffect effect, int duration)
