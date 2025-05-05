@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5430849368e5c647bf32666050816ce, type: 3}
+  m_Name: DoubleSlash
+  m_EditorClassIdentifier: 
+  ID: 300003
+  skillName: "Song k\xEDch"
+  description: "Ch\xE9m hai ph\xE1t li\xEAn ti\u1EBFp, g\xE2y s\xE1t th\u01B0\u01A1ng
+    kh\xE1 v\xE0 khi\u1EBFn m\u1EE5c ti\xEAu b\u1ECB ch\u1EA3y m\xE1u, \u0111\u1ED3ng
+    th\u1EDDi t\u0103ng s\u1EE9c t\u1EA5n c\xF4ng trong v\xF2ng 2 l\u01B0\u1EE3t."
+  icon: {fileID: 0}
+  mpCost: 1
+  bleeding: {fileID: 11400000, guid: 091c7ea854006a54e99a2ca3c8771383, type: 2}
+  atkUP: {fileID: 11400000, guid: 94ec968db9241264fa351737f61c1ec9, type: 2}

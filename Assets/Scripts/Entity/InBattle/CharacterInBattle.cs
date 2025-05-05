@@ -128,9 +128,10 @@ public class CharacterInBattle : MonoBehaviour
         }
     }
 
-    public void ApplyStatusEffect(StatusEffect effect)
+    public void ApplyStatusEffect(StatusEffect effect, int duration)
     {
         effect.OnApply(this);
+        effect.duration = duration;
         activeStatusEffect.Add(effect);
     }
 
