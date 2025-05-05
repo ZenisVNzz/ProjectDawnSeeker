@@ -54,13 +54,17 @@ public class CharacterInBattle : MonoBehaviour
 
     private SpriteRenderer sr;
     private BattleManager battleManager;
+    public BattleUI battleUI;
     private bool isClickable = false;
 
     void Start()
     {
         currentHP = HP;
+        currentMP = MP;
         sr = GetComponent<SpriteRenderer>(); // để thay đổi màu
         battleManager = FindObjectOfType<BattleManager>(); // tìm script quản lý trận đấu
+        IdleState(); // trạng thái idle khi bắt đầu
+        battleUI.RefreshBattleUI();
     }
 
     void OnMouseDown()
@@ -125,6 +129,7 @@ public class CharacterInBattle : MonoBehaviour
                 damage = ATK * CD;
             }
             target.TakeDamage(damage, attacker, target);
+            AttackState();
             Debug.Log($"{charName} tấn công {target.charName} với sát thương {damage}");
         }  
     }
@@ -183,6 +188,30 @@ public class CharacterInBattle : MonoBehaviour
             }
         }
     }
+
+    public void IdleState()
+    {
+        Animator animator = GetComponent<Animator>();
+        animator.runtimeAnimatorController = characterAnimation;
+        animator.Play("Idle");
+    }
+
+    public void AttackState()
+    {
+        Animator animator = GetComponent<Animator>();
+        animator.runtimeAnimatorController = characterAnimation;
+        battleUI.RefreshBattleUI();
+        animator.Play("Attack01");
+    }
+
+    public void OnAttackHit()
+    {
+    }    
+
+    public void OnAttackEnd()
+    {
+        IdleState();
+    }    
 
     public void IncreaseATK(int percentAmount)
     {
