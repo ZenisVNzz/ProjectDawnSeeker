@@ -15,5 +15,7 @@ public class Bash : SkillBase
         {
             target.ApplyStatusEffect(paralysis, 1);
         }
+        user.savedDmg = damage - target.DEF;
+        base.DoAction(user, target);
     }
 }

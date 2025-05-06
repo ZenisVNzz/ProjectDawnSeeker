@@ -3,17 +3,17 @@ using UnityEngine;
 
 public class InitializeCharacter : MonoBehaviour
 {
-    public CharacterData playerCharacter;
+    public List<CharacterData> playerCharacter;
     public CharacterData enemyCharacter;
     public List<CharacterInBattle> playerCharacterInBattle;
     public CharacterInBattle enemyCharacterInBattle;
 
     void Awake()
     {
-        foreach (CharacterInBattle character in playerCharacterInBattle)
+        for (int i = 0; i < playerCharacterInBattle.Count; i++)
         {
-            character.Initialize(playerCharacter);
-        }
+            playerCharacterInBattle[i].Initialize(playerCharacter[i]);
+        }    
         enemyCharacterInBattle.Initialize(enemyCharacter);
     }
 }

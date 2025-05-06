@@ -2,6 +2,14 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
+
+public enum State
+{
+    Idle,
+    Attack,
+    Dead
+}
 
 public class CharacterInBattle : MonoBehaviour
 {
@@ -12,7 +20,7 @@ public class CharacterInBattle : MonoBehaviour
     public RuntimeAnimatorController characterAnimation { get; private set; }
     public float ATK { get; private set; }
     public float HP { get; private set; }
-    public float currentHP;
+    public float currentHP = 1;
     public float DEF { get; private set; }
     public float MP { get; private set; }
     public float currentMP;
@@ -33,7 +41,7 @@ public class CharacterInBattle : MonoBehaviour
 
     public List<StatusEffect> activeStatusEffect = new List<StatusEffect>();
 
-    public event Action OnDeath;
+    public event Action<CharacterInBattle> OnDeath;
 
     public void Initialize(CharacterData characterData) //Hàm khởi tạo
     {
@@ -56,19 +64,25 @@ public class CharacterInBattle : MonoBehaviour
     private BattleManager battleManager;
     public BattleUI battleUI;
     public DmgPopUp dmgPopUp;
+    private Animator animator;
     private bool isClickable = false;
 
-    private float savedDmg;
+    public float savedDmg;
     private Vector3 targetPosition;
+    public CharacterInBattle currentTarget;
+    public State currentState;
 
     void Start()
     {
+        animator = GetComponent<Animator>();
+        animator.runtimeAnimatorController = characterAnimation;
         currentHP = HP;
         currentMP = MP;
         sr = GetComponent<SpriteRenderer>(); // để thay đổi màu
         battleManager = FindObjectOfType<BattleManager>(); // tìm script quản lý trận đấu
         IdleState(); // trạng thái idle khi bắt đầu
         battleUI.RefreshBattleUI();
+        currentState = State.Idle;    
     }
 
     void OnMouseDown()
@@ -82,14 +96,15 @@ public class CharacterInBattle : MonoBehaviour
     public void SetClickable(bool value)
     {
         isClickable = value;
-        if (characterType == characterType.Player)
+        /*if (characterType == characterType.Player)
             sr.color = value ? Color.cyan : Color.gray;
         else if (characterType == characterType.Enemy)
-            sr.color = value ? Color.red : Color.gray;
+            sr.color = value ? Color.red : Color.gray;*/
     }
 
     public void TakeDamage(float damage, CharacterInBattle attacker, CharacterInBattle target)
     {
+        float totaldamage = damage - DEF;
         if (!isAlive || attacker == null || !attacker.isAlive)
         {
             if (UnityEngine.Random.value < PC)
@@ -104,7 +119,11 @@ public class CharacterInBattle : MonoBehaviour
                 return;
             }
         }
-        currentHP -= (damage - DEF);
+        if (totaldamage <= 0)
+        {
+            totaldamage = 0;
+        }
+        currentHP -= totaldamage;
         if (currentHP <= 0)
         {
             currentHP = 0;
@@ -115,17 +134,35 @@ public class CharacterInBattle : MonoBehaviour
 
     public void TakeDamagePercent(int Percent)
     {
-        float amount = HP * (Percent / 100);
-        HP -= amount;
-        if (HP <= 0)
+        if (isAlive)
         {
+            float amount = characterData.HP * (Percent / 100f);
+            currentHP -= amount;
+            if (HP <= 0)
+            {
+                animator.Play("Death");
+                Die();
+            }
+            Debug.Log($"{charName} nhận {amount} damage dot");
+            dmgPopUp.ShowDmgPopUp(amount, transform.position);
+            battleUI.RefreshBattleUI();
+        }         
+    }
+
+    public void TakeBleedingDamage(float damage)
+    {
+        currentHP -= damage;
+        if (currentHP <= 0)
+        {
+            currentHP = 0;
+            isAlive = false;
             Die();
         }
+        dmgPopUp.ShowDmgPopUp(damage, transform.position);
     }
 
     public void Attack(CharacterInBattle target, CharacterInBattle attacker)
     {
-        AttackState();
         float damage = ATK;
         if (isAlive && target != null && target.isAlive)
         {
@@ -134,8 +171,8 @@ public class CharacterInBattle : MonoBehaviour
                 damage = ATK * CD;
             }
             target.TakeDamage(damage, attacker, target);
-            targetPosition = target.transform.position;
             savedDmg = damage - target.DEF;
+            currentTarget = target;
         }  
     }
 
@@ -144,6 +181,7 @@ public class CharacterInBattle : MonoBehaviour
         effect.OnApply(this);
         effect.duration = duration;
         activeStatusEffect.Add(effect);
+        Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
     }
 
     public void StartTurn()
@@ -152,6 +190,12 @@ public class CharacterInBattle : MonoBehaviour
         {
             effect.OnTurn(this);
         }
+        currentMP++;
+        if (currentMP > characterData.MP)
+        {
+            currentMP = characterData.MP;
+        }
+        battleUI.RefreshBattleUI();
     }
 
     public void OnEndTurn()
@@ -196,27 +240,59 @@ public class CharacterInBattle : MonoBehaviour
 
     public void IdleState()
     {
-        Animator animator = GetComponent<Animator>();
-        animator.runtimeAnimatorController = characterAnimation;
         animator.Play("Idle");
+        currentState = State.Idle;
     }
 
-    public void AttackState()
+    public void AttackState(AnimationClip attackAnimation)
     {
-        Animator animator = GetComponent<Animator>();
-        animator.runtimeAnimatorController = characterAnimation;  
-        animator.Play("Attack01");
+        animator.Play(attackAnimation.name);
+        currentState = State.Attack;
     }
 
     public void OnAttackHit()
     {
         battleUI.RefreshBattleUI();
+        targetPosition = currentTarget.transform.position;
+        if (savedDmg < 0)
+        {
+            savedDmg = 0;
+        }
         dmgPopUp.ShowDmgPopUp(savedDmg, targetPosition);
-    }    
+        currentTarget.OnTakeHit();
+        if (CheckIfDeath())
+        {
+            animator.Play("Death");
+        }
+    }
+
+    public void OnTakeHit()
+    {
+        if (CheckIfDeath())
+        {
+            animator.Play("Death");
+        }
+        else
+        {
+            animator.Play("Hurt");
+        }          
+    }
 
     public void OnAttackEnd()
     {
         IdleState();
+    }
+
+    public bool CheckIfDeath()
+    {
+        if (currentHP <= 0)
+        {          
+            return true;
+        }
+        else
+        {
+            return false;
+        }    
     }    
 
     public void IncreaseATK(int percentAmount)
@@ -293,6 +369,7 @@ public class CharacterInBattle : MonoBehaviour
 
     public void Die() // Hàm event khi chết
     {
-        OnDeath?.Invoke();
+        isActionAble = false;
+        OnDeath?.Invoke(this);
     }
 }

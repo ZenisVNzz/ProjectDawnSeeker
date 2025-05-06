@@ -11,5 +11,7 @@ public class DoubleSlash : SkillBase
         target.TakeDamage(user.ATK * 0.6f, user, target);
         target.ApplyStatusEffect(bleeding, 2);
         user.ApplyStatusEffect(atkUP, 2);
+        user.savedDmg = user.ATK * 0.6f - target.DEF;
+        base.DoAction(user, target);
     }
 }

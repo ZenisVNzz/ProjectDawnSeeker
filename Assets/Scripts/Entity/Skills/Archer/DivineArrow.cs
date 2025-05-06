@@ -8,5 +8,7 @@ public class DivineArrow : SkillBase
     {
         target.TakeDamage(user.ATK * 3, user, target);
         target.ApplyStatusEffect(deepWound, 2);
+        user.savedDmg = user.ATK * 3 - target.DEF;
+        base.DoAction(user, target);
     }
 }

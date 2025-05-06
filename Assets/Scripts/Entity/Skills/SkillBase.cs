@@ -6,7 +6,14 @@ public abstract class SkillBase : ScriptableObject
     public string skillName;
     public string description;
     public Sprite icon;
-    public float mpCost;
+    public int mpCost;
+    public AnimationClip animation;
 
-    public abstract void DoAction(CharacterInBattle user, CharacterInBattle target);
+    public virtual void DoAction(CharacterInBattle user, CharacterInBattle target)
+    {
+        user.AttackState(animation);
+        user.currentTarget = target;
+        user.currentTarget = target;
+        user.currentMP -= mpCost;
+    }    
 }
