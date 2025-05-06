@@ -13,7 +13,7 @@ public class EnemyStatusBar : MonoBehaviour
 
     void Start()
     {
-        maxHPwidth = fillHP.size.x;
+        maxHPwidth = 1.95929f;
     }
 
     public void InitializeStatus()

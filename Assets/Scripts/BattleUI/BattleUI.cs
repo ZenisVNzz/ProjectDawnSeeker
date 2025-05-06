@@ -1,4 +1,4 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -12,7 +12,22 @@ public class BattleUI : MonoBehaviour
     public List<GameObject> CharPanel;
     public List<GameObject> skillButtons;
     private Dictionary<CharacterInBattle, float> oldHP = new Dictionary<CharacterInBattle, float>();
+    private Dictionary<CharacterInBattle, GameObject> CharPanelDict = new Dictionary<CharacterInBattle, GameObject>();
+    private GameObject oldCharPanel;
     private int currentTurn;
+
+    void Start()
+    {
+        for (int i = activeCharacter.Count; i < CharPanel.Count; i++)
+        {
+            CharPanel[i].SetActive(false);
+        }
+
+        for (int i = 0; i < activeCharacter.Count; i++)
+        {
+            CharPanelDict.Add(activeCharacter[i], CharPanel[i]);
+        }
+    } 
 
     public void RefreshBattleUI()
     {
@@ -89,6 +104,29 @@ public class BattleUI : MonoBehaviour
             mpCost.text = $"{owner.skillList[i].mpCost} MP";
             selectSkill.skill = owner.skillList[i];
             image.sprite = owner.skillList[i].icon;
+            if (skillButtons[i].activeSelf == false)
+            {
+                skillButtons[i].SetActive(true);
+            }
+        }
+        for (int i = owner.skillList.Count; i < skillButtons.Count; i++)
+        {
+            skillButtons[i].SetActive(false);
         }
     }
+
+    public void SelectingCharacter(CharacterInBattle character)
+    {
+        if (CharPanelDict.ContainsKey(character))
+        {
+            Image panelIMG = CharPanelDict[character].GetComponent<Image>();
+            if (oldCharPanel != null)
+            {
+                Image oldPanelIMG = oldCharPanel?.GetComponent<Image>();
+                oldPanelIMG.color = new Color(107f / 255f, 111f / 255f, 217f / 255f, 210f / 255f);
+            }
+            panelIMG.color = new Color(255f / 255f, 154f / 255f, 4f / 255f, 210f / 255f);
+            oldCharPanel = CharPanelDict[character];
+        }  
+    }    
 }

@@ -127,7 +127,6 @@ public class CharacterInBattle : MonoBehaviour
         if (currentHP <= 0)
         {
             currentHP = 0;
-            isAlive = false;
             Die();
         }
     }
@@ -138,8 +137,9 @@ public class CharacterInBattle : MonoBehaviour
         {
             float amount = characterData.HP * (Percent / 100f);
             currentHP -= amount;
-            if (HP <= 0)
+            if (currentHP <= 0)
             {
+                currentHP = 0;
                 animator.Play("Death");
                 Die();
             }
@@ -155,7 +155,7 @@ public class CharacterInBattle : MonoBehaviour
         if (currentHP <= 0)
         {
             currentHP = 0;
-            isAlive = false;
+            animator.Play("Death");
             Die();
         }
         dmgPopUp.ShowDmgPopUp(damage, transform.position);
@@ -263,6 +263,7 @@ public class CharacterInBattle : MonoBehaviour
         if (CheckIfDeath())
         {
             animator.Play("Death");
+            isAlive = false;
         }
     }
 
@@ -271,6 +272,7 @@ public class CharacterInBattle : MonoBehaviour
         if (CheckIfDeath())
         {
             animator.Play("Death");
+            isAlive = false;
         }
         else
         {
@@ -369,6 +371,7 @@ public class CharacterInBattle : MonoBehaviour
 
     public void Die() // Hàm event khi chết
     {
+        isAlive = false;
         isActionAble = false;
         OnDeath?.Invoke(this);
     }

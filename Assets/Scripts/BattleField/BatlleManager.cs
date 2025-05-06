@@ -30,7 +30,7 @@ public class BattleManager : MonoBehaviour
     {
         foreach (CharacterInBattle characterInBattle in TeamPlayer)
         {
-            characterInBattle.OnDeath += RemoveDeathChar;
+            characterInBattle.OnDeath += OnDeath;
         }     
         EnablePlayerTeam(true);
         selectNum = 0;
@@ -41,6 +41,7 @@ public class BattleManager : MonoBehaviour
             {
                 Debug.Log("Thực thi hành động");
                 Action();
+                startTurnButton.interactable = false;
             }
             else
             {
@@ -49,9 +50,8 @@ public class BattleManager : MonoBehaviour
         });
     }
 
-    private void RemoveDeathChar(CharacterInBattle character)
+    private void OnDeath(CharacterInBattle character)
     {
-        TeamPlayer.Remove(character);
     }    
 
     public void OnCharacterClicked(CharacterInBattle character)
@@ -67,6 +67,7 @@ public class BattleManager : MonoBehaviour
                 battleUI.ShowSkillUI(character);
                 SelectSkill.characterInBattle = character;
                 Debug.Log("Đã chọn: " + character.charName);
+                battleUI.SelectingCharacter(character);
             }
             else if (selectedCharacter != null && TeamAI.Contains(character))
             {
@@ -133,7 +134,14 @@ public class BattleManager : MonoBehaviour
                     Target = targetPlayer,
                     Skill = skill
                 };
-                plannedActions.Add(action);
+                if (!action.Target.isAlive)
+                {
+                    i--;
+                }
+                else
+                {
+                    plannedActions.Add(action);
+                }         
             }      
             Action();
         }
@@ -260,6 +268,7 @@ public class BattleManager : MonoBehaviour
         isPlayerTurn = true;
         battleUI.RefreshTurnUI(NormalCurrentTurn);
         EnablePlayerTeam(true);
+        startTurnButton.interactable = true;
         foreach (CharacterInBattle character in TeamAI)
         {
             character.OnEndTurn();
@@ -268,7 +277,7 @@ public class BattleManager : MonoBehaviour
         {
             character.StartTurn();
         }
-        if (TeamAI.Count == 0 || TeamPlayer.Count == 0)
+        if (!TeamAI.All(a => a.isAlive) || !TeamPlayer.All(a => a.isAlive))
         {
             CheckWinLose();
         }

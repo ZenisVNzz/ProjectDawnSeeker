@@ -9,9 +9,10 @@ public class SelectSkill : MonoBehaviour
     public static bool isPlayerSelectingTarget = false;
     public static SkillBase selectedSkill;
 
-    void OnEnable()
+    void Start()
     {
         Button button = GetComponent<Button>();
+        button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() =>
         {
             if (selectedSkill == null || selectedSkill != this.skill)
@@ -25,7 +26,7 @@ public class SelectSkill : MonoBehaviour
                 isPlayerSelectingTarget = true;
                 Debug.Log("Đã chọn skill: " + this.skill.name);
             }
-            else if (selectedSkill == this.skill)
+            else
             {
                 isPlayerSelectingTarget = false;
                 selectedSkill = null;
