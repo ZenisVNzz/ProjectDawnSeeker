@@ -1,4 +1,6 @@
 ﻿using NUnit.Framework;
+using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,30 +14,30 @@ public class SelectSkill : MonoBehaviour
     public static SkillBase selectedSkill;
     public static GameObject currentSkillBox;
     public static GridLayoutGroup gridLayoutGroup;
+    public static CanvasGroup canvasGroup;
     public static List<GameObject> skillBoxList = new List<GameObject>();
+    private static Dictionary<GameObject, int> siblingIndex = new Dictionary<GameObject, int>();
 
     private Transform originalParent;
-    private static Dictionary<GameObject, int> siblingIndex = new Dictionary<GameObject, int>();
     private GameObject skillBox;
 
     void Start()
     {     
-        Button button = GetComponent<Button>();
-        skillBox = transform.gameObject;
+        Button button = GetComponentInParent<Button>();
+        skillBox = transform.parent.gameObject;
+        canvasGroup = GetComponentInParent<CanvasGroup>();
+
+        if (!siblingIndex.ContainsKey(skillBox))
+        {
+            siblingIndex.Add(skillBox, skillBox.transform.GetSiblingIndex());
+        }
 
         if (!skillBoxList.Contains(skillBox))
         {
             skillBoxList.Add(skillBox);
         }
-        foreach (GameObject skillBox in skillBoxList)
-        {
-            if (!siblingIndex.ContainsKey(skillBox))
-            {
-                siblingIndex.Add(skillBox, skillBox.transform.GetSiblingIndex());
-            }
-        }
 
-        gridLayoutGroup = transform.parent.GetComponent<GridLayoutGroup>();
+        gridLayoutGroup = transform.parent.GetComponentInParent<GridLayoutGroup>();
         originalParent = skillBox.transform.parent;
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() =>
@@ -99,12 +101,34 @@ public class SelectSkill : MonoBehaviour
         foreach (GameObject skillBox in skillBoxList)
         {
             Animator animator = skillBox.GetComponent<Animator>();
-            animator.Rebind();
-            animator.Update(0f);
+            animator.Play("Reset");
         }
         if (gridLayoutGroup != null)
         {
             gridLayoutGroup.enabled = true;
-        }      
+        }
+    }
+
+    public void DisableSkillUI()
+    {
+        SetOriginalParent();
+        canvasGroup.blocksRaycasts = false;
+        canvasGroup.alpha = 0;
+        foreach (GameObject skillBox in skillBoxList)
+        {
+            Animator animator = skillBox.GetComponent<Animator>();
+            animator.Play("UnselectSkill");
+        }
+    }
+
+    public void EnableSkillUI()
+    {
+        canvasGroup.blocksRaycasts = true;
+        canvasGroup.alpha = 1;
+        foreach (GameObject skillBox in skillBoxList)
+        {
+            Animator animator = skillBox.GetComponent<Animator>();
+            animator.Play("Reset");
+        }
     }    
 }

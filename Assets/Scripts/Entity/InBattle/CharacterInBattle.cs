@@ -18,6 +18,7 @@ public class CharacterInBattle : MonoBehaviour
     public characterType characterType;
     public Sprite characterSprite { get; private set; }
     public RuntimeAnimatorController characterAnimation { get; private set; }
+    [field: SerializeField]
     public float ATK { get; private set; }
     public float HP { get; private set; }
     public float currentHP = 1;
@@ -65,6 +66,7 @@ public class CharacterInBattle : MonoBehaviour
     public BattleUI battleUI;
     public DmgPopUp dmgPopUp;
     private Animator animator;
+    public VFXManager vfxManager;
     private bool isClickable = false;
 
     public float savedDmg;
@@ -181,6 +183,8 @@ public class CharacterInBattle : MonoBehaviour
         effect.OnApply(this);
         effect.duration = duration;
         activeStatusEffect.Add(effect);
+        GameObject effectAnchor = transform.Find("EffectAnchor").gameObject;
+        vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position);
         Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
     }
 
@@ -206,7 +210,6 @@ public class CharacterInBattle : MonoBehaviour
 
             if (activeStatusEffect[i].duration <= 0)
             {
-                activeStatusEffect[i].OnRemove(this);
                 activeStatusEffect.RemoveAt(i);
             }
         }
@@ -299,73 +302,73 @@ public class CharacterInBattle : MonoBehaviour
 
     public void IncreaseATK(int percentAmount)
     {
-        float amount = characterData.ATK * (percentAmount / 100);
+        float amount = characterData.ATK * (percentAmount / 100f);
         ATK += amount;
     }
 
     public void DecreaseATK(int percentAmount)
     {
-        float amount = characterData.ATK * (percentAmount / 100);
+        float amount = characterData.ATK * (percentAmount / 100f);
         ATK -= amount;
     }
 
     public void IncreaseDEF(int percentAmount)
     {
-        float amount = characterData.DEF * (percentAmount / 100);
+        float amount = characterData.DEF * (percentAmount / 100f);
         DEF += amount;
     }
 
     public void DecreaseDEF(int percentAmount)
     {
-        float amount = characterData.DEF * (percentAmount / 100);
+        float amount = characterData.DEF * (percentAmount / 100f);
         DEF -= amount;
     }
 
     public void IncreaseCR(int percentAmount)
     {
-        float amount = characterData.CR * (percentAmount / 100);
+        float amount = characterData.CR * (percentAmount / 100f);
         CR += amount;
     }
 
     public void DecreaseCR(int percentAmount)
     {
-        float amount = characterData.CR * (percentAmount / 100);
+        float amount = characterData.CR * (percentAmount / 100f);
         CR -= amount;
     }
 
     public void IncreaseCD(int percentAmount)
     {
-        float amount = characterData.CD * (percentAmount / 100);
+        float amount = characterData.CD * (percentAmount / 100f);
         CD -= amount;
     }
 
     public void DecreaseCD(int percentAmount)
     {
-        float amount = characterData.CD * (percentAmount / 100);
+        float amount = characterData.CD * (percentAmount / 100f);
         CD -= amount;
     }
 
     public void IncreaseDC(int percentAmount)
     {
-        float amount = characterData.DC * (percentAmount / 100);
+        float amount = characterData.DC * (percentAmount / 100f);
         DC += amount;
     }
 
     public void DecreaseDC(int percentAmount)
     {
-        float amount = characterData.DC * (percentAmount / 100);
+        float amount = characterData.DC * (percentAmount / 100f);
         DC -= amount;
     }
 
     public void IncreasePC(int percentAmount)
     {
-        float amount = characterData.PC * (percentAmount / 100);
+        float amount = characterData.PC * (percentAmount / 100f);
         PC += amount;
     }
 
     public void DecreasePC(int percentAmount)
     {
-        float amount = characterData.PC * (percentAmount / 100);
+        float amount = characterData.PC * (percentAmount / 100f);
         PC -= amount;
     }
 

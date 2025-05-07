@@ -36,7 +36,13 @@ public class TargetArrow : MonoBehaviour
 
             if (arrow != null)
             {
+                if (arrowInstances != null)
+                {
+                    Destroy(arrowInstances);
+                }
+
                 GameObject arrowInstance = Instantiate(arrow);
+
                 Vector3 pointA = lineRenderer.GetPosition(segmentCount - 1);
                 Vector3 pointB = lineRenderer.GetPosition(segmentCount);
 

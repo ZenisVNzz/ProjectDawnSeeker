@@ -13,7 +13,6 @@ public abstract class SkillBase : ScriptableObject
     {
         user.AttackState(animation);
         user.currentTarget = target;
-        user.currentTarget = target;
         user.currentMP -= mpCost;
     }    
 }

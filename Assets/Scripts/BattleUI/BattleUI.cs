@@ -96,13 +96,12 @@ public class BattleUI : MonoBehaviour
     public void ShowSkillUI(CharacterInBattle owner)
     {
         selectSkill.SetOriginalParent();
-        selectSkill.EnableGridLayout();
         for (int i = 0; i < owner.skillList.Count; i++)
         {
             Image image = skillButtons[i].transform.Find("IMG").GetComponent<Image>();
             TextMeshProUGUI skillName = skillButtons[i].transform.Find("SkillName").GetComponent<TextMeshProUGUI>();
             TextMeshProUGUI mpCost = skillButtons[i].transform.Find("MpCost").GetComponent<TextMeshProUGUI>();
-            SelectSkill selectSkill = skillButtons[i].GetComponent<SelectSkill>();
+            SelectSkill selectSkill = skillButtons[i].GetComponentInChildren<SelectSkill>();
             skillName.text = owner.skillList[i].skillName;
             mpCost.text = $"{owner.skillList[i].mpCost} MP";
             selectSkill.skill = owner.skillList[i];
@@ -116,6 +115,7 @@ public class BattleUI : MonoBehaviour
         {
             skillButtons[i].SetActive(false);
         }
+        selectSkill.EnableGridLayout();
     }
 
     public void SelectingCharacter(CharacterInBattle character)

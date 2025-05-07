@@ -6,6 +6,7 @@ using System.Collections;
 using UnityEngine.TextCore.Text;
 using System.Linq;
 using static UnityEngine.EventSystems.EventTrigger;
+using System.Threading;
 
 public class BattleManager : MonoBehaviour
 {
@@ -41,6 +42,7 @@ public class BattleManager : MonoBehaviour
             if (plannedActions.Count >= actionAble)
             {
                 Debug.Log("Thực thi hành động");
+                selectSkill.DisableSkillUI();
                 Action();
                 targetArrowManager.TurnOffArrow();
                 startTurnButton.interactable = false;
@@ -110,11 +112,7 @@ public class BattleManager : MonoBehaviour
     {
         CharacterInBattle enemy = GetFirstAlive(TeamAI);
         CharacterInBattle target = GetFirstAlive(TeamPlayer);
-        if (enemy == null || target == null)
-        {
-            CheckWinLose();
-            return;
-        }
+
         foreach (CharacterInBattle character in TeamPlayer)
         {
             character.OnEndTurn();
@@ -153,11 +151,7 @@ public class BattleManager : MonoBehaviour
         {        
             Debug.Log($"{enemy.name} không thể hành động trong lượt này");
             OnNextTurn();
-        }
-        else
-        {
-            CheckWinLose();
-        }    
+        }  
     }
 
     CharacterInBattle GetFirstAlive(List<CharacterInBattle> team)
@@ -240,23 +234,28 @@ public class BattleManager : MonoBehaviour
                     {
                         break;
                     }
+                    else if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
+                    {
+                        break;
+                    }
                 }
             }
+
             action.Skill.DoAction(action.Caster, action.Target);
 
             if (action.Caster.isBleeding == true)
             {
                 action.Caster.TakeBleedingDamage(action.Caster.ATK * 0.15f);
             }
+            if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
+            {
+                break;
+            }
 
             while (action.Caster.currentState != State.Idle)
             {
                 yield return null;
-            }
-            if (TeamPlayer.Count == 0 || TeamAI.Count == 0)
-            {
-                break;
-            }
+            }     
             yield return new WaitForSeconds(1f);
         }
 
@@ -292,5 +291,19 @@ public class BattleManager : MonoBehaviour
         {
             CheckWinLose();
         }
+        if (TeamPlayer.Count(p => p.isActionAble) == 0)
+        {
+            StartCoroutine(Wait(7));
+            EnemyTurn();
+        }
+        else
+        {
+            selectSkill.EnableSkillUI();
+        }    
     }
+
+    public IEnumerator Wait(int sec)
+    {
+        yield return new WaitForSeconds(sec);
+    }    
 }
