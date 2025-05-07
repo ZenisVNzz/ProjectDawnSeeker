@@ -11,6 +11,7 @@ public class BattleUI : MonoBehaviour
     public List<CharacterInBattle> activeEnemyCharacter;
     public List<GameObject> CharPanel;
     public List<GameObject> skillButtons;
+    public SelectSkill selectSkill;
     private Dictionary<CharacterInBattle, float> oldHP = new Dictionary<CharacterInBattle, float>();
     private Dictionary<CharacterInBattle, GameObject> CharPanelDict = new Dictionary<CharacterInBattle, GameObject>();
     private GameObject oldCharPanel;
@@ -94,6 +95,8 @@ public class BattleUI : MonoBehaviour
 
     public void ShowSkillUI(CharacterInBattle owner)
     {
+        selectSkill.SetOriginalParent();
+        selectSkill.EnableGridLayout();
         for (int i = 0; i < owner.skillList.Count; i++)
         {
             Image image = skillButtons[i].transform.Find("IMG").GetComponent<Image>();

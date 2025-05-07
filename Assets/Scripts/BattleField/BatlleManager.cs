@@ -13,10 +13,11 @@ public class BattleManager : MonoBehaviour
     public List<CharacterInBattle> TeamAI = new List<CharacterInBattle>();
     public List<PlannedAction> plannedActions = new List<PlannedAction>();
 
-    private CharacterInBattle selectedCharacter = null;
+    [SerializeField] CharacterInBattle selectedCharacter = null;
     public BattleUI battleUI;
     public Button startTurnButton;
     public SelectSkill selectSkill;
+    public TargetArrowManager targetArrowManager;
     public int selectNum;
     public bool BossLevel = false;
     private bool isPlayerTurn = true;
@@ -41,6 +42,7 @@ public class BattleManager : MonoBehaviour
             {
                 Debug.Log("Thực thi hành động");
                 Action();
+                targetArrowManager.TurnOffArrow();
                 startTurnButton.interactable = false;
             }
             else
@@ -90,6 +92,8 @@ public class BattleManager : MonoBehaviour
                     }    
                     
                     Debug.Log($"Skill: {selectSkill.GetSkillBase().name} nhắm vào {character}");
+                    TargetArrow targetArrow = selectedCharacter.GetComponent<TargetArrow>();
+                    targetArrow.MakeArrow(selectedCharacter.transform, character.transform);
                     SelectSkill.isPlayerSelectingTarget = false;
                     SelectSkill.selectedSkill = null;
                 }    
@@ -228,8 +232,15 @@ public class BattleManager : MonoBehaviour
         {
             if (!action.Target.isAlive)
             {
-                int targetIndex = UnityEngine.Random.Range(0, TeamPlayer.Count);
-                action.Target = TeamPlayer[targetIndex];
+                while (true)
+                {
+                    int targetIndex = UnityEngine.Random.Range(0, TeamPlayer.Count);
+                    action.Target = TeamPlayer[targetIndex];
+                    if (action.Target.isAlive)
+                    {
+                        break;
+                    }
+                }
             }
             action.Skill.DoAction(action.Caster, action.Target);
 
