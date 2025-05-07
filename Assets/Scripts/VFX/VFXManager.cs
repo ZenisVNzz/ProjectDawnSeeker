@@ -1,10 +1,12 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class VFXManager : MonoBehaviour
 {
     public List<Effect> effect;
+    public Dictionary<int, GameObject> activeEffectVFX = new Dictionary<int, GameObject>();
     private Dictionary<int, GameObject> effectDictionary;
 
     private void Awake()
@@ -21,11 +23,30 @@ public class VFXManager : MonoBehaviour
         if (effectDictionary.TryGetValue(ID, out GameObject prefab))
         {
             GameObject effectInstance = Instantiate(prefab, position, Quaternion.identity);
-            //Destroy(effectInstance, 2f);
+            if (effect.Any(e => e.ID == ID && !e.duringEffect))
+            {
+                Destroy(effectInstance, 2f);
+            }
+            else
+            {
+                if (!activeEffectVFX.ContainsKey(ID))
+                {
+                    activeEffectVFX.Add(ID, effectInstance);
+                }
+            }
         }
         else
         {
-            Debug.LogWarning($"Effect {ID} not found!");
+            return;
+        }
+    }
+
+    public void StopEffect(int ID)
+    {
+        if (activeEffectVFX.TryGetValue(ID, out GameObject effectInstance))
+        {
+            Destroy(effectInstance);
+            activeEffectVFX.Remove(ID);
         }
     }
 }
@@ -34,6 +55,7 @@ public class VFXManager : MonoBehaviour
 public class Effect
 {
     public int ID;
+    public bool duringEffect;
     public GameObject effectPrefab;
 }
 

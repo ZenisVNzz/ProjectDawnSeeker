@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -68,6 +69,7 @@ public class CharacterInBattle : MonoBehaviour
     private Animator animator;
     public VFXManager vfxManager;
     private bool isClickable = false;
+    private List<StatusEffect> EffectOnTurn = new List<StatusEffect>();
 
     public float savedDmg;
     private Vector3 targetPosition;
@@ -182,9 +184,8 @@ public class CharacterInBattle : MonoBehaviour
     {
         effect.OnApply(this);
         effect.duration = duration;
-        activeStatusEffect.Add(effect);
-        GameObject effectAnchor = transform.Find("EffectAnchor").gameObject;
-        vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position);
+        activeStatusEffect.Add(effect);      
+        EffectOnTurn.Add(effect);
         Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
     }
 
@@ -210,6 +211,11 @@ public class CharacterInBattle : MonoBehaviour
 
             if (activeStatusEffect[i].duration <= 0)
             {
+                if (activeStatusEffect.Count(e => e.ID == activeStatusEffect[i].ID) <= 1)
+                {
+                    vfxManager.StopEffect(activeStatusEffect[i].ID);
+                    Debug.Log($"{charName} đã hết hiệu ứng {activeStatusEffect[i].name}");
+                }
                 activeStatusEffect.RemoveAt(i);
             }
         }
@@ -285,6 +291,15 @@ public class CharacterInBattle : MonoBehaviour
 
     public void OnAttackEnd()
     {
+        foreach (var effect in EffectOnTurn)
+        {    
+            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1)
+            {
+                GameObject effectAnchor = transform.Find("EffectAnchor").gameObject;
+                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position);
+            }
+        }
+        EffectOnTurn.Clear();
         IdleState();
     }
 

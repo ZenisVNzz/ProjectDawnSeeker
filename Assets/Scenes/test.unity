@@ -1393,6 +1393,7 @@ MonoBehaviour:
   playerCharacter:
   - {fileID: 11400000, guid: 666e1ad216a14db409314d65dac8d327, type: 2}
   - {fileID: 11400000, guid: d340c68b77eb75c4e8ad7dad404e5d12, type: 2}
+  - {fileID: 11400000, guid: 5ac2ca0e26d4ce246a4373068f1f72c1, type: 2}
   enemyCharacter: {fileID: 11400000, guid: c8339f5a4fbd2014bbdbd39b19184a57, type: 2}
   playerCharacterInBattle:
   - {fileID: 554530855}
@@ -9013,6 +9014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effect:
   - ID: 200001
+    duringEffect: 1
     effectPrefab: {fileID: 6573002566907771083, guid: 3a0f79ace1cfc284cae58d804204c1c4, type: 3}
 --- !u!1 &1489819655
 GameObject:

@@ -17,7 +17,10 @@ MonoBehaviour:
   characterType: 0
   characterSprite: {fileID: -4749681873034518491, guid: f878d6cc18d8b774dbc73bc3e78ea8b1, type: 3}
   characterAnimation: {fileID: 9100000, guid: 0d7008f66d0f66446b2266e7103f1564, type: 2}
-  skillList: []
+  skillList:
+  - {fileID: 11400000, guid: 178cd9e0ff0f1d64797ff8692b82ee37, type: 2}
+  - {fileID: 11400000, guid: 6f8974ba748929c449b30d482dbe4d0a, type: 2}
+  - {fileID: 11400000, guid: c06dbe33a93d6434585ee7b1dde9077c, type: 2}
   ATK: 5
   HP: 14
   DEF: 3

@@ -5,6 +5,27 @@ TextureImporter:
   - first:
       213: 8397904528386318139
     second: ATKUP_0
+  - first:
+      213: -3164988134149712015
+    second: ATKUP_1
+  - first:
+      213: -2559195454637861489
+    second: ATKUP_2
+  - first:
+      213: 2294710762748405426
+    second: ATKUP_3
+  - first:
+      213: 5794369245282631922
+    second: ATKUP_4
+  - first:
+      213: -8434149400879395903
+    second: ATKUP_5
+  - first:
+      213: 2639774397861767279
+    second: ATKUP_6
+  - first:
+      213: -5828050340349473852
+    second: ATKUP_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -135,10 +156,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ae164c9d6497723499997509a22b2add
-      internalID: 1699943619
+      spriteID: 1771ea19f04b314d0800000000000000
+      internalID: -3164988134149712015
       vertices: []
       indices: 
       edges: []
@@ -157,10 +178,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e62991cfbca11f840871fbe5c58e8fdf
-      internalID: -1809165383
+      spriteID: f85148f0b49eb7cd0800000000000000
+      internalID: -2559195454637861489
       vertices: []
       indices: 
       edges: []
@@ -179,10 +200,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: acd12cdfd05d1554dabccc8b0d02ddda
-      internalID: 1751354758
+      spriteID: 2b662e3e74378df10800000000000000
+      internalID: 2294710762748405426
       vertices: []
       indices: 
       edges: []
@@ -201,10 +222,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e65de08e397933545ac5a3effe34d97c
-      internalID: 1720921595
+      spriteID: 2f00582f02cb96050800000000000000
+      internalID: 5794369245282631922
       vertices: []
       indices: 
       edges: []
@@ -223,10 +244,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f7df3d0675ae48849a7b3d5299d24a4e
-      internalID: -2079915072
+      spriteID: 1cb82025ec1e3fa80800000000000000
+      internalID: -8434149400879395903
       vertices: []
       indices: 
       edges: []
@@ -245,10 +266,98 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68a8b724dc52a420800000000000000
+      internalID: 2639774397861767279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATKUP_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb0062081b9e1fa0800000000000000
+      internalID: -5828050340349473852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATKUP_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1cd711fd6391274c92c12a5a5b1a3b8
-      internalID: 2034656397
+      spriteID: fc71ac5249fb25e4c923241544f83583
+      internalID: 754163087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATKUP_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca2b5c739602934fb597bd6eabe829f
+      internalID: -1983007802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATKUP_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ee00982c70b9b429f734579252a35b
+      internalID: -374852845
       vertices: []
       indices: 
       edges: []
@@ -257,7 +366,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 08d18f501b08da24a8dbc6a63bf85cf5
+    spriteID: 05357525fa6ba5c4dae57f904d9f5f19
     internalID: 0
     vertices: []
     indices: 
@@ -268,12 +377,16 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       ATKUP_0: 8397904528386318139
-      ATKUP_1: 1699943619
-      ATKUP_2: -1809165383
-      ATKUP_3: 1751354758
-      ATKUP_4: 1720921595
-      ATKUP_5: -2079915072
-      ATKUP_6: 2034656397
+      ATKUP_1: -3164988134149712015
+      ATKUP_10: -374852845
+      ATKUP_2: -2559195454637861489
+      ATKUP_3: 2294710762748405426
+      ATKUP_4: 5794369245282631922
+      ATKUP_5: -8434149400879395903
+      ATKUP_6: 2639774397861767279
+      ATKUP_7: -5828050340349473852
+      ATKUP_8: 754163087
+      ATKUP_9: -1983007802
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
