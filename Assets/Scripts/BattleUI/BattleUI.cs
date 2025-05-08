@@ -90,7 +90,7 @@ public class BattleUI : MonoBehaviour
     public void ChangeTurn()
     {
         TextMeshProUGUI text = turnTitle.transform.Find("Turn").GetComponent<TextMeshProUGUI>();
-        text.text = $"TURN {currentTurn}";
+        text.text = $"LƯỢT {currentTurn}";
     }
 
     public void ShowSkillUI(CharacterInBattle owner)

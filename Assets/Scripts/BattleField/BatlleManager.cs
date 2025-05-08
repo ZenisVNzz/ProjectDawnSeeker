@@ -1,14 +1,8 @@
-﻿using UnityEngine;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System;
-using UnityEngine.UI;
-using System.Collections;
-using UnityEngine.TextCore.Text;
 using System.Linq;
-using static UnityEngine.EventSystems.EventTrigger;
-using System.Threading;
-using UnityEditor.Localization.Plugins.XLIFF.V12;
-using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
@@ -21,6 +15,7 @@ public class BattleManager : MonoBehaviour
     public Button startTurnButton;
     public SelectSkill selectSkill;
     public TargetArrowManager targetArrowManager;
+    public ResultUI resultUI;
     public int selectNum;
     public bool BossLevel = false;
     private bool isPlayerTurn = true;
@@ -187,6 +182,7 @@ public class BattleManager : MonoBehaviour
             {
                 Debug.Log("Thất Bại!");
                 EnablePlayerTeam(false);
+                resultUI.ShowFailedUI();
             }
         }
         else if (NormalCurrentTurn >= NormalMaxTurn)
@@ -194,21 +190,24 @@ public class BattleManager : MonoBehaviour
             if(GetTotalHP(TeamPlayer) >= GetTotalHP(TeamAI))
             {
                 Debug.Log("Chiến Thắng!");
+                resultUI.ShowVictoryUI();
             }
             else
             {
                 Debug.Log("Thất Bại!");
-
+                resultUI.ShowFailedUI();
             }
             EnablePlayerTeam(false);
         }
         if (GetFirstAlive(TeamPlayer) == null)
         {
             Debug.Log("Thất Bại!");
+            resultUI.ShowFailedUI();
         }
         else if (GetFirstAlive(TeamAI) == null)
         {
             Debug.Log("Chiến Thắng!");
+            resultUI.ShowVictoryUI();
         }
     }
 
