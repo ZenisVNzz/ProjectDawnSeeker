@@ -8,6 +8,8 @@ public abstract class SkillBase : ScriptableObject
     public Sprite icon;
     public int mpCost;
     public AnimationClip animation;
+    public bool passiveSkill = false;
+    public bool supportSkill = false;
 
     public virtual void DoAction(CharacterInBattle user, CharacterInBattle target)
     {

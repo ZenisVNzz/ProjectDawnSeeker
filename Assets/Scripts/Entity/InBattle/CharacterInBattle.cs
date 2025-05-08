@@ -72,9 +72,11 @@ public class CharacterInBattle : MonoBehaviour
     private List<StatusEffect> EffectOnTurn = new List<StatusEffect>();
 
     public float savedDmg;
+    public float savedHeal;
     private Vector3 targetPosition;
     public CharacterInBattle currentTarget;
     public State currentState;
+    private int currentSkillID;
 
     void Start()
     {
@@ -221,16 +223,16 @@ public class CharacterInBattle : MonoBehaviour
         }
     }
 
-    public void Heal(int healAmount)
+    public void Heal(float healAmount)
     {
         if (isDeepWound)
         {
             healAmount = healAmount / 2;
         }
         currentHP += healAmount;
-        if (currentHP > (int)characterData.HP)
+        if (currentHP > characterData.HP)
         {
-            currentHP = (int)characterData.HP;
+            currentHP = characterData.HP;
         }
     }
 
@@ -238,7 +240,7 @@ public class CharacterInBattle : MonoBehaviour
     {
         if (isMPRecoveryAble)
         {
-            float amount = characterData.MP * (percentAmount / 100);
+            float amount = characterData.MP * (percentAmount / 100f);
             currentMP += amount;
             if (currentMP > characterData.MP)
             {
@@ -255,8 +257,11 @@ public class CharacterInBattle : MonoBehaviour
 
     public void AttackState(AnimationClip attackAnimation)
     {
-        animator.Play(attackAnimation.name);
-        currentState = State.Attack;
+        if (attackAnimation != null)
+        {
+            animator.Play(attackAnimation.name);
+            currentState = State.Attack;
+        }          
     }
 
     public void OnAttackHit()
@@ -276,6 +281,13 @@ public class CharacterInBattle : MonoBehaviour
         }
     }
 
+    public void OnSupportSkillHit()
+    {
+        battleUI.RefreshBattleUI();
+        targetPosition = currentTarget.transform.position;
+        dmgPopUp.ShowHealPopUp(savedHeal, targetPosition);
+    }    
+
     public void OnTakeHit()
     {
         if (CheckIfDeath())
@@ -289,6 +301,11 @@ public class CharacterInBattle : MonoBehaviour
         }          
     }
 
+    public void SetIdleState()
+    { 
+        IdleState();
+    }
+
     public void OnAttackEnd()
     {
         foreach (var effect in EffectOnTurn)
@@ -299,8 +316,15 @@ public class CharacterInBattle : MonoBehaviour
                 vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, characterData.characterID);
             }
         }
+        vfxManager.StopEffect(characterData.characterID, currentSkillID);
         EffectOnTurn.Clear();
         IdleState();
+    }
+
+    public void RangeSkillEffect(int skillID)
+    {
+        vfxManager.PlayEffect(skillID, currentTarget.transform.position, characterData.characterID);
+        currentSkillID = skillID;
     }
 
     public bool CheckIfDeath()

@@ -2389,6 +2389,7 @@ MonoBehaviour:
   playerCharacter:
   - {fileID: 11400000, guid: 666e1ad216a14db409314d65dac8d327, type: 2}
   - {fileID: 11400000, guid: d340c68b77eb75c4e8ad7dad404e5d12, type: 2}
+  - {fileID: 11400000, guid: 5ac2ca0e26d4ce246a4373068f1f72c1, type: 2}
   enemyCharacter: {fileID: 11400000, guid: c8339f5a4fbd2014bbdbd39b19184a57, type: 2}
   playerCharacterInBattle:
   - {fileID: 554530855}
@@ -3700,6 +3701,7 @@ MonoBehaviour:
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  savedHeal: 0
   currentTarget: {fileID: 0}
   currentState: 0
 --- !u!95 &554530856
@@ -3712,7 +3714,7 @@ Animator:
   m_GameObject: {fileID: 554530851}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0d7008f66d0f66446b2266e7103f1564, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5687,6 +5689,7 @@ MonoBehaviour:
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  savedHeal: 0
   currentTarget: {fileID: 0}
   currentState: 0
 --- !u!70 &808364463
@@ -9342,6 +9345,7 @@ MonoBehaviour:
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  savedHeal: 0
   currentTarget: {fileID: 0}
   currentState: 0
 --- !u!95 &1172855267
@@ -9855,6 +9859,7 @@ MonoBehaviour:
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  savedHeal: 0
   currentTarget: {fileID: 0}
   currentState: 0
 --- !u!70 &1272054749
@@ -10220,6 +10225,7 @@ MonoBehaviour:
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  savedHeal: 0
   currentTarget: {fileID: 0}
   currentState: 0
 --- !u!70 &1283657989
@@ -12281,6 +12287,12 @@ MonoBehaviour:
   - ID: 200001
     duringEffect: 1
     effectPrefab: {fileID: 6573002566907771083, guid: 3a0f79ace1cfc284cae58d804204c1c4, type: 3}
+  - ID: 300007
+    duringEffect: 1
+    effectPrefab: {fileID: 8031518381534090208, guid: 4c9d13be79e68d04d8bd540e9a85e713, type: 3}
+  - ID: 300009
+    duringEffect: 0
+    effectPrefab: {fileID: 8559052901294044441, guid: 3331edf2cd1473643a05bd4d41c64897, type: 3}
 --- !u!1 &1489819655
 GameObject:
   m_ObjectHideFlags: 0

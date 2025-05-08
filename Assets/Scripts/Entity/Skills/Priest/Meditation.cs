@@ -7,5 +7,6 @@ public class Meditation : SkillBase
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
         user.ApplyStatusEffect(meditation, 1);
+        base.DoAction(user, target);
     }
 }

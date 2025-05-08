@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Unity.Jobs;
 
 public class SelectSkill : MonoBehaviour
 {
@@ -53,6 +54,18 @@ public class SelectSkill : MonoBehaviour
                 isPlayerSelectingTarget = true;
                 Debug.Log("Đã chọn skill: " + this.skill.name);
 
+                if (this.skill.passiveSkill)
+                {
+                    isPlayerSelectingTarget = false;
+                    battleManager.plannedActions.Add(new PlannedAction
+                    {
+                        Caster = characterInBattle,
+                        Target = characterInBattle,
+                        Skill = this.skill
+                    });
+                    selectedSkill = this.skill;
+                }
+
                 if (currentSkillBox != null && currentSkillBox != this.skillBox)
                 {
                     currentSkillBox.GetComponent<Animator>().Play("UnselectSkill");
@@ -73,6 +86,11 @@ public class SelectSkill : MonoBehaviour
                 if (currentSkillBox != null)
                 {
                     currentSkillBox.GetComponent<Animator>().Play("UnselectSkill");
+                }
+
+                if (this.skill.passiveSkill)
+                {
+                    battleManager.plannedActions.RemoveAll(a => a.Caster == characterInBattle && a.Skill == this.skill);
                 }
             }
         });
