@@ -213,7 +213,7 @@ public class CharacterInBattle : MonoBehaviour
             {
                 if (activeStatusEffect.Count(e => e.ID == activeStatusEffect[i].ID) <= 1)
                 {
-                    vfxManager.StopEffect(activeStatusEffect[i].ID);
+                    vfxManager.StopEffect(characterData.characterID, activeStatusEffect[i].ID);
                     Debug.Log($"{charName} đã hết hiệu ứng {activeStatusEffect[i].name}");
                 }
                 activeStatusEffect.RemoveAt(i);
@@ -296,7 +296,7 @@ public class CharacterInBattle : MonoBehaviour
             if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1)
             {
                 GameObject effectAnchor = transform.Find("EffectAnchor").gameObject;
-                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position);
+                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, characterData.characterID);
             }
         }
         EffectOnTurn.Clear();

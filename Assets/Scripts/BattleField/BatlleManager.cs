@@ -7,6 +7,8 @@ using UnityEngine.TextCore.Text;
 using System.Linq;
 using static UnityEngine.EventSystems.EventTrigger;
 using System.Threading;
+using UnityEditor.Localization.Plugins.XLIFF.V12;
+using Unity.VisualScripting;
 
 public class BattleManager : MonoBehaviour
 {
@@ -278,7 +280,6 @@ public class BattleManager : MonoBehaviour
         isPlayerTurn = true;
         battleUI.RefreshTurnUI(NormalCurrentTurn);
         EnablePlayerTeam(true);
-        startTurnButton.interactable = true;
         foreach (CharacterInBattle character in TeamAI)
         {
             character.OnEndTurn();
@@ -287,23 +288,26 @@ public class BattleManager : MonoBehaviour
         {
             character.StartTurn();
         }
-        if (!TeamAI.All(a => a.isAlive) || !TeamPlayer.All(a => a.isAlive))
-        {
-            CheckWinLose();
-        }
-        if (TeamPlayer.Count(p => p.isActionAble) == 0)
-        {
-            StartCoroutine(Wait(7));
-            EnemyTurn();
-        }
-        else
-        {
-            selectSkill.EnableSkillUI();
-        }    
+        StartCoroutine(CheckIfPlayerCanAction(1));
     }
 
-    public IEnumerator Wait(int sec)
+    public IEnumerator CheckIfPlayerCanAction(int sec)
     {
         yield return new WaitForSeconds(sec);
+        if (TeamAI.All(a => !a.isAlive) || TeamPlayer.All(a => !a.isAlive))
+        {
+            CheckWinLose();
+            yield break;
+        }
+        else if (TeamPlayer.Any(p => p.isActionAble))
+        {
+            startTurnButton.interactable = true;
+            selectSkill.EnableSkillUI();
+        }
+        else
+        {        
+            yield return new WaitForSeconds(2);
+            EnemyTurn();
+        }
     }    
 }

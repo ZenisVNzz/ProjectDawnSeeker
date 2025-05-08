@@ -6,7 +6,7 @@ using System.Linq;
 public class VFXManager : MonoBehaviour
 {
     public List<Effect> effect;
-    public Dictionary<int, GameObject> activeEffectVFX = new Dictionary<int, GameObject>();
+    public Dictionary<int, Dictionary<int, GameObject>> activeEffectVFX = new Dictionary<int, Dictionary<int, GameObject>> ();
     private Dictionary<int, GameObject> effectDictionary;
 
     private void Awake()
@@ -18,7 +18,7 @@ public class VFXManager : MonoBehaviour
         }
     }
 
-    public void PlayEffect(int ID, Vector3 position)
+    public void PlayEffect(int ID, Vector3 position, int charID)
     {
         if (effectDictionary.TryGetValue(ID, out GameObject prefab))
         {
@@ -29,11 +29,18 @@ public class VFXManager : MonoBehaviour
             }
             else
             {
-                if (!activeEffectVFX.ContainsKey(ID))
+                if (!activeEffectVFX.ContainsKey(charID))
                 {
-                    activeEffectVFX.Add(ID, effectInstance);
+                    activeEffectVFX.Add(charID, new Dictionary<int, GameObject>());
+                    activeEffectVFX[charID].Add(ID, effectInstance);
+                }
+                else
+                {
+                    activeEffectVFX[charID].Add(ID, effectInstance);
                 }
             }
+
+            
         }
         else
         {
@@ -41,13 +48,20 @@ public class VFXManager : MonoBehaviour
         }
     }
 
-    public void StopEffect(int ID)
+    public void StopEffect(int charID, int effectID)
     {
-        if (activeEffectVFX.TryGetValue(ID, out GameObject effectInstance))
+        if (activeEffectVFX.ContainsKey(charID))
         {
-            Destroy(effectInstance);
-            activeEffectVFX.Remove(ID);
-        }
+            if (activeEffectVFX[charID].ContainsKey(effectID))
+            {
+                Destroy(activeEffectVFX[charID][effectID]);
+                activeEffectVFX[charID].Remove(effectID);
+            }
+        }        
+        else
+        {
+            return;
+        }    
     }
 }
 
