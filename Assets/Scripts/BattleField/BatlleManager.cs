@@ -70,9 +70,36 @@ public class BattleManager : MonoBehaviour
                 Debug.Log("Đã chọn: " + character.charName);
                 battleUI.SelectingCharacter(character);
             }
-            else if (selectedCharacter != null && TeamAI.Contains(character) && selectSkill.GetSkillBase().passiveSkill == false && selectSkill.GetSkillBase().supportSkill == false)
+            else if (SelectSkill.selectedSkill != null)
             {
-                if (isPlayerSelectingTarget == true)
+                if (selectedCharacter != null && TeamAI.Contains(character) && selectSkill.GetSkillBase().passiveSkill == false && selectSkill.GetSkillBase().supportSkill == false)
+                {
+                    if (isPlayerSelectingTarget == true)
+                    {
+                        PlannedAction action = new PlannedAction
+                        {
+                            Caster = selectedCharacter,
+                            Target = character,
+                            Skill = selectSkill.GetSkillBase()
+                        };
+                        if (!plannedActions.Any(a => a.Caster == selectedCharacter))
+                        {
+                            plannedActions.Add(action);
+                        }
+                        else
+                        {
+                            plannedActions.RemoveAll(a => a.Caster == selectedCharacter);
+                            plannedActions.Add(action);
+                        }
+
+                        Debug.Log($"Skill: {selectSkill.GetSkillBase().name} nhắm vào {character}");
+                        TargetArrow targetArrow = selectedCharacter.GetComponent<TargetArrow>();
+                        targetArrow.MakeArrow(selectedCharacter.transform, character.transform, false);
+                        SelectSkill.isPlayerSelectingTarget = false;
+                        SelectSkill.selectedSkill = null;
+                    }
+                }
+                else if (TeamPlayer.Contains(character) && selectSkill.GetSkillBase().supportSkill && isPlayerSelectingTarget == true)
                 {
                     PlannedAction action = new PlannedAction
                     {
@@ -89,36 +116,12 @@ public class BattleManager : MonoBehaviour
                         plannedActions.RemoveAll(a => a.Caster == selectedCharacter);
                         plannedActions.Add(action);
                     }
-
-                    Debug.Log($"Skill: {selectSkill.GetSkillBase().name} nhắm vào {character}");
                     TargetArrow targetArrow = selectedCharacter.GetComponent<TargetArrow>();
-                    targetArrow.MakeArrow(selectedCharacter.transform, character.transform, false);
+                    targetArrow.MakeArrow(selectedCharacter.transform, character.transform, true);
                     SelectSkill.isPlayerSelectingTarget = false;
                     SelectSkill.selectedSkill = null;
                 }
-            }
-            else if (TeamPlayer.Contains(character) && selectSkill.GetSkillBase().supportSkill && isPlayerSelectingTarget == true)
-            {
-                PlannedAction action = new PlannedAction
-                {
-                    Caster = selectedCharacter,
-                    Target = character,
-                    Skill = selectSkill.GetSkillBase()
-                };
-                if (!plannedActions.Any(a => a.Caster == selectedCharacter))
-                {
-                    plannedActions.Add(action);
-                }
-                else
-                {
-                    plannedActions.RemoveAll(a => a.Caster == selectedCharacter);
-                    plannedActions.Add(action);
-                }
-                TargetArrow targetArrow = selectedCharacter.GetComponent<TargetArrow>();
-                targetArrow.MakeArrow(selectedCharacter.transform, character.transform, true);
-                SelectSkill.isPlayerSelectingTarget = false;
-                SelectSkill.selectedSkill = null;
-            }
+            }                     
         }
     }
 

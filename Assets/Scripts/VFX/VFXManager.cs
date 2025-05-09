@@ -25,7 +25,7 @@ public class VFXManager : MonoBehaviour
             GameObject effectInstance = Instantiate(prefab, position, Quaternion.identity);
             if (effect.Any(e => e.ID == ID && !e.duringEffect))
             {
-                Destroy(effectInstance, 1.2f);
+                Destroy(effectInstance, 3f);
             }
             else
             {

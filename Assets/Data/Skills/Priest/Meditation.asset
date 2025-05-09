@@ -19,7 +19,7 @@ MonoBehaviour:
     n\xE0y."
   icon: {fileID: 334477584409751531, guid: b987d9566c5fcca47afd5c7c4ec92ee4, type: 3}
   mpCost: 0
-  animation: {fileID: 0}
+  animation: {fileID: 7400000, guid: 28fa8dbedf7a6494eb6111ea22e1f11a, type: 2}
   passiveSkill: 1
   supportSkill: 0
   meditation: {fileID: 11400000, guid: 94f17286500ff0040ac7909040ef329d, type: 2}
