@@ -16,14 +16,26 @@ public class TargetArrow : MonoBehaviour
         lineRenderer.positionCount = segmentCount + 1;
     }
 
-    public void MakeArrow(Transform attacker, Transform target)
+    public void MakeArrow(Transform attacker, Transform target, bool isTargetAlly)
     {
         if (attacker != null && target != null)
         {
             lineRenderer.enabled = true;
 
-            Vector3 startPosition = attacker.position + Vector3.up * 0.85f + Vector3.right * 0.6f;
-            Vector3 endPosition = target.position + Vector3.up * 1.15f + Vector3.left * 0.6f;
+            Vector3 startPosition;
+            Vector3 endPosition;
+
+            if (isTargetAlly)
+            {
+                startPosition = attacker.position + Vector3.up * 0.85f + Vector3.right * 0.1f;
+                endPosition = target.position + Vector3.up * 1.15f + Vector3.left * 0.1f;
+            }
+            else
+            {
+                startPosition = attacker.position + Vector3.up * 0.85f + Vector3.right * 0.6f;
+                endPosition = target.position + Vector3.up * 1.15f + Vector3.left * 0.6f;
+            }
+            
 
             Vector3 mid = (startPosition + endPosition) / 2 + Vector3.up * curveHeight;
 

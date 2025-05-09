@@ -92,7 +92,7 @@ public class BattleManager : MonoBehaviour
 
                     Debug.Log($"Skill: {selectSkill.GetSkillBase().name} nhắm vào {character}");
                     TargetArrow targetArrow = selectedCharacter.GetComponent<TargetArrow>();
-                    targetArrow.MakeArrow(selectedCharacter.transform, character.transform);
+                    targetArrow.MakeArrow(selectedCharacter.transform, character.transform, false);
                     SelectSkill.isPlayerSelectingTarget = false;
                     SelectSkill.selectedSkill = null;
                 }
@@ -115,7 +115,7 @@ public class BattleManager : MonoBehaviour
                     plannedActions.Add(action);
                 }
                 TargetArrow targetArrow = selectedCharacter.GetComponent<TargetArrow>();
-                targetArrow.MakeArrow(selectedCharacter.transform, character.transform);
+                targetArrow.MakeArrow(selectedCharacter.transform, character.transform, true);
                 SelectSkill.isPlayerSelectingTarget = false;
                 SelectSkill.selectedSkill = null;
             }
