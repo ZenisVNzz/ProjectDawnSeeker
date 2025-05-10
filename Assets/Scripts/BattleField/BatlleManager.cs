@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
@@ -9,6 +11,7 @@ public class BattleManager : MonoBehaviour
     public List<CharacterInBattle> TeamPlayer = new List<CharacterInBattle>();
     public List<CharacterInBattle> TeamAI = new List<CharacterInBattle>();
     public List<PlannedAction> plannedActions = new List<PlannedAction>();
+    public List<EnemyPlannedAction> enemyPlannedAction = new List<EnemyPlannedAction>();
 
     [SerializeField] CharacterInBattle selectedCharacter = null;
     public BattleUI battleUI;
@@ -50,6 +53,7 @@ public class BattleManager : MonoBehaviour
                 Debug.Log("Chưa đủ hành động để thực thi");
             }    
         });
+        InitializedEnemyAttack();
     }
 
     private void OnDeath(CharacterInBattle character)
@@ -130,14 +134,11 @@ public class BattleManager : MonoBehaviour
 
     public void Action()
     {
-        StartCoroutine(ExecuteActionsSequentially());
+        StartCoroutine(ExecuteActionsSequentially(true));
     }    
 
     void EnemyTurn()
-    {
-        CharacterInBattle enemy = GetFirstAlive(TeamAI);
-        CharacterInBattle target = GetFirstAlive(TeamPlayer);
-
+    {          
         foreach (CharacterInBattle character in TeamPlayer)
         {
             character.OnEndTurn();
@@ -147,15 +148,20 @@ public class BattleManager : MonoBehaviour
             character.StartTurn();
         }   
         isPlayerTurn = false;
-        if (enemy != null && target != null && enemy.isActionAble == true)
+        StartCoroutine(ExecuteActionsSequentially(false));
+    }
+
+    void InitializedEnemyAttack()
+    {
+        for (int i = 0; i <= 2; i++)
         {
-            for (int i = 0; i <= 2; i++)
+            foreach (var enemy in TeamAI)
             {
                 int skillIndex = UnityEngine.Random.Range(0, enemy.skillList.Count);
                 int targetIndex = UnityEngine.Random.Range(0, TeamPlayer.Count);
                 SkillBase skill = enemy.skillList[skillIndex];
                 CharacterInBattle targetPlayer = TeamPlayer[targetIndex];
-                PlannedAction action = new PlannedAction
+                EnemyPlannedAction action = new EnemyPlannedAction
                 {
                     Caster = enemy,
                     Target = targetPlayer,
@@ -167,16 +173,19 @@ public class BattleManager : MonoBehaviour
                 }
                 else
                 {
-                    plannedActions.Add(action);
-                }         
-            }      
-            Action();
+                    enemyPlannedAction.Add(action);
+                }
+                TargetArrow targetArrow = enemy.GetComponent<TargetArrow>();
+                StartCoroutine(AddEnemyAction(enemy, skill));
+            }
+            
         }
-        else if (enemy.isActionAble == false)
-        {        
-            Debug.Log($"{enemy.name} không thể hành động trong lượt này");
-            OnNextTurn();
-        }  
+    }
+
+    public IEnumerator AddEnemyAction(CharacterInBattle enemy, SkillBase skill)
+    {
+        actionOrderUI.AddAction(enemy, skill);
+        yield return new WaitForSeconds(0.5f);
     }
 
     CharacterInBattle GetFirstAlive(List<CharacterInBattle> team)
@@ -254,53 +263,104 @@ public class BattleManager : MonoBehaviour
         return totalHP;
     }
 
-    private IEnumerator ExecuteActionsSequentially()
+    private IEnumerator ExecuteActionsSequentially(bool PlayerTurn)
     {
-        foreach (PlannedAction action in plannedActions)
+        if (PlayerTurn)
         {
-            if (!action.Target.isAlive)
+            foreach (PlannedAction action in plannedActions)
             {
-                while (true)
+                if (!action.Target.isAlive)
                 {
-                    int targetIndex = UnityEngine.Random.Range(0, TeamPlayer.Count);
-                    action.Target = TeamPlayer[targetIndex];
-                    if (action.Target.isAlive)
+                    while (true)
                     {
-                        break;
-                    }
-                    else if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
-                    {
-                        break;
+                        int targetIndex = UnityEngine.Random.Range(0, TeamPlayer.Count);
+                        action.Target = TeamPlayer[targetIndex];
+                        if (action.Target.isAlive)
+                        {
+                            break;
+                        }
+                        else if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
+                        {
+                            break;
+                        }
                     }
                 }
-            }
 
-            action.Skill.DoAction(action.Caster, action.Target);
+                action.Skill.DoAction(action.Caster, action.Target);
 
-            if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
-            {
-                break;
-            }
+                if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
+                {
+                    break;
+                }
 
-            while (action.Caster.currentState != State.Idle)
-            {
-                yield return null;
-            }
+                while (action.Caster.currentState != State.Idle)
+                {
+                    yield return null;
+                }
 
-            actionOrderUI.RemoveAction(action.Caster, action.Skill);
+                actionOrderUI.RemoveAction(action.Caster, action.Skill);
 
-            if (action.Caster.isBleeding == true)
-            {
-                action.Caster.TakeBleedingDamage(action.Caster.ATK * 0.15f);
+                if (action.Caster.isBleeding == true)
+                {
+                    action.Caster.TakeBleedingDamage(action.Caster.ATK * 0.15f);
+                }
+                if (action.Caster.isAlive == false)
+                {
+                    break;
+                }
+                yield return new WaitForSeconds(1f);
             }
-            if (action.Caster.isAlive == false)
-            {
-                break;
-            }
-            yield return new WaitForSeconds(1f);
         }
+        else
+        {
+            foreach (EnemyPlannedAction action in enemyPlannedAction)
+            {
+                if (!action.Caster.isActionAble)
+                {
+                    actionOrderUI.RemoveAction(action.Caster, action.Skill);
+                    continue;
+                }    
+                if (!action.Target.isAlive)
+                {
+                    actionOrderUI.RemoveAction(action.Caster, action.Skill);
+                    continue;
+                }
 
-        plannedActions.Clear();
+                action.Skill.DoAction(action.Caster, action.Target);
+
+                if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
+                {
+                    break;
+                }
+
+                while (action.Caster.currentState != State.Idle)
+                {
+                    yield return null;
+                }
+
+                actionOrderUI.RemoveAction(action.Caster, action.Skill);
+
+                if (action.Caster.isBleeding == true)
+                {
+                    action.Caster.TakeBleedingDamage(action.Caster.ATK * 0.15f);
+                }
+                if (action.Caster.isAlive == false)
+                {
+                    break;
+                }
+                yield return new WaitForSeconds(1f);
+            }
+        }    
+        
+        if (isPlayerTurn)
+        {
+            plannedActions.Clear();
+        }
+        else
+        {
+            enemyPlannedAction.Clear();
+        }    
+        
         yield return new WaitForSeconds(1f);
         CheckWinLose();
         yield return new WaitForSeconds(0.5f);
@@ -343,12 +403,20 @@ public class BattleManager : MonoBehaviour
         }
         else if (TeamPlayer.Any(p => p.isActionAble))
         {
+            if (enemyPlannedAction.Count <= 0)
+            {
+                InitializedEnemyAttack();
+            }
             startTurnButton.interactable = true;
             selectSkill.EnableSkillUI();
         }
         else
-        {        
-            yield return new WaitForSeconds(2);
+        {
+            if (enemyPlannedAction.Count <= 0)
+            {
+                InitializedEnemyAttack();
+            }
+            yield return new WaitForSeconds(2);           
             EnemyTurn();
         }
     }    

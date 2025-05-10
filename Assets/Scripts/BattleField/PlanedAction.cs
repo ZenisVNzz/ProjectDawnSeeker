@@ -7,3 +7,10 @@ public class PlannedAction
     public SkillBase Skill;
 }
 
+public class EnemyPlannedAction
+{
+    public CharacterInBattle Caster;
+    public CharacterInBattle Target;
+    public SkillBase Skill;
+}
+

@@ -123,7 +123,6 @@ GameObject:
   - component: {fileID: 3120544243859834846}
   - component: {fileID: 9023943468977684731}
   - component: {fileID: 8447274032352759476}
-  - component: {fileID: 1438296097611006635}
   m_Layer: 5
   m_Name: View
   m_TagString: Untagged
@@ -202,20 +201,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 1
---- !u!114 &1438296097611006635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158864903778389868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 652a47f3567a8ae478c414f6d724c3a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parent: {fileID: 6899469914001707500}
-  originalParent: {fileID: 8132360195611114056}
 --- !u!1 &1807913306640420856
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +681,7 @@ GameObject:
   - component: {fileID: 6964511417368357303}
   - component: {fileID: 1272548333757629002}
   - component: {fileID: 8407730874506535951}
+  - component: {fileID: 8551898203839974455}
   m_Layer: 5
   m_Name: CharSlot
   m_TagString: Untagged
@@ -752,6 +738,20 @@ MonoBehaviour:
   canvasGroup: {fileID: 1272548333757629002}
   offset: {x: 150, y: 0}
   duration: 0.6
+--- !u!114 &8551898203839974455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6899469914001707500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652a47f3567a8ae478c414f6d724c3a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 6899469914001707500}
+  originalParent: {fileID: 6964511417368357303}
 --- !u!1 &9039693529063580036
 GameObject:
   m_ObjectHideFlags: 0

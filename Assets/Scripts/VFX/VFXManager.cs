@@ -38,9 +38,7 @@ public class VFXManager : MonoBehaviour
                 {
                     activeEffectVFX[charID].Add(ID, effectInstance);
                 }
-            }
-
-            
+            }   
         }
         else
         {
