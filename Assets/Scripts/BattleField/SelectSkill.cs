@@ -16,6 +16,7 @@ public class SelectSkill : MonoBehaviour
     public static GameObject currentSkillBox;
     public static GridLayoutGroup gridLayoutGroup;
     public static CanvasGroup canvasGroup;
+    public TargetArrow targetArrow;
     public static List<GameObject> skillBoxList = new List<GameObject>();
     public static Dictionary<GameObject, int> siblingIndex = new Dictionary<GameObject, int>();
 
@@ -24,6 +25,7 @@ public class SelectSkill : MonoBehaviour
 
     void Start()
     {     
+        targetArrow = FindFirstObjectByType<TargetArrow>();
         Button button = GetComponentInParent<Button>();
         skillBox = transform.parent.gameObject;
         canvasGroup = GetComponentInParent<CanvasGroup>();
@@ -56,6 +58,7 @@ public class SelectSkill : MonoBehaviour
 
                 if (this.skill.passiveSkill)
                 {
+                    targetArrow.RemoveArrow(characterInBattle);
                     isPlayerSelectingTarget = false;
                     battleManager.plannedActions.Add(new PlannedAction
                     {
@@ -64,6 +67,8 @@ public class SelectSkill : MonoBehaviour
                         Skill = this.skill
                     });
                     selectedSkill = this.skill;
+                    battleManager.actionOrderUI.AddAction(characterInBattle, this.skill);
+                    targetArrow.RemoveArrow(characterInBattle);
                 }
 
                 if (currentSkillBox != null && currentSkillBox != this.skillBox)

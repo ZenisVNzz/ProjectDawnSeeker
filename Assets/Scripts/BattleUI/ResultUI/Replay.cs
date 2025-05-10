@@ -24,5 +24,7 @@ public class Replay : MonoBehaviour
         SelectSkill.canvasGroup = null;
         SelectSkill.skillBoxList.Clear();
         SelectSkill.siblingIndex.Clear();
+        TargetArrow.arrowInstances.Clear();
+        TargetArrow.lineRenderer.Clear();
     }    
 }

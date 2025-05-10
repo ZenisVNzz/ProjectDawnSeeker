@@ -14,9 +14,15 @@ public class TargetArrowManager : MonoBehaviour
         {
             lineRenderers[i].enabled = false;     
         }
-        foreach (TargetArrow arrow in targetArrow)
+        foreach (var innerDict in TargetArrow.arrowInstances.Values)
         {
-            Destroy(arrow.arrowInstances);
+            foreach (var obj in innerDict.Values)
+            {
+                if (obj != null)
+                    GameObject.Destroy(obj);
+            }
+            innerDict.Clear();
         }
+        TargetArrow.arrowInstances.Clear();
     }
 }

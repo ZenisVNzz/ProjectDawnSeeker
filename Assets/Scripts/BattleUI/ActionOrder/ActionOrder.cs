@@ -18,7 +18,7 @@ public class ActionOrder : MonoBehaviour
             currentAction.Remove(character.characterData.characterID);
         }
 
-        GameObject newAction = new GameObject();
+        GameObject newAction;
         if (character.characterType == characterType.Player)
         {
             newAction = Instantiate(charPrefab, playerContainer);
