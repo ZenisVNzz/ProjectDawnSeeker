@@ -85,7 +85,7 @@ public class CharacterInBattle : MonoBehaviour
         currentHP = HP;
         currentMP = MP;
         sr = GetComponent<SpriteRenderer>(); // để thay đổi màu
-        battleManager = FindObjectOfType<BattleManager>(); // tìm script quản lý trận đấu
+        battleManager = FindFirstObjectByType<BattleManager>(); // tìm script quản lý trận đấu
         IdleState(); // trạng thái idle khi bắt đầu
         battleUI.RefreshBattleUI();
         currentState = State.Idle;    
@@ -186,8 +186,16 @@ public class CharacterInBattle : MonoBehaviour
     {
         effect.OnApply(this);
         effect.duration = duration;
-        activeStatusEffect.Add(effect);      
-        EffectOnTurn.Add(effect);
+        activeStatusEffect.Add(effect);           
+        if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == true))
+        {
+            GameObject effectAnchor = transform.Find("EffectAnchor").gameObject;
+            vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, characterData.characterID);
+        }
+        else
+        {
+            EffectOnTurn.Add(effect);
+        }    
         Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
     }
 
@@ -221,6 +229,7 @@ public class CharacterInBattle : MonoBehaviour
                 activeStatusEffect.RemoveAt(i);
             }
         }
+        EffectOnTurn.Clear();
     }
 
     public void Heal(float healAmount)
@@ -277,7 +286,7 @@ public class CharacterInBattle : MonoBehaviour
         if (CheckIfDeath())
         {
             animator.Play("Death");
-            isAlive = false;
+            Die();
         }
     }
 
@@ -293,11 +302,11 @@ public class CharacterInBattle : MonoBehaviour
         if (CheckIfDeath())
         {
             animator.Play("Death");
-            isAlive = false;
+            Die();
         }
         else
         {
-            animator.Play("Hurt");
+            animator.Play("Hurt");          
         }          
     }
 
@@ -310,7 +319,7 @@ public class CharacterInBattle : MonoBehaviour
     {
         foreach (var effect in EffectOnTurn)
         {    
-            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1)
+            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == false))
             {
                 GameObject effectAnchor = transform.Find("EffectAnchor").gameObject;
                 vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, characterData.characterID);
@@ -415,6 +424,7 @@ public class CharacterInBattle : MonoBehaviour
     {
         isAlive = false;
         isActionAble = false;
+        vfxManager.StopAllEffect(characterData.characterID);
         OnDeath?.Invoke(this);
     }
 }

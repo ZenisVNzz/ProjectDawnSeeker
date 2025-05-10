@@ -17,7 +17,7 @@ public class SelectSkill : MonoBehaviour
     public static GridLayoutGroup gridLayoutGroup;
     public static CanvasGroup canvasGroup;
     public static List<GameObject> skillBoxList = new List<GameObject>();
-    private static Dictionary<GameObject, int> siblingIndex = new Dictionary<GameObject, int>();
+    public static Dictionary<GameObject, int> siblingIndex = new Dictionary<GameObject, int>();
 
     private Transform originalParent;
     private GameObject skillBox;

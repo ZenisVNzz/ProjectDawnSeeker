@@ -57,12 +57,28 @@ public class VFXManager : MonoBehaviour
                 Destroy(activeEffectVFX[charID][effectID]);
                 activeEffectVFX[charID].Remove(effectID);
             }
+            else
+            {
+                return;
+            }    
         }        
         else
         {
             return;
         }    
     }
+
+    public void StopAllEffect(int charID)
+    {
+        if (activeEffectVFX.ContainsKey(charID))
+        {
+            foreach (var effect in activeEffectVFX[charID])
+            {
+                Destroy(effect.Value);
+            }
+            activeEffectVFX.Remove(charID);
+        }
+    }    
 }
 
 [System.Serializable]
@@ -70,6 +86,7 @@ public class Effect
 {
     public int ID;
     public bool duringEffect;
+    public bool isPlayOnHit;
     public GameObject effectPrefab;
 }
 

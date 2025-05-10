@@ -16,6 +16,7 @@ public class BattleManager : MonoBehaviour
     public SelectSkill selectSkill;
     public TargetArrowManager targetArrowManager;
     public ResultUI resultUI;
+    public ActionOrder actionOrderUI;
     public int selectNum;
     public bool BossLevel = false;
     private bool isPlayerTurn = true;
@@ -96,7 +97,8 @@ public class BattleManager : MonoBehaviour
                         TargetArrow targetArrow = selectedCharacter.GetComponent<TargetArrow>();
                         targetArrow.MakeArrow(selectedCharacter.transform, character.transform, false);
                         SelectSkill.isPlayerSelectingTarget = false;
-                        SelectSkill.selectedSkill = null;
+                        actionOrderUI.AddAction(selectedCharacter, selectSkill.GetSkillBase());
+                        SelectSkill.selectedSkill = null;                    
                     }
                 }
                 else if (TeamPlayer.Contains(character) && selectSkill.GetSkillBase().supportSkill && isPlayerSelectingTarget == true)
@@ -119,6 +121,7 @@ public class BattleManager : MonoBehaviour
                     TargetArrow targetArrow = selectedCharacter.GetComponent<TargetArrow>();
                     targetArrow.MakeArrow(selectedCharacter.transform, character.transform, true);
                     SelectSkill.isPlayerSelectingTarget = false;
+                    actionOrderUI.AddAction(selectedCharacter, selectSkill.GetSkillBase());
                     SelectSkill.selectedSkill = null;
                 }
             }                     
@@ -208,6 +211,7 @@ public class BattleManager : MonoBehaviour
                 Debug.Log("Thất Bại!");
                 EnablePlayerTeam(false);
                 resultUI.ShowFailedUI();
+                StopAllCoroutines();
             }
         }
         else if (NormalCurrentTurn >= NormalMaxTurn)
@@ -216,11 +220,13 @@ public class BattleManager : MonoBehaviour
             {
                 Debug.Log("Chiến Thắng!");
                 resultUI.ShowVictoryUI();
+                StopAllCoroutines();
             }
             else
             {
                 Debug.Log("Thất Bại!");
                 resultUI.ShowFailedUI();
+                StopAllCoroutines();
             }
             EnablePlayerTeam(false);
         }
@@ -228,11 +234,13 @@ public class BattleManager : MonoBehaviour
         {
             Debug.Log("Thất Bại!");
             resultUI.ShowFailedUI();
+            StopAllCoroutines();
         }
         else if (GetFirstAlive(TeamAI) == null)
         {
             Debug.Log("Chiến Thắng!");
             resultUI.ShowVictoryUI();
+            StopAllCoroutines();
         }
     }
 
@@ -269,10 +277,6 @@ public class BattleManager : MonoBehaviour
 
             action.Skill.DoAction(action.Caster, action.Target);
 
-            if (action.Caster.isBleeding == true)
-            {
-                action.Caster.TakeBleedingDamage(action.Caster.ATK * 0.15f);
-            }
             if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
             {
                 break;
@@ -281,12 +285,26 @@ public class BattleManager : MonoBehaviour
             while (action.Caster.currentState != State.Idle)
             {
                 yield return null;
-            }     
+            }
+
+            actionOrderUI.RemoveAction(action.Caster, action.Skill);
+
+            if (action.Caster.isBleeding == true)
+            {
+                action.Caster.TakeBleedingDamage(action.Caster.ATK * 0.15f);
+            }
+            if (action.Caster.isAlive == false)
+            {
+                break;
+            }
             yield return new WaitForSeconds(1f);
         }
 
         plannedActions.Clear();
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
+        CheckWinLose();
+        yield return new WaitForSeconds(0.5f);
+
         if (isPlayerTurn)
         {
             EnemyTurn();
