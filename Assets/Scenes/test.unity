@@ -4166,7 +4166,7 @@ Animator:
   m_GameObject: {fileID: 554530851}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0d7008f66d0f66446b2266e7103f1564, type: 2}
+  m_Controller: {fileID: 9100000, guid: e7de961809d85ae44814d06b620aff2e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -13346,7 +13346,7 @@ MonoBehaviour:
     isPlayOnHit: 0
     effectPrefab: {fileID: 6573002566907771083, guid: 3a0f79ace1cfc284cae58d804204c1c4, type: 3}
   - ID: 300007
-    duringEffect: 1
+    duringEffect: 0
     isPlayOnHit: 0
     effectPrefab: {fileID: 8031518381534090208, guid: 4c9d13be79e68d04d8bd540e9a85e713, type: 3}
   - ID: 300009
@@ -15628,6 +15628,7 @@ MonoBehaviour:
   playerContainer: {fileID: 1678994655}
   enemyContainer: {fileID: 1501785846}
   charPrefab: {fileID: 6899469914001707500, guid: 0ada5fa15e2746c4e8452dc842563249, type: 3}
+  skillIMG: {fileID: 0}
 --- !u!1 &1801331010
 GameObject:
   m_ObjectHideFlags: 0

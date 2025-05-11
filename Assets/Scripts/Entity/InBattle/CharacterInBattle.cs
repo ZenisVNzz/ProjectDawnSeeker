@@ -317,8 +317,13 @@ public class CharacterInBattle : MonoBehaviour
 
     public void OnAttackEnd()
     {
+        IdleState();       
+    }
+
+    public void PlayEffectOnEndAction()
+    {
         foreach (var effect in EffectOnTurn)
-        {    
+        {
             if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == false))
             {
                 GameObject effectAnchor = transform.Find("EffectAnchor").gameObject;
@@ -327,13 +332,13 @@ public class CharacterInBattle : MonoBehaviour
         }
         vfxManager.StopEffect(characterData.characterID, currentSkillID);
         EffectOnTurn.Clear();
-        IdleState();
-    }
+    }    
 
     public void RangeSkillEffect(int skillID)
     {
         vfxManager.PlayEffect(skillID, currentTarget.transform.position, characterData.characterID);
         currentSkillID = skillID;
+        vfxManager.StopEffect(characterData.characterID, skillID);
     }
 
     public bool CheckIfDeath()

@@ -22,4 +22,7 @@ MonoBehaviour:
   icon: {fileID: 7240157273979465415, guid: 1a90c6e3d0d9af14d81f5357c330b027, type: 3}
   mpCost: 4
   animation: {fileID: 7400000, guid: 7aa912b041825ef4c9657cb04e2e09d9, type: 2}
+  passiveSkill: 0
+  supportSkill: 0
+  move: 1
   burn: {fileID: 11400000, guid: 7294eccf5beaba849a216cfecf684e44, type: 2}

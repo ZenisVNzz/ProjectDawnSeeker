@@ -10,6 +10,7 @@ public abstract class SkillBase : ScriptableObject
     public AnimationClip animation;
     public bool passiveSkill = false;
     public bool supportSkill = false;
+    public bool move = false;
 
     public virtual void DoAction(CharacterInBattle user, CharacterInBattle target)
     {

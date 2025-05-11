@@ -21,5 +21,8 @@ MonoBehaviour:
   icon: {fileID: -7186194909302163070, guid: ca018a135bc6c0a448417fc01fa6cf9e, type: 3}
   mpCost: 2
   animation: {fileID: 7400000, guid: 99edab21d46534d4297a8a300f5f63d8, type: 2}
+  passiveSkill: 0
+  supportSkill: 0
+  move: 1
   paralysis: {fileID: 11400000, guid: f268a165c3f09874e9a860ec66d784c2, type: 2}
   defUP: {fileID: 11400000, guid: f9d0b0d778f43ea4dac0332777c1b337, type: 2}

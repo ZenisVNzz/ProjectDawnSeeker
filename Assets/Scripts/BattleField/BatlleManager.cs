@@ -279,6 +279,12 @@ public class BattleManager : MonoBehaviour
                     continue;
                 }
 
+                Vector3 originalPos = action.Caster.transform.position;
+                if (action.Skill.move)
+                {
+                    yield return StartCoroutine(MoveToTarget(action.Caster, action.Target));
+                }             
+                
                 action.Skill.DoAction(action.Caster, action.Target);
 
                 if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
@@ -291,6 +297,11 @@ public class BattleManager : MonoBehaviour
                     yield return null;
                 }
 
+                if (action.Skill.move)
+                {
+                    yield return StartCoroutine(ReturnToOriginalPosition(action.Caster, originalPos));
+                }
+              
                 actionOrderUI.RemoveAction(action.Caster, action.Skill);
 
                 if (action.Caster.isBleeding == true)
@@ -319,6 +330,12 @@ public class BattleManager : MonoBehaviour
                     continue;
                 }
 
+                Vector3 originalPos = action.Caster.transform.position;
+                if (action.Skill.move)
+                {
+                    yield return StartCoroutine(MoveToTarget(action.Caster, action.Target));
+                }
+
                 action.Skill.DoAction(action.Caster, action.Target);
 
                 if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
@@ -329,6 +346,11 @@ public class BattleManager : MonoBehaviour
                 while (action.Caster.currentState != State.Idle)
                 {
                     yield return null;
+                }
+
+                if (action.Skill.move)
+                {
+                    yield return StartCoroutine(ReturnToOriginalPosition(action.Caster, originalPos));
                 }
 
                 actionOrderUI.RemoveAction(action.Caster, action.Skill);
@@ -413,5 +435,58 @@ public class BattleManager : MonoBehaviour
             yield return new WaitForSeconds(2);           
             EnemyTurn();
         }
-    }    
+    }
+
+    public IEnumerator MoveToTarget(CharacterInBattle attacker, CharacterInBattle target, float speed = 11f)
+    {
+        Vector3 startPos = attacker.transform.position;
+        Vector3 targetPos;
+
+        Animator animator = attacker.transform.GetComponent<Animator>();
+
+        if (attacker.characterType == characterType.Player)
+        {
+            targetPos = target.transform.position + new Vector3(-1.8f, 0, 0);
+        }
+        else
+        {
+            targetPos = target.transform.position + new Vector3(1.8f, 0, 0);
+        }
+        
+        float Timer = 0f;
+        float Distance = Vector3.Distance(startPos, targetPos);
+
+        animator.Play("Move");
+
+        while (Timer < Distance / speed)
+        {
+            attacker.transform.position = Vector3.Lerp(startPos, targetPos, (Timer * speed) / Distance);
+            Timer += Time.deltaTime;
+            yield return null;
+        }
+
+        attacker.transform.position = targetPos;
+    }
+
+    public IEnumerator ReturnToOriginalPosition(CharacterInBattle attacker, Vector3 originalPos, float speed = 11f)
+    {
+        Vector3 startPos = attacker.transform.position;
+        float Timer = 0f;
+        float Distance = Vector3.Distance(startPos, originalPos);
+
+        Animator animator = attacker.transform.GetComponent<Animator>();
+        animator.Play("Move");
+
+        while (Timer < Distance / speed)
+        {
+            attacker.transform.position = Vector3.Lerp(startPos, originalPos, (Timer * speed) / Distance);
+            Timer += Time.deltaTime;
+            yield return null;
+        }
+
+        attacker.transform.position = originalPos;
+        animator.Play("Idle");
+        attacker.PlayEffectOnEndAction();
+    }
+
 }

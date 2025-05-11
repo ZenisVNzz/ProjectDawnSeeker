@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System.Collections;
 
 public class VFXManager : MonoBehaviour
 {
@@ -46,24 +47,17 @@ public class VFXManager : MonoBehaviour
         }
     }
 
-    public void StopEffect(int charID, int effectID)
+    public IEnumerator StopEffect(int charID, int effectID)
     {
+        yield return new WaitForSeconds(3f);
         if (activeEffectVFX.ContainsKey(charID))
         {
             if (activeEffectVFX[charID].ContainsKey(effectID))
             {
                 Destroy(activeEffectVFX[charID][effectID]);
                 activeEffectVFX[charID].Remove(effectID);
-            }
-            else
-            {
-                return;
-            }    
-        }        
-        else
-        {
-            return;
-        }    
+            }  
+        }
     }
 
     public void StopAllEffect(int charID)
