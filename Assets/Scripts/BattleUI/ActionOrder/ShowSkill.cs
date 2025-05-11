@@ -1,14 +1,16 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class ShowSkill : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    private GameObject skill;
+    public GameObject skill;
     private Transform panel;
     public GameObject parent;
     public Transform originalParent;
     private TargetArrow targetArrow;
     private DataStorage dataStorage;
+    private CanvasGroup canvasGroup;
 
     void Start()
     {
@@ -16,6 +18,7 @@ public class ShowSkill : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         panel = parent.transform.parent.transform.parent;
         targetArrow = FindAnyObjectByType<TargetArrow>();
         dataStorage = GetComponent<DataStorage>();
+        canvasGroup = GetComponent<CanvasGroup>();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -35,4 +38,24 @@ public class ShowSkill : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         targetArrow.RemoveArrow();
         skill.SetActive(false);
     }
+
+    public void ForceExit()
+    {
+        skill.transform.SetParent(originalParent);
+        targetArrow.RemoveArrow();
+        skill.SetActive(false);
+    }
+
+    public IEnumerator DisableInteraction()
+    {
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
+        skill.transform.SetParent(originalParent);
+        yield return new WaitForSeconds(0.8f);
+        if (canvasGroup != null)
+        {
+            canvasGroup.interactable = true;
+            canvasGroup.blocksRaycasts = true;
+        }       
+    }    
 }

@@ -9,6 +9,7 @@ public class ActionOrder : MonoBehaviour
     public Transform enemyContainer;
     public GameObject charPrefab;
     public Dictionary<int, List<GameObject>> currentAction = new Dictionary<int, List<GameObject>>();
+    public Image skillIMG;
 
     public void AddAction(CharacterInBattle character, CharacterInBattle target, SkillBase skill, bool isTargetAlly)
     {
@@ -41,16 +42,16 @@ public class ActionOrder : MonoBehaviour
         dataStorage.isPassiveSkill = skill.passiveSkill;
 
         Image charIMG = newAction.transform.Find("Outline/View/CharIMG").GetComponent<Image>();
-        Image SkillIMG = newAction.transform.Find("Skill/SkillSlot/Outline/View/SkIMG").GetComponent<Image>();
+        skillIMG = newAction.transform.Find("Skill/SkillSlot/Outline/View/SkIMG").GetComponent<Image>();
 
         if (character.characterType == characterType.Enemy)
         {
-            GameObject skillObj = SkillIMG.gameObject;
+            GameObject skillObj = skillIMG.gameObject;
             skillObj.transform.localEulerAngles = new Vector3(180f, 0f, 225f);
         }
 
         charIMG.sprite = character.characterSprite;
-        SkillIMG.sprite = skill.icon;
+        skillIMG.sprite = skill.icon;
 
         if (!currentAction.ContainsKey(charID))
         {
@@ -70,8 +71,24 @@ public class ActionOrder : MonoBehaviour
             List<GameObject> actionList = currentAction[charID];
             GameObject toRemove = null;
 
+            foreach (var objList in currentAction.Values)
+            {
+                foreach (var obj in objList)
+                {
+                    ShowSkill showSkill = obj.GetComponent<ShowSkill>();
+                    if (showSkill != null)
+                        StartCoroutine(showSkill.DisableInteraction());
+                }
+            }
+
             foreach (var obj in actionList)
             {
+                ShowSkill showSkill = obj.GetComponent<ShowSkill>();
+                StartCoroutine(showSkill.DisableInteraction());
+                if (showSkill.skill.activeSelf)
+                {
+                    showSkill.ForceExit();
+                }
                 Image skillIMG = obj.transform.Find("Skill/SkillSlot/Outline/View/SkIMG").GetComponent<Image>();
                 if (skillIMG != null && skillIMG.sprite == skill.icon)
                 {

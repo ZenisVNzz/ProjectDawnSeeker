@@ -33,8 +33,8 @@ public class TargetArrow : MonoBehaviour
             }
             else if (attacker.characterType == characterType.Enemy)
             {
-                startPosition = attacker.transform.position + Vector3.up * 0.85f + Vector3.left * 0.1f;
-                endPosition = target.transform.position + Vector3.up * 1.15f + Vector3.right * 0.1f;
+                startPosition = attacker.transform.position + Vector3.up * 1f + Vector3.left * 0.1f;
+                endPosition = target.transform.position + Vector3.up * 1.1f + Vector3.right * 0.45f;
             }
             else
             {
