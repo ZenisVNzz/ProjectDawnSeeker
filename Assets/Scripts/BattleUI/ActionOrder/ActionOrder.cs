@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Data.Common;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +10,7 @@ public class ActionOrder : MonoBehaviour
     public GameObject charPrefab;
     public Dictionary<int, List<GameObject>> currentAction = new Dictionary<int, List<GameObject>>();
 
-    public void AddAction(CharacterInBattle character, SkillBase skill)
+    public void AddAction(CharacterInBattle character, CharacterInBattle target, SkillBase skill, bool isTargetAlly)
     {
         int charID = character.characterData.characterID;
 
@@ -32,6 +33,12 @@ public class ActionOrder : MonoBehaviour
         {
             newAction = Instantiate(charPrefab, enemyContainer);
         }
+
+        DataStorage dataStorage = newAction.GetComponent<DataStorage>();
+        dataStorage.attacker = character;
+        dataStorage.target = target;
+        dataStorage.isTargetAlly = isTargetAlly;
+        dataStorage.isPassiveSkill = skill.passiveSkill;
 
         Image charIMG = newAction.transform.Find("Outline/View/CharIMG").GetComponent<Image>();
         Image SkillIMG = newAction.transform.Find("Skill/SkillSlot/Outline/View/SkIMG").GetComponent<Image>();

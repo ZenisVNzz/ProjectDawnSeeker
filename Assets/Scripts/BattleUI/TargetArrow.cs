@@ -5,37 +5,23 @@ using UnityEngine;
 
 public class TargetArrow : MonoBehaviour
 {
-    public static Dictionary<int, LineRenderer> lineRenderer = new Dictionary<int, LineRenderer>();
+    public LineRenderer lineRenderer;
     public GameObject arrow;
-    public static Dictionary<int, Dictionary<int, GameObject>> arrowInstances = new Dictionary<int, Dictionary<int, GameObject>>();
+    public GameObject arrowInstances;
     public int segmentCount = 20;
     public float curveHeight = 3f;
 
     void Start()
     {
-        CharacterInBattle characterInBattle = GetComponent<CharacterInBattle>();
-        lineRenderer.Add(characterInBattle.characterData.characterID, transform.GetComponentInChildren<LineRenderer>());
-        lineRenderer[characterInBattle.characterData.characterID].positionCount = segmentCount + 1;
+        lineRenderer = transform.GetComponentInChildren<LineRenderer>();
+        lineRenderer.positionCount = segmentCount + 1;
     }
 
     public void MakeArrow(CharacterInBattle attacker, CharacterInBattle target, bool isTargetAlly)
     {
-        if (arrowInstances.ContainsKey(attacker.characterData.characterID) && attacker.characterType != characterType.Enemy)
-        { 
-            foreach (var arrowInstance in arrowInstances[attacker.characterData.characterID].Values)
-            {
-                if (arrowInstance != null)
-                    GameObject.Destroy(arrowInstance);
-            }
-            arrowInstances[attacker.characterData.characterID].Clear();
-            if (arrowInstances[attacker.characterData.characterID].Count == 0)
-            {
-                arrowInstances.Remove(attacker.characterData.characterID);
-            }
-        }
         if (attacker != null && target != null)
         {
-            lineRenderer[attacker.characterData.characterID].enabled = true;
+            lineRenderer.enabled = true;
 
             Vector3 startPosition;
             Vector3 endPosition;
@@ -63,29 +49,22 @@ public class TargetArrow : MonoBehaviour
             {
                 float t = i / (float)segmentCount;
                 Vector3 point = CalculateQuadraticBezierPoint(t, startPosition, mid, endPosition);
-                lineRenderer[attacker.characterData.characterID].SetPosition(i, point);
+                lineRenderer.SetPosition(i, point);
             }
-
-            if (!arrowInstances.ContainsKey(attacker.characterData.characterID))
+            if (arrow != null)
             {
-                arrowInstances.Add(attacker.characterData.characterID, new Dictionary<int, GameObject>());
-                bool targetExists = arrowInstances.Values.Any(innerDict => innerDict.ContainsKey(target.characterData.characterID));
-                if (arrow != null && !targetExists)
-                {
-                    GameObject arrowInstance = Instantiate(arrow);
-                    Vector3 pointA = lineRenderer[attacker.characterData.characterID].GetPosition(segmentCount - 1);
-                    Vector3 pointB = lineRenderer[attacker.characterData.characterID].GetPosition(segmentCount);
-                    Vector3 dir = (pointB - pointA).normalized;
-                    arrowInstance.transform.position = pointB;
-                    arrowInstance.transform.right = dir;
-                    arrowInstances[attacker.characterData.characterID].Add(target.characterData.characterID, arrowInstance);
-                }
+                GameObject arrowInstance = Instantiate(arrow);
+                Vector3 pointA = lineRenderer.GetPosition(segmentCount - 1);
+                Vector3 pointB = lineRenderer.GetPosition(segmentCount);
+                Vector3 dir = (pointB - pointA).normalized;
+                arrowInstance.transform.position = pointB;
+                arrowInstance.transform.right = dir;
+                arrowInstances = arrowInstance;
             }
-
         }
         else
         {
-            lineRenderer[attacker.characterData.characterID].enabled = false;
+            lineRenderer.enabled = false;
             return;
         }    
     }
@@ -96,21 +75,9 @@ public class TargetArrow : MonoBehaviour
         return u * u * p0 + 2 * u * t * p1 + t * t * p2;
     }
 
-    public void RemoveArrow(CharacterInBattle attacker)
+    public void RemoveArrow()
     {
-        if (arrowInstances.ContainsKey(attacker.characterData.characterID))
-        {
-            foreach (var arrowInstance in arrowInstances[attacker.characterData.characterID].Values)
-            {
-                if (arrowInstance != null)
-                    GameObject.Destroy(arrowInstance);
-            }
-            arrowInstances[attacker.characterData.characterID].Clear();
-            if (arrowInstances[attacker.characterData.characterID].Count == 0)
-            {
-                arrowInstances.Remove(attacker.characterData.characterID);
-            }
-        }
-        lineRenderer[attacker.characterData.characterID].enabled = false;
+        Destroy(arrowInstances);
+        lineRenderer.enabled = false;
     }    
 }

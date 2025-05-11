@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using NUnit.Framework;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor.Experimental.GraphView;
@@ -45,7 +46,6 @@ public class BattleManager : MonoBehaviour
                 Debug.Log("Thực thi hành động");
                 selectSkill.DisableSkillUI();
                 Action();
-                targetArrowManager.TurnOffArrow();
                 startTurnButton.interactable = false;
             }
             else
@@ -98,10 +98,8 @@ public class BattleManager : MonoBehaviour
                         }
 
                         Debug.Log($"Skill: {selectSkill.GetSkillBase().name} nhắm vào {character}");
-                        TargetArrow targetArrow = selectedCharacter.GetComponent<TargetArrow>();
-                        targetArrow.MakeArrow(selectedCharacter, character, false);
                         SelectSkill.isPlayerSelectingTarget = false;
-                        actionOrderUI.AddAction(selectedCharacter, selectSkill.GetSkillBase());
+                        actionOrderUI.AddAction(selectedCharacter, character, selectSkill.GetSkillBase(), false);
                         SelectSkill.selectedSkill = null;                    
                     }
                 }
@@ -122,10 +120,8 @@ public class BattleManager : MonoBehaviour
                         plannedActions.RemoveAll(a => a.Caster == selectedCharacter);
                         plannedActions.Add(action);
                     }
-                    TargetArrow targetArrow = selectedCharacter.GetComponent<TargetArrow>();
-                    targetArrow.MakeArrow(selectedCharacter, character, true);
                     SelectSkill.isPlayerSelectingTarget = false;
-                    actionOrderUI.AddAction(selectedCharacter, selectSkill.GetSkillBase());
+                    actionOrderUI.AddAction(selectedCharacter, character, selectSkill.GetSkillBase(), true);
                     SelectSkill.selectedSkill = null;
                 }
             }                     
@@ -158,33 +154,41 @@ public class BattleManager : MonoBehaviour
             foreach (var enemy in TeamAI)
             {
                 int skillIndex = UnityEngine.Random.Range(0, enemy.skillList.Count);
-                int targetIndex = UnityEngine.Random.Range(0, TeamPlayer.Count);
+                CharacterInBattle chosen = GetRandomAlive(TeamPlayer);
                 SkillBase skill = enemy.skillList[skillIndex];
-                CharacterInBattle targetPlayer = TeamPlayer[targetIndex];
                 EnemyPlannedAction action = new EnemyPlannedAction
                 {
                     Caster = enemy,
-                    Target = targetPlayer,
+                    Target = chosen,
                     Skill = skill
                 };
-                if (!action.Target.isAlive)
-                {
-                    i--;
-                }
-                else
-                {
-                    enemyPlannedAction.Add(action);
-                }
-                TargetArrow targetArrow = enemy.GetComponent<TargetArrow>();
-                StartCoroutine(AddEnemyAction(enemy, skill));
+
+                enemyPlannedAction.Add(action);
+                StartCoroutine(AddEnemyAction(enemy, chosen, skill));
             }
             
         }
     }
 
-    public IEnumerator AddEnemyAction(CharacterInBattle enemy, SkillBase skill)
+    public CharacterInBattle GetRandomAlive(List<CharacterInBattle> list)
     {
-        actionOrderUI.AddAction(enemy, skill);
+        var aliveList = list.Where(x => x.isAlive).ToList();
+        if (aliveList.Count == 0) return null;
+
+        int index = Random.Range(0, aliveList.Count);
+        return aliveList[index];
+    }
+
+    public IEnumerator AddEnemyAction(CharacterInBattle enemy, CharacterInBattle target, SkillBase skill)
+    {
+        if (skill.supportSkill == true)
+        {
+            actionOrderUI.AddAction(enemy, target, skill, true);
+        }
+        else
+        {
+            actionOrderUI.AddAction(enemy, target, skill, false);
+        }
         yield return new WaitForSeconds(0.5f);
     }
 
@@ -271,19 +275,8 @@ public class BattleManager : MonoBehaviour
             {
                 if (!action.Target.isAlive)
                 {
-                    while (true)
-                    {
-                        int targetIndex = UnityEngine.Random.Range(0, TeamPlayer.Count);
-                        action.Target = TeamPlayer[targetIndex];
-                        if (action.Target.isAlive)
-                        {
-                            break;
-                        }
-                        else if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
-                        {
-                            break;
-                        }
-                    }
+                    actionOrderUI.RemoveAction(action.Caster, action.Skill);
+                    continue;
                 }
 
                 action.Skill.DoAction(action.Caster, action.Target);
@@ -346,6 +339,7 @@ public class BattleManager : MonoBehaviour
                 }
                 if (action.Caster.isAlive == false)
                 {
+                    actionOrderUI.RemoveAction(action.Caster, action.Skill);
                     break;
                 }
                 yield return new WaitForSeconds(1f);

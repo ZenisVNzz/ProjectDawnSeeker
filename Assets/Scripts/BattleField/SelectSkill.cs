@@ -58,7 +58,6 @@ public class SelectSkill : MonoBehaviour
 
                 if (this.skill.passiveSkill)
                 {
-                    targetArrow.RemoveArrow(characterInBattle);
                     isPlayerSelectingTarget = false;
                     battleManager.plannedActions.Add(new PlannedAction
                     {
@@ -67,8 +66,7 @@ public class SelectSkill : MonoBehaviour
                         Skill = this.skill
                     });
                     selectedSkill = this.skill;
-                    battleManager.actionOrderUI.AddAction(characterInBattle, this.skill);
-                    targetArrow.RemoveArrow(characterInBattle);
+                    battleManager.actionOrderUI.AddAction(characterInBattle, characterInBattle, this.skill, false);
                 }
 
                 if (currentSkillBox != null && currentSkillBox != this.skillBox)
