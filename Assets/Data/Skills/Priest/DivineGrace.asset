@@ -21,3 +21,5 @@ MonoBehaviour:
   animation: {fileID: 7400000, guid: eeedfc4d936e2694eafac17dbf9cf257, type: 2}
   passiveSkill: 1
   supportSkill: 0
+  move: 0
+  purify: {fileID: 11400000, guid: 938f8110bade56943abe95f59af25a89, type: 2}

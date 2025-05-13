@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -73,9 +74,11 @@ public class CharacterInBattle : MonoBehaviour
     private List<StatusEffect> EffectOnTurn = new List<StatusEffect>();
 
     public float savedDmg;
+    public bool isCrit;
     public float savedHeal;
     private Vector3 targetPosition;
     public CharacterInBattle currentTarget;
+    public CharacterInBattle currentAttacker;
     public State currentState;
     private int currentSkillID;
 
@@ -109,9 +112,11 @@ public class CharacterInBattle : MonoBehaviour
             sr.color = value ? Color.red : Color.gray;*/
     }
 
-    public void TakeDamage(float damage, CharacterInBattle attacker, CharacterInBattle target)
+    public void TakeDamage(float damage, int hitCount, CharacterInBattle attacker, CharacterInBattle target)
     {
-        float totaldamage = damage - DEF;
+        float totaldamage = damage;
+        totaldamage = totaldamage / hitCount;
+
         if (!isAlive || attacker == null || !attacker.isAlive)
         {
             if (UnityEngine.Random.value < PC)
@@ -126,17 +131,37 @@ public class CharacterInBattle : MonoBehaviour
                 return;
             }
         }
-        if (totaldamage <= 0)
+
+        totaldamage = totaldamage - DEF;
+        currentAttacker = attacker;
+        attacker.savedDmg = totaldamage;      
+    }
+
+    private void MinusHP(float amount)
+    {
+        if (UnityEngine.Random.value < currentAttacker.CR)
         {
-            totaldamage = 0;
+            amount = amount * currentAttacker.CD;
+            currentAttacker.isCrit = true;
         }
-        currentHP -= totaldamage;
+        else
+        {
+            currentAttacker.isCrit = false;
+        }    
+
+        dmgPopUp.ShowDmgPopUp(amount, transform.position , currentAttacker.isCrit);
+
+        if (amount <= 0)
+        {
+            amount = 0;
+        }
+        currentHP -= amount;
         if (currentHP <= 0)
         {
             currentHP = 0;
             Die();
         }
-    }
+    }    
 
     public void TakeDamagePercent(int Percent)
     {
@@ -151,7 +176,7 @@ public class CharacterInBattle : MonoBehaviour
                 Die();
             }
             Debug.Log($"{charName} nhận {amount} damage dot");
-            dmgPopUp.ShowDmgPopUp(amount, transform.position);
+            dmgPopUp.ShowDmgPopUp(amount, transform.position, false);
             battleUI.RefreshBattleUI();
         }         
     }
@@ -165,7 +190,7 @@ public class CharacterInBattle : MonoBehaviour
             animator.Play("Death");
             Die();
         }
-        dmgPopUp.ShowDmgPopUp(damage, transform.position);
+        dmgPopUp.ShowDmgPopUp(damage, transform.position, false);
     }
 
     public void Attack(CharacterInBattle target, CharacterInBattle attacker)
@@ -177,7 +202,7 @@ public class CharacterInBattle : MonoBehaviour
             {
                 damage = ATK * CD;
             }
-            target.TakeDamage(damage, attacker, target);
+            target.TakeDamage(damage, 1, attacker, target);
             savedDmg = damage - target.DEF;
             currentTarget = target;
         }  
@@ -284,14 +309,12 @@ public class CharacterInBattle : MonoBehaviour
 
     public void OnAttackHit()
     {
-        battleUI.RefreshBattleUI();
-        targetPosition = currentTarget.transform.position;
         if (savedDmg < 0)
         {
             savedDmg = 0;
         }
-        dmgPopUp.ShowDmgPopUp(savedDmg, targetPosition);
-        currentTarget.OnTakeHit();
+        currentTarget.OnTakeHit(savedDmg);
+        isCrit = false;
         if (CheckIfDeath())
         {
             animator.Play("Death");
@@ -306,8 +329,10 @@ public class CharacterInBattle : MonoBehaviour
         dmgPopUp.ShowHealPopUp(savedHeal, targetPosition);
     }    
 
-    public void OnTakeHit()
+    public void OnTakeHit(float dmg)
     {
+        MinusHP(dmg);
+        battleUI.RefreshBattleUI();
         if (CheckIfDeath())
         {
             animator.Play("Death");
@@ -326,6 +351,7 @@ public class CharacterInBattle : MonoBehaviour
 
     public void OnAttackEnd()
     {
+        isCrit = false;
         IdleState();       
     }
 

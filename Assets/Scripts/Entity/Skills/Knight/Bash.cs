@@ -8,14 +8,13 @@ public class Bash : SkillBase
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
         float damage = user.ATK * 0.3f;
-        target.TakeDamage(damage, user, target);
+        target.TakeDamage(damage, 1, user, target);
         user.ApplyStatusEffect(defUP, 2);
         int ran = Random.Range(0, 100);
         if (ran < 50)
         {
             target.ApplyStatusEffect(paralysis, 1);
         }
-        user.savedDmg = damage - target.DEF;
         base.DoAction(user, target);
     }
 }

@@ -6,9 +6,8 @@ public class DivineArrow : SkillBase
     public StatusEffect deepWound;
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
-        target.TakeDamage(user.ATK * 3, user, target);
+        target.TakeDamage(user.ATK * 3, 1, user, target);
         target.ApplyStatusEffect(deepWound, 2);
-        user.savedDmg = user.ATK * 3 - target.DEF;
         base.DoAction(user, target);
     }
 }

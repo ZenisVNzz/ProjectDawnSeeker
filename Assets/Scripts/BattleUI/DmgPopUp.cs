@@ -7,9 +7,18 @@ public class DmgPopUp : MonoBehaviour
     public GameObject dmgPopUpPrefab;
     public Transform canvasRectTransform;
 
-    public void ShowDmgPopUp(float damage, Vector3 position)
+    public void ShowDmgPopUp(float damage, Vector3 position, bool isCrit)
     {
         GameObject dmgPopUp = Instantiate(dmgPopUpPrefab);
+        GameObject crit = dmgPopUp.transform.Find("Crit").gameObject;
+        if (isCrit)
+        {
+            crit.SetActive(true);
+        }
+        else
+        {
+            crit.SetActive(false);
+        }
         dmgPopUp.transform.SetParent(canvasRectTransform, false);
         Vector3 pos = new Vector3(position.x, position.y + 1.2f, 0);
         dmgPopUp.transform.position = pos;
@@ -22,6 +31,8 @@ public class DmgPopUp : MonoBehaviour
     public void ShowHealPopUp(float damage, Vector3 position)
     {
         GameObject dmgPopUp = Instantiate(dmgPopUpPrefab);
+        GameObject crit = dmgPopUp.transform.Find("Crit").gameObject;
+        crit.SetActive(false);
         dmgPopUp.transform.SetParent(canvasRectTransform, false);
         Vector3 pos = new Vector3(position.x, position.y + 1.2f, 0);
         dmgPopUp.transform.position = pos;

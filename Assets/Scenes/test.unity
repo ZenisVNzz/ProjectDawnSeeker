@@ -4216,6 +4216,7 @@ MonoBehaviour:
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
   currentState: 0
@@ -6788,6 +6789,7 @@ MonoBehaviour:
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
   currentState: 0
@@ -10550,6 +10552,7 @@ MonoBehaviour:
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
   currentState: 0
@@ -11064,6 +11067,7 @@ MonoBehaviour:
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
   currentState: 0
@@ -11414,6 +11418,7 @@ MonoBehaviour:
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
   currentState: 0
@@ -13471,6 +13476,10 @@ MonoBehaviour:
     duringEffect: 0
     isPlayOnHit: 1
     effectPrefab: {fileID: 8322717233630131957, guid: ea50bacbd9c5b5743aeb39e151194a44, type: 3}
+  - ID: 200019
+    duringEffect: 0
+    isPlayOnHit: 1
+    effectPrefab: {fileID: 5107623694346614954, guid: 3e88ba36b8d601c4392afcd7508e7de4, type: 3}
 --- !u!1 &1489819655
 GameObject:
   m_ObjectHideFlags: 0
