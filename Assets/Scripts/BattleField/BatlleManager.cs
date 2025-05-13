@@ -165,8 +165,7 @@ public class BattleManager : MonoBehaviour
 
                 enemyPlannedAction.Add(action);
                 StartCoroutine(AddEnemyAction(enemy, chosen, skill));
-            }
-            
+            }      
         }
     }
 
@@ -269,6 +268,16 @@ public class BattleManager : MonoBehaviour
 
     private IEnumerator ExecuteActionsSequentially(bool PlayerTurn)
     {
+        ToggleX2 toggleX2 = FindFirstObjectByType<ToggleX2>();
+        if (toggleX2.isOn)
+        {
+            Time.timeScale = 2f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
+
         if (PlayerTurn)
         {
             foreach (PlannedAction action in plannedActions)
@@ -393,6 +402,12 @@ public class BattleManager : MonoBehaviour
 
     public void OnNextTurn()
     {
+        ToggleX2 toggleX2 = FindFirstObjectByType<ToggleX2>();
+        if (toggleX2.isOn)
+        {
+            Time.timeScale = 1f;
+        }
+
         NormalCurrentTurn++;
         BossCurrentTurn++;
         isPlayerTurn = true;

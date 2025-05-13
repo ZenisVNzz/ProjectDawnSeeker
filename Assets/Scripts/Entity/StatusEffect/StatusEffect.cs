@@ -9,6 +9,7 @@ public abstract class StatusEffect : ScriptableObject
     public StatusType type;
     public int duration;
     public Sprite Icon;
+    public bool isHeadVFX;
 
     public abstract void OnApply(CharacterInBattle target);
     public abstract void OnTurn(CharacterInBattle target);

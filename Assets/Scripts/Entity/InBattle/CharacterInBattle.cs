@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -187,9 +188,17 @@ public class CharacterInBattle : MonoBehaviour
         effect.OnApply(this);
         effect.duration = duration;
         activeStatusEffect.Add(effect);           
-        if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == true))
+        if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == true) && isAlive)
         {
-            GameObject effectAnchor = transform.Find("EffectAnchor").gameObject;
+            GameObject effectAnchor;
+            if (!effect.isHeadVFX)
+            {
+                effectAnchor = transform.Find("EffectAnchor").gameObject;
+            }
+            else
+            {
+                effectAnchor = transform.Find("HeadAnchor").gameObject;
+            }
             vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, characterData.characterID);
         }
         else
@@ -197,7 +206,7 @@ public class CharacterInBattle : MonoBehaviour
             EffectOnTurn.Add(effect);
         }    
         Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
-    }
+    }  
 
     public void StartTurn()
     {
@@ -223,7 +232,7 @@ public class CharacterInBattle : MonoBehaviour
             {
                 if (activeStatusEffect.Count(e => e.ID == activeStatusEffect[i].ID) <= 1)
                 {
-                    vfxManager.StopEffect(characterData.characterID, activeStatusEffect[i].ID);
+                    StartCoroutine(vfxManager.StopEffect(characterData.characterID, activeStatusEffect[i].ID));
                     Debug.Log($"{charName} đã hết hiệu ứng {activeStatusEffect[i].name}");
                 }
                 activeStatusEffect.RemoveAt(i);
@@ -326,11 +335,20 @@ public class CharacterInBattle : MonoBehaviour
         {
             if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == false))
             {
-                GameObject effectAnchor = transform.Find("EffectAnchor").gameObject;
+                GameObject effectAnchor;
+                if (!effect.isHeadVFX)
+                {
+                    effectAnchor = transform.Find("EffectAnchor").gameObject;
+                }
+                else
+                {
+                    effectAnchor = transform.Find("HeadAnchor").gameObject;
+                }    
+                
                 vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, characterData.characterID);
             }
         }
-        vfxManager.StopEffect(characterData.characterID, currentSkillID);
+        StartCoroutine(vfxManager.StopEffect(characterData.characterID, currentSkillID));
         EffectOnTurn.Clear();
     }    
 
@@ -338,7 +356,7 @@ public class CharacterInBattle : MonoBehaviour
     {
         vfxManager.PlayEffect(skillID, currentTarget.transform.position, characterData.characterID);
         currentSkillID = skillID;
-        vfxManager.StopEffect(characterData.characterID, skillID);
+        StartCoroutine(vfxManager.StopEffect(characterData.characterID, skillID));
     }
 
     public bool CheckIfDeath()

@@ -49,14 +49,14 @@ public class VFXManager : MonoBehaviour
 
     public IEnumerator StopEffect(int charID, int effectID)
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         if (activeEffectVFX.ContainsKey(charID))
         {
             if (activeEffectVFX[charID].ContainsKey(effectID))
             {
                 Destroy(activeEffectVFX[charID][effectID]);
                 activeEffectVFX[charID].Remove(effectID);
-            }  
+            }
         }
     }
 
