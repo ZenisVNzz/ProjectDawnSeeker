@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: b96199bc83f14cd4ea1c84b524ebafa2
+guid: f4917613c9c82af4cb3a03fc45c756d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4010436053776415738
-    second: Orc rider-Block_0
-  - first:
-      213: 4747101767086277178
-    second: Orc rider-Block_1
-  - first:
-      213: 3669265480885726123
-    second: Orc rider-Block_2
-  - first:
-      213: -515730540190657606
-    second: Orc rider-Block_3
+      213: -2739807658926110822
+    second: Skull_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Orc rider-Block_0
+      name: Skull_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 100
-        height: 100
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 604cc3448a11858c0800000000000000
-      internalID: -4010436053776415738
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Orc rider-Block_1
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 0
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a328ecbe7e711e140800000000000000
-      internalID: 4747101767086277178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Orc rider-Block_2
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 0
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: babebc6a389dbe230800000000000000
-      internalID: 3669265480885726123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Orc rider-Block_3
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 0
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ab39d106ec1c7d8f0800000000000000
-      internalID: -515730540190657606
+      spriteID: a9780d8437f3af9d0800000000000000
+      internalID: -2739807658926110822
       vertices: []
       indices: 
       edges: []
@@ -200,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3b3eb2e7fa43ca147a9fbb8cdb3ba09c
+    spriteID: db6e52d42cdaaab4583a6a0e7a97b1b3
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Orc rider-Block_0: -4010436053776415738
-      Orc rider-Block_1: 4747101767086277178
-      Orc rider-Block_2: 3669265480885726123
-      Orc rider-Block_3: -515730540190657606
+      Skull_0: -2739807658926110822
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

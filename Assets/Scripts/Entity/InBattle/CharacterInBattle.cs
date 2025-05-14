@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.Localization.SmartFormat.Utilities;
 using UnityEngine.Rendering.Universal;
 
 public enum State
@@ -132,7 +133,6 @@ public class CharacterInBattle : MonoBehaviour
             }
         }
 
-        totaldamage = totaldamage - DEF;
         currentAttacker = attacker;
         attacker.savedDmg = totaldamage;      
     }
@@ -147,14 +147,16 @@ public class CharacterInBattle : MonoBehaviour
         else
         {
             currentAttacker.isCrit = false;
-        }    
+        }
 
-        dmgPopUp.ShowDmgPopUp(amount, transform.position , currentAttacker.isCrit);
-
+        amount = amount - DEF;
         if (amount <= 0)
         {
             amount = 0;
         }
+
+        dmgPopUp.ShowDmgPopUp(amount, transform.position , currentAttacker.isCrit);    
+
         currentHP -= amount;
         if (currentHP <= 0)
         {
@@ -321,6 +323,24 @@ public class CharacterInBattle : MonoBehaviour
             Die();
         }
     }
+
+    public void OnAOEAttackHit()
+    {
+        if (savedDmg < 0)
+        {
+            savedDmg = 0;
+        }
+        foreach (var target in battleManager.TeamPlayer)
+        {
+            target.OnTakeHit(savedDmg);
+        }
+        isCrit = false;
+        if (CheckIfDeath())
+        {
+            animator.Play("Death");
+            Die();
+        }
+    }    
 
     public void OnSupportSkillHit()
     {
