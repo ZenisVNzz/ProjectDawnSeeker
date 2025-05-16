@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewDEFDown", menuName = "StatusEffect/DEFDown")]
 public class DEFDown : StatusEffect
 {
-    public int PercentAmount;
+    public float PercentAmount;
 
     public override void OnApply(CharacterInBattle target)
     {

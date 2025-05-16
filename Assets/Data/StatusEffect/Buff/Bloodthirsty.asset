@@ -9,14 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03d17e2c5a65ee34d860269dcb3d5ccc, type: 3}
-  m_Name: ATKUP
+  m_Script: {fileID: 11500000, guid: a92382f7ecf5fba4bbe06c9864d53658, type: 3}
+  m_Name: Bloodthirsty
   m_EditorClassIdentifier: 
-  ID: 200001
-  statusName: "C\u01B0\u1EDDng h\xF3a"
+  ID: 200020
+  statusName: "Kh\xE1t m\xE1u"
   type: 0
-  duration: 1
+  duration: 87
   Icon: {fileID: 0}
-  canStack: 0
-  isHeadVFX: 1
-  PercentAmount: 10
+  canStack: 1
+  maxStack: 5
+  isHeadVFX: 0

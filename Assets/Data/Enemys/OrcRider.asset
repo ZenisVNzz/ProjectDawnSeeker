@@ -23,10 +23,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bfbfc38983aef4d488add7a40191ad36, type: 2}
   - {fileID: 11400000, guid: 096f798562f834649bdf2fde32905df8, type: 2}
   ATK: 6
-  HP: 160
-  DEF: 3
+  HP: 190
+  DEF: 5
   MP: 6
   CR: 0.1
   CD: 1.2
   DC: 0.05
-  PC: 0.05
+  PC: 0.08

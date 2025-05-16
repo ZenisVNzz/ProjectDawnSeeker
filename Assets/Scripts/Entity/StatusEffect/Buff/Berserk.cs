@@ -3,8 +3,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewBerserk", menuName = "StatusEffect/Berserk")]
 public class Berserk : StatusEffect
 {
-    public int IncreaseATKPercentAmount;
-    public int DecreaseDEFPercentAmount;
+    public float IncreaseATKPercentAmount;
+    public float DecreaseDEFPercentAmount;
 
     public override void OnApply(CharacterInBattle target)
     {

@@ -10,7 +10,7 @@ public class OrcRider_Skill4 : SkillBase
         {
             if (player.isAlive)
             {
-                player.TakeDamage(user.ATK * 6f, 3, user, target);
+                player.TakeDamage(user.ATK * 4.5f, 3, user, target);
             }    
         }
         base.DoAction(user, target);

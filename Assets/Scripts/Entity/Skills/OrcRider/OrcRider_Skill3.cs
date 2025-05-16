@@ -6,6 +6,7 @@ public class OrcRider_Skill3 : SkillBase
 {
     public StatusEffect fear;
     public StatusEffect atkUP;
+    public StatusEffect bloodThirsty;
 
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
@@ -18,6 +19,7 @@ public class OrcRider_Skill3 : SkillBase
             }
         }
         user.ApplyStatusEffect(atkUP, 2);
+        user.ApplyStatusEffect(bloodThirsty, 99);
         base.DoAction(user, target);
     }
 }

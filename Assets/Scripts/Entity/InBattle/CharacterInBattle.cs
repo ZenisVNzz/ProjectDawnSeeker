@@ -212,27 +212,34 @@ public class CharacterInBattle : MonoBehaviour
 
     public void ApplyStatusEffect(StatusEffect effect, int duration)
     {
-        effect.OnApply(this);
-        effect.duration = duration;
-        activeStatusEffect.Add(effect);           
-        if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == true) && isAlive)
+        if (!activeStatusEffect.Contains(effect) || activeStatusEffect.Contains(effect) && effect.canStack && effect.maxStack > activeStatusEffect.Count(e => e.ID == effect.ID))
         {
-            GameObject effectAnchor;
-            if (!effect.isHeadVFX)
+            effect.OnApply(this);
+            effect.duration = duration;
+            activeStatusEffect.Add(effect);
+            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == true) && isAlive)
             {
-                effectAnchor = transform.Find("EffectAnchor").gameObject;
+                GameObject effectAnchor;
+                if (!effect.isHeadVFX)
+                {
+                    effectAnchor = transform.Find("EffectAnchor").gameObject;
+                }
+                else
+                {
+                    effectAnchor = transform.Find("HeadAnchor").gameObject;
+                }
+                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, characterData.characterID);
             }
             else
             {
-                effectAnchor = transform.Find("HeadAnchor").gameObject;
+                EffectOnTurn.Add(effect);
             }
-            vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, characterData.characterID);
+            Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
         }
-        else
+        else if (activeStatusEffect.Contains(effect) && !effect.canStack)
         {
-            EffectOnTurn.Add(effect);
-        }    
-        Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
+            activeStatusEffect.Find(e => e.ID == effect.ID).duration = effect.duration;
+        }
     }  
 
     public void StartTurn()
@@ -417,73 +424,73 @@ public class CharacterInBattle : MonoBehaviour
         }    
     }    
 
-    public void IncreaseATK(int percentAmount)
+    public void IncreaseATK(float percentAmount)
     {
         float amount = characterData.ATK * (percentAmount / 100f);
         ATK += amount;
     }
 
-    public void DecreaseATK(int percentAmount)
+    public void DecreaseATK(float percentAmount)
     {
         float amount = characterData.ATK * (percentAmount / 100f);
         ATK -= amount;
     }
 
-    public void IncreaseDEF(int percentAmount)
+    public void IncreaseDEF(float percentAmount)
     {
         float amount = characterData.DEF * (percentAmount / 100f);
         DEF += amount;
     }
 
-    public void DecreaseDEF(int percentAmount)
+    public void DecreaseDEF(float percentAmount)
     {
         float amount = characterData.DEF * (percentAmount / 100f);
         DEF -= amount;
     }
 
-    public void IncreaseCR(int percentAmount)
+    public void IncreaseCR(float percentAmount)
     {
         float amount = characterData.CR * (percentAmount / 100f);
         CR += amount;
     }
 
-    public void DecreaseCR(int percentAmount)
+    public void DecreaseCR(float percentAmount)
     {
         float amount = characterData.CR * (percentAmount / 100f);
         CR -= amount;
     }
 
-    public void IncreaseCD(int percentAmount)
+    public void IncreaseCD(float percentAmount)
     {
         float amount = characterData.CD * (percentAmount / 100f);
         CD -= amount;
     }
 
-    public void DecreaseCD(int percentAmount)
+    public void DecreaseCD(float percentAmount)
     {
         float amount = characterData.CD * (percentAmount / 100f);
         CD -= amount;
     }
 
-    public void IncreaseDC(int percentAmount)
+    public void IncreaseDC(float percentAmount)
     {
         float amount = characterData.DC * (percentAmount / 100f);
         DC += amount;
     }
 
-    public void DecreaseDC(int percentAmount)
+    public void DecreaseDC(float percentAmount)
     {
         float amount = characterData.DC * (percentAmount / 100f);
         DC -= amount;
     }
 
-    public void IncreasePC(int percentAmount)
+    public void IncreasePC(float percentAmount)
     {
         float amount = characterData.PC * (percentAmount / 100f);
         PC += amount;
     }
 
-    public void DecreasePC(int percentAmount)
+    public void DecreasePC(float percentAmount)
     {
         float amount = characterData.PC * (percentAmount / 100f);
         PC -= amount;

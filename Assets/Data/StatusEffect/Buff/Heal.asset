@@ -15,7 +15,10 @@ MonoBehaviour:
   ID: 200005
   statusName: "Ph\u01B0\u1EDBc l\xE0nh"
   type: 0
-  duration: 1
+  duration: 0
   Icon: {fileID: 0}
-  CasterATK: 0
-  percent: 40
+  canStack: 0
+  maxStack: 1
+  isHeadVFX: 0
+  CasterATK: 5
+  percent: 80
