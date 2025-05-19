@@ -43,6 +43,8 @@ public class CharacterInBattle : MonoBehaviour
     public bool isMPRecoveryAble = true;
     public bool isDeepWound = false;
     public bool isSilent = false;
+    public bool isEnchantment = false;
+    public bool isHeatShock = false;
 
     public List<StatusEffect> activeStatusEffect = new List<StatusEffect>();
 
@@ -93,7 +95,7 @@ public class CharacterInBattle : MonoBehaviour
         battleManager = FindFirstObjectByType<BattleManager>(); // tìm script quản lý trận đấu
         IdleState(); // trạng thái idle khi bắt đầu
         battleUI.RefreshBattleUI();
-        currentState = State.Idle;    
+        currentState = State.Idle;
     }
 
     void OnMouseDown()
@@ -118,7 +120,7 @@ public class CharacterInBattle : MonoBehaviour
         float totaldamage = damage;
         totaldamage = totaldamage / hitCount;
 
-        if (!isAlive || attacker == null || !attacker.isAlive)
+        /*if (isAlive || attacker != null || attacker.isAlive)
         {
             if (UnityEngine.Random.value < PC)
             {
@@ -131,10 +133,24 @@ public class CharacterInBattle : MonoBehaviour
                 Debug.Log(charName + " đã né đòn");
                 return;
             }
-        }
+        }*/
 
         currentAttacker = attacker;
-        attacker.savedDmg = totaldamage;      
+        if (attacker.isEnchantment)
+        {
+            totaldamage = totaldamage * 1.2f;
+        }
+        if (isHeatShock)
+        {
+            totaldamage = totaldamage * 1.2f;
+        }    
+
+        attacker.savedDmg = totaldamage;
+
+        if (attacker.isEnchantment)
+        {
+            isEnchantment = false;
+        }    
     }
 
     private void MinusHP(float amount)
@@ -163,6 +179,16 @@ public class CharacterInBattle : MonoBehaviour
             currentHP = 0;
             Die();
         }
+
+        if (isHeatShock)
+        {
+            float index = UnityEngine.Random.Range(0, 100);
+            if (index < 20)
+            {
+                StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
+                this.ApplyStatusEffect(statusEffectInstance.paralysis, 1);
+            }
+        }    
     }    
 
     public void TakeDamagePercent(int Percent)
@@ -174,7 +200,6 @@ public class CharacterInBattle : MonoBehaviour
             if (currentHP <= 0)
             {
                 currentHP = 0;
-                animator.Play("Death");
                 Die();
             }
             Debug.Log($"{charName} nhận {amount} damage dot");
@@ -189,7 +214,6 @@ public class CharacterInBattle : MonoBehaviour
         if (currentHP <= 0)
         {
             currentHP = 0;
-            animator.Play("Death");
             Die();
         }
         dmgPopUp.ShowDmgPopUp(damage, transform.position, false);
@@ -228,7 +252,7 @@ public class CharacterInBattle : MonoBehaviour
                 {
                     effectAnchor = transform.Find("HeadAnchor").gameObject;
                 }
-                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, characterData.characterID);
+                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this);
             }
             else
             {
@@ -326,7 +350,6 @@ public class CharacterInBattle : MonoBehaviour
         isCrit = false;
         if (CheckIfDeath())
         {
-            animator.Play("Death");
             Die();
         }
     }
@@ -344,7 +367,6 @@ public class CharacterInBattle : MonoBehaviour
         isCrit = false;
         if (CheckIfDeath())
         {
-            animator.Play("Death");
             Die();
         }
     }    
@@ -362,7 +384,6 @@ public class CharacterInBattle : MonoBehaviour
         battleUI.RefreshBattleUI();
         if (CheckIfDeath())
         {
-            animator.Play("Death");
             Die();
         }
         else
@@ -380,6 +401,7 @@ public class CharacterInBattle : MonoBehaviour
     {
         isCrit = false;
         IdleState();       
+        PlayEffectOnEndAction();
     }
 
     public void PlayEffectOnEndAction()
@@ -398,19 +420,25 @@ public class CharacterInBattle : MonoBehaviour
                     effectAnchor = transform.Find("HeadAnchor").gameObject;
                 }    
                 
-                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, characterData.characterID);
+                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this);
             }
-        }
+        }   
         StartCoroutine(vfxManager.StopEffect(characterData.characterID, currentSkillID));
         EffectOnTurn.Clear();
     }    
 
     public void RangeSkillEffect(int skillID)
     {
-        vfxManager.PlayEffect(skillID, currentTarget.transform.position, characterData.characterID);
+        vfxManager.PlayEffect(skillID, currentTarget.transform.position, this);
         currentSkillID = skillID;
         StartCoroutine(vfxManager.StopEffect(characterData.characterID, skillID));
     }
+
+    public void WaitForRangeSkillHit()
+    {
+        OnAttackHit();
+        Invoke("OnAttackEnd", 0.5f);
+    }    
 
     public bool CheckIfDeath()
     {
@@ -463,7 +491,7 @@ public class CharacterInBattle : MonoBehaviour
     public void IncreaseCD(float percentAmount)
     {
         float amount = characterData.CD * (percentAmount / 100f);
-        CD -= amount;
+        CD += amount;
     }
 
     public void DecreaseCD(float percentAmount)
@@ -500,6 +528,7 @@ public class CharacterInBattle : MonoBehaviour
     {
         isAlive = false;
         isActionAble = false;
+        animator.Play("Death");
         vfxManager.StopAllEffect(characterData.characterID);
         OnDeath?.Invoke(this);
     }

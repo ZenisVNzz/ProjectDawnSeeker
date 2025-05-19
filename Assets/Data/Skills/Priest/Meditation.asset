@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Meditation
   m_EditorClassIdentifier: 
   ID: 300008
-  skillName: "Thi\u1EC1n"
+  skillName: "Thi\u1EC1n \u0111\u1ECBnh"
   description: "H\u1EA5p th\u1EE5 mana trong kh\xF4ng kh\xED \u0111\u1EC3 h\u1ED3i
     mana, nh\u01B0ng d\u1EC5 b\u1ECB t\u1ED5n th\u01B0\u01A1ng trong l\u01B0\u1EE3t
     n\xE0y."
@@ -22,4 +22,6 @@ MonoBehaviour:
   animation: {fileID: 7400000, guid: 28fa8dbedf7a6494eb6111ea22e1f11a, type: 2}
   passiveSkill: 1
   supportSkill: 0
+  move: 0
+  isAOE: 0
   meditation: {fileID: 11400000, guid: 94f17286500ff0040ac7909040ef329d, type: 2}

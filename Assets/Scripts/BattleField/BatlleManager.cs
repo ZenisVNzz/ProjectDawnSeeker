@@ -501,7 +501,7 @@ public class BattleManager : MonoBehaviour
 
         attacker.transform.position = originalPos;
         animator.Play("Idle");
-        attacker.PlayEffectOnEndAction();
+        attacker.OnAttackEnd();
     }
 
 }
