@@ -2748,10 +2748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3a55584076d5f940b895d895606d5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCharacter:
-  - {fileID: 11400000, guid: 666e1ad216a14db409314d65dac8d327, type: 2}
-  - {fileID: 11400000, guid: d340c68b77eb75c4e8ad7dad404e5d12, type: 2}
-  - {fileID: 11400000, guid: 5ac2ca0e26d4ce246a4373068f1f72c1, type: 2}
+  playerCharacter: []
   enemyCharacter: {fileID: 11400000, guid: c8339f5a4fbd2014bbdbd39b19184a57, type: 2}
   playerCharacterInBattle:
   - {fileID: 554530855}
@@ -4219,6 +4216,7 @@ MonoBehaviour:
   isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
+  currentAttacker: {fileID: 0}
   currentState: 0
 --- !u!95 &554530856
 Animator:
@@ -6792,6 +6790,7 @@ MonoBehaviour:
   isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
+  currentAttacker: {fileID: 0}
   currentState: 0
 --- !u!70 &808364463
 CapsuleCollider2D:
@@ -10555,6 +10554,7 @@ MonoBehaviour:
   isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
+  currentAttacker: {fileID: 0}
   currentState: 0
 --- !u!95 &1172855267
 Animator:
@@ -11070,6 +11070,7 @@ MonoBehaviour:
   isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
+  currentAttacker: {fileID: 0}
   currentState: 0
 --- !u!70 &1272054749
 CapsuleCollider2D:
@@ -11421,6 +11422,7 @@ MonoBehaviour:
   isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
+  currentAttacker: {fileID: 0}
   currentState: 0
 --- !u!70 &1283657989
 CapsuleCollider2D:
