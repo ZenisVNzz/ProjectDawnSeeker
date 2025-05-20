@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 122624e3de39a8f4da8fb38c29f783a5, type: 3}
+  m_Name: Heals
+  m_EditorClassIdentifier: 
+  ID: 300009
+  skillName: "Ch\u1EEFa l\xE0nh"
+  description: "H\u1ED3i m\xE1u cho m\u1ED9t \u0111\u1ED3ng minh."
+  icon: {fileID: 2903848411162822477, guid: d1f41afc084cf6648b357cd3bc38fe48, type: 3}
+  mpCost: 2
+  animation: {fileID: 7400000, guid: 0ef0ee48d2a07534fbd03792945476ff, type: 2}
+  passiveSkill: 0
+  supportSkill: 1
+  heal: {fileID: 11400000, guid: e055a91f639658549ad69a96d74a3327, type: 2}

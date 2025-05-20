@@ -1,8 +1,8 @@
 using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public enum characterType { Player, Enemy }
-public enum characterTier { Common, Rare, Legendary }
 
 [CreateAssetMenu(fileName = "Character", menuName = "Characters/NewCharacter")]
 public class CharacterData : ScriptableObject
@@ -10,9 +10,11 @@ public class CharacterData : ScriptableObject
     public int characterID;
     public string characterName;
     public characterType characterType;
-    public characterTier characterTier;
     public Sprite characterSprite;
     public RuntimeAnimatorController characterAnimation;
+
+    public List<SkillBase> skillList;
+
     public float ATK;
     public float HP;
     public float DEF;
@@ -20,5 +22,5 @@ public class CharacterData : ScriptableObject
     public float CR;
     public float CD;
     public float DC;
-    public float PC;
+    public float PC;    
 }

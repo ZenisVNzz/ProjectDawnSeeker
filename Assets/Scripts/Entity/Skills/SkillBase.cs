@@ -1,12 +1,21 @@
 using UnityEngine;
 
-public abstract class SkillBase
+public abstract class SkillBase : ScriptableObject
 {
-    public int skillID;
+    public int ID;
     public string skillName;
-    public string skillDescription;
-    public Sprite icons;
-    public float mpCost;
+    public string description;
+    public Sprite icon;
+    public int mpCost;
+    public AnimationClip animation;
+    public bool passiveSkill = false;
+    public bool supportSkill = false;
+    public bool move = false;
 
-    public abstract void Action(CharacterInBattle user, CharacterInBattle target);
+    public virtual void DoAction(CharacterInBattle user, CharacterInBattle target)
+    {
+        user.AttackState(animation);
+        user.currentTarget = target;
+        user.currentMP -= mpCost;
+    }    
 }

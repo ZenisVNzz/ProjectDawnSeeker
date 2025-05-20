@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a7b918df1ff008458ee5346f6d55190, type: 3}
+  m_Name: Bash
+  m_EditorClassIdentifier: 
+  ID: 300002
+  skillName: "Khi\xEAn k\xEDch"
+  description: "D\xF9ng khi\xEAn th\xFAc m\u1EA1nh v\xE0o \u0111\u1ED1i ph\u01B0\u01A1ng,
+    g\xE2y s\xE1t th\u01B0\u01A1ng nh\u1EB9, c\xF3 50% khi\u1EBFn m\u1EE5c ti\xEAu
+    b\u1ECB t\xEA li\u1EC7t, \u0111\u1ED3ng th\u1EDDi t\u0103ng s\u1EE9c ph\xF2ng
+    th\u1EE7 cho b\u1EA3n th\xE2n trong v\xF2ng 2 l\u01B0\u1EE3t."
+  icon: {fileID: -7186194909302163070, guid: ca018a135bc6c0a448417fc01fa6cf9e, type: 3}
+  mpCost: 2
+  animation: {fileID: 7400000, guid: 99edab21d46534d4297a8a300f5f63d8, type: 2}
+  passiveSkill: 0
+  supportSkill: 0
+  move: 1
+  paralysis: {fileID: 11400000, guid: f268a165c3f09874e9a860ec66d784c2, type: 2}
+  defUP: {fileID: 11400000, guid: f9d0b0d778f43ea4dac0332777c1b337, type: 2}

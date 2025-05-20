@@ -12,4 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32a1a743e3d012d408fdf0edee720fc3, type: 3}
   m_Name: Clone
   m_EditorClassIdentifier: 
-  CharacterPool: []
+  summonPool: {fileID: 0}
+  CharacterPool:
+  - {fileID: 11400000, guid: d340c68b77eb75c4e8ad7dad404e5d12, type: 2}
+  - {fileID: 11400000, guid: c8339f5a4fbd2014bbdbd39b19184a57, type: 2}
+  - {fileID: 11400000, guid: 666e1ad216a14db409314d65dac8d327, type: 2}
+  - {fileID: 11400000, guid: 5ac2ca0e26d4ce246a4373068f1f72c1, type: 2}
+  - {fileID: 11400000, guid: 228ac4cb17e580449ab993161199f573, type: 2}
+  - {fileID: 11400000, guid: 228ac4cb17e580449ab993161199f573, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

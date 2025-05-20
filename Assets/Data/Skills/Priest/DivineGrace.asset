@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77d1dea9dc1b654faf5d415468e81be, type: 3}
+  m_Name: DivineGrace
+  m_EditorClassIdentifier: 
+  ID: 300010
+  skillName: "Th\xE1nh \xE2n"
+  description: "T\u1EA1o ra m\u1ED9t v\xF9ng \xE1nh s\xE1ng thi\xEAng, gi\xFAp thanh
+    t\u1EA9y m\u1ECDi hi\u1EC7u \u1EE9ng b\u1EA5t l\u1EE3i."
+  icon: {fileID: 5444266203284193634, guid: 92a86945a7b41644fa709a98cb33f1f5, type: 3}
+  mpCost: 5
+  animation: {fileID: 7400000, guid: eeedfc4d936e2694eafac17dbf9cf257, type: 2}
+  passiveSkill: 1
+  supportSkill: 0
+  move: 0
+  purify: {fileID: 11400000, guid: 938f8110bade56943abe95f59af25a89, type: 2}

@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 92dfc3bb9e93bdd4285810881984e6ec
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2057741085891766534
+    second: Buff n Debuff P9 VFX 08 Var 1_0
+  - first:
+      213: -8620111126064241207
+    second: Buff n Debuff P9 VFX 08 Var 1_1
+  - first:
+      213: -4569315459539170374
+    second: Buff n Debuff P9 VFX 08 Var 1_2
+  - first:
+      213: 565387693764881642
+    second: Buff n Debuff P9 VFX 08 Var 1_3
+  - first:
+      213: -2952186546702781607
+    second: Buff n Debuff P9 VFX 08 Var 1_4
+  - first:
+      213: -5050305981841229636
+    second: Buff n Debuff P9 VFX 08 Var 1_5
+  - first:
+      213: 5516175945204646988
+    second: Buff n Debuff P9 VFX 08 Var 1_6
+  - first:
+      213: -4357197488107549782
+    second: Buff n Debuff P9 VFX 08 Var 1_7
+  - first:
+      213: 881202455287481021
+    second: Buff n Debuff P9 VFX 08 Var 1_8
+  - first:
+      213: -7377445892917302004
+    second: Buff n Debuff P9 VFX 08 Var 1_9
+  - first:
+      213: 4854464360490159457
+    second: Buff n Debuff P9 VFX 08 Var 1_10
+  - first:
+      213: -4432754262231947631
+    second: Buff n Debuff P9 VFX 08 Var 1_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Buff n Debuff P9 VFX 08 Var 1_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 7
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6092e408d909e8c10800000000000000
+      internalID: 2057741085891766534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff n Debuff P9 VFX 08 Var 1_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 6
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c56c862a963f5880800000000000000
+      internalID: -8620111126064241207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff n Debuff P9 VFX 08 Var 1_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 12
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb877f7cc78690c0800000000000000
+      internalID: -4569315459539170374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff n Debuff P9 VFX 08 Var 1_3
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 5
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aecab37ac19a8d700800000000000000
+      internalID: 565387693764881642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff n Debuff P9 VFX 08 Var 1_4
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 12
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953f7152af9b707d0800000000000000
+      internalID: -2952186546702781607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff n Debuff P9 VFX 08 Var 1_5
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 5
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8b2599775b9e9b0800000000000000
+      internalID: -5050305981841229636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff n Debuff P9 VFX 08 Var 1_6
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 12
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c444a74dbc46d8c40800000000000000
+      internalID: 5516175945204646988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff n Debuff P9 VFX 08 Var 1_7
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 5
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aab002158ff1883c0800000000000000
+      internalID: -4357197488107549782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff n Debuff P9 VFX 08 Var 1_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 12
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2cc9ad6f8aa3c00800000000000000
+      internalID: 881202455287481021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff n Debuff P9 VFX 08 Var 1_9
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 5
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0deffa3c0c0e9990800000000000000
+      internalID: -7377445892917302004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff n Debuff P9 VFX 08 Var 1_10
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 12
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d4fc5ad958e5340800000000000000
+      internalID: 4854464360490159457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buff n Debuff P9 VFX 08 Var 1_11
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 7
+        width: 87
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196e017fb71bb72c0800000000000000
+      internalID: -4432754262231947631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Buff n Debuff P9 VFX 08 Var 1_0: 2057741085891766534
+      Buff n Debuff P9 VFX 08 Var 1_1: -8620111126064241207
+      Buff n Debuff P9 VFX 08 Var 1_10: 4854464360490159457
+      Buff n Debuff P9 VFX 08 Var 1_11: -4432754262231947631
+      Buff n Debuff P9 VFX 08 Var 1_2: -4569315459539170374
+      Buff n Debuff P9 VFX 08 Var 1_3: 565387693764881642
+      Buff n Debuff P9 VFX 08 Var 1_4: -2952186546702781607
+      Buff n Debuff P9 VFX 08 Var 1_5: -5050305981841229636
+      Buff n Debuff P9 VFX 08 Var 1_6: 5516175945204646988
+      Buff n Debuff P9 VFX 08 Var 1_7: -4357197488107549782
+      Buff n Debuff P9 VFX 08 Var 1_8: 881202455287481021
+      Buff n Debuff P9 VFX 08 Var 1_9: -7377445892917302004
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

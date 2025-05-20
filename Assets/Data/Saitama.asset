@@ -15,14 +15,14 @@ MonoBehaviour:
   characterID: 0
   characterName: 
   characterType: 0
-  characterTier: 0
   characterSprite: {fileID: 0}
   characterAnimation: {fileID: 0}
-  ATK: 0
-  HP: 0
-  DEF: 0
-  MP: 0
-  CR: 0
-  CD: 0
-  DC: 0
-  PC: 0
+  skillList: []
+  ATK: 999
+  HP: 999
+  DEF: 999
+  MP: 999
+  CR: 99
+  CD: 99
+  DC: 99
+  PC: 99
