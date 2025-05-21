@@ -30,7 +30,7 @@ public class VFXManager : MonoBehaviour
                 GameObject effectInstance = Instantiate(prefab, position, Quaternion.identity);
                 if (effect.Any(e => e.ID == ID && !e.duringEffect))
                 {
-                    Destroy(effectInstance, 3f);
+                    Destroy(effectInstance, 5f);
                 }
                 else
                 {
@@ -104,6 +104,7 @@ public class Effect
     public int ID;
     public bool duringEffect;
     public bool isPlayOnHit;
+    public bool isPlayOnEnd;
     public bool isMove;
     public GameObject effectPrefab;
 }

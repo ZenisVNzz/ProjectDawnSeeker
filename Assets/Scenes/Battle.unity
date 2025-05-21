@@ -11468,7 +11468,7 @@ Animator:
   m_GameObject: {fileID: 1272054745}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0d7008f66d0f66446b2266e7103f1564, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14025,58 +14025,75 @@ MonoBehaviour:
   - ID: 200001
     duringEffect: 0
     isPlayOnHit: 0
+    isPlayOnEnd: 1
     isMove: 0
     effectPrefab: {fileID: 6573002566907771083, guid: 3a0f79ace1cfc284cae58d804204c1c4, type: 3}
   - ID: 300007
     duringEffect: 0
     isPlayOnHit: 0
+    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 8031518381534090208, guid: 4c9d13be79e68d04d8bd540e9a85e713, type: 3}
   - ID: 300009
     duringEffect: 0
     isPlayOnHit: 0
+    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 8559052901294044441, guid: 3331edf2cd1473643a05bd4d41c64897, type: 3}
   - ID: 200014
     duringEffect: 1
     isPlayOnHit: 1
+    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 6508747185846280724, guid: eea6fe2e80b84d3408eb6d45f3733be8, type: 3}
   - ID: 200002
     duringEffect: 0
     isPlayOnHit: 0
+    isPlayOnEnd: 1
     isMove: 0
     effectPrefab: {fileID: 8790711157773994665, guid: 9d6b043d8939c7b45a0851c74c402e6a, type: 3}
   - ID: 200012
     duringEffect: 0
     isPlayOnHit: 1
+    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 2025177211651580030, guid: de35b6fa300adb14e9b8ae1129219068, type: 3}
   - ID: 200013
     duringEffect: 0
     isPlayOnHit: 1
+    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 7006325680284018872, guid: 8a8127e7b6cc2144c954d0a87b5ec838, type: 3}
   - ID: 200016
     duringEffect: 0
     isPlayOnHit: 1
+    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 8322717233630131957, guid: ea50bacbd9c5b5743aeb39e151194a44, type: 3}
   - ID: 200019
     duringEffect: 0
-    isPlayOnHit: 1
+    isPlayOnHit: 0
+    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 5107623694346614954, guid: 3e88ba36b8d601c4392afcd7508e7de4, type: 3}
   - ID: 300015
     duringEffect: 0
     isPlayOnHit: 0
+    isPlayOnEnd: 0
     isMove: 1
     effectPrefab: {fileID: 3616945140289800575, guid: 6b71b6819e4450b4e9a428421e757417, type: 3}
   - ID: 300017
     duringEffect: 0
     isPlayOnHit: 0
+    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 985394116805625859, guid: 0c8f0c31bc8c1f5479e369529db26ff5, type: 3}
+  - ID: 200022
+    duringEffect: 0
+    isPlayOnHit: 0
+    isPlayOnEnd: 0
+    isMove: 0
+    effectPrefab: {fileID: 216517772481751152, guid: 482a520d610762a449b2628c6cf684e7, type: 3}
 --- !u!1 &1489819655
 GameObject:
   m_ObjectHideFlags: 0

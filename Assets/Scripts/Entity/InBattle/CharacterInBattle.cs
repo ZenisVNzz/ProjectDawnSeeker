@@ -241,7 +241,7 @@ public class CharacterInBattle : MonoBehaviour
             effect.OnApply(this);
             effect.duration = duration;
             activeStatusEffect.Add(effect);
-            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == true) && isAlive)
+            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == false && e.isPlayOnEnd == false) && isAlive)
             {
                 GameObject effectAnchor;
                 if (!effect.isHeadVFX)
@@ -389,7 +389,33 @@ public class CharacterInBattle : MonoBehaviour
         else
         {
             animator.Play("Hurt");          
-        }          
+        }
+
+        List<StatusEffect> toRemoveEffect = new List<StatusEffect>();
+        foreach (var effect in EffectOnTurn)
+        {
+            
+            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == true) && isAlive)
+            {
+                GameObject effectAnchor;
+                if (!effect.isHeadVFX)
+                {
+                    effectAnchor = transform.Find("EffectAnchor").gameObject;
+                }
+                else
+                {
+                    effectAnchor = transform.Find("HeadAnchor").gameObject;
+                }
+
+                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this);
+                toRemoveEffect.Add(effect);
+            }
+        }
+        foreach (var effect in toRemoveEffect)
+        {
+            EffectOnTurn.Remove(effect);
+        }
+        toRemoveEffect.Clear();
     }
 
     public void SetIdleState()
@@ -408,7 +434,7 @@ public class CharacterInBattle : MonoBehaviour
     {
         foreach (var effect in EffectOnTurn)
         {
-            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == false))
+            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == false) && isAlive)
             {
                 GameObject effectAnchor;
                 if (!effect.isHeadVFX)
@@ -437,7 +463,7 @@ public class CharacterInBattle : MonoBehaviour
     public void WaitForRangeSkillHit()
     {
         OnAttackHit();
-        Invoke("OnAttackEnd", 0.5f);
+        Invoke("OnAttackEnd", 0.2f);
     }    
 
     public bool CheckIfDeath()
