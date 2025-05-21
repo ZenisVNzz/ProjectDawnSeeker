@@ -3,7 +3,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -320,6 +319,13 @@ public class CharacterInBattle : MonoBehaviour
             animator.Play("Death");
             Die();
         }
+    }
+
+    public void PlaySoundEffect(string soundName)
+    {
+        GameObject soudEffectObj = GameObject.Find(soundName);
+        AudioSource audioSource = soudEffectObj.GetComponent<AudioSource>();
+        audioSource.Play();
     }
 
     public void OnSupportSkillHit()
