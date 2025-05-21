@@ -2879,7 +2879,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCharacter:
   - {fileID: 11400000, guid: 666e1ad216a14db409314d65dac8d327, type: 2}
-  enemyCharacter: {fileID: 11400000, guid: c8339f5a4fbd2014bbdbd39b19184a57, type: 2}
+  - {fileID: 11400000, guid: d340c68b77eb75c4e8ad7dad404e5d12, type: 2}
+  - {fileID: 11400000, guid: 5ac2ca0e26d4ce246a4373068f1f72c1, type: 2}
+  - {fileID: 11400000, guid: af757364d7bb31e48a69dc2924d82dee, type: 2}
+  enemyCharacter: {fileID: 11400000, guid: c804c16e4cd6645469fb9f2da4eef3ad, type: 2}
   playerCharacterInBattle:
   - {fileID: 554530855}
   - {fileID: 808364462}
@@ -4338,6 +4341,8 @@ MonoBehaviour:
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
+  isEnchantment: 0
+  isHeatShock: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
@@ -7041,6 +7046,8 @@ MonoBehaviour:
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
+  isEnchantment: 0
+  isHeatShock: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
@@ -7939,6 +7946,51 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &895257259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895257260}
+  - component: {fileID: 895257261}
+  m_Layer: 0
+  m_Name: StatusEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &895257260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895257259}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1428567262}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &895257261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895257259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d335e6652623ed40bd0d82cfa9a5c21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paralysis: {fileID: 11400000, guid: f268a165c3f09874e9a860ec66d784c2, type: 2}
 --- !u!1 &898624118
 GameObject:
   m_ObjectHideFlags: 0
@@ -10934,6 +10986,8 @@ MonoBehaviour:
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
+  isEnchantment: 0
+  isHeatShock: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
@@ -11450,6 +11504,8 @@ MonoBehaviour:
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
+  isEnchantment: 0
+  isHeatShock: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
@@ -11766,7 +11822,7 @@ Animator:
   m_GameObject: {fileID: 1283657985}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba4dc4b0829bf094bb1c90a8210de6de, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11802,6 +11858,8 @@ MonoBehaviour:
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
+  isEnchantment: 0
+  isHeatShock: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
@@ -13484,6 +13542,7 @@ Transform:
   - {fileID: 1489556991}
   - {fileID: 1302407284}
   - {fileID: 1787937399}
+  - {fileID: 895257260}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446538374
@@ -13966,39 +14025,58 @@ MonoBehaviour:
   - ID: 200001
     duringEffect: 0
     isPlayOnHit: 0
+    isMove: 0
     effectPrefab: {fileID: 6573002566907771083, guid: 3a0f79ace1cfc284cae58d804204c1c4, type: 3}
   - ID: 300007
     duringEffect: 0
     isPlayOnHit: 0
+    isMove: 0
     effectPrefab: {fileID: 8031518381534090208, guid: 4c9d13be79e68d04d8bd540e9a85e713, type: 3}
   - ID: 300009
     duringEffect: 0
     isPlayOnHit: 0
+    isMove: 0
     effectPrefab: {fileID: 8559052901294044441, guid: 3331edf2cd1473643a05bd4d41c64897, type: 3}
   - ID: 200014
     duringEffect: 1
     isPlayOnHit: 1
+    isMove: 0
     effectPrefab: {fileID: 6508747185846280724, guid: eea6fe2e80b84d3408eb6d45f3733be8, type: 3}
   - ID: 200002
     duringEffect: 0
     isPlayOnHit: 0
+    isMove: 0
     effectPrefab: {fileID: 8790711157773994665, guid: 9d6b043d8939c7b45a0851c74c402e6a, type: 3}
   - ID: 200012
     duringEffect: 0
     isPlayOnHit: 1
+    isMove: 0
     effectPrefab: {fileID: 2025177211651580030, guid: de35b6fa300adb14e9b8ae1129219068, type: 3}
   - ID: 200013
     duringEffect: 0
     isPlayOnHit: 1
+    isMove: 0
     effectPrefab: {fileID: 7006325680284018872, guid: 8a8127e7b6cc2144c954d0a87b5ec838, type: 3}
   - ID: 200016
     duringEffect: 0
     isPlayOnHit: 1
+    isMove: 0
     effectPrefab: {fileID: 8322717233630131957, guid: ea50bacbd9c5b5743aeb39e151194a44, type: 3}
   - ID: 200019
     duringEffect: 0
     isPlayOnHit: 1
+    isMove: 0
     effectPrefab: {fileID: 5107623694346614954, guid: 3e88ba36b8d601c4392afcd7508e7de4, type: 3}
+  - ID: 300015
+    duringEffect: 0
+    isPlayOnHit: 0
+    isMove: 1
+    effectPrefab: {fileID: 3616945140289800575, guid: 6b71b6819e4450b4e9a428421e757417, type: 3}
+  - ID: 300017
+    duringEffect: 0
+    isPlayOnHit: 0
+    isMove: 0
+    effectPrefab: {fileID: 985394116805625859, guid: 0c8f0c31bc8c1f5479e369529db26ff5, type: 3}
 --- !u!1 &1489819655
 GameObject:
   m_ObjectHideFlags: 0
