@@ -7,8 +7,22 @@ public class SummonUnit : MonoBehaviour
     public SummonPool summonPool;
     private List<CharacterData> summonedCharacters = new List<CharacterData>();
     public Inventory inventory;
+
+    private void Start()
+    {
+        if (inventory == null)
+        {
+            inventory = Inventory.Instance;
+        }
+    }
+
     public void SummonCharacter()
     {
+        if (inventory == null)
+        {
+            inventory = Inventory.Instance;
+        }
+
         if (summonPool == null || summonPool.CharacterPool == null || summonPool.CharacterPool.Count == 0)
         {
             Debug.LogError("SummonPool hoặc CharacterPool chưa được thiết lập hoặc rỗng!");
