@@ -14,6 +14,7 @@ public class InitializeCharacter : MonoBehaviour
 
     void Awake()
     {
+        playerCharacter = EquipedUnit.equipedUnit;
         int playerDataCount = playerCharacter.Count;
         int CharacterInBattleCount = playerCharacterInBattle.Count;
         if (CharacterInBattleCount > playerDataCount)
