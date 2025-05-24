@@ -6,11 +6,18 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+public class SummonedCharStorage
+{
+    public CharacterData CharacterData;
+    public bool alreadyHave;
+}
+
 public class SummonUnit : MonoBehaviour
 {
-    public SummonPool summonPool;
     public Inventory inventory;
-    public List<CharacterData> savedSummonedChar = new List<CharacterData>();
+    public List<SummonedCharStorage> SummonedCharStorage = new List<SummonedCharStorage>();
+    public List<Banner> banner;
+    public Banner currentBanner;
     public GameObject summonedCharPrefab;
     public GameObject summoned10CharPrefab;
     private Canvas canvas;
@@ -27,7 +34,7 @@ public class SummonUnit : MonoBehaviour
 
     public void SummonCharacter()
     {
-        savedSummonedChar.Clear();
+        SummonedCharStorage.Clear();
         eventTriggered = new TaskCompletionSource<bool>();
 
         if (inventory == null)
@@ -35,14 +42,24 @@ public class SummonUnit : MonoBehaviour
             inventory = Inventory.Instance;
         }
 
-        if (summonPool == null || summonPool.CharacterPool == null || summonPool.CharacterPool.Count == 0)
+        if (currentBanner == null)
         {
             Debug.LogError("SummonPool hoặc CharacterPool chưa được thiết lập hoặc rỗng!");
             return;
         }
 
-        int randomIndex = Random.Range(100001, 100005);
-        CharacterData selectedCharacter = summonPool.CharacterPool.Find(CharacterData => CharacterData.characterID == randomIndex);   
+        int randomIndex = Random.Range(1, 101);
+        CharacterData selectedCharacter;
+        if (randomIndex <= 50)
+        {
+            int randomCharIndex = Random.Range(0, currentBanner.rateUpCharacter.Count);
+            selectedCharacter = currentBanner.rateUpCharacter[randomCharIndex];
+        }
+        else
+        {
+            int randomCharIndex = Random.Range(0, currentBanner.poolCharacter.Count);
+            selectedCharacter = currentBanner.poolCharacter[randomCharIndex];
+        }
             
         if (inventory == null)
         {
@@ -78,7 +95,7 @@ public class SummonUnit : MonoBehaviour
 
     public async void StartSummon10Character()
     {
-        savedSummonedChar.Clear();
+        SummonedCharStorage.Clear();
         isSkipping = false;
         await Summon10Character();
     }    
@@ -92,14 +109,24 @@ public class SummonUnit : MonoBehaviour
                 inventory = Inventory.Instance;
             }
 
-            if (summonPool == null || summonPool.CharacterPool == null || summonPool.CharacterPool.Count == 0)
+            if (currentBanner == null)
             {
                 Debug.LogError("SummonPool hoặc CharacterPool chưa được thiết lập hoặc rỗng!");
                 return;
             }
 
-            int randomIndex = Random.Range(100001, 100005);
-            CharacterData selectedCharacter = summonPool.CharacterPool.Find(CharacterData => CharacterData.characterID == randomIndex);
+            int randomIndex = Random.Range(1, 101);
+            CharacterData selectedCharacter;
+            if (randomIndex <= 70)
+            {
+                int randomCharIndex = Random.Range(0, currentBanner.rateUpCharacter.Count);
+                selectedCharacter = currentBanner.rateUpCharacter[randomCharIndex];
+            }
+            else
+            {
+                int randomCharIndex = Random.Range(0, currentBanner.poolCharacter.Count);
+                selectedCharacter = currentBanner.poolCharacter[randomCharIndex];
+            }
 
             if (inventory == null)
             {
@@ -139,12 +166,30 @@ public class SummonUnit : MonoBehaviour
                 else
                 {
                     newText.SetActive(true);
-
                 }
-            }              
+            }
 
-            inventory.AddCharacter(selectedCharacter);
-            savedSummonedChar.Add(selectedCharacter);
+            if (inventory.summonedCharacters.Contains(selectedCharacter))
+            {
+                SummonedCharStorage summoned = new SummonedCharStorage
+                {
+                    CharacterData = selectedCharacter,
+                    alreadyHave = true
+                };
+                SummonedCharStorage.Add(summoned);
+            }
+            else
+            {
+                SummonedCharStorage summoned = new SummonedCharStorage
+                {
+                    CharacterData = selectedCharacter,
+                    alreadyHave = false
+                };
+                SummonedCharStorage.Add(summoned);
+            }
+
+            inventory.AddCharacter(selectedCharacter);        
+
             Debug.Log($"Da trieu hoi {selectedCharacter.characterName} ");
 
             if (!isSkipping)
@@ -163,9 +208,20 @@ public class SummonUnit : MonoBehaviour
                 GameObject child = charContainer.transform.GetChild(i).gameObject;
                 Image charIMG = child.transform.Find("Rect/CharIMG").GetComponent<Image>();
                 TextMeshProUGUI charName = child.transform.Find("CharName").GetComponent<TextMeshProUGUI>();
-                
-                charIMG.sprite = savedSummonedChar[i].characterSprite;
-                charName.text = savedSummonedChar[i].name;
+                GameObject newText = child.transform.Find("New").gameObject;
+
+                charIMG.sprite = SummonedCharStorage[i].CharacterData.characterSprite;
+                charName.text = SummonedCharStorage[i].CharacterData.characterName;
+
+                if (!SummonedCharStorage[i].alreadyHave)
+                {
+                    newText.SetActive(true);                  
+                }
+                else
+                {
+                    charIMG.color = new Color(44f / 255f, 44f / 255f, 44f / 255f, 255f / 255f);
+                    newText.SetActive(false);
+                }    
             }
         }    
     }
