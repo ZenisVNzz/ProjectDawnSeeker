@@ -8,6 +8,7 @@ public class ShowInfoOnClick : MonoBehaviour
 {
     public Image charIMG;
     public TextMeshProUGUI charName;
+    public TextMeshProUGUI charLevel;
     public TextMeshProUGUI hpIndex;
     public TextMeshProUGUI defIndex;
     public TextMeshProUGUI atkIndex;
@@ -55,15 +56,16 @@ public class ShowInfoOnClick : MonoBehaviour
             characterInfo.SetActive(true);
 
             charIMG.sprite = charDataStorage.characterData.characterSprite;
+            charLevel.text = $"lv.{charDataStorage.characterData.level}";
             charName.text = charDataStorage.characterData.characterName;
-            hpIndex.text = charDataStorage.characterData.HP.ToString();
-            defIndex.text = charDataStorage.characterData.DEF.ToString();
-            atkIndex.text = charDataStorage.characterData.ATK.ToString();
-            mpIndex.text = charDataStorage.characterData.MP.ToString();
-            crIndex.text = (charDataStorage.characterData.CR * 100 + "%").ToString();
-            cdIndex.text = (charDataStorage.characterData.CD * 100 + "%").ToString();
-            dcIndex.text = (charDataStorage.characterData.DC * 100 + "%").ToString();
-            pcIndex.text = (charDataStorage.characterData.PC * 100 + "%").ToString();
+            hpIndex.text = charDataStorage.characterData.HP.ToString("0.#");
+            defIndex.text = charDataStorage.characterData.DEF.ToString("0.#");
+            atkIndex.text = charDataStorage.characterData.ATK.ToString("0.#");
+            mpIndex.text = charDataStorage.characterData.MP.ToString("0.#");
+            crIndex.text = (Mathf.Round(charDataStorage.characterData.CR * 100) + "%").ToString();
+            cdIndex.text = (Mathf.Round(charDataStorage.characterData.CD * 100) + "%").ToString();
+            dcIndex.text = (Mathf.Round(charDataStorage.characterData.DC * 100) + "%").ToString();
+            pcIndex.text = (Mathf.Round(charDataStorage.characterData.PC * 100) + "%").ToString();
 
             for (int i = 0; i < charDataStorage.characterData.skillList.Count; i++)
             {

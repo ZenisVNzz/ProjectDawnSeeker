@@ -20,6 +20,7 @@ public class SummonUnit : MonoBehaviour
     public Banner currentBanner;
     public GameObject summonedCharPrefab;
     public GameObject summoned10CharPrefab;
+    public GameObject notEnoughGoldNotice;
     private Canvas canvas;
     private bool isSkipping = false;
 
@@ -34,70 +35,86 @@ public class SummonUnit : MonoBehaviour
 
     public void SummonCharacter()
     {
-        SummonedCharStorage.Clear();
-        eventTriggered = new TaskCompletionSource<bool>();
-
-        if (inventory == null)
+        bool isEnoughGold = Inventory.Instance.SpendMoney(100);
+        if (isEnoughGold)
         {
-            inventory = Inventory.Instance;
-        }
+            SummonedCharStorage.Clear();
+            eventTriggered = new TaskCompletionSource<bool>();
 
-        if (currentBanner == null)
-        {
-            Debug.LogError("SummonPool hoặc CharacterPool chưa được thiết lập hoặc rỗng!");
-            return;
-        }
+            if (inventory == null)
+            {
+                inventory = Inventory.Instance;
+            }
 
-        int randomIndex = Random.Range(1, 101);
-        CharacterData selectedCharacter;
-        if (randomIndex <= 50)
-        {
-            int randomCharIndex = Random.Range(0, currentBanner.rateUpCharacter.Count);
-            selectedCharacter = currentBanner.rateUpCharacter[randomCharIndex];
-        }
+            if (currentBanner == null)
+            {
+                Debug.LogError("SummonPool hoặc CharacterPool chưa được thiết lập hoặc rỗng!");
+                return;
+            }
+
+            int randomIndex = Random.Range(1, 101);
+            CharacterData selectedCharacter;
+            if (randomIndex <= 50)
+            {
+                int randomCharIndex = Random.Range(0, currentBanner.rateUpCharacter.Count);
+                selectedCharacter = currentBanner.rateUpCharacter[randomCharIndex];
+            }
+            else
+            {
+                int randomCharIndex = Random.Range(0, currentBanner.poolCharacter.Count);
+                selectedCharacter = currentBanner.poolCharacter[randomCharIndex];
+            }
+
+            if (inventory == null)
+            {
+                Debug.LogError("Inventory chưa được thiết lập!");
+                return;
+            }
+
+            GameObject summonedChar = Instantiate(summonedCharPrefab, canvas.transform);
+            Image charIMG = summonedChar.transform.Find("CharIMG").GetComponent<Image>();
+            TextMeshProUGUI charName = summonedChar.transform.Find("CharName").GetComponent<TextMeshProUGUI>();
+            GameObject newText = summonedChar.transform.Find("New").gameObject;
+            OnClick onClick = summonedChar.GetComponent<OnClick>();
+
+            charIMG.sprite = selectedCharacter.characterSprite;
+            charName.text = selectedCharacter.characterName;
+
+            onClick.graphicRaycaster = FindAnyObjectByType<GraphicRaycaster>();
+            onClick.eventSystem = FindAnyObjectByType<EventSystem>();
+            onClick.ButtonObject = null;
+
+            if (inventory.summonedCharacters.Contains(selectedCharacter))
+            {
+                newText.SetActive(false);
+            }
+            else
+            {
+                newText.SetActive(true);
+                inventory.AddCharacter(selectedCharacter);
+            }
+
+            Debug.Log($"Da trieu hoi {selectedCharacter.characterName} ");
+        }  
         else
         {
-            int randomCharIndex = Random.Range(0, currentBanner.poolCharacter.Count);
-            selectedCharacter = currentBanner.poolCharacter[randomCharIndex];
-        }
-            
-        if (inventory == null)
-        {
-            Debug.LogError("Inventory chưa được thiết lập!");
-            return;
-        }
-
-        GameObject summonedChar = Instantiate(summonedCharPrefab, canvas.transform);
-        Image charIMG = summonedChar.transform.Find("CharIMG").GetComponent<Image>();
-        TextMeshProUGUI charName = summonedChar.transform.Find("CharName").GetComponent<TextMeshProUGUI>();
-        GameObject newText = summonedChar.transform.Find("New").gameObject;
-        OnClick onClick = summonedChar.GetComponent<OnClick>();
-
-        charIMG.sprite = selectedCharacter.characterSprite;
-        charName.text = selectedCharacter.characterName;
-
-        onClick.graphicRaycaster = FindAnyObjectByType<GraphicRaycaster>();
-        onClick.eventSystem = FindAnyObjectByType<EventSystem>();
-        onClick.ButtonObject = null;
-
-        if (inventory.summonedCharacters.Contains(selectedCharacter))
-        {
-            newText.SetActive(false);
-        }
-        else
-        {
-            newText.SetActive(true);
-            inventory.AddCharacter(selectedCharacter);
-        }
-        
-        Debug.Log($"Da trieu hoi {selectedCharacter.characterName} ");
+            notEnoughGoldNotice.SetActive(true);
+        }    
     }
 
     public async void StartSummon10Character()
     {
         SummonedCharStorage.Clear();
         isSkipping = false;
-        await Summon10Character();
+        bool isEnoughGold = Inventory.Instance.SpendMoney(1000);
+        if (isEnoughGold)
+        {
+            await Summon10Character();
+        }
+        else
+        {
+            notEnoughGoldNotice.SetActive(true);
+        }
     }    
 
     public async Task Summon10Character()

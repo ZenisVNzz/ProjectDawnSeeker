@@ -2881,7 +2881,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 666e1ad216a14db409314d65dac8d327, type: 2}
   - {fileID: 11400000, guid: d340c68b77eb75c4e8ad7dad404e5d12, type: 2}
   - {fileID: 11400000, guid: 5ac2ca0e26d4ce246a4373068f1f72c1, type: 2}
-  - {fileID: 11400000, guid: af757364d7bb31e48a69dc2924d82dee, type: 2}
+  - {fileID: 11400000, guid: 67d48f84bb13132498043bdea7abbbd2, type: 2}
   enemyCharacter: {fileID: 11400000, guid: c804c16e4cd6645469fb9f2da4eef3ad, type: 2}
   playerCharacterInBattle:
   - {fileID: 554530855}
@@ -4343,6 +4343,7 @@ MonoBehaviour:
   isSilent: 0
   isEnchantment: 0
   isHeatShock: 0
+  isCritAfterAttack: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
@@ -4363,7 +4364,7 @@ Animator:
   m_GameObject: {fileID: 554530851}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e7de961809d85ae44814d06b620aff2e, type: 2}
+  m_Controller: {fileID: 9100000, guid: a003cf0e149667e4597f92eeae2b3d27, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7010,7 +7011,7 @@ Animator:
   m_GameObject: {fileID: 808364459}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0d7008f66d0f66446b2266e7103f1564, type: 2}
+  m_Controller: {fileID: 9100000, guid: e7de961809d85ae44814d06b620aff2e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7048,6 +7049,7 @@ MonoBehaviour:
   isSilent: 0
   isEnchantment: 0
   isHeatShock: 0
+  isCritAfterAttack: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
@@ -10988,6 +10990,7 @@ MonoBehaviour:
   isSilent: 0
   isEnchantment: 0
   isHeatShock: 0
+  isCritAfterAttack: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
@@ -11506,6 +11509,7 @@ MonoBehaviour:
   isSilent: 0
   isEnchantment: 0
   isHeatShock: 0
+  isCritAfterAttack: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
@@ -11860,6 +11864,7 @@ MonoBehaviour:
   isSilent: 0
   isEnchantment: 0
   isHeatShock: 0
+  isCritAfterAttack: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}

@@ -20,6 +20,7 @@ MonoBehaviour:
   skillList:
   - {fileID: 11400000, guid: 302ab2e941207c74686dafc345364bbb, type: 2}
   - {fileID: 11400000, guid: dd2c418dd1e44594caac89693cf70afe, type: 2}
+  level: 1
   ATK: 6
   HP: 20
   DEF: 3
@@ -28,3 +29,12 @@ MonoBehaviour:
   CD: 1.4
   DC: 0.07
   PC: 0.05
+  maxLevel: 0
+  currentXP: 0
+  neededXP: 100
+  ATKPerLevel: 0
+  HPPerLevel: 0
+  DEFPerLevel: 0
+  MPPerLevel: 0
+  CRPerLevel: 0
+  CDPerLevel: 0

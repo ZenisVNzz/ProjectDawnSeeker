@@ -1,12 +1,7 @@
-﻿using NUnit.Framework;
-using System;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.Localization.SmartFormat.Utilities;
-using UnityEngine.Rendering.Universal;
 
 public enum State
 {
@@ -45,6 +40,7 @@ public class CharacterInBattle : MonoBehaviour
     public bool isSilent = false;
     public bool isEnchantment = false;
     public bool isHeatShock = false;
+    public bool isCritAfterAttack = false;
 
     public List<StatusEffect> activeStatusEffect = new List<StatusEffect>();
 
@@ -155,6 +151,10 @@ public class CharacterInBattle : MonoBehaviour
 
     private void MinusHP(float amount)
     {
+        if (isCritAfterAttack == true)
+        {
+            currentAttacker.CR += 0.05f;
+        }    
         if (UnityEngine.Random.value < currentAttacker.CR)
         {
             amount = amount * currentAttacker.CD;
@@ -420,6 +420,14 @@ public class CharacterInBattle : MonoBehaviour
 
     public void SetIdleState()
     { 
+        if (isCritAfterAttack)
+        {
+            isCritAfterAttack = false;
+            for (int i = 0; i < 5; i++)
+            {
+                CR -= 0.05f;
+            }    
+        }        
         IdleState();
     }
 
