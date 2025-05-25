@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -405,7 +405,13 @@ public class UpgradeChar : MonoBehaviour
     float GetXPNeededForLevel(int level)
     {
         float baseXP = 100f;
-        return baseXP * Mathf.Pow(1.04f, level - 1);
+        float xp = baseXP;
+        for (int i = 1; i < level; i++)
+        {
+            xp *= 1.04f;
+            xp = Mathf.Round(xp);
+        }
+        return xp;
     }
 
     int GetGoldNeededForLevel(int level)
