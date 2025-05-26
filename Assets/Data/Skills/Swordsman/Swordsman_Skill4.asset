@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Swordsman_Skill4
   m_EditorClassIdentifier: 
   ID: 300022
-  skillName: "Li\xEAn th\u1EE9c"
+  skillName: "Li\xEAn Th\u1EE9c"
   description: "\u0110\xE2m li\xEAn ti\u1EBFp 5 ph\xE1t v\xE0o m\u1EE5c ti\xEAu,
-    g\xE2y t\u1ED5ng 150% ATK, sau m\u1ED7i l\u1EA7n \u0111\xE2m, t\u0103ng 5% t\u1EC9
-    l\u1EC7 ch\xED m\u1EA1ng."
-  icon: {fileID: 0}
+    g\xE2y s\xE1t th\u01B0\u01A1ng l\u1EDBn, sau m\u1ED7i l\u1EA7n \u0111\xE2m, t\u0103ng
+    5% t\u1EC9 l\u1EC7 ch\xED m\u1EA1ng."
+  icon: {fileID: -7291191063366249875, guid: 8ec9b2d74fe2d4444af36a46714ed8c3, type: 3}
   mpCost: 3
   animation: {fileID: 7400000, guid: 3a694f1a64f15fd4790976e4a12d64b1, type: 2}
   passiveSkill: 0

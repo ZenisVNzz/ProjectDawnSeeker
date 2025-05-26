@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -105,10 +106,6 @@ public class CharacterInBattle : MonoBehaviour
     public void SetClickable(bool value)
     {
         isClickable = value;
-        /*if (characterType == characterType.Player)
-            sr.color = value ? Color.cyan : Color.gray;
-        else if (characterType == characterType.Enemy)
-            sr.color = value ? Color.red : Color.gray;*/
     }
 
     public void TakeDamage(float damage, int hitCount, CharacterInBattle attacker, CharacterInBattle target)
@@ -440,26 +437,32 @@ public class CharacterInBattle : MonoBehaviour
 
     public void PlayEffectOnEndAction()
     {
-        foreach (var effect in EffectOnTurn)
+        StartCoroutine(PlayEffectsWithDelay());
+    }
+
+    private IEnumerator PlayEffectsWithDelay()
+    {
+        var effectListCopy = new List<StatusEffect>(EffectOnTurn);
+
+        foreach (var effect in effectListCopy)
         {
-            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == false) && isAlive)
+            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 &&
+                vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == false) &&
+                isAlive)
             {
-                GameObject effectAnchor;
-                if (!effect.isHeadVFX)
-                {
-                    effectAnchor = transform.Find("EffectAnchor").gameObject;
-                }
-                else
-                {
-                    effectAnchor = transform.Find("HeadAnchor").gameObject;
-                }    
-                
+                GameObject effectAnchor = effect.isHeadVFX
+                    ? transform.Find("HeadAnchor").gameObject
+                    : transform.Find("EffectAnchor").gameObject;
+
                 vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this);
+
+                yield return new WaitForSeconds(1f);
             }
-        }   
-        StartCoroutine(vfxManager.StopEffect(characterData.characterID, currentSkillID));
+        }
+
+        yield return StartCoroutine(vfxManager.StopEffect(characterData.characterID, currentSkillID));
         EffectOnTurn.Clear();
-    }    
+    }
 
     public void RangeSkillEffect(int skillID)
     {

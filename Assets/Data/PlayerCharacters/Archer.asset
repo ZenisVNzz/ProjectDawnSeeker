@@ -21,20 +21,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 302ab2e941207c74686dafc345364bbb, type: 2}
   - {fileID: 11400000, guid: dd2c418dd1e44594caac89693cf70afe, type: 2}
   level: 1
-  ATK: 6
-  HP: 20
-  DEF: 3
+  ATK: 55
+  HP: 140
+  DEF: 11
   MP: 3
-  CR: 0.12
-  CD: 1.4
-  DC: 0.07
-  PC: 0.05
-  maxLevel: 0
+  CR: 0.08
+  CD: 1.5
+  DC: 0.12
+  PC: 0.1
+  maxLevel: 100
   currentXP: 0
   neededXP: 100
-  ATKPerLevel: 0
-  HPPerLevel: 0
-  DEFPerLevel: 0
+  ATKPerLevel: 7
+  HPPerLevel: 14
+  DEFPerLevel: 1
   MPPerLevel: 0
-  CRPerLevel: 0
-  CDPerLevel: 0
+  CRPerLevel: 0.0067
+  CDPerLevel: 0.025

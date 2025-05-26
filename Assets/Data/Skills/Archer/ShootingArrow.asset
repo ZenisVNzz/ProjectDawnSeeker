@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: ShootingArrow
   m_EditorClassIdentifier: 
   ID: 300005
-  skillName: "X\u1EA1 ti\u1EC5n"
+  skillName: "X\u1EA1 Ti\u1EC5n"
   description: "B\u1EAFn t\xEAn v\xE0o \u0111\u1ED1i ph\u01B0\u01A1ng, g\xE2y s\xE1t
     th\u01B0\u01A1ng c\u01A1 b\u1EA3n."
   icon: {fileID: -7008412969330441016, guid: b9f89affee1983947b7e30b9a118862a, type: 3}
   mpCost: 0
   animation: {fileID: 7400000, guid: aba24053fcbd37f4f8e96ffb9b5d1e6a, type: 2}
+  passiveSkill: 0
+  supportSkill: 0
+  move: 0
+  isAOE: 0

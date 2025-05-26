@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 0a7b10f713455d9449b07be175f4083c
+guid: 8ec9b2d74fe2d4444af36a46714ed8c3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1010931640489442487
-    second: XpTier2_0
+      213: -7291191063366249875
+    second: ComboCapture_0
+  - first:
+      213: -5389175975438684842
+    second: ComboCapture_1
+  - first:
+      213: 1333074308333399990
+    second: ComboCapture_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +106,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: XpTier2_0
+      name: ComboCapture_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1022
-        height: 1019
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7bc739b88fc870e00800000000000000
-      internalID: 1010931640489442487
+      spriteID: d625d86bb5c70da90800000000000000
+      internalID: -7291191063366249875
       vertices: []
       indices: 
       edges: []
@@ -125,7 +131,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 757d055f02812054da5a9a2760b8ffca
+    spriteID: 1d263530aedf49a49948eaa1e93b3f8c
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +141,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      XpTier2_0: 1010931640489442487
+      ComboCapture_0: -7291191063366249875
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

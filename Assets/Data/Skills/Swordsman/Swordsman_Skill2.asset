@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Swordsman_Skill2
   m_EditorClassIdentifier: 
   ID: 300020
-  skillName: "Nh\u1ECB li\xEAn ki\u1EBFm"
-  description: "Ch\xE9m ba l\u1EA7n li\xEAn ti\u1EBFp, g\xE2y t\u1ED5ng 130% ATK,
-    khi\u1EBFn m\u1EE5c ti\xEAu b\u1ECB ch\u1EA3y m\xE1u trong 2 l\u01B0\u1EE3t."
-  icon: {fileID: 0}
+  skillName: "Li\xEAn Tam Ki\u1EBFm"
+  description: "Ch\xE9m ba l\u1EA7n li\xEAn ti\u1EBFp, g\xE2y t\u1ED5ng s\xE1t th\u01B0\u01A1ng
+    kh\xE1, khi\u1EBFn m\u1EE5c ti\xEAu b\u1ECB ch\u1EA3y m\xE1u trong 2 l\u01B0\u1EE3t."
+  icon: {fileID: 653902571141052233, guid: 8a95a83ff07197c47a98f7885bd43858, type: 3}
   mpCost: 2
   animation: {fileID: 7400000, guid: c572b4f48f34b59479331a66fe87ae97, type: 2}
   passiveSkill: 0

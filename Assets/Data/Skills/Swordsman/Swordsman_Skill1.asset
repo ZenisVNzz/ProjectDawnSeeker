@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Swordsman_Skill1
   m_EditorClassIdentifier: 
   ID: 300019
-  skillName: "T\u1ED1c tr\u1EA3m"
-  description: "Ra m\u1ED9t \u0111\xF2n ch\xE9m nhanh, g\xE2y 100% ATK"
-  icon: {fileID: 0}
+  skillName: "T\u1ED1c Tr\u1EA3m"
+  description: "Ra m\u1ED9t \u0111\xF2n ch\xE9m nhanh, g\xE2y s\xE1t th\u01B0\u01A1ng
+    c\u01A1 b\u1EA3n."
+  icon: {fileID: -4885373251318296212, guid: cc34db0e0dac2ce488bc648420048fd3, type: 3}
   mpCost: 0
   animation: {fileID: 7400000, guid: 8b1210d8aa848cf4a9921dc79247458f, type: 2}
   passiveSkill: 0
