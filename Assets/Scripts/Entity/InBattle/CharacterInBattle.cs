@@ -42,6 +42,11 @@ public class CharacterInBattle : MonoBehaviour
     public bool isEnchantment = false;
     public bool isHeatShock = false;
     public bool isCritAfterAttack = false;
+    public bool isCharge = false;
+
+    public int chargeTurn = 0;
+
+    private SkillBase specialSkill;
 
     public List<StatusEffect> activeStatusEffect = new List<StatusEffect>();
 
@@ -74,6 +79,7 @@ public class CharacterInBattle : MonoBehaviour
     private List<StatusEffect> EffectOnTurn = new List<StatusEffect>();
 
     public float savedDmg;
+    public float savedTotalDmgHit = 0f;
     public bool isCrit;
     public float savedHeal;
     private Vector3 targetPosition;
@@ -128,7 +134,6 @@ public class CharacterInBattle : MonoBehaviour
             }
         }*/
 
-        currentAttacker = attacker;
         if (attacker.isEnchantment)
         {
             totaldamage = totaldamage * 1.2f;
@@ -171,6 +176,7 @@ public class CharacterInBattle : MonoBehaviour
         dmgPopUp.ShowDmgPopUp(amount, transform.position , currentAttacker.isCrit);    
 
         currentHP -= amount;
+        savedTotalDmgHit += amount;
         if (currentHP <= 0)
         {
             currentHP = 0;
@@ -215,6 +221,19 @@ public class CharacterInBattle : MonoBehaviour
         }
         dmgPopUp.ShowDmgPopUp(damage, transform.position, false);
     }
+
+    public void UseChargeSkill(SkillBase skill)
+    {
+        isCharge = true;
+        isActionAble = false;
+        specialSkill = skill;
+        chargeTurn = 0;
+    }  
+    
+    public SkillBase GetSpecialSkill()
+    {
+        return specialSkill;
+    }    
 
     public void Attack(CharacterInBattle target, CharacterInBattle attacker)
     {
@@ -269,7 +288,13 @@ public class CharacterInBattle : MonoBehaviour
         {
             effect.OnTurn(this);
         }
-        currentMP++;
+        if (characterType == characterType.Enemy)
+        {
+        }    
+        else
+        {
+            currentMP++;
+        }           
         if (currentMP > characterData.MP)
         {
             currentMP = characterData.MP;
@@ -279,11 +304,16 @@ public class CharacterInBattle : MonoBehaviour
 
     public void OnEndTurn()
     {
+        if (characterType == characterType.Enemy)
+        {
+            currentMP += 3;
+        }
+
         for (int i = activeStatusEffect.Count - 1; i >= 0; i--)
         {
             activeStatusEffect[i].Tick(this);
 
-            if (activeStatusEffect[i].duration <= 0)
+            if (activeStatusEffect[i].duration < 0)
             {
                 if (activeStatusEffect.Count(e => e.ID == activeStatusEffect[i].ID) <= 1)
                 {

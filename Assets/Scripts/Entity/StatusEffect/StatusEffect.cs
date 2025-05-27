@@ -20,7 +20,7 @@ public abstract class StatusEffect : ScriptableObject
     public void Tick(CharacterInBattle character)
     {
         duration--;
-        if (duration <= 0)
+        if (duration < 0)
         {
             OnRemove(character);
         }
