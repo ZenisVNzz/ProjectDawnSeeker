@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef0f3323c8b53147a892c06f8e228ed, type: 3}
+  m_Name: Skeleton
+  m_EditorClassIdentifier: 
+  characterID: 100103
+  characterName: Skeleton
+  characterType: 1
+  characterSprite: {fileID: 4354231566380549168, guid: 5eef8dd8baa16fb43b53997acb96a4dc, type: 3}
+  characterAnimation: {fileID: 0}
+  skillList: []
+  level: 1
+  ATK: 31
+  HP: 102
+  DEF: 7
+  MP: 3
+  CR: 0.1
+  CD: 1.5
+  DC: 0.05
+  PC: 0.05
+  maxLevel: 0
+  currentXP: 0
+  neededXP: 100
+  ATKPerLevel: 0
+  HPPerLevel: 0
+  DEFPerLevel: 0
+  MPPerLevel: 0
+  CRPerLevel: 0
+  CDPerLevel: 0

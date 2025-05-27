@@ -17,4 +17,7 @@ MonoBehaviour:
   type: 1
   duration: 1
   Icon: {fileID: 0}
+  canStack: 0
+  maxStack: 1
+  isHeadVFX: 1
   PercentAmount: 10

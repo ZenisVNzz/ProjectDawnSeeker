@@ -4,9 +4,9 @@ using UnityEngine;
 public class InitializeCharacter : MonoBehaviour
 {
     public List<CharacterData> playerCharacter;
-    public CharacterData enemyCharacter;
+    public List<CharacterData> enemyCharacter;
     public List<CharacterInBattle> playerCharacterInBattle;
-    public CharacterInBattle enemyCharacterInBattle;
+    public List<CharacterInBattle> enemyCharacterInBattle;
     public BattleManager battleManager;
     public BattleUI battleUI;
 
@@ -34,7 +34,10 @@ public class InitializeCharacter : MonoBehaviour
         for (int i = 0; i < playerCharacterInBattle.Count; i++)
         {
             playerCharacterInBattle[i].Initialize(playerCharacter[i]);
-        }    
-        enemyCharacterInBattle.Initialize(enemyCharacter);
+        }
+        for (int i = 0; i < enemyCharacterInBattle.Count; i++)
+        {
+            enemyCharacterInBattle[i].Initialize(enemyCharacter[i]);
+        }
     }
 }
