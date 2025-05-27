@@ -405,6 +405,13 @@ public class CharacterInBattle : MonoBehaviour
         audioSource.Play();
     }
 
+    public void EndSoundEffect(string soundName)
+    {
+        GameObject soudEffectObj = GameObject.Find(soundName);
+        AudioSource audioSource = soudEffectObj.GetComponent<AudioSource>();
+        audioSource.Stop();
+    }
+
     public void OnSupportSkillHit()
     {
         battleUI.RefreshBattleUI();
