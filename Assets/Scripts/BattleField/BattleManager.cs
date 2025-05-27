@@ -151,22 +151,57 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         foreach (var enemy in TeamAI)
         {
-            int mpUsage = 0;
-            for (int i = 0; i <= 2; i++)
-            {              
-                float mp = enemy.currentMP - mpUsage;
-                if (!enemy.isCharge)
+            if (enemy.isAlive)
+            {
+                int mpUsage = 0;
+                if (enemy.isBoss)
                 {
+                    for (int i = 0; i <= 2; i++)
+                    {
+                        float mp = enemy.currentMP - mpUsage;
+                        if (!enemy.isCharge)
+                        {
+                            List<SkillBase> availableSkills = new List<SkillBase>();
+                            if (i <= 1)
+                            {
+                                availableSkills = enemy.skillList.Where(skill => skill.mpCost <= mp && !skill.isUniqueSkill).ToList();
+                            }
+                            else
+                            {
+                                availableSkills = enemy.skillList.Where(skill => skill.mpCost <= mp).ToList();
+                            }
+
+                            int skillIndex = UnityEngine.Random.Range(0, availableSkills.Count);
+                            CharacterInBattle chosen = GetRandomAlive(TeamPlayer);
+                            SkillBase skill;
+                            if (availableSkills.Count == 1)
+                            {
+                                skill = availableSkills[0];
+                            }
+                            else
+                            {
+                                skill = availableSkills[skillIndex];
+                            }
+
+                            EnemyPlannedAction action = new EnemyPlannedAction
+                            {
+                                Caster = enemy,
+                                Target = chosen,
+                                Skill = skill
+                            };
+
+                            enemyPlannedAction.Add(action);
+                            StartCoroutine(AddEnemyAction(enemy, chosen, skill));
+                            availableSkills.Clear();
+                            mpUsage += skill.mpCost;
+                        }
+                    }
+                }
+                else
+                {
+                    float mp = enemy.currentMP - mpUsage;
                     List<SkillBase> availableSkills = new List<SkillBase>();
-                    if (i <= 1)
-                    {
-                        availableSkills = enemy.skillList.Where(skill => skill.mpCost <= mp && !skill.isUniqueSkill).ToList();
-                    }
-                    else
-                    {
-                        availableSkills = enemy.skillList.Where(skill => skill.mpCost <= mp).ToList();
-                    }
-                    
+                    availableSkills = enemy.skillList.Where(skill => skill.mpCost <= mp).ToList();
                     int skillIndex = UnityEngine.Random.Range(0, availableSkills.Count);
                     CharacterInBattle chosen = GetRandomAlive(TeamPlayer);
                     SkillBase skill;
@@ -177,8 +212,8 @@ public class BattleManager : MonoBehaviour
                     else
                     {
                         skill = availableSkills[skillIndex];
-                    }    
-                    
+                    }
+
                     EnemyPlannedAction action = new EnemyPlannedAction
                     {
                         Caster = enemy,
@@ -191,7 +226,7 @@ public class BattleManager : MonoBehaviour
                     availableSkills.Clear();
                     mpUsage += skill.mpCost;
                 }
-            }      
+            }         
         }       
         foreach (var enemy in TeamAI)
         {

@@ -1,16 +1,11 @@
 using UnityEngine;
 
-public class Skeleton_Skill1 : MonoBehaviour
+[CreateAssetMenu(fileName = "Skeleton_Skill1", menuName = "Skills/Skeleton/Skeleton_Skill1")]
+public class Skeleton_Skill1 : SkillBase
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        target.TakeDamage(user.ATK, 1, user, target);
+        base.DoAction(user, target);
     }
 }

@@ -12,6 +12,7 @@ public class CharacterData : ScriptableObject
     public characterType characterType;
     public Sprite characterSprite;
     public RuntimeAnimatorController characterAnimation;
+    public bool isBoss = false;
 
     public List<SkillBase> skillList;
 

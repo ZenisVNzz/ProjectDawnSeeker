@@ -17,6 +17,7 @@ MonoBehaviour:
   characterType: 1
   characterSprite: {fileID: -2217864755329017844, guid: 535ea569247b2cc48a295fc014276755, type: 3}
   characterAnimation: {fileID: 9100000, guid: 875d4d224a1e38843875fe8c1d0237a4, type: 2}
+  isBoss: 1
   skillList:
   - {fileID: 11400000, guid: 85e9f425970865d4997d25911ca96aeb, type: 2}
   - {fileID: 11400000, guid: 2539efc755b0aae41ba556412336619b, type: 2}

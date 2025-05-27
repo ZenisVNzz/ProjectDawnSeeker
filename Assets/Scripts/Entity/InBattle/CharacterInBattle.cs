@@ -31,6 +31,7 @@ public class CharacterInBattle : MonoBehaviour
     public float PC { get; private set; }
     public List<SkillBase> skillList { get; private set; }
 
+    public bool isBoss = false;
     public bool isAlive = true;
     public bool isActionAble = true;
     public bool isLifeSteal = false;
@@ -67,6 +68,7 @@ public class CharacterInBattle : MonoBehaviour
         this.DC = characterData.DC;
         this.PC = characterData.PC;
         this.skillList = characterData.skillList;
+        this.isBoss = characterData.isBoss;
     }
 
     private SpriteRenderer sr;
@@ -407,7 +409,7 @@ public class CharacterInBattle : MonoBehaviour
 
     public void OnSupportSkillHit()
     {
-        battleUI.RefreshBattleUI();
+        battleUI.RefreshBattleUI(); 
         targetPosition = currentTarget.transform.position;
         dmgPopUp.ShowHealPopUp(savedHeal, targetPosition);
     }    

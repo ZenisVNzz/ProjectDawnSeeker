@@ -16,8 +16,10 @@ MonoBehaviour:
   characterName: Skeleton
   characterType: 1
   characterSprite: {fileID: 4354231566380549168, guid: 5eef8dd8baa16fb43b53997acb96a4dc, type: 3}
-  characterAnimation: {fileID: 0}
-  skillList: []
+  characterAnimation: {fileID: 9100000, guid: 9ccfccf8b6e7a1a479ebfe9d0550959d, type: 2}
+  skillList:
+  - {fileID: 11400000, guid: 45af90e03321433488201489c86b8b8d, type: 2}
+  - {fileID: 11400000, guid: 9128868849bbb044681caf2fcfca68d3, type: 2}
   level: 1
   ATK: 31
   HP: 102
