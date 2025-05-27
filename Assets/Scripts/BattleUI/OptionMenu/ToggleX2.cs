@@ -7,14 +7,14 @@ public class ToggleX2 : MonoBehaviour
 
     void Start()
     {
-        Button button = GetComponent<Button>();
+        Button button = GetComponentInChildren<Button>();
         Image image = transform.Find("Outline").GetComponent<Image>();
-        Color offColor = Color.white;
-        Color onColor = new Color(136f / 255f, 141f / 255f, 1f, 1f);
+        Color offColor = new Color(255f / 255f, 160f / 255f, 109f / 255f, 1f);
+        Color onColor = new Color(97f / 255f, 194f / 255f, 1f, 1f);
 
         button.onClick.AddListener(() =>
         {
-            if (image.color == offColor)
+            if (!isOn)
             {
                 image.color = onColor;
                 isOn = true;

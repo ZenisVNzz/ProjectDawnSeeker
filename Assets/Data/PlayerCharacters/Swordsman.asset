@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef0f3323c8b53147a892c06f8e228ed, type: 3}
+  m_Name: Swordsman
+  m_EditorClassIdentifier: 
+  characterID: 100005
+  characterName: Swordsman
+  characterType: 0
+  characterSprite: {fileID: 3613407544420638092, guid: 61d7c92136031284f9c94fef5c6f57d6, type: 3}
+  characterAnimation: {fileID: 9100000, guid: a003cf0e149667e4597f92eeae2b3d27, type: 2}
+  skillList:
+  - {fileID: 11400000, guid: e22efd04b21bc8845b9b631fcf85cf34, type: 2}
+  - {fileID: 11400000, guid: 1fc899be4d437c14ba6fe8661a87e157, type: 2}
+  - {fileID: 11400000, guid: cbffde8899865d84baba160f87d9bbe1, type: 2}
+  - {fileID: 11400000, guid: 356007e24b12d9e4bb2389838a2d53ac, type: 2}
+  level: 1
+  ATK: 33
+  HP: 220
+  DEF: 12
+  MP: 4
+  CR: 0.01
+  CD: 1.5
+  DC: 0.1
+  PC: 0.12
+  maxLevel: 100
+  currentXP: 0
+  neededXP: 100
+  ATKPerLevel: 9.3
+  HPPerLevel: 10
+  DEFPerLevel: 0.8
+  MPPerLevel: 0
+  CRPerLevel: 0.0049
+  CDPerLevel: 0.03

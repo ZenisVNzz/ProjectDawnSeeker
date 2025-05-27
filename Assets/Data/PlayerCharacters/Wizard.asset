@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef0f3323c8b53147a892c06f8e228ed, type: 3}
+  m_Name: Wizard
+  m_EditorClassIdentifier: 
+  characterID: 100004
+  characterName: Wizard
+  characterType: 0
+  characterSprite: {fileID: 1457491203435894738, guid: ced4fda1361ac80429bf4a35e01ab226, type: 3}
+  characterAnimation: {fileID: 9100000, guid: ba4dc4b0829bf094bb1c90a8210de6de, type: 2}
+  skillList:
+  - {fileID: 11400000, guid: f7646fa8ad77cf64c9e1ca3da2047219, type: 2}
+  - {fileID: 11400000, guid: 512db340253de2e41a934e3cc4430067, type: 2}
+  - {fileID: 11400000, guid: 8caaedf3b72d9364c943e8c800bc76a6, type: 2}
+  - {fileID: 11400000, guid: d65f6a5e84058144fa7571839b4f9f7a, type: 2}
+  level: 1
+  ATK: 97
+  HP: 125
+  DEF: 10
+  MP: 7
+  CR: 0.1
+  CD: 1.5
+  DC: 0.07
+  PC: 0.04
+  maxLevel: 100
+  currentXP: 0
+  neededXP: 100
+  ATKPerLevel: 6
+  HPPerLevel: 15
+  DEFPerLevel: 0.9
+  MPPerLevel: 0
+  CRPerLevel: 0.0047
+  CDPerLevel: 0.01

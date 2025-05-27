@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewATKUP", menuName = "StatusEffect/ATKUP")]
 public class ATKUP : StatusEffect
 {
-    public int PercentAmount;
+    public float PercentAmount;
 
     public override void OnApply(CharacterInBattle target)
     {
