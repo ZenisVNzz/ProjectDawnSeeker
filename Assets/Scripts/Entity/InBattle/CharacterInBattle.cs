@@ -396,7 +396,14 @@ public class CharacterInBattle : MonoBehaviour
         {
             Die();
         }
-    }    
+    }
+
+    public void PlaySoundEffect(string soundName)
+    {
+        GameObject soudEffectObj = GameObject.Find(soundName);
+        AudioSource audioSource = soudEffectObj.GetComponent<AudioSource>();
+        audioSource.Play();
+    }
 
     public void OnSupportSkillHit()
     {
