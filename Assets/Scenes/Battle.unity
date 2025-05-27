@@ -3011,13 +3011,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: af757364d7bb31e48a69dc2924d82dee, type: 2}
   - {fileID: 11400000, guid: 5ac2ca0e26d4ce246a4373068f1f72c1, type: 2}
   - {fileID: 11400000, guid: 67d48f84bb13132498043bdea7abbbd2, type: 2}
-  enemyCharacter: {fileID: 11400000, guid: c804c16e4cd6645469fb9f2da4eef3ad, type: 2}
+  enemyCharacter:
+  - {fileID: 11400000, guid: dfdcdda75f77ad14daa85aa01e34840d, type: 2}
   playerCharacterInBattle:
   - {fileID: 554530855}
   - {fileID: 808364462}
   - {fileID: 1272054748}
   - {fileID: 1283657988}
-  enemyCharacterInBattle: {fileID: 1172855266}
+  enemyCharacterInBattle:
+  - {fileID: 1172855266}
   battleManager: {fileID: 587159867}
   battleUI: {fileID: 1726673298}
 --- !u!4 &440414059
@@ -4321,11 +4323,14 @@ MonoBehaviour:
   isEnchantment: 0
   isHeatShock: 0
   isCritAfterAttack: 0
+  isCharge: 0
+  chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  savedTotalDmgHit: 0
   isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
@@ -7042,11 +7047,14 @@ MonoBehaviour:
   isEnchantment: 0
   isHeatShock: 0
   isCritAfterAttack: 0
+  isCharge: 0
+  chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  savedTotalDmgHit: 0
   isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
@@ -11274,11 +11282,14 @@ MonoBehaviour:
   isEnchantment: 0
   isHeatShock: 0
   isCritAfterAttack: 0
+  isCharge: 0
+  chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  savedTotalDmgHit: 0
   isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
@@ -11922,11 +11933,14 @@ MonoBehaviour:
   isEnchantment: 0
   isHeatShock: 0
   isCritAfterAttack: 0
+  isCharge: 0
+  chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  savedTotalDmgHit: 0
   isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
@@ -12277,11 +12291,14 @@ MonoBehaviour:
   isEnchantment: 0
   isHeatShock: 0
   isCritAfterAttack: 0
+  isCharge: 0
+  chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
   savedDmg: 0
+  savedTotalDmgHit: 0
   isCrit: 0
   savedHeal: 0
   currentTarget: {fileID: 0}
