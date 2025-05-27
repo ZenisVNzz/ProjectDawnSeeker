@@ -13,15 +13,11 @@ MonoBehaviour:
   m_Name: DivineArrow
   m_EditorClassIdentifier: 
   ID: 300006
-  skillName: "Phong Th\u1EA7n Ti\u1EC5n"
+  skillName: "Phong th\u1EA7n ti\u1EC5n"
   description: "B\u1EAFn m\u1ED9t m\u0169i t\xEAn c\u1EF1c m\u1EA1nh v\xE0o \u0111\u1ED1i
     ph\u01B0\u01A1ng, g\xE2y s\xE1t th\u01B0\u01A1ng m\u1EA1nh v\xE0 khi\u1EBFn m\u1EE5c
     ti\xEAu b\u1ECB v\u1EBFt th\u01B0\u01A1ng s\xE2u trong 2 l\u01B0\u1EE3t."
   icon: {fileID: 8044434922281357356, guid: 14a0a4c854000dc449e67bc493e6de41, type: 3}
   mpCost: 2
   animation: {fileID: 7400000, guid: 1fbf20be3236bf04e93e4e631d839286, type: 2}
-  passiveSkill: 0
-  supportSkill: 0
-  move: 0
-  isAOE: 0
   deepWound: {fileID: 11400000, guid: fba652d4d4a93f743be67dd4a33ba634, type: 2}

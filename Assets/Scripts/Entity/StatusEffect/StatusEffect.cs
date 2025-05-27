@@ -9,8 +9,6 @@ public abstract class StatusEffect : ScriptableObject
     public StatusType type;
     public int duration;
     public Sprite Icon;
-    public bool canStack;
-    public int maxStack = 1;
     public bool isHeadVFX;
 
     public abstract void OnApply(CharacterInBattle target);

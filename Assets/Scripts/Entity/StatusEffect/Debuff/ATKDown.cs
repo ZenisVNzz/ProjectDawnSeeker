@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewATKDown", menuName = "StatusEffect/ATKDown")]
 public class ATKDown : StatusEffect
 {
-    public float PercentAmount;
+    public int PercentAmount;
 
     public override void OnApply(CharacterInBattle target)
     {

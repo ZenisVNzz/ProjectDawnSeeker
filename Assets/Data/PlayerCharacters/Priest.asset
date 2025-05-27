@@ -15,28 +15,18 @@ MonoBehaviour:
   characterID: 100003
   characterName: Priest
   characterType: 0
-  characterSprite: {fileID: -4749681873034518491, guid: cc0b6cc2f6b52fd458c5e5e11b6009f8, type: 3}
+  characterSprite: {fileID: -4749681873034518491, guid: f878d6cc18d8b774dbc73bc3e78ea8b1, type: 3}
   characterAnimation: {fileID: 9100000, guid: 0d7008f66d0f66446b2266e7103f1564, type: 2}
   skillList:
   - {fileID: 11400000, guid: 178cd9e0ff0f1d64797ff8692b82ee37, type: 2}
   - {fileID: 11400000, guid: 6f8974ba748929c449b30d482dbe4d0a, type: 2}
   - {fileID: 11400000, guid: c06dbe33a93d6434585ee7b1dde9077c, type: 2}
   - {fileID: 11400000, guid: 91672e61481af614fbea4cd6826b7c2d, type: 2}
-  level: 1
-  ATK: 26
-  HP: 135
-  DEF: 6
-  MP: 5
-  CR: 0.01
-  CD: 1.5
-  DC: 0.04
-  PC: 0.02
-  maxLevel: 100
-  currentXP: 0
-  neededXP: 100
-  ATKPerLevel: 3.2
-  HPPerLevel: 12
-  DEFPerLevel: 0.5
-  MPPerLevel: 0
-  CRPerLevel: 0.0007
-  CDPerLevel: 0.005
+  ATK: 5
+  HP: 14
+  DEF: 3
+  MP: 6
+  CR: 0.08
+  CD: 1.1
+  DC: 0.03
+  PC: 0

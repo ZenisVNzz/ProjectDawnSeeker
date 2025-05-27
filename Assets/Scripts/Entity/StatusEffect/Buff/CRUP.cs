@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewCRUP", menuName = "StatusEffect/CRUP")]
 public class CRUP : StatusEffect
 {
-    public float PercentAmount;
+    public int PercentAmount;
 
     public override void OnApply(CharacterInBattle target)
     {

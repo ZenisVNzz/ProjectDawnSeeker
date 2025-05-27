@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bash
   m_EditorClassIdentifier: 
   ID: 300002
-  skillName: "Khi\xEAn K\xEDch"
+  skillName: "Khi\xEAn k\xEDch"
   description: "D\xF9ng khi\xEAn th\xFAc m\u1EA1nh v\xE0o \u0111\u1ED1i ph\u01B0\u01A1ng,
     g\xE2y s\xE1t th\u01B0\u01A1ng nh\u1EB9, c\xF3 50% khi\u1EBFn m\u1EE5c ti\xEAu
     b\u1ECB t\xEA li\u1EC7t, \u0111\u1ED3ng th\u1EDDi t\u0103ng s\u1EE9c ph\xF2ng
@@ -24,6 +24,5 @@ MonoBehaviour:
   passiveSkill: 0
   supportSkill: 0
   move: 1
-  isAOE: 0
   paralysis: {fileID: 11400000, guid: f268a165c3f09874e9a860ec66d784c2, type: 2}
   defUP: {fileID: 11400000, guid: f9d0b0d778f43ea4dac0332777c1b337, type: 2}

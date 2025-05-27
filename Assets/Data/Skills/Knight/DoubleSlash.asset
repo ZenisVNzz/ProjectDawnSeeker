@@ -13,16 +13,15 @@ MonoBehaviour:
   m_Name: DoubleSlash
   m_EditorClassIdentifier: 
   ID: 300003
-  skillName: "Song K\xEDch"
+  skillName: "Song k\xEDch"
   description: "Ch\xE9m hai ph\xE1t li\xEAn ti\u1EBFp, g\xE2y s\xE1t th\u01B0\u01A1ng
-    kh\xE1 v\xE0 t\u0103ng s\u1EE9c t\u1EA5n c\xF4ng cho b\u1EA3n th\xE2n trong v\xF2ng
-    2 l\u01B0\u1EE3t."
+    kh\xE1 v\xE0 khi\u1EBFn m\u1EE5c ti\xEAu b\u1ECB ch\u1EA3y m\xE1u, \u0111\u1ED3ng
+    th\u1EDDi t\u0103ng s\u1EE9c t\u1EA5n c\xF4ng trong v\xF2ng 2 l\u01B0\u1EE3t."
   icon: {fileID: 125923344591457816, guid: 73c0d672ef462254282299b149aa3ee7, type: 3}
   mpCost: 1
   animation: {fileID: 7400000, guid: 1590c9e6ea4f2e84388bb60ddb3a6403, type: 2}
   passiveSkill: 0
   supportSkill: 0
   move: 1
-  isAOE: 0
   bleeding: {fileID: 11400000, guid: 091c7ea854006a54e99a2ca3c8771383, type: 2}
   atkUP: {fileID: 11400000, guid: 94ec968db9241264fa351737f61c1ec9, type: 2}

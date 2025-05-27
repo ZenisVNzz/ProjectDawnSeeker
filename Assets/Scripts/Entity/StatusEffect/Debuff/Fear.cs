@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Fear", menuName = "StatusEffect/Fear")]
 public class Fear : StatusEffect
 {
-    public float PercentAmount;
+    public int PercentAmount;
 
     public override void OnApply(CharacterInBattle target)
     {

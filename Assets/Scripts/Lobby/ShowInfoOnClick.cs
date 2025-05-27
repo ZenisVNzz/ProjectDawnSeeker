@@ -8,7 +8,6 @@ public class ShowInfoOnClick : MonoBehaviour
 {
     public Image charIMG;
     public TextMeshProUGUI charName;
-    public TextMeshProUGUI charLevel;
     public TextMeshProUGUI hpIndex;
     public TextMeshProUGUI defIndex;
     public TextMeshProUGUI atkIndex;
@@ -35,57 +34,49 @@ public class ShowInfoOnClick : MonoBehaviour
 
         button.onClick.AddListener(() =>
         {
-            ShowInfoCharacter();
+            if (EquipedUnit.equipedUnit.Contains(charDataStorage.characterData))
+            {
+                equipButton.SetActive(false);
+                unEquipButton.SetActive(true);
+            }
+            else
+            {
+                equipButton.SetActive(true);
+                unEquipButton.SetActive(false);
+            }
+            CharDataStorage charData = characterInfo.GetComponent<CharDataStorage>();
+           charData.characterData = charDataStorage.characterData;
+
+            foreach (GameObject gameObj in skillPanel)
+            {
+                gameObj.SetActive(false);
+            }
+
+            characterInfo.SetActive(true);
+
+            charIMG.sprite = charDataStorage.characterData.characterSprite;
+            charName.text = charDataStorage.characterData.characterName;
+            hpIndex.text = charDataStorage.characterData.HP.ToString();
+            defIndex.text = charDataStorage.characterData.DEF.ToString();
+            atkIndex.text = charDataStorage.characterData.ATK.ToString();
+            mpIndex.text = charDataStorage.characterData.MP.ToString();
+            crIndex.text = (charDataStorage.characterData.CR * 100 + "%").ToString();
+            cdIndex.text = (charDataStorage.characterData.CD * 100 + "%").ToString();
+            dcIndex.text = (charDataStorage.characterData.DC * 100 + "%").ToString();
+            pcIndex.text = (charDataStorage.characterData.PC * 100 + "%").ToString();
+
+            for (int i = 0; i < charDataStorage.characterData.skillList.Count; i++)
+            {
+                skillPanel[i].SetActive(true);
+                Image skillImage = skillPanel[i].transform.Find("SkillOutline/SkIMG").GetComponent<Image>();
+                TextMeshProUGUI skillName = skillPanel[i].transform.Find("SkillName").GetComponent<TextMeshProUGUI>();
+                TextMeshProUGUI mpCost = skillPanel[i].transform.Find("MpCost").GetComponent<TextMeshProUGUI>();
+                TextMeshProUGUI skillDes = skillPanel[i].transform.Find("Des").GetComponent<TextMeshProUGUI>();
+                skillImage.sprite = charDataStorage.characterData.skillList[i].icon;
+                skillName.text = charDataStorage.characterData.skillList[i].skillName;
+                mpCost.text = ($"Mp cost {charDataStorage.characterData.skillList[i].mpCost.ToString()}");
+                skillDes.text = charDataStorage.characterData.skillList[i].description;
+            }    
         });
     }
-
-    public void ShowInfoCharacter()
-    {
-        if (EquipedUnit.equipedUnit.Contains(charDataStorage.characterData))
-        {
-            equipButton.SetActive(false);
-            unEquipButton.SetActive(true);
-        }
-        else
-        {
-            equipButton.SetActive(true);
-            unEquipButton.SetActive(false);
-        }
-        CharDataStorage charData = characterInfo.GetComponent<CharDataStorage>();
-        charData.characterData = charDataStorage.characterData;
-
-        foreach (GameObject gameObj in skillPanel)
-        {
-            gameObj.SetActive(false);
-        }
-
-        characterInfo.SetActive(true);
-
-        charIMG.sprite = charDataStorage.characterData.characterSprite;
-        charLevel.text = $"lv.{charDataStorage.characterData.level}";
-        charName.text = charDataStorage.characterData.characterName;
-        hpIndex.text = charDataStorage.characterData.HP.ToString("0.#");
-        defIndex.text = charDataStorage.characterData.DEF.ToString("0.#");
-        atkIndex.text = charDataStorage.characterData.ATK.ToString("0.#");
-        mpIndex.text = charDataStorage.characterData.MP.ToString("0.#");
-        crIndex.text = (Mathf.Round(charDataStorage.characterData.CR * 100) + "%").ToString();
-        cdIndex.text = (Mathf.Round(charDataStorage.characterData.CD * 100) + "%").ToString();
-        dcIndex.text = (Mathf.Round(charDataStorage.characterData.DC * 100) + "%").ToString();
-        pcIndex.text = (Mathf.Round(charDataStorage.characterData.PC * 100) + "%").ToString();
-
-        for (int i = 0; i < charDataStorage.characterData.skillList.Count; i++)
-        {
-            skillPanel[i].SetActive(true);
-            Image skillImage = skillPanel[i].transform.Find("SkillOutline/SkIMG").GetComponent<Image>();
-            TextMeshProUGUI skillName = skillPanel[i].transform.Find("SkillName").GetComponent<TextMeshProUGUI>();
-            TextMeshProUGUI mpCost = skillPanel[i].transform.Find("MpCost").GetComponent<TextMeshProUGUI>();
-            TextMeshProUGUI skillDes = skillPanel[i].transform.Find("Des").GetComponent<TextMeshProUGUI>();
-            skillImage.sprite = charDataStorage.characterData.skillList[i].icon;
-            skillName.text = charDataStorage.characterData.skillList[i].skillName;
-            mpCost.text = ($"Mp cost {charDataStorage.characterData.skillList[i].mpCost.ToString()}");
-            skillDes.text = charDataStorage.characterData.skillList[i].description;
-        }
-        UpgradeChar upgradeChar = FindAnyObjectByType<UpgradeChar>();
-        upgradeChar.showInfoOnClick = this;
-    }    
 }

@@ -11,7 +11,6 @@ public abstract class SkillBase : ScriptableObject
     public bool passiveSkill = false;
     public bool supportSkill = false;
     public bool move = false;
-    public bool isAOE = false;
 
     public virtual void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
