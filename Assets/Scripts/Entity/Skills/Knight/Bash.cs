@@ -13,7 +13,7 @@ public class Bash : SkillBase
         int ran = Random.Range(0, 100);
         if (ran < 50)
         {
-            target.ApplyStatusEffect(paralysis, 1);
+            target.ApplyStatusEffect(paralysis, 0);
         }
         base.DoAction(user, target);
     }

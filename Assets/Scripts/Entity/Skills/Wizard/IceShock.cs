@@ -13,7 +13,7 @@ public class IceShock : SkillBase
         if (target.activeStatusEffect.Any(e => e.ID == 200012))
         {
             target.TakeDamage(user.ATK * 1.8f, 1, user, target);
-            target.ApplyStatusEffect(paralysis, 1);
+            target.ApplyStatusEffect(paralysis, 0);
             target.ApplyStatusEffect(heatShock, 3);
         }
         else

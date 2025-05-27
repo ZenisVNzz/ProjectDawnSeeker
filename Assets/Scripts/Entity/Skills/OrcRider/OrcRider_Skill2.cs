@@ -13,7 +13,7 @@ public class OrcRider_Skill2 : SkillBase
         int ran = Random.Range(0, 100);
         if (ran < 60)
         {
-            target.ApplyStatusEffect(paralysis, 1);
+            target.ApplyStatusEffect(paralysis, 0);
             target.ApplyStatusEffect(defDown, 3);
         }
         user.ApplyStatusEffect(bloodThirsty, 99);

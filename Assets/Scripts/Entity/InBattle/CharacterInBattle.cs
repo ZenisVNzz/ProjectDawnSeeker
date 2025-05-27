@@ -191,7 +191,7 @@ public class CharacterInBattle : MonoBehaviour
             if (index < 20)
             {
                 StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
-                this.ApplyStatusEffect(statusEffectInstance.paralysis, 1);
+                this.ApplyStatusEffect(statusEffectInstance.paralysis, 0);
             }
         }    
     }    
