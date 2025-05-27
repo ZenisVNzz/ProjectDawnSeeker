@@ -3083,16 +3083,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCharacter:
   - {fileID: 11400000, guid: 666e1ad216a14db409314d65dac8d327, type: 2}
-  - {fileID: 11400000, guid: af757364d7bb31e48a69dc2924d82dee, type: 2}
   - {fileID: 11400000, guid: 5ac2ca0e26d4ce246a4373068f1f72c1, type: 2}
+  - {fileID: 11400000, guid: af757364d7bb31e48a69dc2924d82dee, type: 2}
   - {fileID: 11400000, guid: 67d48f84bb13132498043bdea7abbbd2, type: 2}
-  enemyCharacter: {fileID: 11400000, guid: c804c16e4cd6645469fb9f2da4eef3ad, type: 2}
+  enemyCharacter:
+  - {fileID: 11400000, guid: dfdcdda75f77ad14daa85aa01e34840d, type: 2}
   playerCharacterInBattle:
   - {fileID: 554530855}
   - {fileID: 808364462}
   - {fileID: 1272054748}
   - {fileID: 1283657988}
-  enemyCharacterInBattle: {fileID: 1172855266}
+  enemyCharacterInBattle:
+  - {fileID: 1172855266}
   battleManager: {fileID: 587159867}
   battleUI: {fileID: 1726673298}
 --- !u!4 &440414059
@@ -4419,7 +4421,7 @@ Animator:
   m_GameObject: {fileID: 554530851}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a003cf0e149667e4597f92eeae2b3d27, type: 2}
+  m_Controller: {fileID: 9100000, guid: ba4dc4b0829bf094bb1c90a8210de6de, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

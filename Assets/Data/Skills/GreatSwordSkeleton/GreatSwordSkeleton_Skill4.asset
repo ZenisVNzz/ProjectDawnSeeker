@@ -15,7 +15,7 @@ MonoBehaviour:
   ID: 300024
   skillName: none
   description: none
-  icon: {fileID: 0}
+  icon: {fileID: -2058990241, guid: 22678c03ff9e287488860e9b8817fe69, type: 3}
   mpCost: 4
   animation: {fileID: 7400000, guid: 9eb77e81f2f038e4d80c757f4a60fe02, type: 2}
   passiveSkill: 0
@@ -23,6 +23,7 @@ MonoBehaviour:
   move: 1
   isAOE: 0
   isWaitForCharge: 1
+  isUniqueSkill: 1
   defUP: {fileID: 11400000, guid: f9d0b0d778f43ea4dac0332777c1b337, type: 2}
   paralysis: {fileID: 11400000, guid: f268a165c3f09874e9a860ec66d784c2, type: 2}
   defDown: {fileID: 11400000, guid: 2f840665207b1544886683bcc83c1ffe, type: 2}

@@ -16,7 +16,7 @@ public class GreatSwordSkeleton_Skill4 : SkillBase
 
     public override void DoSpecialAction(CharacterInBattle user, CharacterInBattle target)
     {
-        float dmg = (user.ATK * 1.8f) * (1 + 0.1f * (target.DEF / 40));
+        float dmg = (user.ATK * 1.8f) * (1 + 0.1f * (target.DEF / 30));
         target.TakeDamage(dmg, 1, user, target);
         base.DoAction(user, target);
     }

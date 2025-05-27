@@ -158,10 +158,11 @@ public class BattleManager : MonoBehaviour
                 if (!enemy.isCharge)
                 {
                     List<SkillBase> availableSkills = new List<SkillBase>();
-                    if (enemyPlannedAction.Any(e => e.Skill.isUniqueSkill) && i <= 1)
+                    if (i <= 1)
                     {
                         availableSkills = enemy.skillList.Where(skill => skill.mpCost <= mp && !skill.isUniqueSkill).ToList();
                     }
+                    else
                     {
                         availableSkills = enemy.skillList.Where(skill => skill.mpCost <= mp).ToList();
                     }
