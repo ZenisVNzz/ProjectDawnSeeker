@@ -4,7 +4,7 @@ using UnityEngine;
 public class Heal : StatusEffect
 {
     public float CasterATK;
-    public float percent;
+    public int percent;
 
     public override void OnApply(CharacterInBattle target)
     {

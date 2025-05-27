@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BlazingSlash
   m_EditorClassIdentifier: 
   ID: 300004
-  skillName: "H\u1ECFa Di\u1EC7m Tr\u1EA3m"
+  skillName: "H\u1ECFa di\u1EC7m tr\u1EA3m"
   description: "T\u1EE5 l\u1EF1c r\u1ED3i ch\xE9m ra m\u1ED9t \u0111\xF2n ki\u1EBFm
     kh\xED r\u1EF1c l\u1EEDa, g\xE2y s\xE1t th\u01B0\u01A1ng m\u1EA1nh v\xE0 l\xE0m
     m\u1EE5c ti\xEAu b\u1ECB thi\xEAu \u0111\u1ED1t trong 2 l\u01B0\u1EE3t. N\u1EBFu
@@ -25,5 +25,4 @@ MonoBehaviour:
   passiveSkill: 0
   supportSkill: 0
   move: 1
-  isAOE: 0
   burn: {fileID: 11400000, guid: 7294eccf5beaba849a216cfecf684e44, type: 2}

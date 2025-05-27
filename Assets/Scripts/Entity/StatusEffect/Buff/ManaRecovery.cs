@@ -4,7 +4,7 @@ using UnityEngine;
 public class ManaRecovery : StatusEffect
 {
     public int MPPercentAmount;
-    public float DecreaseDEFPercentAmount;
+    public int DecreaseDEFPercentAmount;
 
     public override void OnApply(CharacterInBattle target)
     {

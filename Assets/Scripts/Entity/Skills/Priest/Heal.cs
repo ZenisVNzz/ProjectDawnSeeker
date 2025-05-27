@@ -8,7 +8,7 @@ public class Heals : SkillBase
     {
         heal.CasterATK = user.ATK;
         target.ApplyStatusEffect(heal, 1);
-        user.savedHeal = user.ATK * 2f;
+        user.savedHeal = user.ATK * 0.4f;
         base.DoAction(user, target);
     }
 }
