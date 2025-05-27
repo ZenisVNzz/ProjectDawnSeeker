@@ -17,5 +17,8 @@ MonoBehaviour:
   type: 0
   duration: 1
   Icon: {fileID: 0}
-  CasterATK: 0
-  percent: 40
+  canStack: 0
+  maxStack: 1
+  isHeadVFX: 0
+  CasterATK: 26
+  percent: 200

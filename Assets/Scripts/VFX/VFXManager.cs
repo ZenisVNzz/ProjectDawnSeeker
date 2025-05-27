@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using System.Collections;
+using System;
 
 public class VFXManager : MonoBehaviour
 {
@@ -19,37 +20,61 @@ public class VFXManager : MonoBehaviour
         }
     }
 
-    public void PlayEffect(int ID, Vector3 position, int charID)
+    public void PlayEffect(int ID, Vector3 position, CharacterInBattle character)
     {
-        if (effectDictionary.TryGetValue(ID, out GameObject prefab))
+        if (effect.Any(e => e.ID == ID && !e.isMove))
         {
-            GameObject effectInstance = Instantiate(prefab, position, Quaternion.identity);
-            if (effect.Any(e => e.ID == ID && !e.duringEffect))
+            int charID = character.characterData.characterID;
+            if (effectDictionary.TryGetValue(ID, out GameObject prefab))
             {
-                Destroy(effectInstance, 3f);
-            }
-            else
-            {
-                if (!activeEffectVFX.ContainsKey(charID))
+                GameObject effectInstance = Instantiate(prefab, position, Quaternion.identity);
+                if (effect.Any(e => e.ID == ID && !e.duringEffect))
                 {
-                    activeEffectVFX.Add(charID, new Dictionary<int, GameObject>());
-                    activeEffectVFX[charID].Add(ID, effectInstance);
+                    Destroy(effectInstance, 5f);
                 }
                 else
                 {
-                    activeEffectVFX[charID].Add(ID, effectInstance);
+                    if (!activeEffectVFX.ContainsKey(charID))
+                    {
+                        activeEffectVFX.Add(charID, new Dictionary<int, GameObject>());
+                        activeEffectVFX[charID].Add(ID, effectInstance);
+                    }
+                    else
+                    {
+                        activeEffectVFX[charID].Add(ID, effectInstance);
+                    }
                 }
-            }   
+            }
+            else
+            {
+                return;
+            }
         }
         else
         {
-            return;
-        }
+            if (effectDictionary.TryGetValue(ID, out GameObject prefab))
+            {
+                GameObject effectInstance = Instantiate(prefab, character.transform.position + Vector3.right * 1.5f, Quaternion.identity);
+                Vector3 dir = position - effectInstance.transform.position;
+                float angleZ = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+                effectInstance.transform.rotation = Quaternion.Euler(0, 0, angleZ);
+                EffectMover effectMover = effectInstance.GetComponent<EffectMover>();
+                Animator animator = effectInstance.GetComponent<Animator>();
+                effectMover.target = position;
+                effectMover.onHit = () =>
+                {
+                    animator.Play("Hit");
+                    Destroy(effectInstance, 2f);
+                    character.WaitForRangeSkillHit();
+                };
+                effectMover.MoveToTarget();
+            }
+        }    
     }
 
     public IEnumerator StopEffect(int charID, int effectID)
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
         if (activeEffectVFX.ContainsKey(charID))
         {
             if (activeEffectVFX[charID].ContainsKey(effectID))
@@ -79,6 +104,8 @@ public class Effect
     public int ID;
     public bool duringEffect;
     public bool isPlayOnHit;
+    public bool isPlayOnEnd;
+    public bool isMove;
     public GameObject effectPrefab;
 }
 

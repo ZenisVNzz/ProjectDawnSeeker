@@ -180,7 +180,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -232,10 +232,10 @@ TextureImporter:
       name: Archer_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 542
-        width: 24
-        height: 19
+        x: 0
+        y: 500
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,10 +254,10 @@ TextureImporter:
       name: Archer_1
       rect:
         serializedVersion: 2
-        x: 139
-        y: 542
-        width: 24
-        height: 19
+        x: 100
+        y: 500
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +276,10 @@ TextureImporter:
       name: Archer_2
       rect:
         serializedVersion: 2
-        x: 239
-        y: 542
-        width: 24
-        height: 20
+        x: 200
+        y: 500
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,10 +298,10 @@ TextureImporter:
       name: Archer_3
       rect:
         serializedVersion: 2
-        x: 339
-        y: 542
-        width: 24
-        height: 20
+        x: 300
+        y: 500
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +320,10 @@ TextureImporter:
       name: Archer_4
       rect:
         serializedVersion: 2
-        x: 439
-        y: 542
-        width: 24
-        height: 19
+        x: 400
+        y: 500
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,10 +342,10 @@ TextureImporter:
       name: Archer_5
       rect:
         serializedVersion: 2
-        x: 539
-        y: 542
-        width: 24
-        height: 19
+        x: 500
+        y: 500
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,10 +364,10 @@ TextureImporter:
       name: Archer_6
       rect:
         serializedVersion: 2
-        x: 39
-        y: 442
-        width: 24
-        height: 19
+        x: 0
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +386,10 @@ TextureImporter:
       name: Archer_7
       rect:
         serializedVersion: 2
-        x: 139
-        y: 443
-        width: 24
-        height: 19
+        x: 100
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -408,10 +408,10 @@ TextureImporter:
       name: Archer_8
       rect:
         serializedVersion: 2
-        x: 239
-        y: 442
-        width: 24
-        height: 19
+        x: 200
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -430,10 +430,10 @@ TextureImporter:
       name: Archer_9
       rect:
         serializedVersion: 2
-        x: 339
-        y: 442
-        width: 24
-        height: 18
+        x: 300
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,10 +452,10 @@ TextureImporter:
       name: Archer_10
       rect:
         serializedVersion: 2
-        x: 439
-        y: 442
-        width: 24
-        height: 19
+        x: 400
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -474,10 +474,10 @@ TextureImporter:
       name: Archer_11
       rect:
         serializedVersion: 2
-        x: 539
-        y: 443
-        width: 24
-        height: 19
+        x: 500
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -496,10 +496,10 @@ TextureImporter:
       name: Archer_12
       rect:
         serializedVersion: 2
-        x: 639
-        y: 442
-        width: 24
-        height: 19
+        x: 600
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -518,10 +518,10 @@ TextureImporter:
       name: Archer_13
       rect:
         serializedVersion: 2
-        x: 739
-        y: 442
-        width: 24
-        height: 18
+        x: 700
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -540,10 +540,10 @@ TextureImporter:
       name: Archer_14
       rect:
         serializedVersion: 2
-        x: 39
-        y: 339
-        width: 20
-        height: 22
+        x: 0
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,10 +562,10 @@ TextureImporter:
       name: Archer_15
       rect:
         serializedVersion: 2
-        x: 139
-        y: 339
-        width: 20
-        height: 24
+        x: 100
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,10 +584,10 @@ TextureImporter:
       name: Archer_16
       rect:
         serializedVersion: 2
-        x: 239
-        y: 339
-        width: 20
-        height: 22
+        x: 200
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -606,10 +606,10 @@ TextureImporter:
       name: Archer_17
       rect:
         serializedVersion: 2
-        x: 339
-        y: 339
-        width: 25
-        height: 22
+        x: 300
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,10 +628,10 @@ TextureImporter:
       name: Archer_18
       rect:
         serializedVersion: 2
-        x: 439
-        y: 339
-        width: 24
-        height: 22
+        x: 400
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -650,10 +650,10 @@ TextureImporter:
       name: Archer_19
       rect:
         serializedVersion: 2
-        x: 539
-        y: 342
-        width: 23
-        height: 19
+        x: 500
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -672,10 +672,10 @@ TextureImporter:
       name: Archer_20
       rect:
         serializedVersion: 2
-        x: 639
-        y: 342
-        width: 39
-        height: 19
+        x: 600
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -694,10 +694,10 @@ TextureImporter:
       name: Archer_21
       rect:
         serializedVersion: 2
-        x: 739
-        y: 339
-        width: 26
-        height: 22
+        x: 700
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -716,10 +716,10 @@ TextureImporter:
       name: Archer_22
       rect:
         serializedVersion: 2
-        x: 839
-        y: 339
-        width: 20
-        height: 22
+        x: 800
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -738,10 +738,10 @@ TextureImporter:
       name: Archer_23
       rect:
         serializedVersion: 2
-        x: 39
-        y: 239
-        width: 20
-        height: 22
+        x: 0
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -760,10 +760,10 @@ TextureImporter:
       name: Archer_24
       rect:
         serializedVersion: 2
-        x: 139
-        y: 239
-        width: 20
-        height: 24
+        x: 100
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -782,10 +782,10 @@ TextureImporter:
       name: Archer_25
       rect:
         serializedVersion: 2
-        x: 239
-        y: 239
-        width: 20
-        height: 22
+        x: 200
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -804,10 +804,10 @@ TextureImporter:
       name: Archer_26
       rect:
         serializedVersion: 2
-        x: 339
-        y: 239
-        width: 27
-        height: 22
+        x: 300
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -826,10 +826,10 @@ TextureImporter:
       name: Archer_27
       rect:
         serializedVersion: 2
-        x: 436
-        y: 239
-        width: 30
-        height: 20
+        x: 400
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -848,10 +848,10 @@ TextureImporter:
       name: Archer_28
       rect:
         serializedVersion: 2
-        x: 536
-        y: 239
-        width: 28
-        height: 20
+        x: 500
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -870,10 +870,10 @@ TextureImporter:
       name: Archer_29
       rect:
         serializedVersion: 2
-        x: 636
-        y: 239
-        width: 30
-        height: 20
+        x: 600
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -892,10 +892,10 @@ TextureImporter:
       name: Archer_30
       rect:
         serializedVersion: 2
-        x: 736
-        y: 239
-        width: 28
-        height: 20
+        x: 700
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -914,10 +914,10 @@ TextureImporter:
       name: Archer_31
       rect:
         serializedVersion: 2
-        x: 836
-        y: 239
-        width: 26
-        height: 20
+        x: 800
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -936,10 +936,10 @@ TextureImporter:
       name: Archer_32
       rect:
         serializedVersion: 2
-        x: 936
-        y: 239
-        width: 57
-        height: 20
+        x: 900
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -958,10 +958,10 @@ TextureImporter:
       name: Archer_33
       rect:
         serializedVersion: 2
-        x: 1036
-        y: 230
-        width: 65
-        height: 39
+        x: 1000
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -980,10 +980,10 @@ TextureImporter:
       name: Archer_34
       rect:
         serializedVersion: 2
-        x: 1136
-        y: 239
-        width: 23
-        height: 20
+        x: 1100
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1002,10 +1002,10 @@ TextureImporter:
       name: Archer_35
       rect:
         serializedVersion: 2
-        x: 1161
-        y: 229
-        width: 24
-        height: 40
+        x: 0
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1024,10 +1024,10 @@ TextureImporter:
       name: Archer_36
       rect:
         serializedVersion: 2
-        x: 39
-        y: 142
-        width: 24
-        height: 19
+        x: 100
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1046,10 +1046,10 @@ TextureImporter:
       name: Archer_37
       rect:
         serializedVersion: 2
-        x: 139
-        y: 142
-        width: 24
-        height: 19
+        x: 200
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1068,10 +1068,10 @@ TextureImporter:
       name: Archer_38
       rect:
         serializedVersion: 2
-        x: 239
-        y: 142
-        width: 24
-        height: 19
+        x: 300
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1090,10 +1090,10 @@ TextureImporter:
       name: Archer_39
       rect:
         serializedVersion: 2
-        x: 339
-        y: 142
-        width: 24
-        height: 19
+        x: 0
+        y: 0
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1112,10 +1112,10 @@ TextureImporter:
       name: Archer_40
       rect:
         serializedVersion: 2
-        x: 39
-        y: 42
-        width: 24
-        height: 19
+        x: 100
+        y: 0
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1134,10 +1134,10 @@ TextureImporter:
       name: Archer_41
       rect:
         serializedVersion: 2
-        x: 138
-        y: 42
-        width: 20
-        height: 18
+        x: 200
+        y: 0
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1156,10 +1156,10 @@ TextureImporter:
       name: Archer_42
       rect:
         serializedVersion: 2
-        x: 235
-        y: 43
-        width: 19
-        height: 15
+        x: 300
+        y: 0
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1174,33 +1174,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Archer_43
-      rect:
-        serializedVersion: 2
-        x: 334
-        y: 42
-        width: 19
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 11b825310d5b3ffd0800000000000000
-      internalID: -2309302278628930799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 161d41ddab21c7b40affa18a1a0abe7d
     internalID: 0
     vertices: []
     indices: 
@@ -1248,7 +1226,6 @@ TextureImporter:
       Archer_40: -5561081503392899682
       Archer_41: -6658925714778641832
       Archer_42: 4987308344126289578
-      Archer_43: -2309302278628930799
       Archer_5: -3506536579647068688
       Archer_6: 7243941689720402736
       Archer_7: -5511490489121558247

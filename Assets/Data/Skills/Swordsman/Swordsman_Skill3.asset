@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 510086a5a2866dc428bb3a185c126aca, type: 3}
+  m_Name: Swordsman_Skill3
+  m_EditorClassIdentifier: 
+  ID: 300021
+  skillName: "T\xE2m Ki\u1EBFm"
+  description: "Ki\u1EBFm s\u0129 d\u1ED3n to\xE0n b\u1ED9 tinh th\u1EA7n v\xE0 \xFD
+    ch\xED v\xE0o ki\u1EBFm ph\xE1p, n\xE2ng cao s\u1EF1 ch\xEDnh x\xE1c v\xE0 s\u1EE9c
+    m\u1EA1nh. T\u0103ng t\u1EC9 l\u1EC7 ch\xED m\u1EA1ng v\xE0 s\u1EE9c t\u1EA5n
+    c\xF4ng cho b\u1EA3n th\xE2n trong 2 l\u01B0\u1EE3t."
+  icon: {fileID: -2376322392647672289, guid: f2eddeef8cfc6f54a95769dd1553fb3a, type: 3}
+  mpCost: 2
+  animation: {fileID: 7400000, guid: 2a1fec1833c5f0449a6e68f2b9255e90, type: 2}
+  passiveSkill: 1
+  supportSkill: 0
+  move: 0
+  isAOE: 0
+  critUP: {fileID: 11400000, guid: e524639c43492bd43907091a949ea0f1, type: 2}
+  atkUP: {fileID: 11400000, guid: 94ec968db9241264fa351737f61c1ec9, type: 2}

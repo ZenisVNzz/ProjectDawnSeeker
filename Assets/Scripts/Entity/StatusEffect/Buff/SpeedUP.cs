@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewSpeedUP", menuName = "StatusEffect/SpeedUP")]
 public class SpeedUP : StatusEffect
 {
-    public int PercentAmount;
+    public float PercentAmount;
 
     public override void OnApply(CharacterInBattle target)
     {
