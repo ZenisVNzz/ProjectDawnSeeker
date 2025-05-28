@@ -175,6 +175,23 @@ public class BattleManager : MonoBehaviour
         return aliveList[index];
     }
 
+    public CharacterInBattle GetLowestHPAlive(List<CharacterInBattle> list)
+    {
+        var aliveList = list.Where(x => x.isAlive).ToList();
+        if (aliveList.Count == 0) return null;
+
+        return aliveList.OrderBy(x => x.HP).FirstOrDefault();
+    }
+
+    public CharacterInBattle GetHighestATKAlive(List<CharacterInBattle> list)
+    {
+        var aliveList = list.Where(x => x.isAlive).ToList();
+        if (aliveList.Count == 0) return null;
+        return aliveList.OrderByDescending(x => x.ATK).FirstOrDefault();
+    }
+
+    
+
     public IEnumerator AddEnemyAction(CharacterInBattle enemy, CharacterInBattle target, SkillBase skill)
     {
         if (skill.supportSkill == true)
