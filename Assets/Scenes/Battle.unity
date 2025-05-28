@@ -2462,6 +2462,7 @@ MonoBehaviour:
   isHeatShock: 0
   isCritAfterAttack: 0
   isCharge: 0
+  isGetATKBuffWhenDodge: 0
   chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
@@ -3156,6 +3157,7 @@ MonoBehaviour:
   isHeatShock: 0
   isCritAfterAttack: 0
   isCharge: 0
+  isGetATKBuffWhenDodge: 0
   chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
@@ -3633,7 +3635,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 666e1ad216a14db409314d65dac8d327, type: 2}
   - {fileID: 11400000, guid: af757364d7bb31e48a69dc2924d82dee, type: 2}
   - {fileID: 11400000, guid: 5ac2ca0e26d4ce246a4373068f1f72c1, type: 2}
-  - {fileID: 11400000, guid: 67d48f84bb13132498043bdea7abbbd2, type: 2}
+  - {fileID: 11400000, guid: 2cb4c3f85bfe2cc48a594a28777b7449, type: 2}
   enemyCharacter:
   - {fileID: 11400000, guid: dfdcdda75f77ad14daa85aa01e34840d, type: 2}
   - {fileID: 11400000, guid: 47ff32cd979b714458e423594d54ac4a, type: 2}
@@ -4875,7 +4877,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5711848221618334454, guid: 12aaf5d75bfedee4ebadf491b95b4012, type: 3}
+  m_Sprite: {fileID: -7098415636228387845, guid: 658e399f1df025d4b9a5d6e9a7889632, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4952,6 +4954,7 @@ MonoBehaviour:
   isHeatShock: 0
   isCritAfterAttack: 0
   isCharge: 0
+  isGetATKBuffWhenDodge: 0
   chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
@@ -4974,7 +4977,7 @@ Animator:
   m_GameObject: {fileID: 554530851}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0d7008f66d0f66446b2266e7103f1564, type: 2}
+  m_Controller: {fileID: 9100000, guid: 86841d3cd887da141928b7124b644782, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7797,6 +7800,7 @@ MonoBehaviour:
   isHeatShock: 0
   isCritAfterAttack: 0
   isCharge: 0
+  isGetATKBuffWhenDodge: 0
   chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
@@ -8871,6 +8875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paralysis: {fileID: 11400000, guid: f268a165c3f09874e9a860ec66d784c2, type: 2}
+  ATKbuff: {fileID: 11400000, guid: 94ec968db9241264fa351737f61c1ec9, type: 2}
 --- !u!1 &898624118
 GameObject:
   m_ObjectHideFlags: 0
@@ -12168,6 +12173,7 @@ MonoBehaviour:
   isHeatShock: 0
   isCritAfterAttack: 0
   isCharge: 0
+  isGetATKBuffWhenDodge: 0
   chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
@@ -12820,6 +12826,7 @@ MonoBehaviour:
   isHeatShock: 0
   isCritAfterAttack: 0
   isCharge: 0
+  isGetATKBuffWhenDodge: 0
   chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
@@ -13179,6 +13186,7 @@ MonoBehaviour:
   isHeatShock: 0
   isCritAfterAttack: 0
   isCharge: 0
+  isGetATKBuffWhenDodge: 0
   chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
@@ -14469,7 +14477,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -776, y: -389.40997}
+  m_AnchoredPosition: {x: -776, y: -389.4099}
   m_SizeDelta: {x: -1540.68, y: -989.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1364629154
@@ -15539,86 +15547,58 @@ MonoBehaviour:
   effect:
   - ID: 200001
     duringEffect: 0
-    isPlayOnHit: 0
-    isPlayOnEnd: 1
     isMove: 0
     effectPrefab: {fileID: 6573002566907771083, guid: 3a0f79ace1cfc284cae58d804204c1c4, type: 3}
   - ID: 300007
     duringEffect: 0
-    isPlayOnHit: 0
-    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 8031518381534090208, guid: 4c9d13be79e68d04d8bd540e9a85e713, type: 3}
   - ID: 300009
     duringEffect: 0
-    isPlayOnHit: 0
-    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 8559052901294044441, guid: 3331edf2cd1473643a05bd4d41c64897, type: 3}
   - ID: 200014
     duringEffect: 1
-    isPlayOnHit: 1
-    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 6508747185846280724, guid: eea6fe2e80b84d3408eb6d45f3733be8, type: 3}
   - ID: 200002
     duringEffect: 0
-    isPlayOnHit: 0
-    isPlayOnEnd: 1
     isMove: 0
     effectPrefab: {fileID: 8790711157773994665, guid: 9d6b043d8939c7b45a0851c74c402e6a, type: 3}
   - ID: 200012
     duringEffect: 0
-    isPlayOnHit: 1
-    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 2025177211651580030, guid: de35b6fa300adb14e9b8ae1129219068, type: 3}
   - ID: 200013
     duringEffect: 0
-    isPlayOnHit: 1
-    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 7006325680284018872, guid: 8a8127e7b6cc2144c954d0a87b5ec838, type: 3}
   - ID: 200016
     duringEffect: 0
-    isPlayOnHit: 1
-    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 8322717233630131957, guid: ea50bacbd9c5b5743aeb39e151194a44, type: 3}
   - ID: 200019
     duringEffect: 0
-    isPlayOnHit: 0
-    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 5107623694346614954, guid: 3e88ba36b8d601c4392afcd7508e7de4, type: 3}
   - ID: 300015
     duringEffect: 0
-    isPlayOnHit: 0
-    isPlayOnEnd: 0
     isMove: 1
     effectPrefab: {fileID: 3616945140289800575, guid: 6b71b6819e4450b4e9a428421e757417, type: 3}
   - ID: 300017
     duringEffect: 0
-    isPlayOnHit: 0
-    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 985394116805625859, guid: 0c8f0c31bc8c1f5479e369529db26ff5, type: 3}
   - ID: 200022
     duringEffect: 0
-    isPlayOnHit: 0
-    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 216517772481751152, guid: 482a520d610762a449b2628c6cf684e7, type: 3}
   - ID: 200004
     duringEffect: 0
-    isPlayOnHit: 0
-    isPlayOnEnd: 1
     isMove: 0
     effectPrefab: {fileID: 3936838442063405860, guid: c5218ffacdad4bd48af299eb7f648de3, type: 3}
   - ID: 200011
     duringEffect: 0
-    isPlayOnHit: 0
-    isPlayOnEnd: 0
     isMove: 0
     effectPrefab: {fileID: 5013008182667652122, guid: 9e6b71560683f58499a51ff1579706e9, type: 3}
 --- !u!1 &1489819655
@@ -19043,7 +19023,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 244, y: -462.8}
+  m_AnchoredPosition: {x: 244, y: -462.80005}
   m_SizeDelta: {x: -512.24, y: -951.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1905720461

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606521a7353b61744b17ecb29684ca11, type: 3}
+  m_Name: Soldier_Skill2
+  m_EditorClassIdentifier: 
+  ID: 300028
+  skillName: " Thi\xEAn tr\u1EA3m"
+  description: " Nh\u1EA3y l\xEAn, ch\xE9m m\u1ED9t \u0111\xF2n t\u1EEB tr\xEAn cao
+    xu\u1ED1ng m\u1EE5c ti\xEAu, g\xE2y 120% ATK, khi\u1EBFn m\u1EE5c ti\xEAu b\u1ECB
+    ch\u1EA5n th\u01B0\u01A1ng trong v\xF2ng 1 l\u01B0\u1EE3t. "
+  icon: {fileID: 0}
+  mpCost: 1
+  animation: {fileID: 7400000, guid: b76d17a0be5fe9a47a42d3cd36e8e2dd, type: 2}
+  passiveSkill: 0
+  supportSkill: 0
+  move: 1
+  isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
+  ATKDown: {fileID: 11400000, guid: 59582a369391a444ba644770352db8f5, type: 2}

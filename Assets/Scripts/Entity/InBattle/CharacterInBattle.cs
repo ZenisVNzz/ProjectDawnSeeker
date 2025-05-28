@@ -44,6 +44,7 @@ public class CharacterInBattle : MonoBehaviour
     public bool isHeatShock = false;
     public bool isCritAfterAttack = false;
     public bool isCharge = false;
+    public bool isGetATKBuffWhenDodge = false;
 
     public int chargeTurn = 0;
 
@@ -120,7 +121,7 @@ public class CharacterInBattle : MonoBehaviour
         float totaldamage = damage;
         totaldamage = totaldamage / hitCount;
 
-        /*if (isAlive || attacker != null || attacker.isAlive)
+        if (isAlive || attacker != null || attacker.isAlive)
         {
             if (UnityEngine.Random.value < PC)
             {
@@ -130,10 +131,15 @@ public class CharacterInBattle : MonoBehaviour
             }
             else if (UnityEngine.Random.value < DC)
             {
+                if (isGetATKBuffWhenDodge)
+                {
+                    StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
+                    ApplyStatusEffect(statusEffectInstance.ATKbuff, 1);
+                }
                 Debug.Log(charName + " đã né đòn");
                 return;
             }
-        }*/
+        }
 
         if (attacker.isEnchantment)
         {
