@@ -79,8 +79,12 @@ public class CharacterInBattle : MonoBehaviour
     private Animator animator;
     public VFXManager vfxManager;
     private bool isClickable = false;
+    public bool isParry = false;
+    public bool isDodge = false;
+    private bool dodgeSucces = false;
 
     public float savedDmg;
+    public int savedHitCount;
     public float savedTotalDmgHit = 0f;
     public bool isCrit;
     public float savedHeal;
@@ -121,6 +125,10 @@ public class CharacterInBattle : MonoBehaviour
 
     public void TakeDamage(float damage, int hitCount, CharacterInBattle attacker, CharacterInBattle target)
     {
+        isParry = false;
+        isDodge = false;
+        dodgeSucces = false;
+
         float totaldamage = damage;
         totaldamage = totaldamage / hitCount;
 
@@ -128,17 +136,18 @@ public class CharacterInBattle : MonoBehaviour
         {
             if (UnityEngine.Random.value < PC)
             {
-                Attack(attacker, target);
+                isParry = true;
                 Debug.Log(charName + " đã phản đòn");
-                return; // Không nhận sát thương
+                return;
             }
             else if (UnityEngine.Random.value < DC)
             {
+                isDodge = true;
                 if (isGetATKBuffWhenDodge)
                 {
-                    StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
-                    ApplyStatusEffect(statusEffectInstance.ATKbuff, 1);
+                    dodgeSucces = true;
                 }
+                attacker.savedDmg = 0;
                 Debug.Log(charName + " đã né đòn");
                 return;
             }
@@ -152,7 +161,8 @@ public class CharacterInBattle : MonoBehaviour
         {
             totaldamage = totaldamage * 1.2f;
         }    
-
+        
+        savedHitCount = hitCount;
         attacker.savedDmg = totaldamage;
 
         if (attacker.isEnchantment)
@@ -177,13 +187,30 @@ public class CharacterInBattle : MonoBehaviour
             currentAttacker.isCrit = false;
         }
 
-        amount = amount - DEF;
+        amount = amount - (DEF / savedHitCount);
         if (amount <= 0)
         {
             amount = 0;
         }
 
-        dmgPopUp.ShowDmgPopUp(amount, transform.position , currentAttacker.isCrit);    
+        if (dodgeSucces)
+        {
+            StartCoroutine(ApplyEffectDelay());
+        }
+
+        if (CheckIfDeath())
+        {
+            Die();
+        }
+        else
+        {
+            if (!isParry && !isDodge)
+            {
+                animator.Play("Hurt");
+            }
+        }
+
+        dmgPopUp.ShowDmgPopUp(amount, transform.position , currentAttacker.isCrit, isDodge, isParry);    
 
         currentHP -= amount;
         savedTotalDmgHit += amount;
@@ -201,7 +228,7 @@ public class CharacterInBattle : MonoBehaviour
                 StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
                 this.ApplyStatusEffect(statusEffectInstance.paralysis, 0);
             }
-        }    
+        }
     }    
 
     public void TakeDamagePercent(int Percent)
@@ -216,20 +243,24 @@ public class CharacterInBattle : MonoBehaviour
                 Die();
             }
             Debug.Log($"{charName} nhận {amount} damage dot");
-            dmgPopUp.ShowDmgPopUp(amount, transform.position, false);
+            dmgPopUp.ShowDmgPopUp(amount, transform.position, false, isDodge, isParry);
             battleUI.RefreshBattleUI();
         }         
     }
 
     public void TakeBleedingDamage(float damage)
     {
+        isParry = false;
+        isDodge = false;
+        dodgeSucces = false;
+
         currentHP -= damage;
         if (currentHP <= 0)
         {
             currentHP = 0;
             Die();
         }
-        dmgPopUp.ShowDmgPopUp(damage, transform.position, false);
+        dmgPopUp.ShowDmgPopUp(damage, transform.position, false, isDodge, isParry);
     }
 
     public void UseChargeSkill(SkillBase skill)
@@ -245,30 +276,25 @@ public class CharacterInBattle : MonoBehaviour
         return specialSkill;
     }    
 
-    public void Attack(CharacterInBattle target, CharacterInBattle attacker)
+    public void Attack(CharacterInBattle attacker, CharacterInBattle target)
     {
-        float damage = ATK;
+        SkillBase basicSkill = attacker.skillList[0];
         if (isAlive && target != null && target.isAlive)
         {
-            if (UnityEngine.Random.value < CR)
-            {
-                damage = ATK * CD;
-            }
-            target.TakeDamage(damage, 1, attacker, target);
-            savedDmg = damage - target.DEF;
-            currentTarget = target;
+            basicSkill.DoAction(attacker, target);
         }  
     }
 
     public void ApplyStatusEffect(StatusEffect effect, int duration)
     {
-        if (!activeStatusEffect.Contains(effect) || activeStatusEffect.Contains(effect) && effect.canStack && effect.maxStack > activeStatusEffect.Count(e => e.ID == effect.ID))
+        if (!isParry && !isDodge || isGetATKBuffWhenDodge && effect.ID == 200023)
         {
-            effect.OnApply(this);
-            effect.duration = duration;
-            activeStatusEffect.Add(effect);
-            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID) && isAlive)
+            if (!activeStatusEffect.Any(e => e.ID == effect.ID) ||
+               (effect.canStack && effect.maxStack > activeStatusEffect.Count(e => e.ID == effect.ID)))
             {
+                effect.OnApply(this);
+                effect.duration = duration;
+                activeStatusEffect.Add(effect);
                 GameObject effectAnchor;
                 if (!effect.isHeadVFX)
                 {
@@ -279,14 +305,21 @@ public class CharacterInBattle : MonoBehaviour
                     effectAnchor = transform.Find("HeadAnchor").gameObject;
                 }
                 EnqueueEffectAnimation(() => vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this));
+                Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
             }
-            Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
-        }
-        else if (activeStatusEffect.Contains(effect) && !effect.canStack)
-        {
-            activeStatusEffect.Find(e => e.ID == effect.ID).duration = effect.duration;
-        }
+            else if (activeStatusEffect.Contains(effect) && !effect.canStack)
+            {
+                activeStatusEffect.Find(e => e.ID == effect.ID).duration = effect.duration;
+            }
+        }          
     }  
+
+    public IEnumerator ApplyEffectDelay()
+    {
+        StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
+        yield return new WaitForSeconds(0.7f);
+        ApplyStatusEffect(statusEffectInstance.ATKbuff, 99);
+    }    
 
     public void StartTurn()
     {
@@ -299,7 +332,10 @@ public class CharacterInBattle : MonoBehaviour
         }    
         else
         {
-            currentMP++;
+            if (isMPRecoveryAble)
+            {
+                currentMP++;
+            }
         }           
         if (currentMP > characterData.MP)
         {
@@ -310,11 +346,14 @@ public class CharacterInBattle : MonoBehaviour
 
     public void OnEndTurn()
     {
-        if (characterType == characterType.Enemy)
+        if (isMPRecoveryAble)
         {
-            currentMP += 3;
-        }
-
+            if (characterType == characterType.Enemy)
+            {
+                currentMP += 3;
+            }
+        }    
+    
         for (int i = activeStatusEffect.Count - 1; i >= 0; i--)
         {
             activeStatusEffect[i].Tick(this);
@@ -421,14 +460,6 @@ public class CharacterInBattle : MonoBehaviour
     {
         MinusHP(dmg);
         battleUI.RefreshBattleUI();
-        if (CheckIfDeath())
-        {
-            Die();
-        }
-        else
-        {
-            animator.Play("Hurt");          
-        }
     }
 
     public void SetIdleState()

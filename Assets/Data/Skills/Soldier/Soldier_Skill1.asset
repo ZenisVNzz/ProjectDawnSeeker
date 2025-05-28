@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Soldier_Skill1
   m_EditorClassIdentifier: 
   ID: 300027
-  skillName: "Nh\u1EA5t k\xEDch "
-  description: " Ch\xE9m ngang, g\xE2y 100% ATK "
+  skillName: "Nh\u1EA5t K\xEDch"
+  description: " Ch\xE9m ngang, g\xE2y s\xE1t th\u01B0\u01A1ng c\u01A1 b\u1EA3n"
   icon: {fileID: 0}
   mpCost: 0
   animation: {fileID: 7400000, guid: d558c6b977ae28f4dbb8db21c71508ca, type: 2}

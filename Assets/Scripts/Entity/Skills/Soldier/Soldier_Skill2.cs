@@ -1,5 +1,3 @@
-using Unity.VisualScripting;
-using UnityEditor.Localization.Plugins.Google.Columns;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Soldier_Skill2", menuName = "Skills/Soldier/Soldier_Skill2")]

@@ -13,6 +13,6 @@ public class Skeleton_Skill2 : SkillBase
 
     public override void ApplyEffectOnFinishedAttack(CharacterInBattle user, CharacterInBattle target)
     {
-        user.ApplyStatusEffect(bleed, 1);
+        target.ApplyStatusEffect(bleed, 1);
     }
 }

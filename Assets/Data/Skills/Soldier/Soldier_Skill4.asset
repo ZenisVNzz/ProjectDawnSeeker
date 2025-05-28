@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Soldier_Skill4
   m_EditorClassIdentifier: 
   ID: 300030
-  skillName: "Phi ti\u1EC5n "
-  description: "B\u1EAFn m\u1ED9t m\u0169i t\xEAn v\xE0o m\u1EE5c ti\xEAu g\xE2y
-    120% ATK, khi\u1EBFn m\u1EE5c ti\xEAu b\u1ECB ch\u1EA3y m\xE1u trong v\xF2ng
-    1 l\u01B0\u1EE3t"
+  skillName: "Phi Ti\u1EC5n"
+  description: "B\u1EAFn m\u1ED9t m\u0169i t\xEAn v\xE0o m\u1EE5c ti\xEAu, g\xE2y
+    s\xE1t th\u01B0\u01A1ng kh\xE1, khi\u1EBFn m\u1EE5c ti\xEAu b\u1ECB ch\u1EA3y
+    m\xE1u trong v\xF2ng 1 l\u01B0\u1EE3t"
   icon: {fileID: 0}
   mpCost: 1
   animation: {fileID: 7400000, guid: f489d944dace87a4abd1477e995a1c15, type: 2}

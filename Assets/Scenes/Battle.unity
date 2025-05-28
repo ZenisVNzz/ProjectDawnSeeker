@@ -2468,7 +2468,10 @@ MonoBehaviour:
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
+  isParry: 0
+  isDodge: 0
   savedDmg: 0
+  savedHitCount: 0
   savedTotalDmgHit: 0
   isCrit: 0
   savedHeal: 0
@@ -3163,7 +3166,10 @@ MonoBehaviour:
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
+  isParry: 0
+  isDodge: 0
   savedDmg: 0
+  savedHitCount: 0
   savedTotalDmgHit: 0
   isCrit: 0
   savedHeal: 0
@@ -3632,9 +3638,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCharacter:
-  - {fileID: 11400000, guid: 666e1ad216a14db409314d65dac8d327, type: 2}
-  - {fileID: 11400000, guid: af757364d7bb31e48a69dc2924d82dee, type: 2}
-  - {fileID: 11400000, guid: 5ac2ca0e26d4ce246a4373068f1f72c1, type: 2}
   - {fileID: 11400000, guid: 2cb4c3f85bfe2cc48a594a28777b7449, type: 2}
   enemyCharacter:
   - {fileID: 11400000, guid: dfdcdda75f77ad14daa85aa01e34840d, type: 2}
@@ -4960,7 +4963,10 @@ MonoBehaviour:
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
+  isParry: 0
+  isDodge: 0
   savedDmg: 0
+  savedHitCount: 0
   savedTotalDmgHit: 0
   isCrit: 0
   savedHeal: 0
@@ -7806,7 +7812,10 @@ MonoBehaviour:
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
+  isParry: 0
+  isDodge: 0
   savedDmg: 0
+  savedHitCount: 0
   savedTotalDmgHit: 0
   isCrit: 0
   savedHeal: 0
@@ -8875,7 +8884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paralysis: {fileID: 11400000, guid: f268a165c3f09874e9a860ec66d784c2, type: 2}
-  ATKbuff: {fileID: 11400000, guid: 94ec968db9241264fa351737f61c1ec9, type: 2}
+  ATKbuff: {fileID: 11400000, guid: 0392c8ef2ca93664b988933242529ab7, type: 2}
 --- !u!1 &898624118
 GameObject:
   m_ObjectHideFlags: 0
@@ -12179,7 +12188,10 @@ MonoBehaviour:
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
+  isParry: 0
+  isDodge: 0
   savedDmg: 0
+  savedHitCount: 0
   savedTotalDmgHit: 0
   isCrit: 0
   savedHeal: 0
@@ -12832,7 +12844,10 @@ MonoBehaviour:
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
+  isParry: 0
+  isDodge: 0
   savedDmg: 0
+  savedHitCount: 0
   savedTotalDmgHit: 0
   isCrit: 0
   savedHeal: 0
@@ -13192,7 +13207,10 @@ MonoBehaviour:
   battleUI: {fileID: 1726673298}
   dmgPopUp: {fileID: 773611578}
   vfxManager: {fileID: 1489556992}
+  isParry: 0
+  isDodge: 0
   savedDmg: 0
+  savedHitCount: 0
   savedTotalDmgHit: 0
   isCrit: 0
   savedHeal: 0
@@ -15601,6 +15619,10 @@ MonoBehaviour:
     duringEffect: 0
     isMove: 0
     effectPrefab: {fileID: 5013008182667652122, guid: 9e6b71560683f58499a51ff1579706e9, type: 3}
+  - ID: 200023
+    duringEffect: 0
+    isMove: 0
+    effectPrefab: {fileID: 6573002566907771083, guid: 3a0f79ace1cfc284cae58d804204c1c4, type: 3}
 --- !u!1 &1489819655
 GameObject:
   m_ObjectHideFlags: 0

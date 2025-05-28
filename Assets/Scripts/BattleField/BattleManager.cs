@@ -1,9 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
@@ -162,7 +160,7 @@ public class BattleManager : MonoBehaviour
                         if (!enemy.isCharge)
                         {
                             List<SkillBase> availableSkills = new List<SkillBase>();
-                            if (i <= 1)
+                            if (i <= 0)
                             {
                                 availableSkills = enemy.skillList.Where(skill => skill.mpCost <= mp && !skill.isUniqueSkill).ToList();
                             }
@@ -367,6 +365,11 @@ public class BattleManager : MonoBehaviour
                     actionOrderUI.RemoveAction(action.Caster, action.Skill);
                     continue;
                 }
+                if (!action.Caster.isAlive)
+                {
+                    actionOrderUI.RemoveAction(action.Caster, action.Skill);
+                    continue;
+                }
 
                 Vector3 originalPos = action.Caster.transform.position;
                 if (action.Skill.move && !action.Skill.isWaitForCharge)
@@ -375,6 +378,18 @@ public class BattleManager : MonoBehaviour
                 }             
                 
                 action.Skill.DoAction(action.Caster, action.Target);
+
+                if (action.Target.isParry)
+                {
+                    yield return StartCoroutine(WaitForParry(action.Caster, action.Target));
+                }    
+
+                if (!action.Caster.isAlive)
+                {
+                    actionOrderUI.RemoveAction(action.Caster, action.Skill);
+                    yield return new WaitForSeconds(1f);
+                    continue;
+                }    
 
                 if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
                 {
@@ -419,6 +434,11 @@ public class BattleManager : MonoBehaviour
                     actionOrderUI.RemoveAction(action.Caster, action.Skill);
                     continue;
                 }
+                if (!action.Caster.isAlive)
+                {
+                    actionOrderUI.RemoveAction(action.Caster, action.Skill);
+                    continue;
+                }
 
                 Vector3 originalPos = action.Caster.transform.position;
 
@@ -438,6 +458,18 @@ public class BattleManager : MonoBehaviour
 
                                 action.Skill.DoSpecialAction(action.Caster, action.Target);
 
+                                if (action.Target.isParry)
+                                {
+                                    yield return StartCoroutine(WaitForParry(action.Caster, action.Target));
+                                }
+
+                                if (!action.Caster.isAlive)
+                                {
+                                    actionOrderUI.RemoveAction(action.Caster, action.Skill);
+                                    yield return new WaitForSeconds(1f);
+                                    continue;
+                                }
+
                                 while (action.Caster.currentState != State.Idle)
                                 {
                                     yield return null;
@@ -451,6 +483,11 @@ public class BattleManager : MonoBehaviour
                                 }
                                 action.Caster.isCharge = false;
                                 action.Caster.isActionAble = true;
+
+                                if (action.Caster.isBleeding == true)
+                                {
+                                    action.Caster.TakeBleedingDamage(action.Caster.ATK * 0.15f);
+                                }
 
                                 yield return new WaitForSeconds(0.5f);
 
@@ -484,6 +521,18 @@ public class BattleManager : MonoBehaviour
                 }
 
                 action.Skill.DoAction(action.Caster, action.Target);
+
+                if (action.Target.isParry)
+                {
+                    yield return StartCoroutine(WaitForParry(action.Caster, action.Target));
+                }
+
+                if (!action.Caster.isAlive)
+                {
+                    actionOrderUI.RemoveAction(action.Caster, action.Skill);
+                    yield return new WaitForSeconds(1f);
+                    continue;
+                }
 
                 if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
                 {
@@ -648,4 +697,13 @@ public class BattleManager : MonoBehaviour
         attacker.OnAttackEnd();
     }
 
+    public IEnumerator WaitForParry(CharacterInBattle attacker, CharacterInBattle target)
+    {
+        target.Attack(target, attacker);
+
+        while (target.currentState != State.Idle)
+        {
+            yield return null;
+        }
+    }    
 }
