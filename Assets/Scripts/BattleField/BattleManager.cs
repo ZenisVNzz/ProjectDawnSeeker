@@ -401,7 +401,11 @@ public class BattleManager : MonoBehaviour
                 {
                     break;
                 }
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(0.5f);
+
+                action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
+
+                yield return new WaitForSeconds(0.5f);
             }
         }
         else

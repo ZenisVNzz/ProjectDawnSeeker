@@ -8,7 +8,7 @@ public class Skeleton_Skill2 : SkillBase
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
         target.TakeDamage(user.ATK * 1.2f, 1, user, target);
-        user.ApplyStatusEffect(bleed, 1);
+        target.ApplyStatusEffect(bleed, 1);
         base.DoAction(user, target);
     }
 }

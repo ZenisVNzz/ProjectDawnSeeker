@@ -16,7 +16,11 @@ public class OrcRider_Skill2 : SkillBase
             target.ApplyStatusEffect(paralysis, 0);
             target.ApplyStatusEffect(defDown, 3);
         }
-        user.ApplyStatusEffect(bloodThirsty, 99);
         base.DoAction(user, target);
+    }
+
+    public override void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
+    {
+        user.ApplyStatusEffect(bloodThirsty, 99);
     }
 }

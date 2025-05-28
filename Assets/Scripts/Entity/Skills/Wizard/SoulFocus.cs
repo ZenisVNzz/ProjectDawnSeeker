@@ -9,7 +9,11 @@ public class SoulFocus : SkillBase
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
         user.ApplyStatusEffect(mpRecovery, 1);
-        user.ApplyStatusEffect(atkUP, 2);
         base.DoAction(user, target);
+    }
+
+    public override void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
+    {
+        user.ApplyStatusEffect(atkUP, 2);
     }
 }

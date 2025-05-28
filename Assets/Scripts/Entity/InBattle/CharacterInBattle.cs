@@ -78,7 +78,6 @@ public class CharacterInBattle : MonoBehaviour
     private Animator animator;
     public VFXManager vfxManager;
     private bool isClickable = false;
-    private List<StatusEffect> EffectOnTurn = new List<StatusEffect>();
 
     public float savedDmg;
     public float savedTotalDmgHit = 0f;
@@ -259,7 +258,7 @@ public class CharacterInBattle : MonoBehaviour
             effect.OnApply(this);
             effect.duration = duration;
             activeStatusEffect.Add(effect);
-            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == false && e.isPlayOnEnd == false) && isAlive)
+            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID) && isAlive)
             {
                 GameObject effectAnchor;
                 if (!effect.isHeadVFX)
@@ -271,10 +270,6 @@ public class CharacterInBattle : MonoBehaviour
                     effectAnchor = transform.Find("HeadAnchor").gameObject;
                 }
                 vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this);
-            }
-            else
-            {
-                EffectOnTurn.Add(effect);
             }
             Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
         }
@@ -325,7 +320,6 @@ public class CharacterInBattle : MonoBehaviour
                 activeStatusEffect.RemoveAt(i);
             }
         }
-        EffectOnTurn.Clear();
     }
 
     public void Heal(float healAmount)
@@ -426,32 +420,6 @@ public class CharacterInBattle : MonoBehaviour
         {
             animator.Play("Hurt");          
         }
-
-        List<StatusEffect> toRemoveEffect = new List<StatusEffect>();
-        foreach (var effect in EffectOnTurn)
-        {
-            
-            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == true) && isAlive)
-            {
-                GameObject effectAnchor;
-                if (!effect.isHeadVFX)
-                {
-                    effectAnchor = transform.Find("EffectAnchor").gameObject;
-                }
-                else
-                {
-                    effectAnchor = transform.Find("HeadAnchor").gameObject;
-                }
-
-                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this);
-                toRemoveEffect.Add(effect);
-            }
-        }
-        foreach (var effect in toRemoveEffect)
-        {
-            EffectOnTurn.Remove(effect);
-        }
-        toRemoveEffect.Clear();
     }
 
     public void SetIdleState()
@@ -470,37 +438,7 @@ public class CharacterInBattle : MonoBehaviour
     public void OnAttackEnd()
     {
         isCrit = false;
-        IdleState();       
-        PlayEffectOnEndAction();
-    }
-
-    public void PlayEffectOnEndAction()
-    {
-        StartCoroutine(PlayEffectsWithDelay());
-    }
-
-    private IEnumerator PlayEffectsWithDelay()
-    {
-        var effectListCopy = new List<StatusEffect>(EffectOnTurn);
-
-        foreach (var effect in effectListCopy)
-        {
-            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 &&
-                vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == false) &&
-                isAlive)
-            {
-                GameObject effectAnchor = effect.isHeadVFX
-                    ? transform.Find("HeadAnchor").gameObject
-                    : transform.Find("EffectAnchor").gameObject;
-
-                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this);
-
-                yield return new WaitForSeconds(1f);
-            }
-        }
-
-        yield return StartCoroutine(vfxManager.StopEffect(characterData.characterID, currentSkillID));
-        EffectOnTurn.Clear();
+        IdleState();
     }
 
     public void RangeSkillEffect(int skillID)

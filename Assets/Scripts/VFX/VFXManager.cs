@@ -103,8 +103,6 @@ public class Effect
 {
     public int ID;
     public bool duringEffect;
-    public bool isPlayOnHit;
-    public bool isPlayOnEnd;
     public bool isMove;
     public GameObject effectPrefab;
 }
