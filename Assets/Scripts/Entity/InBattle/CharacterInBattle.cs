@@ -89,6 +89,9 @@ public class CharacterInBattle : MonoBehaviour
     public CharacterInBattle currentAttacker;
     public State currentState;
     private int currentSkillID;
+    // Add these fields to CharacterInBattle
+    private Queue<Action> effectAnimationQueue = new Queue<Action>();
+    private bool isPlayingEffectAnimation = false;
 
     void Start()
     {
@@ -275,7 +278,7 @@ public class CharacterInBattle : MonoBehaviour
                 {
                     effectAnchor = transform.Find("HeadAnchor").gameObject;
                 }
-                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this);
+                EnqueueEffectAnimation(() => vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this));
             }
             Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
         }
@@ -551,5 +554,25 @@ public class CharacterInBattle : MonoBehaviour
         animator.Play("Death");
         vfxManager.StopAllEffect(characterData.characterID);
         OnDeath?.Invoke(this);
+    }
+    public void EnqueueEffectAnimation(Action playEffectAnimation)
+    {
+        effectAnimationQueue.Enqueue(playEffectAnimation);
+        if (!isPlayingEffectAnimation)
+        {
+            StartCoroutine(ProcessEffectAnimationQueue());
+        }
+    }
+
+    private IEnumerator ProcessEffectAnimationQueue()
+    {
+        isPlayingEffectAnimation = true;
+        while (effectAnimationQueue.Count > 0)
+        {
+            var playEffect = effectAnimationQueue.Dequeue();
+            playEffect?.Invoke();
+            yield return new WaitForSeconds(1f);
+        }
+        isPlayingEffectAnimation = false;
     }
 }
