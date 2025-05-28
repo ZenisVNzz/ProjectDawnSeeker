@@ -9,12 +9,16 @@ public class Bash : SkillBase
     {
         float damage = user.ATK * 0.3f;
         target.TakeDamage(damage, 1, user, target);
-        user.ApplyStatusEffect(defUP, 2);
         int ran = Random.Range(0, 100);
         if (ran < 50)
         {
             target.ApplyStatusEffect(paralysis, 0);
         }
         base.DoAction(user, target);
+    }
+
+    public override void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
+    {
+        user.ApplyStatusEffect(defUP, 2);
     }
 }

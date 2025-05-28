@@ -28,6 +28,10 @@ public abstract class SkillBase : ScriptableObject
     {
     }
 
+    public virtual void ApplyEffectOnFinishedAttack(CharacterInBattle user, CharacterInBattle target)
+    {
+    }
+
     public virtual void DoSpecialAction(CharacterInBattle user, CharacterInBattle target)
     {
     }

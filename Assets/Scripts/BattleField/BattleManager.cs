@@ -156,7 +156,7 @@ public class BattleManager : MonoBehaviour
                 int mpUsage = 0;
                 if (enemy.isBoss)
                 {
-                    for (int i = 0; i <= 2; i++)
+                    for (int i = 0; i <= 1; i++)
                     {
                         float mp = enemy.currentMP - mpUsage;
                         if (!enemy.isCharge)
@@ -386,6 +386,8 @@ public class BattleManager : MonoBehaviour
                     yield return null;
                 }
 
+                action.Skill.ApplyEffectOnFinishedAttack(action.Caster, action.Target);
+
                 if (action.Skill.move && !action.Skill.isWaitForCharge)
                 {
                     yield return StartCoroutine(ReturnToOriginalPosition(action.Caster, originalPos));
@@ -441,12 +443,20 @@ public class BattleManager : MonoBehaviour
                                     yield return null;
                                 }
 
+                                action.Skill.ApplyEffectOnFinishedAttack(action.Caster, action.Target);
+
                                 if (action.Skill.move)
                                 {
                                     yield return StartCoroutine(ReturnToOriginalPosition(action.Caster, originalPos));
                                 }
                                 action.Caster.isCharge = false;
                                 action.Caster.isActionAble = true;
+
+                                yield return new WaitForSeconds(0.5f);
+
+                                action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
+
+                                yield return new WaitForSeconds(0.5f);
                             }  
                             else
                             {
@@ -485,6 +495,8 @@ public class BattleManager : MonoBehaviour
                     yield return null;
                 }
 
+                action.Skill.ApplyEffectOnFinishedAttack(action.Caster, action.Target);
+
                 if (action.Skill.move && action.Skill.isWaitForCharge == false)
                 {
                     yield return StartCoroutine(ReturnToOriginalPosition(action.Caster, originalPos));
@@ -501,7 +513,11 @@ public class BattleManager : MonoBehaviour
                     actionOrderUI.RemoveAction(action.Caster, action.Skill);
                     break;
                 }
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(0.5f);
+
+                action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
+
+                yield return new WaitForSeconds(0.5f);
             }
         }    
         
