@@ -2569,7 +2569,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &383005125
 GameObject:
   m_ObjectHideFlags: 0
@@ -3267,7 +3267,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &407590304
 GameObject:
   m_ObjectHideFlags: 0
@@ -12115,7 +12115,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!70 &1172855265
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -15623,6 +15623,14 @@ MonoBehaviour:
     duringEffect: 0
     isMove: 0
     effectPrefab: {fileID: 6573002566907771083, guid: 3a0f79ace1cfc284cae58d804204c1c4, type: 3}
+  - ID: 200003
+    duringEffect: 0
+    isMove: 0
+    effectPrefab: {fileID: 7964554375854093784, guid: 66dfe280864730a4790af89f017f9379, type: 3}
+  - ID: 200015
+    duringEffect: 0
+    isMove: 0
+    effectPrefab: {fileID: 4215338955607971493, guid: dd14aa70069535341a088a79b670c4c1, type: 3}
 --- !u!1 &1489819655
 GameObject:
   m_ObjectHideFlags: 0
@@ -17976,7 +17984,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.35000002, y: 0.5000305}
+  m_AnchoredPosition: {x: 0, y: 0.5000305}
   m_SizeDelta: {x: 160, y: 38.77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1738235666

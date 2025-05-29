@@ -125,10 +125,6 @@ public class CharacterInBattle : MonoBehaviour
 
     public void TakeDamage(float damage, int hitCount, CharacterInBattle attacker, CharacterInBattle target)
     {
-        isParry = false;
-        isDodge = false;
-        dodgeSucces = false;
-
         float totaldamage = damage;
         totaldamage = totaldamage / hitCount;
 
@@ -289,8 +285,8 @@ public class CharacterInBattle : MonoBehaviour
     {
         if (!isParry && !isDodge || isGetATKBuffWhenDodge && effect.ID == 200023)
         {
-            if (!activeStatusEffect.Any(e => e.ID == effect.ID) ||
-               (effect.canStack && effect.maxStack > activeStatusEffect.Count(e => e.ID == effect.ID)))
+            if (!activeStatusEffect.Any(e => e.ID == effect.ID) && isAlive ||
+               (effect.canStack && effect.maxStack > activeStatusEffect.Count(e => e.ID == effect.ID)) && isAlive)
             {
                 effect.OnApply(this);
                 effect.duration = duration;
@@ -319,7 +315,14 @@ public class CharacterInBattle : MonoBehaviour
         StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
         yield return new WaitForSeconds(0.7f);
         ApplyStatusEffect(statusEffectInstance.ATKbuff, 99);
-    }    
+    }   
+    
+    public void ResetDodgeParryState()
+    {
+        isParry = false;
+        isDodge = false;
+        dodgeSucces = false;
+    }
 
     public void StartTurn()
     {

@@ -410,6 +410,12 @@ public class BattleManager : MonoBehaviour
               
                 actionOrderUI.RemoveAction(action.Caster, action.Skill);
 
+                yield return new WaitForSeconds(0.5f);
+
+                action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
+                action.Caster.ResetDodgeParryState();
+                action.Target.ResetDodgeParryState();
+
                 if (action.Caster.isBleeding == true)
                 {
                     action.Caster.TakeBleedingDamage(action.Caster.ATK * 0.15f);
@@ -418,9 +424,6 @@ public class BattleManager : MonoBehaviour
                 {
                     break;
                 }
-                yield return new WaitForSeconds(0.5f);
-
-                action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
 
                 yield return new WaitForSeconds(0.5f);
             }
@@ -484,14 +487,16 @@ public class BattleManager : MonoBehaviour
                                 action.Caster.isCharge = false;
                                 action.Caster.isActionAble = true;
 
+                                yield return new WaitForSeconds(0.5f);
+
+                                action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
+                                action.Caster.ResetDodgeParryState();
+                                action.Target.ResetDodgeParryState();
+
                                 if (action.Caster.isBleeding == true)
                                 {
                                     action.Caster.TakeBleedingDamage(action.Caster.ATK * 0.15f);
                                 }
-
-                                yield return new WaitForSeconds(0.5f);
-
-                                action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
 
                                 yield return new WaitForSeconds(0.5f);
                             }  
@@ -553,6 +558,12 @@ public class BattleManager : MonoBehaviour
 
                 actionOrderUI.RemoveAction(action.Caster, action.Skill);
 
+                yield return new WaitForSeconds(0.5f);
+
+                action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
+                action.Caster.ResetDodgeParryState();
+                action.Target.ResetDodgeParryState();
+
                 if (action.Caster.isBleeding == true)
                 {
                     action.Caster.TakeBleedingDamage(action.Caster.ATK * 0.15f);
@@ -562,9 +573,6 @@ public class BattleManager : MonoBehaviour
                     actionOrderUI.RemoveAction(action.Caster, action.Skill);
                     break;
                 }
-                yield return new WaitForSeconds(0.5f);
-
-                action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
 
                 yield return new WaitForSeconds(0.5f);
             }
@@ -699,6 +707,11 @@ public class BattleManager : MonoBehaviour
 
     public IEnumerator WaitForParry(CharacterInBattle attacker, CharacterInBattle target)
     {
+        while (attacker.currentState != State.Idle)
+        {
+            yield return null;
+        }
+
         target.Attack(target, attacker);
 
         while (target.currentState != State.Idle)
