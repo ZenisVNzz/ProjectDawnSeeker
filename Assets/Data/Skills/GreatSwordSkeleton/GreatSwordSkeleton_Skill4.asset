@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82ad39110b7b9cc4b823a7f416e33e8e, type: 3}
   m_Name: GreatSwordSkeleton_Skill4
   m_EditorClassIdentifier: 
-  ID: 300024
+  ID: 300025
   skillName: none
   description: none
-  icon: {fileID: -2058990241, guid: 22678c03ff9e287488860e9b8817fe69, type: 3}
+  icon: {fileID: 0}
   mpCost: 4
   animation: {fileID: 7400000, guid: 9eb77e81f2f038e4d80c757f4a60fe02, type: 2}
   passiveSkill: 0

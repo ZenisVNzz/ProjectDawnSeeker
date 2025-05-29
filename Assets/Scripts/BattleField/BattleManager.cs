@@ -413,8 +413,8 @@ public class BattleManager : MonoBehaviour
                 yield return new WaitForSeconds(0.5f);
 
                 action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
-                action.Caster.ResetDodgeParryState();
-                action.Target.ResetDodgeParryState();
+                action.Caster.ResetState();
+                action.Target.ResetState();
 
                 if (action.Caster.isBleeding == true)
                 {
@@ -490,8 +490,8 @@ public class BattleManager : MonoBehaviour
                                 yield return new WaitForSeconds(0.5f);
 
                                 action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
-                                action.Caster.ResetDodgeParryState();
-                                action.Target.ResetDodgeParryState();
+                                action.Caster.ResetState();
+                                action.Target.ResetState();
 
                                 if (action.Caster.isBleeding == true)
                                 {
@@ -561,8 +561,8 @@ public class BattleManager : MonoBehaviour
                 yield return new WaitForSeconds(0.5f);
 
                 action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
-                action.Caster.ResetDodgeParryState();
-                action.Target.ResetDodgeParryState();
+                action.Caster.ResetState();
+                action.Target.ResetState();
 
                 if (action.Caster.isBleeding == true)
                 {

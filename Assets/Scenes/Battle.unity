@@ -2470,6 +2470,8 @@ MonoBehaviour:
   vfxManager: {fileID: 1489556992}
   isParry: 0
   isDodge: 0
+  isPenetrating: 0
+  isFullPenetrating: 0
   savedDmg: 0
   savedHitCount: 0
   savedTotalDmgHit: 0
@@ -3168,6 +3170,8 @@ MonoBehaviour:
   vfxManager: {fileID: 1489556992}
   isParry: 0
   isDodge: 0
+  isPenetrating: 0
+  isFullPenetrating: 0
   savedDmg: 0
   savedHitCount: 0
   savedTotalDmgHit: 0
@@ -3642,7 +3646,7 @@ MonoBehaviour:
   enemyCharacter:
   - {fileID: 11400000, guid: dfdcdda75f77ad14daa85aa01e34840d, type: 2}
   - {fileID: 11400000, guid: 47ff32cd979b714458e423594d54ac4a, type: 2}
-  - {fileID: 11400000, guid: 72f96bb9d409f11449c7f0d179209493, type: 2}
+  - {fileID: 11400000, guid: b6d45a616d42eb04f8f6c173444990c6, type: 2}
   playerCharacterInBattle:
   - {fileID: 554530855}
   - {fileID: 808364462}
@@ -4965,6 +4969,8 @@ MonoBehaviour:
   vfxManager: {fileID: 1489556992}
   isParry: 0
   isDodge: 0
+  isPenetrating: 0
+  isFullPenetrating: 0
   savedDmg: 0
   savedHitCount: 0
   savedTotalDmgHit: 0
@@ -7814,6 +7820,8 @@ MonoBehaviour:
   vfxManager: {fileID: 1489556992}
   isParry: 0
   isDodge: 0
+  isPenetrating: 0
+  isFullPenetrating: 0
   savedDmg: 0
   savedHitCount: 0
   savedTotalDmgHit: 0
@@ -12190,6 +12198,8 @@ MonoBehaviour:
   vfxManager: {fileID: 1489556992}
   isParry: 0
   isDodge: 0
+  isPenetrating: 0
+  isFullPenetrating: 0
   savedDmg: 0
   savedHitCount: 0
   savedTotalDmgHit: 0
@@ -12208,7 +12218,7 @@ Animator:
   m_GameObject: {fileID: 1172855262}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 875d4d224a1e38843875fe8c1d0237a4, type: 2}
+  m_Controller: {fileID: 9100000, guid: ab2e5d00e8b700d43a6380107644f7fb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12846,6 +12856,8 @@ MonoBehaviour:
   vfxManager: {fileID: 1489556992}
   isParry: 0
   isDodge: 0
+  isPenetrating: 0
+  isFullPenetrating: 0
   savedDmg: 0
   savedHitCount: 0
   savedTotalDmgHit: 0
@@ -13209,6 +13221,8 @@ MonoBehaviour:
   vfxManager: {fileID: 1489556992}
   isParry: 0
   isDodge: 0
+  isPenetrating: 0
+  isFullPenetrating: 0
   savedDmg: 0
   savedHitCount: 0
   savedTotalDmgHit: 0

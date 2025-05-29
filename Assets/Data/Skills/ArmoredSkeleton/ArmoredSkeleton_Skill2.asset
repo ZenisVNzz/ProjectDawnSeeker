@@ -9,20 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99bc783c9c849114eb52b91cad287100, type: 3}
-  m_Name: GreatSwordSkeleton_Skill3
+  m_Script: {fileID: 11500000, guid: 9af73e8e62f44cf4da4885215332781b, type: 3}
+  m_Name: ArmoredSkeleton_Skill2
   m_EditorClassIdentifier: 
-  ID: 300024
+  ID: 300033
   skillName: none
   description: none
   icon: {fileID: 0}
-  mpCost: 3
-  animation: {fileID: 0}
-  passiveSkill: 1
+  mpCost: 2
+  animation: {fileID: 7400000, guid: 8b0e79dc32fa6a14cb0109a5edff9c10, type: 2}
+  passiveSkill: 0
   supportSkill: 0
-  move: 0
+  move: 1
   isAOE: 0
   isWaitForCharge: 0
   isUniqueSkill: 0
-  curse: {fileID: 11400000, guid: 55ab8c34462a9164aa03ff2abdeb9ee1, type: 2}
-  atkUP: {fileID: 11400000, guid: 94ec968db9241264fa351737f61c1ec9, type: 2}
+  atkDown: {fileID: 11400000, guid: 59582a369391a444ba644770352db8f5, type: 2}

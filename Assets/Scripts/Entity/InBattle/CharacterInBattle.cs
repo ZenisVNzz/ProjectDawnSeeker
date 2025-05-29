@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UIElements.Experimental;
 
 public enum State
 {
@@ -72,7 +73,6 @@ public class CharacterInBattle : MonoBehaviour
         this.isBoss = characterData.isBoss;
     }
 
-    private SpriteRenderer sr;
     private BattleManager battleManager;
     public BattleUI battleUI;
     public DmgPopUp dmgPopUp;
@@ -82,6 +82,8 @@ public class CharacterInBattle : MonoBehaviour
     public bool isParry = false;
     public bool isDodge = false;
     private bool dodgeSucces = false;
+    public bool isPenetrating = false;
+    public bool isFullPenetrating = false;
 
     public float savedDmg;
     public int savedHitCount;
@@ -93,7 +95,7 @@ public class CharacterInBattle : MonoBehaviour
     public CharacterInBattle currentAttacker;
     public State currentState;
     private int currentSkillID;
-    // Add these fields to CharacterInBattle
+
     private Queue<Action> effectAnimationQueue = new Queue<Action>();
     private bool isPlayingEffectAnimation = false;
 
@@ -103,7 +105,6 @@ public class CharacterInBattle : MonoBehaviour
         animator.runtimeAnimatorController = characterAnimation;
         currentHP = HP;
         currentMP = MP;
-        sr = GetComponent<SpriteRenderer>(); // để thay đổi màu
         battleManager = FindFirstObjectByType<BattleManager>(); // tìm script quản lý trận đấu
         IdleState(); // trạng thái idle khi bắt đầu
         battleUI.RefreshBattleUI();
@@ -183,7 +184,19 @@ public class CharacterInBattle : MonoBehaviour
             currentAttacker.isCrit = false;
         }
 
+        if (isPenetrating)
+        {
+            amount = amount - (DEF / 2);
+        }
+        else if (isFullPenetrating)
+        {
+        }
+        else
+        {
+            amount = amount - DEF;
+        }
         amount = amount - (DEF / savedHitCount);
+
         if (amount <= 0)
         {
             amount = 0;
@@ -317,8 +330,10 @@ public class CharacterInBattle : MonoBehaviour
         ApplyStatusEffect(statusEffectInstance.ATKbuff, 99);
     }   
     
-    public void ResetDodgeParryState()
+    public void ResetState()
     {
+        isPenetrating = false;
+        isFullPenetrating = false;
         isParry = false;
         isDodge = false;
         dodgeSucces = false;

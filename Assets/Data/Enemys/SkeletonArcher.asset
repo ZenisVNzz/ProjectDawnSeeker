@@ -30,12 +30,12 @@ MonoBehaviour:
   CD: 1.5
   DC: 0.05
   PC: 0.05
-  maxLevel: 0
+  maxLevel: 100
   currentXP: 0
   neededXP: 100
-  ATKPerLevel: 0
-  HPPerLevel: 0
-  DEFPerLevel: 0
+  ATKPerLevel: 4
+  HPPerLevel: 15
+  DEFPerLevel: 0.9
   MPPerLevel: 0
   CRPerLevel: 0
   CDPerLevel: 0
