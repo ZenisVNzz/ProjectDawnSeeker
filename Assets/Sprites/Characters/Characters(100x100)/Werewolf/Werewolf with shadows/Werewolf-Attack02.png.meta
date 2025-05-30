@@ -76,7 +76,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -90,7 +90,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -114,7 +114,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -142,12 +142,12 @@ TextureImporter:
       name: Werewolf-Attack02_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 39
-        width: 26
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -164,12 +164,12 @@ TextureImporter:
       name: Werewolf-Attack02_1
       rect:
         serializedVersion: 2
-        x: 134
-        y: 39
-        width: 26
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -186,12 +186,12 @@ TextureImporter:
       name: Werewolf-Attack02_2
       rect:
         serializedVersion: 2
-        x: 234
-        y: 39
-        width: 26
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -208,12 +208,12 @@ TextureImporter:
       name: Werewolf-Attack02_3
       rect:
         serializedVersion: 2
-        x: 339
-        y: 39
-        width: 21
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -230,12 +230,12 @@ TextureImporter:
       name: Werewolf-Attack02_4
       rect:
         serializedVersion: 2
-        x: 442
-        y: 39
-        width: 32
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -252,12 +252,12 @@ TextureImporter:
       name: Werewolf-Attack02_5
       rect:
         serializedVersion: 2
-        x: 537
-        y: 39
-        width: 111
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 500
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -274,12 +274,12 @@ TextureImporter:
       name: Werewolf-Attack02_6
       rect:
         serializedVersion: 2
-        x: 742
-        y: 34
-        width: 36
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 600
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -296,12 +296,12 @@ TextureImporter:
       name: Werewolf-Attack02_7
       rect:
         serializedVersion: 2
-        x: 842
-        y: 34
-        width: 46
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 700
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -318,12 +318,12 @@ TextureImporter:
       name: Werewolf-Attack02_8
       rect:
         serializedVersion: 2
-        x: 942
-        y: 39
-        width: 33
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 800
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -340,12 +340,12 @@ TextureImporter:
       name: Werewolf-Attack02_9
       rect:
         serializedVersion: 2
-        x: 966
-        y: 36
-        width: 22
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 900
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -362,12 +362,12 @@ TextureImporter:
       name: Werewolf-Attack02_10
       rect:
         serializedVersion: 2
-        x: 969
-        y: 44
-        width: 14
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1000
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -384,12 +384,12 @@ TextureImporter:
       name: Werewolf-Attack02_11
       rect:
         serializedVersion: 2
-        x: 1042
-        y: 36
-        width: 34
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -406,12 +406,12 @@ TextureImporter:
       name: Werewolf-Attack02_12
       rect:
         serializedVersion: 2
-        x: 1142
-        y: 38
-        width: 46
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -424,33 +424,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Werewolf-Attack02_13
-      rect:
-        serializedVersion: 2
-        x: 1242
-        y: 39
-        width: 33
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9bc320c7310cfb570800000000000000
-      internalID: 8484711412906736825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c6112a006361cf142b47cf14ee7a60fa
     internalID: 0
     vertices: []
     indices: 
@@ -465,7 +443,6 @@ TextureImporter:
       Werewolf-Attack02_10: 3334470025854700738
       Werewolf-Attack02_11: -4594368018287875547
       Werewolf-Attack02_12: 504143092588132386
-      Werewolf-Attack02_13: 8484711412906736825
       Werewolf-Attack02_2: 5370983336735051837
       Werewolf-Attack02_3: 1693071357061835176
       Werewolf-Attack02_4: 9114445085233884029

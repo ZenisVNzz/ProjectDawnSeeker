@@ -370,8 +370,13 @@ public class CharacterInBattle : MonoBehaviour
             {
                 currentMP += 3;
             }
-        }    
-    
+        }
+
+        if (currentMP > characterData.MP)
+        {
+            currentMP = characterData.MP;
+        }
+
         for (int i = activeStatusEffect.Count - 1; i >= 0; i--)
         {
             activeStatusEffect[i].Tick(this);

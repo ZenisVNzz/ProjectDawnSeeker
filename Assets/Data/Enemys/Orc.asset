@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef0f3323c8b53147a892c06f8e228ed, type: 3}
+  m_Name: Orc
+  m_EditorClassIdentifier: 
+  characterID: 100106
+  characterName: Orc
+  characterType: 1
+  characterSprite: {fileID: 3799508404887519019, guid: a0ef4b851c82efe418fd639b2b6fcf9d, type: 3}
+  characterAnimation: {fileID: 9100000, guid: aca24b5e2dae20f4f90f77e15a7e2a4b, type: 2}
+  isBoss: 0
+  skillList:
+  - {fileID: 11400000, guid: 748d1906295489d4a995743533d145c8, type: 2}
+  - {fileID: 11400000, guid: 4fbe18f81f2a2cc40b8cf4a9d5dd4337, type: 2}
+  level: 1
+  ATK: 41
+  HP: 250
+  DEF: 12
+  MP: 3
+  CR: 0.1
+  CD: 1.5
+  DC: 0.05
+  PC: 0.05
+  maxLevel: 100
+  currentXP: 0
+  neededXP: 100
+  ATKPerLevel: 3.2
+  HPPerLevel: 29
+  DEFPerLevel: 2.5
+  MPPerLevel: 0
+  CRPerLevel: 0
+  CDPerLevel: 0

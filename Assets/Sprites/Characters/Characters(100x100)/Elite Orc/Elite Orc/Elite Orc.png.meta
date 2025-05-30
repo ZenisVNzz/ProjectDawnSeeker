@@ -202,7 +202,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -216,7 +216,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -240,7 +240,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -268,12 +268,12 @@ TextureImporter:
       name: Elite Orc_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 642
-        width: 30
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -290,12 +290,12 @@ TextureImporter:
       name: Elite Orc_1
       rect:
         serializedVersion: 2
-        x: 141
-        y: 642
-        width: 30
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -312,12 +312,12 @@ TextureImporter:
       name: Elite Orc_2
       rect:
         serializedVersion: 2
-        x: 241
-        y: 642
-        width: 30
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -334,12 +334,12 @@ TextureImporter:
       name: Elite Orc_3
       rect:
         serializedVersion: 2
-        x: 341
-        y: 642
-        width: 30
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -356,12 +356,12 @@ TextureImporter:
       name: Elite Orc_4
       rect:
         serializedVersion: 2
-        x: 441
-        y: 642
-        width: 30
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 400
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -378,12 +378,12 @@ TextureImporter:
       name: Elite Orc_5
       rect:
         serializedVersion: 2
-        x: 541
-        y: 642
-        width: 30
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 500
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -400,12 +400,12 @@ TextureImporter:
       name: Elite Orc_6
       rect:
         serializedVersion: 2
-        x: 41
-        y: 542
-        width: 30
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -422,12 +422,12 @@ TextureImporter:
       name: Elite Orc_7
       rect:
         serializedVersion: 2
-        x: 141
-        y: 543
-        width: 30
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -444,12 +444,12 @@ TextureImporter:
       name: Elite Orc_8
       rect:
         serializedVersion: 2
-        x: 241
-        y: 542
-        width: 30
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -466,12 +466,12 @@ TextureImporter:
       name: Elite Orc_9
       rect:
         serializedVersion: 2
-        x: 341
-        y: 542
-        width: 30
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -488,12 +488,12 @@ TextureImporter:
       name: Elite Orc_10
       rect:
         serializedVersion: 2
-        x: 441
-        y: 542
-        width: 30
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 400
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -510,12 +510,12 @@ TextureImporter:
       name: Elite Orc_11
       rect:
         serializedVersion: 2
-        x: 541
-        y: 543
-        width: 30
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 500
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -532,12 +532,12 @@ TextureImporter:
       name: Elite Orc_12
       rect:
         serializedVersion: 2
-        x: 641
-        y: 542
-        width: 30
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 600
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -554,12 +554,12 @@ TextureImporter:
       name: Elite Orc_13
       rect:
         serializedVersion: 2
-        x: 741
-        y: 542
-        width: 30
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 700
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -576,12 +576,12 @@ TextureImporter:
       name: Elite Orc_14
       rect:
         serializedVersion: 2
-        x: 41
-        y: 442
-        width: 30
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -598,12 +598,12 @@ TextureImporter:
       name: Elite Orc_15
       rect:
         serializedVersion: 2
-        x: 141
-        y: 442
-        width: 31
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -620,12 +620,12 @@ TextureImporter:
       name: Elite Orc_16
       rect:
         serializedVersion: 2
-        x: 231
-        y: 442
-        width: 29
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -642,12 +642,12 @@ TextureImporter:
       name: Elite Orc_17
       rect:
         serializedVersion: 2
-        x: 339
-        y: 434
-        width: 43
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -664,12 +664,12 @@ TextureImporter:
       name: Elite Orc_18
       rect:
         serializedVersion: 2
-        x: 439
-        y: 434
-        width: 38
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 400
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -686,12 +686,12 @@ TextureImporter:
       name: Elite Orc_19
       rect:
         serializedVersion: 2
-        x: 539
-        y: 436
-        width: 23
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 500
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -708,12 +708,12 @@ TextureImporter:
       name: Elite Orc_20
       rect:
         serializedVersion: 2
-        x: 639
-        y: 436
-        width: 22
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 600
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -730,12 +730,12 @@ TextureImporter:
       name: Elite Orc_21
       rect:
         serializedVersion: 2
-        x: 41
-        y: 342
-        width: 30
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -752,12 +752,12 @@ TextureImporter:
       name: Elite Orc_22
       rect:
         serializedVersion: 2
-        x: 141
-        y: 341
-        width: 41
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -774,12 +774,12 @@ TextureImporter:
       name: Elite Orc_23
       rect:
         serializedVersion: 2
-        x: 222
-        y: 340
-        width: 54
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -796,12 +796,12 @@ TextureImporter:
       name: Elite Orc_24
       rect:
         serializedVersion: 2
-        x: 322
-        y: 340
-        width: 47
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -818,12 +818,12 @@ TextureImporter:
       name: Elite Orc_25
       rect:
         serializedVersion: 2
-        x: 432
-        y: 342
-        width: 47
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 400
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -840,12 +840,12 @@ TextureImporter:
       name: Elite Orc_26
       rect:
         serializedVersion: 2
-        x: 541
-        y: 341
-        width: 41
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 500
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -862,12 +862,12 @@ TextureImporter:
       name: Elite Orc_27
       rect:
         serializedVersion: 2
-        x: 622
-        y: 340
-        width: 54
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 600
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -884,12 +884,12 @@ TextureImporter:
       name: Elite Orc_28
       rect:
         serializedVersion: 2
-        x: 722
-        y: 340
-        width: 47
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 700
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -906,12 +906,12 @@ TextureImporter:
       name: Elite Orc_29
       rect:
         serializedVersion: 2
-        x: 832
-        y: 342
-        width: 47
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 800
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -928,12 +928,12 @@ TextureImporter:
       name: Elite Orc_30
       rect:
         serializedVersion: 2
-        x: 941
-        y: 341
-        width: 41
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 900
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -950,12 +950,12 @@ TextureImporter:
       name: Elite Orc_31
       rect:
         serializedVersion: 2
-        x: 1042
-        y: 335
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1000
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -972,12 +972,12 @@ TextureImporter:
       name: Elite Orc_32
       rect:
         serializedVersion: 2
-        x: 41
-        y: 242
-        width: 30
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -994,12 +994,12 @@ TextureImporter:
       name: Elite Orc_33
       rect:
         serializedVersion: 2
-        x: 139
-        y: 247
-        width: 22
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1016,12 +1016,12 @@ TextureImporter:
       name: Elite Orc_34
       rect:
         serializedVersion: 2
-        x: 236
-        y: 248
-        width: 24
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1038,12 +1038,12 @@ TextureImporter:
       name: Elite Orc_35
       rect:
         serializedVersion: 2
-        x: 331
-        y: 249
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1060,12 +1060,12 @@ TextureImporter:
       name: Elite Orc_36
       rect:
         serializedVersion: 2
-        x: 444
-        y: 239
-        width: 38
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 400
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1082,12 +1082,12 @@ TextureImporter:
       name: Elite Orc_37
       rect:
         serializedVersion: 2
-        x: 544
-        y: 238
-        width: 41
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 500
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1104,12 +1104,12 @@ TextureImporter:
       name: Elite Orc_38
       rect:
         serializedVersion: 2
-        x: 644
-        y: 238
-        width: 41
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 600
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1126,12 +1126,12 @@ TextureImporter:
       name: Elite Orc_39
       rect:
         serializedVersion: 2
-        x: 742
-        y: 239
-        width: 30
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 700
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1148,12 +1148,12 @@ TextureImporter:
       name: Elite Orc_40
       rect:
         serializedVersion: 2
-        x: 842
-        y: 239
-        width: 30
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 800
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1170,12 +1170,12 @@ TextureImporter:
       name: Elite Orc_41
       rect:
         serializedVersion: 2
-        x: 475
-        y: 240
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1192,12 +1192,12 @@ TextureImporter:
       name: Elite Orc_42
       rect:
         serializedVersion: 2
-        x: 39
-        y: 142
-        width: 31
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1214,12 +1214,12 @@ TextureImporter:
       name: Elite Orc_43
       rect:
         serializedVersion: 2
-        x: 139
-        y: 142
-        width: 31
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1236,12 +1236,12 @@ TextureImporter:
       name: Elite Orc_44
       rect:
         serializedVersion: 2
-        x: 239
-        y: 142
-        width: 31
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1258,19 +1258,19 @@ TextureImporter:
       name: Elite Orc_45
       rect:
         serializedVersion: 2
-        x: 339
-        y: 142
-        width: 31
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 28f0166a9471b96e0800000000000000
+      spriteID: 4044ec9190bb4e141a351142a6af82fc
       internalID: -1829843218504544382
       vertices: []
       indices: 
@@ -1280,19 +1280,19 @@ TextureImporter:
       name: Elite Orc_46
       rect:
         serializedVersion: 2
-        x: 41
-        y: 42
-        width: 30
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0f383856acac03f30800000000000000
+      spriteID: 409becc5f3260fb4ebaa9e38d251a3c5
       internalID: 4553362193906893808
       vertices: []
       indices: 
@@ -1302,19 +1302,19 @@ TextureImporter:
       name: Elite Orc_47
       rect:
         serializedVersion: 2
-        x: 143
-        y: 42
-        width: 19
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ea7d87176002a7d30800000000000000
+      spriteID: c740ec041f28fc64598a2e0abcefe5c2
       internalID: 4429888395517941678
       vertices: []
       indices: 
@@ -1324,174 +1324,20 @@ TextureImporter:
       name: Elite Orc_48
       rect:
         serializedVersion: 2
-        x: 162
-        y: 50
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4b14eadd73cbff0b0800000000000000
+      spriteID: cf3989d6cdac6934cb1227a919702466
       internalID: -5692624455844609612
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Elite Orc_49
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 52
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dba7464af9fab2770800000000000000
-      internalID: 8587150214704691901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Elite Orc_50
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 54
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2b04a88f7e066250800000000000000
-      internalID: 5937449099650665258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Elite Orc_51
-      rect:
-        serializedVersion: 2
-        x: 247
-        y: 42
-        width: 19
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc035c3079841d8a0800000000000000
-      internalID: -6282160191764614964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Elite Orc_52
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 45
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ba983745ccb672a80800000000000000
-      internalID: -8491700047049422421
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Elite Orc_53
-      rect:
-        serializedVersion: 2
-        x: 277
-        y: 49
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e5df48105914de10800000000000000
-      internalID: 2221428347996460517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Elite Orc_54
-      rect:
-        serializedVersion: 2
-        x: 346
-        y: 42
-        width: 23
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1e5138952ade05dc0800000000000000
-      internalID: -3652158016255224351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Elite Orc_55
-      rect:
-        serializedVersion: 2
-        x: 366
-        y: 42
-        width: 16
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be7b46c2b7b3d4440800000000000000
-      internalID: 4921655367997634539
       vertices: []
       indices: 
       edges: []
@@ -1500,7 +1346,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f64555c83fe54e143bcb7c200e6d735d
     internalID: 0
     vertices: []
     indices: 
@@ -1554,14 +1400,7 @@ TextureImporter:
       Elite Orc_46: 4553362193906893808
       Elite Orc_47: 4429888395517941678
       Elite Orc_48: -5692624455844609612
-      Elite Orc_49: 8587150214704691901
       Elite Orc_5: -7286877540352009977
-      Elite Orc_50: 5937449099650665258
-      Elite Orc_51: -6282160191764614964
-      Elite Orc_52: -8491700047049422421
-      Elite Orc_53: 2221428347996460517
-      Elite Orc_54: -3652158016255224351
-      Elite Orc_55: 4921655367997634539
       Elite Orc_6: 480855131479350972
       Elite Orc_7: -5687450624591172607
       Elite Orc_8: -1073731320318555948

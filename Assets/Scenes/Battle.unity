@@ -12218,7 +12218,7 @@ Animator:
   m_GameObject: {fileID: 1172855262}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ab2e5d00e8b700d43a6380107644f7fb, type: 2}
+  m_Controller: {fileID: 9100000, guid: aca24b5e2dae20f4f90f77e15a7e2a4b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -15645,6 +15645,10 @@ MonoBehaviour:
     duringEffect: 0
     isMove: 0
     effectPrefab: {fileID: 4215338955607971493, guid: dd14aa70069535341a088a79b670c4c1, type: 3}
+  - ID: 200010
+    duringEffect: 0
+    isMove: 0
+    effectPrefab: {fileID: 3893557652907700656, guid: 21ed8d5cb9c2f0944b1e5ab7352912f6, type: 3}
 --- !u!1 &1489819655
 GameObject:
   m_ObjectHideFlags: 0
@@ -16980,7 +16984,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: aaa68f5fc94997748bb2ad047d4252c4, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 576b260be378d3d4cb98833fa0e7a05f, type: 2}
 --- !u!4 &1640979067
 Transform:
   m_ObjectHideFlags: 0

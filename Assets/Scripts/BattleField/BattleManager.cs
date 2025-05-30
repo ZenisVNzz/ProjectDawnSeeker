@@ -149,10 +149,10 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         foreach (var enemy in TeamAI)
         {
-            if (enemy.isAlive)
+            if (enemy.isAlive && enemy.isActionAble || enemy.isAlive && enemy.isCharge)
             {
                 int mpUsage = 0;
-                if (enemy.isBoss)
+                if (enemy.isBoss && !enemy.isCharge)
                 {
                     for (int i = 0; i <= 1; i++)
                     {

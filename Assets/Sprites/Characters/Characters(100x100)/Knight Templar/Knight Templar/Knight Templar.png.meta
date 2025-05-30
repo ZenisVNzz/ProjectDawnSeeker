@@ -214,7 +214,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -228,7 +228,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -252,7 +252,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -280,12 +280,12 @@ TextureImporter:
       name: Knight Templar_0
       rect:
         serializedVersion: 2
-        x: 42
-        y: 842
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 800
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -302,12 +302,12 @@ TextureImporter:
       name: Knight Templar_1
       rect:
         serializedVersion: 2
-        x: 142
-        y: 842
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 800
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -324,12 +324,12 @@ TextureImporter:
       name: Knight Templar_2
       rect:
         serializedVersion: 2
-        x: 242
-        y: 842
-        width: 29
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 800
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -346,12 +346,12 @@ TextureImporter:
       name: Knight Templar_3
       rect:
         serializedVersion: 2
-        x: 342
-        y: 842
-        width: 29
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 800
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -368,12 +368,12 @@ TextureImporter:
       name: Knight Templar_4
       rect:
         serializedVersion: 2
-        x: 442
-        y: 842
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 400
+        y: 800
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -390,12 +390,12 @@ TextureImporter:
       name: Knight Templar_5
       rect:
         serializedVersion: 2
-        x: 542
-        y: 842
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 500
+        y: 800
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -412,12 +412,12 @@ TextureImporter:
       name: Knight Templar_6
       rect:
         serializedVersion: 2
-        x: 42
-        y: 742
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -434,12 +434,12 @@ TextureImporter:
       name: Knight Templar_7
       rect:
         serializedVersion: 2
-        x: 142
-        y: 742
-        width: 29
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -456,12 +456,12 @@ TextureImporter:
       name: Knight Templar_8
       rect:
         serializedVersion: 2
-        x: 242
-        y: 742
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -478,12 +478,12 @@ TextureImporter:
       name: Knight Templar_9
       rect:
         serializedVersion: 2
-        x: 342
-        y: 742
-        width: 29
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -500,12 +500,12 @@ TextureImporter:
       name: Knight Templar_10
       rect:
         serializedVersion: 2
-        x: 442
-        y: 742
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 400
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -522,12 +522,12 @@ TextureImporter:
       name: Knight Templar_11
       rect:
         serializedVersion: 2
-        x: 542
-        y: 742
-        width: 29
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 500
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -544,12 +544,12 @@ TextureImporter:
       name: Knight Templar_12
       rect:
         serializedVersion: 2
-        x: 642
-        y: 742
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 600
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -566,12 +566,12 @@ TextureImporter:
       name: Knight Templar_13
       rect:
         serializedVersion: 2
-        x: 742
-        y: 742
-        width: 29
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 700
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -588,12 +588,12 @@ TextureImporter:
       name: Knight Templar_14
       rect:
         serializedVersion: 2
-        x: 42
-        y: 642
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -610,12 +610,12 @@ TextureImporter:
       name: Knight Templar_15
       rect:
         serializedVersion: 2
-        x: 142
-        y: 642
-        width: 29
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -632,12 +632,12 @@ TextureImporter:
       name: Knight Templar_16
       rect:
         serializedVersion: 2
-        x: 242
-        y: 642
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -654,12 +654,12 @@ TextureImporter:
       name: Knight Templar_17
       rect:
         serializedVersion: 2
-        x: 342
-        y: 642
-        width: 29
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -676,12 +676,12 @@ TextureImporter:
       name: Knight Templar_18
       rect:
         serializedVersion: 2
-        x: 442
-        y: 642
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 400
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -698,12 +698,12 @@ TextureImporter:
       name: Knight Templar_19
       rect:
         serializedVersion: 2
-        x: 541
-        y: 642
-        width: 30
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 500
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -720,12 +720,12 @@ TextureImporter:
       name: Knight Templar_20
       rect:
         serializedVersion: 2
-        x: 642
-        y: 642
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 600
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -742,12 +742,12 @@ TextureImporter:
       name: Knight Templar_21
       rect:
         serializedVersion: 2
-        x: 742
-        y: 642
-        width: 29
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 700
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -764,12 +764,12 @@ TextureImporter:
       name: Knight Templar_22
       rect:
         serializedVersion: 2
-        x: 42
-        y: 542
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -786,12 +786,12 @@ TextureImporter:
       name: Knight Templar_23
       rect:
         serializedVersion: 2
-        x: 142
-        y: 542
-        width: 28
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -808,12 +808,12 @@ TextureImporter:
       name: Knight Templar_24
       rect:
         serializedVersion: 2
-        x: 242
-        y: 542
-        width: 25
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -830,12 +830,12 @@ TextureImporter:
       name: Knight Templar_25
       rect:
         serializedVersion: 2
-        x: 342
-        y: 542
-        width: 25
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -852,12 +852,12 @@ TextureImporter:
       name: Knight Templar_26
       rect:
         serializedVersion: 2
-        x: 443
-        y: 542
-        width: 35
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 400
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -874,12 +874,12 @@ TextureImporter:
       name: Knight Templar_27
       rect:
         serializedVersion: 2
-        x: 543
-        y: 542
-        width: 37
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 500
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -896,12 +896,12 @@ TextureImporter:
       name: Knight Templar_28
       rect:
         serializedVersion: 2
-        x: 643
-        y: 542
-        width: 37
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 600
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -918,12 +918,12 @@ TextureImporter:
       name: Knight Templar_29
       rect:
         serializedVersion: 2
-        x: 42
-        y: 442
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -940,12 +940,12 @@ TextureImporter:
       name: Knight Templar_30
       rect:
         serializedVersion: 2
-        x: 142
-        y: 442
-        width: 29
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -962,12 +962,12 @@ TextureImporter:
       name: Knight Templar_31
       rect:
         serializedVersion: 2
-        x: 242
-        y: 442
-        width: 25
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -984,12 +984,12 @@ TextureImporter:
       name: Knight Templar_32
       rect:
         serializedVersion: 2
-        x: 342
-        y: 442
-        width: 19
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1006,12 +1006,12 @@ TextureImporter:
       name: Knight Templar_33
       rect:
         serializedVersion: 2
-        x: 442
-        y: 442
-        width: 20
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 400
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1028,12 +1028,12 @@ TextureImporter:
       name: Knight Templar_34
       rect:
         serializedVersion: 2
-        x: 538
-        y: 436
-        width: 38
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 500
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1050,12 +1050,12 @@ TextureImporter:
       name: Knight Templar_35
       rect:
         serializedVersion: 2
-        x: 639
-        y: 436
-        width: 37
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 600
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1072,12 +1072,12 @@ TextureImporter:
       name: Knight Templar_36
       rect:
         serializedVersion: 2
-        x: 740
-        y: 436
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 700
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1094,12 +1094,12 @@ TextureImporter:
       name: Knight Templar_37
       rect:
         serializedVersion: 2
-        x: 42
-        y: 342
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1116,12 +1116,12 @@ TextureImporter:
       name: Knight Templar_38
       rect:
         serializedVersion: 2
-        x: 137
-        y: 341
-        width: 21
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1138,12 +1138,12 @@ TextureImporter:
       name: Knight Templar_39
       rect:
         serializedVersion: 2
-        x: 239
-        y: 336
-        width: 19
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1160,12 +1160,12 @@ TextureImporter:
       name: Knight Templar_40
       rect:
         serializedVersion: 2
-        x: 342
-        y: 339
-        width: 32
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1182,12 +1182,12 @@ TextureImporter:
       name: Knight Templar_41
       rect:
         serializedVersion: 2
-        x: 442
-        y: 342
-        width: 31
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 400
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1204,12 +1204,12 @@ TextureImporter:
       name: Knight Templar_42
       rect:
         serializedVersion: 2
-        x: 542
-        y: 342
-        width: 20
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 500
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1226,12 +1226,12 @@ TextureImporter:
       name: Knight Templar_43
       rect:
         serializedVersion: 2
-        x: 642
-        y: 342
-        width: 19
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 600
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1248,12 +1248,12 @@ TextureImporter:
       name: Knight Templar_44
       rect:
         serializedVersion: 2
-        x: 738
-        y: 336
-        width: 40
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 700
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1270,12 +1270,12 @@ TextureImporter:
       name: Knight Templar_45
       rect:
         serializedVersion: 2
-        x: 839
-        y: 336
-        width: 37
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 800
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1292,12 +1292,12 @@ TextureImporter:
       name: Knight Templar_46
       rect:
         serializedVersion: 2
-        x: 940
-        y: 336
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 900
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1314,12 +1314,12 @@ TextureImporter:
       name: Knight Templar_47
       rect:
         serializedVersion: 2
-        x: 1040
-        y: 336
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1000
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1336,12 +1336,12 @@ TextureImporter:
       name: Knight Templar_48
       rect:
         serializedVersion: 2
-        x: 42
-        y: 242
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1358,12 +1358,12 @@ TextureImporter:
       name: Knight Templar_49
       rect:
         serializedVersion: 2
-        x: 142
-        y: 242
-        width: 26
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1380,12 +1380,12 @@ TextureImporter:
       name: Knight Templar_50
       rect:
         serializedVersion: 2
-        x: 242
-        y: 242
-        width: 26
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1402,12 +1402,12 @@ TextureImporter:
       name: Knight Templar_51
       rect:
         serializedVersion: 2
-        x: 342
-        y: 242
-        width: 26
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1424,12 +1424,12 @@ TextureImporter:
       name: Knight Templar_52
       rect:
         serializedVersion: 2
-        x: 39
-        y: 142
-        width: 30
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1446,12 +1446,12 @@ TextureImporter:
       name: Knight Templar_53
       rect:
         serializedVersion: 2
-        x: 139
-        y: 142
-        width: 30
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1468,12 +1468,12 @@ TextureImporter:
       name: Knight Templar_54
       rect:
         serializedVersion: 2
-        x: 239
-        y: 142
-        width: 30
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1490,12 +1490,12 @@ TextureImporter:
       name: Knight Templar_55
       rect:
         serializedVersion: 2
-        x: 339
-        y: 142
-        width: 30
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1512,12 +1512,12 @@ TextureImporter:
       name: Knight Templar_56
       rect:
         serializedVersion: 2
-        x: 42
-        y: 42
-        width: 29
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1534,12 +1534,12 @@ TextureImporter:
       name: Knight Templar_57
       rect:
         serializedVersion: 2
-        x: 141
-        y: 41
-        width: 25
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1556,12 +1556,12 @@ TextureImporter:
       name: Knight Templar_58
       rect:
         serializedVersion: 2
-        x: 241
-        y: 42
-        width: 22
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1578,12 +1578,12 @@ TextureImporter:
       name: Knight Templar_59
       rect:
         serializedVersion: 2
-        x: 341
-        y: 42
-        width: 21
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1600,7 +1600,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3060fcad189ba7e40a3de41eabbfa1c7
     internalID: 0
     vertices: []
     indices: 
