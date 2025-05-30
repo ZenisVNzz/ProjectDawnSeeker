@@ -149,10 +149,10 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         foreach (var enemy in TeamAI)
         {
-            if (enemy.isAlive && enemy.isActionAble || enemy.isAlive && enemy.isCharge)
+            if (enemy.isAlive && enemy.isActionAble && !enemy.isCharge)
             {
                 int mpUsage = 0;
-                if (enemy.isBoss && !enemy.isCharge)
+                if (enemy.isBoss)
                 {
                     for (int i = 0; i <= 1; i++)
                     {
@@ -180,6 +180,11 @@ public class BattleManager : MonoBehaviour
                             {
                                 skill = availableSkills[skillIndex];
                             }
+
+                            if(skill.passiveSkill)
+                            {
+                                chosen = enemy;
+                            }    
 
                             EnemyPlannedAction action = new EnemyPlannedAction
                             {
@@ -210,6 +215,11 @@ public class BattleManager : MonoBehaviour
                     else
                     {
                         skill = availableSkills[skillIndex];
+                    }
+
+                    if (skill.passiveSkill)
+                    {
+                        chosen = enemy;
                     }
 
                     EnemyPlannedAction action = new EnemyPlannedAction

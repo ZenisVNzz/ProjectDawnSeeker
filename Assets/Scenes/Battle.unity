@@ -2463,6 +2463,7 @@ MonoBehaviour:
   isCritAfterAttack: 0
   isCharge: 0
   isGetATKBuffWhenDodge: 0
+  isMark: 0
   chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
@@ -2472,6 +2473,7 @@ MonoBehaviour:
   isDodge: 0
   isPenetrating: 0
   isFullPenetrating: 0
+  markCaster: {fileID: 0}
   savedDmg: 0
   savedHitCount: 0
   savedTotalDmgHit: 0
@@ -3163,6 +3165,7 @@ MonoBehaviour:
   isCritAfterAttack: 0
   isCharge: 0
   isGetATKBuffWhenDodge: 0
+  isMark: 0
   chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
@@ -3172,6 +3175,7 @@ MonoBehaviour:
   isDodge: 0
   isPenetrating: 0
   isFullPenetrating: 0
+  markCaster: {fileID: 0}
   savedDmg: 0
   savedHitCount: 0
   savedTotalDmgHit: 0
@@ -3646,7 +3650,7 @@ MonoBehaviour:
   enemyCharacter:
   - {fileID: 11400000, guid: dfdcdda75f77ad14daa85aa01e34840d, type: 2}
   - {fileID: 11400000, guid: 47ff32cd979b714458e423594d54ac4a, type: 2}
-  - {fileID: 11400000, guid: b6d45a616d42eb04f8f6c173444990c6, type: 2}
+  - {fileID: 11400000, guid: eacf4b98b9377b94baa62e5451f77057, type: 2}
   playerCharacterInBattle:
   - {fileID: 554530855}
   - {fileID: 808364462}
@@ -4962,6 +4966,7 @@ MonoBehaviour:
   isCritAfterAttack: 0
   isCharge: 0
   isGetATKBuffWhenDodge: 0
+  isMark: 0
   chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
@@ -4971,6 +4976,7 @@ MonoBehaviour:
   isDodge: 0
   isPenetrating: 0
   isFullPenetrating: 0
+  markCaster: {fileID: 0}
   savedDmg: 0
   savedHitCount: 0
   savedTotalDmgHit: 0
@@ -7813,6 +7819,7 @@ MonoBehaviour:
   isCritAfterAttack: 0
   isCharge: 0
   isGetATKBuffWhenDodge: 0
+  isMark: 0
   chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
@@ -7822,6 +7829,7 @@ MonoBehaviour:
   isDodge: 0
   isPenetrating: 0
   isFullPenetrating: 0
+  markCaster: {fileID: 0}
   savedDmg: 0
   savedHitCount: 0
   savedTotalDmgHit: 0
@@ -12060,7 +12068,7 @@ Transform:
   m_GameObject: {fileID: 1172855262}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.9, y: -0.42, z: 0.048561636}
+  m_LocalPosition: {x: 2.9, y: -0.42, z: 0.04856164}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12191,6 +12199,7 @@ MonoBehaviour:
   isCritAfterAttack: 0
   isCharge: 0
   isGetATKBuffWhenDodge: 0
+  isMark: 0
   chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
@@ -12200,6 +12209,7 @@ MonoBehaviour:
   isDodge: 0
   isPenetrating: 0
   isFullPenetrating: 0
+  markCaster: {fileID: 0}
   savedDmg: 0
   savedHitCount: 0
   savedTotalDmgHit: 0
@@ -12218,7 +12228,7 @@ Animator:
   m_GameObject: {fileID: 1172855262}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aca24b5e2dae20f4f90f77e15a7e2a4b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4bdc12ab178491a499fb19049ca190b2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12683,6 +12693,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215541723}
   m_CullTransparentMesh: 1
+--- !u!1 &1229554981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1229554982}
+  - component: {fileID: 1229554983}
+  m_Layer: 0
+  m_Name: MarkHandle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1229554982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229554981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1428567262}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1229554983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229554981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1032626ec00634e4dad34548ea5810df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defDown: {fileID: 11400000, guid: 95dd7677f9b010c4b87ae790d2aeaa2a, type: 2}
 --- !u!1 &1256108313
 GameObject:
   m_ObjectHideFlags: 0
@@ -12849,6 +12904,7 @@ MonoBehaviour:
   isCritAfterAttack: 0
   isCharge: 0
   isGetATKBuffWhenDodge: 0
+  isMark: 0
   chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
@@ -12858,6 +12914,7 @@ MonoBehaviour:
   isDodge: 0
   isPenetrating: 0
   isFullPenetrating: 0
+  markCaster: {fileID: 0}
   savedDmg: 0
   savedHitCount: 0
   savedTotalDmgHit: 0
@@ -13214,6 +13271,7 @@ MonoBehaviour:
   isCritAfterAttack: 0
   isCharge: 0
   isGetATKBuffWhenDodge: 0
+  isMark: 0
   chargeTurn: 0
   activeStatusEffect: []
   battleUI: {fileID: 1726673298}
@@ -13223,6 +13281,7 @@ MonoBehaviour:
   isDodge: 0
   isPenetrating: 0
   isFullPenetrating: 0
+  markCaster: {fileID: 0}
   savedDmg: 0
   savedHitCount: 0
   savedTotalDmgHit: 0
@@ -15068,6 +15127,7 @@ Transform:
   - {fileID: 1302407284}
   - {fileID: 1787937399}
   - {fileID: 895257260}
+  - {fileID: 1229554982}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446538374
@@ -15645,6 +15705,10 @@ MonoBehaviour:
     duringEffect: 0
     isMove: 0
     effectPrefab: {fileID: 4215338955607971493, guid: dd14aa70069535341a088a79b670c4c1, type: 3}
+  - ID: 200010
+    duringEffect: 0
+    isMove: 0
+    effectPrefab: {fileID: 3893557652907700656, guid: 21ed8d5cb9c2f0944b1e5ab7352912f6, type: 3}
   - ID: 200010
     duringEffect: 0
     isMove: 0

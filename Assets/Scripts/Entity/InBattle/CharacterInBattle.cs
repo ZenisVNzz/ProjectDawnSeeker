@@ -46,6 +46,7 @@ public class CharacterInBattle : MonoBehaviour
     public bool isCritAfterAttack = false;
     public bool isCharge = false;
     public bool isGetATKBuffWhenDodge = false;
+    public bool isMark = false;
 
     public int chargeTurn = 0;
 
@@ -84,6 +85,7 @@ public class CharacterInBattle : MonoBehaviour
     private bool dodgeSucces = false;
     public bool isPenetrating = false;
     public bool isFullPenetrating = false;
+    public CharacterInBattle markCaster;
 
     public float savedDmg;
     public int savedHitCount;
@@ -220,6 +222,11 @@ public class CharacterInBattle : MonoBehaviour
         }
 
         dmgPopUp.ShowDmgPopUp(amount, transform.position , currentAttacker.isCrit, isDodge, isParry);    
+
+        if (currentAttacker.isLifeSteal)
+        {
+            currentAttacker.Heal(amount * 0.2f);
+        }
 
         currentHP -= amount;
         savedTotalDmgHit += amount;
@@ -606,6 +613,10 @@ public class CharacterInBattle : MonoBehaviour
         isAlive = false;
         isActionAble = false;
         animator.Play("Death");
+        if (isMark)
+        {
+            markCaster.Heal(markCaster.HP * 0.2f);
+        }    
         vfxManager.StopAllEffect(characterData.characterID);
         OnDeath?.Invoke(this);
     }
