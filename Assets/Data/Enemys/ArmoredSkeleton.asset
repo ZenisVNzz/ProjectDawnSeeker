@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef0f3323c8b53147a892c06f8e228ed, type: 3}
+  m_Name: ArmoredSkeleton
+  m_EditorClassIdentifier: 
+  characterID: 100105
+  characterName: Armored Skeleton
+  characterType: 1
+  characterSprite: {fileID: 1697572217658996889, guid: 7493a0f7a19e0064f836be74775a51b5, type: 3}
+  characterAnimation: {fileID: 9100000, guid: ab2e5d00e8b700d43a6380107644f7fb, type: 2}
+  isBoss: 0
+  skillList:
+  - {fileID: 11400000, guid: 2ab91d12120170c4dae33fee4ccc368c, type: 2}
+  - {fileID: 11400000, guid: 91a70008798541d4a961ac863a4aceeb, type: 2}
+  level: 1
+  ATK: 35
+  HP: 130
+  DEF: 11
+  MP: 3
+  CR: 0.1
+  CD: 1.5
+  DC: 0.05
+  PC: 0.05
+  maxLevel: 100
+  currentXP: 0
+  neededXP: 100
+  ATKPerLevel: 2.7
+  HPPerLevel: 26
+  DEFPerLevel: 2.1
+  MPPerLevel: 0
+  CRPerLevel: 0
+  CDPerLevel: 0

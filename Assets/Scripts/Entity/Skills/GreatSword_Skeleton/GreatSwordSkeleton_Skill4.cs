@@ -10,8 +10,12 @@ public class GreatSwordSkeleton_Skill4 : SkillBase
 
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
-        user.ApplyStatusEffect(defUP, 2);
         user.UseChargeSkill(this);       
+    }
+
+    public override void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
+    {
+        user.ApplyStatusEffect(defUP, 2);
     }
 
     public override void DoSpecialAction(CharacterInBattle user, CharacterInBattle target)

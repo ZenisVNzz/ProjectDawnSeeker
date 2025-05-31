@@ -18,8 +18,12 @@ public class OrcRider_Skill3 : SkillBase
                 player.ApplyStatusEffect(fear, 2);
             }
         }
+        base.DoAction(user, target);
+    }
+
+    public override void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
+    {
         user.ApplyStatusEffect(atkUP, 2);
         user.ApplyStatusEffect(bloodThirsty, 99);
-        base.DoAction(user, target);
     }
 }

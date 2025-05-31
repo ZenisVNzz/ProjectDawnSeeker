@@ -10,14 +10,17 @@ public class BlazingSlash : SkillBase
         if (target.activeStatusEffect.Any(effect => effect.ID == 200012))
         {
             target.TakeDamage(user.ATK * 2.25f, 1, user, target);
-            target.ApplyStatusEffect(burn, 2);
         }
         else
         {
             target.TakeDamage(user.ATK * 1.8f, 1, user, target);
-            target.ApplyStatusEffect(burn, 2);
         }
 
         base.DoAction(user, target);
+    }
+
+    public override void ApplyEffectOnFinishedAttack(CharacterInBattle user, CharacterInBattle target)
+    {
+        target.ApplyStatusEffect(burn, 2);
     }
 }

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b24f963d47b1b46b43d69b0b1dcb4e, type: 3}
+  m_Name: Werewolf_Skill3
+  m_EditorClassIdentifier: 
+  ID: 300044
+  skillName: none
+  description: none
+  icon: {fileID: 0}
+  mpCost: 3
+  animation: {fileID: 7400000, guid: 228f56073c1cfc14baa80edc5638f224, type: 2}
+  passiveSkill: 0
+  supportSkill: 0
+  move: 1
+  isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0

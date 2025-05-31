@@ -1,9 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
@@ -151,22 +149,62 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         foreach (var enemy in TeamAI)
         {
-            int mpUsage = 0;
-            for (int i = 0; i <= 2; i++)
-            {              
-                float mp = enemy.currentMP - mpUsage;
-                if (!enemy.isCharge)
+            if (enemy.isAlive && enemy.isActionAble && !enemy.isCharge)
+            {
+                int mpUsage = 0;
+                if (enemy.isBoss)
                 {
+                    for (int i = 0; i <= 1; i++)
+                    {
+                        float mp = enemy.currentMP - mpUsage;
+                        if (!enemy.isCharge)
+                        {
+                            List<SkillBase> availableSkills = new List<SkillBase>();
+                            if (i <= 0)
+                            {
+                                availableSkills = enemy.skillList.Where(skill => skill.mpCost <= mp && !skill.isUniqueSkill).ToList();
+                            }
+                            else
+                            {
+                                availableSkills = enemy.skillList.Where(skill => skill.mpCost <= mp).ToList();
+                            }
+
+                            int skillIndex = UnityEngine.Random.Range(0, availableSkills.Count);
+                            CharacterInBattle chosen = GetRandomAlive(TeamPlayer);
+                            SkillBase skill;
+                            if (availableSkills.Count == 1)
+                            {
+                                skill = availableSkills[0];
+                            }
+                            else
+                            {
+                                skill = availableSkills[skillIndex];
+                            }
+
+                            if(skill.passiveSkill)
+                            {
+                                chosen = enemy;
+                            }    
+
+                            EnemyPlannedAction action = new EnemyPlannedAction
+                            {
+                                Caster = enemy,
+                                Target = chosen,
+                                Skill = skill
+                            };
+
+                            enemyPlannedAction.Add(action);
+                            StartCoroutine(AddEnemyAction(enemy, chosen, skill));
+                            availableSkills.Clear();
+                            mpUsage += skill.mpCost;
+                        }
+                    }
+                }
+                else
+                {
+                    float mp = enemy.currentMP - mpUsage;
                     List<SkillBase> availableSkills = new List<SkillBase>();
-                    if (i <= 1)
-                    {
-                        availableSkills = enemy.skillList.Where(skill => skill.mpCost <= mp && !skill.isUniqueSkill).ToList();
-                    }
-                    else
-                    {
-                        availableSkills = enemy.skillList.Where(skill => skill.mpCost <= mp).ToList();
-                    }
-                    
+                    availableSkills = enemy.skillList.Where(skill => skill.mpCost <= mp).ToList();
                     int skillIndex = UnityEngine.Random.Range(0, availableSkills.Count);
                     CharacterInBattle chosen = GetRandomAlive(TeamPlayer);
                     SkillBase skill;
@@ -177,8 +215,13 @@ public class BattleManager : MonoBehaviour
                     else
                     {
                         skill = availableSkills[skillIndex];
-                    }    
-                    
+                    }
+
+                    if (skill.passiveSkill)
+                    {
+                        chosen = enemy;
+                    }
+
                     EnemyPlannedAction action = new EnemyPlannedAction
                     {
                         Caster = enemy,
@@ -191,7 +234,7 @@ public class BattleManager : MonoBehaviour
                     availableSkills.Clear();
                     mpUsage += skill.mpCost;
                 }
-            }      
+            }         
         }       
         foreach (var enemy in TeamAI)
         {
@@ -332,6 +375,11 @@ public class BattleManager : MonoBehaviour
                     actionOrderUI.RemoveAction(action.Caster, action.Skill);
                     continue;
                 }
+                if (!action.Caster.isAlive)
+                {
+                    actionOrderUI.RemoveAction(action.Caster, action.Skill);
+                    continue;
+                }
 
                 Vector3 originalPos = action.Caster.transform.position;
                 if (action.Skill.move && !action.Skill.isWaitForCharge)
@@ -340,6 +388,18 @@ public class BattleManager : MonoBehaviour
                 }             
                 
                 action.Skill.DoAction(action.Caster, action.Target);
+
+                if (action.Target.isParry)
+                {
+                    yield return StartCoroutine(WaitForParry(action.Caster, action.Target));
+                }    
+
+                if (!action.Caster.isAlive)
+                {
+                    actionOrderUI.RemoveAction(action.Caster, action.Skill);
+                    yield return new WaitForSeconds(1f);
+                    continue;
+                }    
 
                 if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
                 {
@@ -351,12 +411,20 @@ public class BattleManager : MonoBehaviour
                     yield return null;
                 }
 
+                action.Skill.ApplyEffectOnFinishedAttack(action.Caster, action.Target);
+
                 if (action.Skill.move && !action.Skill.isWaitForCharge)
                 {
                     yield return StartCoroutine(ReturnToOriginalPosition(action.Caster, originalPos));
                 }
               
                 actionOrderUI.RemoveAction(action.Caster, action.Skill);
+
+                yield return new WaitForSeconds(0.5f);
+
+                action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
+                action.Caster.ResetState();
+                action.Target.ResetState();
 
                 if (action.Caster.isBleeding == true)
                 {
@@ -366,7 +434,8 @@ public class BattleManager : MonoBehaviour
                 {
                     break;
                 }
-                yield return new WaitForSeconds(1f);
+
+                yield return new WaitForSeconds(0.5f);
             }
         }
         else
@@ -374,6 +443,11 @@ public class BattleManager : MonoBehaviour
             foreach (EnemyPlannedAction action in enemyPlannedAction)
             {
                 if (!action.Target.isAlive)
+                {
+                    actionOrderUI.RemoveAction(action.Caster, action.Skill);
+                    continue;
+                }
+                if (!action.Caster.isAlive)
                 {
                     actionOrderUI.RemoveAction(action.Caster, action.Skill);
                     continue;
@@ -397,10 +471,24 @@ public class BattleManager : MonoBehaviour
 
                                 action.Skill.DoSpecialAction(action.Caster, action.Target);
 
+                                if (action.Target.isParry)
+                                {
+                                    yield return StartCoroutine(WaitForParry(action.Caster, action.Target));
+                                }
+
+                                if (!action.Caster.isAlive)
+                                {
+                                    actionOrderUI.RemoveAction(action.Caster, action.Skill);
+                                    yield return new WaitForSeconds(1f);
+                                    continue;
+                                }
+
                                 while (action.Caster.currentState != State.Idle)
                                 {
                                     yield return null;
                                 }
+
+                                action.Skill.ApplyEffectOnFinishedAttack(action.Caster, action.Target);
 
                                 if (action.Skill.move)
                                 {
@@ -408,6 +496,19 @@ public class BattleManager : MonoBehaviour
                                 }
                                 action.Caster.isCharge = false;
                                 action.Caster.isActionAble = true;
+
+                                yield return new WaitForSeconds(0.5f);
+
+                                action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
+                                action.Caster.ResetState();
+                                action.Target.ResetState();
+
+                                if (action.Caster.isBleeding == true)
+                                {
+                                    action.Caster.TakeBleedingDamage(action.Caster.ATK * 0.15f);
+                                }
+
+                                yield return new WaitForSeconds(0.5f);
                             }  
                             else
                             {
@@ -436,6 +537,18 @@ public class BattleManager : MonoBehaviour
 
                 action.Skill.DoAction(action.Caster, action.Target);
 
+                if (action.Target.isParry)
+                {
+                    yield return StartCoroutine(WaitForParry(action.Caster, action.Target));
+                }
+
+                if (!action.Caster.isAlive)
+                {
+                    actionOrderUI.RemoveAction(action.Caster, action.Skill);
+                    yield return new WaitForSeconds(1f);
+                    continue;
+                }
+
                 if (TeamPlayer.All(c => !c.isAlive) || TeamAI.All(c => !c.isAlive))
                 {
                     break;
@@ -446,12 +559,20 @@ public class BattleManager : MonoBehaviour
                     yield return null;
                 }
 
+                action.Skill.ApplyEffectOnFinishedAttack(action.Caster, action.Target);
+
                 if (action.Skill.move && action.Skill.isWaitForCharge == false)
                 {
                     yield return StartCoroutine(ReturnToOriginalPosition(action.Caster, originalPos));
                 }
 
                 actionOrderUI.RemoveAction(action.Caster, action.Skill);
+
+                yield return new WaitForSeconds(0.5f);
+
+                action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
+                action.Caster.ResetState();
+                action.Target.ResetState();
 
                 if (action.Caster.isBleeding == true)
                 {
@@ -462,7 +583,8 @@ public class BattleManager : MonoBehaviour
                     actionOrderUI.RemoveAction(action.Caster, action.Skill);
                     break;
                 }
-                yield return new WaitForSeconds(1f);
+
+                yield return new WaitForSeconds(0.5f);
             }
         }    
         
@@ -593,4 +715,18 @@ public class BattleManager : MonoBehaviour
         attacker.OnAttackEnd();
     }
 
+    public IEnumerator WaitForParry(CharacterInBattle attacker, CharacterInBattle target)
+    {
+        while (attacker.currentState != State.Idle)
+        {
+            yield return null;
+        }
+
+        target.Attack(target, attacker);
+
+        while (target.currentState != State.Idle)
+        {
+            yield return null;
+        }
+    }    
 }

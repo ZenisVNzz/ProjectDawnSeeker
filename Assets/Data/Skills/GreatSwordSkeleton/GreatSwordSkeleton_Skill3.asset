@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99bc783c9c849114eb52b91cad287100, type: 3}
   m_Name: GreatSwordSkeleton_Skill3
   m_EditorClassIdentifier: 
-  ID: 300023
+  ID: 300024
   skillName: none
   description: none
   icon: {fileID: 0}
@@ -23,5 +23,6 @@ MonoBehaviour:
   move: 0
   isAOE: 0
   isWaitForCharge: 0
+  isUniqueSkill: 0
   curse: {fileID: 11400000, guid: 55ab8c34462a9164aa03ff2abdeb9ee1, type: 2}
   atkUP: {fileID: 11400000, guid: 94ec968db9241264fa351737f61c1ec9, type: 2}

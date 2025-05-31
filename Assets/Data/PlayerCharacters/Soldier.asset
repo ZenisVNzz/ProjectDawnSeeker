@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef0f3323c8b53147a892c06f8e228ed, type: 3}
+  m_Name: Soldier
+  m_EditorClassIdentifier: 
+  characterID: 100006
+  characterName: Soldier
+  characterType: 0
+  characterSprite: {fileID: -3868812660829053132, guid: b3797f6eba601b24094bdd135c658e60, type: 3}
+  characterAnimation: {fileID: 9100000, guid: 86841d3cd887da141928b7124b644782, type: 2}
+  isBoss: 0
+  skillList:
+  - {fileID: 11400000, guid: 44e7f603e00f4fb43bf22b781d203d1f, type: 2}
+  - {fileID: 11400000, guid: 51eb2adef2c086c45bf21d841966e275, type: 2}
+  - {fileID: 11400000, guid: 7449e5f5604471b499d2d62f499de28e, type: 2}
+  - {fileID: 11400000, guid: 39abd4ede43939e40a9cbf67e1edb5d6, type: 2}
+  level: 1
+  ATK: 31
+  HP: 178
+  DEF: 15
+  MP: 3
+  CR: 0.05
+  CD: 1.5
+  DC: 0.09
+  PC: 0.08
+  maxLevel: 100
+  currentXP: 0
+  neededXP: 100
+  ATKPerLevel: 4
+  HPPerLevel: 23
+  DEFPerLevel: 3.6
+  MPPerLevel: 0
+  CRPerLevel: 0.0015
+  CDPerLevel: 0.005

@@ -22,7 +22,15 @@ public abstract class SkillBase : ScriptableObject
         user.currentTarget = target;
         target.currentAttacker = user;
         user.currentMP -= mpCost;
-    }    
+    }   
+    
+    public virtual void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
+    {
+    }
+
+    public virtual void ApplyEffectOnFinishedAttack(CharacterInBattle user, CharacterInBattle target)
+    {
+    }
 
     public virtual void DoSpecialAction(CharacterInBattle user, CharacterInBattle target)
     {

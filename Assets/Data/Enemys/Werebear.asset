@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef0f3323c8b53147a892c06f8e228ed, type: 3}
+  m_Name: Werebear
+  m_EditorClassIdentifier: 
+  characterID: 100110
+  characterName: Werebear
+  characterType: 1
+  characterSprite: {fileID: 4407900946912368253, guid: f934882d64bdaff40837b08f789729e8, type: 3}
+  characterAnimation: {fileID: 9100000, guid: 4bdc12ab178491a499fb19049ca190b2, type: 2}
+  isBoss: 1
+  skillList:
+  - {fileID: 11400000, guid: 54268e0b6031f974fabb87de4d32af26, type: 2}
+  - {fileID: 11400000, guid: 919937a86b828f44ab0ff7ce9a666357, type: 2}
+  - {fileID: 11400000, guid: 86b74d03b18df2944a64a18269ba487e, type: 2}
+  - {fileID: 11400000, guid: b3f9dee3f6d9e65429984ead5190cca4, type: 2}
+  level: 1
+  ATK: 420
+  HP: 10000
+  DEF: 98
+  MP: 6
+  CR: 0.3
+  CD: 2
+  DC: 0.2
+  PC: 0.1
+  maxLevel: 100
+  currentXP: 0
+  neededXP: 100
+  ATKPerLevel: 0
+  HPPerLevel: 0
+  DEFPerLevel: 0
+  MPPerLevel: 0
+  CRPerLevel: 0
+  CDPerLevel: 0
