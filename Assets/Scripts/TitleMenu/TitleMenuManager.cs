@@ -1,9 +1,50 @@
 using System.Collections;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TitleMenuManager : MonoBehaviour
 {
+    public GameObject newGame;
+    public GameObject loadGame;
+    string savePath;
+
+    private void Awake()
+    {
+        savePath = Path.Combine(Application.persistentDataPath, "Saves/save.dat");
+        Button newGameButton = newGame.GetComponent<Button>();
+        Button loadGameButton = loadGame.GetComponent<Button>();
+        newGameButton.onClick.AddListener(() =>
+        {
+            if (File.Exists(savePath))
+            {
+                File.Delete(savePath);
+            }
+        });
+        loadGameButton.onClick.AddListener(() => {
+            GameManager gameManager = FindAnyObjectByType<GameManager>();
+            StartCoroutine(gameManager.LoadGameOnClickContinue());
+        });
+    }
+
+    private void Start()
+    {
+        if(SaveExists())
+        {
+            loadGame.SetActive(true);
+        }
+        else
+        {
+            loadGame.SetActive(false);
+        }
+    }
+
+    private bool SaveExists()
+    {
+        return File.Exists(savePath);
+    }
+
     public void LoadNewGame()
     {
         StartCoroutine(LoadNewGameAsync());
