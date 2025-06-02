@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -11,7 +12,9 @@ public class BattleManager : MonoBehaviour
     public List<PlannedAction> plannedActions = new List<PlannedAction>();
     public List<EnemyPlannedAction> enemyPlannedAction = new List<EnemyPlannedAction>();
 
-    [SerializeField] CharacterInBattle selectedCharacter = null;
+    public event Action OnEndTurn;
+
+    private CharacterInBattle selectedCharacter = null;
     public BattleUI battleUI;
     public Button startTurnButton;
     public SelectSkill selectSkill;
@@ -262,7 +265,7 @@ public class BattleManager : MonoBehaviour
         var aliveList = list.Where(x => x.isAlive).ToList();
         if (aliveList.Count == 0) return null;
 
-        int index = Random.Range(0, aliveList.Count);
+        int index = UnityEngine.Random.Range(0, aliveList.Count);
         return aliveList[index];
     }
 
@@ -632,6 +635,7 @@ public class BattleManager : MonoBehaviour
         {
             character.StartTurn();
         }
+        OnEndTurn?.Invoke();
         StartCoroutine(CheckIfPlayerCanAction(1));
     }
 

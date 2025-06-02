@@ -16,7 +16,9 @@ public class InitializeCharacter : MonoBehaviour
     {
         //playerCharacter = EquipedUnit.equipedUnit;
         int playerDataCount = playerCharacter.Count;
+        int enemyDataCount = enemyCharacter.Count;
         int CharacterInBattleCount = playerCharacterInBattle.Count;
+        int EnemyInBattleCount = enemyCharacterInBattle.Count;
         if (CharacterInBattleCount > playerDataCount)
         {
             for (int i = playerDataCount; i < CharacterInBattleCount; i++)
@@ -28,6 +30,20 @@ public class InitializeCharacter : MonoBehaviour
             foreach (CharacterInBattle character in nullCharacter)
             {
                 playerCharacterInBattle.Remove(character);
+                Destroy(character.gameObject);
+            }
+        }
+        if (EnemyInBattleCount > enemyDataCount)
+        {
+            for (int i = enemyDataCount; i < EnemyInBattleCount; i++)
+            {
+                battleManager.TeamAI.Remove(enemyCharacterInBattle[i]);
+                battleUI.activeEnemyCharacter.Remove(enemyCharacterInBattle[i]);
+                nullCharacter.Add(enemyCharacterInBattle[i]);
+            }
+            foreach (CharacterInBattle character in nullCharacter)
+            {
+                enemyCharacterInBattle.Remove(character);
                 Destroy(character.gameObject);
             }
         }
