@@ -15,6 +15,9 @@ MonoBehaviour:
   ID: 200010
   statusName: "Ch\u1EA5n th\u01B0\u01A1ng"
   type: 1
-  duration: 1
+  duration: -1
   Icon: {fileID: 0}
+  canStack: 0
+  maxStack: 1
+  isHeadVFX: 1
   PercentAmount: 10

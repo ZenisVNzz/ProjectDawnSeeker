@@ -15,5 +15,8 @@ MonoBehaviour:
   ID: 200015
   statusName: "Nguy\u1EC1n r\u1EE7a"
   type: 1
-  duration: 1
+  duration: 2
   Icon: {fileID: 0}
+  canStack: 0
+  maxStack: 1
+  isHeadVFX: 1

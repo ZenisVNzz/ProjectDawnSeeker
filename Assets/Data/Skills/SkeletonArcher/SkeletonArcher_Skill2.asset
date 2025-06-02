@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7c7c0aa238eea419ca1f54d1d1b2b2, type: 3}
+  m_Name: SkeletonArcher_Skill2
+  m_EditorClassIdentifier: 
+  ID: 300026
+  skillName: none
+  description: none
+  icon: {fileID: 0}
+  mpCost: 2
+  animation: {fileID: 7400000, guid: 0d5db49569123074b94b146984cccb3d, type: 2}
+  passiveSkill: 1
+  supportSkill: 0
+  move: 0
+  isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
+  crUP: {fileID: 11400000, guid: e524639c43492bd43907091a949ea0f1, type: 2}
+  atkUP: {fileID: 11400000, guid: 94ec968db9241264fa351737f61c1ec9, type: 2}

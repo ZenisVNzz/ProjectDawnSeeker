@@ -10,8 +10,12 @@ public class Swordsman_Skill3 : SkillBase
 
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {     
+        base.DoAction(user, target);
+    }
+
+    public override void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
+    {
         user.ApplyStatusEffect(atkUP, 2);
         user.ApplyStatusEffect(critUP, 2);
-        base.DoAction(user, target);
     }
 }

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef0f3323c8b53147a892c06f8e228ed, type: 3}
+  m_Name: EliteOrc
+  m_EditorClassIdentifier: 
+  characterID: 100108
+  characterName: Elite Orc
+  characterType: 1
+  characterSprite: {fileID: -1365949498890891276, guid: bbba4939ea140e342a3ddd2749d172ec, type: 3}
+  characterAnimation: {fileID: 9100000, guid: 9177a50fbb07eb84f8e50ae9558a3bc9, type: 2}
+  isBoss: 0
+  skillList:
+  - {fileID: 11400000, guid: ae06a1a0ca22af441bab6381ca8a96d5, type: 2}
+  - {fileID: 11400000, guid: 03e75ca63dec50c4aadd993f0042d826, type: 2}
+  - {fileID: 11400000, guid: a73f773129f93a04ca4ea3133dba77ec, type: 2}
+  level: 1
+  ATK: 67
+  HP: 580
+  DEF: 28
+  MP: 4
+  CR: 0.1
+  CD: 1.5
+  DC: 0.05
+  PC: 0.05
+  maxLevel: 100
+  currentXP: 0
+  neededXP: 100
+  ATKPerLevel: 4.2
+  HPPerLevel: 30
+  DEFPerLevel: 3.7
+  MPPerLevel: 0
+  CRPerLevel: 0
+  CDPerLevel: 0

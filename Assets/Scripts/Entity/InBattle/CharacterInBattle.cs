@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UIElements.Experimental;
 
 public enum State
 {
@@ -31,6 +32,7 @@ public class CharacterInBattle : MonoBehaviour
     public float PC { get; private set; }
     public List<SkillBase> skillList { get; private set; }
 
+    public bool isBoss = false;
     public bool isAlive = true;
     public bool isActionAble = true;
     public bool isLifeSteal = false;
@@ -43,6 +45,8 @@ public class CharacterInBattle : MonoBehaviour
     public bool isHeatShock = false;
     public bool isCritAfterAttack = false;
     public bool isCharge = false;
+    public bool isGetATKBuffWhenDodge = false;
+    public bool isMark = false;
 
     public int chargeTurn = 0;
 
@@ -67,18 +71,24 @@ public class CharacterInBattle : MonoBehaviour
         this.DC = characterData.DC;
         this.PC = characterData.PC;
         this.skillList = characterData.skillList;
+        this.isBoss = characterData.isBoss;
     }
 
-    private SpriteRenderer sr;
     private BattleManager battleManager;
     public BattleUI battleUI;
     public DmgPopUp dmgPopUp;
     private Animator animator;
     public VFXManager vfxManager;
     private bool isClickable = false;
-    private List<StatusEffect> EffectOnTurn = new List<StatusEffect>();
+    public bool isParry = false;
+    public bool isDodge = false;
+    private bool dodgeSucces = false;
+    public bool isPenetrating = false;
+    public bool isFullPenetrating = false;
+    public CharacterInBattle markCaster;
 
     public float savedDmg;
+    public int savedHitCount;
     public float savedTotalDmgHit = 0f;
     public bool isCrit;
     public float savedHeal;
@@ -88,13 +98,15 @@ public class CharacterInBattle : MonoBehaviour
     public State currentState;
     private int currentSkillID;
 
+    private Queue<Action> effectAnimationQueue = new Queue<Action>();
+    private bool isPlayingEffectAnimation = false;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         animator.runtimeAnimatorController = characterAnimation;
         currentHP = HP;
         currentMP = MP;
-        sr = GetComponent<SpriteRenderer>(); // để thay đổi màu
         battleManager = FindFirstObjectByType<BattleManager>(); // tìm script quản lý trận đấu
         IdleState(); // trạng thái idle khi bắt đầu
         battleUI.RefreshBattleUI();
@@ -119,20 +131,26 @@ public class CharacterInBattle : MonoBehaviour
         float totaldamage = damage;
         totaldamage = totaldamage / hitCount;
 
-        /*if (isAlive || attacker != null || attacker.isAlive)
+        if (isAlive || attacker != null || attacker.isAlive)
         {
             if (UnityEngine.Random.value < PC)
             {
-                Attack(attacker, target);
+                isParry = true;
                 Debug.Log(charName + " đã phản đòn");
-                return; // Không nhận sát thương
+                return;
             }
             else if (UnityEngine.Random.value < DC)
             {
+                isDodge = true;
+                if (isGetATKBuffWhenDodge)
+                {
+                    dodgeSucces = true;
+                }
+                attacker.savedDmg = 0;
                 Debug.Log(charName + " đã né đòn");
                 return;
             }
-        }*/
+        }
 
         if (attacker.isEnchantment)
         {
@@ -142,7 +160,8 @@ public class CharacterInBattle : MonoBehaviour
         {
             totaldamage = totaldamage * 1.2f;
         }    
-
+        
+        savedHitCount = hitCount;
         attacker.savedDmg = totaldamage;
 
         if (attacker.isEnchantment)
@@ -167,13 +186,47 @@ public class CharacterInBattle : MonoBehaviour
             currentAttacker.isCrit = false;
         }
 
-        amount = amount - DEF;
+        if (isPenetrating)
+        {
+            amount = amount - (DEF / 2);
+        }
+        else if (isFullPenetrating)
+        {
+        }
+        else
+        {
+            amount = amount - DEF;
+        }
+        amount = amount - (DEF / savedHitCount);
+
         if (amount <= 0)
         {
             amount = 0;
         }
 
-        dmgPopUp.ShowDmgPopUp(amount, transform.position , currentAttacker.isCrit);    
+        if (dodgeSucces)
+        {
+            StartCoroutine(ApplyEffectDelay());
+        }
+
+        if (CheckIfDeath())
+        {
+            Die();
+        }
+        else
+        {
+            if (!isParry && !isDodge)
+            {
+                animator.Play("Hurt");
+            }
+        }
+
+        dmgPopUp.ShowDmgPopUp(amount, transform.position , currentAttacker.isCrit, isDodge, isParry);    
+
+        if (currentAttacker.isLifeSteal)
+        {
+            currentAttacker.Heal(amount * 0.2f);
+        }
 
         currentHP -= amount;
         savedTotalDmgHit += amount;
@@ -189,9 +242,9 @@ public class CharacterInBattle : MonoBehaviour
             if (index < 20)
             {
                 StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
-                this.ApplyStatusEffect(statusEffectInstance.paralysis, 1);
+                this.ApplyStatusEffect(statusEffectInstance.paralysis, 0);
             }
-        }    
+        }
     }    
 
     public void TakeDamagePercent(int Percent)
@@ -206,20 +259,24 @@ public class CharacterInBattle : MonoBehaviour
                 Die();
             }
             Debug.Log($"{charName} nhận {amount} damage dot");
-            dmgPopUp.ShowDmgPopUp(amount, transform.position, false);
+            dmgPopUp.ShowDmgPopUp(amount, transform.position, false, isDodge, isParry);
             battleUI.RefreshBattleUI();
         }         
     }
 
     public void TakeBleedingDamage(float damage)
     {
+        isParry = false;
+        isDodge = false;
+        dodgeSucces = false;
+
         currentHP -= damage;
         if (currentHP <= 0)
         {
             currentHP = 0;
             Die();
         }
-        dmgPopUp.ShowDmgPopUp(damage, transform.position, false);
+        dmgPopUp.ShowDmgPopUp(damage, transform.position, false, isDodge, isParry);
     }
 
     public void UseChargeSkill(SkillBase skill)
@@ -235,30 +292,25 @@ public class CharacterInBattle : MonoBehaviour
         return specialSkill;
     }    
 
-    public void Attack(CharacterInBattle target, CharacterInBattle attacker)
+    public void Attack(CharacterInBattle attacker, CharacterInBattle target)
     {
-        float damage = ATK;
+        SkillBase basicSkill = attacker.skillList[0];
         if (isAlive && target != null && target.isAlive)
         {
-            if (UnityEngine.Random.value < CR)
-            {
-                damage = ATK * CD;
-            }
-            target.TakeDamage(damage, 1, attacker, target);
-            savedDmg = damage - target.DEF;
-            currentTarget = target;
+            basicSkill.DoAction(attacker, target);
         }  
     }
 
     public void ApplyStatusEffect(StatusEffect effect, int duration)
     {
-        if (!activeStatusEffect.Contains(effect) || activeStatusEffect.Contains(effect) && effect.canStack && effect.maxStack > activeStatusEffect.Count(e => e.ID == effect.ID))
+        if (!isParry && !isDodge || isGetATKBuffWhenDodge && effect.ID == 200023)
         {
-            effect.OnApply(this);
-            effect.duration = duration;
-            activeStatusEffect.Add(effect);
-            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == false && e.isPlayOnEnd == false) && isAlive)
+            if (!activeStatusEffect.Any(e => e.ID == effect.ID) && isAlive ||
+               (effect.canStack && effect.maxStack > activeStatusEffect.Count(e => e.ID == effect.ID)) && isAlive)
             {
+                effect.OnApply(this);
+                effect.duration = duration;
+                activeStatusEffect.Add(effect);
                 GameObject effectAnchor;
                 if (!effect.isHeadVFX)
                 {
@@ -268,19 +320,31 @@ public class CharacterInBattle : MonoBehaviour
                 {
                     effectAnchor = transform.Find("HeadAnchor").gameObject;
                 }
-                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this);
+                EnqueueEffectAnimation(() => vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this));
+                Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
             }
-            else
+            else if (activeStatusEffect.Contains(effect) && !effect.canStack)
             {
-                EffectOnTurn.Add(effect);
+                activeStatusEffect.Find(e => e.ID == effect.ID).duration = effect.duration;
             }
-            Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
-        }
-        else if (activeStatusEffect.Contains(effect) && !effect.canStack)
-        {
-            activeStatusEffect.Find(e => e.ID == effect.ID).duration = effect.duration;
-        }
+        }          
     }  
+
+    public IEnumerator ApplyEffectDelay()
+    {
+        StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
+        yield return new WaitForSeconds(0.7f);
+        ApplyStatusEffect(statusEffectInstance.ATKbuff, 99);
+    }   
+    
+    public void ResetState()
+    {
+        isPenetrating = false;
+        isFullPenetrating = false;
+        isParry = false;
+        isDodge = false;
+        dodgeSucces = false;
+    }
 
     public void StartTurn()
     {
@@ -293,7 +357,10 @@ public class CharacterInBattle : MonoBehaviour
         }    
         else
         {
-            currentMP++;
+            if (isMPRecoveryAble)
+            {
+                currentMP++;
+            }
         }           
         if (currentMP > characterData.MP)
         {
@@ -304,9 +371,17 @@ public class CharacterInBattle : MonoBehaviour
 
     public void OnEndTurn()
     {
-        if (characterType == characterType.Enemy)
+        if (isMPRecoveryAble)
         {
-            currentMP += 3;
+            if (characterType == characterType.Enemy)
+            {
+                currentMP += 3;
+            }
+        }
+
+        if (currentMP > characterData.MP)
+        {
+            currentMP = characterData.MP;
         }
 
         for (int i = activeStatusEffect.Count - 1; i >= 0; i--)
@@ -323,7 +398,6 @@ public class CharacterInBattle : MonoBehaviour
                 activeStatusEffect.RemoveAt(i);
             }
         }
-        EffectOnTurn.Clear();
     }
 
     public void Heal(float healAmount)
@@ -414,7 +488,7 @@ public class CharacterInBattle : MonoBehaviour
 
     public void OnSupportSkillHit()
     {
-        battleUI.RefreshBattleUI();
+        battleUI.RefreshBattleUI(); 
         targetPosition = currentTarget.transform.position;
         dmgPopUp.ShowHealPopUp(savedHeal, targetPosition);
     }    
@@ -423,40 +497,6 @@ public class CharacterInBattle : MonoBehaviour
     {
         MinusHP(dmg);
         battleUI.RefreshBattleUI();
-        if (CheckIfDeath())
-        {
-            Die();
-        }
-        else
-        {
-            animator.Play("Hurt");          
-        }
-
-        List<StatusEffect> toRemoveEffect = new List<StatusEffect>();
-        foreach (var effect in EffectOnTurn)
-        {
-            
-            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 && vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == true) && isAlive)
-            {
-                GameObject effectAnchor;
-                if (!effect.isHeadVFX)
-                {
-                    effectAnchor = transform.Find("EffectAnchor").gameObject;
-                }
-                else
-                {
-                    effectAnchor = transform.Find("HeadAnchor").gameObject;
-                }
-
-                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this);
-                toRemoveEffect.Add(effect);
-            }
-        }
-        foreach (var effect in toRemoveEffect)
-        {
-            EffectOnTurn.Remove(effect);
-        }
-        toRemoveEffect.Clear();
     }
 
     public void SetIdleState()
@@ -475,37 +515,7 @@ public class CharacterInBattle : MonoBehaviour
     public void OnAttackEnd()
     {
         isCrit = false;
-        IdleState();       
-        PlayEffectOnEndAction();
-    }
-
-    public void PlayEffectOnEndAction()
-    {
-        StartCoroutine(PlayEffectsWithDelay());
-    }
-
-    private IEnumerator PlayEffectsWithDelay()
-    {
-        var effectListCopy = new List<StatusEffect>(EffectOnTurn);
-
-        foreach (var effect in effectListCopy)
-        {
-            if (activeStatusEffect.Count(e => e.ID == effect.ID) <= 1 &&
-                vfxManager.effect.Any(e => e.ID == effect.ID && e.isPlayOnHit == false) &&
-                isAlive)
-            {
-                GameObject effectAnchor = effect.isHeadVFX
-                    ? transform.Find("HeadAnchor").gameObject
-                    : transform.Find("EffectAnchor").gameObject;
-
-                vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this);
-
-                yield return new WaitForSeconds(1f);
-            }
-        }
-
-        yield return StartCoroutine(vfxManager.StopEffect(characterData.characterID, currentSkillID));
-        EffectOnTurn.Clear();
+        IdleState();
     }
 
     public void RangeSkillEffect(int skillID)
@@ -610,7 +620,31 @@ public class CharacterInBattle : MonoBehaviour
         isAlive = false;
         isActionAble = false;
         animator.Play("Death");
+        if (isMark)
+        {
+            markCaster.Heal(markCaster.HP * 0.2f);
+        }    
         vfxManager.StopAllEffect(characterData.characterID);
         OnDeath?.Invoke(this);
+    }
+    public void EnqueueEffectAnimation(Action playEffectAnimation)
+    {
+        effectAnimationQueue.Enqueue(playEffectAnimation);
+        if (!isPlayingEffectAnimation)
+        {
+            StartCoroutine(ProcessEffectAnimationQueue());
+        }
+    }
+
+    private IEnumerator ProcessEffectAnimationQueue()
+    {
+        isPlayingEffectAnimation = true;
+        while (effectAnimationQueue.Count > 0)
+        {
+            var playEffect = effectAnimationQueue.Dequeue();
+            playEffect?.Invoke();
+            yield return new WaitForSeconds(1f);
+        }
+        isPlayingEffectAnimation = false;
     }
 }

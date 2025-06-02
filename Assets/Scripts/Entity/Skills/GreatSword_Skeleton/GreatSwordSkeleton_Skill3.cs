@@ -8,6 +8,11 @@ public class GreatSwordSkeleton_Skill3 : SkillBase
 
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
+        
+    }
+
+    public override void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
+    {
         BattleManager battleManager = FindAnyObjectByType<BattleManager>();
         foreach (CharacterInBattle character in battleManager.TeamPlayer)
         {

@@ -1,4 +1,4 @@
-using TMPro;
+﻿using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -7,11 +7,11 @@ public class DmgPopUp : MonoBehaviour
     public GameObject dmgPopUpPrefab;
     public Transform canvasRectTransform;
 
-    public void ShowDmgPopUp(float damage, Vector3 position, bool isCrit)
+    public void ShowDmgPopUp(float damage, Vector3 position, bool isCrit, bool isDodge, bool isParry)
     {
         GameObject dmgPopUp = Instantiate(dmgPopUpPrefab);
         GameObject crit = dmgPopUp.transform.Find("Crit").gameObject;
-        if (isCrit)
+        if (isCrit && !isDodge && !isParry)
         {
             crit.SetActive(true);
         }
@@ -24,7 +24,18 @@ public class DmgPopUp : MonoBehaviour
         dmgPopUp.transform.position = pos;
         TextMeshProUGUI text = dmgPopUp.transform.Find("Text (TMP)").GetComponent<TextMeshProUGUI>();
         float round = Mathf.Round(damage * 100f) / 100f;
-        text.text = round.ToString();
+        if (!isDodge && !isParry)
+        {
+            text.text = round.ToString();
+        }    
+        else if (isDodge)
+        {
+            text.text = "NÉ ĐÒN!";
+        }    
+        else
+        {
+            text.text = "PHẢN ĐÒN!";
+        }    
         Destroy(dmgPopUp, 0.8f);
     }
 

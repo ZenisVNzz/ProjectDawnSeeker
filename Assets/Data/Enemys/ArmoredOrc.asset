@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef0f3323c8b53147a892c06f8e228ed, type: 3}
+  m_Name: ArmoredOrc
+  m_EditorClassIdentifier: 
+  characterID: 100107
+  characterName: Armored Orc
+  characterType: 1
+  characterSprite: {fileID: 2912446813672376553, guid: 1c1c66dc03bcc484697cbf0efec78ad5, type: 3}
+  characterAnimation: {fileID: 9100000, guid: 96de825bf20c58d4aaa031a7218ea143, type: 2}
+  isBoss: 0
+  skillList:
+  - {fileID: 11400000, guid: 25461dd6bad1250469e205ecc5a89098, type: 2}
+  - {fileID: 11400000, guid: 431351285a62bcd46b059fb3952340f5, type: 2}
+  - {fileID: 11400000, guid: c3dbb60cbcbd65f40a22f4977882fc1a, type: 2}
+  level: 1
+  ATK: 39
+  HP: 370
+  DEF: 26
+  MP: 3
+  CR: 0.1
+  CD: 1.5
+  DC: 0.05
+  PC: 0.05
+  maxLevel: 100
+  currentXP: 0
+  neededXP: 100
+  ATKPerLevel: 3.6
+  HPPerLevel: 31
+  DEFPerLevel: 2.9
+  MPPerLevel: 0
+  CRPerLevel: 0
+  CDPerLevel: 0
