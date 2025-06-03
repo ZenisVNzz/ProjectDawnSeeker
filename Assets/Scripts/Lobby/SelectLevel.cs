@@ -16,24 +16,11 @@ public class SelectLevel : MonoBehaviour
             {
                 GameManager gameManager = FindAnyObjectByType<GameManager>();
                 StageData currentStageData = gameManager.transform.Find("StageData").GetComponent<StageData>();
-                CharacterData enemyData = new CharacterData();
-                CharacterData enemyDataRunTime = new CharacterData();
-                Enemy enemy = new Enemy();
-                List<Enemy> enemies = new List<Enemy>();
-
-                foreach (Enemy character in stageData.enemies)
-                {            
-                    enemyData = character.characterData;                   
-                    enemyDataRunTime = Instantiate(enemyData);
-                    enemyDataRunTime.AddXP(GetXPNeededForLevel(character.level));
-                    enemy.characterData = enemyDataRunTime;
-                    enemies.Add(enemy);
-                }
 
                 currentStageData.stageID = stageData.stageID;
                 currentStageData.stageName = stageData.stageName;
                 currentStageData.enemies.Clear();
-                currentStageData.enemies = enemies;
+                currentStageData.enemies = stageData.enemies;
                 currentStageData.items.Clear();
                 currentStageData.items = stageData.items;
                 currentStageData.goldReward = stageData.goldReward;

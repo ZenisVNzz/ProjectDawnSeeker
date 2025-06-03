@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         inventory.LoadGold(currentDataSave.gold);
         foreach (CharacterDataSave characterData in currentDataSave.characters)
         {
-            CharacterData character = characterDataStorage.GetCharacterByID(characterData.characterID);
+            CharacterData character = Instantiate(characterDataStorage.GetCharacterByID(characterData.characterID));
             character.AddXP(characterData.characterXP);
             inventory.AddCharacter(character);
         }

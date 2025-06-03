@@ -59,6 +59,8 @@ public class OnEndStage : MonoBehaviour
                 Slider expSlider = charExpObj.transform.Find("XPBar").GetComponent<Slider>();
                 TextMeshProUGUI levelText = charExpObj.transform.Find("XPBar/Level").GetComponent<TextMeshProUGUI>();
                 TextMeshProUGUI expText = charExpObj.transform.Find("XPBar/XP").GetComponent<TextMeshProUGUI>();
+                charIMG.sprite = character.characterSprite;
+                charName.text = character.characterName;
                 expSlider.maxValue = character.neededXP;
                 expSlider.value = character.currentXP;
                 levelText.text = $"Level {character.level}";
@@ -71,7 +73,7 @@ public class OnEndStage : MonoBehaviour
             GameManager gameManager = FindAnyObjectByType<GameManager>();
             StageData stageData = gameManager.transform.Find("StageData").GetComponent<StageData>();
             TextMeshProUGUI failedText = failedPanel.transform.Find("Failed").GetComponent<TextMeshProUGUI>();
-            TextMeshProUGUI turnIndex = victoryPanel.transform.Find("Turn/Number").GetComponent<TextMeshProUGUI>();
+            TextMeshProUGUI turnIndex = failedPanel.transform.Find("Turn/Number").GetComponent<TextMeshProUGUI>();
             failedText.text = $"BẠN ĐÃ THẤT BẠI TRONG VIỆC CHINH PHỤC {stageData.stageName}";
             turnIndex.text = battleManager.GetCurrentTurn().ToString();
         }

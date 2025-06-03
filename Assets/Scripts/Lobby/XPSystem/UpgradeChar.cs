@@ -456,9 +456,8 @@ public class UpgradeChar : MonoBehaviour
                 UpdateCharInfo(character);
                 UpdateItem(character);
                 showInfoOnClick.ShowInfoCharacter();
-                GeneralDataSave generalDataSave = GameManager.Instance.currentDataSave;
-                generalDataSave.characters.Find(c => c.characterID == character.characterID).characterXP = character.currentTotalXP;
-                GameManager.Instance.saveManager.SaveGame(generalDataSave);
+                Inventory.Instance.currentDataSave.characters.Find(c => c.characterID == character.characterID).characterXP = character.currentTotalXP;
+                Inventory.Instance.SaveGame();
             }  
             else if (!Inventory.Instance.SpendMoney(goldNeeded))
             {
