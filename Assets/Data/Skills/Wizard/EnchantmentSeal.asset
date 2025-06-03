@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: EnchantmentSeal
   m_EditorClassIdentifier: 
   ID: 300016
-  skillName: "\u1EA4n k\xFD c\u01B0\u1EDDng h\xF3a"
+  skillName: "C\u01B0\u1EDDng \u1EA4n"
   description: "\u0110\u1EB7t m\u1ED9t d\u1EA5u \u1EA5n c\u01B0\u1EDDng h\xF3a l\xEAn
     m\u1ED9t \u0111\u1ED3ng minh, gi\xFAp k\u1EF9 n\u0103ng ti\u1EBFp theo c\u1EE7a
     \u0111\u1ED3ng m\xECnh \u0111\xF3 t\u0103ng s\u1EE9c t\u1EA5n c\xF4ng."
-  icon: {fileID: 0}
+  icon: {fileID: 4418594680779074092, guid: 4255d5881aa8a7f4680ced090f7cb515, type: 3}
   mpCost: 3
   animation: {fileID: 7400000, guid: ae3ecb08182e1214bb2cd79c1c53ae41, type: 2}
   passiveSkill: 0

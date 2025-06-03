@@ -1,0 +1,20 @@
+using System.Linq;
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "Werewolf_Skill3", menuName = "Skills/Werewolf/Werewolf_Skill3")]
+public class Werewolf_Skill3 : SkillBase
+{
+    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    {
+        if (target.activeStatusEffect.Any(e => e.ID == 200013))
+        {
+            target.TakeDamage(user.ATK * 1.6f, 5, user, target);
+        }
+        else
+        {
+            target.TakeDamage(user.ATK * 1.4f, 5, user, target);
+        }    
+       
+        base.DoAction(user, target);
+    }
+}

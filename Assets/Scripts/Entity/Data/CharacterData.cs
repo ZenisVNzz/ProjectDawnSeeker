@@ -12,8 +12,10 @@ public class CharacterData : ScriptableObject
     public characterType characterType;
     public Sprite characterSprite;
     public RuntimeAnimatorController characterAnimation;
+    public bool isBoss = false;
 
     public List<SkillBase> skillList;
+    public int currentTotalXP = 0;
 
     [Header("Stats")]
     public float level;
@@ -40,6 +42,7 @@ public class CharacterData : ScriptableObject
     public void AddXP(int xp)
     {
         currentXP += xp;
+        currentTotalXP += xp;
         while (currentXP >= neededXP)
         {
             if (!(level + 1 > maxLevel))

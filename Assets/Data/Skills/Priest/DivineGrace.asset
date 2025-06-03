@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DivineGrace
   m_EditorClassIdentifier: 
   ID: 300010
-  skillName: "Th\xE1nh \xE2n"
+  skillName: "Th\xE1nh \xC2n"
   description: "T\u1EA1o ra m\u1ED9t v\xF9ng \xE1nh s\xE1ng thi\xEAng, gi\xFAp thanh
     t\u1EA9y m\u1ECDi hi\u1EC7u \u1EE9ng b\u1EA5t l\u1EE3i."
   icon: {fileID: 5444266203284193634, guid: 92a86945a7b41644fa709a98cb33f1f5, type: 3}
@@ -22,4 +22,5 @@ MonoBehaviour:
   passiveSkill: 1
   supportSkill: 0
   move: 0
+  isAOE: 0
   purify: {fileID: 11400000, guid: 938f8110bade56943abe95f59af25a89, type: 2}

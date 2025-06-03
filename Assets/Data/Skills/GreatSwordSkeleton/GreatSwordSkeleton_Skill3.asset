@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bc783c9c849114eb52b91cad287100, type: 3}
+  m_Name: GreatSwordSkeleton_Skill3
+  m_EditorClassIdentifier: 
+  ID: 300024
+  skillName: none
+  description: none
+  icon: {fileID: 0}
+  mpCost: 3
+  animation: {fileID: 0}
+  passiveSkill: 1
+  supportSkill: 0
+  move: 0
+  isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
+  curse: {fileID: 11400000, guid: 55ab8c34462a9164aa03ff2abdeb9ee1, type: 2}
+  atkUP: {fileID: 11400000, guid: 94ec968db9241264fa351737f61c1ec9, type: 2}

@@ -27,7 +27,7 @@ public class Lobby : MonoBehaviour
 
     public void BackToLobby()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void ApplicationQuit()

@@ -17,9 +17,8 @@ MonoBehaviour:
   description: "Gi\u1EA3i ph\xF3ng lu\u1ED3ng mana trong c\u01A1 th\u1EC3, gi\xFAp
     h\u1ED3i ph\u1EE5c l\u1EA1i m\u1ED9t l\u01B0\u1EE3ng mana nh\u1EA5t \u0111\u1ECBnh,
     \u0111\u1ED3ng th\u1EDDi t\u0103ng s\u1EE9c t\u1EA5n c\xF4ng trong v\xF2ng 1
-    l\u01B0\u1EE3t. Tuy nhi\xEAn, b\u1EA3n th\xE2n s\u1EBD b\u1ECB suy y\u1EBFu trong
-    l\u01B0\u1EE3t \u0111\xF3. "
-  icon: {fileID: 0}
+    l\u01B0\u1EE3t. "
+  icon: {fileID: 3881739568085620697, guid: 7bc42fb4324be0b4ab67580e847f0753, type: 3}
   mpCost: 0
   animation: {fileID: 7400000, guid: 158033dd6d892d44c9897563c8b7b04d, type: 2}
   passiveSkill: 1

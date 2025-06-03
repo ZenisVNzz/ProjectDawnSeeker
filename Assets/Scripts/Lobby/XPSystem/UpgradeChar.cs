@@ -19,6 +19,7 @@ public class UpgradeChar : MonoBehaviour
     public Button removeAllButton;
     public TextMeshProUGUI gold;
     public GameObject goldNotice;
+    public ShowInfoOnClick showInfoOnClick;
     public Dictionary<ItemBase, int> currentItems = new Dictionary<ItemBase, int>();
     public Dictionary<ItemBase, int> itemsUsing = new Dictionary<ItemBase, int>();
     private List<GameObject> CurrentItemObj = new List<GameObject>();
@@ -251,6 +252,19 @@ public class UpgradeChar : MonoBehaviour
                 }
             });
         }
+
+        var sorted = CurrentItemObj
+            .OrderBy(obj =>
+            {
+                var itemBase = currentItems.Keys.FirstOrDefault(x => x.name == obj.name);
+                return itemBase != null ? itemBase.itemID : int.MaxValue;
+            })
+            .ToList();
+
+        for (int i = 0; i < sorted.Count; i++)
+        {
+            sorted[i].transform.SetSiblingIndex(i);
+        }
     }
 
     public void AddPreviewXP(ItemBase item, CharacterData character)
@@ -424,6 +438,7 @@ public class UpgradeChar : MonoBehaviour
 
     public void OnUpgrade(CharacterData character)
     {
+        upgradeButton.onClick.RemoveAllListeners();
         upgradeButton.onClick.AddListener(() =>
         {
             if (goldNeeded != 0 && Inventory.Instance.SpendMoney(goldNeeded))
@@ -440,16 +455,21 @@ public class UpgradeChar : MonoBehaviour
                 character.AddXP(totalEXP);      
                 UpdateCharInfo(character);
                 UpdateItem(character);
+                showInfoOnClick.ShowInfoCharacter();
+                GeneralDataSave generalDataSave = GameManager.Instance.currentDataSave;
+                generalDataSave.characters.Find(c => c.characterID == character.characterID).characterXP = character.currentTotalXP;
+                GameManager.Instance.saveManager.SaveGame(generalDataSave);
             }  
             else if (!Inventory.Instance.SpendMoney(goldNeeded))
             {
                 goldNotice.SetActive(true);
-            }    
+            }   
         });
     }
 
     public void OnClickAddAll()
     {
+        addAllButton.onClick.RemoveAllListeners();
         addAllButton.onClick.AddListener(() =>
         {
             var xpItems = currentItems
@@ -488,6 +508,7 @@ public class UpgradeChar : MonoBehaviour
     
     public void OnClickRemoveAll()
     {
+        removeAllButton.onClick.RemoveAllListeners();
         removeAllButton.onClick.AddListener(() =>
         {
             var usingItems = new List<ItemBase>(itemsUsing.Keys);

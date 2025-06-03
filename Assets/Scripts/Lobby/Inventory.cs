@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -10,12 +11,27 @@ public class Inventory : MonoBehaviour
     public Dictionary<ItemBase, int> items = new Dictionary<ItemBase, int>();
     public event Action<int> OnMoneyChanged;
 
+    private SaveManager saveManager;
+    public GeneralDataSave currentDataSave;
+
+    private void OnEnable()
+    {
+        saveManager = FindAnyObjectByType<SaveManager>();
+        OnMoneyChanged += OnGoldChange;
+    }
+
     public void AddCharacter(CharacterData character)
     {
         if (!summonedCharacters.Contains(character))
         {
             summonedCharacters.Add(character);
             Debug.Log($"Da them {character.characterName} vao Inventory");
+            currentDataSave.characters.Add(new CharacterDataSave
+            {
+                characterID = character.characterID,
+                characterXP = character.currentTotalXP
+            });
+            saveManager.SaveGame(currentDataSave);
         }
     }
 
@@ -37,7 +53,23 @@ public class Inventory : MonoBehaviour
         else
         {
             items.Add(item, 1);
-        }    
+        }
+
+        ItemDataSave itemData = new ItemDataSave
+        {
+            itemID = item.itemID,
+            quantity = items[item]
+        };
+        if (currentDataSave.items.Any(items => items.itemID == item.itemID))
+        {
+            var existingItem = currentDataSave.items.First(i => i.itemID == item.itemID);
+            existingItem.quantity = items[item];
+        }
+        else
+        {
+            currentDataSave.items.Add(itemData);
+        }
+        saveManager.SaveGame(currentDataSave);
     }
     
     public void UseItem(ItemBase item)
@@ -48,8 +80,17 @@ public class Inventory : MonoBehaviour
             if (items[item] == 0)
             {
                 items.Remove(item);
-            }               
+                ItemDataSave itemData = currentDataSave.items.FirstOrDefault(i => i.itemID == item.itemID);
+                currentDataSave.items.Remove(itemData);
+                saveManager.SaveGame(currentDataSave);
+            }    
+            else
+            {
+                currentDataSave.items.Find(i => i.itemID == item.itemID).quantity = items[item];
+                saveManager.SaveGame(currentDataSave);
+            }
         }
+
     }
 
     private void Awake()
@@ -63,14 +104,13 @@ public class Inventory : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        LoadMoney();
     }
 
     public void AddMoney(int amount)
     {
         gold += amount;
-        SaveMoney();
         OnMoneyChanged?.Invoke(gold);
+        saveManager.SaveGame(currentDataSave);
     }
 
     public bool SpendMoney(int amount)
@@ -78,8 +118,8 @@ public class Inventory : MonoBehaviour
         if (gold >= amount)
         {
             gold -= amount;
-            SaveMoney();
             OnMoneyChanged?.Invoke(gold);
+            saveManager.SaveGame(currentDataSave);
             return true;
         }
         return false;
@@ -90,14 +130,15 @@ public class Inventory : MonoBehaviour
         return gold.ToString("N0");
     }
 
-    private void SaveMoney()
+    public void LoadGold(int amount)
     {
-        PlayerPrefs.SetInt("Gold", gold);
+        gold = amount;
+        OnMoneyChanged?.Invoke(gold);
     }
 
-    private void LoadMoney()
+    public void OnGoldChange(int gold)
     {
-        gold = PlayerPrefs.GetInt("Gold", 0);
-        OnMoneyChanged?.Invoke(gold);
+        currentDataSave.gold = gold;
+        saveManager.SaveGame(currentDataSave);
     }
 }

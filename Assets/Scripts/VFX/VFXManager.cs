@@ -8,6 +8,8 @@ using System;
 public class VFXManager : MonoBehaviour
 {
     public List<Effect> effect;
+    private Dictionary<int, Dictionary<int, Queue<Vector3>>> queuedEffects = new Dictionary<int, Dictionary<int, Queue<Vector3>>>();
+    private Dictionary<int, Dictionary<int, bool>> isPlaying = new Dictionary<int, Dictionary<int, bool>>();
     public Dictionary<int, Dictionary<int, GameObject>> activeEffectVFX = new Dictionary<int, Dictionary<int, GameObject>> ();
     private Dictionary<int, GameObject> effectDictionary;
 
@@ -103,8 +105,6 @@ public class Effect
 {
     public int ID;
     public bool duringEffect;
-    public bool isPlayOnHit;
-    public bool isPlayOnEnd;
     public bool isMove;
     public GameObject effectPrefab;
 }

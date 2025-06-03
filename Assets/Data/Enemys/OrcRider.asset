@@ -17,11 +17,13 @@ MonoBehaviour:
   characterType: 1
   characterSprite: {fileID: -7304371395691662354, guid: c10e42932643c71408e0fa4684e92ddf, type: 3}
   characterAnimation: {fileID: 9100000, guid: 5428c5ee9ea7e554dbb588825d3a0d2e, type: 2}
+  isBoss: 1
   skillList:
   - {fileID: 11400000, guid: 6c2399602cf241644900a33b8dd8769a, type: 2}
   - {fileID: 11400000, guid: b785de65d5f775a4eae915b222e4f88a, type: 2}
   - {fileID: 11400000, guid: bfbfc38983aef4d488add7a40191ad36, type: 2}
   - {fileID: 11400000, guid: 096f798562f834649bdf2fde32905df8, type: 2}
+  level: 0
   ATK: 6
   HP: 190
   DEF: 5
@@ -30,3 +32,12 @@ MonoBehaviour:
   CD: 1.2
   DC: 0.05
   PC: 0.08
+  maxLevel: 1
+  currentXP: 0
+  neededXP: 100
+  ATKPerLevel: 0
+  HPPerLevel: 0
+  DEFPerLevel: 0
+  MPPerLevel: 0
+  CRPerLevel: 0
+  CDPerLevel: 0

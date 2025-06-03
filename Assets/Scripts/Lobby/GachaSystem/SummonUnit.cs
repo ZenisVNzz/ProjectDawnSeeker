@@ -54,7 +54,7 @@ public class SummonUnit : MonoBehaviour
 
             int randomIndex = Random.Range(1, 101);
             CharacterData selectedCharacter;
-            if (randomIndex <= 50)
+            if (randomIndex <= 75)
             {
                 int randomCharIndex = Random.Range(0, currentBanner.rateUpCharacter.Count);
                 selectedCharacter = currentBanner.rateUpCharacter[randomCharIndex];

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dbf5acfa986e947898ef15e9b84700, type: 3}
+  m_Name: XPTier3
+  m_EditorClassIdentifier: 
+  itemID: 400003
+  itemName: EXP Card III
+  itemType: 0
+  itemIcon: {fileID: -5177836335071954779, guid: 3adc0b7a2727dd642afecc6227da5a6c, type: 3}
+  xpAmount: 700
