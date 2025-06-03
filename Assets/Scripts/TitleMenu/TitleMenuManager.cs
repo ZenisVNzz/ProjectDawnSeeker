@@ -21,6 +21,7 @@ public class TitleMenuManager : MonoBehaviour
             {
                 File.Delete(savePath);
             }
+            StageData.currentStage = 500001;
         });
         loadGameButton.onClick.AddListener(() => {
             GameManager gameManager = FindAnyObjectByType<GameManager>();

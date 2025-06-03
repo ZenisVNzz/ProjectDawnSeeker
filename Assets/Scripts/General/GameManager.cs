@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Inventory found");
         inventory.currentDataSave = currentDataSave;
         currentDataSave = saveManager.LoadSave();
+        StageData.currentStage = currentDataSave.currentStage;
         foreach (ItemDataSave itemData in currentDataSave.items)
         {
             for (int i = 0; i < itemData.quantity; i++)

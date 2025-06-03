@@ -573,9 +573,9 @@ MonoBehaviour:
   stageName: "T\u1EA7ng 2"
   enemies:
   - characterData: {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
-    level: 5
+    level: 8
   - characterData: {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
-    level: 5
+    level: 8
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 4
@@ -733,8 +733,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cd13504692764d96b8f99a21d783e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageID: 0
-  stageName: 
+  stageID: 500010
+  stageName: "T\u1EA7ng 10"
   enemies: []
   items: []
   goldReward: 0
@@ -1751,10 +1751,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cd13504692764d96b8f99a21d783e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageID: 0
-  stageName: 
-  enemies: []
-  items: []
+  stageID: 500006
+  stageName: "T\u1EA7ng 6"
+  enemies:
+  - characterData: {fileID: 11400000, guid: dfdcdda75f77ad14daa85aa01e34840d, type: 2}
+    level: 1
+  - characterData: {fileID: 11400000, guid: b6d45a616d42eb04f8f6c173444990c6, type: 2}
+    level: 40
+  - characterData: {fileID: 11400000, guid: 72f96bb9d409f11449c7f0d179209493, type: 2}
+    level: 40
+  items:
+  - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
+    quantity: 30
+  - item: {fileID: 11400000, guid: fef872e475ce8dd43aedda56f50bf15a, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 426404fa50c8fb74cb18ad5a99b509cd, type: 2}
+    quantity: 5
+  - item: {fileID: 11400000, guid: 58d7f8c102047e24eb064d614b28620e, type: 2}
+    quantity: 1
   goldReward: 0
   expGainForEachChar: 0
   bossLevel: 0
@@ -1974,6 +1988,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2103196405}
+  - {fileID: 1520724581}
   m_Father: {fileID: 88518645}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2091,11 +2106,11 @@ MonoBehaviour:
   stageName: "T\u1EA7ng 1"
   enemies:
   - characterData: {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
-    level: 3
+    level: 2
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
-    quantity: 3
-  goldReward: 100
+    quantity: 2
+  goldReward: 125
   expGainForEachChar: 50
   bossLevel: 0
   isUnlock: 1
@@ -2596,17 +2611,17 @@ MonoBehaviour:
   stageName: "T\u1EA7ng 3"
   enemies:
   - characterData: {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
-    level: 10
+    level: 20
   - characterData: {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
-    level: 10
+    level: 20
   - characterData: {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
-    level: 10
+    level: 20
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 8
   - item: {fileID: 11400000, guid: fef872e475ce8dd43aedda56f50bf15a, type: 2}
     quantity: 3
-  goldReward: 300
+  goldReward: 175
   expGainForEachChar: 300
   bossLevel: 0
   isUnlock: 0
@@ -2758,8 +2773,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cd13504692764d96b8f99a21d783e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageID: 0
-  stageName: 
+  stageID: 500007
+  stageName: "T\u1EA7ng 7"
   enemies: []
   items: []
   goldReward: 0
@@ -3064,8 +3079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cd13504692764d96b8f99a21d783e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageID: 0
-  stageName: 
+  stageID: 500008
+  stageName: "T\u1EA7ng 8"
   enemies: []
   items: []
   goldReward: 0
@@ -3533,10 +3548,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cd13504692764d96b8f99a21d783e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageID: 0
-  stageName: 
-  enemies: []
-  items: []
+  stageID: 500005
+  stageName: "T\u1EA7ng 5"
+  enemies:
+  - characterData: {fileID: 11400000, guid: b6d45a616d42eb04f8f6c173444990c6, type: 2}
+    level: 25
+  - characterData: {fileID: 11400000, guid: 47ff32cd979b714458e423594d54ac4a, type: 2}
+    level: 25
+  - characterData: {fileID: 11400000, guid: 72f96bb9d409f11449c7f0d179209493, type: 2}
+    level: 25
+  items:
+  - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
+    quantity: 15
+  - item: {fileID: 11400000, guid: fef872e475ce8dd43aedda56f50bf15a, type: 2}
+    quantity: 8
+  - item: {fileID: 11400000, guid: 426404fa50c8fb74cb18ad5a99b509cd, type: 2}
+    quantity: 2
   goldReward: 0
   expGainForEachChar: 0
   bossLevel: 0
@@ -3677,6 +3704,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520002186}
   m_CullTransparentMesh: 1
+--- !u!1 &1520724580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1520724581}
+  m_Layer: 5
+  m_Name: Lock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1520724581
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520724580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 884359983}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1543605258
 GameObject:
   m_ObjectHideFlags: 0
@@ -3825,8 +3887,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cd13504692764d96b8f99a21d783e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageID: 0
-  stageName: 
+  stageID: 500009
+  stageName: "T\u1EA7ng 9"
   enemies: []
   items: []
   goldReward: 0
@@ -4253,11 +4315,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cd13504692764d96b8f99a21d783e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageID: 0
-  stageName: 
-  enemies: []
-  items: []
-  goldReward: 0
+  stageID: 500004
+  stageName: "T\u1EA7ng 4"
+  enemies:
+  - characterData: {fileID: 11400000, guid: 47ff32cd979b714458e423594d54ac4a, type: 2}
+    level: 10
+  - characterData: {fileID: 11400000, guid: 72f96bb9d409f11449c7f0d179209493, type: 2}
+    level: 10
+  items:
+  - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
+    quantity: 10
+  - item: {fileID: 11400000, guid: fef872e475ce8dd43aedda56f50bf15a, type: 2}
+    quantity: 5
+  - item: {fileID: 11400000, guid: 426404fa50c8fb74cb18ad5a99b509cd, type: 2}
+    quantity: 1
+  goldReward: 200
   expGainForEachChar: 0
   bossLevel: 0
   isUnlock: 0

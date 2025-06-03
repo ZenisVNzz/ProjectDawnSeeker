@@ -10,6 +10,7 @@ public class OnEndStage : MonoBehaviour
     public GameObject charExpPrefab;
 
     private BattleManager battleManager;
+    private SaveManager saveManager;
 
     private void Start()
     {
@@ -57,7 +58,7 @@ public class OnEndStage : MonoBehaviour
                 Image charIMG = charExpObj.transform.Find("CharIMG/IMG").GetComponent<Image>();
                 Slider expSlider = charExpObj.transform.Find("XPBar").GetComponent<Slider>();
                 TextMeshProUGUI levelText = charExpObj.transform.Find("XPBar/Level").GetComponent<TextMeshProUGUI>();
-                TextMeshProUGUI expText = charExpObj.transform.Find("XPBar/EP").GetComponent<TextMeshProUGUI>();
+                TextMeshProUGUI expText = charExpObj.transform.Find("XPBar/XP").GetComponent<TextMeshProUGUI>();
                 expSlider.maxValue = character.neededXP;
                 expSlider.value = character.currentXP;
                 levelText.text = $"Level {character.level}";

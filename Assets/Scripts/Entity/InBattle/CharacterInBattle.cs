@@ -188,16 +188,15 @@ public class CharacterInBattle : MonoBehaviour
 
         if (isPenetrating)
         {
-            amount = amount - (DEF / 2);
+            amount = amount - ((DEF / savedHitCount) / 2);
         }
         else if (isFullPenetrating)
         {
         }
         else
         {
-            amount = amount - DEF;
+            amount = amount - (DEF / savedHitCount);
         }
-        amount = amount - (DEF / savedHitCount);
 
         if (amount <= 0)
         {

@@ -20,6 +20,11 @@ public class Inventory : MonoBehaviour
         OnMoneyChanged += OnGoldChange;
     }
 
+    public void SaveGame()
+    {
+        saveManager.SaveGame(currentDataSave);
+    }    
+
     public void AddCharacter(CharacterData character)
     {
         if (!summonedCharacters.Contains(character))

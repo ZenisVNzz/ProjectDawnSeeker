@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StageData : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class StageData : MonoBehaviour
     public bool bossLevel;
     public bool isUnlock;
 
-    public static int currentStage = 500001;
+    public static int currentStage;
 
     void Start()
     {
@@ -24,12 +25,19 @@ public class StageData : MonoBehaviour
     {
         if (currentStage >= stageID)
         {
-            isUnlock = true;
+            if (SceneManager.GetActiveScene().name == "DUNGEON")
+            {
+                isUnlock = true;
+                transform.Find("Lock").gameObject.SetActive(false);
+            }
         }
     }
 
     public void UnlockNextStage()
     {
         currentStage++;
+        Debug.Log($"Unlock stage: {currentStage}");
+        Inventory.Instance.currentDataSave.currentStage = currentStage;
+        Inventory.Instance.SaveGame();
     }
 }
