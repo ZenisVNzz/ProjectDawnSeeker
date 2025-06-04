@@ -4325,10 +4325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3a55584076d5f940b895d895606d5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCharacter:
-  - {fileID: 11400000, guid: 67d48f84bb13132498043bdea7abbbd2, type: 2}
-  enemyCharacter:
-  - {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
+  playerCharacter: []
+  enemyCharacter: []
   playerCharacterInBattle:
   - {fileID: 554530855}
   - {fileID: 808364462}
@@ -4336,6 +4334,8 @@ MonoBehaviour:
   - {fileID: 1283657988}
   enemyCharacterInBattle:
   - {fileID: 1172855266}
+  - {fileID: 223460985}
+  - {fileID: 1483041557}
   battleManager: {fileID: 587159867}
   battleUI: {fileID: 1726673298}
   defaultChar: {fileID: 0}
@@ -5880,7 +5880,7 @@ Animator:
   m_GameObject: {fileID: 554530851}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 86841d3cd887da141928b7124b644782, type: 2}
+  m_Controller: {fileID: 9100000, guid: ba4dc4b0829bf094bb1c90a8210de6de, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11874,7 +11874,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &993823457
 AudioSource:
   m_ObjectHideFlags: 0
