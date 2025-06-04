@@ -2027,9 +2027,9 @@ MonoBehaviour:
   isMark: 0
   chargeTurn: 0
   activeStatusEffect: []
-  battleUI: {fileID: 0}
-  dmgPopUp: {fileID: 0}
-  vfxManager: {fileID: 0}
+  battleUI: {fileID: 1726673298}
+  dmgPopUp: {fileID: 773611578}
+  vfxManager: {fileID: 1489556992}
   isParry: 0
   isDodge: 0
   isPenetrating: 0
@@ -4325,8 +4325,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3a55584076d5f940b895d895606d5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCharacter: []
-  enemyCharacter: []
+  playerCharacter:
+  - {fileID: 11400000, guid: e7efa7c16590dbb4fbb52ff948a859cc, type: 2}
+  enemyCharacter:
+  - {fileID: 11400000, guid: 47ff32cd979b714458e423594d54ac4a, type: 2}
+  - {fileID: 11400000, guid: 72f96bb9d409f11449c7f0d179209493, type: 2}
   playerCharacterInBattle:
   - {fileID: 554530855}
   - {fileID: 808364462}
@@ -5880,7 +5883,7 @@ Animator:
   m_GameObject: {fileID: 554530851}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ba4dc4b0829bf094bb1c90a8210de6de, type: 2}
+  m_Controller: {fileID: 9100000, guid: ecc1db7f099f27c4d8bf550288d537ba, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -13947,7 +13950,7 @@ Animator:
   m_GameObject: {fileID: 1172855262}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ecc1db7f099f27c4d8bf550288d537ba, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -18251,9 +18254,9 @@ MonoBehaviour:
   isMark: 0
   chargeTurn: 0
   activeStatusEffect: []
-  battleUI: {fileID: 0}
-  dmgPopUp: {fileID: 0}
-  vfxManager: {fileID: 0}
+  battleUI: {fileID: 1726673298}
+  dmgPopUp: {fileID: 773611578}
+  vfxManager: {fileID: 1489556992}
   isParry: 0
   isDodge: 0
   isPenetrating: 0
@@ -18514,6 +18517,22 @@ MonoBehaviour:
     duringEffect: 0
     isMove: 0
     effectPrefab: {fileID: 5013008182667652122, guid: 9e6b71560683f58499a51ff1579706e9, type: 3}
+  - ID: 200023
+    duringEffect: 0
+    isMove: 0
+    effectPrefab: {fileID: 6573002566907771083, guid: 3a0f79ace1cfc284cae58d804204c1c4, type: 3}
+  - ID: 200003
+    duringEffect: 0
+    isMove: 0
+    effectPrefab: {fileID: 7964554375854093784, guid: 66dfe280864730a4790af89f017f9379, type: 3}
+  - ID: 200015
+    duringEffect: 0
+    isMove: 0
+    effectPrefab: {fileID: 4215338955607971493, guid: dd14aa70069535341a088a79b670c4c1, type: 3}
+  - ID: 200010
+    duringEffect: 0
+    isMove: 0
+    effectPrefab: {fileID: 3893557652907700656, guid: 21ed8d5cb9c2f0944b1e5ab7352912f6, type: 3}
 --- !u!1 &1489819655
 GameObject:
   m_ObjectHideFlags: 0
@@ -21100,6 +21119,8 @@ MonoBehaviour:
   - {fileID: 1283657988}
   activeEnemyCharacter:
   - {fileID: 1172855266}
+  - {fileID: 223460985}
+  - {fileID: 1483041557}
   CharPanel:
   - {fileID: 1972132718}
   - {fileID: 1364629152}

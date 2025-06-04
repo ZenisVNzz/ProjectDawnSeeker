@@ -47,7 +47,6 @@ public class BattleManager : MonoBehaviour
             if (plannedActions.Count >= actionAble)
             {
                 Debug.Log("Thực thi hành động");
-                selectSkill.DisableSkillUI();
                 Action();
                 startTurnButton.interactable = false;
                 if (buttonPanelAnimator.GetCurrentAnimatorStateInfo(0).IsName("Popup"))

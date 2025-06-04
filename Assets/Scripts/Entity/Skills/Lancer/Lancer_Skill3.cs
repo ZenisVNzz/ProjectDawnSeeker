@@ -5,13 +5,17 @@ public class Lancer_Skill3 : SkillBase
 {
     public StatusEffect ATKup;
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    {   
+        base.DoAction(user, target);
+    }
+
+    public override void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
     {
         BattleManager battleManager = FindAnyObjectByType<BattleManager>();
         foreach (CharacterInBattle character in battleManager.TeamPlayer)
         {
-            character.ApplyStatusEffect(ATKup, 2); // Apply ATK up effect to all player characters
+            character.ApplyStatusEffect(ATKup, 2);
         }
-        base.DoAction(user, target);
     }
 }
 
