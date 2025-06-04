@@ -24,7 +24,7 @@ public class SelectSkill : MonoBehaviour
     private GameObject skillBox;
 
     void Start()
-    {     
+    {
         targetArrow = FindFirstObjectByType<TargetArrow>();
         Button button = GetComponentInParent<Button>();
         skillBox = transform.parent.gameObject;
@@ -106,6 +106,7 @@ public class SelectSkill : MonoBehaviour
     
     public void SetOriginalParent()
     {
+        skillBoxList.RemoveAll(box => box == null);
         foreach (GameObject skillBox in skillBoxList)
         {
             if (siblingIndex.ContainsKey(skillBox))

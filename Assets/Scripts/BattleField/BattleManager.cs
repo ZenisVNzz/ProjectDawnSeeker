@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -11,7 +12,10 @@ public class BattleManager : MonoBehaviour
     public List<PlannedAction> plannedActions = new List<PlannedAction>();
     public List<EnemyPlannedAction> enemyPlannedAction = new List<EnemyPlannedAction>();
 
-    [SerializeField] CharacterInBattle selectedCharacter = null;
+    public event Action OnEndTurn;
+    public event Action<bool> OnFinishedStage;
+
+    private CharacterInBattle selectedCharacter = null;
     public BattleUI battleUI;
     public Button startTurnButton;
     public SelectSkill selectSkill;
@@ -262,7 +266,7 @@ public class BattleManager : MonoBehaviour
         var aliveList = list.Where(x => x.isAlive).ToList();
         if (aliveList.Count == 0) return null;
 
-        int index = Random.Range(0, aliveList.Count);
+        int index = UnityEngine.Random.Range(0, aliveList.Count);
         return aliveList[index];
     }
 
@@ -312,6 +316,7 @@ public class BattleManager : MonoBehaviour
                 EnablePlayerTeam(false);
                 resultUI.ShowFailedUI();
                 StopAllCoroutines();
+                OnFinishedStage?.Invoke(false);
             }
         }
         else if (NormalCurrentTurn >= NormalMaxTurn)
@@ -321,12 +326,14 @@ public class BattleManager : MonoBehaviour
                 Debug.Log("Chiến Thắng!");
                 resultUI.ShowVictoryUI();
                 StopAllCoroutines();
+                OnFinishedStage?.Invoke(true);
             }
             else
             {
                 Debug.Log("Thất Bại!");
                 resultUI.ShowFailedUI();
                 StopAllCoroutines();
+                OnFinishedStage?.Invoke(false);
             }
             EnablePlayerTeam(false);
         }
@@ -335,12 +342,14 @@ public class BattleManager : MonoBehaviour
             Debug.Log("Thất Bại!");
             resultUI.ShowFailedUI();
             StopAllCoroutines();
+            OnFinishedStage?.Invoke(false);
         }
         else if (GetFirstAlive(TeamAI) == null)
         {
             Debug.Log("Chiến Thắng!");
             resultUI.ShowVictoryUI();
             StopAllCoroutines();
+            OnFinishedStage?.Invoke(true);
         }
     }
 
@@ -632,6 +641,7 @@ public class BattleManager : MonoBehaviour
         {
             character.StartTurn();
         }
+        OnEndTurn?.Invoke();
         StartCoroutine(CheckIfPlayerCanAction(1));
     }
 
@@ -729,4 +739,16 @@ public class BattleManager : MonoBehaviour
             yield return null;
         }
     }    
+
+    public int GetCurrentTurn()
+    {
+        if (BossLevel)
+        {
+            return BossCurrentTurn;
+        }
+        else
+        {
+            return NormalCurrentTurn;
+        }
+    }
 }

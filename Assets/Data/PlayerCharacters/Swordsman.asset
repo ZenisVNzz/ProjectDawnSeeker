@@ -17,11 +17,13 @@ MonoBehaviour:
   characterType: 0
   characterSprite: {fileID: 3613407544420638092, guid: 61d7c92136031284f9c94fef5c6f57d6, type: 3}
   characterAnimation: {fileID: 9100000, guid: a003cf0e149667e4597f92eeae2b3d27, type: 2}
+  isBoss: 0
   skillList:
   - {fileID: 11400000, guid: e22efd04b21bc8845b9b631fcf85cf34, type: 2}
   - {fileID: 11400000, guid: 1fc899be4d437c14ba6fe8661a87e157, type: 2}
   - {fileID: 11400000, guid: cbffde8899865d84baba160f87d9bbe1, type: 2}
   - {fileID: 11400000, guid: 356007e24b12d9e4bb2389838a2d53ac, type: 2}
+  currentTotalXP: 0
   level: 1
   ATK: 33
   HP: 220

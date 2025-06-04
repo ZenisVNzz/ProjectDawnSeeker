@@ -1691,9 +1691,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 197
-        y: 114
-        width: 10
-        height: 11
+        y: 98
+        width: 27
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1704,28 +1704,6 @@ TextureImporter:
       bones: []
       spriteID: 6eb30143b541aa670800000000000000
       internalID: 8550669224464366566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FreeHorrorUi_61
-      rect:
-        serializedVersion: 2
-        x: 213
-        y: 114
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fdfb840703b454c30800000000000000
-      internalID: 4342960087083040735
       vertices: []
       indices: 
       edges: []
@@ -1770,50 +1748,6 @@ TextureImporter:
       bones: []
       spriteID: 2bf76dc8701c35e80800000000000000
       internalID: -8190991059085000782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FreeHorrorUi_64
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 98
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: abb71c3e7127ae690800000000000000
-      internalID: -7572114376539145286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FreeHorrorUi_65
-      rect:
-        serializedVersion: 2
-        x: 213
-        y: 98
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 32d242ad525375420800000000000000
-      internalID: 2618620145029098787
       vertices: []
       indices: 
       edges: []
