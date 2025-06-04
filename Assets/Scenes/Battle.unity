@@ -5158,7 +5158,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
-  isMPRecoveryAble: 1
+  isMPRecoveryAble: 0
   isDeepWound: 0
   isSilent: 0
   isEnchantment: 0
@@ -5561,7 +5561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -776, y: -307.7}
+  m_AnchoredPosition: {x: -776, y: -307.69995}
   m_SizeDelta: {x: -1540.68, y: -989.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &576944279
@@ -12392,7 +12392,7 @@ Animator:
   m_GameObject: {fileID: 1172855262}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e838edd3464ffdb469d12fc15cd534d4, type: 2}
+  m_Controller: {fileID: 9100000, guid: ecc1db7f099f27c4d8bf550288d537ba, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14832,7 +14832,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -776, y: -398.7}
+  m_AnchoredPosition: {x: -776, y: -398.69995}
   m_SizeDelta: {x: -1540.68, y: -989.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1364629154
