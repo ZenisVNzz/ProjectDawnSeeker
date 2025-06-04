@@ -20,7 +20,7 @@ public class InitializeCharacter : MonoBehaviour
         enemyCharacter = new List<CharacterData>();
 
         if (SceneManager.GetActiveScene().name != "Battle")
-        {       
+        {
             playerCharacter.Add(defaultChar);
         }
         else
