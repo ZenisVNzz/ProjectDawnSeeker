@@ -474,7 +474,7 @@ public class CharacterInBattle : MonoBehaviour
     public void PlaySoundEffect(string soundName)
     {
         GameObject soudEffectObj = GameObject.Find(soundName);
-        AudioSource audioSource = soudEffectObj.GetComponent<AudioSource>();
+        AudioSource audioSource = soudEffectObj.GetComponent<AudioSource>();    
         audioSource.Play();
     }
 

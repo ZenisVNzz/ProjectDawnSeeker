@@ -25,6 +25,8 @@ public class SelectSkill : MonoBehaviour
 
     void Start()
     {
+        GameObject buttonPanel = GameObject.Find("ButtonPanel");
+        Animator buttonPanelAnimator = buttonPanel.GetComponent<Animator>();
         targetArrow = FindFirstObjectByType<TargetArrow>();
         Button button = GetComponentInParent<Button>();
         skillBox = transform.parent.gameObject;
@@ -59,6 +61,7 @@ public class SelectSkill : MonoBehaviour
                 if (this.skill.passiveSkill)
                 {
                     isPlayerSelectingTarget = false;
+                    battleManager.plannedActions.RemoveAll(a => a.Caster == characterInBattle);
                     battleManager.plannedActions.Add(new PlannedAction
                     {
                         Caster = characterInBattle,
@@ -67,6 +70,7 @@ public class SelectSkill : MonoBehaviour
                     });
                     selectedSkill = this.skill;
                     battleManager.actionOrderUI.AddAction(characterInBattle, characterInBattle, this.skill, false);
+                    buttonPanelAnimator.Play("Hide");
                 }
 
                 if (currentSkillBox != null && currentSkillBox != this.skillBox)
@@ -145,7 +149,6 @@ public class SelectSkill : MonoBehaviour
 
     public void EnableSkillUI()
     {
-        canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1;
         foreach (GameObject skillBox in skillBoxList)
         {
