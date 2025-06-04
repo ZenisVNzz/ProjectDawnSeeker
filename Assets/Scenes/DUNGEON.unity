@@ -1757,9 +1757,9 @@ MonoBehaviour:
   - characterData: {fileID: 11400000, guid: dfdcdda75f77ad14daa85aa01e34840d, type: 2}
     level: 1
   - characterData: {fileID: 11400000, guid: b6d45a616d42eb04f8f6c173444990c6, type: 2}
-    level: 40
+    level: 80
   - characterData: {fileID: 11400000, guid: 72f96bb9d409f11449c7f0d179209493, type: 2}
-    level: 40
+    level: 70
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 30
@@ -2611,11 +2611,11 @@ MonoBehaviour:
   stageName: "T\u1EA7ng 3"
   enemies:
   - characterData: {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
-    level: 20
+    level: 25
   - characterData: {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
-    level: 20
+    level: 25
   - characterData: {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
-    level: 20
+    level: 25
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 8
@@ -3552,11 +3552,11 @@ MonoBehaviour:
   stageName: "T\u1EA7ng 5"
   enemies:
   - characterData: {fileID: 11400000, guid: b6d45a616d42eb04f8f6c173444990c6, type: 2}
-    level: 25
+    level: 40
   - characterData: {fileID: 11400000, guid: 47ff32cd979b714458e423594d54ac4a, type: 2}
-    level: 25
+    level: 60
   - characterData: {fileID: 11400000, guid: 72f96bb9d409f11449c7f0d179209493, type: 2}
-    level: 25
+    level: 60
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 15
@@ -4319,9 +4319,9 @@ MonoBehaviour:
   stageName: "T\u1EA7ng 4"
   enemies:
   - characterData: {fileID: 11400000, guid: 47ff32cd979b714458e423594d54ac4a, type: 2}
-    level: 10
+    level: 40
   - characterData: {fileID: 11400000, guid: 72f96bb9d409f11449c7f0d179209493, type: 2}
-    level: 10
+    level: 35
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 10
