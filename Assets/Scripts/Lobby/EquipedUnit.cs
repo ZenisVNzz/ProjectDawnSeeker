@@ -9,6 +9,11 @@ public class EquipedUnit : MonoBehaviour
     public Transform unitContainer;
     public List<GameObject> equipedUnitSlot;
 
+    private void Start()
+    {
+        UpdateUI();
+    }
+
     public void UpdateUI()
     {
         foreach (GameObject equipSLot in equipedUnitSlot)

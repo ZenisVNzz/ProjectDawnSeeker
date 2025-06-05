@@ -9083,9 +9083,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 642968022}
-  - component: {fileID: 642968025}
-  - component: {fileID: 642968024}
   - component: {fileID: 642968023}
+  - component: {fileID: 642968024}
   m_Layer: 5
   m_Name: Slot (2)
   m_TagString: Untagged
@@ -9160,37 +9159,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &642968024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642968021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 316ee9f20d499d749a817c9554a6f592, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charIMG: {fileID: 2049294222}
-  charName: {fileID: 447158838}
-  charLevel: {fileID: 0}
-  hpIndex: {fileID: 1952648849}
-  defIndex: {fileID: 104863383}
-  atkIndex: {fileID: 898362891}
-  mpIndex: {fileID: 503097048}
-  crIndex: {fileID: 1253342158}
-  cdIndex: {fileID: 515010836}
-  dcIndex: {fileID: 1349220502}
-  pcIndex: {fileID: 97349280}
-  skillPanel:
-  - {fileID: 1613435846}
-  - {fileID: 1967916018}
-  - {fileID: 514203452}
-  - {fileID: 1356776144}
-  characterInfo: {fileID: 0}
-  equipButton: {fileID: 0}
-  unEquipButton: {fileID: 0}
---- !u!114 &642968025
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -22486,9 +22454,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1643749196}
-  - component: {fileID: 1643749199}
-  - component: {fileID: 1643749198}
   - component: {fileID: 1643749197}
+  - component: {fileID: 1643749198}
   m_Layer: 5
   m_Name: Slot (1)
   m_TagString: Untagged
@@ -22563,37 +22530,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1643749198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1643749195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 316ee9f20d499d749a817c9554a6f592, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charIMG: {fileID: 2049294222}
-  charName: {fileID: 447158838}
-  charLevel: {fileID: 0}
-  hpIndex: {fileID: 1952648849}
-  defIndex: {fileID: 104863383}
-  atkIndex: {fileID: 898362891}
-  mpIndex: {fileID: 503097048}
-  crIndex: {fileID: 1253342158}
-  cdIndex: {fileID: 515010836}
-  dcIndex: {fileID: 1349220502}
-  pcIndex: {fileID: 97349280}
-  skillPanel:
-  - {fileID: 1613435846}
-  - {fileID: 1967916018}
-  - {fileID: 514203452}
-  - {fileID: 1356776144}
-  characterInfo: {fileID: 0}
-  equipButton: {fileID: 0}
-  unEquipButton: {fileID: 0}
---- !u!114 &1643749199
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27072,9 +27008,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1965841635}
-  - component: {fileID: 1965841638}
-  - component: {fileID: 1965841637}
   - component: {fileID: 1965841636}
+  - component: {fileID: 1965841637}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -27149,37 +27084,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1965841637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965841634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 316ee9f20d499d749a817c9554a6f592, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charIMG: {fileID: 2049294222}
-  charName: {fileID: 447158838}
-  charLevel: {fileID: 0}
-  hpIndex: {fileID: 1952648849}
-  defIndex: {fileID: 104863383}
-  atkIndex: {fileID: 898362891}
-  mpIndex: {fileID: 503097048}
-  crIndex: {fileID: 1253342158}
-  cdIndex: {fileID: 515010836}
-  dcIndex: {fileID: 1349220502}
-  pcIndex: {fileID: 97349280}
-  skillPanel:
-  - {fileID: 1613435846}
-  - {fileID: 1967916018}
-  - {fileID: 514203452}
-  - {fileID: 1356776144}
-  characterInfo: {fileID: 0}
-  equipButton: {fileID: 0}
-  unEquipButton: {fileID: 0}
---- !u!114 &1965841638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

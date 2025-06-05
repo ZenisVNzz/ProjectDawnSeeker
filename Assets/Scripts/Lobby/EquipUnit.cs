@@ -7,10 +7,12 @@ public class EquipUnit : MonoBehaviour
     private EquipedUnit equipedUnit;
     public CharDataStorage charDataStorage;
     public GameObject unEquip;
+
     private void Start()
-    {
+    {      
         equipedUnit = FindAnyObjectByType<EquipedUnit>();
         Button button = GetComponent<Button>();
+        button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() =>
         {
             EquipedUnit.equipedUnit.Add(charDataStorage.characterData);

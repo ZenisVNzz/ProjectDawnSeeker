@@ -20,6 +20,11 @@ public class Lobby : MonoBehaviour
         SceneManager.LoadScene("Manage");
     }
 
+    public void LoadTitleScreen()
+    {
+        SceneManager.LoadScene("TITLESCREEN");
+    }    
+
     public void ToggleSettingWindow()
     {
         Setting.SetActive(!Setting.activeSelf);
@@ -31,6 +36,11 @@ public class Lobby : MonoBehaviour
     }
 
     public void ApplicationQuit()
+    {
+        Invoke("Quit", 0.1f);
+    }
+
+    private void Quit()
     {
         Application.Quit();
     }

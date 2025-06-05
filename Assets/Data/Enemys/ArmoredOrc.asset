@@ -22,6 +22,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 25461dd6bad1250469e205ecc5a89098, type: 2}
   - {fileID: 11400000, guid: 431351285a62bcd46b059fb3952340f5, type: 2}
   - {fileID: 11400000, guid: c3dbb60cbcbd65f40a22f4977882fc1a, type: 2}
+  currentTotalXP: 0
   level: 1
   ATK: 39
   HP: 370
@@ -31,7 +32,7 @@ MonoBehaviour:
   CD: 1.5
   DC: 0.05
   PC: 0.05
-  maxLevel: 100
+  maxLevel: 1000
   currentXP: 0
   neededXP: 100
   ATKPerLevel: 3.6

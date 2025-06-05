@@ -21,6 +21,7 @@ MonoBehaviour:
   skillList:
   - {fileID: 11400000, guid: 748d1906295489d4a995743533d145c8, type: 2}
   - {fileID: 11400000, guid: 4fbe18f81f2a2cc40b8cf4a9d5dd4337, type: 2}
+  currentTotalXP: 0
   level: 1
   ATK: 41
   HP: 250
@@ -30,7 +31,7 @@ MonoBehaviour:
   CD: 1.5
   DC: 0.05
   PC: 0.05
-  maxLevel: 100
+  maxLevel: 1000
   currentXP: 0
   neededXP: 100
   ATKPerLevel: 3.2

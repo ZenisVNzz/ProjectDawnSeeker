@@ -6164,7 +6164,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 617239333}
         m_TargetAssemblyTypeName: ResultButtonFunc, Assembly-CSharp
         m_MethodName: ReturnToLobby
         m_Mode: 1
@@ -11877,7 +11877,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &993823457
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11888,10 +11888,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5c01722ba10d1034da672fded9400222, type: 3}
-  m_Resource: {fileID: 8300000, guid: 5c01722ba10d1034da672fded9400222, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 951616e3822b6944abc2ffa6328a6b8f, type: 3}
+  m_Resource: {fileID: 8300000, guid: 951616e3822b6944abc2ffa6328a6b8f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -13950,7 +13950,7 @@ Animator:
   m_GameObject: {fileID: 1172855262}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ecc1db7f099f27c4d8bf550288d537ba, type: 2}
+  m_Controller: {fileID: 9100000, guid: e838edd3464ffdb469d12fc15cd534d4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -16226,7 +16226,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 617239333}
         m_TargetAssemblyTypeName: ResultButtonFunc, Assembly-CSharp
         m_MethodName: ReturnToLobby
         m_Mode: 1
@@ -23443,7 +23443,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 617239333}
         m_TargetAssemblyTypeName: ResultButtonFunc, Assembly-CSharp
         m_MethodName: GoToNextStage
         m_Mode: 1

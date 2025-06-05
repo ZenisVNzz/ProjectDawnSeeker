@@ -359,6 +359,7 @@ public class BattleManager : MonoBehaviour
     {
         ToggleX2 toggleX2 = FindFirstObjectByType<ToggleX2>();
         toggleX2.isOn = false;
+        Time.timeScale = 1f;
         if (victory)
         {
             resultUI.ShowVictoryUI();
@@ -416,6 +417,7 @@ public class BattleManager : MonoBehaviour
                 }             
                 
                 action.Skill.DoAction(action.Caster, action.Target);
+                battleUI.RefreshBattleUI();
 
                 if (action.Target.isParry)
                 {
@@ -498,6 +500,7 @@ public class BattleManager : MonoBehaviour
                                 }
 
                                 action.Skill.DoSpecialAction(action.Caster, action.Target);
+                                battleUI.RefreshBattleUI();
 
                                 if (action.Target.isParry)
                                 {
@@ -564,6 +567,7 @@ public class BattleManager : MonoBehaviour
                 }
 
                 action.Skill.DoAction(action.Caster, action.Target);
+                battleUI.RefreshBattleUI();
 
                 if (action.Target.isParry)
                 {
