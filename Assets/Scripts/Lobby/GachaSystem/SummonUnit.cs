@@ -21,7 +21,7 @@ public class SummonUnit : MonoBehaviour
     public GameObject summonedCharPrefab;
     public GameObject summoned10CharPrefab;
     public GameObject notEnoughGoldNotice;
-    private Canvas canvas;
+    public Canvas canvas;
     private bool isSkipping = false;
 
     private void Start()
@@ -30,7 +30,6 @@ public class SummonUnit : MonoBehaviour
         {
             inventory = Inventory.Instance;
         }
-        canvas = FindAnyObjectByType<Canvas>();
     }
 
     public void SummonCharacter()
