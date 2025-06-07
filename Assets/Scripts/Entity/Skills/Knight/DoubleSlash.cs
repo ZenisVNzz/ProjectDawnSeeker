@@ -7,7 +7,7 @@ public class DoubleSlash : SkillBase
     public StatusEffect atkUP;
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
-        target.TakeDamage(user.ATK * 1.2f, 2, user, target);
+        target.TakeDamage(user.ATK * 1.3f, 2, user, target);
         base.DoAction(user, target);     
     }
 

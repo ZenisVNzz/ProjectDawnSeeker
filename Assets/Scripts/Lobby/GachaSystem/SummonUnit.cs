@@ -207,8 +207,15 @@ public class SummonUnit : MonoBehaviour
                 SummonedCharStorage.Add(summoned);
             }
 
-            CharacterData newCharData = Instantiate(selectedCharacter);
-            inventory.AddCharacter(newCharData);
+            if (inventory.summonedCharacters.Any(c => c.characterID == selectedCharacter.characterID))
+            {
+                inventory.AddMoney(50);
+            }
+            else
+            {
+                CharacterData newCharData = Instantiate(selectedCharacter);
+                inventory.AddCharacter(newCharData);
+            }
 
             Debug.Log($"Da trieu hoi {selectedCharacter.characterName} ");
 

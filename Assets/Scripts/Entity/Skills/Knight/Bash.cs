@@ -7,7 +7,7 @@ public class Bash : SkillBase
     public StatusEffect defUP;
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
-        float damage = user.ATK * 0.3f;
+        float damage = user.ATK * 0.4f;
         target.TakeDamage(damage, 1, user, target);
         int ran = Random.Range(0, 100);
         if (ran < 50)
