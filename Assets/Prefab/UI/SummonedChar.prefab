@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 8898188540250613552}
   - component: {fileID: 832615782551684550}
   - component: {fileID: 1132741755755435776}
+  - component: {fileID: 5694255172384906717}
   m_Layer: 0
   m_Name: Post-Processing
   m_TagString: Untagged
@@ -161,6 +162,39 @@ MonoBehaviour:
   hueShift: 3.72
   override_saturation: 1
   saturation: 0
+--- !u!114 &5694255172384906717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536886610453078266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b8536863586f94e9c05564e7e69c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  override_threshold: 1
+  threshold: 0.8
+  override_intensity: 1
+  intensity: 1
+  override_scatter: 1
+  scatter: 0.7
+  override_clamp: 1
+  clamp: 65472
+  override_tint: 1
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  override_highQualityFiltering: 1
+  highQualityFiltering: 0
+  override_downscale: 0
+  downscale: 0
+  override_maxIterations: 0
+  maxIterations: 6
+  override_dirtTexture: 1
+  dirtTexture: {fileID: 0}
+  override_dirtIntensity: 1
+  dirtIntensity: 0
 --- !u!1 &2573420383868218203
 GameObject:
   m_ObjectHideFlags: 0

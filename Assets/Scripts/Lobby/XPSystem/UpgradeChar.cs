@@ -15,6 +15,7 @@ public class UpgradeChar : MonoBehaviour
     public Transform itemUsingContainer;
     public GameObject ItemPrefab;
     public Button upgradeButton;
+    public GameObject upgradeNotification;
     public Button addAllButton;
     public Button removeAllButton;
     public TextMeshProUGUI gold;
@@ -456,6 +457,7 @@ public class UpgradeChar : MonoBehaviour
                 UpdateCharInfo(character);
                 UpdateItem(character);
                 showInfoOnClick.ShowInfoCharacter();
+                upgradeNotification.SetActive(true);
                 Inventory.Instance.currentDataSave.characters.Find(c => c.characterID == character.characterID).characterXP = character.currentTotalXP;
                 Inventory.Instance.SaveGame();
             }  

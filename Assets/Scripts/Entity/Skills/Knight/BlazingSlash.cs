@@ -9,11 +9,11 @@ public class BlazingSlash : SkillBase
     {
         if (target.activeStatusEffect.Any(effect => effect.ID == 200012))
         {
-            target.TakeDamage(user.ATK * 2.25f, 1, user, target);
+            target.TakeDamage(user.ATK * 2.1f, 1, user, target);
         }
         else
         {
-            target.TakeDamage(user.ATK * 1.8f, 1, user, target);
+            target.TakeDamage(user.ATK * 1.7f, 1, user, target);
         }
 
         base.DoAction(user, target);

@@ -133,13 +133,13 @@ public class CharacterInBattle : MonoBehaviour
 
         if (isAlive || attacker != null || attacker.isAlive)
         {
-            if (UnityEngine.Random.value < PC)
+            if (UnityEngine.Random.value < PC && isActionAble)
             {
                 isParry = true;
                 Debug.Log(charName + " đã phản đòn");
                 return;
             }
-            else if (UnityEngine.Random.value < DC)
+            else if (UnityEngine.Random.value < DC && isActionAble)
             {
                 isDodge = true;
                 if (isGetATKBuffWhenDodge)
@@ -217,6 +217,10 @@ public class CharacterInBattle : MonoBehaviour
             if (!isParry && !isDodge)
             {
                 animator.Play("Hurt");
+            }
+            else
+            {
+                amount = 0;
             }
         }
 
