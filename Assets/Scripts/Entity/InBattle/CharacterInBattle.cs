@@ -26,6 +26,7 @@ public class CharacterInBattle : MonoBehaviour
     public float DEF { get; private set; }
     public float MP { get; private set; }
     public float currentMP;
+    [field: SerializeField]
     public float CR { get; private set; }
     public float CD { get; private set; }
     public float DC { get; private set; }
@@ -172,7 +173,7 @@ public class CharacterInBattle : MonoBehaviour
 
     private void MinusHP(float amount)
     {
-        if (isCritAfterAttack == true)
+        if (currentAttacker.isCritAfterAttack == true)
         {
             currentAttacker.CR += 0.05f;
         }    
