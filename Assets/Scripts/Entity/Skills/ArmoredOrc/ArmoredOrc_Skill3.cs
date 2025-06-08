@@ -12,7 +12,7 @@ public class ArmoredOrc_Skill3 : SkillBase
         {
             if (player.isAlive)
             {
-                player.TakeDamage(user.ATK * 1.25f, 1, user, target);
+                player.TakeDamage(user.ATK * 1.15f, 1, user, target);
                 player.ApplyStatusEffect(defDown, 2);
             }    
         }

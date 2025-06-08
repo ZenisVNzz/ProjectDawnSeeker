@@ -155,7 +155,7 @@ public class CharacterInBattle : MonoBehaviour
 
         if (attacker.isEnchantment)
         {
-            totaldamage = totaldamage * 1.2f;
+            totaldamage = totaldamage * 1.25f;
         }
         if (isHeatShock)
         {
@@ -333,6 +333,12 @@ public class CharacterInBattle : MonoBehaviour
             }
         }          
     }  
+
+    public void PlayBuffEffect()
+    {
+        GameObject effectAnchor = transform.Find("EffectAnchor").gameObject;
+        vfxManager.PlayEffect(201000, effectAnchor.transform.position, this);
+    }    
 
     public IEnumerator ApplyEffectDelay()
     {

@@ -11,11 +11,11 @@ public class Werebear_Skill4 : SkillBase
     {
         if (target.activeStatusEffect.Any(e => e.ID == 200013))
         {
-            target.TakeDamage(user.ATK * 1.6f, 1, user, target);
+            target.TakeDamage(user.ATK * 1.4f, 1, user, target);
         }
         else
         {
-            target.TakeDamage(user.ATK * 1.4f, 1, user, target);
+            target.TakeDamage(user.ATK * 1.25f, 1, user, target);
         }   
         base.DoAction(user, target);
     }

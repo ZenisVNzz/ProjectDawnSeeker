@@ -5,7 +5,7 @@ public class Swordsman_Skill4 : SkillBase
 {
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
-        target.TakeDamage(user.ATK * 1.4f, 5, user, target);
+        target.TakeDamage(user.ATK * 1.35f, 5, user, target);
         user.isCritAfterAttack = true;
         base.DoAction(user, target);
     }
