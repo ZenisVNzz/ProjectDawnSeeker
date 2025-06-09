@@ -9,16 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c5d1d75507268940ac8bb2e93c3406d, type: 3}
-  m_Name: Heal
+  m_Script: {fileID: 11500000, guid: 0b8e1530398ae234398e22ac213fbafc, type: 3}
+  m_Name: Recovery
   m_EditorClassIdentifier: 
-  ID: 200005
-  statusName: "Ph\u01B0\u1EDBc l\xE0nh"
+  ID: 200025
+  statusName: "Ph\u01B0\u1EDBc L\xE0nh"
   type: 0
-  duration: 1
+  duration: 0
   Icon: {fileID: 0}
   canStack: 0
   maxStack: 1
   isHeadVFX: 0
-  CasterATK: 26
-  percent: 165
+  CasterATK: 0
+  percent: 90

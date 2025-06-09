@@ -9,19 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a78117992e387174483284a74bf21cd7, type: 3}
-  m_Name: ArmoredAxeman_Skill2
+  m_Script: {fileID: 11500000, guid: 22a3d56c0ed26634ca17b0822aef1676, type: 3}
+  m_Name: ArmoredAxeman_Skill1
   m_EditorClassIdentifier: 
-  ID: 0
-  skillName: 
-  description: 
+  ID: 300040
+  skillName: "Tr\u1ECDng K\u1EF9"
+  description: "B\u1ED5 m\u1ED9t nh\xE1t r\xECu v\xE0o m\u1EE5c ti\xEAu, g\xE2y s\xE1t
+    th\u01B0\u01A1ng c\u01A1 b\u1EA3n"
   icon: {fileID: 0}
   mpCost: 0
-  animation: {fileID: 0}
+  animation: {fileID: 7400000, guid: c3e13bb59dd981445a5d16d8c46b6b91, type: 2}
   passiveSkill: 0
   supportSkill: 0
-  move: 0
+  move: 1
   isAOE: 0
   isWaitForCharge: 0
   isUniqueSkill: 0
-  Bleed: {fileID: 0}

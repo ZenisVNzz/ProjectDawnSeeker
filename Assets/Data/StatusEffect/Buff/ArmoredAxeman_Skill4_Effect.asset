@@ -9,16 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c5d1d75507268940ac8bb2e93c3406d, type: 3}
-  m_Name: Heal
+  m_Script: {fileID: 11500000, guid: c7f48b44bbb5f354f87b2eadba77b077, type: 3}
+  m_Name: ArmoredAxeman_Skill4_Effect
   m_EditorClassIdentifier: 
-  ID: 200005
-  statusName: "Ph\u01B0\u1EDBc l\xE0nh"
+  ID: 200027
+  statusName: none
   type: 0
-  duration: 1
+  duration: 0
   Icon: {fileID: 0}
   canStack: 0
   maxStack: 1
   isHeadVFX: 0
-  CasterATK: 26
-  percent: 165
+  deadlyBlood: {fileID: 11400000, guid: 27ad77d94ef34784a88b78a6095ec581, type: 2}

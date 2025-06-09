@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5eba43d90b57c6f41ad3e4e1d3a09b17, type: 3}
-  m_Name: Knight Templar_Skill4
+  m_Name: KnightTemplar_Skill4
   m_EditorClassIdentifier: 
   ID: 300039
   skillName: "Kh\u1EA9u L\u1EC7nh Th\xE1nh Chi\u1EBFn "
@@ -20,12 +20,11 @@ MonoBehaviour:
     th\xE2n th\xEAm 10%"
   icon: {fileID: 0}
   mpCost: 4
-  animation: {fileID: 7400000, guid: 3e27532a85f90914e970a974f6b1d0d1, type: 2}
+  animation: {fileID: 0}
   passiveSkill: 1
   supportSkill: 0
   move: 0
   isAOE: 0
   isWaitForCharge: 0
   isUniqueSkill: 0
-  Taunting: {fileID: 0}
-  Deffup: {fileID: 0}
+  Taunting: {fileID: 11400000, guid: c06bcacfc17e9db448e40360a627b794, type: 2}

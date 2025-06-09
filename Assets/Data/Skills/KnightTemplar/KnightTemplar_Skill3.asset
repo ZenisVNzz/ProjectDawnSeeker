@@ -10,21 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 608f68b17d94a724b9502822c1684d5e, type: 3}
-  m_Name: Knight Templar_Skill3
+  m_Name: KnightTemplar_Skill3
   m_EditorClassIdentifier: 
   ID: 300038
-  skillName: "Ch\xFAc ph\xFAc c\u1EE7a th\u1EA7n"
-  description: "M\xF4 t\u1EA3: Ch\xFAc ph\xFAc cho to\xE0n b\u1ED9 \u0111\u1ED3ng
-    minh, ch\u1EEFa l\xE0nh nh\u1EEFng v\u1EBFt th\u01B0\u01A1ng c\u1EE7a h\u1ECD,
+  skillName: "Ch\xFAc Ph\xFAc C\u1EE7a Th\xE1nh"
+  description: "Ch\xFAc ph\xFAc cho to\xE0n b\u1ED9 \u0111\u1ED3ng minh, t\u1EEB
+    t\u1EEB ch\u1EEFa l\xE0nh nh\u1EEFng v\u1EBFt th\u01B0\u01A1ng c\u1EE7a h\u1ECD,
     \u0111\u1ED3ng th\u1EDDi t\u0103ng s\u1EE9c ph\xF2ng th\u1EE7 cho to\xE0n b\u1ED9
-    \u0111\u1ED3ng minh trong 1 l\u01B0\u1EE3t. "
+    \u0111\u1ED3ng minh trong 2 l\u01B0\u1EE3t"
   icon: {fileID: 0}
   mpCost: 3
-  animation: {fileID: 7400000, guid: 3e27532a85f90914e970a974f6b1d0d1, type: 2}
-  passiveSkill: 0
-  supportSkill: 1
+  animation: {fileID: 7400000, guid: 1ef838640acdf77448baff86da35fa05, type: 2}
+  passiveSkill: 1
+  supportSkill: 0
   move: 0
   isAOE: 0
   isWaitForCharge: 0
   isUniqueSkill: 0
-  Healing: {fileID: 11400000, guid: e055a91f639658549ad69a96d74a3327, type: 2}
+  healing: {fileID: 11400000, guid: d625ee4c19b64f342bc3246e39028f32, type: 2}
+  defUP: {fileID: 11400000, guid: f9d0b0d778f43ea4dac0332777c1b337, type: 2}

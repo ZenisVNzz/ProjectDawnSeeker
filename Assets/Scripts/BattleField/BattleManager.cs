@@ -409,6 +409,10 @@ public class BattleManager : MonoBehaviour
                     actionOrderUI.RemoveAction(action.Caster, action.Skill);
                     continue;
                 }
+                if (TeamPlayer.Any(c => c.isAggroUp && c.isAlive))
+                {
+                    action.Target = TeamPlayer.FirstOrDefault(c => c.isAggroUp && c.isAlive);
+                }
 
                 Vector3 originalPos = action.Caster.transform.position;
                 if (action.Skill.move && !action.Skill.isWaitForCharge)
@@ -498,6 +502,10 @@ public class BattleManager : MonoBehaviour
                                 {
                                     yield return StartCoroutine(MoveToTarget(action.Caster, action.Target));
                                 }
+                                if (TeamPlayer.Any(c => c.isAggroUp && c.isAlive))
+                                {
+                                    action.Target = TeamPlayer.FirstOrDefault(c => c.isAggroUp && c.isAlive);
+                                }
 
                                 action.Skill.DoSpecialAction(action.Caster, action.Target);
                                 battleUI.RefreshBattleUI();
@@ -564,6 +572,10 @@ public class BattleManager : MonoBehaviour
                 if (action.Skill.move && action.Skill.isWaitForCharge == false)
                 {
                     yield return StartCoroutine(MoveToTarget(action.Caster, action.Target));
+                }
+                if (TeamPlayer.Any(c => c.isAggroUp && c.isAlive))
+                {
+                    action.Target = TeamPlayer.FirstOrDefault(c => c.isAggroUp && c.isAlive);
                 }
 
                 action.Skill.DoAction(action.Caster, action.Target);

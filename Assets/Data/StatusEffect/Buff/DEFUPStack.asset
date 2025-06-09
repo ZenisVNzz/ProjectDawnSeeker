@@ -9,16 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c5d1d75507268940ac8bb2e93c3406d, type: 3}
-  m_Name: Heal
+  m_Script: {fileID: 11500000, guid: fef1a25ce75415649a7579c543bbf12e, type: 3}
+  m_Name: DEFUPStack
   m_EditorClassIdentifier: 
-  ID: 200005
-  statusName: "Ph\u01B0\u1EDBc l\xE0nh"
+  ID: 200026
+  statusName: "S\u1EAFt \u0111\xE1"
   type: 0
-  duration: 1
+  duration: 0
   Icon: {fileID: 0}
-  canStack: 0
-  maxStack: 1
-  isHeadVFX: 0
-  CasterATK: 26
-  percent: 165
+  canStack: 1
+  maxStack: 99
+  isHeadVFX: 1
+  PercentAmount: 10

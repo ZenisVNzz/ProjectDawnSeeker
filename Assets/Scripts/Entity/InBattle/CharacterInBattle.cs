@@ -40,6 +40,7 @@ public class CharacterInBattle : MonoBehaviour
     public bool isLifeSteal = false;
     public bool isAggroUp = false;
     public bool isBleeding = false;
+    public bool isDealyBlood = false;
     public bool isMPRecoveryAble = true;
     public bool isDeepWound = false;
     public bool isSilent = false;
@@ -158,7 +159,7 @@ public class CharacterInBattle : MonoBehaviour
         {
             totaldamage = totaldamage * 1.25f;
         }
-        if (isHeatShock)
+        if (isHeatShock && activeStatusEffect.Any(e => e.ID == 200012))
         {
             totaldamage = totaldamage * 1.2f;
         }    
@@ -207,8 +208,13 @@ public class CharacterInBattle : MonoBehaviour
 
         if (dodgeSucces)
         {
-            StartCoroutine(ApplyEffectDelay());
+            StartCoroutine(ApplyEffectDelay("ATK"));
         }
+
+        if (isAggroUp)
+        {
+            StartCoroutine(ApplyEffectDelay("DEF"));
+        }    
 
         if (CheckIfDeath())
         {
@@ -275,6 +281,11 @@ public class CharacterInBattle : MonoBehaviour
         isDodge = false;
         dodgeSucces = false;
 
+        if (isDealyBlood)
+        {
+            damage *= 1.25f;
+        }    
+
         currentHP -= damage;
         if (currentHP <= 0)
         {
@@ -328,9 +339,25 @@ public class CharacterInBattle : MonoBehaviour
                 EnqueueEffectAnimation(() => vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this));
                 Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
             }
-            else if (activeStatusEffect.Contains(effect) && !effect.canStack)
+            else if (activeStatusEffect.Any(e => e.ID == effect.ID) && !effect.canStack)
             {
+                if (effect.ID == 200013 && isDealyBlood)
+                {
+                    StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
+                    this.ApplyStatusEffect(statusEffectInstance.DeadlyBlood, 99);
+                }    
+
                 activeStatusEffect.Find(e => e.ID == effect.ID).duration = effect.duration;
+                GameObject effectAnchor;
+                if (!effect.isHeadVFX)
+                {
+                    effectAnchor = transform.Find("EffectAnchor").gameObject;
+                }
+                else
+                {
+                    effectAnchor = transform.Find("HeadAnchor").gameObject;
+                }
+                EnqueueEffectAnimation(() => vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this));
             }
         }          
     }  
@@ -341,13 +368,20 @@ public class CharacterInBattle : MonoBehaviour
         vfxManager.PlayEffect(201000, effectAnchor.transform.position, this);
     }    
 
-    public IEnumerator ApplyEffectDelay()
+    public IEnumerator ApplyEffectDelay(string effect)
     {
         StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
         yield return new WaitForSeconds(0.7f);
-        ApplyStatusEffect(statusEffectInstance.ATKbuff, 99);
-    }   
-    
+        if (effect == "ATK")
+        {
+            ApplyStatusEffect(statusEffectInstance.ATKbuff, 99);
+        }
+        else if (effect == "DEF")
+        {
+            ApplyStatusEffect(statusEffectInstance.DEFbuff, 99);
+        }
+    }
+
     public void ResetState()
     {
         isPenetrating = false;

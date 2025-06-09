@@ -2913,6 +2913,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
+  isDealyBlood: 0
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
@@ -7787,6 +7788,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
+  isDealyBlood: 0
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
@@ -12389,6 +12391,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
+  isDealyBlood: 0
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
@@ -13976,6 +13979,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paralysis: {fileID: 11400000, guid: f268a165c3f09874e9a860ec66d784c2, type: 2}
   ATKbuff: {fileID: 11400000, guid: 0392c8ef2ca93664b988933242529ab7, type: 2}
+  DEFbuff: {fileID: 11400000, guid: 847843f98a9ebe54ca2c1d81e1910922, type: 2}
+  DeadlyBlood: {fileID: 11400000, guid: 27ad77d94ef34784a88b78a6095ec581, type: 2}
 --- !u!1 &898624118
 GameObject:
   m_ObjectHideFlags: 0
@@ -18232,6 +18237,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
+  isDealyBlood: 0
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
@@ -18269,7 +18275,7 @@ Animator:
   m_GameObject: {fileID: 1172855262}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ab2e5d00e8b700d43a6380107644f7fb, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6f2cfa32389b2d142a256c5249974ce0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -19632,6 +19638,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
+  isDealyBlood: 0
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
@@ -20000,6 +20007,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
+  isDealyBlood: 0
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
@@ -23918,6 +23926,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
+  isDealyBlood: 0
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
@@ -24220,6 +24229,10 @@ MonoBehaviour:
     duringEffect: 0
     isMove: 0
     effectPrefab: {fileID: 5444755935990821153, guid: a863fadd2a8ff6d40965d1ea70495fa4, type: 3}
+  - ID: 200026
+    duringEffect: 0
+    isMove: 0
+    effectPrefab: {fileID: 8790711157773994665, guid: 9d6b043d8939c7b45a0851c74c402e6a, type: 3}
 --- !u!1 &1489819655
 GameObject:
   m_ObjectHideFlags: 0

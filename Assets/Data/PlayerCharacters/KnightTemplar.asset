@@ -10,15 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ef0f3323c8b53147a892c06f8e228ed, type: 3}
-  m_Name: Knight Templar
+  m_Name: KnightTemplar
   m_EditorClassIdentifier: 
   characterID: 100008
   characterName: Knight Templar
   characterType: 0
-  characterSprite: {fileID: 0}
-  characterAnimation: {fileID: 0}
+  characterSprite: {fileID: 868370677313445676, guid: e29867f857045114a87e75118b022d40, type: 3}
+  characterAnimation: {fileID: 9100000, guid: 6f2cfa32389b2d142a256c5249974ce0, type: 2}
   isBoss: 0
-  skillList: []
+  skillList:
+  - {fileID: 11400000, guid: 919174f3a0759564bbe79d32cf1dd251, type: 2}
+  - {fileID: 11400000, guid: 4a20f563a0bc43e4a879dae5f306b468, type: 2}
+  - {fileID: 11400000, guid: 6fa29eeceeca11a4f93bdc6aff7cb223, type: 2}
+  - {fileID: 11400000, guid: d67418ef5a3090a41b8bae638e3db8c2, type: 2}
   currentTotalXP: 0
   level: 1
   ATK: 34
