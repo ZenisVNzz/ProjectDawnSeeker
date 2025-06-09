@@ -64,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -102,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -130,10 +130,10 @@ TextureImporter:
       name: Buff n Debuff P9 VFX 05 Var1_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 6
-        width: 14
-        height: 13
+        x: 0
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,10 +152,10 @@ TextureImporter:
       name: Buff n Debuff P9 VFX 05 Var1_1
       rect:
         serializedVersion: 2
-        x: 29
-        y: 5
-        width: 14
-        height: 14
+        x: 24
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,10 +174,10 @@ TextureImporter:
       name: Buff n Debuff P9 VFX 05 Var1_2
       rect:
         serializedVersion: 2
-        x: 40
-        y: 11
-        width: 7
-        height: 9
+        x: 48
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,10 +196,10 @@ TextureImporter:
       name: Buff n Debuff P9 VFX 05 Var1_3
       rect:
         serializedVersion: 2
-        x: 52
-        y: 4
-        width: 16
-        height: 16
+        x: 72
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: Buff n Debuff P9 VFX 05 Var1_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 11
-        width: 7
-        height: 9
+        x: 96
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,10 +240,10 @@ TextureImporter:
       name: Buff n Debuff P9 VFX 05 Var1_5
       rect:
         serializedVersion: 2
-        x: 76
-        y: 4
-        width: 16
-        height: 16
+        x: 120
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,10 +262,10 @@ TextureImporter:
       name: Buff n Debuff P9 VFX 05 Var1_6
       rect:
         serializedVersion: 2
-        x: 88
-        y: 11
-        width: 7
-        height: 9
+        x: 144
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,10 +284,10 @@ TextureImporter:
       name: Buff n Debuff P9 VFX 05 Var1_7
       rect:
         serializedVersion: 2
-        x: 100
-        y: 4
-        width: 16
-        height: 16
+        x: 168
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,10 +306,10 @@ TextureImporter:
       name: Buff n Debuff P9 VFX 05 Var1_8
       rect:
         serializedVersion: 2
-        x: 112
-        y: 11
-        width: 7
-        height: 9
+        x: 192
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,33 +324,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Buff n Debuff P9 VFX 05 Var1_9
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 7
-        width: 87
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0a49a403465c4b6f0800000000000000
-      internalID: -669693410473765728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f80a49aaa3f4a7641ad63ea05a5c25b2
     internalID: 0
     vertices: []
     indices: 
@@ -369,7 +347,6 @@ TextureImporter:
       Buff n Debuff P9 VFX 05 Var1_6: -7806197487480577365
       Buff n Debuff P9 VFX 05 Var1_7: 1370091600915334181
       Buff n Debuff P9 VFX 05 Var1_8: -6393534728183406650
-      Buff n Debuff P9 VFX 05 Var1_9: -669693410473765728
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

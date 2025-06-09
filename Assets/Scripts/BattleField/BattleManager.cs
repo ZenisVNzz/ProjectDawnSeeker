@@ -41,13 +41,18 @@ public class BattleManager : MonoBehaviour
         selectNum = 0;
         startTurnButton.onClick.AddListener(() =>
         {
+            GameObject buttonPanel = GameObject.Find("ButtonPanel");
+            Animator buttonPanelAnimator = buttonPanel.GetComponent<Animator>();
             int actionAble = TeamPlayer.Count(c => c.isActionAble);
             if (plannedActions.Count >= actionAble)
             {
                 Debug.Log("Thực thi hành động");
-                selectSkill.DisableSkillUI();
                 Action();
                 startTurnButton.interactable = false;
+                if (buttonPanelAnimator.GetCurrentAnimatorStateInfo(0).IsName("Popup"))
+                {
+                    buttonPanelAnimator.Play("Hide");
+                }
             }
             else
             {
@@ -63,6 +68,8 @@ public class BattleManager : MonoBehaviour
 
     public void OnCharacterClicked(CharacterInBattle character)
     {
+        GameObject buttonPanel = GameObject.Find("ButtonPanel");
+        Animator buttonPanelAnimator = buttonPanel.GetComponent<Animator>();
         bool isPlayerSelectingTarget = SelectSkill.isPlayerSelectingTarget;
         if (!character.isAlive) return;
 
@@ -75,6 +82,7 @@ public class BattleManager : MonoBehaviour
                 SelectSkill.characterInBattle = character;
                 Debug.Log("Đã chọn: " + character.charName);
                 battleUI.SelectingCharacter(character);
+                buttonPanelAnimator.Play("Popup");
             }
             else if (SelectSkill.selectedSkill != null)
             {
@@ -101,7 +109,8 @@ public class BattleManager : MonoBehaviour
                         Debug.Log($"Skill: {selectSkill.GetSkillBase().name} nhắm vào {character}");
                         SelectSkill.isPlayerSelectingTarget = false;
                         actionOrderUI.AddAction(selectedCharacter, character, selectSkill.GetSkillBase(), false);
-                        SelectSkill.selectedSkill = null;                    
+                        SelectSkill.selectedSkill = null;    
+                        buttonPanelAnimator.Play("Hide");
                     }
                 }
                 else if (TeamPlayer.Contains(character) && selectSkill.GetSkillBase().supportSkill && isPlayerSelectingTarget == true)
@@ -124,6 +133,7 @@ public class BattleManager : MonoBehaviour
                     SelectSkill.isPlayerSelectingTarget = false;
                     actionOrderUI.AddAction(selectedCharacter, character, selectSkill.GetSkillBase(), true);
                     SelectSkill.selectedSkill = null;
+                    buttonPanelAnimator.Play("Hide");
                 }
             }                     
         }
@@ -324,33 +334,43 @@ public class BattleManager : MonoBehaviour
             if(GetTotalHP(TeamPlayer) >= GetTotalHP(TeamAI))
             {
                 Debug.Log("Chiến Thắng!");
-                resultUI.ShowVictoryUI();
-                StopAllCoroutines();
-                OnFinishedStage?.Invoke(true);
+                OnEndBattle(true);
             }
             else
             {
                 Debug.Log("Thất Bại!");
-                resultUI.ShowFailedUI();
-                StopAllCoroutines();
-                OnFinishedStage?.Invoke(false);
+                OnEndBattle(false);
             }
             EnablePlayerTeam(false);
         }
         if (GetFirstAlive(TeamPlayer) == null)
         {
             Debug.Log("Thất Bại!");
-            resultUI.ShowFailedUI();
-            StopAllCoroutines();
-            OnFinishedStage?.Invoke(false);
+            OnEndBattle(false);
         }
         else if (GetFirstAlive(TeamAI) == null)
         {
             Debug.Log("Chiến Thắng!");
+            OnEndBattle(true);
+        }
+    }
+
+    public void OnEndBattle(bool victory)
+    {
+        ToggleX2 toggleX2 = FindFirstObjectByType<ToggleX2>();
+        toggleX2.isOn = false;
+        Time.timeScale = 1f;
+        if (victory)
+        {
             resultUI.ShowVictoryUI();
-            StopAllCoroutines();
             OnFinishedStage?.Invoke(true);
         }
+        else
+        {
+            resultUI.ShowFailedUI();
+            OnFinishedStage?.Invoke(false);
+        }
+        StopAllCoroutines();
     }
 
     float GetTotalHP(List<CharacterInBattle> team)
@@ -397,6 +417,7 @@ public class BattleManager : MonoBehaviour
                 }             
                 
                 action.Skill.DoAction(action.Caster, action.Target);
+                battleUI.RefreshBattleUI();
 
                 if (action.Target.isParry)
                 {
@@ -479,6 +500,7 @@ public class BattleManager : MonoBehaviour
                                 }
 
                                 action.Skill.DoSpecialAction(action.Caster, action.Target);
+                                battleUI.RefreshBattleUI();
 
                                 if (action.Target.isParry)
                                 {
@@ -545,6 +567,7 @@ public class BattleManager : MonoBehaviour
                 }
 
                 action.Skill.DoAction(action.Caster, action.Target);
+                battleUI.RefreshBattleUI();
 
                 if (action.Target.isParry)
                 {

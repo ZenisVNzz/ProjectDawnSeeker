@@ -27,6 +27,7 @@ public class CharacterInBattle : MonoBehaviour
     public float DEF { get; private set; }
     public float MP { get; private set; }
     public float currentMP;
+    [field: SerializeField]
     public float CR { get; private set; }
     public float CD { get; private set; }
     public float DC { get; private set; }
@@ -134,13 +135,13 @@ public class CharacterInBattle : MonoBehaviour
 
         if (isAlive || attacker != null || attacker.isAlive)
         {
-            if (UnityEngine.Random.value < PC)
+            if (UnityEngine.Random.value < PC && isActionAble)
             {
                 isParry = true;
                 Debug.Log(charName + " đã phản đòn");
                 return;
             }
-            else if (UnityEngine.Random.value < DC)
+            else if (UnityEngine.Random.value < DC && isActionAble)
             {
                 isDodge = true;
                 if (isGetATKBuffWhenDodge)
@@ -155,7 +156,7 @@ public class CharacterInBattle : MonoBehaviour
 
         if (attacker.isEnchantment)
         {
-            totaldamage = totaldamage * 1.2f;
+            totaldamage = totaldamage * 1.25f;
         }
         if (isHeatShock)
         {
@@ -173,7 +174,7 @@ public class CharacterInBattle : MonoBehaviour
 
     private void MinusHP(float amount)
     {
-        if (isCritAfterAttack == true)
+        if (currentAttacker.isCritAfterAttack == true)
         {
             currentAttacker.CR += 0.05f;
         }    
@@ -218,6 +219,10 @@ public class CharacterInBattle : MonoBehaviour
             if (!isParry && !isDodge)
             {
                 animator.Play("Hurt");
+            }
+            else
+            {
+                amount = 0;
             }
         }
 
@@ -329,6 +334,12 @@ public class CharacterInBattle : MonoBehaviour
             }
         }          
     }  
+
+    public void PlayBuffEffect()
+    {
+        GameObject effectAnchor = transform.Find("EffectAnchor").gameObject;
+        vfxManager.PlayEffect(201000, effectAnchor.transform.position, this);
+    }    
 
     public IEnumerator ApplyEffectDelay()
     {
@@ -475,7 +486,7 @@ public class CharacterInBattle : MonoBehaviour
     public void PlaySoundEffect(string soundName)
     {
         GameObject soudEffectObj = GameObject.Find(soundName);
-        AudioSource audioSource = soudEffectObj.GetComponent<AudioSource>();
+        AudioSource audioSource = soudEffectObj.GetComponent<AudioSource>();    
         audioSource.Play();
     }
 
