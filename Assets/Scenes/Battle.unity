@@ -2737,6 +2737,7 @@ GameObject:
   - component: {fileID: 223460985}
   - component: {fileID: 223460982}
   - component: {fileID: 223460981}
+  - component: {fileID: 223460986}
   m_Layer: 0
   m_Name: AI_1 (1)
   m_TagString: Untagged
@@ -2786,7 +2787,7 @@ Animator:
   m_GameObject: {fileID: 223460979}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 962e0147c00585347aeb07ef675eb4e8, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1637b54fdefe31c44ada29393e4ab57e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2941,6 +2942,43 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   currentAttacker: {fileID: 0}
   currentState: 0
+--- !u!114 &223460986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223460979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Graph: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 7695452426028974333
+  - rid: 7695452426028974334
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7695452426028974333
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 223460979}
+    - rid: 7695452426028974334
+      type: {class: 'BlackboardVariable`1[[CharacterInBattle, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15075651137034947217
+          m_Value1: 9196110608612017384
+        Name: MyRuntime
+        m_Value: {fileID: 223460985}
 --- !u!1 &258635798
 GameObject:
   m_ObjectHideFlags: 0
@@ -5687,6 +5725,10 @@ MonoBehaviour:
   - {fileID: 1172855266}
   - {fileID: 223460985}
   - {fileID: 1483041557}
+  enemyAI:
+  - {fileID: 1172855269}
+  - {fileID: 223460986}
+  - {fileID: 1483041563}
   battleManager: {fileID: 587159867}
   battleUI: {fileID: 1726673298}
   defaultChar: {fileID: 0}
@@ -8521,6 +8563,7 @@ MonoBehaviour:
   - {fileID: 1172855266}
   - {fileID: 223460985}
   - {fileID: 1483041557}
+  behaviorGraphAgent: []
   battleUI: {fileID: 1726673298}
   startTurnButton: {fileID: 1738235666}
   selectSkill: {fileID: 1310832130}
@@ -18317,6 +18360,7 @@ MonoBehaviour:
   m_Graph: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 7695452411424145695
+  - rid: 7695452426028974332
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
@@ -18330,6 +18374,14 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 1172855262}
+    - rid: 7695452426028974332
+      type: {class: 'BlackboardVariable`1[[CharacterInBattle, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15075651137034947217
+          m_Value1: 9196110608612017384
+        Name: MyRuntime
+        m_Value: {fileID: 1172855266}
 --- !u!1 &1174361006
 GameObject:
   m_ObjectHideFlags: 0
@@ -23925,6 +23977,7 @@ GameObject:
   - component: {fileID: 1483041557}
   - component: {fileID: 1483041559}
   - component: {fileID: 1483041558}
+  - component: {fileID: 1483041563}
   m_Layer: 0
   m_Name: AI_1 (2)
   m_TagString: Untagged
@@ -24129,6 +24182,43 @@ Transform:
   - {fileID: 555806030}
   m_Father: {fileID: 1725231605}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1483041563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483041556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Graph: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 7695452426028974335
+  - rid: 7695452426028974336
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7695452426028974335
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 1483041556}
+    - rid: 7695452426028974336
+      type: {class: 'BlackboardVariable`1[[CharacterInBattle, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15075651137034947217
+          m_Value1: 9196110608612017384
+        Name: MyRuntime
+        m_Value: {fileID: 1483041557}
 --- !u!1 &1489556990
 GameObject:
   m_ObjectHideFlags: 0
