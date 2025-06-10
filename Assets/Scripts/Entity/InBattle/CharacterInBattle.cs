@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements.Experimental;
 
@@ -27,7 +26,6 @@ public class CharacterInBattle : MonoBehaviour
     public float DEF { get; private set; }
     public float MP { get; private set; }
     public float currentMP;
-    [field: SerializeField]
     public float CR { get; private set; }
     public float CD { get; private set; }
     public float DC { get; private set; }
@@ -40,7 +38,6 @@ public class CharacterInBattle : MonoBehaviour
     public bool isLifeSteal = false;
     public bool isAggroUp = false;
     public bool isBleeding = false;
-    public bool isDealyBlood = false;
     public bool isMPRecoveryAble = true;
     public bool isDeepWound = false;
     public bool isSilent = false;
@@ -136,13 +133,13 @@ public class CharacterInBattle : MonoBehaviour
 
         if (isAlive || attacker != null || attacker.isAlive)
         {
-            if (UnityEngine.Random.value < PC && isActionAble)
+            if (UnityEngine.Random.value < PC)
             {
                 isParry = true;
                 Debug.Log(charName + " đã phản đòn");
                 return;
             }
-            else if (UnityEngine.Random.value < DC && isActionAble)
+            else if (UnityEngine.Random.value < DC)
             {
                 isDodge = true;
                 if (isGetATKBuffWhenDodge)
@@ -157,9 +154,9 @@ public class CharacterInBattle : MonoBehaviour
 
         if (attacker.isEnchantment)
         {
-            totaldamage = totaldamage * 1.25f;
+            totaldamage = totaldamage * 1.2f;
         }
-        if (isHeatShock && activeStatusEffect.Any(e => e.ID == 200012))
+        if (isHeatShock)
         {
             totaldamage = totaldamage * 1.2f;
         }    
@@ -175,7 +172,7 @@ public class CharacterInBattle : MonoBehaviour
 
     private void MinusHP(float amount)
     {
-        if (currentAttacker.isCritAfterAttack == true)
+        if (isCritAfterAttack == true)
         {
             currentAttacker.CR += 0.05f;
         }    
@@ -208,13 +205,8 @@ public class CharacterInBattle : MonoBehaviour
 
         if (dodgeSucces)
         {
-            StartCoroutine(ApplyEffectDelay("ATK"));
+            StartCoroutine(ApplyEffectDelay());
         }
-
-        if (isAggroUp)
-        {
-            StartCoroutine(ApplyEffectDelay("DEF"));
-        }    
 
         if (CheckIfDeath())
         {
@@ -225,10 +217,6 @@ public class CharacterInBattle : MonoBehaviour
             if (!isParry && !isDodge)
             {
                 animator.Play("Hurt");
-            }
-            else
-            {
-                amount = 0;
             }
         }
 
@@ -280,11 +268,6 @@ public class CharacterInBattle : MonoBehaviour
         isParry = false;
         isDodge = false;
         dodgeSucces = false;
-
-        if (isDealyBlood)
-        {
-            damage *= 1.25f;
-        }    
 
         currentHP -= damage;
         if (currentHP <= 0)
@@ -339,49 +322,20 @@ public class CharacterInBattle : MonoBehaviour
                 EnqueueEffectAnimation(() => vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this));
                 Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
             }
-            else if (activeStatusEffect.Any(e => e.ID == effect.ID) && !effect.canStack)
+            else if (activeStatusEffect.Contains(effect) && !effect.canStack)
             {
-                if (effect.ID == 200013 && isDealyBlood)
-                {
-                    StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
-                    this.ApplyStatusEffect(statusEffectInstance.DeadlyBlood, 99);
-                }    
-
                 activeStatusEffect.Find(e => e.ID == effect.ID).duration = effect.duration;
-                GameObject effectAnchor;
-                if (!effect.isHeadVFX)
-                {
-                    effectAnchor = transform.Find("EffectAnchor").gameObject;
-                }
-                else
-                {
-                    effectAnchor = transform.Find("HeadAnchor").gameObject;
-                }
-                EnqueueEffectAnimation(() => vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this));
             }
         }          
     }  
 
-    public void PlayBuffEffect()
-    {
-        GameObject effectAnchor = transform.Find("EffectAnchor").gameObject;
-        vfxManager.PlayEffect(201000, effectAnchor.transform.position, this);
-    }    
-
-    public IEnumerator ApplyEffectDelay(string effect)
+    public IEnumerator ApplyEffectDelay()
     {
         StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
         yield return new WaitForSeconds(0.7f);
-        if (effect == "ATK")
-        {
-            ApplyStatusEffect(statusEffectInstance.ATKbuff, 99);
-        }
-        else if (effect == "DEF")
-        {
-            ApplyStatusEffect(statusEffectInstance.DEFbuff, 99);
-        }
-    }
-
+        ApplyStatusEffect(statusEffectInstance.ATKbuff, 99);
+    }   
+    
     public void ResetState()
     {
         isPenetrating = false;
@@ -519,15 +473,20 @@ public class CharacterInBattle : MonoBehaviour
 
     public void PlaySoundEffect(string soundName)
     {
-        GameObject soudEffectObj = GameObject.Find(soundName);
-        AudioSource audioSource = soudEffectObj.GetComponent<AudioSource>();    
+        GameObject soundEffectObj = GameObject.Find(soundName);
+        if (soundEffectObj == null)
+        {
+            Debug.LogWarning($"PlaySoundEffect: GameObject '{soundName}' not found.");
+            return;
+        }
+        AudioSource audioSource = soundEffectObj.GetComponent<AudioSource>();
         audioSource.Play();
     }
 
     public void EndSoundEffect(string soundName)
     {
-        GameObject soudEffectObj = GameObject.Find(soundName);
-        AudioSource audioSource = soudEffectObj.GetComponent<AudioSource>();
+        GameObject soundEffectObj = GameObject.Find(soundName);
+        AudioSource audioSource = soundEffectObj.GetComponent<AudioSource>();
         audioSource.Stop();
     }
 
