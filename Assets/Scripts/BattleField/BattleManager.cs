@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Behavior;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,8 +13,10 @@ public class BattleManager : MonoBehaviour
     public List<PlannedAction> plannedActions = new List<PlannedAction>();
     public List<EnemyPlannedAction> enemyPlannedAction = new List<EnemyPlannedAction>();
 
-    public event Action OnEndTurn;
+    public event System.Action OnEndTurn;
     public event Action<bool> OnFinishedStage;
+
+    public List<BehaviorGraphAgent> behaviorGraphAgent;
 
     private CharacterInBattle selectedCharacter = null;
     public BattleUI battleUI;
@@ -59,7 +62,8 @@ public class BattleManager : MonoBehaviour
                 Debug.Log("Chưa đủ hành động để thực thi");
             }    
         });
-        StartCoroutine(InitializedEnemyAttack());
+        //StartCoroutine(InitializedEnemyAttack());
+        InitializEnemyAction();
     }
 
     private void OnDeath(CharacterInBattle character)
@@ -270,6 +274,15 @@ public class BattleManager : MonoBehaviour
             }    
         }    
     }
+
+    public void InitializEnemyAction()
+    {
+        foreach (var enemyAI in behaviorGraphAgent)
+        {
+            enemyAI.BlackboardReference.SetVariableValue("IsBeginTurn", true);
+            enemyAI.Start();
+        }    
+    }    
 
     public CharacterInBattle GetRandomAlive(List<CharacterInBattle> list)
     {

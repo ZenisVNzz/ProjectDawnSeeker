@@ -5674,7 +5674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCharacter:
-  - {fileID: 11400000, guid: e7efa7c16590dbb4fbb52ff948a859cc, type: 2}
+  - {fileID: 11400000, guid: 12941b28234d1c1429411104843f0b6c, type: 2}
   enemyCharacter:
   - {fileID: 11400000, guid: 47ff32cd979b714458e423594d54ac4a, type: 2}
   - {fileID: 11400000, guid: 72f96bb9d409f11449c7f0d179209493, type: 2}
@@ -18097,6 +18097,7 @@ GameObject:
   - component: {fileID: 1172855266}
   - component: {fileID: 1172855267}
   - component: {fileID: 1172855268}
+  - component: {fileID: 1172855269}
   m_Layer: 0
   m_Name: AI_1
   m_TagString: Untagged
@@ -18301,6 +18302,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultMat: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   outlineMat: {fileID: 2100000, guid: 685d3b2b3c28c3e48a43bc2686b10261, type: 2}
+--- !u!114 &1172855269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172855262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Graph: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 7695452411424145695
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7695452411424145695
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 1172855262}
 --- !u!1 &1174361006
 GameObject:
   m_ObjectHideFlags: 0

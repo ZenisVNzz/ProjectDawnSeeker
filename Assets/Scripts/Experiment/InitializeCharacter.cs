@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.Behavior;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,7 @@ public class InitializeCharacter : MonoBehaviour
     public List<CharacterData> enemyCharacter = new List<CharacterData>();
     public List<CharacterInBattle> playerCharacterInBattle = new List<CharacterInBattle>();
     public List<CharacterInBattle> enemyCharacterInBattle = new List<CharacterInBattle>();
+    public List<BehaviorGraphAgent> enemyAgents = new List<BehaviorGraphAgent>();
     public BattleManager battleManager;
     public BattleUI battleUI;
     public CharacterData defaultChar;
@@ -16,23 +18,23 @@ public class InitializeCharacter : MonoBehaviour
 
     void Awake()
     {
-        playerCharacter = new List<CharacterData>();
-        enemyCharacter = new List<CharacterData>();
+        //playerCharacter = new List<CharacterData>();
+        //enemyCharacter = new List<CharacterData>();
 
-        if (SceneManager.GetActiveScene().name != "Battle")
-        {
-            playerCharacter.Add(defaultChar);
-        }
-        else
-        {
-            playerCharacter = EquipedUnit.equipedUnit;
-        }
-        GameManager gameManager = FindAnyObjectByType<GameManager>();
-        StageData stageData = gameManager.transform.Find("StageData").GetComponent<StageData>();
-        foreach (Enemy enemy in stageData.enemies)
-        {
-            enemyCharacter.Add(enemy.characterData);
-        }
+        //if (SceneManager.GetActiveScene().name != "Battle")
+        //{
+        //    playerCharacter.Add(defaultChar);
+        //}
+        //else
+        //{
+        //    playerCharacter = EquipedUnit.equipedUnit;
+        //}
+        //GameManager gameManager = FindAnyObjectByType<GameManager>();
+        //StageData stageData = gameManager.transform.Find("StageData").GetComponent<StageData>();
+        //foreach (Enemy enemy in stageData.enemies)
+        //{
+        //    enemyCharacter.Add(enemy.characterData);
+        //}
         int playerDataCount = playerCharacter.Count;
         int enemyDataCount = enemyCharacter.Count;
         int CharacterInBattleCount = playerCharacterInBattle.Count;
@@ -56,6 +58,7 @@ public class InitializeCharacter : MonoBehaviour
             for (int i = enemyDataCount; i < EnemyInBattleCount; i++)
             {
                 battleManager.TeamAI.Remove(enemyCharacterInBattle[i]);
+                enemyAgents.RemoveAt(i);
                 battleUI.activeEnemyCharacter.Remove(enemyCharacterInBattle[i]);
                 nullCharacter.Add(enemyCharacterInBattle[i]);
             }
@@ -64,6 +67,7 @@ public class InitializeCharacter : MonoBehaviour
                 enemyCharacterInBattle.Remove(character);
                 Destroy(character.gameObject);
             }
+            battleManager.behaviorGraphAgent = enemyAgents;
         }
         for (int i = 0; i < playerCharacterInBattle.Count; i++)
         {
