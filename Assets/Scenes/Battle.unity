@@ -3914,9 +3914,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCharacter:
-  - {fileID: 11400000, guid: 67d48f84bb13132498043bdea7abbbd2, type: 2}
+  - {fileID: 11400000, guid: 47ff32cd979b714458e423594d54ac4a, type: 2}
   enemyCharacter:
-  - {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
+  - {fileID: 11400000, guid: 5bf7ca1f02509ca42a858abf19886a1b, type: 2}
   playerCharacterInBattle:
   - {fileID: 554530855}
   - {fileID: 808364462}

@@ -473,15 +473,20 @@ public class CharacterInBattle : MonoBehaviour
 
     public void PlaySoundEffect(string soundName)
     {
-        GameObject soudEffectObj = GameObject.Find(soundName);
-        AudioSource audioSource = soudEffectObj.GetComponent<AudioSource>();
+        GameObject soundEffectObj = GameObject.Find(soundName);
+        if (soundEffectObj == null)
+        {
+            Debug.LogWarning($"PlaySoundEffect: GameObject '{soundName}' not found.");
+            return;
+        }
+        AudioSource audioSource = soundEffectObj.GetComponent<AudioSource>();
         audioSource.Play();
     }
 
     public void EndSoundEffect(string soundName)
     {
-        GameObject soudEffectObj = GameObject.Find(soundName);
-        AudioSource audioSource = soudEffectObj.GetComponent<AudioSource>();
+        GameObject soundEffectObj = GameObject.Find(soundName);
+        AudioSource audioSource = soundEffectObj.GetComponent<AudioSource>();
         audioSource.Stop();
     }
 
