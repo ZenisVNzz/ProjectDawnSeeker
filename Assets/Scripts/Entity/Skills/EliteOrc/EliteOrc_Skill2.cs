@@ -7,7 +7,7 @@ public class EliteOrc_Skill2 : SkillBase
 
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
-        target.TakeDamage(user.ATK * 1.4f, 3, user, target);
+        target.TakeDamage(user.ATK * 1.1f, 3, user, target);
         base.DoAction(user, target);
     }
 

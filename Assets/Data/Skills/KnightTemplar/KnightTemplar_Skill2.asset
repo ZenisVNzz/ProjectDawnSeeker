@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb33df46418d31b47a8aee973dc68823, type: 3}
+  m_Name: KnightTemplar_Skill2
+  m_EditorClassIdentifier: 
+  ID: 300037
+  skillName: "Th\xE1nh Th\u01B0\u01A1ng"
+  description: "Gi\xE1ng th\u01B0\u01A1ng xu\u1ED1ng, g\xE2y s\xE1t th\u01B0\u01A1ng
+    kh\xE1, khi\u1EBFn m\u1EE5c ti\xEAu b\u1ECB suy y\u1EBFu trong 1 l\u01B0\u1EE3t."
+  icon: {fileID: 0}
+  mpCost: 1
+  animation: {fileID: 7400000, guid: 487081f1cbe73e14a94bfa44cde1db2c, type: 2}
+  passiveSkill: 0
+  supportSkill: 0
+  move: 1
+  isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
+  ATKDown: {fileID: 11400000, guid: 59582a369391a444ba644770352db8f5, type: 2}

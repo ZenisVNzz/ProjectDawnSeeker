@@ -35,9 +35,12 @@ public class StageData : MonoBehaviour
 
     public void UnlockNextStage()
     {
-        currentStage++;
-        Debug.Log($"Unlock stage: {currentStage}");
-        Inventory.Instance.currentDataSave.currentStage = currentStage;
+        if (stageID == currentStage)
+        {
+            currentStage++;
+            Debug.Log($"Unlock stage: {currentStage}");
+            Inventory.Instance.currentDataSave.currentStage = currentStage;    
+        }
         Inventory.Instance.SaveGame();
     }
 }

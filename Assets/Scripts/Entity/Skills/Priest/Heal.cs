@@ -7,8 +7,8 @@ public class Heals : SkillBase
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
         heal.CasterATK = user.ATK;
-        target.ApplyStatusEffect(heal, 1);
         user.savedHeal = user.ATK * 2f;
+        target.ApplyStatusEffect(heal, 1);
         base.DoAction(user, target);
     }
 }

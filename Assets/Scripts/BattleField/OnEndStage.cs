@@ -34,7 +34,12 @@ public class OnEndStage : MonoBehaviour
             completedText.text = $"BẠN ĐÃ HOÀN THÀNH {stageData.stageName}";
             turnIndex.text = battleManager.GetCurrentTurn().ToString();
             goldIndex.text = stageData.goldReward.ToString();
-            Inventory.Instance.AddMoney(stageData.goldReward);
+            int goldReceived = stageData.goldReward;
+            if (stageData.stageID < StageData.currentStage)
+            {
+                goldReceived /= 3;
+            }
+            Inventory.Instance.AddMoney(goldReceived);
 
             foreach (Item item in stageData.items)
             {
@@ -44,11 +49,16 @@ public class OnEndStage : MonoBehaviour
                 TextMeshProUGUI itemQuantity = itemObj.transform.Find("Amount").GetComponent<TextMeshProUGUI>();
 
                 icon.sprite = itemBase.itemIcon;
-                itemQuantity.text = item.quantity.ToString();
-                for (int i = 0; i < item.quantity; i++)
+                int itemReceivedAmount = item.quantity;
+                if (stageData.stageID < StageData.currentStage)
+                {
+                    itemReceivedAmount /= 3;
+                }
+                for (int i = 0; i < itemReceivedAmount; i++)
                 {
                     Inventory.Instance.AddItem(itemBase);
                 }
+                itemQuantity.text = itemReceivedAmount.ToString();
             }
             foreach (CharacterData character in EquipedUnit.equipedUnit)
             {

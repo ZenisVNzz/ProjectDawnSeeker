@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using TMPro;
 using Unity.VisualScripting;
@@ -21,7 +22,7 @@ public class SummonUnit : MonoBehaviour
     public GameObject summonedCharPrefab;
     public GameObject summoned10CharPrefab;
     public GameObject notEnoughGoldNotice;
-    private Canvas canvas;
+    public Canvas canvas;
     private bool isSkipping = false;
 
     private void Start()
@@ -30,7 +31,6 @@ public class SummonUnit : MonoBehaviour
         {
             inventory = Inventory.Instance;
         }
-        canvas = FindAnyObjectByType<Canvas>();
     }
 
     public void SummonCharacter()
@@ -84,14 +84,16 @@ public class SummonUnit : MonoBehaviour
             onClick.eventSystem = FindAnyObjectByType<EventSystem>();
             onClick.ButtonObject = null;
 
-            if (inventory.summonedCharacters.Contains(selectedCharacter))
+            if (inventory.summonedCharacters.Any(c => c.characterID == selectedCharacter.characterID))
             {
                 newText.SetActive(false);
+                inventory.AddMoney(50);
             }
             else
             {
                 newText.SetActive(true);
-                inventory.AddCharacter(selectedCharacter);
+                CharacterData newCharData = Instantiate(selectedCharacter);
+                inventory.AddCharacter(newCharData);
             }
 
             Debug.Log($"Da trieu hoi {selectedCharacter.characterName} ");
@@ -176,7 +178,7 @@ public class SummonUnit : MonoBehaviour
                     TriggerEvent();
                 });
 
-                if (inventory.summonedCharacters.Contains(selectedCharacter))
+                if (inventory.summonedCharacters.Any(c => c.characterID == selectedCharacter.characterID))
                 {
                     newText.SetActive(false);
                 }
@@ -186,7 +188,7 @@ public class SummonUnit : MonoBehaviour
                 }
             }
 
-            if (inventory.summonedCharacters.Contains(selectedCharacter))
+            if (inventory.summonedCharacters.Any(c => c.characterID == selectedCharacter.characterID))
             {
                 SummonedCharStorage summoned = new SummonedCharStorage
                 {
@@ -205,7 +207,15 @@ public class SummonUnit : MonoBehaviour
                 SummonedCharStorage.Add(summoned);
             }
 
-            inventory.AddCharacter(selectedCharacter);        
+            if (inventory.summonedCharacters.Any(c => c.characterID == selectedCharacter.characterID))
+            {
+                inventory.AddMoney(50);
+            }
+            else
+            {
+                CharacterData newCharData = Instantiate(selectedCharacter);
+                inventory.AddCharacter(newCharData);
+            }
 
             Debug.Log($"Da trieu hoi {selectedCharacter.characterName} ");
 
