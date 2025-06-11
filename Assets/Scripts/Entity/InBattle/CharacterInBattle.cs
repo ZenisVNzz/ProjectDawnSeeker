@@ -1,4 +1,5 @@
-﻿using JetBrains.Annotations;
+﻿using DG.Tweening;
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -229,6 +230,7 @@ public class CharacterInBattle : MonoBehaviour
             if (!isParry && !isDodge)
             {
                 animator.Play("Hurt");
+                StartCoroutine(KnockBack());
             }
             else
             {
@@ -251,6 +253,9 @@ public class CharacterInBattle : MonoBehaviour
             Die();
         }
 
+        CameraShake cameraShake = FindAnyObjectByType<CameraShake>();
+        cameraShake.ShakeCamera();
+
         if (isHeatShock)
         {
             float index = UnityEngine.Random.Range(0, 100);
@@ -260,6 +265,23 @@ public class CharacterInBattle : MonoBehaviour
                 this.ApplyStatusEffect(statusEffectInstance.paralysis, 0);
             }
         }
+    }   
+    
+    IEnumerator KnockBack()
+    {
+        Vector3 originalPosition = this.gameObject.transform.position;
+        if (characterType == characterType.Enemy)
+        {
+
+            this.gameObject.transform.position = new Vector3(originalPosition.x + 0.15f, originalPosition.y, originalPosition.z);
+        }
+        else
+        {
+            this.gameObject.transform.position = new Vector3(originalPosition.x - 0.15f, originalPosition.y, originalPosition.z);
+        }
+        
+        yield return new WaitForSeconds(0.3f);
+        this.gameObject.transform.position = originalPosition;
     }    
 
     public void TakeDamagePercent(int Percent)
@@ -375,7 +397,7 @@ public class CharacterInBattle : MonoBehaviour
     public IEnumerator ApplyEffectDelay(string effect)
     {
         StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(0.9f);
         if (effect == "ATK")
         {
             ApplyStatusEffect(statusEffectInstance.ATKbuff, 99);
@@ -397,6 +419,12 @@ public class CharacterInBattle : MonoBehaviour
 
     public void StartTurn()
     {
+        isAggroUp = false;
+        if (activeStatusEffect.Any(e => e.ID == 200026))
+        {
+            activeStatusEffect.RemoveAll(e => e.ID == 200026);
+        }
+
         foreach (var effect in activeStatusEffect)
         {
             effect.OnTurn(this);
@@ -543,8 +571,6 @@ public class CharacterInBattle : MonoBehaviour
     {
         MinusHP(dmg);
         battleUI.RefreshBattleUI();
-        CameraShake cameraShake = FindAnyObjectByType<CameraShake>();
-        cameraShake.ShakeCamera();
     }
 
     public void SetIdleState()
@@ -674,7 +700,21 @@ public class CharacterInBattle : MonoBehaviour
         }    
         vfxManager.StopAllEffect(characterData.characterID);
         OnDeath?.Invoke(this);
+
+        StartCoroutine(FadeOut());
     }
+
+    IEnumerator FadeOut()
+    {
+        yield return new WaitForSeconds(2f);
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        SpriteRenderer hpBarBackgroundRenderer = transform.Find("StatusBar/Background").GetComponent<SpriteRenderer>();
+        SpriteRenderer hpBarFillRenderer = transform.Find("StatusBar/Background/HpBar").GetComponent<SpriteRenderer>();
+        spriteRenderer.DOFade(0f, 2.5f);
+        hpBarBackgroundRenderer.DOFade(0f, 2.5f);
+        hpBarFillRenderer.DOFade(0f, 2.5f);
+    }    
+
     public void EnqueueEffectAnimation(Action playEffectAnimation)
     {
         effectAnimationQueue.Enqueue(playEffectAnimation);

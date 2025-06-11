@@ -18,7 +18,7 @@ MonoBehaviour:
     m\u1EA1ng v\u1EC1 ph\xEDa k\u1EBB \u0111\u1ECBch, g\xE2y s\xE1t th\u01B0\u01A1ng
     l\u1EDBn, b\u1ECF qua ho\xE0n to\xE0n DEF c\u1EE7a m\u1EE5c ti\xEAu v\xE0 khi\u1EBFn
     m\u1EE5c ti\xEAu b\u1ECB thi\xEAu \u0111\u1ED1t trong v\xF2ng 2 l\u01B0\u1EE3t"
-  icon: {fileID: 0}
+  icon: {fileID: -6359144695611206425, guid: 6d0886ded4964374db3fabf2e6a34eb6, type: 3}
   mpCost: 4
   animation: {fileID: 7400000, guid: 25b109bedfea2f144a0b7f659855f75f, type: 2}
   passiveSkill: 0
@@ -27,5 +27,4 @@ MonoBehaviour:
   isAOE: 0
   isWaitForCharge: 0
   isUniqueSkill: 0
-  critup: {fileID: 11400000, guid: e524639c43492bd43907091a949ea0f1, type: 2}
   Burn: {fileID: 11400000, guid: 7294eccf5beaba849a216cfecf684e44, type: 2}

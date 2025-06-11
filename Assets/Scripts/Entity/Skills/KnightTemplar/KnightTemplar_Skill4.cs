@@ -8,6 +8,7 @@ public class KnightTemplar_Skill4: SkillBase
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
         base.DoAction(user, target);
+        user.isAggroUp = true;
     }
     public override void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
     {
