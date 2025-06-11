@@ -9,7 +9,6 @@ public class InitializeCharacter : MonoBehaviour
     public List<CharacterData> enemyCharacter = new List<CharacterData>();
     public List<CharacterInBattle> playerCharacterInBattle = new List<CharacterInBattle>();
     public List<CharacterInBattle> enemyCharacterInBattle = new List<CharacterInBattle>();
-    public List<BehaviorGraphAgent> enemyAI = new List<BehaviorGraphAgent>();
     public BattleManager battleManager;
     public BattleUI battleUI;
     public CharacterData defaultChar;
@@ -35,8 +34,8 @@ public class InitializeCharacter : MonoBehaviour
         //{
         //    enemyCharacter.Add(enemy.characterData);
         //}
-        
-        
+
+
         int playerDataCount = playerCharacter.Count;
         int enemyDataCount = enemyCharacter.Count;
         int CharacterInBattleCount = playerCharacterInBattle.Count;
@@ -60,7 +59,6 @@ public class InitializeCharacter : MonoBehaviour
             for (int i = enemyDataCount; i < EnemyInBattleCount; i++)
             {
                 battleManager.TeamAI.Remove(enemyCharacterInBattle[i]);
-                enemyAI.RemoveAt(i);
                 battleUI.activeEnemyCharacter.Remove(enemyCharacterInBattle[i]);
                 nullCharacter.Add(enemyCharacterInBattle[i]);
             }
@@ -68,8 +66,7 @@ public class InitializeCharacter : MonoBehaviour
             {
                 enemyCharacterInBattle.Remove(character);
                 Destroy(character.gameObject);
-            }
-            battleManager.behaviorGraphAgent = enemyAI;
+            }         
         }
         for (int i = 0; i < playerCharacterInBattle.Count; i++)
         {

@@ -2175,8 +2175,8 @@ RectTransform:
   m_GameObject: {fileID: 88342155}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 560458176}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2198,7 +2198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4460,7 +4460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9372,6 +9372,7 @@ GameObject:
   - component: {fileID: 380929303}
   - component: {fileID: 380929302}
   - component: {fileID: 380929301}
+  - component: {fileID: 380929306}
   m_Layer: 0
   m_Name: AI_1 (2)
   m_TagString: Untagged
@@ -9446,6 +9447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
+  characterTags: 
   <ATK>k__BackingField: 0
   currentHP: 0
   currentMP: 0
@@ -9456,6 +9458,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
+  isDealyBlood: 0
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
@@ -9575,6 +9578,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &380929306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380929299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Graph: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 7695452451566256219
+  - rid: 7695452451566256220
+  - rid: 7695452451566256221
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7695452451566256219
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 380929299}
+    - rid: 7695452451566256220
+      type: {class: 'BlackboardVariable`1[[CharacterInBattle, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15075651137034947217
+          m_Value1: 9196110608612017384
+        Name: MySelf
+        m_Value: {fileID: 380929303}
+    - rid: 7695452451566256221
+      type: {class: 'BlackboardVariable`1[[ActionOrder, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 5718637667917631181
+          m_Value1: 2629383816329672436
+        Name: ActionOrder
+        m_Value: {fileID: 1787937400}
 --- !u!1 &385094554
 GameObject:
   m_ObjectHideFlags: 0
@@ -10335,6 +10384,7 @@ GameObject:
   - component: {fileID: 404753570}
   - component: {fileID: 404753569}
   - component: {fileID: 404753568}
+  - component: {fileID: 404753573}
   m_Layer: 0
   m_Name: AI_1 (1)
   m_TagString: Untagged
@@ -10409,6 +10459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
+  characterTags: 
   <ATK>k__BackingField: 0
   currentHP: 0
   currentMP: 0
@@ -10419,6 +10470,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
+  isDealyBlood: 0
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
@@ -10538,6 +10590,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &404753573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404753566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Graph: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 7695452451566256216
+  - rid: 7695452451566256217
+  - rid: 7695452451566256218
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7695452451566256216
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 404753566}
+    - rid: 7695452451566256217
+      type: {class: 'BlackboardVariable`1[[CharacterInBattle, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15075651137034947217
+          m_Value1: 9196110608612017384
+        Name: MySelf
+        m_Value: {fileID: 404753570}
+    - rid: 7695452451566256218
+      type: {class: 'BlackboardVariable`1[[ActionOrder, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 5718637667917631181
+          m_Value1: 2629383816329672436
+        Name: ActionOrder
+        m_Value: {fileID: 1787937400}
 --- !u!1 &407590304
 GameObject:
   m_ObjectHideFlags: 0
@@ -14870,6 +14968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 0
+  characterTags: 
   <ATK>k__BackingField: 0
   currentHP: 0
   currentMP: 0
@@ -14880,6 +14979,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
+  isDealyBlood: 0
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
@@ -15183,7 +15283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &560458176
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15197,6 +15297,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 88342156}
+  - {fileID: 1357712022}
   - {fileID: 1777542950}
   - {fileID: 1924098864}
   - {fileID: 1096973901}
@@ -16185,6 +16286,7 @@ MonoBehaviour:
   - {fileID: 1172855266}
   - {fileID: 404753570}
   - {fileID: 380929303}
+  behaviorGraphAgent: []
   battleUI: {fileID: 1726673298}
   startTurnButton: {fileID: 1738235666}
   selectSkill: {fileID: 1310832130}
@@ -20599,6 +20701,7 @@ RectTransform:
   m_Children:
   - {fileID: 1455928718}
   - {fileID: 205517251}
+  - {fileID: 973572785}
   - {fileID: 1525922317}
   - {fileID: 1592263631}
   - {fileID: 1512336285}
@@ -20833,6 +20936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 0
+  characterTags: 
   <ATK>k__BackingField: 0
   currentHP: 0
   currentMP: 0
@@ -20843,6 +20947,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
+  isDealyBlood: 0
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
@@ -22898,6 +23003,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paralysis: {fileID: 11400000, guid: f268a165c3f09874e9a860ec66d784c2, type: 2}
   ATKbuff: {fileID: 11400000, guid: 0392c8ef2ca93664b988933242529ab7, type: 2}
+  DEFbuff: {fileID: 0}
+  DeadlyBlood: {fileID: 0}
 --- !u!1 &898624118
 GameObject:
   m_ObjectHideFlags: 0
@@ -24554,6 +24661,81 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &973572784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 973572785}
+  - component: {fileID: 973572787}
+  - component: {fileID: 973572786}
+  m_Layer: 5
+  m_Name: Blur
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &973572785
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973572784}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 20.009596, y: 20.009596, z: 20.009596}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 801524803}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 82.41001, y: 164.79}
+  m_SizeDelta: {x: 1852.97, y: 1111.95}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &973572786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973572784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &973572787
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973572784}
+  m_CullTransparentMesh: 1
 --- !u!1 &981218497
 GameObject:
   m_ObjectHideFlags: 0
@@ -27161,7 +27343,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 560458176}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28809,6 +28991,7 @@ GameObject:
   - component: {fileID: 1172855266}
   - component: {fileID: 1172855267}
   - component: {fileID: 1172855268}
+  - component: {fileID: 1172855269}
   m_Layer: 0
   m_Name: AI_1
   m_TagString: Untagged
@@ -28939,6 +29122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
+  characterTags: 
   <ATK>k__BackingField: 0
   currentHP: 0
   currentMP: 0
@@ -28949,6 +29133,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
+  isDealyBlood: 0
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
@@ -29012,6 +29197,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultMat: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   outlineMat: {fileID: 2100000, guid: 685d3b2b3c28c3e48a43bc2686b10261, type: 2}
+--- !u!114 &1172855269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172855262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Graph: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 7695452451566256211
+  - rid: 7695452451566256212
+  - rid: 7695452451566256213
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7695452451566256211
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 1172855262}
+    - rid: 7695452451566256212
+      type: {class: 'BlackboardVariable`1[[CharacterInBattle, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15075651137034947217
+          m_Value1: 9196110608612017384
+        Name: MySelf
+        m_Value: {fileID: 1172855266}
+    - rid: 7695452451566256213
+      type: {class: 'BlackboardVariable`1[[ActionOrder, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 5718637667917631181
+          m_Value1: 2629383816329672436
+        Name: ActionOrder
+        m_Value: {fileID: 1787937400}
 --- !u!1 &1175104226
 GameObject:
   m_ObjectHideFlags: 0
@@ -30490,6 +30721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 0
+  characterTags: 
   <ATK>k__BackingField: 0
   currentHP: 0
   currentMP: 0
@@ -30500,6 +30732,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
+  isDealyBlood: 0
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
@@ -30994,6 +31227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 0
+  characterTags: 
   <ATK>k__BackingField: 0
   currentHP: 0
   currentMP: 0
@@ -31004,6 +31238,7 @@ MonoBehaviour:
   isLifeSteal: 0
   isAggroUp: 0
   isBleeding: 0
+  isDealyBlood: 0
   isMPRecoveryAble: 1
   isDeepWound: 0
   isSilent: 0
@@ -32751,6 +32986,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354117076}
+  m_CullTransparentMesh: 1
+--- !u!1 &1357712021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1357712022}
+  - component: {fileID: 1357712024}
+  - component: {fileID: 1357712023}
+  m_Layer: 5
+  m_Name: Blur
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1357712022
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357712021}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 20.01, y: 20.01, z: 20.01}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 560458176}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 82.41, y: 164.79}
+  m_SizeDelta: {x: 1852.97, y: 1111.95}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1357712023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357712021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1357712024
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357712021}
   m_CullTransparentMesh: 1
 --- !u!1 &1360253212
 GameObject:
@@ -34842,7 +35152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -42303,7 +42613,7 @@ RectTransform:
   m_GameObject: {fileID: 1777542949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.3, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 560458176}
@@ -42326,7 +42636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

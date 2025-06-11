@@ -16,20 +16,24 @@ public partial class InitializeAction : Action
     [SerializeReference] public BlackboardVariable<CharacterInBattle> myRuntime;
     protected override Status OnStart()
     {
+        Skill.Value = GetRandomSkill();
+        return Status.Success;
+    }
+
+    public SkillBase GetRandomSkill()
+    {
         List<SkillBase> availableSkills = new List<SkillBase>();
         float currentMP = myRuntime.Value.currentMP;
         availableSkills = myRuntime.Value.skillList.Where(skill => skill.mpCost <= currentMP).ToList();
         int skillIndex = UnityEngine.Random.Range(0, availableSkills.Count);
         if (availableSkills.Count == 1)
         {
-            Skill.Value = availableSkills[0];
+            return availableSkills[0];
         }
         else
         {
-            Skill.Value = availableSkills[skillIndex];
+            return availableSkills[skillIndex];
         }
-
-        return Status.Success;
     }
 
     protected override Status OnUpdate()

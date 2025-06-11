@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum characterType { Player, Enemy }
+public enum Tags { Dps, Tank, Healer, Support }
 
 [CreateAssetMenu(fileName = "Character", menuName = "Characters/NewCharacter")]
 public class CharacterData : ScriptableObject
@@ -10,6 +11,7 @@ public class CharacterData : ScriptableObject
     public int characterID;
     public string characterName;
     public characterType characterType;
+    public List<Tags> characterTags;
     public Sprite characterSprite;
     public RuntimeAnimatorController characterAnimation;
     public bool isBoss = false;

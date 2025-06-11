@@ -15,6 +15,7 @@ MonoBehaviour:
   characterID: 100001
   characterName: Knight
   characterType: 0
+  characterTags: 00000000
   characterSprite: {fileID: -5711848221618334454, guid: 8f826b73b04b70a4487d8bb0acb8e35a, type: 3}
   characterAnimation: {fileID: 9100000, guid: e7de961809d85ae44814d06b620aff2e, type: 2}
   isBoss: 0

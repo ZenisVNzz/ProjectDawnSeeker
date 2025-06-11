@@ -15,6 +15,7 @@ MonoBehaviour:
   characterID: 100008
   characterName: Knight Templar
   characterType: 0
+  characterTags: 010000000200000003000000
   characterSprite: {fileID: 868370677313445676, guid: e29867f857045114a87e75118b022d40, type: 3}
   characterAnimation: {fileID: 9100000, guid: 6f2cfa32389b2d142a256c5249974ce0, type: 2}
   isBoss: 0

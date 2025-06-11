@@ -2904,6 +2904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
+  characterTags: 
   <ATK>k__BackingField: 0
   currentHP: 0
   currentMP: 0
@@ -2958,6 +2959,7 @@ MonoBehaviour:
   m_BlackboardVariableOverridesList:
   - rid: 7695452426028974333
   - rid: 7695452426028974334
+  - rid: 7695452437430403926
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
@@ -2977,8 +2979,16 @@ MonoBehaviour:
         GUID:
           m_Value0: 15075651137034947217
           m_Value1: 9196110608612017384
-        Name: MyRuntime
+        Name: MySelf
         m_Value: {fileID: 223460985}
+    - rid: 7695452437430403926
+      type: {class: 'BlackboardVariable`1[[ActionOrder, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 5718637667917631181
+          m_Value1: 2629383816329672436
+        Name: ActionOrder
+        m_Value: {fileID: 1787937400}
 --- !u!1 &258635798
 GameObject:
   m_ObjectHideFlags: 0
@@ -5713,9 +5723,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCharacter:
   - {fileID: 11400000, guid: 12941b28234d1c1429411104843f0b6c, type: 2}
+  - {fileID: 11400000, guid: 67d48f84bb13132498043bdea7abbbd2, type: 2}
+  - {fileID: 11400000, guid: 5ac2ca0e26d4ce246a4373068f1f72c1, type: 2}
   enemyCharacter:
   - {fileID: 11400000, guid: 47ff32cd979b714458e423594d54ac4a, type: 2}
   - {fileID: 11400000, guid: 72f96bb9d409f11449c7f0d179209493, type: 2}
+  - {fileID: 11400000, guid: dd00cbf31e2a53449875f69613fd56df, type: 2}
   playerCharacterInBattle:
   - {fileID: 554530855}
   - {fileID: 808364462}
@@ -5725,10 +5738,6 @@ MonoBehaviour:
   - {fileID: 1172855266}
   - {fileID: 223460985}
   - {fileID: 1483041557}
-  enemyAI:
-  - {fileID: 1172855269}
-  - {fileID: 223460986}
-  - {fileID: 1483041563}
   battleManager: {fileID: 587159867}
   battleUI: {fileID: 1726673298}
   defaultChar: {fileID: 0}
@@ -7820,6 +7829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 0
+  characterTags: 
   <ATK>k__BackingField: 0
   currentHP: 0
   currentMP: 0
@@ -11480,6 +11490,7 @@ GameObject:
   - component: {fileID: 753881345}
   - component: {fileID: 753881347}
   - component: {fileID: 753881346}
+  - component: {fileID: 753881349}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -11605,6 +11616,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &753881349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753881344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab8353b5ebd32545867da143199a814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shakeTechnique: 0
+  _makeDefaultOnEnable: 1
+  _limitMagnitude: 0
+  _positionalMagnitudeLimit: 10
+  _rotationalMagnitudeLimit: 3
 --- !u!1 &758230856
 GameObject:
   m_ObjectHideFlags: 0
@@ -12424,6 +12452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 0
+  characterTags: 
   <ATK>k__BackingField: 0
   currentHP: 0
   currentMP: 0
@@ -18271,6 +18300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
+  characterTags: 
   <ATK>k__BackingField: 0
   currentHP: 0
   currentMP: 0
@@ -18319,7 +18349,7 @@ Animator:
   m_GameObject: {fileID: 1172855262}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6f2cfa32389b2d142a256c5249974ce0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1637b54fdefe31c44ada29393e4ab57e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -18361,6 +18391,7 @@ MonoBehaviour:
   m_BlackboardVariableOverridesList:
   - rid: 7695452411424145695
   - rid: 7695452426028974332
+  - rid: 7695452437430403925
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
@@ -18380,8 +18411,16 @@ MonoBehaviour:
         GUID:
           m_Value0: 15075651137034947217
           m_Value1: 9196110608612017384
-        Name: MyRuntime
+        Name: MySelf
         m_Value: {fileID: 1172855266}
+    - rid: 7695452437430403925
+      type: {class: 'BlackboardVariable`1[[ActionOrder, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 5718637667917631181
+          m_Value1: 2629383816329672436
+        Name: ActionOrder
+        m_Value: {fileID: 1787937400}
 --- !u!1 &1174361006
 GameObject:
   m_ObjectHideFlags: 0
@@ -19709,6 +19748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 0
+  characterTags: 
   <ATK>k__BackingField: 0
   currentHP: 0
   currentMP: 0
@@ -20078,6 +20118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 0
+  characterTags: 
   <ATK>k__BackingField: 0
   currentHP: 0
   currentMP: 0
@@ -22746,6 +22787,51 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1413455095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1413455096}
+  - component: {fileID: 1413455097}
+  m_Layer: 0
+  m_Name: CameraShake
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1413455096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413455095}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1428567262}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1413455097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413455095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 832c2856e7c7ff54ea142edb401cdb26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeData: {fileID: 11400000, guid: 82e49e551cc63bb4b97bad073b9270ed, type: 2}
 --- !u!1 &1422029318
 GameObject:
   m_ObjectHideFlags: 0
@@ -23007,6 +23093,7 @@ Transform:
   - {fileID: 1246756856}
   - {fileID: 269372569}
   - {fileID: 617239332}
+  - {fileID: 1413455096}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1433206678
@@ -23998,6 +24085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
+  characterTags: 
   <ATK>k__BackingField: 0
   currentHP: 0
   currentMP: 0
@@ -24198,6 +24286,7 @@ MonoBehaviour:
   m_BlackboardVariableOverridesList:
   - rid: 7695452426028974335
   - rid: 7695452426028974336
+  - rid: 7695452437430403927
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
@@ -24217,8 +24306,16 @@ MonoBehaviour:
         GUID:
           m_Value0: 15075651137034947217
           m_Value1: 9196110608612017384
-        Name: MyRuntime
+        Name: MySelf
         m_Value: {fileID: 1483041557}
+    - rid: 7695452437430403927
+      type: {class: 'BlackboardVariable`1[[ActionOrder, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 5718637667917631181
+          m_Value1: 2629383816329672436
+        Name: ActionOrder
+        m_Value: {fileID: 1787937400}
 --- !u!1 &1489556990
 GameObject:
   m_ObjectHideFlags: 0

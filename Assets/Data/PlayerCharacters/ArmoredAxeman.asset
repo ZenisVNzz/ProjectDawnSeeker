@@ -15,6 +15,7 @@ MonoBehaviour:
   characterID: 100009
   characterName: Armored Axeman
   characterType: 0
+  characterTags: 00000000
   characterSprite: {fileID: -1467410003536780371, guid: a4d6bed930226574f93599fb9514c330, type: 3}
   characterAnimation: {fileID: 9100000, guid: 1637b54fdefe31c44ada29393e4ab57e, type: 2}
   isBoss: 0

@@ -27,4 +27,5 @@ MonoBehaviour:
   isAOE: 0
   isWaitForCharge: 0
   isUniqueSkill: 0
-  Taunting: {fileID: 11400000, guid: c06bcacfc17e9db448e40360a627b794, type: 2}
+  statusEffects: []
+  AggroUP: {fileID: 11400000, guid: c06bcacfc17e9db448e40360a627b794, type: 2}

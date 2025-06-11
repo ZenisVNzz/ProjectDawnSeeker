@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,7 @@ public class CharacterInBattle : MonoBehaviour
     public CharacterData characterData { get; private set; }
     public string charName { get; private set; }
     public characterType characterType;
+    public List<Tags> characterTags;
     public Sprite characterSprite { get; private set; }
     public RuntimeAnimatorController characterAnimation { get; private set; }
     [field: SerializeField]
@@ -63,6 +65,8 @@ public class CharacterInBattle : MonoBehaviour
     {
         this.characterData = characterData;
         this.charName = characterData.characterName;
+        this.characterType = characterData.characterType;
+        this.characterTags = characterData.characterTags;
         this.characterSprite = characterData.characterSprite;
         this.characterAnimation = characterData.characterAnimation;
         this.ATK = characterData.ATK;
@@ -236,7 +240,7 @@ public class CharacterInBattle : MonoBehaviour
 
         if (currentAttacker.isLifeSteal)
         {
-            currentAttacker.Heal(amount * 0.2f);
+            currentAttacker.Heal(amount * 0.2f, true);
         }
 
         currentHP -= amount;
@@ -269,9 +273,8 @@ public class CharacterInBattle : MonoBehaviour
                 currentHP = 0;
                 Die();
             }
-            Debug.Log($"{charName} nhận {amount} damage dot");
-            dmgPopUp.ShowDmgPopUp(amount, transform.position, false, isDodge, isParry);
             battleUI.RefreshBattleUI();
+            dmgPopUp.ShowDmgPopUp(amount, transform.position, false, isDodge, isParry);    
         }         
     }
 
@@ -292,6 +295,7 @@ public class CharacterInBattle : MonoBehaviour
             currentHP = 0;
             Die();
         }
+        battleUI.RefreshBattleUI();
         dmgPopUp.ShowDmgPopUp(damage, transform.position, false, isDodge, isParry);
     }
 
@@ -397,16 +401,7 @@ public class CharacterInBattle : MonoBehaviour
         {
             effect.OnTurn(this);
         }
-        if (characterType == characterType.Enemy)
-        {
-        }    
-        else
-        {
-            if (isMPRecoveryAble)
-            {
-                currentMP++;
-            }
-        }           
+        currentMP++;
         if (currentMP > characterData.MP)
         {
             currentMP = characterData.MP;
@@ -445,7 +440,7 @@ public class CharacterInBattle : MonoBehaviour
         }
     }
 
-    public void Heal(float healAmount)
+    public void Heal(float healAmount, bool showPopUp)
     {
         if (isDeepWound)
         {
@@ -455,6 +450,11 @@ public class CharacterInBattle : MonoBehaviour
         if (currentHP > characterData.HP)
         {
             currentHP = characterData.HP;
+        }
+        if (showPopUp)
+        {
+            targetPosition = this.transform.position;
+            dmgPopUp.ShowHealPopUp(savedHeal, targetPosition);
         }
     }
 
@@ -468,6 +468,7 @@ public class CharacterInBattle : MonoBehaviour
             {
                 currentMP = characterData.MP;
             }
+            battleUI.RefreshBattleUI();
         }
     }
 
@@ -542,6 +543,8 @@ public class CharacterInBattle : MonoBehaviour
     {
         MinusHP(dmg);
         battleUI.RefreshBattleUI();
+        CameraShake cameraShake = FindAnyObjectByType<CameraShake>();
+        cameraShake.ShakeCamera();
     }
 
     public void SetIdleState()
@@ -667,7 +670,7 @@ public class CharacterInBattle : MonoBehaviour
         animator.Play("Death");
         if (isMark)
         {
-            markCaster.Heal(markCaster.HP * 0.2f);
+            markCaster.Heal(markCaster.HP * 0.2f, true);
         }    
         vfxManager.StopAllEffect(characterData.characterID);
         OnDeath?.Invoke(this);

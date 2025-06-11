@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -22,8 +24,8 @@ public abstract class SkillBase : ScriptableObject
         user.currentTarget = target;
         target.currentAttacker = user;
         user.currentMP -= mpCost;
-    }   
-    
+    }
+
     public virtual void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
     {
     }
@@ -43,10 +45,32 @@ public abstract class SkillBase : ScriptableObject
 
     public virtual void OnFailCharge(CharacterInBattle user, CharacterInBattle target)
     {
-    }    
+    }
 
     public virtual int GetChargeTurn()
     {
         return 0;
+    }
+
+    public virtual List<StatusEffect> GetBuffsFromSkill(SkillBase skill)
+    {
+        List<StatusEffect> result = new();
+
+        var type = skill.GetType();
+        var fields = type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+
+        foreach (var field in fields)
+        {
+            if (typeof(StatusEffect).IsAssignableFrom(field.FieldType))
+            {
+                var effect = field.GetValue(skill) as StatusEffect;
+                if (effect != null && effect.type == StatusType.Buff)
+                {
+                    result.Add(effect);
+                }
+            }
+        }
+
+        return result;
     }
 }

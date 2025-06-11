@@ -9,12 +9,12 @@ public class Recovery : StatusEffect
     public override void OnApply(CharacterInBattle target)
     {
         float Amount = CasterATK * (percent / 100f);
-        target.Heal(Amount);
+        target.Heal(Amount, true);
     }
     public override void OnTurn(CharacterInBattle target)
     {
         float Amount = CasterATK * (percent / 100f);
-        target.Heal(Amount);
+        target.Heal(Amount, true);
     }
     public override void OnRemove(CharacterInBattle target)
     {

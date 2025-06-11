@@ -15,6 +15,7 @@ MonoBehaviour:
   characterID: 100007
   characterName: Lancer
   characterType: 0
+  characterTags: 0000000003000000
   characterSprite: {fileID: 3272805312411629707, guid: dfacda7955588ca468b4dce01ffd8679, type: 3}
   characterAnimation: {fileID: 9100000, guid: ecc1db7f099f27c4d8bf550288d537ba, type: 2}
   isBoss: 0

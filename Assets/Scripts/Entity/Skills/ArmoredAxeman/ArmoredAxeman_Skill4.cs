@@ -8,7 +8,7 @@ public class ArmoredAxeman_Skill4 : SkillBase
 
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
-        target.TakeDamage(user.ATK * 1.5f, 1, user, target);
+        target.TakeDamage(user.ATK * 1.5f, 2, user, target);
         base.DoAction(user, target);
     }
 
