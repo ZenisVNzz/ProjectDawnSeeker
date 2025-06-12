@@ -311,6 +311,8 @@ public class BattleManager : MonoBehaviour
 
         if (PlayerTurn)
         {
+            EnablePlayerTeam(false);
+
             foreach (PlannedAction action in plannedActions)
             {
                 if (!action.Target.isAlive)
