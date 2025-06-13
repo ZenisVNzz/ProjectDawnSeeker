@@ -1,12 +1,10 @@
 using System;
-using Unity.Behavior;
-using UnityEngine;
-using Action = Unity.Behavior.Action;
-using Unity.Properties;
-using static UnityEngine.EventSystems.EventTrigger;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor.Experimental.GraphView;
+using Unity.Behavior;
+using Unity.Properties;
+using UnityEngine;
+using Action = Unity.Behavior.Action;
 
 [Serializable, GeneratePropertyBag]
 [NodeDescription(name: "initializeSkill", story: "Agent choosing [skill] from [myRuntime]", category: "Action", id: "a49130963fe05a5e020a779394ab626f")]

@@ -57,4 +57,17 @@ public class GameManager : MonoBehaviour
         }
         Debug.Log("Load game successfully!");
     }
+
+    public void DisplaySettings()
+    {
+        GameObject settingsPanel = transform.Find("SettingsCanvas").gameObject;
+        if (settingsPanel.activeSelf)
+        {
+            settingsPanel.SetActive(false);
+        }
+        else
+        {
+            settingsPanel.SetActive(true);
+        }
+    }
 }

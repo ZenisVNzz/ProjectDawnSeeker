@@ -518,7 +518,7 @@ public class BattleManager : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
         CheckWinLose();
         enemy.BlackboardReference.SetVariableValue("IsActionTurn", false);
         enemy.BlackboardReference.SetVariableValue("OnFinishAction", false);

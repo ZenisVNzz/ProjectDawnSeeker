@@ -1,9 +1,8 @@
 using System;
 using Unity.Behavior;
+using Unity.Properties;
 using UnityEngine;
 using Action = Unity.Behavior.Action;
-using Unity.Properties;
-using UnityEditor.Experimental.GraphView;
 
 [Serializable, GeneratePropertyBag]
 [NodeDescription(name: "MoveToTarget", story: "[Im] move to [target]", category: "Action", id: "0f2de51d1db18faff83fb14d2c5f86b6")]

@@ -397,7 +397,7 @@ public class CharacterInBattle : MonoBehaviour
     public IEnumerator ApplyEffectDelay(string effect)
     {
         StatusEffectInstance statusEffectInstance = FindAnyObjectByType<StatusEffectInstance>();
-        yield return new WaitForSeconds(0.9f);
+        yield return new WaitForSeconds(1.2f);
         if (effect == "ATK")
         {
             ApplyStatusEffect(statusEffectInstance.ATKbuff, 99);

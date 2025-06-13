@@ -11,6 +11,8 @@ public class SelectSkill : MonoBehaviour
     public static CharacterInBattle characterInBattle;
     public SkillBase skill;
     public BattleManager battleManager;
+    public GameObject notification;
+    public Transform Canvas;
     public static bool isPlayerSelectingTarget = false;
     public static SkillBase selectedSkill;
     public static GameObject currentSkillBox;
@@ -52,6 +54,8 @@ public class SelectSkill : MonoBehaviour
                 if (characterInBattle.currentMP < this.skill.mpCost)
                 {
                     Debug.Log("Không đủ mana để sử dụng skill: " + this.skill.name);
+                    GameObject notificationInstance = Instantiate(notification, Canvas);
+                    Destroy(notificationInstance, 3f);
                     return;
                 }
                 selectedSkill = this.skill;
