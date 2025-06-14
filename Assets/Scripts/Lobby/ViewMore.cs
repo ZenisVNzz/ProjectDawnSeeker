@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
 using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 
@@ -36,6 +37,10 @@ public class ViewMore : MonoBehaviour
 
     public void ShowInfoCharacter()
     {
+        Button button = characterInfo.transform.Find("PreviewLevel").GetComponent<Button>();
+        LocalizeStringEvent localizeStringEvent = button.transform.Find("Text").GetComponent<LocalizeStringEvent>();
+        localizeStringEvent.StringReference.TableEntryReference = "banner_charinfolv100";
+
         isPreviewingMaxLevel = false;
 
         CharDataStorage charData = characterInfo.GetComponent<CharDataStorage>();
@@ -104,15 +109,17 @@ public class ViewMore : MonoBehaviour
                 mpIndex.text = mp.ToString("0.#");
                 crIndex.text = (Mathf.Round(cr * 100) + "%").ToString();
                 cdIndex.text = (Mathf.Round(cd * 100) + "%").ToString();
-                TextMeshProUGUI buttonText = button.GetComponentInChildren<TextMeshProUGUI>();
-                buttonText.text = "XEM CẤP 1";
+                LocalizeStringEvent localizeStringEvent = button.transform.Find("Text").GetComponent<LocalizeStringEvent>();
+                localizeStringEvent.StringReference.TableEntryReference = "banner_charinfolv1";
+                localizeStringEvent.RefreshString();
                 isPreviewingMaxLevel = true;
             }
             else
             {
                 ShowInfoCharacter();
-                TextMeshProUGUI buttonText = button.GetComponentInChildren<TextMeshProUGUI>();
-                buttonText.text = "XEM CẤP 100";
+                LocalizeStringEvent localizeStringEvent = button.transform.Find("Text").GetComponent<LocalizeStringEvent>();
+                localizeStringEvent.StringReference.TableEntryReference = "banner_charinfolv100";
+                localizeStringEvent.RefreshString();
                 isPreviewingMaxLevel = false;
             }    
         });

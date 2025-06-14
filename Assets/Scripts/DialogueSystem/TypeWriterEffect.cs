@@ -11,6 +11,7 @@ public class TypeWriterEffect : MonoBehaviour
 
     private void Start()
     {
+        fullText = textComponent.text;
         StartCoroutine(ShowText());
     }
 

@@ -16,18 +16,19 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: eb0335d9e92023648a0ab348974d019e, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 7695452523287806048
   m_TableData:
   - m_Id: 3060574904320
     m_Localized: Recruit
     m_Metadata:
       m_Items: []
   - m_Id: 3060683956224
-    m_Localized: Characters
+    m_Localized: Inventory
     m_Metadata:
       m_Items: []
   - m_Id: 3060692344832
-    m_Localized: Go to Dungeon
+    m_Localized: Enter Dungeon
     m_Metadata:
       m_Items: []
   - m_Id: 3060692344833
@@ -43,9 +44,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060696539138
-    m_Localized: Turn
+    m_Localized: Turn {turnIndex}
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 7695452523287806048
   - m_Id: 3060696539139
     m_Localized: Characters
     m_Metadata:
@@ -59,19 +61,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060696539142
-    m_Localized: HP
+    m_Localized: Health
     m_Metadata:
       m_Items: []
   - m_Id: 3060696539143
-    m_Localized: DEF
+    m_Localized: Defense
     m_Metadata:
       m_Items: []
   - m_Id: 3060696539144
-    m_Localized: ATK
+    m_Localized: Attack Power
     m_Metadata:
       m_Items: []
   - m_Id: 3060696539145
-    m_Localized: MP
+    m_Localized: Mana
     m_Metadata:
       m_Items: []
   - m_Id: 3060696539146
@@ -107,11 +109,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060700733444
-    m_Localized: Add all
+    m_Localized: Add All
     m_Metadata:
       m_Items: []
   - m_Id: 3060700733445
-    m_Localized: Cancel
+    m_Localized: Remove All
     m_Metadata:
       m_Items: []
   - m_Id: 3060700733446
@@ -119,7 +121,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060700733447
-    m_Localized: Not Enough Gold
+    m_Localized: You don't have enough gold to recruit
     m_Metadata:
       m_Items: []
   - m_Id: 3060700733448
@@ -135,7 +137,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060700733451
-    m_Localized: Start of the Adventure
+    m_Localized: Start of the Adventure!
     m_Metadata:
       m_Items: []
   - m_Id: 3060700733452
@@ -214,8 +216,8 @@ MonoBehaviour:
   - m_Id: 3060704927747
     m_Localized: 'Here is current turn
 
-      If you not clear your enemy in 30 turns,
-      you will lose'
+      If you not clear your enemy in 15 (30
+      for the boss stage) turns, you will lose'
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927748
@@ -228,29 +230,25 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927749
-    m_Localized: 'Here is your enemy''s action in this turn
+    m_Localized: 'Here are your enemies'' action in this turn
 
-      You can use your
-      mouse to check your enemies'' skills and their target'
+      You can use
+      your mouse to check their skills and target'
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927750
-    m_Localized: Now
+    m_Localized: Please select a character to give orders to
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927751
-    m_Localized: 'Here is the skills bar of your character, you select
-
-      Notice
-      that skills will cost MP to use
-
-      ( exclude basic skill )'
+    m_Localized: "This is the skill list of the selected character\nNote that skills
+      consume mana to use \n( except for basic skills )"
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927752
-    m_Localized: 'Skill was selected
+    m_Localized: 'You''ve selected a skill.
 
-      Now, select your enemy you want to attack'
+      Now, choose an enemy to target'
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927753
@@ -709,6 +707,76 @@ MonoBehaviour:
     m_Localized: Exit Game
     m_Metadata:
       m_Items: []
+  - m_Id: 251364655161344
+    m_Localized: Recruit X1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251402651361280
+    m_Localized: Recruit X10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252534224248832
+    m_Localized: Your Team
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252735064301568
+    m_Localized: Change
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258473962692608
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258682570596352
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258805421760512
+    m_Localized: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259021466165248
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259157646827520
+    m_Localized: Retreat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 261395140239360
+    m_Localized: Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 262557222494208
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263144617992192
+    m_Localized: View level 100
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263313392590848
+    m_Localized: View level 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 266664888950784
+    m_Localized: Spend 100 gold for 1 recruit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 266720622862336
+    m_Localized: Spend 1000 gold for 10 recruit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268348302221312
+    m_Localized: Dungoen
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 7695452523287806048
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 3060696539138

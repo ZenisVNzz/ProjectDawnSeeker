@@ -116,7 +116,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060700733447
-    m_Key: not_enough_gold
+    m_Key: notification_notenoughgold
     m_Metadata:
       m_Items: []
   - m_Id: 3060700733448
@@ -675,6 +675,70 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 29819139710976
     m_Key: settings_exitgame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251364655161344
+    m_Key: summonX1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251402651361280
+    m_Key: summonX10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252534224248832
+    m_Key: dungoen_yourteam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252735064301568
+    m_Key: dungoen_change
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258473962692608
+    m_Key: options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258682570596352
+    m_Key: options_continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258805421760512
+    m_Key: options_tryagain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259021466165248
+    m_Key: options_settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259157646827520
+    m_Key: options_retreat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 261395140239360
+    m_Key: notification_confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 262557222494208
+    m_Key: notification_cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263144617992192
+    m_Key: banner_charinfolv100
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263313392590848
+    m_Key: banner_charinfolv1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 266664888950784
+    m_Key: notification_recuitx1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 266720622862336
+    m_Key: notification_recuitx10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 268348302221312
+    m_Key: dungoen
     m_Metadata:
       m_Items: []
   m_Metadata:
