@@ -14,9 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300006
   skillName: "Phong Th\u1EA7n Ti\u1EC5n"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927794
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "B\u1EAFn m\u1ED9t m\u0169i t\xEAn c\u1EF1c m\u1EA1nh v\xE0o \u0111\u1ED1i
     ph\u01B0\u01A1ng, g\xE2y s\xE1t th\u01B0\u01A1ng m\u1EA1nh v\xE0 khi\u1EBFn m\u1EE5c
     ti\xEAu b\u1ECB v\u1EBFt th\u01B0\u01A1ng s\xE2u trong 2 l\u01B0\u1EE3t."
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927795
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   icon: {fileID: 8044434922281357356, guid: 14a0a4c854000dc449e67bc493e6de41, type: 3}
   mpCost: 2
   animation: {fileID: 7400000, guid: 1fbf20be3236bf04e93e4e631d839286, type: 2}
@@ -24,4 +42,9 @@ MonoBehaviour:
   supportSkill: 0
   move: 0
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
   deepWound: {fileID: 11400000, guid: fba652d4d4a93f743be67dd4a33ba634, type: 2}
+  references:
+    version: 2
+    RefIds: []

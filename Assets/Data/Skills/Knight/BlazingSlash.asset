@@ -14,11 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300004
   skillName: "H\u1ECFa Di\u1EC7m Tr\u1EA3m"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927790
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "T\u1EE5 l\u1EF1c r\u1ED3i ch\xE9m ra m\u1ED9t \u0111\xF2n ki\u1EBFm
     kh\xED r\u1EF1c l\u1EEDa, g\xE2y s\xE1t th\u01B0\u01A1ng m\u1EA1nh v\xE0 l\xE0m
     m\u1EE5c ti\xEAu b\u1ECB thi\xEAu \u0111\u1ED1t trong 2 l\u01B0\u1EE3t. N\u1EBFu
     m\u1EE5c ti\xEAu \u0111\xE3 c\xF3 thi\xEAu \u0111\u1ED1t, g\xE2y th\xEAm s\xE1t
     th\u01B0\u01A1ng."
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927791
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   icon: {fileID: 7240157273979465415, guid: 1a90c6e3d0d9af14d81f5357c330b027, type: 3}
   mpCost: 4
   animation: {fileID: 7400000, guid: 7aa912b041825ef4c9657cb04e2e09d9, type: 2}
@@ -26,4 +44,9 @@ MonoBehaviour:
   supportSkill: 0
   move: 1
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
   burn: {fileID: 11400000, guid: 7294eccf5beaba849a216cfecf684e44, type: 2}
+  references:
+    version: 2
+    RefIds: []

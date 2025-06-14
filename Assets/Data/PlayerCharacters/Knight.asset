@@ -14,6 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100001
   characterName: Knight
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060709122063
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 0
   characterTags: 00000000
   characterSprite: {fileID: -5711848221618334454, guid: 8f826b73b04b70a4487d8bb0acb8e35a, type: 3}
@@ -43,3 +52,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0.0015
   CDPerLevel: 0.005
+  references:
+    version: 2
+    RefIds: []

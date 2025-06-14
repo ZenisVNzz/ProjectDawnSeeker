@@ -116,7 +116,7 @@ public class BattleUI : MonoBehaviour
             TextMeshProUGUI skillName = skillButtons[i].transform.Find("SkillName").GetComponent<TextMeshProUGUI>();
             TextMeshProUGUI mpCost = skillButtons[i].transform.Find("MpCost").GetComponent<TextMeshProUGUI>();
             SelectSkill selectSkill = skillButtons[i].GetComponentInChildren<SelectSkill>();
-            skillName.text = owner.skillList[i].skillName;
+            skillName.text = owner.skillList[i].localizedSkillName.GetLocalizedString();
             mpCost.text = $"{owner.skillList[i].mpCost} MP";
             selectSkill.skill = owner.skillList[i];
             image.sprite = owner.skillList[i].icon;

@@ -14,6 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100004
   characterName: Wizard
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060709122066
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 0
   characterTags: 0000000003000000
   characterSprite: {fileID: 1457491203435894738, guid: ced4fda1361ac80429bf4a35e01ab226, type: 3}
@@ -43,3 +52,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0.0047
   CDPerLevel: 0.01
+  references:
+    version: 2
+    RefIds: []

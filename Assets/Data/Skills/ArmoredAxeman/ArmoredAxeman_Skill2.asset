@@ -14,8 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300041
   skillName: "Xo\xE1y Di\u1EC7t"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060709122057
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "Xoay r\xECu, g\xE2y 2 l\u1EA7n s\xE1t th\u01B0\u01A1ng, khi\u1EBFn
     m\u1EE5c ti\xEAu b\u1ECB ch\u1EA3y m\xE1u trong 2 l\u01B0\u1EE3t"
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060709122058
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   icon: {fileID: 1057061619414264261, guid: 5db3b558d9cddd94e8edd258878784e9, type: 3}
   mpCost: 2
   animation: {fileID: 7400000, guid: 2b7d0d337c40d6c47b40aaa76160bafe, type: 2}
@@ -26,3 +44,6 @@ MonoBehaviour:
   isWaitForCharge: 0
   isUniqueSkill: 0
   Bleed: {fileID: 11400000, guid: 091c7ea854006a54e99a2ca3c8771383, type: 2}
+  references:
+    version: 2
+    RefIds: []

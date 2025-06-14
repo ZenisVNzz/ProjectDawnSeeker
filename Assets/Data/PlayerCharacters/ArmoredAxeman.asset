@@ -14,6 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100009
   characterName: Armored Axeman
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060709122071
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 0
   characterTags: 00000000
   characterSprite: {fileID: -1467410003536780371, guid: a4d6bed930226574f93599fb9514c330, type: 3}
@@ -43,3 +52,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0.0009
   CDPerLevel: 0.045
+  references:
+    version: 2
+    RefIds: []

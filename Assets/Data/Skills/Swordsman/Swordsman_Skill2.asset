@@ -14,8 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300020
   skillName: "Li\xEAn Tam Ki\u1EBFm"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927814
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "Ch\xE9m ba l\u1EA7n li\xEAn ti\u1EBFp, g\xE2y t\u1ED5ng s\xE1t th\u01B0\u01A1ng
     kh\xE1, khi\u1EBFn m\u1EE5c ti\xEAu b\u1ECB ch\u1EA3y m\xE1u trong 2 l\u01B0\u1EE3t."
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927815
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   icon: {fileID: 653902571141052233, guid: 8a95a83ff07197c47a98f7885bd43858, type: 3}
   mpCost: 2
   animation: {fileID: 7400000, guid: c572b4f48f34b59479331a66fe87ae97, type: 2}
@@ -23,4 +41,9 @@ MonoBehaviour:
   supportSkill: 0
   move: 1
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
   bleed: {fileID: 11400000, guid: 091c7ea854006a54e99a2ca3c8771383, type: 2}
+  references:
+    version: 2
+    RefIds: []

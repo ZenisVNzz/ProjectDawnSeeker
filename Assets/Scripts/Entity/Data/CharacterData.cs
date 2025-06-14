@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
 
 public enum characterType { Player, Enemy }
 public enum Tags { Dps, Tank, Healer, Support }
@@ -10,6 +11,7 @@ public class CharacterData : ScriptableObject
 {
     public int characterID;
     public string characterName;
+    public LocalizedString localizedCharacterName;
     public characterType characterType;
     public List<Tags> characterTags;
     public Sprite characterSprite;

@@ -78,7 +78,7 @@ public class SummonUnit : MonoBehaviour
             OnClick onClick = summonedChar.GetComponent<OnClick>();
 
             charIMG.sprite = selectedCharacter.characterSprite;
-            charName.text = selectedCharacter.characterName;
+            charName.text = selectedCharacter.localizedCharacterName.GetLocalizedString();
 
             onClick.graphicRaycaster = FindAnyObjectByType<GraphicRaycaster>();
             onClick.eventSystem = FindAnyObjectByType<EventSystem>();
@@ -165,7 +165,7 @@ public class SummonUnit : MonoBehaviour
 
                 skipButton.SetActive(true);
                 charIMG.sprite = selectedCharacter.characterSprite;
-                charName.text = selectedCharacter.characterName;
+                charName.text = selectedCharacter.localizedCharacterName.GetLocalizedString();
 
                 onClick.graphicRaycaster = FindAnyObjectByType<GraphicRaycaster>();
                 onClick.eventSystem = FindAnyObjectByType<EventSystem>();

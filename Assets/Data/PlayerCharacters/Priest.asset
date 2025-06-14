@@ -14,6 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100003
   characterName: Priest
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060709122065
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 0
   characterTags: 0200000003000000
   characterSprite: {fileID: -4749681873034518491, guid: cc0b6cc2f6b52fd458c5e5e11b6009f8, type: 3}
@@ -43,3 +52,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0.0007
   CDPerLevel: 0.005
+  references:
+    version: 2
+    RefIds: []

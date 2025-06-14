@@ -14,9 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300032
   skillName: "Phi \u0110\xE2m"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927828
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "\u0110\xE2m th\u01B0\u01A1ng th\u1EB3ng v\u1EC1 ph\xEDa tr\u01B0\u1EDBc
     g\xE2y s\xE1t th\u01B0\u01A1ng th\u1EA5p, nh\u01B0ng khi\u1EBFn m\u1EE5c ti\xEAu
     b\u1ECB suy y\u1EBFu trong 1 l\u01B0\u1EE3t"
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927829
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   icon: {fileID: -220206050914862790, guid: 1cbfa8ce388293d4098da957cc519da4, type: 3}
   mpCost: 0
   animation: {fileID: 7400000, guid: 3f7b90bc3bcc7fc4bb79d1546a0561c1, type: 2}
@@ -27,3 +45,6 @@ MonoBehaviour:
   isWaitForCharge: 0
   isUniqueSkill: 0
   ATKDown: {fileID: 11400000, guid: 59582a369391a444ba644770352db8f5, type: 2}
+  references:
+    version: 2
+    RefIds: []

@@ -14,7 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300009
   skillName: "Ch\u1EEFa L\xE0nh"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927800
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "H\u1ED3i m\xE1u cho m\u1ED9t \u0111\u1ED3ng minh."
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927801
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   icon: {fileID: 2903848411162822477, guid: d1f41afc084cf6648b357cd3bc38fe48, type: 3}
   mpCost: 2
   animation: {fileID: 7400000, guid: 0ef0ee48d2a07534fbd03792945476ff, type: 2}
@@ -22,4 +40,9 @@ MonoBehaviour:
   supportSkill: 1
   move: 0
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
   heal: {fileID: 11400000, guid: e055a91f639658549ad69a96d74a3327, type: 2}
+  references:
+    version: 2
+    RefIds: []

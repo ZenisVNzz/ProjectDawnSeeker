@@ -14,8 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300005
   skillName: "X\u1EA1 Ti\u1EC5n"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927792
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "B\u1EAFn t\xEAn v\xE0o \u0111\u1ED1i ph\u01B0\u01A1ng, g\xE2y s\xE1t
     th\u01B0\u01A1ng c\u01A1 b\u1EA3n."
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927793
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   icon: {fileID: -7008412969330441016, guid: b9f89affee1983947b7e30b9a118862a, type: 3}
   mpCost: 0
   animation: {fileID: 7400000, guid: aba24053fcbd37f4f8e96ffb9b5d1e6a, type: 2}
@@ -23,3 +41,8 @@ MonoBehaviour:
   supportSkill: 0
   move: 0
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
+  references:
+    version: 2
+    RefIds: []

@@ -55,7 +55,7 @@ public class ViewMore : MonoBehaviour
 
         charIMG.sprite = charDataStorage.characterData.characterSprite;
         charLevel.text = $"lv.{charDataStorage.characterData.level}";
-        charName.text = charDataStorage.characterData.characterName;
+        charName.text = charDataStorage.characterData.localizedCharacterName.GetLocalizedString();
         hpIndex.text = charDataStorage.characterData.HP.ToString("0.#");
         defIndex.text = charDataStorage.characterData.DEF.ToString("0.#");
         atkIndex.text = charDataStorage.characterData.ATK.ToString("0.#");
@@ -73,9 +73,9 @@ public class ViewMore : MonoBehaviour
             TextMeshProUGUI mpCost = skillPanel[i].transform.Find("MpCost").GetComponent<TextMeshProUGUI>();
             TextMeshProUGUI skillDes = skillPanel[i].transform.Find("Des").GetComponent<TextMeshProUGUI>();
             skillImage.sprite = charDataStorage.characterData.skillList[i].icon;
-            skillName.text = charDataStorage.characterData.skillList[i].skillName;
+            skillName.text = charDataStorage.characterData.skillList[i].localizedSkillName.GetLocalizedString();
             mpCost.text = ($"Mp cost {charDataStorage.characterData.skillList[i].mpCost.ToString()}");
-            skillDes.text = charDataStorage.characterData.skillList[i].description;
+            skillDes.text = charDataStorage.characterData.skillList[i].localizedDescription.GetLocalizedString();
         }
         PreviewMaxLevel();
     }

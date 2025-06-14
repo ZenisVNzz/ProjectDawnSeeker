@@ -13,11 +13,29 @@ MonoBehaviour:
   m_Name: KnightTemplar_Skill3
   m_EditorClassIdentifier: 
   ID: 300038
-  skillName: "Ch\xFAc Ph\xFAc C\u1EE7a Th\xE1nh"
+  skillName: "Ch\xFAc Ph\xFAc C\u1EE7a Th\u1EA7n"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "Ch\xFAc ph\xFAc cho to\xE0n b\u1ED9 \u0111\u1ED3ng minh, t\u1EEB
     t\u1EEB ch\u1EEFa l\xE0nh nh\u1EEFng v\u1EBFt th\u01B0\u01A1ng c\u1EE7a h\u1ECD,
     \u0111\u1ED3ng th\u1EDDi t\u0103ng s\u1EE9c ph\xF2ng th\u1EE7 cho to\xE0n b\u1ED9
     \u0111\u1ED3ng minh trong 2 l\u01B0\u1EE3t"
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   icon: {fileID: -5858998400598462759, guid: 0b4975509da829b4cb1f09d629ab7eb7, type: 3}
   mpCost: 3
   animation: {fileID: 7400000, guid: 1ef838640acdf77448baff86da35fa05, type: 2}
@@ -29,3 +47,6 @@ MonoBehaviour:
   isUniqueSkill: 0
   healing: {fileID: 11400000, guid: d625ee4c19b64f342bc3246e39028f32, type: 2}
   defUP: {fileID: 11400000, guid: f9d0b0d778f43ea4dac0332777c1b337, type: 2}
+  references:
+    version: 2
+    RefIds: []

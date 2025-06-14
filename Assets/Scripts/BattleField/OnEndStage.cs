@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
 public class OnEndStage : MonoBehaviour
@@ -25,13 +26,19 @@ public class OnEndStage : MonoBehaviour
             Transform itemContainer = victoryPanel.transform.Find("Information/Reward/ScrollView/Viewport/Content");
             Transform xpContainer = victoryPanel.transform.Find("Information/Exp/Viewport/Content");
             TextMeshProUGUI completedText = victoryPanel.transform.Find("Information/Completed").GetComponent<TextMeshProUGUI>();
+            LocalizeStringEvent localizeStringEvent = victoryPanel.transform.Find("Information/Completed").GetComponent<LocalizeStringEvent>();
             TextMeshProUGUI turnIndex = victoryPanel.transform.Find("Information/Turn/Number").GetComponent<TextMeshProUGUI>();
             TextMeshProUGUI goldIndex = victoryPanel.transform.Find("Information/GoldReward/Number").GetComponent<TextMeshProUGUI>();
 
             GameManager gameManager = FindAnyObjectByType<GameManager>();
             StageData stageData = gameManager.transform.Find("StageData").GetComponent<StageData>();
 
-            completedText.text = $"BẠN ĐÃ HOÀN THÀNH {stageData.stageName}";
+            localizeStringEvent.StringReference.Arguments = new object[] {
+            new {
+            floor = stageData.stageName
+            }};
+            localizeStringEvent.RefreshString();
+
             turnIndex.text = battleManager.GetCurrentTurn().ToString();
             goldIndex.text = stageData.goldReward.ToString();
             int goldReceived = stageData.goldReward;
@@ -83,8 +90,14 @@ public class OnEndStage : MonoBehaviour
             GameManager gameManager = FindAnyObjectByType<GameManager>();
             StageData stageData = gameManager.transform.Find("StageData").GetComponent<StageData>();
             TextMeshProUGUI failedText = failedPanel.transform.Find("Failed").GetComponent<TextMeshProUGUI>();
+            LocalizeStringEvent localizeStringEvent = failedPanel.transform.Find("Failed").GetComponent<LocalizeStringEvent>();
             TextMeshProUGUI turnIndex = failedPanel.transform.Find("Turn/Number").GetComponent<TextMeshProUGUI>();
-            failedText.text = $"BẠN ĐÃ THẤT BẠI TRONG VIỆC CHINH PHỤC {stageData.stageName}";
+
+            localizeStringEvent.StringReference.Arguments = new object[] {
+            new {
+                floor = stageData.stageName
+            }};
+
             turnIndex.text = battleManager.GetCurrentTurn().ToString();
         }
     }

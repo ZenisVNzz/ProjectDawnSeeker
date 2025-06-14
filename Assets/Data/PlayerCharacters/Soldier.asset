@@ -14,6 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100006
   characterName: Soldier
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060709122068
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 0
   characterTags: 00000000
   characterSprite: {fileID: -3868812660829053132, guid: b3797f6eba601b24094bdd135c658e60, type: 3}
@@ -43,3 +52,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0.0015
   CDPerLevel: 0.005
+  references:
+    version: 2
+    RefIds: []

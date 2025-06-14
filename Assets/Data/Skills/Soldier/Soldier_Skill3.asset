@@ -14,9 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300030
   skillName: "Th\xE2n Th\u1EE7 Nhanh Nh\u1EB9n"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927824
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "Nh\u1EADn hi\u1EC7u \u1EE9ng nhanh nh\u1EB9n trong 2 l\u01B0\u1EE3t,
     c\u1EE9 m\u1ED7i l\u1EA7n n\xE9 th\xE0nh c\xF4ng trong th\u1EDDi gian hi\u1EC7u
     \u1EE9ng, t\u0103ng s\u1EE9c t\u1EA5n c\xF4ng. "
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927825
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   icon: {fileID: 5225997255083630917, guid: ac9124ce358493946a20d063d4f9542f, type: 3}
   mpCost: 2
   animation: {fileID: 7400000, guid: 0d5db49569123074b94b146984cccb3d, type: 2}
@@ -28,3 +46,6 @@ MonoBehaviour:
   isUniqueSkill: 0
   dogdeChance: {fileID: 11400000, guid: b331e2a650ea7324fa6c8b270788b439, type: 2}
   soldierBuff: {fileID: 11400000, guid: 77829b38dd44be349a78562dc51e85ba, type: 2}
+  references:
+    version: 2
+    RefIds: []

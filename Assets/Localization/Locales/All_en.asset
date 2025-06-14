@@ -383,7 +383,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927785
-    m_Localized: Deals a certain amount of damage to the enemy.
+    m_Localized: Strike the enemy with a slash, dealing basic damage
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927786
@@ -391,8 +391,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927787
-    m_Localized: Deals light damage and has a chance to paralyze the target. Also
-      increases the user's defense for 2 turns.
+    m_Localized: Bash the enemy with your shield, dealing light damage and has a
+      chance to paralyze the target. Also increases the user's defense for 2 turns.
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927788
@@ -400,8 +400,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927789
-    m_Localized: Deals moderate damage and increases the user's attack power for
-      2 turns.
+    m_Localized: Strike twice, dealing moderate damage and boosts your attack for
+      2 turns
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927790
@@ -409,8 +409,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927791
-    m_Localized: Deals heavy damage and burns the target for 2 turns. If the target
-      is already burning
+    m_Localized: Charge up and unleash a blazing sword wave, dealing heavy damage
+      and burning the target for 2 turns. Deals bonus damage if the target is already
+      burning
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927792
@@ -418,7 +419,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927793
-    m_Localized: Deals basic damage.
+    m_Localized: Shoot an arrow that deals basic damage
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927794
@@ -426,7 +427,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927795
-    m_Localized: Deals heavy damage and causes Deep Wound on the target for 2 turns.
+    m_Localized: Shoot a powerful arrow at the enemy, dealing heavy damage and inflicting
+      Deep Wound for 2 turns
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927796
@@ -434,7 +436,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927797
-    m_Localized: Deals a certain amount of damage to the enemy.
+    m_Localized: Release a holy light at the target, dealing basic damage
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927798
@@ -442,16 +444,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927799
-    m_Localized: Absorbs mana from the air to recover MP but makes the user vulnerable
-      during that turn.
+    m_Localized: Absorbs mana from the air to recover MP
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927800
-    m_Localized: Healing
+    m_Localized: Heal
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927801
-    m_Localized: Restores HP to a target.
+    m_Localized: Heal a single ally
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927802
@@ -459,7 +460,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927803
-    m_Localized: Removes all negative effects from an ally.
+    m_Localized: Unleash a sacred light that purifies all negative effects from allies
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927804
@@ -467,7 +468,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927805
-    m_Localized: Deals a certain amount of damage and burns the target for 2 turns.
+    m_Localized: Cast a fireball toward the target, dealing moderate damage and burning
+      the target for 2 turns
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927806
@@ -475,7 +477,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927807
-    m_Localized: Restores a set amount of mana and increases attack power for 1 turn.
+    m_Localized: Release internal mana to restore a set amount of MP and boost attack
+      for 1 turn
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927808
@@ -483,7 +486,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927809
-    m_Localized: Places a mark on an ally
+    m_Localized: "Apply an enhancement mark on an ally, empowering their next skill
+      with increased attack power\r"
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927810
@@ -491,7 +495,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927811
-    m_Localized: Deals moderate damage. If the target is burning
+    m_Localized: Launch sharp ice crystals at the enemy, dealing heavy damage, If
+      the target is burning, deal additional damage, stun them, and inflict Thermal
+      Shock for 3 turns
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927812
@@ -499,15 +505,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927813
-    m_Localized: Deals a certain amount of damage to the enemy.
+    m_Localized: Deliver a quick slash, dealing basic damage
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927814
-    m_Localized: Double Blade
+    m_Localized: Threefold Slash
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927815
-    m_Localized: Slashes three times in a row
+    m_Localized: Unleash three consecutive slashes, dealing moderate damage and applying
+      Bleed for 2 turns
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927816
@@ -515,15 +522,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927817
-    m_Localized: The swordsman focuses all spirit and will into swordsmanship
+    m_Localized: Focuses all will and spirit into the blade, increasing critical
+      rate and attack power for 2 turns
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927818
-    m_Localized: Flurry Stab
+    m_Localized: Rapid Thrust
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927819
-    m_Localized: Stabs the target 5 times rapidly
+    m_Localized: Thrust the target 5 times, dealing heavy damage. Each hit increases
+      critical rate by 5%
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927820
@@ -531,7 +540,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927821
-    m_Localized: A horizontal slash that deals a certain amount of damage.
+    m_Localized: Slash horizontally, dealing basic damage
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927822
@@ -539,7 +548,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927823
-    m_Localized: Leaps into the air and slashes downward
+    m_Localized: Leaps into the air and slashes downward, dealing moderate damage
+      and inflicting Injury for 1 turn
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927824
@@ -547,7 +557,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927825
-    m_Localized: Grants Agility for 2 turns. Each time the user successfully dodges
+    m_Localized: Grants Agility for 2 turns. Each time the user successfully dodges,
+      their attack power increases
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927826
@@ -563,23 +574,25 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927829
-    m_Localized: Thrusts a spear forward
+    m_Localized: Thrusts a spear forward, dealing basic damage and inflicting Weakness
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927830
-    m_Localized: Armor Piercer
+    m_Localized: Spear Thrust
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927831
-    m_Localized: Powerfully thrusts at the enemy
+    m_Localized: Powerfully thrusts at the enemy, dealing moderate damage and ignoring
+      part of their armor
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927832
-    m_Localized: Elite Knight
+    m_Localized: Warcry
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927833
-    m_Localized: Boosts morale of all allies
+    m_Localized: Raise the fighting spirit of all allies, increasing their attack
+      power for 2 turns
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927834
@@ -587,8 +600,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927835
-    m_Localized: Channels fire into the spear and unleashes a critical strike that
-      deals moderate damage
+    m_Localized: "Channels fire into the spear and unleashes a critical strike that
+      deals moderate damage, Ignores the target\u2019s defense and inflicts Burn
+      for 2 turns"
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927836
@@ -596,7 +610,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122048
-    m_Localized: Thrusts a spear forward
+    m_Localized: Thrusts a spear forward, dealing basic damage
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122049
@@ -604,7 +618,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122050
-    m_Localized: Swings downward
+    m_Localized: Strike down with your spear, dealing moderate damage and inflicting
+      Weak on the target for 1 turn
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122051
@@ -612,15 +627,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122052
-    m_Localized: Blesses all allies
+    m_Localized: Blesses all allies, gradually healing their wounds and increasing
+      their defense for 2 turns
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122053
-    m_Localized: Crusade Command
+    m_Localized: Unbreakable Aegis
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122054
-    m_Localized: Taunts enemies
+    m_Localized: Provoke enemies into focusing their attacks on you. Each time you
+      take damage, your defense increases slightly
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122055
@@ -628,7 +645,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122056
-    m_Localized: Swings an axe downward
+    m_Localized: Swings an axe downward, dealing basic damage
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122057
@@ -636,15 +653,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122058
-    m_Localized: Spins the axe
+    m_Localized: Spins the axe, dealing damage twice and causing Bleed for 2 turns
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122059
-    m_Localized: Blood Curse
+    m_Localized: Bloodseal
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122060
-    m_Localized: Imbues the axe with a blood curse
+    m_Localized: Enchants your axe with a bloodbound rune, granting Lifesteal and
+      Berserk for 2 turns
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122061
@@ -652,7 +670,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122062
-    m_Localized: Swings the axe once
+    m_Localized: Swing your axe, then strike down with a powerful blow. If the target
+      is Bleeding, inflict Fatal Bleed for 3 turns
     m_Metadata:
       m_Items: []
   - m_Id: 3060709122063
@@ -771,6 +790,56 @@ MonoBehaviour:
     m_Localized: Dungoen
     m_Metadata:
       m_Items: []
+  - m_Id: 337615794135040
+    m_Localized: Victory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 337692235325440
+    m_Localized: Failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 337754835312640
+    m_Localized: Reward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 337832903892992
+    m_Localized: "Congratulations! You\u2019ve cleared Floor {floor}"
+    m_Metadata:
+      m_Items:
+      - rid: 7695452523287806048
+  - m_Id: 338219258011648
+    m_Localized: Gold Received
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338394114351104
+    m_Localized: Turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338480588316672
+    m_Localized: Return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338526750826496
+    m_Localized: Retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338481959854080
+    m_Localized: Play Again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 339501154754560
+    m_Localized: You have failed to conquer Floor {floor}
+    m_Metadata:
+      m_Items:
+      - rid: 7695452523287806048
+  - m_Id: 343073531551744
+    m_Localized: NEW!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 343202758057984
+    m_Localized: Skip
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
@@ -780,3 +849,5 @@ MonoBehaviour:
         m_Entries: 
         m_SharedEntries:
         - id: 3060696539138
+        - id: 337832903892992
+        - id: 339501154754560

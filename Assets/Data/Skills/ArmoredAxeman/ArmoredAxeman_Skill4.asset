@@ -14,9 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300043
   skillName: "Thi\u1EBFt Ph\u1EE7 Tr\u1EA3m"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060709122061
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "Vung r\xECu m\u1ED9t nh\xE1t sau \u0111\xF3 gi\xE1ng xu\u1ED1ng m\u1ED9t
     \u0111\xF2n m\u1EA1nh, n\u1EBFu m\u1EE5c ti\xEAu \u0111ang b\u1ECB ch\u1EA3y
     m\xE1u, g\xE2y t\u1EED huy\u1EBFt trong v\xF2ng 3 l\u01B0\u1EE3t"
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060709122062
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   icon: {fileID: -6713868996001547132, guid: cad1e22ce29627b418fb4ca53ecd4cd9, type: 3}
   mpCost: 4
   animation: {fileID: 7400000, guid: 2be804ec98bb4ca4c8d76fda488be90f, type: 2}
@@ -27,3 +45,6 @@ MonoBehaviour:
   isWaitForCharge: 0
   isUniqueSkill: 0
   deadlyBlood: {fileID: 11400000, guid: 9d8b972e715dbad439d832d3d88fcd31, type: 2}
+  references:
+    version: 2
+    RefIds: []

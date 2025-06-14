@@ -17,23 +17,23 @@ public class InitializeCharacter : MonoBehaviour
 
     void Awake()
     {
-        //playerCharacter = new List<CharacterData>();
-        //enemyCharacter = new List<CharacterData>();
+        playerCharacter = new List<CharacterData>();
+        enemyCharacter = new List<CharacterData>();
 
-        //if (SceneManager.GetActiveScene().name != "Battle")
-        //{
-        //    playerCharacter.Add(defaultChar);
-        //}
-        //else
-        //{
-        //    playerCharacter = EquipedUnit.equipedUnit;
-        //}
-        //GameManager gameManager = FindAnyObjectByType<GameManager>();
-        //StageData stageData = gameManager.transform.Find("StageData").GetComponent<StageData>();
-        //foreach (Enemy enemy in stageData.enemies)
-        //{
-        //    enemyCharacter.Add(enemy.characterData);
-        //}
+        if (SceneManager.GetActiveScene().name != "Battle")
+        {
+            playerCharacter.Add(defaultChar);
+        }
+        else
+        {
+            playerCharacter = EquipedUnit.equipedUnit;
+        }
+        GameManager gameManager = FindAnyObjectByType<GameManager>();
+        StageData stageData = gameManager.transform.Find("StageData").GetComponent<StageData>();
+        foreach (Enemy enemy in stageData.enemies)
+        {
+            enemyCharacter.Add(enemy.characterData);
+        }
 
 
         int playerDataCount = playerCharacter.Count;

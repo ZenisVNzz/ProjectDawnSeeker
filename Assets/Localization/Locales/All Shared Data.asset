@@ -741,6 +741,54 @@ MonoBehaviour:
     m_Key: dungoen
     m_Metadata:
       m_Items: []
+  - m_Id: 337615794135040
+    m_Key: result_victory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 337692235325440
+    m_Key: result_failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 337754835312640
+    m_Key: result_reward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 337832903892992
+    m_Key: result_completeText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338219258011648
+    m_Key: result_goldReceive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338394114351104
+    m_Key: result_turn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338480588316672
+    m_Key: result_back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338481959854080
+    m_Key: result_playAgain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338526750826496
+    m_Key: result_retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 339501154754560
+    m_Key: result_failedText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 343073531551744
+    m_Key: summon_new
+    m_Metadata:
+      m_Items: []
+  - m_Id: 343202758057984
+    m_Key: summon_skip
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

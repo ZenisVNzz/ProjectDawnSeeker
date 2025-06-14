@@ -1,13 +1,16 @@
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.Rendering;
 
 public abstract class SkillBase : ScriptableObject
 {
     public int ID;
     public string skillName;
+    public LocalizedString localizedSkillName;
     public string description;
+    public LocalizedString localizedDescription;
     public Sprite icon;
     public int mpCost;
     public AnimationClip animation;
