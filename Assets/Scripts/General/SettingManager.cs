@@ -5,12 +5,23 @@ using UnityEngine;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
+using FirstGearGames.Utilities.Structures;
 
 public class SettingManager : MonoBehaviour
 {
+    public GameObject returnTitleButton;
+    public GameObject exitGameButton;
+
     public TMP_Dropdown resolutionDropdown;
     public TMP_Dropdown languageDropdown;
     public Toggle toggleFullScreen;
+
+    public AudioMixer audioMixer;
+    public Slider masterSlider;
+    public Slider musicSlider;
+    public Slider vfxSlider;
 
     private Resolution[] resolutions;
     private static bool isFullScreen = true;
@@ -19,8 +30,18 @@ public class SettingManager : MonoBehaviour
     public static int selectedLanguageIndex;
     List<Resolution> selectedResolutions = new List<Resolution>();
 
-    private void Start()
+    private float currentMasterVolume;
+    private float currentMusicVolume;
+    private float currentVFXVolume;
+
+    private void Awake()
     {
+        currentMasterVolume = masterSlider.value;
+        currentMusicVolume = musicSlider.value;
+        currentVFXVolume = vfxSlider.value;
+
+        SceneManager.sceneLoaded += OnSceneLoad;
+
         toggleFullScreen.isOn = isFullScreen;
         resolutions = Screen.resolutions;
 
@@ -50,6 +71,22 @@ public class SettingManager : MonoBehaviour
         languageDropdown.ClearOptions();
         List<string> languageList = new List<string> { "English", "Vietnamese" };
         languageDropdown.AddOptions(languageList);
+    }
+
+    public void OnEnable()
+    {
+        masterSlider.value = currentMasterVolume;
+        musicSlider.value = currentMusicVolume;
+        vfxSlider.value = currentVFXVolume;
+    }
+
+    public void OnSceneLoad(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name != "TITLESCREEN")
+        {
+            returnTitleButton.SetActive(true);
+            exitGameButton.SetActive(true);
+        }
     }
 
     public void ChangeRes()
@@ -96,10 +133,53 @@ public class SettingManager : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
-    }    
+    }
+
+    public void SetMasterVolume(float volume)
+    {
+        if (volume == -30f)
+        {
+            audioMixer.SetFloat("MasterVolume", -80f);
+        }
+        else
+        {
+            audioMixer.SetFloat("MasterVolume", volume);
+        }
+    }
+
+    public void SetMusicVolume(float volume)
+    {
+        if (volume == -30f)
+        {
+            audioMixer.SetFloat("MusicVolume", -80f);
+        }
+        else
+        {
+            audioMixer.SetFloat("MusicVolume", volume);
+        }
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        if (volume == -30f)
+        {
+            audioMixer.SetFloat("SFXVolume", -80f);
+        }
+        else
+        {
+            audioMixer.SetFloat("SFXVolume", volume);
+        }
+    }
 
     public void ApplySettings()
     {
+        SetMasterVolume(masterSlider.value);
+        SetMusicVolume(musicSlider.value);
+        SetSFXVolume(vfxSlider.value);
+        currentMasterVolume = masterSlider.value;
+        currentMusicVolume = musicSlider.value;
+        currentVFXVolume = vfxSlider.value;
+
         ChangeRes();
         ChangeFullScreen();
         ChangeLanguage();

@@ -271,7 +271,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927757
-    m_Localized: Increase little ATK
+    m_Localized: Slightly increases attack power
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927758
@@ -279,7 +279,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927759
-    m_Localized: Increase little DEF
+    m_Localized: Slightly increases defense
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927760
@@ -287,7 +287,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927761
-    m_Localized: Increase Dodge Chance
+    m_Localized: Greatly increases Dodge Chance
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927762
@@ -295,7 +295,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927763
-    m_Localized: Increase Crit Chance
+    m_Localized: Doubles critical rate
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927764
@@ -311,7 +311,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927767
-    m_Localized: Increase ATK and decrease DEF
+    m_Localized: Greatly increases attack power but greatly decreases defense
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927768
@@ -319,7 +319,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927769
-    m_Localized: Decrease little ATK
+    m_Localized: Slightly decreases attack power
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927770
@@ -327,7 +327,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927771
-    m_Localized: Decrease little DEF
+    m_Localized: Slightly decreases defense
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927772
@@ -335,7 +335,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927773
-    m_Localized: Cause damage each turn with max HP percent
+    m_Localized: Takes damage each turn based on the afflicted target's max HP
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927774
@@ -343,7 +343,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927775
-    m_Localized: Cause damage when action with ATK of caster
+    m_Localized: Takes damage on every action based on the afflicted target's ATK
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927776
@@ -375,7 +375,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927783
-    m_Localized: Decrease all stats (Exclude HP and MP)
+    m_Localized: Decrease all stats (ExceptHP and MP)
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927784
@@ -838,6 +838,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 343202758057984
     m_Localized: Skip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 344836208779264
+    m_Localized: You don't have enough gold to upgrade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 345044841848832
+    m_Localized: Upgrade Successful
     m_Metadata:
       m_Items: []
   references:

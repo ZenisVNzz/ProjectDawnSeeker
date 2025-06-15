@@ -238,7 +238,7 @@ public class SummonUnit : MonoBehaviour
                 GameObject newText = child.transform.Find("New").gameObject;
 
                 charIMG.sprite = SummonedCharStorage[i].CharacterData.characterSprite;
-                charName.text = SummonedCharStorage[i].CharacterData.characterName;
+                charName.text = SummonedCharStorage[i].CharacterData.localizedCharacterName.GetLocalizedString();
 
                 if (!SummonedCharStorage[i].alreadyHave)
                 {

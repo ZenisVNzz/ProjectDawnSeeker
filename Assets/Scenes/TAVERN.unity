@@ -6988,7 +6988,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -39, y: -0.9419985}
+  m_AnchoredPosition: {x: -34.9, y: -0.9419985}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1182154011
@@ -7049,7 +7049,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_wordSpacing: -10
   m_lineSpacing: -25
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -7367,7 +7367,7 @@ AudioSource:
   m_GameObject: {fileID: 1214320513}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8041428791025708375, guid: a824ccdd002716443b7d741fc8ad84b5, type: 2}
   m_audioClip: {fileID: 8300000, guid: 3d610fc12ac30b7499fc44cf2abf2dec, type: 3}
   m_Resource: {fileID: 8300000, guid: 3d610fc12ac30b7499fc44cf2abf2dec, type: 3}
   m_PlayOnAwake: 1
@@ -8750,7 +8750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37.2, y: -0.9419985}
+  m_AnchoredPosition: {x: -32.7, y: -0.9419985}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1453149427
@@ -8811,7 +8811,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_wordSpacing: -10
   m_lineSpacing: -25
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -12145,7 +12145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37.38, y: -0.9419985}
+  m_AnchoredPosition: {x: -35.4, y: -0.9419985}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2089523764
@@ -12208,7 +12208,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_wordSpacing: -10
   m_lineSpacing: -25
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
