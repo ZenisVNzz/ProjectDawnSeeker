@@ -17,7 +17,6 @@ public class SummonUnit : MonoBehaviour
 {
     public Inventory inventory;
     public List<SummonedCharStorage> SummonedCharStorage = new List<SummonedCharStorage>();
-    public List<Banner> banner;
     public Banner currentBanner;
     public GameObject summonedCharPrefab;
     public GameObject summoned10CharPrefab;
@@ -35,7 +34,16 @@ public class SummonUnit : MonoBehaviour
 
     public void SummonCharacter()
     {
-        bool isEnoughGold = Inventory.Instance.SpendMoney(100);
+        bool isEnoughGold;
+        if (currentBanner.name == "StandardBanner")
+        {
+            isEnoughGold = Inventory.Instance.SpendMoney(100);
+        }
+        else
+        {
+            isEnoughGold = Inventory.Instance.SpendMoney(200);
+        }
+        
         if (isEnoughGold)
         {
             SummonedCharStorage.Clear();
@@ -52,18 +60,26 @@ public class SummonUnit : MonoBehaviour
                 return;
             }
 
-            int randomIndex = Random.Range(1, 101);
             CharacterData selectedCharacter;
-            if (randomIndex <= 75)
+
+            if (inventory.summonedCharacters.Count <= 0)
             {
-                int randomCharIndex = Random.Range(0, currentBanner.rateUpCharacter.Count);
-                selectedCharacter = currentBanner.rateUpCharacter[randomCharIndex];
+                selectedCharacter = currentBanner.rateUpCharacter[0];
             }
             else
             {
-                int randomCharIndex = Random.Range(0, currentBanner.poolCharacter.Count);
-                selectedCharacter = currentBanner.poolCharacter[randomCharIndex];
-            }
+                int randomIndex = Random.Range(1, 101);
+                if (randomIndex <= 50)
+                {
+                    int randomCharIndex = Random.Range(0, currentBanner.rateUpCharacter.Count);
+                    selectedCharacter = currentBanner.rateUpCharacter[randomCharIndex];
+                }
+                else
+                {
+                    int randomCharIndex = Random.Range(0, currentBanner.poolCharacter.Count);
+                    selectedCharacter = currentBanner.poolCharacter[randomCharIndex];
+                }
+            }         
 
             if (inventory == null)
             {
@@ -108,7 +124,15 @@ public class SummonUnit : MonoBehaviour
     {
         SummonedCharStorage.Clear();
         isSkipping = false;
-        bool isEnoughGold = Inventory.Instance.SpendMoney(1000);
+        bool isEnoughGold;
+        if (currentBanner.name == "StandardBanner")
+        {
+            isEnoughGold = Inventory.Instance.SpendMoney(1000);
+        }
+        else
+        {
+            isEnoughGold = Inventory.Instance.SpendMoney(2000);
+        }
         if (isEnoughGold)
         {
             await Summon10Character();

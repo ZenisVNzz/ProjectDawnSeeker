@@ -14,10 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300039
   skillName: "T\u1EA5m Khi\xEAn B\u1EA5t Khu\u1EA5t"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060709122053
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "Khi\xEAu kh\xEDch k\u1EBB \u0111\u1ECBch, khi\u1EBFn k\u1EBB \u0111\u1ECBch
     \u01B0u ti\xEAn nh\u1EAFm v\xE0o b\u1EA3n th\xE2n, v\u1EDBi m\u1ED7i l\u1EA7n
     nh\u1EADn s\xE1t th\u01B0\u01A1ng t\u0103ng s\u1EE9c ph\xF2ng th\u1EE7 cho b\u1EA3n
     th\xE2n th\xEAm 10%"
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060709122054
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   icon: {fileID: 3017341774938438518, guid: 6ce24d43b16345e49aa14430c8729885, type: 3}
   mpCost: 4
   animation: {fileID: 0}
@@ -28,3 +46,6 @@ MonoBehaviour:
   isWaitForCharge: 0
   isUniqueSkill: 0
   AggroUP: {fileID: 11400000, guid: c06bcacfc17e9db448e40360a627b794, type: 2}
+  references:
+    version: 2
+    RefIds: []

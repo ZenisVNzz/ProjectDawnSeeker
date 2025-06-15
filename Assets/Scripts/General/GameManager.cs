@@ -37,8 +37,9 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
         Debug.Log("Inventory found");
-        inventory.currentDataSave = currentDataSave;
         currentDataSave = saveManager.LoadSave();
+        inventory.ClearData();
+        inventory.currentDataSave = currentDataSave;
         StageData.currentStage = currentDataSave.currentStage;
         foreach (ItemDataSave itemData in currentDataSave.items)
         {
@@ -69,5 +70,5 @@ public class GameManager : MonoBehaviour
         {
             settingsPanel.SetActive(true);
         }
-    }
+    } 
 }

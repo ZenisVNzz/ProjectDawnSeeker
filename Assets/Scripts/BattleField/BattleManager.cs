@@ -509,7 +509,7 @@ public class BattleManager : MonoBehaviour
         else
         {
             OnNextTurn();
-        }    
+        }
     }
 
     IEnumerator WaitForEnemyActionCompletion(BehaviorGraphAgent enemy)
@@ -548,6 +548,7 @@ public class BattleManager : MonoBehaviour
             character.StartTurn();
         }
         StartCoroutine(CheckIfPlayerCanAction(1));
+        OnEndTurn?.Invoke();
     }
 
     public IEnumerator CheckIfPlayerCanAction(int sec)
@@ -566,7 +567,6 @@ public class BattleManager : MonoBehaviour
             }
             startTurnButton.interactable = true;
             selectSkill.EnableSkillUI();
-            OnEndTurn?.Invoke();
         }
         else
         {

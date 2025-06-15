@@ -146,4 +146,10 @@ public class Inventory : MonoBehaviour
         currentDataSave.gold = gold;
         saveManager.SaveGame(currentDataSave);
     }
+
+    public void ClearData()
+    {
+        summonedCharacters.Clear();
+        items.Clear();
+    }    
 }

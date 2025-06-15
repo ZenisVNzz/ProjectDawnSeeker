@@ -780,13 +780,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 266664888950784
-    m_Localized: Spend 100 gold for 1 recruit?
+    m_Localized: Spend {gold} gold for 1 recruit?
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 7695452523287806048
   - m_Id: 266720622862336
-    m_Localized: Spend 1000 gold for 10 recruit?
+    m_Localized: Spend {gold} gold for 10 recruit?
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 7695452523287806048
   - m_Id: 268348302221312
     m_Localized: Dungoen
     m_Metadata:
@@ -853,6 +855,96 @@ MonoBehaviour:
     m_Localized: Finish the tutorial
     m_Metadata:
       m_Items: []
+  - m_Id: 623016383537152
+    m_Localized: A new adventure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 624683707457536
+    m_Localized: Crimson Fang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 625357568532480
+    m_Localized: Inferno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 626200866906112
+    m_Localized: Lightbearers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 631292533858304
+    m_Localized: Rate up for featured characters!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 632326140387328
+    m_Localized: Recruit rates are increased for the two featured characters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690553959931904
+    m_Localized: 'Welcome to the Lobby!
+
+      Here, you can recruit characters,
+      manage your team, upgrade heroes, and enter dungeons.
+
+      Tap to continue.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690725699903488
+    m_Localized: 'First, use the gold you have to recruit a character.
+
+      Tap
+      here to begin recruiting'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 691182577049600
+    m_Localized: Tap here to start recruiting characters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 691314404024320
+    m_Localized: Press Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 691412345217024
+    m_Localized: 'You''ve got your first character!
+
+      Now, let''s return to
+      the lobby'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 701262139678720
+    m_Localized: Tap here to manage your team
+    m_Metadata:
+      m_Items: []
+  - m_Id: 702225319649280
+    m_Localized: Choose a character to manage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 702815319810048
+    m_Localized: 'You can check your character''s name, level, stats, and skills
+      here
+
+      Tap here to continue'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 703548681281536
+    m_Localized: Tap this button to equip your character
+    m_Metadata:
+      m_Items: []
+  - m_Id: 704060306677760
+    m_Localized: 'This is your team
+
+      Tap here to continue'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 705966496210944
+    m_Localized: "Your team is ready.\nNow, let\u2019s return to the lobby"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 707382870728704
+    m_Localized: 'Everything is ready
+
+      Press this button to enter the dungeon'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
@@ -864,3 +956,5 @@ MonoBehaviour:
         - id: 3060696539138
         - id: 337832903892992
         - id: 339501154754560
+        - id: 266664888950784
+        - id: 266720622862336
