@@ -43,6 +43,7 @@ public partial class ReturnToOriginalPositionAction : Action
             Im.Value.transform.position = targetPos;
             animator.Play("Idle");
             Im.Value.OnAttackEnd();
+            Im.Value.EndAllWalkSound();
             return Status.Success;
         }
 

@@ -1,13 +1,11 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Localization.Settings;
-using UnityEngine.Localization;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
-using FirstGearGames.Utilities.Structures;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SettingManager : MonoBehaviour
 {
@@ -39,8 +37,6 @@ public class SettingManager : MonoBehaviour
         currentMasterVolume = masterSlider.value;
         currentMusicVolume = musicSlider.value;
         currentVFXVolume = vfxSlider.value;
-
-        SceneManager.sceneLoaded += OnSceneLoad;
 
         toggleFullScreen.isOn = isFullScreen;
         resolutions = Screen.resolutions;
@@ -78,11 +74,7 @@ public class SettingManager : MonoBehaviour
         masterSlider.value = currentMasterVolume;
         musicSlider.value = currentMusicVolume;
         vfxSlider.value = currentVFXVolume;
-    }
-
-    public void OnSceneLoad(Scene scene, LoadSceneMode mode)
-    {
-        if (scene.name != "TITLESCREEN")
+        if (SceneManager.GetActiveScene().name != "TITLESCREEN")
         {
             returnTitleButton.SetActive(true);
             exitGameButton.SetActive(true);
@@ -164,6 +156,7 @@ public class SettingManager : MonoBehaviour
         if (volume == -30f)
         {
             audioMixer.SetFloat("SFXVolume", -80f);
+
         }
         else
         {

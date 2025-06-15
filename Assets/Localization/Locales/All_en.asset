@@ -392,7 +392,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3060704927787
     m_Localized: Bash the enemy with your shield, dealing light damage and has a
-      chance to paralyze the target. Also increases the user's defense for 2 turns.
+      chance to stun the target. If the stun fails, provoke the target instead and
+      increase your own defense for 2 turns
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927788
@@ -803,7 +804,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 337832903892992
-    m_Localized: "Congratulations! You\u2019ve cleared Floor {floor}"
+    m_Localized: "You\u2019ve cleared Floor {floor}"
     m_Metadata:
       m_Items:
       - rid: 7695452523287806048
@@ -846,6 +847,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 345044841848832
     m_Localized: Upgrade Successful
+    m_Metadata:
+      m_Items: []
+  - m_Id: 587242988560384
+    m_Localized: Finish the tutorial
     m_Metadata:
       m_Items: []
   references:

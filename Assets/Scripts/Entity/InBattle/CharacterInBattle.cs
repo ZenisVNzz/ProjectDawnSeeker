@@ -242,7 +242,7 @@ public class CharacterInBattle : MonoBehaviour
 
         if (currentAttacker.isLifeSteal)
         {
-            currentAttacker.Heal(amount * 0.2f, true);
+            currentAttacker.Heal(amount * 0.3f, true);
         }
 
         currentHP -= amount;
@@ -482,7 +482,10 @@ public class CharacterInBattle : MonoBehaviour
         if (showPopUp)
         {
             targetPosition = this.transform.position;
-            dmgPopUp.ShowHealPopUp(savedHeal, targetPosition);
+            if (savedDmg != 0)
+            {
+                dmgPopUp.ShowHealPopUp(healAmount, targetPosition);
+            }          
         }
     }
 
@@ -558,6 +561,16 @@ public class CharacterInBattle : MonoBehaviour
         GameObject soudEffectObj = GameObject.Find(soundName);
         AudioSource audioSource = soudEffectObj.GetComponent<AudioSource>();
         audioSource.Stop();
+    }
+
+    public void EndAllWalkSound()
+    {
+        GameObject runEffectObj = GameObject.Find("Run");
+        GameObject slimeMoveEffectObj = GameObject.Find("SlimeMove");
+        AudioSource runEffecAudioSource = runEffectObj.GetComponent<AudioSource>();
+        AudioSource slimeMoveAudioSource = slimeMoveEffectObj.GetComponent<AudioSource>();
+        runEffecAudioSource.Stop();
+        slimeMoveAudioSource.Stop();
     }
 
     public void OnSupportSkillHit()

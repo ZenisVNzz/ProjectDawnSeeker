@@ -47,7 +47,8 @@ public partial class MoveToTargetAction : Action
 
         if (t >= 1f)
         {
-            return Status.Success;
+            Im.Value.EndAllWalkSound();
+            return Status.Success;      
         }
 
         return Status.Running;

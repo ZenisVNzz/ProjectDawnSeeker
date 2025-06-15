@@ -330,8 +330,9 @@ public class BattleManager : MonoBehaviour
                 if (action.Skill.move && !action.Skill.isWaitForCharge)
                 {
                     yield return StartCoroutine(MoveToTarget(action.Caster, action.Target));
-                }             
-                
+                }
+                action.Caster.EndAllWalkSound();
+
                 action.Skill.DoAction(action.Caster, action.Target);
                 battleUI.RefreshBattleUI();
 
@@ -363,7 +364,8 @@ public class BattleManager : MonoBehaviour
                 {
                     yield return StartCoroutine(ReturnToOriginalPosition(action.Caster, originalPos));
                 }
-              
+                action.Caster.EndAllWalkSound();
+
                 actionOrderUI.RemoveAction(action.Caster, action.Skill);
 
                 yield return new WaitForSeconds(0.5f);
@@ -518,7 +520,7 @@ public class BattleManager : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(3f);
         CheckWinLose();
         enemy.BlackboardReference.SetVariableValue("IsActionTurn", false);
         enemy.BlackboardReference.SetVariableValue("OnFinishAction", false);
@@ -545,7 +547,6 @@ public class BattleManager : MonoBehaviour
         {
             character.StartTurn();
         }
-        OnEndTurn?.Invoke();
         StartCoroutine(CheckIfPlayerCanAction(1));
     }
 
@@ -565,6 +566,7 @@ public class BattleManager : MonoBehaviour
             }
             startTurnButton.interactable = true;
             selectSkill.EnableSkillUI();
+            OnEndTurn?.Invoke();
         }
         else
         {

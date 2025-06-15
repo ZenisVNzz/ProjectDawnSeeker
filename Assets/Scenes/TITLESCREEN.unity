@@ -2328,10 +2328,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1844545905}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1287203357}
+        m_TargetAssemblyTypeName: SettingManager, Assembly-CSharp
+        m_MethodName: OnExitGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3415,7 +3415,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CH\u01A0I m\u1EDBi"
+  m_text: NEW GAME
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5053dae26d788d84a8f993374bffbe56, type: 2}
   m_sharedMaterial: {fileID: -1389265910971393398, guid: 5053dae26d788d84a8f993374bffbe56, type: 2}
@@ -4548,7 +4548,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "NH\xC0 PH\xC1T TRI\u1EC2N"
+  m_text: CREDITS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5053dae26d788d84a8f993374bffbe56, type: 2}
   m_sharedMaterial: {fileID: -1389265910971393398, guid: 5053dae26d788d84a8f993374bffbe56, type: 2}
@@ -7740,7 +7740,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ver 0.8.89
+  m_text: Ver 0.7.41
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0169eaa3d6a366845a1d615646bd1d03, type: 2}
   m_sharedMaterial: {fileID: -2043696881514613515, guid: 0169eaa3d6a366845a1d615646bd1d03, type: 2}
@@ -8013,7 +8013,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "C\xC0I \u0110\u1EB6T"
+  m_text: SETTINGS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5053dae26d788d84a8f993374bffbe56, type: 2}
   m_sharedMaterial: {fileID: -1389265910971393398, guid: 5053dae26d788d84a8f993374bffbe56, type: 2}
@@ -9597,7 +9597,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "TI\u1EBEP T\u1EE4C"
+  m_text: CONTINUE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5053dae26d788d84a8f993374bffbe56, type: 2}
   m_sharedMaterial: {fileID: -1389265910971393398, guid: 5053dae26d788d84a8f993374bffbe56, type: 2}
@@ -12524,7 +12524,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "THO\xC1T"
+  m_text: EXIT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5053dae26d788d84a8f993374bffbe56, type: 2}
   m_sharedMaterial: {fileID: -1389265910971393398, guid: 5053dae26d788d84a8f993374bffbe56, type: 2}

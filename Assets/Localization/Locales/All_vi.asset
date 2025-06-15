@@ -101,7 +101,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3060700733442
-    m_Localized: "H\u1EE7y Trang B\u1ECB"
+    m_Localized: "Th\xE1o"
     m_Metadata:
       m_Items: []
   - m_Id: 3060700733443
@@ -401,8 +401,9 @@ MonoBehaviour:
   - m_Id: 3060704927787
     m_Localized: "d\xF9ng khi\xEAn th\xFAc m\u1EA1nh v\xE0o \u0111\u1ED1i ph\u01B0\u01A1ng,
       g\xE2y s\xE1t th\u01B0\u01A1ng nh\u1EB9, c\xF3 t\u1EC9 l\u1EC7 khi\u1EBFn m\u1EE5c
-      ti\xEAu b\u1ECB t\xEA li\u1EC7t, \u0111\u1ED3ng th\u1EDDi t\u0103ng s\u1EE9c
-      ph\xF2ng th\u1EE7 cho b\u1EA3n th\xE2n trong v\xF2ng 2 l\u01B0\u1EE3t"
+      ti\xEAu b\u1ECB cho\xE1ng, n\u1EBFu kh\xF4ng b\u1ECB t\xEA li\u1EC7t, khi\xEAu
+      kh\xEDch m\u1EE5c ti\xEAu \u0111\u1ED3ng th\u1EDDi t\u0103ng s\u1EE9c ph\xF2ng
+      th\u1EE7 cho b\u1EA3n th\xE2n trong v\xF2ng 2 l\u01B0\u1EE3t"
     m_Metadata:
       m_Items: []
   - m_Id: 3060704927788
@@ -895,6 +896,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 345044841848832
     m_Localized: "N\xE2ng c\u1EA5p th\xE0nh c\xF4ng"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 587242988560384
+    m_Localized: "Ho\xE0n th\xE0nh h\u01B0\u1EDBng d\u1EABn"
     m_Metadata:
       m_Items: []
   references:
