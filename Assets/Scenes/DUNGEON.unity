@@ -293,7 +293,7 @@ MonoBehaviour:
     quantity: 20
   - item: {fileID: 11400000, guid: 58d7f8c102047e24eb064d614b28620e, type: 2}
     quantity: 15
-  goldReward: 17000
+  goldReward: 25000
   expGainForEachChar: 2200
   bossLevel: 1
   isUnlock: 0
@@ -1416,7 +1416,7 @@ MonoBehaviour:
     quantity: 4
   - item: {fileID: 11400000, guid: fef872e475ce8dd43aedda56f50bf15a, type: 2}
     quantity: 1
-  goldReward: 250
+  goldReward: 300
   expGainForEachChar: 100
   bossLevel: 0
   isUnlock: 0
@@ -1595,7 +1595,7 @@ MonoBehaviour:
     quantity: 12
   - item: {fileID: 11400000, guid: 58d7f8c102047e24eb064d614b28620e, type: 2}
     quantity: 8
-  goldReward: 8000
+  goldReward: 9500
   expGainForEachChar: 1400
   bossLevel: 0
   isUnlock: 0
@@ -4289,7 +4289,7 @@ MonoBehaviour:
     quantity: 4
   - item: {fileID: 11400000, guid: 58d7f8c102047e24eb064d614b28620e, type: 2}
     quantity: 1
-  goldReward: 1500
+  goldReward: 1600
   expGainForEachChar: 700
   bossLevel: 1
   isUnlock: 0
@@ -5009,7 +5009,7 @@ MonoBehaviour:
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 3
-  goldReward: 155
+  goldReward: 200
   expGainForEachChar: 50
   bossLevel: 0
   isUnlock: 1
@@ -5549,7 +5549,7 @@ MonoBehaviour:
     quantity: 8
   - item: {fileID: 11400000, guid: fef872e475ce8dd43aedda56f50bf15a, type: 2}
     quantity: 3
-  goldReward: 400
+  goldReward: 450
   expGainForEachChar: 300
   bossLevel: 0
   isUnlock: 0
@@ -5728,7 +5728,7 @@ MonoBehaviour:
     quantity: 5
   - item: {fileID: 11400000, guid: 58d7f8c102047e24eb064d614b28620e, type: 2}
     quantity: 2
-  goldReward: 2500
+  goldReward: 2700
   expGainForEachChar: 850
   bossLevel: 0
   isUnlock: 0
@@ -6179,7 +6179,7 @@ MonoBehaviour:
     quantity: 14
   - item: {fileID: 11400000, guid: 58d7f8c102047e24eb064d614b28620e, type: 2}
     quantity: 10
-  goldReward: 10000
+  goldReward: 14000
   expGainForEachChar: 1650
   bossLevel: 0
   isUnlock: 0
@@ -6744,7 +6744,7 @@ MonoBehaviour:
     quantity: 7
   - item: {fileID: 11400000, guid: 58d7f8c102047e24eb064d614b28620e, type: 2}
     quantity: 4
-  goldReward: 4500
+  goldReward: 4800
   expGainForEachChar: 1000
   bossLevel: 0
   isUnlock: 0
@@ -8249,7 +8249,7 @@ MonoBehaviour:
     quantity: 7
   - item: {fileID: 11400000, guid: 426404fa50c8fb74cb18ad5a99b509cd, type: 2}
     quantity: 2
-  goldReward: 850
+  goldReward: 1000
   expGainForEachChar: 600
   bossLevel: 0
   isUnlock: 0
@@ -9007,7 +9007,7 @@ MonoBehaviour:
     quantity: 9
   - item: {fileID: 11400000, guid: 58d7f8c102047e24eb064d614b28620e, type: 2}
     quantity: 6
-  goldReward: 6500
+  goldReward: 7000
   expGainForEachChar: 1200
   bossLevel: 1
   isUnlock: 0
@@ -9785,7 +9785,7 @@ MonoBehaviour:
     quantity: 5
   - item: {fileID: 11400000, guid: 426404fa50c8fb74cb18ad5a99b509cd, type: 2}
     quantity: 1
-  goldReward: 600
+  goldReward: 700
   expGainForEachChar: 400
   bossLevel: 0
   isUnlock: 0
@@ -11026,7 +11026,7 @@ MonoBehaviour:
     quantity: 17
   - item: {fileID: 11400000, guid: 58d7f8c102047e24eb064d614b28620e, type: 2}
     quantity: 13
-  goldReward: 13000
+  goldReward: 18000
   expGainForEachChar: 1900
   bossLevel: 0
   isUnlock: 0

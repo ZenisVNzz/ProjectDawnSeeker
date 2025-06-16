@@ -14,7 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100102
   characterName: GreatSword Skeleton
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 1
+  characterTags: 
   characterSprite: {fileID: -2217864755329017844, guid: 535ea569247b2cc48a295fc014276755, type: 3}
   characterAnimation: {fileID: 9100000, guid: 875d4d224a1e38843875fe8c1d0237a4, type: 2}
   isBoss: 1
@@ -22,7 +32,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 85e9f425970865d4997d25911ca96aeb, type: 2}
   - {fileID: 11400000, guid: 2539efc755b0aae41ba556412336619b, type: 2}
   - {fileID: 11400000, guid: c9992b7e26f46434fb38da8921e085b3, type: 2}
-  - {fileID: 11400000, guid: 0c571bb2f71798145a67bd14bb1c1c14, type: 2}
+  currentTotalXP: 0
   level: 1
   ATK: 242
   HP: 5000
@@ -41,3 +51,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0
   CDPerLevel: 0
+  references:
+    version: 2
+    RefIds: []

@@ -24,7 +24,6 @@ public class Bash : SkillBase
         {
             provoke.provocateur = user;
             target.ApplyStatusEffect(provoke, 0);
-            user.ApplyStatusEffect(defUP, 0);
         }
     }
 
