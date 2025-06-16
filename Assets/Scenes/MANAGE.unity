@@ -9430,8 +9430,8 @@ GameObject:
   - component: {fileID: 637269926}
   - component: {fileID: 637269925}
   - component: {fileID: 637269924}
-  - component: {fileID: 637269923}
   - component: {fileID: 637269927}
+  - component: {fileID: 637269923}
   m_Layer: 5
   m_Name: Equiped
   m_TagString: Untagged
@@ -12192,6 +12192,7 @@ GameObject:
   - component: {fileID: 849881926}
   - component: {fileID: 849881925}
   - component: {fileID: 849881924}
+  - component: {fileID: 849881927}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -12310,6 +12311,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 0}
+--- !u!114 &849881927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849881922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5c7c22beacf404598596d0861c9bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorial: {fileID: 830345550}
+  nextTutorial: {fileID: 519505299}
 --- !u!224 &853453575 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2383310970026290703, guid: 4e8d304a93787a946bc0d77f8ee6ec75, type: 3}
@@ -29406,6 +29421,7 @@ MonoBehaviour:
   tutorial_1: {fileID: 0}
   doneTarvenTutorial: {fileID: 0}
   tutorial_2: {fileID: 830345550}
+  tutorial_3: {fileID: 0}
 --- !u!1 &2134439762
 GameObject:
   m_ObjectHideFlags: 0

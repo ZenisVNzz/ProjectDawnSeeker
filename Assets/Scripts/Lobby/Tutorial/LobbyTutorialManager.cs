@@ -34,7 +34,7 @@ public class LobbyTutorialManager : MonoBehaviour
                 tutorial_2.SetActive(true);
             }           
         }
-        if (inventory.currentDataSave.isCompletedTarvenTutorial && inventory.currentDataSave.isCompletedManageTutorial)
+        if (inventory.currentDataSave.isCompletedTarvenTutorial && inventory.currentDataSave.isCompletedManageTutorial && !inventory.currentDataSave.isCompletedBattleTutorial)
         {
             if (tutorial_3 != null)
             {

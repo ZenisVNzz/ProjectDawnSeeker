@@ -15,6 +15,11 @@ public class EquipUnit : MonoBehaviour
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() =>
         {
+            if (Inventory.Instance.currentDataSave.isCompletedTarvenTutorial && !Inventory.Instance.currentDataSave.isCompletedManageTutorial)
+            {
+                EquipTutorial equipTutorial = FindAnyObjectByType<EquipTutorial>();
+                equipTutorial.OnClick();
+            }
             EquipedUnit.equipedUnit.Add(charDataStorage.characterData);
             equipedUnit.UpdateUI();
             gameObject.SetActive(false);

@@ -60,20 +60,13 @@ public class BattleManager : MonoBehaviour
             GameObject buttonPanel = GameObject.Find("ButtonPanel");
             Animator buttonPanelAnimator = buttonPanel.GetComponent<Animator>();
             int actionAble = TeamPlayer.Count(c => c.isActionAble);
-            if (plannedActions.Count >= actionAble)
+            Debug.Log("Thực thi hành động");
+            Action();
+            startTurnButton.interactable = false;
+            if (buttonPanelAnimator.GetCurrentAnimatorStateInfo(0).IsName("Popup"))
             {
-                Debug.Log("Thực thi hành động");
-                Action();
-                startTurnButton.interactable = false;
-                if (buttonPanelAnimator.GetCurrentAnimatorStateInfo(0).IsName("Popup"))
-                {
-                    buttonPanelAnimator.Play("Hide");
-                }
+                buttonPanelAnimator.Play("Hide");
             }
-            else
-            {
-                Debug.Log("Chưa đủ hành động để thực thi");
-            }    
         });
         StartCoroutine(InitializEnemyAction());
     }

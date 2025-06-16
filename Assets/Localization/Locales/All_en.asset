@@ -831,7 +831,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 339501154754560
-    m_Localized: You have failed to conquer Floor {floor}
+    m_Localized: You have failed to conquer {floor}
     m_Metadata:
       m_Items:
       - rid: 7695452523287806048
@@ -852,7 +852,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 587242988560384
-    m_Localized: Finish the tutorial
+    m_Localized: Continue
     m_Metadata:
       m_Items: []
   - m_Id: 623016383537152
@@ -889,7 +889,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 690725699903488
-    m_Localized: 'First, use the gold you have to recruit a character.
+    m_Localized: 'First, use the gold you have to recruit a character
 
       Tap
       here to begin recruiting'
@@ -943,6 +943,68 @@ MonoBehaviour:
     m_Localized: 'Everything is ready
 
       Press this button to enter the dungeon'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712371219390464
+    m_Localized: 'You can also check and edit your team here
+
+      Tap here to continue'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726816213622784
+    m_Localized: Tap this button to begin your conquest of Dungeon Floor 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727922591326208
+    m_Localized: Floor 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727924109664256
+    m_Localized: Floor 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727960499445760
+    m_Localized: Floor 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727970137956352
+    m_Localized: Floor 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727990094454784
+    m_Localized: Floor 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727996952141824
+    m_Localized: Floor 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728006863282176
+    m_Localized: Floor 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728015679709184
+    m_Localized: Floor 8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728023242039296
+    m_Localized: Floor 9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728041042665472
+    m_Localized: Floor 10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728049733263360
+    m_Localized: Floor 11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728061410205696
+    m_Localized: Floor 12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728068389527552
+    m_Localized: Floor 13
     m_Metadata:
       m_Items: []
   references:

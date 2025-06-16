@@ -35,7 +35,7 @@ public class OnEndStage : MonoBehaviour
 
             localizeStringEvent.StringReference.Arguments = new object[] {
             new {
-            floor = stageData.stageName
+            floor = stageData.stageName.GetLocalizedString()
             }};
             localizeStringEvent.RefreshString();
 
@@ -95,7 +95,7 @@ public class OnEndStage : MonoBehaviour
 
             localizeStringEvent.StringReference.Arguments = new object[] {
             new {
-                floor = stageData.stageName
+                floor = stageData.stageName.GetLocalizedString()
             }};
 
             turnIndex.text = battleManager.GetCurrentTurn().ToString();

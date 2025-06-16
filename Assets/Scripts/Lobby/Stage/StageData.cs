@@ -1,12 +1,13 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.SceneManagement;
 
 public class StageData : MonoBehaviour
 {
     public int stageID;
-    public string stageName;
+    public LocalizedString stageName;
     public List<Enemy> enemies;
     public List<Item> items;
     public int goldReward;

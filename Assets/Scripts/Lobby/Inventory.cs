@@ -147,6 +147,15 @@ public class Inventory : MonoBehaviour
         saveManager.SaveGame(currentDataSave);
     }
 
+    public void LoadSave(GeneralDataSave data)
+    {
+        gold = data.gold;
+        currentDataSave.isCompletedManageTutorial = data.isCompletedManageTutorial;
+        currentDataSave.isCompletedTarvenTutorial = data.isCompletedTarvenTutorial;
+        currentDataSave.isCompletedBattleTutorial = data.isCompletedBattleTutorial;
+        currentDataSave.currentStage = data.currentStage;
+    }    
+
     public void ClearData()
     {
         summonedCharacters.Clear();

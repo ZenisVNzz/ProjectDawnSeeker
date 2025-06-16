@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator LoadGameOnClickContinue()
     {
+        currentDataSave = saveManager.LoadSave();
         yield return StartCoroutine(WaitForInventory());
     }
 
@@ -37,11 +39,12 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
         Debug.Log("Inventory found");
-        currentDataSave = saveManager.LoadSave();
         inventory.ClearData();
-        inventory.currentDataSave = currentDataSave;
+        inventory.LoadSave(currentDataSave);
+        inventory.currentDataSave.characters.Clear();
+        inventory.currentDataSave.items.Clear();
         StageData.currentStage = currentDataSave.currentStage;
-        foreach (ItemDataSave itemData in currentDataSave.items)
+        foreach (ItemDataSave itemData in currentDataSave.items.ToList())
         {
             for (int i = 0; i < itemData.quantity; i++)
             {
@@ -49,13 +52,15 @@ public class GameManager : MonoBehaviour
                 inventory.AddItem(item);
             }
         }
+
         inventory.LoadGold(currentDataSave.gold);
-        foreach (CharacterDataSave characterData in currentDataSave.characters)
+        foreach (CharacterDataSave characterData in currentDataSave.characters.ToList())
         {
             CharacterData character = Instantiate(characterDataStorage.GetCharacterByID(characterData.characterID));
             character.AddXP(characterData.characterXP);
             inventory.AddCharacter(character);
         }
+
         Debug.Log("Load game successfully!");
     }
 
