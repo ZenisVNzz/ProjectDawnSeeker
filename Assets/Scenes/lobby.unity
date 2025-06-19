@@ -2816,6 +2816,7 @@ GameObject:
   - component: {fileID: 613479699}
   - component: {fileID: 613479698}
   - component: {fileID: 613479701}
+  - component: {fileID: 613479702}
   m_Layer: 0
   m_Name: Bg
   m_TagString: Untagged
@@ -2952,6 +2953,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObj: {fileID: 1585714541}
   selectingUI: {fileID: 0}
+--- !u!114 &613479702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613479696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_01
+  playOnAwake: 0
+  toggle: 0
+  customVolume: 0
+  volume: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -4733,6 +4751,7 @@ GameObject:
   - component: {fileID: 1282532909}
   - component: {fileID: 1282532908}
   - component: {fileID: 1282532907}
+  - component: {fileID: 1282532911}
   m_Layer: 0
   m_Name: Play
   m_TagString: Untagged
@@ -4868,6 +4887,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282532905}
   m_CullTransparentMesh: 1
+--- !u!114 &1282532911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282532905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_01
+  playOnAwake: 0
+  toggle: 0
+  customVolume: 0
+  volume: 0
 --- !u!1 &1283265462
 GameObject:
   m_ObjectHideFlags: 0
@@ -6262,6 +6298,7 @@ GameObject:
   - component: {fileID: 1521655477}
   - component: {fileID: 1521655476}
   - component: {fileID: 1521655479}
+  - component: {fileID: 1521655480}
   m_Layer: 5
   m_Name: OPTION
   m_TagString: Untagged
@@ -6383,6 +6420,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afde0a5a99e61c34fa6d2efedf8f0a3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1521655480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521655474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_01
+  playOnAwake: 0
+  toggle: 0
+  customVolume: 0
+  volume: 0
 --- !u!1 &1537327610
 GameObject:
   m_ObjectHideFlags: 0
@@ -6648,6 +6702,7 @@ GameObject:
   - component: {fileID: 1561796700}
   - component: {fileID: 1561796699}
   - component: {fileID: 1561796702}
+  - component: {fileID: 1561796703}
   m_Layer: 0
   m_Name: Bg
   m_TagString: Untagged
@@ -6784,6 +6839,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObj: {fileID: 1422188600}
   selectingUI: {fileID: 0}
+--- !u!114 &1561796703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561796697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_01
+  playOnAwake: 0
+  toggle: 0
+  customVolume: 0
+  volume: 0
 --- !u!1 &1567179824
 GameObject:
   m_ObjectHideFlags: 0

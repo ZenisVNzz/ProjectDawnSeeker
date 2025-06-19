@@ -79,6 +79,11 @@ public class SettingManager : MonoBehaviour
             returnTitleButton.SetActive(true);
             exitGameButton.SetActive(true);
         }
+        else
+        {
+            returnTitleButton.SetActive(false);
+            exitGameButton.SetActive(false);
+        }    
     }
 
     public void ChangeRes()

@@ -47,6 +47,7 @@ MonoBehaviour:
   isUniqueSkill: 0
   paralysis: {fileID: 11400000, guid: f268a165c3f09874e9a860ec66d784c2, type: 2}
   defUP: {fileID: 11400000, guid: f9d0b0d778f43ea4dac0332777c1b337, type: 2}
+  provoke: {fileID: 11400000, guid: c06bcacfc17e9db448e40360a627b794, type: 2}
   references:
     version: 2
     RefIds: []

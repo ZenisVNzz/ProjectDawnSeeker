@@ -1509,6 +1509,135 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -2731}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &221996161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 221996162}
+  - component: {fileID: 221996163}
+  m_Layer: 0
+  m_Name: AudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &221996162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221996161}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2035593848}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &221996163
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221996161}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -6070721627980166909, guid: a824ccdd002716443b7d741fc8ad84b5, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &222056014
 GameObject:
   m_ObjectHideFlags: 0
@@ -3085,6 +3214,7 @@ GameObject:
   - component: {fileID: 484187805}
   - component: {fileID: 484187804}
   - component: {fileID: 484187807}
+  - component: {fileID: 484187808}
   m_Layer: 0
   m_Name: CreditButton
   m_TagString: Untagged
@@ -3221,6 +3351,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectingObj: {fileID: 1703249481}
+--- !u!114 &484187808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484187802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_01
+  playOnAwake: 0
+  toggle: 0
+  customVolume: 0
+  volume: 0
 --- !u!1 &497633179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3548,6 +3695,7 @@ GameObject:
   - component: {fileID: 530894579}
   - component: {fileID: 530894582}
   - component: {fileID: 530894583}
+  - component: {fileID: 530894584}
   m_Layer: 0
   m_Name: SettingButton
   m_TagString: Untagged
@@ -3684,6 +3832,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afde0a5a99e61c34fa6d2efedf8f0a3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &530894584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530894577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_01
+  playOnAwake: 0
+  toggle: 0
+  customVolume: 0
+  volume: 0
 --- !u!1 &602994897
 GameObject:
   m_ObjectHideFlags: 0
@@ -3922,6 +4087,7 @@ GameObject:
   - component: {fileID: 667851566}
   - component: {fileID: 667851565}
   - component: {fileID: 667851564}
+  - component: {fileID: 667851567}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -4043,6 +4209,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667851562}
   m_CullTransparentMesh: 1
+--- !u!114 &667851567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667851562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_01
+  playOnAwake: 0
+  toggle: 0
+  customVolume: 0
+  volume: 0
 --- !u!1 &670262726
 GameObject:
   m_ObjectHideFlags: 0
@@ -5066,6 +5249,7 @@ GameObject:
   - component: {fileID: 784778635}
   - component: {fileID: 784778634}
   - component: {fileID: 784778637}
+  - component: {fileID: 784778638}
   m_Layer: 0
   m_Name: QuitButton
   m_TagString: Untagged
@@ -5215,6 +5399,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectingObj: {fileID: 602994897}
+--- !u!114 &784778638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784778632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_01
+  playOnAwake: 0
+  toggle: 0
+  customVolume: 0
+  volume: 0
 --- !u!1 &790887476
 GameObject:
   m_ObjectHideFlags: 0
@@ -6029,6 +6230,7 @@ GameObject:
   - component: {fileID: 973830582}
   - component: {fileID: 973830581}
   - component: {fileID: 973830580}
+  - component: {fileID: 973830583}
   m_Layer: 5
   m_Name: ApplyButton
   m_TagString: Untagged
@@ -6150,6 +6352,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973830578}
   m_CullTransparentMesh: 1
+--- !u!114 &973830583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973830578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_01
+  playOnAwake: 0
+  toggle: 0
+  customVolume: 0
+  volume: 0
 --- !u!1 &977933592
 GameObject:
   m_ObjectHideFlags: 0
@@ -6319,6 +6538,7 @@ GameObject:
   - component: {fileID: 990677407}
   - component: {fileID: 990677406}
   - component: {fileID: 990677405}
+  - component: {fileID: 990677409}
   m_Layer: 0
   m_Name: ContinueButton
   m_TagString: Untagged
@@ -6467,6 +6687,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990677403}
   m_CullTransparentMesh: 1
+--- !u!114 &990677409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990677403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_01
+  playOnAwake: 0
+  toggle: 0
+  customVolume: 0
+  volume: 0
 --- !u!1 &1023251900
 GameObject:
   m_ObjectHideFlags: 0
@@ -7544,6 +7781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1193772382}
   - component: {fileID: 1193772381}
+  - component: {fileID: 1193772383}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -7619,6 +7857,23 @@ RectTransform:
   m_AnchoredPosition: {x: 1556, y: 1933}
   m_SizeDelta: {x: 20.2, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1193772383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193772380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: 
+  playOnAwake: 0
+  toggle: 1
+  customVolume: 1
+  volume: 0.15
 --- !u!1 &1260767522
 GameObject:
   m_ObjectHideFlags: 0
@@ -10740,6 +10995,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614074363}
   m_CullTransparentMesh: 1
+--- !u!1 &1617393394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1617393395}
+  - component: {fileID: 1617393396}
+  m_Layer: 0
+  m_Name: SFXManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1617393395
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617393394}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2035593848}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1617393396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617393394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7efcf92070ec55b40a737904eae27596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 221996163}
+  sfxList:
+  - sfxName: Click_01
+    clip: {fileID: 8300000, guid: 087224dd7ec352f42a3b950a07009a88, type: 3}
+  - sfxName: Switch_On
+    clip: {fileID: 8300000, guid: 405ad9d01edb3de4db733227c2e2d341, type: 3}
+  - sfxName: Switch_Off
+    clip: {fileID: 8300000, guid: 76c52c1a3287ef14ca30fbff20ec56aa, type: 3}
+  - sfxName: Switch_Off
+    clip: {fileID: 8300000, guid: 76c52c1a3287ef14ca30fbff20ec56aa, type: 3}
+  - sfxName: Gacha_Charge
+    clip: {fileID: 8300000, guid: baa64dd1a3826f841b58c815a6d2d065, type: 3}
 --- !u!1 &1619645078
 GameObject:
   m_ObjectHideFlags: 0
@@ -12741,6 +13052,7 @@ GameObject:
   - component: {fileID: 1873700566}
   - component: {fileID: 1873700565}
   - component: {fileID: 1873700564}
+  - component: {fileID: 1873700568}
   - component: {fileID: 1873700567}
   m_Layer: 0
   m_Name: PlayButton
@@ -12890,6 +13202,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectingObj: {fileID: 130457292}
+--- !u!114 &1873700568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873700562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_01
+  playOnAwake: 0
+  toggle: 0
+  customVolume: 0
+  volume: 0
 --- !u!1 &1938724147
 GameObject:
   m_ObjectHideFlags: 0
@@ -13525,6 +13854,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1617393395}
+  - {fileID: 221996162}
   - {fileID: 2101033516}
   - {fileID: 1503193263}
   - {fileID: 1939046497}

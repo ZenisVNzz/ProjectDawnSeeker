@@ -458,6 +458,7 @@ GameObject:
   - component: {fileID: 6175101365892261113}
   - component: {fileID: 9219125877479420028}
   - component: {fileID: 6262975725194775717}
+  - component: {fileID: 8561527723651651787}
   m_Layer: 0
   m_Name: SummonedChar
   m_TagString: Untagged
@@ -526,6 +527,23 @@ MonoBehaviour:
   graphicRaycaster: {fileID: 0}
   eventSystem: {fileID: 0}
   ButtonObject: {fileID: 0}
+--- !u!114 &8561527723651651787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4806310989674497348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Gacha_Charge
+  playOnAwake: 1
+  toggle: 0
+  customVolume: 1
+  volume: 0.5
 --- !u!1 &6119079287980298860
 GameObject:
   m_ObjectHideFlags: 0
