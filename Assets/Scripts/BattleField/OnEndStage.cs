@@ -44,7 +44,7 @@ public class OnEndStage : MonoBehaviour
             int goldReceived = stageData.goldReward;
             if (stageData.stageID < StageData.currentStage)
             {
-                goldReceived /= 3;
+                goldReceived /= 2;
             }
             Inventory.Instance.AddMoney(goldReceived);
 
@@ -59,7 +59,7 @@ public class OnEndStage : MonoBehaviour
                 int itemReceivedAmount = item.quantity;
                 if (stageData.stageID < StageData.currentStage)
                 {
-                    itemReceivedAmount /= 3;
+                    itemReceivedAmount /= 2;
                 }
                 for (int i = 0; i < itemReceivedAmount; i++)
                 {
