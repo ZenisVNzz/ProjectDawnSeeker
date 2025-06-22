@@ -10,7 +10,14 @@ public partial class ImDeadCondition : Condition
 
     public override bool IsTrue()
     {
-        return true;
+        if (!MySelf.Value.isAlive)
+        {
+            return true;
+        }    
+        else
+        {
+            return false;
+        }    
     }
 
     public override void OnStart()

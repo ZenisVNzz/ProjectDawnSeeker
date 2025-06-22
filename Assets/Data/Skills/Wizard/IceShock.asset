@@ -37,6 +37,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  skillTypes: 0000000002000000
   icon: {fileID: -8093117192702332651, guid: 22fde2a62f930de41af6ee314f3cd596, type: 3}
   mpCost: 5
   animation: {fileID: 7400000, guid: c4c478798342ff54689588ace0f004bf, type: 2}

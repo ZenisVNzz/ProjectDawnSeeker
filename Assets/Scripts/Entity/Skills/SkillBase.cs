@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Rendering;
 
+public enum SkillType { Attack, Buff, Debuff, Heal, Aoe, Support, Charge}
+
 public abstract class SkillBase : ScriptableObject
 {
     public int ID;
@@ -11,6 +13,7 @@ public abstract class SkillBase : ScriptableObject
     public LocalizedString localizedSkillName;
     public string description;
     public LocalizedString localizedDescription;
+    public List<SkillType> skillTypes;
     public Sprite icon;
     public int mpCost;
     public AnimationClip animation;
@@ -41,12 +44,12 @@ public abstract class SkillBase : ScriptableObject
     {
     }
 
-    public virtual bool CheckSkillCondition(CharacterInBattle user, CharacterInBattle target)
+    public virtual bool CheckSkillCondition(CharacterInBattle user)
     {
         return true;
     }
 
-    public virtual void OnFailCharge(CharacterInBattle user, CharacterInBattle target)
+    public virtual void OnFailCharge(CharacterInBattle user)
     {
     }
 

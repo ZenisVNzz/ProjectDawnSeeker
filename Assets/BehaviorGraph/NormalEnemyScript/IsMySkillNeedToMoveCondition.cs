@@ -11,7 +11,7 @@ public partial class IsMySkillNeedToMoveCondition : Condition
     public override bool IsTrue()
     {
         if (ChosenSkill.Value.move)
-        {
+        {              
             return true;
         }
         else

@@ -11,7 +11,7 @@ public partial class DoIHaveBuffSkillCondition : Condition
 
     public override bool IsTrue()
     {
-        if (SkillList.Value.skillList.Any(skill => skill.passiveSkill))
+        if (SkillList.Value.skillList.Any(skill => skill.skillTypes.Contains(SkillType.Buff)))
         {
             return true;
         }

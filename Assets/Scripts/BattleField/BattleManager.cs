@@ -6,6 +6,7 @@ using Unity.Behavior;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using Action = System.Action;
 
 public class BattleManager : MonoBehaviour
 {
@@ -37,18 +38,6 @@ public class BattleManager : MonoBehaviour
 
     void Start()
     {
-        behaviorGraphAgent = TeamAI.ConvertAll(c => c.GetComponent<BehaviorGraphAgent>());
-        foreach (BehaviorGraphAgent agent in behaviorGraphAgent)
-        {
-            List<GameObject> playerObj = new List<GameObject>();
-            playerObj = TeamPlayer.ConvertAll(character => character.gameObject);
-            List<GameObject> enemyObj = new List<GameObject>();
-            enemyObj = TeamAI.ConvertAll(character => character.gameObject);
-
-            agent.BlackboardReference.SetVariableValue("PlayerTeam", playerObj);
-            agent.BlackboardReference.SetVariableValue("MyTeam", enemyObj);
-        }
-
         foreach (CharacterInBattle characterInBattle in TeamPlayer)
         {
             characterInBattle.OnDeath += OnDeath;
@@ -68,8 +57,30 @@ public class BattleManager : MonoBehaviour
                 buttonPanelAnimator.Play("Hide");
             }
         });
-        StartCoroutine(InitializEnemyAction());
     }
+
+    public void SubcribeInitialize(Action callBack)
+    {
+        EventManager.Subscribe("InitializeCompleted", InializeAI);
+        callBack.Invoke();
+    }    
+    
+    private void InializeAI()
+    {
+        behaviorGraphAgent = TeamAI.ConvertAll(c => c.GetComponent<BehaviorGraphAgent>());
+        foreach (BehaviorGraphAgent agent in behaviorGraphAgent)
+        {
+            List<GameObject> playerObj = new List<GameObject>();
+            playerObj = TeamPlayer.ConvertAll(character => character.gameObject);
+            List<GameObject> enemyObj = new List<GameObject>();
+            enemyObj = TeamAI.ConvertAll(character => character.gameObject);
+
+            agent.BlackboardReference.SetVariableValue("PlayerTeam", playerObj);
+            agent.BlackboardReference.SetVariableValue("MyTeam", enemyObj);
+            agent.BlackboardReference.SetVariableValue("OriginalPosition", agent.transform.position);
+        }
+        StartCoroutine(InitializEnemyAction());
+    }    
 
     private void OnDeath(CharacterInBattle character)
     {
@@ -169,7 +180,7 @@ public class BattleManager : MonoBehaviour
 
     IEnumerator InitializEnemyAction()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.5f);
         foreach (var enemyAI in behaviorGraphAgent)
         {
             enemyAI.BlackboardReference.SetVariableValue("IsBeginTurn", true);
@@ -381,99 +392,6 @@ public class BattleManager : MonoBehaviour
         }
         else
         {
-            //foreach (EnemyPlannedAction action in enemyPlannedAction)
-            //{
-            //    if (!action.Target.isAlive)
-            //    {
-            //        actionOrderUI.RemoveAction(action.Caster, action.Skill);
-            //        continue;
-            //    }
-            //    if (!action.Caster.isAlive)
-            //    {
-            //        actionOrderUI.RemoveAction(action.Caster, action.Skill);
-            //        continue;
-            //    }
-
-            //    Vector3 originalPos = action.Caster.transform.position;
-
-            //    if (!action.Caster.isActionAble)
-            //    {
-            //        if (action.Caster.isCharge)
-            //        {
-            //            bool canUseSkill = action.Skill.CheckSkillCondition(action.Caster, action.Target);
-            //            if (canUseSkill)
-            //            {
-            //                if (action.Skill.GetChargeTurn() <= action.Caster.chargeTurn + 1)
-            //                {
-            //                    if (action.Skill.move)
-            //                    {
-            //                        yield return StartCoroutine(MoveToTarget(action.Caster, action.Target));
-            //                    }
-            //                    if (TeamPlayer.Any(c => c.isAggroUp && c.isAlive))
-            //                    {
-            //                        action.Target = TeamPlayer.FirstOrDefault(c => c.isAggroUp && c.isAlive);
-            //                    }
-
-            //                    action.Skill.DoSpecialAction(action.Caster, action.Target);
-            //                    battleUI.RefreshBattleUI();
-
-            //                    if (action.Target.isParry)
-            //                    {
-            //                        yield return StartCoroutine(WaitForParry(action.Caster, action.Target));
-            //                    }
-
-            //                    if (!action.Caster.isAlive)
-            //                    {
-            //                        actionOrderUI.RemoveAction(action.Caster, action.Skill);
-            //                        yield return new WaitForSeconds(1f);
-            //                        continue;
-            //                    }
-
-            //                    while (action.Caster.currentState != State.Idle)
-            //                    {
-            //                        yield return null;
-            //                    }
-
-            //                    action.Skill.ApplyEffectOnFinishedAttack(action.Caster, action.Target);
-
-            //                    if (action.Skill.move)
-            //                    {
-            //                        yield return StartCoroutine(ReturnToOriginalPosition(action.Caster, originalPos));
-            //                    }
-            //                    action.Caster.isCharge = false;
-            //                    action.Caster.isActionAble = true;
-
-            //                    yield return new WaitForSeconds(0.5f);
-
-            //                    action.Skill.ApplyEffectOnEnd(action.Caster, action.Target);
-            //                    action.Caster.ResetState();
-            //                    action.Target.ResetState();
-
-            //                    if (action.Caster.isBleeding == true)
-            //                    {
-            //                        action.Caster.TakeBleedingDamage(action.Caster.ATK * 0.15f);
-            //                    }
-
-            //                    yield return new WaitForSeconds(0.5f);
-            //                }  
-            //                else
-            //                {
-            //                    action.Caster.chargeTurn++;
-            //                }    
-            //            }
-            //            else
-            //            {
-            //                action.Skill.OnFailCharge(action.Caster, action.Target);
-            //                action.Caster.isCharge = false;
-            //            }    
-            //        }
-            //        else
-            //        {
-            //            action.Caster.OnAttackEnd();
-            //        }
-            //        actionOrderUI.RemoveAction(action.Caster, action.Skill);
-            //        continue;
-            //    }                
             foreach (var enemyAI in behaviorGraphAgent)
             {
                 enemyAI.BlackboardReference.SetVariableValue("IsActionTurn", true);
@@ -491,9 +409,9 @@ public class BattleManager : MonoBehaviour
             enemyPlannedAction.Clear();
         }    
         
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.2f);
         CheckWinLose();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
 
         if (isPlayerTurn)
         {
@@ -513,7 +431,7 @@ public class BattleManager : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.8f);
         CheckWinLose();
         enemy.BlackboardReference.SetVariableValue("IsActionTurn", false);
         enemy.BlackboardReference.SetVariableValue("OnFinishAction", false);

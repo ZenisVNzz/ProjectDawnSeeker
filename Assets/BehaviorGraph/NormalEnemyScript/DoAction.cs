@@ -14,7 +14,21 @@ public partial class DoAction : Action
 
     protected override Status OnStart()
     {
-        ChosenSkill.Value.DoAction(Myself.Value, ChosenTarget.Value);
+        if (ChosenSkill.Value.isUniqueSkill)
+        {
+            if (Myself.Value.isCharge)
+            {
+                ChosenSkill.Value.DoSpecialAction(Myself.Value, ChosenTarget.Value);
+            }
+            else
+            {
+                ChosenSkill.Value.DoAction(Myself.Value, ChosenTarget.Value);
+            }    
+        }    
+        else
+        {
+            ChosenSkill.Value.DoAction(Myself.Value, ChosenTarget.Value);
+        }         
         return Status.Success;
     }
 

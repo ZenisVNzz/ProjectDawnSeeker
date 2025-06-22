@@ -763,7 +763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxName: Click_01
+  sfxName: Click_02
   playOnAwake: 0
   toggle: 0
   customVolume: 0
@@ -2878,11 +2878,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxName: Click_01
+  sfxName: Transition_01
   playOnAwake: 0
   toggle: 0
-  customVolume: 0
-  volume: 0
+  customVolume: 1
+  volume: 0.5
 --- !u!114 &223128688 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3652455434343829304, guid: 8fb17608e968f9448a64c715f8f1379f, type: 3}
@@ -3439,11 +3439,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxName: Click_01
+  sfxName: Transition_01
   playOnAwake: 0
   toggle: 0
-  customVolume: 0
-  volume: 0
+  customVolume: 1
+  volume: 0.5
 --- !u!1 &300062940
 GameObject:
   m_ObjectHideFlags: 0
@@ -9437,11 +9437,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxName: Click_01
+  sfxName: Transition_01
   playOnAwake: 0
   toggle: 0
-  customVolume: 0
-  volume: 0
+  customVolume: 1
+  volume: 0.5
 --- !u!1 &884660047
 GameObject:
   m_ObjectHideFlags: 0
@@ -20877,11 +20877,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxName: Click_01
+  sfxName: Transition_01
   playOnAwake: 0
   toggle: 0
-  customVolume: 0
-  volume: 0
+  customVolume: 1
+  volume: 0.5
 --- !u!1 &1967209486
 GameObject:
   m_ObjectHideFlags: 0
@@ -22567,7 +22567,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_wordSpacing: -3
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -22707,8 +22707,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.3, y: 0.7}
-  m_SizeDelta: {x: 318.4367, y: 50}
+  m_AnchoredPosition: {x: 0.34807, y: 0.375}
+  m_SizeDelta: {x: 348.1, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2347445767753035307
 PrefabInstance:
@@ -23816,7 +23816,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.0019398, y: 0}
-  m_SizeDelta: {x: 329.1, y: 52.94}
+  m_SizeDelta: {x: 356, y: 52.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6908986865228843184
 MonoBehaviour:
@@ -24390,7 +24390,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.0019379, y: 0.375}
-  m_SizeDelta: {x: 329.1, y: 53.689}
+  m_SizeDelta: {x: 360.4, y: 53.689}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &8564230996695238513
 RectTransform:

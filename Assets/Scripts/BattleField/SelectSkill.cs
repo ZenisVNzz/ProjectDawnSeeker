@@ -55,7 +55,6 @@ public class SelectSkill : MonoBehaviour
                 {
                     Debug.Log("Không đủ mana để sử dụng skill: " + this.skill.name);
                     GameObject notificationInstance = Instantiate(notification, Canvas);
-                    Destroy(notificationInstance, 3f);
                     return;
                 }
                 selectedSkill = this.skill;

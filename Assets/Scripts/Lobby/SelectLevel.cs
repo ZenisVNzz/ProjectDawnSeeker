@@ -35,15 +35,7 @@ public class SelectLevel : MonoBehaviour
                 currentStageData.expGainForEachChar = stageData.expGainForEachChar;
                 currentStageData.bossLevel = stageData.bossLevel;
                 currentStageData.isUnlock = stageData.isUnlock;
-
-                if (gameObject.name == "Lvl1")
-                {
-                    SceneManager.LoadScene("TutorialBattle");
-                }
-                else
-                {
-                    SceneManager.LoadScene("Battle");
-                }       
+                SceneManager.LoadScene("Battle");
             }         
         });
     }

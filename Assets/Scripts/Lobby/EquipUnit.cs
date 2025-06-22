@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +13,6 @@ public class EquipUnit : MonoBehaviour
     {      
         equipedUnit = FindAnyObjectByType<EquipedUnit>();
         Button button = GetComponent<Button>();
-        button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() =>
         {
             if (Inventory.Instance.currentDataSave.isCompletedTarvenTutorial && !Inventory.Instance.currentDataSave.isCompletedManageTutorial)
@@ -22,8 +22,14 @@ public class EquipUnit : MonoBehaviour
             }
             EquipedUnit.equipedUnit.Add(charDataStorage.characterData);
             equipedUnit.UpdateUI();
-            gameObject.SetActive(false);
-            unEquip.SetActive(true);
+            StartCoroutine(ChangeButton());
         });
     }  
+
+    IEnumerator ChangeButton()
+    {
+        yield return new WaitForSeconds(0.1f);
+        gameObject.SetActive(false);
+        unEquip.SetActive(true);
+    }    
 }

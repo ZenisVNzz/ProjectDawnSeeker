@@ -25,7 +25,7 @@ public class ShowSkill : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         targetArrow.RemoveArrow();
         skill.transform.SetParent(panel);
-        if (!dataStorage.isPassiveSkill)
+        if (dataStorage.attacker != dataStorage.target)
         {
             targetArrow.MakeArrow(dataStorage.attacker, dataStorage.target, dataStorage.isTargetAlly);
         }     

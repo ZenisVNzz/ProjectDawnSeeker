@@ -3,7 +3,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Behavior;
 using UnityEngine;
+using Action = System.Action;
 
 public enum State
 {
@@ -20,19 +22,18 @@ public class CharacterInBattle : MonoBehaviour
     public List<Tags> characterTags;
     public Sprite characterSprite { get; private set; }
     public RuntimeAnimatorController characterAnimation { get; private set; }
-    [field: SerializeField]
     public float ATK { get; private set; }
     public float HP { get; private set; }
     public float currentHP = 1;
     public float DEF { get; private set; }
     public float MP { get; private set; }
     public float currentMP;
-    [field: SerializeField]
     public float CR { get; private set; }
     public float CD { get; private set; }
     public float DC { get; private set; }
     public float PC { get; private set; }
     public List<SkillBase> skillList { get; private set; }
+    public BehaviorGraph AI {  get; private set; }
 
     public bool isBoss = false;
     public bool isAlive = true;
@@ -51,7 +52,7 @@ public class CharacterInBattle : MonoBehaviour
     public bool isGetATKBuffWhenDodge = false;
     public bool isMark = false;
 
-    public int chargeTurn = 0;
+    public int chargeTurn;
 
     private SkillBase specialSkill;
 
@@ -77,6 +78,7 @@ public class CharacterInBattle : MonoBehaviour
         this.PC = characterData.PC;
         this.skillList = characterData.skillList;
         this.isBoss = characterData.isBoss;
+        this.AI = characterData.AI;
     }
 
     private BattleManager battleManager;
@@ -108,6 +110,11 @@ public class CharacterInBattle : MonoBehaviour
 
     void Start()
     {
+        if (characterType == characterType.Enemy)
+        {
+            GetComponent<BehaviorGraphAgent>().Graph = AI;
+        }    
+
         animator = GetComponent<Animator>();
         animator.runtimeAnimatorController = characterAnimation;
         currentHP = HP;
@@ -323,6 +330,7 @@ public class CharacterInBattle : MonoBehaviour
         isCharge = true;
         isActionAble = false;
         specialSkill = skill;
+        isMPRecoveryAble = false;
         chargeTurn = 0;
     }  
     
@@ -440,7 +448,7 @@ public class CharacterInBattle : MonoBehaviour
         {
             if (characterType == characterType.Enemy)
             {
-                currentMP += 3;
+                currentMP += 1.25f;
             }
         }
 
@@ -718,11 +726,14 @@ public class CharacterInBattle : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-        SpriteRenderer hpBarBackgroundRenderer = transform.Find("StatusBar/Background").GetComponent<SpriteRenderer>();
-        SpriteRenderer hpBarFillRenderer = transform.Find("StatusBar/Background/HpBar").GetComponent<SpriteRenderer>();
-        spriteRenderer.DOFade(0f, 2.5f);
-        hpBarBackgroundRenderer.DOFade(0f, 2.5f);
-        hpBarFillRenderer.DOFade(0f, 2.5f);
+        if (characterType == characterType.Enemy)
+        {
+            SpriteRenderer hpBarBackgroundRenderer = transform.Find("StatusBar/Background").GetComponent<SpriteRenderer>();
+            SpriteRenderer hpBarFillRenderer = transform.Find("StatusBar/Background/HpBar").GetComponent<SpriteRenderer>();
+            hpBarBackgroundRenderer.DOFade(0f, 2.5f);
+            hpBarFillRenderer.DOFade(0f, 2.5f);
+        }      
+        spriteRenderer.DOFade(0f, 2.5f);      
     }    
 
     public void EnqueueEffectAnimation(Action playEffectAnimation)

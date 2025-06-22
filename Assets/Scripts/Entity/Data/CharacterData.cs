@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using Unity.Behavior;
 using UnityEngine;
 using UnityEngine.Localization;
 
@@ -19,6 +20,7 @@ public class CharacterData : ScriptableObject
     public bool isBoss = false;
 
     public List<SkillBase> skillList;
+    public BehaviorGraph AI;
     public int currentTotalXP = 0;
 
     [Header("Stats")]

@@ -14,12 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100111
   characterName: Slime
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 1
+  characterTags: 
   characterSprite: {fileID: -7282886668606283007, guid: 7f787259657884e4ca5e05e2c6a7c713, type: 3}
   characterAnimation: {fileID: 9100000, guid: e838edd3464ffdb469d12fc15cd534d4, type: 2}
   isBoss: 0
   skillList:
   - {fileID: 11400000, guid: 7e7cbaaf6d2424048b498a306d994827, type: 2}
+  AI: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
   currentTotalXP: 0
   level: 1
   ATK: 27
@@ -39,3 +50,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0
   CDPerLevel: 0
+  references:
+    version: 2
+    RefIds: []

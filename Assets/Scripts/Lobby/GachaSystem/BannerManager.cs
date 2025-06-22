@@ -26,7 +26,6 @@ public class BannerManager : MonoBehaviour
         currentBannerButton = defaultBanner.bannerButton;
         foreach (var bannerUI in banners)
         {
-            bannerUI.bannerButton.onClick.RemoveAllListeners();
             bannerUI.bannerButton.onClick.AddListener(() =>
             {
                 if (currentBannerInfo != bannerUI.bannerInfo)

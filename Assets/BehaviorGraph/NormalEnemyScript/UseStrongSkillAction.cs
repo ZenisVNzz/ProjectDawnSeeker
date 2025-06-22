@@ -3,6 +3,8 @@ using Unity.Behavior;
 using UnityEngine;
 using Action = Unity.Behavior.Action;
 using Unity.Properties;
+using System.Collections.Generic;
+using System.Linq;
 
 [Serializable, GeneratePropertyBag]
 [NodeDescription(name: "UseStrongSkill", story: "I will use strong skill, assign [ChosenSkill] from [MySelf]", category: "Action", id: "9763e02222bd0d58426011238fa1069b")]
@@ -13,23 +15,10 @@ public partial class UseStrongSkillAction : Action
 
     protected override Status OnStart()
     {
-        ChosenSkill.Value = MySelf.Value.skillList[MySelf.Value.skillList.Count - 1];
-        if (ChosenSkill.Value.passiveSkill || ChosenSkill.Value.mpCost > MySelf.Value.currentMP)
-        {
-            if (MySelf.Value.skillList.Count >= 2)
-            {
-                ChosenSkill.Value = MySelf.Value.skillList[MySelf.Value.skillList.Count - 2];
-            }    
-        }
-
-        if (ChosenSkill.Value.passiveSkill || ChosenSkill.Value.mpCost > MySelf.Value.currentMP)
-        {
-            return Status.Failure;
-        }
-        else
-        {
-            return Status.Success;
-        }        
+        List<SkillBase> avalableSkill = new List<SkillBase>();
+        avalableSkill = MySelf.Value.skillList.FindAll(s => s.mpCost <= MySelf.Value.currentMP && !s.skillTypes.Contains(SkillType.Buff));
+        ChosenSkill.Value = avalableSkill.OrderByDescending(s => s.mpCost).FirstOrDefault();
+        return Status.Success;
     }
 
     protected override Status OnUpdate()

@@ -14,7 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300011
   skillName: none
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: none
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  skillTypes: 00000000
   icon: {fileID: 0}
   mpCost: 0
   animation: {fileID: 7400000, guid: fd6edcd86f69e4d4db6a7fb262123d03, type: 2}
@@ -22,3 +41,8 @@ MonoBehaviour:
   supportSkill: 0
   move: 1
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
+  references:
+    version: 2
+    RefIds: []

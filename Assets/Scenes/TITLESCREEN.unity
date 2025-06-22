@@ -1554,7 +1554,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3365,6 +3365,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfxName: Click_01
   playOnAwake: 0
+  forEvent: 0
+  pointerClickHandler: 0
   toggle: 0
   customVolume: 0
   volume: 0
@@ -3846,6 +3848,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfxName: Click_01
   playOnAwake: 0
+  forEvent: 0
+  pointerClickHandler: 0
   toggle: 0
   customVolume: 0
   volume: 0
@@ -4221,8 +4225,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxName: Click_01
+  sfxName: Click_02
   playOnAwake: 0
+  forEvent: 0
+  pointerClickHandler: 0
   toggle: 0
   customVolume: 0
   volume: 0
@@ -4862,6 +4868,7 @@ GameObject:
   - component: {fileID: 739549982}
   - component: {fileID: 739549981}
   - component: {fileID: 739549979}
+  - component: {fileID: 739549983}
   m_Layer: 5
   m_Name: Dropdown
   m_TagString: Untagged
@@ -4984,6 +4991,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739549978}
   m_CullTransparentMesh: 1
+--- !u!114 &739549983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739549978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_03
+  playOnAwake: 0
+  forEvent: 0
+  pointerClickHandler: 1
+  toggle: 0
+  customVolume: 1
+  volume: 0.4
 --- !u!1 &771473765
 GameObject:
   m_ObjectHideFlags: 0
@@ -5413,6 +5439,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfxName: Click_01
   playOnAwake: 0
+  forEvent: 0
+  pointerClickHandler: 0
   toggle: 0
   customVolume: 0
   volume: 0
@@ -5428,6 +5456,7 @@ GameObject:
   - component: {fileID: 790887480}
   - component: {fileID: 790887479}
   - component: {fileID: 790887477}
+  - component: {fileID: 790887481}
   m_Layer: 5
   m_Name: Dropdown
   m_TagString: Untagged
@@ -5550,6 +5579,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790887476}
   m_CullTransparentMesh: 1
+--- !u!114 &790887481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790887476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_03
+  playOnAwake: 0
+  forEvent: 0
+  pointerClickHandler: 1
+  toggle: 0
+  customVolume: 1
+  volume: 0.4
 --- !u!1 &847266937
 GameObject:
   m_ObjectHideFlags: 0
@@ -6366,6 +6414,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfxName: Click_01
   playOnAwake: 0
+  forEvent: 0
+  pointerClickHandler: 0
   toggle: 0
   customVolume: 0
   volume: 0
@@ -6701,6 +6751,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfxName: Click_01
   playOnAwake: 0
+  forEvent: 0
+  pointerClickHandler: 0
   toggle: 0
   customVolume: 0
   volume: 0
@@ -7871,6 +7923,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfxName: 
   playOnAwake: 0
+  forEvent: 0
+  pointerClickHandler: 0
   toggle: 1
   customVolume: 1
   volume: 0.15
@@ -8408,6 +8462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1272141962}
   - component: {fileID: 1272141963}
+  - component: {fileID: 1272141964}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -8485,6 +8540,25 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!114 &1272141964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272141961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_01
+  playOnAwake: 0
+  forEvent: 0
+  pointerClickHandler: 1
+  toggle: 0
+  customVolume: 0
+  volume: 0
 --- !u!1 &1282636749
 GameObject:
   m_ObjectHideFlags: 0
@@ -10724,6 +10798,7 @@ GameObject:
   - component: {fileID: 1569004448}
   - component: {fileID: 1569004447}
   - component: {fileID: 1569004446}
+  - component: {fileID: 1569004449}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -10845,6 +10920,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569004444}
   m_CullTransparentMesh: 1
+--- !u!114 &1569004449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569004444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_02
+  playOnAwake: 0
+  forEvent: 0
+  pointerClickHandler: 0
+  toggle: 0
+  customVolume: 0
+  volume: 0
 --- !u!1 &1579713480
 GameObject:
   m_ObjectHideFlags: 0
@@ -11042,7 +11136,9 @@ MonoBehaviour:
   audioSource: {fileID: 221996163}
   sfxList:
   - sfxName: Click_01
-    clip: {fileID: 8300000, guid: 087224dd7ec352f42a3b950a07009a88, type: 3}
+    clip: {fileID: 8300000, guid: 523924e8918aa8e47a8e695ff5b7a463, type: 3}
+  - sfxName: Click_02
+    clip: {fileID: 8300000, guid: 44a5d716536c11248a09ee1a54d5d168, type: 3}
   - sfxName: Switch_On
     clip: {fileID: 8300000, guid: 405ad9d01edb3de4db733227c2e2d341, type: 3}
   - sfxName: Switch_Off
@@ -11051,6 +11147,14 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 76c52c1a3287ef14ca30fbff20ec56aa, type: 3}
   - sfxName: Gacha_Charge
     clip: {fileID: 8300000, guid: baa64dd1a3826f841b58c815a6d2d065, type: 3}
+  - sfxName: Transition_01
+    clip: {fileID: 8300000, guid: 381d73b9c6a95624f9e363a5b3bd47ac, type: 3}
+  - sfxName: Upgrade
+    clip: {fileID: 8300000, guid: 1be2fcc16ab0da84f99ba7c633037620, type: 3}
+  - sfxName: Click_03
+    clip: {fileID: 8300000, guid: 5f6e2924451ed8a47ab71c6035a44000, type: 3}
+  - sfxName: GachaImpact
+    clip: {fileID: 8300000, guid: ceb976c1c67e30241b24acb7f7622293, type: 3}
 --- !u!1 &1619645078
 GameObject:
   m_ObjectHideFlags: 0
@@ -13216,6 +13320,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfxName: Click_01
   playOnAwake: 0
+  forEvent: 0
+  pointerClickHandler: 0
   toggle: 0
   customVolume: 0
   volume: 0

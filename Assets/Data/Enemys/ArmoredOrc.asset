@@ -14,7 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100107
   characterName: Armored Orc
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 1
+  characterTags: 
   characterSprite: {fileID: 2912446813672376553, guid: 1c1c66dc03bcc484697cbf0efec78ad5, type: 3}
   characterAnimation: {fileID: 9100000, guid: 96de825bf20c58d4aaa031a7218ea143, type: 2}
   isBoss: 0
@@ -22,6 +32,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 25461dd6bad1250469e205ecc5a89098, type: 2}
   - {fileID: 11400000, guid: 431351285a62bcd46b059fb3952340f5, type: 2}
   - {fileID: 11400000, guid: c3dbb60cbcbd65f40a22f4977882fc1a, type: 2}
+  AI: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
   currentTotalXP: 0
   level: 1
   ATK: 39
@@ -41,3 +52,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0
   CDPerLevel: 0
+  references:
+    version: 2
+    RefIds: []

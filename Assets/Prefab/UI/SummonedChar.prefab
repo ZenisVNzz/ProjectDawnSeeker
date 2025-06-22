@@ -541,6 +541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfxName: Gacha_Charge
   playOnAwake: 1
+  pointerClickHandler: 0
   toggle: 0
   customVolume: 1
   volume: 0.5
@@ -953,6 +954,7 @@ GameObject:
   - component: {fileID: 4851360577562037404}
   - component: {fileID: 4192816275852421803}
   - component: {fileID: 7086094974476743343}
+  - component: {fileID: 1880931958807919308}
   m_Layer: 0
   m_Name: SkipButton
   m_TagString: Untagged
@@ -1062,6 +1064,24 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1880931958807919308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458862592799256516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxName: Click_01
+  playOnAwake: 0
+  pointerClickHandler: 0
+  toggle: 0
+  customVolume: 0
+  volume: 0
 --- !u!1 &9053373370005902248
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,10 @@ public partial class RemoveActionOrderAction : Action
 
     protected override Status OnStart()
     {
-        ActionOrder.Value.RemoveAction(MySelf.Value, ChosenSkill.Value);
+        if (ChosenSkill != null)
+        {
+            ActionOrder.Value.RemoveAction(MySelf.Value, ChosenSkill.Value);
+        }        
         return Status.Success;
     }
 

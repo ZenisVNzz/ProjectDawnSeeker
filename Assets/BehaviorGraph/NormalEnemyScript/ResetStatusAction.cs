@@ -14,7 +14,7 @@ public partial class ResetStatusAction : Action
     protected override Status OnStart()
     {
         MySelf.Value.ResetState();
-        ChosenTarget.Value.ResetState();
+        ChosenTarget.Value.ResetState();  
         return Status.Success;
     }
 

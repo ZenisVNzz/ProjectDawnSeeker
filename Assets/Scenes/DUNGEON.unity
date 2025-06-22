@@ -281,9 +281,9 @@ MonoBehaviour:
   - characterData: {fileID: 11400000, guid: bf30a3c1d1f03b044974f942f35c6d07, type: 2}
     level: 1
   - characterData: {fileID: 11400000, guid: 5bf7ca1f02509ca42a858abf19886a1b, type: 2}
-    level: 112
+    level: 108
   - characterData: {fileID: 11400000, guid: 5d4f4d43a54862343a98b7a828802eba, type: 2}
-    level: 115
+    level: 109
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 50
@@ -1408,9 +1408,9 @@ MonoBehaviour:
     m_LocalVariables: []
   enemies:
   - characterData: {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
-    level: 6
+    level: 5
   - characterData: {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
-    level: 6
+    level: 5
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 4
@@ -1583,9 +1583,9 @@ MonoBehaviour:
     m_LocalVariables: []
   enemies:
   - characterData: {fileID: 11400000, guid: dd00cbf31e2a53449875f69613fd56df, type: 2}
-    level: 84
+    level: 81
   - characterData: {fileID: 11400000, guid: dd00cbf31e2a53449875f69613fd56df, type: 2}
-    level: 84
+    level: 81
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 30
@@ -4146,7 +4146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cee7bda4586de942862beaa91931088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxName: Click_01
+  sfxName: Click_02
   playOnAwake: 0
   toggle: 0
   customVolume: 0
@@ -4313,9 +4313,9 @@ MonoBehaviour:
   - characterData: {fileID: 11400000, guid: dfdcdda75f77ad14daa85aa01e34840d, type: 2}
     level: 1
   - characterData: {fileID: 11400000, guid: b6d45a616d42eb04f8f6c173444990c6, type: 2}
-    level: 45
+    level: 41
   - characterData: {fileID: 11400000, guid: 72f96bb9d409f11449c7f0d179209493, type: 2}
-    level: 45
+    level: 41
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 17
@@ -5045,7 +5045,7 @@ MonoBehaviour:
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 3
-  goldReward: 200
+  goldReward: 400
   expGainForEachChar: 50
   bossLevel: 0
   isUnlock: 1
@@ -5575,11 +5575,11 @@ MonoBehaviour:
     m_LocalVariables: []
   enemies:
   - characterData: {fileID: 11400000, guid: 47ff32cd979b714458e423594d54ac4a, type: 2}
-    level: 14
+    level: 12
   - characterData: {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
-    level: 13
+    level: 11
   - characterData: {fileID: 11400000, guid: 7654db6deb7c8c34abaef1abb8ce7b75, type: 2}
-    level: 13
+    level: 11
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 8
@@ -5752,9 +5752,9 @@ MonoBehaviour:
     m_LocalVariables: []
   enemies:
   - characterData: {fileID: 11400000, guid: eacf4b98b9377b94baa62e5451f77057, type: 2}
-    level: 55
+    level: 52
   - characterData: {fileID: 11400000, guid: eacf4b98b9377b94baa62e5451f77057, type: 2}
-    level: 55
+    level: 52
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 20
@@ -6201,11 +6201,11 @@ MonoBehaviour:
     m_LocalVariables: []
   enemies:
   - characterData: {fileID: 11400000, guid: 5d4f4d43a54862343a98b7a828802eba, type: 2}
-    level: 93
+    level: 89
   - characterData: {fileID: 11400000, guid: dd00cbf31e2a53449875f69613fd56df, type: 2}
-    level: 95
+    level: 91
   - characterData: {fileID: 11400000, guid: dd00cbf31e2a53449875f69613fd56df, type: 2}
-    level: 95
+    level: 91
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 35
@@ -6766,11 +6766,11 @@ MonoBehaviour:
     m_LocalVariables: []
   enemies:
   - characterData: {fileID: 11400000, guid: eacf4b98b9377b94baa62e5451f77057, type: 2}
-    level: 64
+    level: 62
   - characterData: {fileID: 11400000, guid: eacf4b98b9377b94baa62e5451f77057, type: 2}
-    level: 66
+    level: 61
   - characterData: {fileID: 11400000, guid: eacf4b98b9377b94baa62e5451f77057, type: 2}
-    level: 66
+    level: 61
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 24
@@ -8273,11 +8273,11 @@ MonoBehaviour:
     m_LocalVariables: []
   enemies:
   - characterData: {fileID: 11400000, guid: b6d45a616d42eb04f8f6c173444990c6, type: 2}
-    level: 35
+    level: 32
   - characterData: {fileID: 11400000, guid: 47ff32cd979b714458e423594d54ac4a, type: 2}
-    level: 35
+    level: 32
   - characterData: {fileID: 11400000, guid: 72f96bb9d409f11449c7f0d179209493, type: 2}
-    level: 35
+    level: 32
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 13
@@ -9031,9 +9031,9 @@ MonoBehaviour:
   - characterData: {fileID: 11400000, guid: 8a924be607916804db66982db5038b38, type: 2}
     level: 1
   - characterData: {fileID: 11400000, guid: eacf4b98b9377b94baa62e5451f77057, type: 2}
-    level: 75
+    level: 71
   - characterData: {fileID: 11400000, guid: eacf4b98b9377b94baa62e5451f77057, type: 2}
-    level: 77
+    level: 71
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 27
@@ -11048,11 +11048,11 @@ MonoBehaviour:
     m_LocalVariables: []
   enemies:
   - characterData: {fileID: 11400000, guid: 5bf7ca1f02509ca42a858abf19886a1b, type: 2}
-    level: 102
+    level: 99
   - characterData: {fileID: 11400000, guid: 5d4f4d43a54862343a98b7a828802eba, type: 2}
-    level: 105
+    level: 100
   - characterData: {fileID: 11400000, guid: dd00cbf31e2a53449875f69613fd56df, type: 2}
-    level: 110
+    level: 104
   items:
   - item: {fileID: 11400000, guid: 304e61b00e7ec764db4dae95edc50ef7, type: 2}
     quantity: 42

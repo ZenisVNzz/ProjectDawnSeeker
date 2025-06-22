@@ -459,7 +459,7 @@ public class UpgradeChar : MonoBehaviour
                 UpdateItem(character);
                 showInfoOnClick.ShowInfoCharacter();
                 GameObject upgradeNotice = Instantiate(upgradeNotification, Canvas);
-                Destroy(upgradeNotice, 4f);
+                SFXManager.instance.Play("Upgrade");
                 Inventory.Instance.currentDataSave.characters.Find(c => c.characterID == character.characterID).characterXP = character.currentTotalXP;
                 Inventory.Instance.SaveGame();
             }  
