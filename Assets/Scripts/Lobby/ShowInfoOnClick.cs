@@ -27,7 +27,7 @@ public class ShowInfoOnClick : MonoBehaviour
     public GameObject unEquipButton;
     private EquipedUnit equipedUnit;
 
-    private void Start()
+    private void Awake()
     {
         charDataStorage = GetComponent<CharDataStorage>();
         Button button = GetComponent<Button>();

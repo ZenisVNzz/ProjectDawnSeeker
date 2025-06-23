@@ -11,5 +11,6 @@ public class GeneralDataSave
     public bool isCompletedManageTutorial;
     public bool isCompletedBattleTutorial;
     public List<CharacterDataSave> characters = new List<CharacterDataSave>();
+    public List<int> equipedChar = new List<int>();
     public List<ItemDataSave> items = new List<ItemDataSave>();
 }

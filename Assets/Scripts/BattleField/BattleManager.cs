@@ -60,14 +60,31 @@ public class BattleManager : MonoBehaviour
     }
 
     public void SubcribeInitialize(Action callBack)
+    {      
+        StartCoroutine(ISubcribeInitialize(callBack)); 
+    }
+
+    void OnDestroy()
+    {
+        EventManager.Unsubscribe("InitializeCompleted", InializeAI);
+    }
+
+
+    IEnumerator ISubcribeInitialize(Action callBack)
     {
         EventManager.Subscribe("InitializeCompleted", InializeAI);
+        yield return new WaitForSeconds(0.1f);
         callBack.Invoke();
-    }    
-    
+    }
+
+
     private void InializeAI()
     {
-        behaviorGraphAgent = TeamAI.ConvertAll(c => c.GetComponent<BehaviorGraphAgent>());
+        behaviorGraphAgent = TeamAI
+            .Where(c => c != null && c.gameObject != null)
+            .Select(c => c.GetComponent<BehaviorGraphAgent>())
+            .Where(agent => agent != null)
+            .ToList();
         foreach (BehaviorGraphAgent agent in behaviorGraphAgent)
         {
             List<GameObject> playerObj = new List<GameObject>();

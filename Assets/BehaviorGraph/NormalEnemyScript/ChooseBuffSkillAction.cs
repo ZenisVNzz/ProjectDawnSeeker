@@ -13,7 +13,7 @@ public partial class ChooseBuffSkillAction : Action
 
     protected override Status OnStart()
     {
-        SkillBase buffSkill = Self.Value.skillList.Find(skill => skill.passiveSkill);
+        SkillBase buffSkill = Self.Value.skillList.Find(skill => skill.skillTypes.Contains(SkillType.Buff));
         ChoosenSkill.Value = buffSkill;
         if (ChoosenSkill.Value == null || buffSkill.mpCost > Self.Value.currentMP)
         {

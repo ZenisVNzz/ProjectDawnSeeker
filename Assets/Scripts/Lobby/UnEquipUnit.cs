@@ -13,6 +13,8 @@ public class UnEquipUnit : MonoBehaviour
         button.onClick.AddListener(() =>
         {
             EquipedUnit.equipedUnit.Remove(charDataStorage.characterData);
+            Inventory.Instance.currentDataSave.equipedChar.Remove(charDataStorage.characterData.characterID);
+            Inventory.Instance.SaveGame();
             equipedUnit.UpdateUI();
             gameObject.SetActive(false);
             equip.SetActive(true);

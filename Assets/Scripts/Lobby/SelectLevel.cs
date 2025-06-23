@@ -6,12 +6,19 @@ using System.Collections.Generic;
 
 public class SelectLevel : MonoBehaviour
 {
+    public GameObject notification;
+
     private void Start()
     {
         Button button = GetComponent<Button>();
         StageData stageData = gameObject.GetComponent<StageData>();
         button.onClick.AddListener(() =>
         {
+            if (EquipedUnit.equipedUnit.Count <= 0)
+            {
+                notification.SetActive(true);
+                return;
+            }    
             if (stageData.isUnlock)
             {
                 GameManager gameManager = FindAnyObjectByType<GameManager>();

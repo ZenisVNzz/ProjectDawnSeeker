@@ -11,6 +11,19 @@ public class EquipedUnit : MonoBehaviour
 
     private void Start()
     {
+        Inventory.Instance.currentDataSave.equipedChar.Clear();
+        List<int> equipedChar = GameManager.Instance.currentDataSave.equipedChar;
+        if (equipedChar.Count > 0)
+        {
+            foreach (var ID in equipedChar)
+            {
+                CharacterData charData = Inventory.Instance.summonedCharacters.Find(c => c.characterID == ID);
+                equipedUnit.Add(charData);
+                Inventory.Instance.currentDataSave.equipedChar.Add(charData.characterID);
+                Inventory.Instance.SaveGame();
+            }
+        }
+        GameManager.Instance.currentDataSave.equipedChar.Clear();
         UpdateUI();
     }
 
