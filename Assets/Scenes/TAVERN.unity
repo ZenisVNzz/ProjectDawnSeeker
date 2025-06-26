@@ -1748,7 +1748,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4208164807018185426}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6460563376233589691}
         m_TargetAssemblyTypeName: UnityEngine.Localization.Components.LocalizeStringEvent,
           Unity.Localization
         m_MethodName: SetEntry
@@ -1761,7 +1773,7 @@ MonoBehaviour:
           m_StringArgument: notification_recuitx1
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8446029294224877406}
         m_TargetAssemblyTypeName: ConfirmText, Assembly-CSharp
         m_MethodName: SetGoldIndex
         m_Mode: 3
@@ -1785,7 +1797,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4927800101470970507}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1797,7 +1809,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 248757254}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -12934,7 +12946,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4208164807018185426}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6460563376233589691}
         m_TargetAssemblyTypeName: UnityEngine.Localization.Components.LocalizeStringEvent,
           Unity.Localization
         m_MethodName: SetEntry
@@ -12945,9 +12969,9 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: notification_recuitx10
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8446029294224877406}
         m_TargetAssemblyTypeName: ConfirmText, Assembly-CSharp
         m_MethodName: SetGoldIndex
         m_Mode: 3
@@ -12971,7 +12995,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 248757254}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -12983,7 +13007,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4927800101470970507}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -21200,7 +21224,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 3187671039
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -22478,7 +22502,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 3187671039
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -22809,6 +22833,7 @@ GameObject:
   - component: {fileID: 1653808131245442889}
   - component: {fileID: 4208164807018185426}
   - component: {fileID: 6460563376233589691}
+  - component: {fileID: 8446029294224877406}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -23308,7 +23333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "D\xF9ng 100 v\xE0ng \u0111\u1EC3 chi\xEAu m\u1ED9 1 l\u1EA7n?"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5053dae26d788d84a8f993374bffbe56, type: 2}
   m_sharedMaterial: {fileID: -1389265910971393398, guid: 5053dae26d788d84a8f993374bffbe56, type: 2}
@@ -23991,7 +24016,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 3187671039
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -24728,6 +24753,20 @@ RectTransform:
   m_AnchoredPosition: {x: -5.9888153, y: 0.000056266785}
   m_SizeDelta: {x: 399.83, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8446029294224877406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2981784411509806092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 310df2aa24dd9c940b986cb4dc88b0be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldIndexX1: {fileID: 316606433}
+  goldIndexX10: {fileID: 305153768}
 --- !u!224 &8472626869238664931
 RectTransform:
   m_ObjectHideFlags: 0
