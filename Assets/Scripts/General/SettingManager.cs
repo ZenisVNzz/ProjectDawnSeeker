@@ -39,30 +39,39 @@ public class SettingManager : MonoBehaviour
         currentVFXVolume = vfxSlider.value;
 
         toggleFullScreen.isOn = isFullScreen;
-        resolutions = Screen.resolutions;
 
-        List<string> resolutionListString = new List<string>();
-        string newRes;
-        foreach (Resolution res in resolutions)
+        if (!Application.isMobilePlatform)
         {
-            newRes = res.width.ToString() + " x " + res.height.ToString();
-            if (!resolutionListString.Contains(newRes))
+            resolutions = Screen.resolutions;
+
+            List<string> resolutionListString = new List<string>();
+            string newRes;
+            foreach (Resolution res in resolutions)
             {
-                resolutionListString.Add(newRes);
-                selectedResolutions.Add(res);              
+                newRes = res.width.ToString() + " x " + res.height.ToString();
+                if (!resolutionListString.Contains(newRes))
+                {
+                    resolutionListString.Add(newRes);
+                    selectedResolutions.Add(res);
+                }
+                if (res.width == Screen.currentResolution.width &&
+                    res.height == Screen.currentResolution.height)
+                {
+                    defaultIndex = resolutionListString.Count - 1;
+                }
             }
-            if (res.width == Screen.currentResolution.width &&
-                res.height == Screen.currentResolution.height)
-            {
-                defaultIndex = resolutionListString.Count - 1;
-            }
+
+            resolutionDropdown.ClearOptions();
+            resolutionDropdown.AddOptions(resolutionListString);
+
+            resolutionDropdown.value = defaultIndex;
+            resolutionDropdown.RefreshShownValue();
         }
-
-        resolutionDropdown.ClearOptions();
-        resolutionDropdown.AddOptions(resolutionListString);
-
-        resolutionDropdown.value = defaultIndex;
-        resolutionDropdown.RefreshShownValue();
+        else
+        {
+            resolutionDropdown.transform.parent.gameObject.SetActive(false);
+            toggleFullScreen.transform.parent.gameObject.SetActive(false);
+        }    
 
         languageDropdown.ClearOptions();
         List<string> languageList = new List<string> { "English", "Vietnamese" };

@@ -206,15 +206,6 @@ public class BattleManager : MonoBehaviour
         }    
     }    
 
-    public CharacterInBattle GetRandomAlive(List<CharacterInBattle> list)
-    {
-        var aliveList = list.Where(x => x.isAlive).ToList();
-        if (aliveList.Count == 0) return null;
-
-        int index = UnityEngine.Random.Range(0, aliveList.Count);
-        return aliveList[index];
-    }
-
     public IEnumerator AddEnemyAction(CharacterInBattle enemy, CharacterInBattle target, SkillBase skill)
     {
         if (skill.supportSkill == true)

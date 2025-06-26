@@ -29,10 +29,10 @@ public class GameManager : MonoBehaviour
     public IEnumerator LoadGameOnClickContinue()
     {
         currentDataSave = saveManager.LoadSave();
-        yield return StartCoroutine(WaitForInventory());
+        yield return StartCoroutine(LoadSaved());
     }
 
-    IEnumerator WaitForInventory()
+    IEnumerator LoadSaved()
     {
         Debug.Log("Waiting for Inventory...");
         while ((inventory = FindAnyObjectByType<Inventory>()) == null)
