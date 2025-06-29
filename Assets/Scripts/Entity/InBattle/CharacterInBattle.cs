@@ -434,7 +434,15 @@ public class CharacterInBattle : MonoBehaviour
         {
             effect.OnTurn(this);
         }
-        currentMP++;
+
+        if (isMPRecoveryAble)
+        {
+            if (characterType == characterType.Player)
+            {
+                currentMP += 1f;
+            }
+        }
+
         if (currentMP > characterData.MP)
         {
             currentMP = characterData.MP;
@@ -446,9 +454,13 @@ public class CharacterInBattle : MonoBehaviour
     {
         if (isMPRecoveryAble)
         {
-            if (characterType == characterType.Enemy)
+            if (isBoss && battleManager.GetCurrentTurn() >= 7)
             {
-                currentMP += 1.25f;
+                currentMP += 1.5f;
+            }    
+            else if (characterType == characterType.Enemy)
+            {
+                currentMP += 1f;
             }
         }
 

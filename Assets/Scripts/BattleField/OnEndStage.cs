@@ -1,4 +1,6 @@
-﻿using TMPro;
+﻿using System.Collections;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Localization.Components;
 using UnityEngine.UI;
@@ -12,6 +14,7 @@ public class OnEndStage : MonoBehaviour
 
     private BattleManager battleManager;
     private SaveManager saveManager;
+    private Queue<GameObject> itemQueue = new Queue<GameObject>();
 
     private void Start()
     {
@@ -52,6 +55,7 @@ public class OnEndStage : MonoBehaviour
             {
                 ItemBase itemBase = item.item;
                 GameObject itemObj = Instantiate(itemPrefab, itemContainer);
+                itemObj.SetActive(false);
                 Image icon = itemObj.transform.Find("Icon").GetComponent<Image>();
                 TextMeshProUGUI itemQuantity = itemObj.transform.Find("Amount").GetComponent<TextMeshProUGUI>();
 
@@ -61,12 +65,19 @@ public class OnEndStage : MonoBehaviour
                 {
                     itemReceivedAmount /= 2;
                 }
+                if (itemReceivedAmount <= 0)
+                {
+                    Destroy(itemObj);
+                    continue;
+                }
                 for (int i = 0; i < itemReceivedAmount; i++)
                 {
                     Inventory.Instance.AddItem(itemBase);
                 }
                 itemQuantity.text = itemReceivedAmount.ToString();
+                itemQueue.Enqueue(itemObj);
             }
+            StartCoroutine(PlayItemVFX());
             foreach (CharacterData character in EquipedUnit.equipedUnit)
             {
                 character.AddXP(stageData.expGainForEachChar);
@@ -101,4 +112,18 @@ public class OnEndStage : MonoBehaviour
             turnIndex.text = battleManager.GetCurrentTurn().ToString();
         }
     }
+
+    IEnumerator PlayItemVFX()
+    {
+        yield return new WaitForSeconds(1.3f);
+        while (itemQueue.Count > 0)
+        {
+            GameObject itemObj = itemQueue.Dequeue();
+            itemObj.SetActive(true);
+            Animator animator = itemObj.GetComponent<Animator>();
+            animator.Play("RewardPopUp");
+            SFXManager.instance.PlayWithCustomVol("RewardPopUp", 0.7f);
+            yield return new WaitForSeconds(0.85f);
+        }
+    }    
 }

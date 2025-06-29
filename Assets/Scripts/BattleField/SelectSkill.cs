@@ -55,6 +55,7 @@ public class SelectSkill : MonoBehaviour
                 {
                     Debug.Log("Không đủ mana để sử dụng skill: " + this.skill.name);
                     GameObject notificationInstance = Instantiate(notification, Canvas);
+                    SFXManager.instance.PlayWithCustomVol("Blocked", 0.8f);
                     return;
                 }
                 selectedSkill = this.skill;

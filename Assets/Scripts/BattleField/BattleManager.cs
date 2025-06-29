@@ -30,10 +30,9 @@ public class BattleManager : MonoBehaviour
     public int selectNum;
     public bool BossLevel = false;
     private bool isPlayerTurn = true;
+    private int CurrentTurn = 1;
     private int NormalMaxTurn = 15;
-    private int NormalCurrentTurn = 1;
     private int BossMaxTurn = 30;
-    private int BossCurrentTurn = 1;
 
 
     void Start()
@@ -80,6 +79,14 @@ public class BattleManager : MonoBehaviour
 
     private void InializeAI()
     {
+        foreach (CharacterInBattle characterRuntime in TeamAI)
+        {
+            if (characterRuntime.isBoss)
+            {
+                characterRuntime.currentMP = 0;
+            }
+        }
+
         behaviorGraphAgent = TeamAI
             .Where(c => c != null && c.gameObject != null)
             .Select(c => c.GetComponent<BehaviorGraphAgent>())
@@ -244,9 +251,9 @@ public class BattleManager : MonoBehaviour
 
     void CheckWinLose()
     {
-        if (BossLevel == true)
+        if (BossLevel)
         {
-            if (BossCurrentTurn >= BossMaxTurn)
+            if (CurrentTurn >= BossMaxTurn)
             {
                 Debug.Log("Thất Bại!");
                 EnablePlayerTeam(false);
@@ -254,8 +261,9 @@ public class BattleManager : MonoBehaviour
                 StopAllCoroutines();
                 OnFinishedStage?.Invoke(false);
             }
+            return;
         }
-        else if (NormalCurrentTurn >= NormalMaxTurn)
+        else if (!BossLevel && CurrentTurn >= NormalMaxTurn)
         {
             if(GetTotalHP(TeamPlayer) >= GetTotalHP(TeamAI))
             {
@@ -453,10 +461,9 @@ public class BattleManager : MonoBehaviour
             Time.timeScale = 1f;
         }
 
-        NormalCurrentTurn++;
-        BossCurrentTurn++;
+        CurrentTurn++;
         isPlayerTurn = true;
-        battleUI.RefreshTurnUI(NormalCurrentTurn);
+        battleUI.RefreshTurnUI(CurrentTurn);
         EnablePlayerTeam(true);
         foreach (CharacterInBattle character in TeamAI)
         {
@@ -567,13 +574,6 @@ public class BattleManager : MonoBehaviour
 
     public int GetCurrentTurn()
     {
-        if (BossLevel)
-        {
-            return BossCurrentTurn;
-        }
-        else
-        {
-            return NormalCurrentTurn;
-        }
+        return CurrentTurn;
     }
 }

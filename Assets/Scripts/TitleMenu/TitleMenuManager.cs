@@ -70,6 +70,8 @@ public class TitleMenuManager : MonoBehaviour
 
     private IEnumerator LoadLobbyAsync()
     {
+        Inventory.Instance.ClearData();
+
         yield return new WaitForSeconds(2f);
 
         AsyncOperation operation = SceneManager.LoadSceneAsync("lobby");

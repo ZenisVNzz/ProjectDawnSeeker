@@ -160,5 +160,7 @@ public class Inventory : MonoBehaviour
     {
         summonedCharacters.Clear();
         items.Clear();
-    }    
+        gold = 0;
+        currentDataSave = new GeneralDataSave();
+    }
 }
