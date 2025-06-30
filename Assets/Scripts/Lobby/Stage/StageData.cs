@@ -10,6 +10,8 @@ public class StageData : MonoBehaviour
     public LocalizedString stageName;
     public List<Enemy> enemies;
     public List<Item> items;
+    public AudioClip bgmClip;
+    public AudioClip bgmLoop;
     public int goldReward;
     public int expGainForEachChar;
     public bool bossLevel;
@@ -43,5 +45,15 @@ public class StageData : MonoBehaviour
             Inventory.Instance.currentDataSave.currentStage = currentStage;    
         }
         Inventory.Instance.SaveGame();
+    }
+
+    public AudioClip GetBGMClip()
+    {
+        return bgmClip;
+    }
+
+    public AudioClip GetBGMLoop()
+    {
+        return bgmLoop;
     }
 }

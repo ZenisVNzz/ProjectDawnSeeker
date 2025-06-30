@@ -42,6 +42,8 @@ public class SelectLevel : MonoBehaviour
                 currentStageData.expGainForEachChar = stageData.expGainForEachChar;
                 currentStageData.bossLevel = stageData.bossLevel;
                 currentStageData.isUnlock = stageData.isUnlock;
+                currentStageData.bgmClip = stageData.bgmClip;
+                currentStageData.bgmLoop = stageData.bgmLoop;
                 SceneManager.LoadScene("Battle");
             }         
         });
