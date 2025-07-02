@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,10 +12,11 @@ public class EquipedUnit : MonoBehaviour
 
     private void Start()
     {
-        Inventory.Instance.currentDataSave.equipedChar.Clear();
-        List<int> equipedChar = GameManager.Instance.currentDataSave.equipedChar;
+        List<int> equipedChar = GameManager.Instance.currentDataSave.equipedChar.ToList();
         if (equipedChar.Count > 0)
         {
+            equipedUnit = new List<CharacterData>();
+            Inventory.Instance.currentDataSave.equipedChar.Clear();
             foreach (var ID in equipedChar)
             {
                 CharacterData charData = Inventory.Instance.summonedCharacters.Find(c => c.characterID == ID);
@@ -22,8 +24,9 @@ public class EquipedUnit : MonoBehaviour
                 Inventory.Instance.currentDataSave.equipedChar.Add(charData.characterID);
                 Inventory.Instance.SaveGame();
             }
+            GameManager.Instance.currentDataSave.equipedChar.Clear();
         }
-        GameManager.Instance.currentDataSave.equipedChar.Clear();
+       
         UpdateUI();
     }
 

@@ -261,7 +261,6 @@ public class BattleManager : MonoBehaviour
                 StopAllCoroutines();
                 OnFinishedStage?.Invoke(false);
             }
-            return;
         }
         else if (!BossLevel && CurrentTurn >= NormalMaxTurn)
         {
@@ -414,17 +413,10 @@ public class BattleManager : MonoBehaviour
 
                 yield return StartCoroutine(WaitForEnemyActionCompletion(enemyAI));
             }
-        }    
-        
-        if (isPlayerTurn)
-        {
-            plannedActions.Clear();
         }
-        else
-        {
-            enemyPlannedAction.Clear();
-        }    
-        
+
+        plannedActions.Clear();
+
         yield return new WaitForSeconds(0.2f);
         CheckWinLose();
         yield return new WaitForSeconds(0.2f);

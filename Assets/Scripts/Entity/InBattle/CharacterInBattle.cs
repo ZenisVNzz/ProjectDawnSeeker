@@ -246,7 +246,7 @@ public class CharacterInBattle : MonoBehaviour
 
         if (currentAttacker.isLifeSteal)
         {
-            currentAttacker.Heal(amount * 0.3f, true);
+            currentAttacker.Heal(amount * 0.4f, true);
         }
 
         currentHP -= amount;

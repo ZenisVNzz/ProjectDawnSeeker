@@ -35,15 +35,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 096f798562f834649bdf2fde32905df8, type: 2}
   AI: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
   currentTotalXP: 0
-  level: 0
-  ATK: 6
-  HP: 190
-  DEF: 5
+  level: 1
+  ATK: 310
+  HP: 15000
+  DEF: 306
   MP: 6
   CR: 0.1
-  CD: 1.2
-  DC: 0.05
-  PC: 0.08
+  CD: 2
+  DC: 0
+  PC: 0.25
   maxLevel: 1
   currentXP: 0
   neededXP: 100
