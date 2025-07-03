@@ -50,7 +50,7 @@ public class EquipUnit : MonoBehaviour
 
     private async Task WaitForInializeData()
     {
-        while (charDataStorage == null || charDataStorage.characterData == null)
+        while (charDataStorage == null && charDataStorage.characterData == null)
         {
             await Task.Yield();
         }
