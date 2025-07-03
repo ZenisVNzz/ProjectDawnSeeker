@@ -6224,6 +6224,8 @@ MonoBehaviour:
     m_LocalVariables: []
   enemies: []
   items: []
+  bgmClip: {fileID: 0}
+  bgmLoop: {fileID: 0}
   goldReward: 0
   expGainForEachChar: 0
   bossLevel: 0
@@ -8071,7 +8073,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ver 0.7.41
+  m_text: Ver 0.4.3.1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0169eaa3d6a366845a1d615646bd1d03, type: 2}
   m_sharedMaterial: {fileID: -2043696881514613515, guid: 0169eaa3d6a366845a1d615646bd1d03, type: 2}
