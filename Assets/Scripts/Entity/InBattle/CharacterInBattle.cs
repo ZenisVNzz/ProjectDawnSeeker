@@ -230,23 +230,6 @@ public class CharacterInBattle : MonoBehaviour
 
         currentHP -= amount;
         savedTotalDmgHit += amount;
-
-
-        //
-        if(currentAttacker != null && currentAttacker.characterType == characterType.Player)
-        {
-            if (battleManager.damageFromPlayer.ContainsKey(currentAttacker))
-            {
-                battleManager.damageFromPlayer[currentAttacker] += amount;
-            }
-            else
-            {
-                battleManager.damageFromPlayer[currentAttacker] = amount;
-            }
-        }
-        //
-
-
         if (currentHP <= 0)
         {
             currentHP = 0;

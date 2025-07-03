@@ -11,7 +11,6 @@ public class BattleManager : MonoBehaviour
     public List<CharacterInBattle> TeamAI = new List<CharacterInBattle>();
     public List<PlannedAction> plannedActions = new List<PlannedAction>();
     public List<EnemyPlannedAction> enemyPlannedAction = new List<EnemyPlannedAction>();
-    public Dictionary<CharacterInBattle, float> damageFromPlayer = new Dictionary<CharacterInBattle, float>();
 
     public event Action OnEndTurn;
     public event Action<bool> OnFinishedStage;
@@ -30,8 +29,6 @@ public class BattleManager : MonoBehaviour
     private int NormalCurrentTurn = 1;
     private int BossMaxTurn = 30;
     private int BossCurrentTurn = 1;
-
-    public float EstimatedDamage = 0f;
 
 
     void Start()
@@ -177,7 +174,7 @@ public class BattleManager : MonoBehaviour
                             }
 
                             int skillIndex = UnityEngine.Random.Range(0, availableSkills.Count);
-                            CharacterInBattle chosen = SelectBossTarget(TeamPlayer, damageFromPlayer);
+                            CharacterInBattle chosen = GetRandomAlive(TeamPlayer);
                             SkillBase skill;
                             if (availableSkills.Count == 1)
                             {
@@ -770,79 +767,5 @@ public class BattleManager : MonoBehaviour
         {
             return NormalCurrentTurn;
         }
-    }
-
-
-
-
-
-
-
-    //
-    CharacterInBattle SelectBossTarget(List<CharacterInBattle> teamPlayer, Dictionary<CharacterInBattle, float> damageFromPlayer)
-    {
-        List<CharacterInBattle> alivePlayers = teamPlayer.Where(p => p.isAlive).ToList();
-        if (alivePlayers.Count == 0) return null;
-
-        var sortedByDamage = alivePlayers.OrderByDescending(p => damageFromPlayer.ContainsKey(p) ? damageFromPlayer[p] : 0).ToList();
-
-        if (sortedByDamage.Count >= 2)
-        {
-            float dmg1 = damageFromPlayer.ContainsKey(sortedByDamage[0]) ? damageFromPlayer[sortedByDamage[0]] : 0;
-            float dmg2 = damageFromPlayer.ContainsKey(sortedByDamage[1]) ? damageFromPlayer[sortedByDamage[1]] : 0;
-
-            if (dmg1 - dmg2 >= 300)
-            {
-                return sortedByDamage[0];
-            }
-        }
-
-        return alivePlayers.OrderBy(p => p.currentHP).First();
-    }
-
-
-    //
-    SkillBase BossSelectSkill(CharacterInBattle caster, CharacterInBattle target)
-    {
-        float currentMP = caster.currentMP;
-
-        List<SkillBase> usableSkills = caster.skillList
-            .Where(skill => !skill.passiveSkill && skill.mpCost <= currentMP)
-            //.OrderByDescending(skill => skill.Damage)
-            .ToList();
-
-        SkillBase BestFinish = null;
-
-        foreach (var skill in usableSkills)
-        {
-            float damage = EstimateDamage(caster, target, skill);
-            float overkill = damage - target.currentHP;
-
-            if (damage >= target.currentHP)
-            {
-                if (overkill <= 300f)
-                {
-                    return skill;
-                }
-                else
-                {
-                    if (BestFinish == null)
-                        BestFinish = skill;
-                }
-            }
-        }
-
-        if (BestFinish != null)
-            return BestFinish;
-
-        return usableSkills.FirstOrDefault();
-    }
-
-
-    //
-    float EstimateDamage(CharacterInBattle caster, CharacterInBattle target, SkillBase skill)
-    {
-        //return skill.Damage * 0.5f;
-        return 1;
     }
 }
