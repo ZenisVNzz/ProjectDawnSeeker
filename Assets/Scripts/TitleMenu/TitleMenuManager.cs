@@ -21,6 +21,7 @@ public class TitleMenuManager : MonoBehaviour
             {
                 File.Delete(savePath);
             }
+            StageData.currentStage = 500001;
         });
         loadGameButton.onClick.AddListener(() => {
             GameManager gameManager = FindAnyObjectByType<GameManager>();
@@ -69,6 +70,8 @@ public class TitleMenuManager : MonoBehaviour
 
     private IEnumerator LoadLobbyAsync()
     {
+        Inventory.Instance.ClearData();
+
         yield return new WaitForSeconds(2f);
 
         AsyncOperation operation = SceneManager.LoadSceneAsync("lobby");

@@ -14,11 +14,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300017
   skillName: "B\u0103ng T\u1ECFa"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927810
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "T\u1EA1o ra nh\u1EEFng k\u1EBFt tinh b\u0103ng \u0111\xE2m v\xE0o
     k\u1EBB \u0111\u1ECBch, g\xE2y s\xE1t th\u01B0\u01A1ng cao, n\u1EBFu m\u1EE5c
     ti\xEAu \u0111ang b\u1ECB thi\xEAu \u0111\u1ED1t, g\xE2y th\xEAm s\xE1t th\u01B0\u01A1ng
     \u0111\u1ED3ng th\u1EDDi khi\u1EBFn m\u1EE5c ti\xEAu b\u1ECB cho\xE1ng, m\u1EE5c
     ti\xEAu c\u0169ng s\u1EBD b\u1ECB s\u1ED1c nhi\u1EC7t trong v\xF2ng 3 l\u01B0\u1EE3t."
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927811
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  skillTypes: 0000000002000000
   icon: {fileID: -8093117192702332651, guid: 22fde2a62f930de41af6ee314f3cd596, type: 3}
   mpCost: 5
   animation: {fileID: 7400000, guid: c4c478798342ff54689588ace0f004bf, type: 2}
@@ -26,5 +45,10 @@ MonoBehaviour:
   supportSkill: 0
   move: 0
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
   paralysis: {fileID: 11400000, guid: f268a165c3f09874e9a860ec66d784c2, type: 2}
   heatShock: {fileID: 11400000, guid: e5074072df141734782cc2c22ea171f0, type: 2}
+  references:
+    version: 2
+    RefIds: []

@@ -14,10 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300018
   skillName: "Linh T\u1EE5"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927806
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "Gi\u1EA3i ph\xF3ng lu\u1ED3ng mana trong c\u01A1 th\u1EC3, gi\xFAp
     h\u1ED3i ph\u1EE5c l\u1EA1i m\u1ED9t l\u01B0\u1EE3ng mana nh\u1EA5t \u0111\u1ECBnh,
     \u0111\u1ED3ng th\u1EDDi t\u0103ng s\u1EE9c t\u1EA5n c\xF4ng trong v\xF2ng 1
     l\u01B0\u1EE3t. "
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927807
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  skillTypes: 01000000
   icon: {fileID: 3881739568085620697, guid: 7bc42fb4324be0b4ab67580e847f0753, type: 3}
   mpCost: 0
   animation: {fileID: 7400000, guid: 158033dd6d892d44c9897563c8b7b04d, type: 2}
@@ -25,5 +44,10 @@ MonoBehaviour:
   supportSkill: 0
   move: 0
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
   mpRecovery: {fileID: 11400000, guid: 94f17286500ff0040ac7909040ef329d, type: 2}
   atkUP: {fileID: 11400000, guid: 94ec968db9241264fa351737f61c1ec9, type: 2}
+  references:
+    version: 2
+    RefIds: []

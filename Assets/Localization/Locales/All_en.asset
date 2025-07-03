@@ -1,0 +1,1036 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: All_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: eb0335d9e92023648a0ab348974d019e, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 7695452523287806048
+  m_TableData:
+  - m_Id: 3060574904320
+    m_Localized: Recruit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060683956224
+    m_Localized: Inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060692344832
+    m_Localized: Enter Dungeon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060692344833
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060696539136
+    m_Localized: Select Floor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060696539137
+    m_Localized: Floor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060696539138
+    m_Localized: Turn {turnIndex}
+    m_Metadata:
+      m_Items:
+      - rid: 7695452523287806048
+  - m_Id: 3060696539139
+    m_Localized: Characters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060696539140
+    m_Localized: Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060696539141
+    m_Localized: Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060696539142
+    m_Localized: Health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060696539143
+    m_Localized: Defense
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060696539144
+    m_Localized: Attack Power
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060696539145
+    m_Localized: Mana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060696539146
+    m_Localized: Crit Chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060696539147
+    m_Localized: Crit Damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060696539148
+    m_Localized: Dodge Chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060696539149
+    m_Localized: Parry Chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733440
+    m_Localized: Mana Cost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733441
+    m_Localized: Equip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733442
+    m_Localized: Unequip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733443
+    m_Localized: Upgrade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733444
+    m_Localized: Add All
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733445
+    m_Localized: Remove All
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733446
+    m_Localized: Used Item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733447
+    m_Localized: You don't have enough gold to recruit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733448
+    m_Localized: Banner Standard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733449
+    m_Localized: Ranner Rate Up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733450
+    m_Localized: Banner Newbie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733451
+    m_Localized: Start of the Adventure!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733452
+    m_Localized: Banner Newbie has 50% gold discount
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733453
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733454
+    m_Localized: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733455
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733456
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733457
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733458
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733459
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733460
+    m_Localized: Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733461
+    m_Localized: Resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733462
+    m_Localized: Full Screen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733463
+    m_Localized: Master Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733464
+    m_Localized: Music Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060700733465
+    m_Localized: Effect Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927744
+    m_Localized: 'Welcome to the first battle
+
+      Now is your time to show your
+      command talent
+
+      Click here to continue'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927745
+    m_Localized: Here is your characters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927746
+    m_Localized: Here is your enemy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927747
+    m_Localized: 'Here is current turn
+
+      If you not clear your enemy in 15 (30
+      for the boss stage) turns, you will lose'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927748
+    m_Localized: 'Here is your characters stat
+
+      The red bar is HP
+
+      The
+      blue bar is MP'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927749
+    m_Localized: 'Here are your enemies'' action in this turn
+
+      You can use
+      your mouse to check their skills and target'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927750
+    m_Localized: Please select a character to give orders to
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927751
+    m_Localized: "This is the skill list of the selected character\nNote that skills
+      consume mana to use \n( except for basic skills )"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927752
+    m_Localized: 'You''ve selected a skill.
+
+      Now, choose an enemy to target'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927753
+    m_Localized: Click this button to start the turn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927754
+    m_Localized: 'Congratulations! You know how to command now.
+
+      Besides that,
+      your characters and enemy can dodge or even parry an attack'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927755
+    m_Localized: Here is a board of buff and debuff status you should know
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927756
+    m_Localized: Enhancement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927757
+    m_Localized: Slightly increases attack power
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927758
+    m_Localized: Body Guard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927759
+    m_Localized: Slightly increases defense
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927760
+    m_Localized: Swiftness
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927761
+    m_Localized: Greatly increases Dodge Chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927762
+    m_Localized: Focus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927763
+    m_Localized: Doubles critical rate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927764
+    m_Localized: Lifesteal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927765
+    m_Localized: Healing when cause damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927766
+    m_Localized: Berserk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927767
+    m_Localized: Greatly increases attack power but greatly decreases defense
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927768
+    m_Localized: Weakness
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927769
+    m_Localized: Slightly decreases attack power
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927770
+    m_Localized: Injury
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927771
+    m_Localized: Slightly decreases defense
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927772
+    m_Localized: Burn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927773
+    m_Localized: Takes damage each turn based on the afflicted target's max HP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927774
+    m_Localized: Bleed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927775
+    m_Localized: Takes damage on every action based on the afflicted target's ATK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927776
+    m_Localized: Stun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927777
+    m_Localized: Can not action in 1 turn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927778
+    m_Localized: Curse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927779
+    m_Localized: Can not recover MP when start turn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927780
+    m_Localized: Deep Wound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927781
+    m_Localized: Decrease healing effeciency
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927782
+    m_Localized: Fear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927783
+    m_Localized: Decrease all stats (ExceptHP and MP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927784
+    m_Localized: Slash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927785
+    m_Localized: Strike the enemy with a slash, dealing basic damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927786
+    m_Localized: Shield Bash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927787
+    m_Localized: Bash the enemy with your shield, dealing light damage and has a
+      chance to stun the target. If the stun fails, provoke the target instead and
+      increase your own defense for 2 turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927788
+    m_Localized: Dual Strike
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927789
+    m_Localized: Strike twice, dealing moderate damage and boosts your attack for
+      2 turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927790
+    m_Localized: Flame Slash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927791
+    m_Localized: Charge up and unleash a blazing sword wave, dealing heavy damage
+      and burning the target for 2 turns. Deals bonus damage if the target is already
+      burning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927792
+    m_Localized: Arrow Shot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927793
+    m_Localized: Shoot an arrow that deals basic damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927794
+    m_Localized: Divine Wind Arrow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927795
+    m_Localized: Shoot a powerful arrow at the enemy, dealing heavy damage and inflicting
+      Deep Wound for 2 turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927796
+    m_Localized: Holy Light
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927797
+    m_Localized: Release a holy light at the target, dealing basic damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927798
+    m_Localized: Meditation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927799
+    m_Localized: Absorbs mana from the air to recover MP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927800
+    m_Localized: Heal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927801
+    m_Localized: Heal a single ally
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927802
+    m_Localized: Divine Grace
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927803
+    m_Localized: Unleash a sacred light that purifies all negative effects from allies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927804
+    m_Localized: Blazing Fire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927805
+    m_Localized: Cast a fireball toward the target, dealing moderate damage and burning
+      the target for 2 turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927806
+    m_Localized: Spirit Gathering
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927807
+    m_Localized: Release internal mana to restore a set amount of MP and boost attack
+      for 1 turn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927808
+    m_Localized: Enhancement Sigil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927809
+    m_Localized: "Apply an enhancement mark on an ally, empowering their next skill
+      with increased attack power\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927810
+    m_Localized: Frost Bind
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927811
+    m_Localized: Launch sharp ice crystals at the enemy, dealing heavy damage, If
+      the target is burning, deal additional damage, stun them, and inflict Thermal
+      Shock for 3 turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927812
+    m_Localized: Quick Slash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927813
+    m_Localized: Deliver a quick slash, dealing basic damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927814
+    m_Localized: Threefold Slash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927815
+    m_Localized: Unleash three consecutive slashes, dealing moderate damage and applying
+      Bleed for 2 turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927816
+    m_Localized: Mind Blade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927817
+    m_Localized: Focuses all will and spirit into the blade, increasing critical
+      rate and attack power for 2 turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927818
+    m_Localized: Rapid Thrust
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927819
+    m_Localized: Thrust the target 5 times, dealing heavy damage. Each hit increases
+      critical rate by 5%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927820
+    m_Localized: Single Strike
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927821
+    m_Localized: Slash horizontally, dealing basic damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927822
+    m_Localized: Sky Cleave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927823
+    m_Localized: Leaps into the air and slashes downward, dealing moderate damage
+      and inflicting Injury for 1 turn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927824
+    m_Localized: Agile Reflexes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927825
+    m_Localized: Grants Agility for 2 turns. Each time the user successfully dodges,
+      their attack power increases
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927826
+    m_Localized: Piercing Arrow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927827
+    m_Localized: Fires an arrow that deals damage and causes Bleed for 1 turn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927828
+    m_Localized: Thrust
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927829
+    m_Localized: Thrusts a spear forward, dealing basic damage and inflicting Weakness
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927830
+    m_Localized: Spear Thrust
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927831
+    m_Localized: Powerfully thrusts at the enemy, dealing moderate damage and ignoring
+      part of their armor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927832
+    m_Localized: Warcry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927833
+    m_Localized: Raise the fighting spirit of all allies, increasing their attack
+      power for 2 turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927834
+    m_Localized: Flame Spear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927835
+    m_Localized: "Channels fire into the spear and unleashes a critical strike that
+      deals moderate damage, Ignores the target\u2019s defense and inflicts Burn
+      for 2 turns"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060704927836
+    m_Localized: Piercing Thrust
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122048
+    m_Localized: Thrusts a spear forward, dealing basic damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122049
+    m_Localized: Holy Lance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122050
+    m_Localized: Strike down with your spear, dealing moderate damage and inflicting
+      Weak on the target for 1 turn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122051
+    m_Localized: Blessing of the Gods
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122052
+    m_Localized: Blesses all allies, gradually healing their wounds and increasing
+      their defense for 2 turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122053
+    m_Localized: Unbreakable Aegis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122054
+    m_Localized: Provoke enemies into focusing their attacks on you. Each time you
+      take damage, your defense increases slightly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122055
+    m_Localized: Heavy Strike
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122056
+    m_Localized: Swings an axe downward, dealing basic damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122057
+    m_Localized: Whirlwind Destruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122058
+    m_Localized: Spins the axe, dealing damage twice and causing Bleed for 2 turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122059
+    m_Localized: Bloodseal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122060
+    m_Localized: Enchants your axe with a bloodbound rune, granting Lifesteal and
+      Berserk for 2 turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122061
+    m_Localized: Iron Cleave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122062
+    m_Localized: Swing your axe, then strike down with a powerful blow. If the target
+      is Bleeding, inflict Fatal Bleed for 3 turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122063
+    m_Localized: Knight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122064
+    m_Localized: Archer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122065
+    m_Localized: Priest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122066
+    m_Localized: Wizard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122067
+    m_Localized: Swordsman
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122068
+    m_Localized: Soldier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122069
+    m_Localized: Lancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122070
+    m_Localized: Knight Templar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3060709122071
+    m_Localized: Armored Axeman
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28554494140416
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29395368206336
+    m_Localized: Apply
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29477085831168
+    m_Localized: Back to title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29819139710976
+    m_Localized: Exit Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251364655161344
+    m_Localized: Recruit X1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251402651361280
+    m_Localized: Recruit X10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252534224248832
+    m_Localized: Your Team
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252735064301568
+    m_Localized: Change
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258473962692608
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258682570596352
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258805421760512
+    m_Localized: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259021466165248
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259157646827520
+    m_Localized: Retreat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 261395140239360
+    m_Localized: Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 262557222494208
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263144617992192
+    m_Localized: View level 100
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263313392590848
+    m_Localized: View level 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 266664888950784
+    m_Localized: Spend {gold} gold for 1 recruit?
+    m_Metadata:
+      m_Items:
+      - rid: 7695452523287806048
+  - m_Id: 266720622862336
+    m_Localized: Spend {gold} gold for 10 recruit?
+    m_Metadata:
+      m_Items:
+      - rid: 7695452523287806048
+  - m_Id: 268348302221312
+    m_Localized: Dungeon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 337615794135040
+    m_Localized: Victory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 337692235325440
+    m_Localized: Failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 337754835312640
+    m_Localized: Reward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 337832903892992
+    m_Localized: "You\u2019ve cleared Floor {floor}"
+    m_Metadata:
+      m_Items:
+      - rid: 7695452523287806048
+  - m_Id: 338219258011648
+    m_Localized: Gold Received
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338394114351104
+    m_Localized: Turns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338480588316672
+    m_Localized: Return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338526750826496
+    m_Localized: Retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338481959854080
+    m_Localized: Play Again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 339501154754560
+    m_Localized: You have failed to conquer {floor}
+    m_Metadata:
+      m_Items:
+      - rid: 7695452523287806048
+  - m_Id: 343073531551744
+    m_Localized: NEW!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 343202758057984
+    m_Localized: Skip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 344836208779264
+    m_Localized: You don't have enough gold to upgrade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 345044841848832
+    m_Localized: Upgrade Successful
+    m_Metadata:
+      m_Items: []
+  - m_Id: 587242988560384
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 623016383537152
+    m_Localized: A new adventure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 624683707457536
+    m_Localized: Crimson Fang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 625357568532480
+    m_Localized: Inferno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 626200866906112
+    m_Localized: Lightbearers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 631292533858304
+    m_Localized: Rate up for featured characters!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 632326140387328
+    m_Localized: Recruit rates are increased for featured characters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690553959931904
+    m_Localized: 'Welcome to the Lobby!
+
+      Here, you can recruit characters,
+      manage your team, upgrade heroes, and enter dungeons.
+
+      Tap to continue.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 690725699903488
+    m_Localized: 'First, use the gold you have to recruit a character
+
+      Tap
+      here to begin recruiting'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 691182577049600
+    m_Localized: Tap here to start recruiting characters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 691314404024320
+    m_Localized: Press Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 691412345217024
+    m_Localized: 'You''ve got your first character!
+
+      Now, let''s return to
+      the lobby'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 701262139678720
+    m_Localized: Tap here to manage your team
+    m_Metadata:
+      m_Items: []
+  - m_Id: 702225319649280
+    m_Localized: Choose a character to manage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 702815319810048
+    m_Localized: 'You can check your character''s name, level, stats, and skills
+      here
+
+      Tap here to continue'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 703548681281536
+    m_Localized: Tap this button to equip your character
+    m_Metadata:
+      m_Items: []
+  - m_Id: 704060306677760
+    m_Localized: 'This is your team
+
+      Tap here to continue'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 705966496210944
+    m_Localized: "Your team is ready.\nNow, let\u2019s return to the lobby"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 707382870728704
+    m_Localized: 'Everything is ready
+
+      Press this button to enter the dungeon'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712371219390464
+    m_Localized: 'You can also check and edit your team here
+
+      Tap here to continue'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726816213622784
+    m_Localized: Tap this button to begin your conquest of Dungeon Floor 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727922591326208
+    m_Localized: Floor 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727924109664256
+    m_Localized: Floor 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727960499445760
+    m_Localized: Floor 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727970137956352
+    m_Localized: Floor 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727990094454784
+    m_Localized: Floor 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727996952141824
+    m_Localized: Floor 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728006863282176
+    m_Localized: Floor 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728015679709184
+    m_Localized: Floor 8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728023242039296
+    m_Localized: Floor 9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728041042665472
+    m_Localized: Floor 10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728049733263360
+    m_Localized: Floor 11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728061410205696
+    m_Localized: Floor 12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728068389527552
+    m_Localized: Floor 13
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3546843291770880
+    m_Localized: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+      WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+      WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3547116106080256
+    m_Localized: A Powerful Foe Has Appeared
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3553967442944000
+    m_Localized: No members in your party
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 7695452523287806048
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 3060696539138
+        - id: 337832903892992
+        - id: 339501154754560
+        - id: 266664888950784
+        - id: 266720622862336

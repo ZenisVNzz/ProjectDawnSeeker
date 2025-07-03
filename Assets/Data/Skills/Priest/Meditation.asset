@@ -14,9 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300008
   skillName: "Thi\u1EC1n \u0110\u1ECBnh"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927798
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "H\u1EA5p th\u1EE5 mana trong kh\xF4ng kh\xED \u0111\u1EC3 h\u1ED3i
     mana, nh\u01B0ng d\u1EC5 b\u1ECB t\u1ED5n th\u01B0\u01A1ng trong l\u01B0\u1EE3t
     n\xE0y."
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927799
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  skillTypes: 01000000
   icon: {fileID: 334477584409751531, guid: b987d9566c5fcca47afd5c7c4ec92ee4, type: 3}
   mpCost: 0
   animation: {fileID: 7400000, guid: 28fa8dbedf7a6494eb6111ea22e1f11a, type: 2}
@@ -24,4 +43,9 @@ MonoBehaviour:
   supportSkill: 0
   move: 0
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
   meditation: {fileID: 11400000, guid: 94f17286500ff0040ac7909040ef329d, type: 2}
+  references:
+    version: 2
+    RefIds: []

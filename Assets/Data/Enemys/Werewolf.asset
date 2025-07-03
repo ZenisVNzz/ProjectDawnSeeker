@@ -14,7 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100109
   characterName: Werewolf
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 1
+  characterTags: 
   characterSprite: {fileID: -4039291315573906701, guid: 526736d968ac66a4b949f82c51def2c0, type: 3}
   characterAnimation: {fileID: 9100000, guid: be7f53343938bee49826fe2da9008def, type: 2}
   isBoss: 0
@@ -22,6 +32,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d94e6622192bba74d841226e48116f63, type: 2}
   - {fileID: 11400000, guid: a4eabb2eb84f6d84596eca41940a1687, type: 2}
   - {fileID: 11400000, guid: fcc787452decf5c41bcb2cda57718225, type: 2}
+  AI: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
+  currentTotalXP: 0
   level: 1
   ATK: 42
   HP: 298
@@ -29,9 +41,9 @@ MonoBehaviour:
   MP: 3
   CR: 0.1
   CD: 1.5
-  DC: 0.05
-  PC: 0.05
-  maxLevel: 100
+  DC: 0.03
+  PC: 0.03
+  maxLevel: 1000
   currentXP: 0
   neededXP: 100
   ATKPerLevel: 3.5
@@ -40,3 +52,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0
   CDPerLevel: 0
+  references:
+    version: 2
+    RefIds: []

@@ -27,7 +27,7 @@ AnimationClip:
     - time: 0.25
       value: {fileID: 1625464189833880361, guid: 29b445bc041dfbc4d95aa52e6507c177, type: 3}
     - time: 0.375
-      value: {fileID: -8860026988961411046, guid: 29b445bc041dfbc4d95aa52e6507c177, type: 3}
+      value: {fileID: -6497609216809267125, guid: 29b445bc041dfbc4d95aa52e6507c177, type: 3}
     - time: 0.5
       value: {fileID: -6497609216809267125, guid: 29b445bc041dfbc4d95aa52e6507c177, type: 3}
     - time: 0.625
@@ -57,7 +57,7 @@ AnimationClip:
     - {fileID: -8496485956532845581, guid: 29b445bc041dfbc4d95aa52e6507c177, type: 3}
     - {fileID: -7740336918144759574, guid: 29b445bc041dfbc4d95aa52e6507c177, type: 3}
     - {fileID: 1625464189833880361, guid: 29b445bc041dfbc4d95aa52e6507c177, type: 3}
-    - {fileID: -8860026988961411046, guid: 29b445bc041dfbc4d95aa52e6507c177, type: 3}
+    - {fileID: -6497609216809267125, guid: 29b445bc041dfbc4d95aa52e6507c177, type: 3}
     - {fileID: -6497609216809267125, guid: 29b445bc041dfbc4d95aa52e6507c177, type: 3}
     - {fileID: -4662332910533861248, guid: 29b445bc041dfbc4d95aa52e6507c177, type: 3}
   m_AnimationClipSettings:
@@ -92,9 +92,30 @@ AnimationClip:
     floatParameter: 0
     intParameter: 300017
     messageOptions: 0
+  - time: 0.25
+    functionName: PlaySoundEffect
+    data: IceShock1
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.875
+    functionName: PlaySoundEffect
+    data: IceShock2
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.875
     functionName: OnAttackHit
     data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.875
+    functionName: EndSoundEffect
+    data: IceShock1
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

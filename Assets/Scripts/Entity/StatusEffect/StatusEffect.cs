@@ -16,6 +16,10 @@ public abstract class StatusEffect : ScriptableObject
     public abstract void OnApply(CharacterInBattle target);
     public abstract void OnTurn(CharacterInBattle target);
     public abstract void OnRemove(CharacterInBattle target);
+    public virtual CharacterInBattle Getprovocateur()
+    {
+        return null;
+    }    
 
     public void Tick(CharacterInBattle character)
     {

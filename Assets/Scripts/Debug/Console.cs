@@ -33,6 +33,8 @@ public class Console : MonoBehaviour
 
         RegisterCommand("ADDGOLD", AddGold);
         RegisterCommand("ADDITEM", AddItem);
+        RegisterCommand("UNLOCKNEXTSTAGE", UnlockNextStage);
+        RegisterCommand("UNLOCKALLSTAGE", UnlockAllStage);
     }
 
     void RegisterCommand(string cmd, Action<string[]> callback)
@@ -153,5 +155,17 @@ public class Console : MonoBehaviour
         {
             Log("Invalid ID.");
         }
+    }
+
+    void UnlockAllStage(string[] args)
+    {
+        StageData.currentStage = 500014;
+        Log("Unlocked all stages.");
+    }
+
+    void UnlockNextStage(string[] args)
+    {
+        StageData.currentStage++;
+        Log("Unlocked next stage.");
     }
 }

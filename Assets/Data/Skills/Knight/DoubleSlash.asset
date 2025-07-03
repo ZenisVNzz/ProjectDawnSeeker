@@ -14,9 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300003
   skillName: "Song K\xEDch"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927788
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "Ch\xE9m hai ph\xE1t li\xEAn ti\u1EBFp, g\xE2y s\xE1t th\u01B0\u01A1ng
     kh\xE1 v\xE0 t\u0103ng s\u1EE9c t\u1EA5n c\xF4ng cho b\u1EA3n th\xE2n trong v\xF2ng
     2 l\u01B0\u1EE3t."
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927789
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  skillTypes: 0000000001000000
   icon: {fileID: 125923344591457816, guid: 73c0d672ef462254282299b149aa3ee7, type: 3}
   mpCost: 1
   animation: {fileID: 7400000, guid: 1590c9e6ea4f2e84388bb60ddb3a6403, type: 2}
@@ -24,5 +43,10 @@ MonoBehaviour:
   supportSkill: 0
   move: 1
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
   bleeding: {fileID: 11400000, guid: 091c7ea854006a54e99a2ca3c8771383, type: 2}
   atkUP: {fileID: 11400000, guid: 94ec968db9241264fa351737f61c1ec9, type: 2}
+  references:
+    version: 2
+    RefIds: []

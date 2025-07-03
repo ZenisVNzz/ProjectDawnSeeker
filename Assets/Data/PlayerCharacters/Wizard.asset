@@ -14,14 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100004
   characterName: Wizard
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060709122066
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 0
+  characterTags: 0000000003000000
   characterSprite: {fileID: 1457491203435894738, guid: ced4fda1361ac80429bf4a35e01ab226, type: 3}
   characterAnimation: {fileID: 9100000, guid: ba4dc4b0829bf094bb1c90a8210de6de, type: 2}
+  isBoss: 0
   skillList:
   - {fileID: 11400000, guid: f7646fa8ad77cf64c9e1ca3da2047219, type: 2}
   - {fileID: 11400000, guid: 512db340253de2e41a934e3cc4430067, type: 2}
   - {fileID: 11400000, guid: 8caaedf3b72d9364c943e8c800bc76a6, type: 2}
   - {fileID: 11400000, guid: d65f6a5e84058144fa7571839b4f9f7a, type: 2}
+  currentTotalXP: 0
   level: 1
   ATK: 97
   HP: 125
@@ -40,3 +52,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0.0047
   CDPerLevel: 0.01
+  references:
+    version: 2
+    RefIds: []

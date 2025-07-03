@@ -20,6 +20,11 @@ public class Inventory : MonoBehaviour
         OnMoneyChanged += OnGoldChange;
     }
 
+    public void SaveGame()
+    {
+        saveManager.SaveGame(currentDataSave);
+    }    
+
     public void AddCharacter(CharacterData character)
     {
         if (!summonedCharacters.Contains(character))
@@ -140,5 +145,22 @@ public class Inventory : MonoBehaviour
     {
         currentDataSave.gold = gold;
         saveManager.SaveGame(currentDataSave);
+    }
+
+    public void LoadSave(GeneralDataSave data)
+    {
+        gold = data.gold;
+        currentDataSave.isCompletedManageTutorial = data.isCompletedManageTutorial;
+        currentDataSave.isCompletedTarvenTutorial = data.isCompletedTarvenTutorial;
+        currentDataSave.isCompletedBattleTutorial = data.isCompletedBattleTutorial;
+        currentDataSave.currentStage = data.currentStage;
+    }    
+
+    public void ClearData()
+    {
+        summonedCharacters.Clear();
+        items.Clear();
+        gold = 0;
+        currentDataSave = new GeneralDataSave();
     }
 }

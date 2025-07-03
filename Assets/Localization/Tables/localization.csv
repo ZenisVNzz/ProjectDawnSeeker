@@ -1,0 +1,182 @@
+﻿Key,English(en),Vietnamese(vi)
+summon,Recruit,Chiêu Mộ
+manager,Characters,Nhân Vật
+go_dungeon,Go to Dungeon,Vào Hầm Ngục
+back,Back,Trở về
+select_lvl,Select Floor,Chọn Tầng
+floor,Floor,Tầng
+turn,Turn,Lượt
+character_list,Characters,Danh Sách Nhân Vật
+name,Name,Tên
+lv,Level,Cấp
+hp,HP,Máu
+def,DEF,Phòng Thủ
+atk,ATK,Tấn Công
+mp,MP,Năng Lượng
+cr,Crit Chance,Tỷ Lệ Bạo Kích
+cd,Crit Damage,Sát Thương Bạo Kích
+dc,Dodge Chance,Tỷ Lệ Né
+pc,Parry Chance,Tỷ Lệ Phản Đòn
+mana_cost,Mana Cost,Năng lượng tiêu hao
+equip,Equip,Trang Bị
+unequip,Unequip,Hủy Trang Bị
+upgrade,Upgrade,Nâng Cấp
+add_all,Add all,Thêm Tất Cả
+cancel_all,Cancel,Hủy Bỏ
+used_item,Used Item,Vật phẩm đã được sử dụng
+not_enough_gold,Not Enough Gold,Không đủ vàng
+banner_standard,Banner Standard,Chiêu Mộ Thông Thường
+banner_rate_up,Ranner Rate Up,Chiêu Mộ Đặc Biệt
+banner_newbie,Banner Newbie,Chiêu Mộ Tân Thủ
+banner_newbie_title,Start of the Adventure,Khởi đầu của cuộc hành trình
+banner_newbie_descript,Banner Newbie has 50% gold discount,Chiêu Mộ Tân Thủ được giảm 50% vàng
+continue,Continue,Tiếp tục
+menu_new_start,New Start,Chơi Mới
+menu_continue,Continue,Tiếp Tục
+menu_options,Options,Cài Đặt
+menu_credits,Credits,Nhà Phát Triển
+menu_exit,Exit,Thoát
+options_title,Options,Cài Đặt
+options_apply,Apply,Xác Nhận
+options_resolution,Resolution,Độ phân giải
+options_maximun_screen,Full Screen,Toàn màn hình
+options_master_volume,All Volume,Âm lượng tổng
+options_music_volume,Music Volume,Âm thanh nhạc
+options_sfx_volume,Effect Volume,Âm thanh hiệu ứng
+tutorial_1,"Welcome to the first battle
+Now is your time to show your command talent
+Click here to continue","Chào mừng bạn đến với trận chiến đầu tiên
+Đây là lúc để bạn thể hiện tài năng chỉ huy của mình
+Nhấn vào bảng để tiếp tục phần hướng dẫn"
+tutorial_2,Here is your characters,Đây là đồng minh của bạn
+tutorial_3,Here is your enemy,Đây là phe địch
+tutorial_4,"Here is current turn
+If you not clear your enemy in 30 turns, you will lose","Đây là số lượt hiện tại
+Nếu bạn vượt quá 30 lượt mà vẫn chưa hoàn thành trận đấu, bạn sẽ thua"
+tutorial_5,"Here is your characters stat
+The red bar is HP
+The blue bar is MP","Đây là bảng trạng thái của các thành viên trong đội bạn
+Thanh màu đỏ là máu
+Thanh màu xanh là năng lượng"
+tutorial_6,"Here is your enemy's action in this turn
+You can use your mouse to check your enemies' skills and their target","Đây là những hành động của phe địch trong lượt này
+Bạn hãy thử chỉ chuột vào để xem kẻ địch dùng kỹ năng gì và nhắm vào ai"
+tutorial_7,Now, choose your character,Bây giờ bạn hãy chọn thành viên muốn ra lệnh
+tutorial_8,"Here is the skills bar of your character, you select
+Notice that skills will cost MP to use
+( exclude basic skill )","Đây là thanh kỹ năng của thành viên mà bạn đã chọn
+Lưu ý là kỹ năng sẽ tiêu tốn mana để sử dụng 
+( ngoại trừ kỹ năng cơ bản )"
+tutorial_9,"Skill was selected
+Now, select your enemy you want to attack","Bạn đã chọn xong kỹ năng
+Bây giờ bạn hãy chọn kẻ địch mà bạn muốn nhắm vào"
+tutorial_10,Click this button to start the turn,Bây giờ bạn có thể ấn nút này để bắt đầu lượt
+tutorial_11,"Congratulations! You know how to command now.
+Besides that, your characters and enemy can dodge or even parry an attack","Chúc mừng bạn đã nắm vững cách chiến đấu cơ bản
+Ngoài ra thì bạn hoặc kẻ địch cũng có thể né hoặc thậm chí là phản lại đòn đánh"
+tutorial_12,Here is a board of buff and debuff status you should know,Đây là bảng các trạng thái có lợi và bất lợi mà bạn hoặc kẻ địch có thể nhận được
+tutorial_buff_1_name,Enhancement,Cường Hóa
+tutorial_buff_1_des,Increase little ATK,Tăng nhẹ tấn công
+tutorial_buff_2_name,Body Guard,Sắt Đá
+tutorial_buff_2_des,Increase little DEF,Tăng nhẹ phòng thủ
+tutorial_buff_3_name,Swiftness,Nhanh Nhẹn
+tutorial_buff_3_des,Increase Dodge Chance,Tăng mạnh tỷ lệ né
+tutorial_buff_4_name,Focus,Trọng huyệt công
+tutorial_buff_4_des,Increase Crit Chance,Tăng gấp đôi tỷ lệ bạo kích
+tutorial_buff_5_name,Lifesteal,Hút Máu
+tutorial_buff_5_des,Healing when cause damage,Gây sát thương sẽ hồi phục một lượng máu
+tutorial_buff_6_name,Berserk,Cuồng Nộ
+tutorial_buff_6_des,Increase ATK and decrease DEF,Tăng mạnh tấn công và giảm mạnh phòng thủ
+tutorial_debuff_1_name,Weakness,Suy yếu
+tutorial_debuff_1_des,Decrease little ATK,Giảm nhẹ sức tấn công
+tutorial_debuff_2_name,Injury,Chấn thương
+tutorial_debuff_2_des,Decrease little DEF,Giảm nhẹ phòng thủ
+tutorial_debuff_3_name,Burn,Thiêu đốt
+tutorial_debuff_3_des,Cause damage each turn with max HP percent,Mỗi lượt chịu sát thương tính theo máu tối đa của người dính phải
+tutorial_debuff_4_name,Bleed,Chảy máu
+tutorial_debuff_4_des,Cause damage when action with ATK of caster,Mỗi hành động chịu sát thương tính theo sức tấn công của người dính phải
+tutorial_debuff_5_name,Stun,Choáng
+tutorial_debuff_5_des,Can not action in 1 turn,Không thể hành động trong 1 lượt
+tutorial_debuff_6_name,Curse,Nguyền rủa
+tutorial_debuff_6_des,Can not recover MP when start turn,Không thể hồi mana vào đầu lượt
+tutorial_debuff_7_name,Deep Wound,Vết thương sâu
+tutorial_debuff_7_des,Decrease healing effeciency,Giảm hiệu quả hồi phục máu
+tutorial_debuff_8_name,Fear,Sợ hãi
+tutorial_debuff_8_des,Decrease all stats (Exclude HP and MP),Giảm toàn bộ chỉ số ngoại trừ máu và mana
+knight_skill_1_name,Slash,Chém
+knight_skill_1_des,Deals a certain amount of damage to the enemy.,Gây một lượng sát thương cho kẻ địch.
+knight_skill_2_name,Shield Bash,Khiên kích
+knight_skill_2_des,Deals light damage and has a chance to paralyze the target. Also increases the user's defense for 2 turns.,Gây sát thương nhẹ cho kẻ địch, có tỷ lệ khiến mục tiêu bị tê liệt, đồng thời tăng sức phòng thủ cho bản thân trong vòng 2 lượt
+knight_skill_3_name,Dual Strike,Song kích
+knight_skill_3_des,Deals moderate damage and increases the user's attack power for 2 turns.,Gây kha khá sát thương, đồng thời tăng sức tấn công trong vòng 2 lượt
+knight_skill_4_name,Flame Slash,Hỏa diệm trảm
+knight_skill_4_des,Deals heavy damage and burns the target for 2 turns. If the target is already burning, deals additional damage.,Gây sát thương mạnh và làm mục tiêu bị thiêu đốt trong 2 lượt. Nếu mục tiêu đã có thiêu đốt, gây thêm sát thương.
+archer_skill_1_name,Arrow Shot,Xạ tiễn
+archer_skill_1_des,Deals basic damage.,Gây sát thương cơ bản.
+archer_skill_2_name,Divine Wind Arrow,Phong thần tiễn
+archer_skill_2_des,Deals heavy damage and causes Deep Wound on the target for 2 turns.,Gây sát thương mạnh và khiến mục tiêu bị vết thương sâu trong 2 lượt
+priest_skill_1_name,Holy Light,Thánh quang
+priest_skill_1_des,Deals a certain amount of damage to the enemy.,Gây một lượng sát thương cho kẻ địch.
+priest_skill_2_name,Meditation,Thiền
+priest_skill_2_des,Absorbs mana from the air to recover MP but makes the user vulnerable during that turn.,Hấp thụ mana trong không khí để hồi mana, nhưng dễ bị tổn thương trong lượt này.
+priest_skill_3_name,Healing,Chữa lành
+priest_skill_3_des,Restores HP to a target.,Hồi máu cho mục tiêu.
+priest_skill_4_name,Divine Grace,Thánh ân
+priest_skill_4_des,Removes all negative effects from an ally.,Giải trừ toàn bộ hiệu ứng xấu cho đồng minh.
+wizard_skill_1_name,Blazing Fire,Diễm hỏa
+wizard_skill_1_des,Deals a certain amount of damage and burns the target for 2 turns.,Gây một lượng sát thương cho kẻ địch, khiến mục tiêu bị thiêu đốt trong vòng 2 lượt.
+wizard_skill_2_name,Spirit Gathering,Linh tụ
+wizard_skill_2_des,Restores a set amount of mana and increases attack power for 1 turn.,Hồi phục lại một lượng mana nhất định, đồng thời tăng sức tấn công trong vòng 1 lượt
+wizard_skill_3_name,Enhancement Sigil,Ấn ký cường hóa
+wizard_skill_3_des,Places a mark on an ally, slightly increasing the damage of their next skill.,Đặt một dấu ấn lên đồng minh, giúp kỹ năng kế tiếp của đồng minh đó tăng nhẹ sát thương.
+wizard_skill_4_name,Frost Bind,Băng tỏa
+wizard_skill_4_des,Deals moderate damage. If the target is burning, deals extra damage, stuns the target, and causes Thermal Shock for 3 turns.,Gây kha khá sát thươn, nếu mục tiêu đang bị thiêu đốt, gây thêm ít sát thươn đồng thời khiến mục tiêu bị choáng, mục tiêu cũng sẽ bị sốc nhiệt trong 3 lượt.
+swordsman_skill_1_name,Quick Slash,Tốc trảm
+swordsman_skill_1_des,Deals a certain amount of damage to the enemy.,Gây một lượng sát thương cho kẻ địch.
+swordsman_skill_2_name,Double Blade,Nhị liên kiếm
+swordsman_skill_2_des,Slashes three times in a row, dealing moderate damage and causing Bleed for 2 turns.,Chém ba lần liên tiếp, gây kha khá sát thương, khiến mục tiêu bị chảy máu trong 2 lượt.
+swordsman_skill_3_name,Mind Blade,Tâm kiếm
+swordsman_skill_3_des,The swordsman focuses all spirit and will into swordsmanship, increasing accuracy and strength. Boosts critical rate and attack power for 2 turns.,Kiếm sĩ dồn toàn bộ tinh thần và ý chí vào kiếm pháp, nâng cao sự chính xác và sức mạnh. Tăng tỉ lệ chí mạng và sức tấn công cho bản thân trong 2 lượt.
+swordsman_skill_4_name,Flurry Stab,Liên thức
+swordsman_skill_4_des,Stabs the target 5 times rapidly, dealing moderate damage and slightly increasing critical rate with each stab.,Đâm liên tiếp 5 phát vào mục tiêu, gây kha khá sát thương, sau mỗi lần đâm, tăng nhẹ tỉ lệ chí mạng.
+soldier_skill_1_name,Single Strike,Nhất kích
+soldier_skill_1_des,A horizontal slash that deals a certain amount of damage.,Chém ngang, gây một lượng sát thương cho kẻ địch.
+soldier_skill_2_name,Sky Cleave,Thiên trảm
+soldier_skill_2_des,Leaps into the air and slashes downward, dealing moderate damage and inflicting Injury for 1 turn.,Nhảy lên, chém một đòn từ trên cao xuống mục tiêu, gây kha khá sát thương, khiến mục tiêu bị chấn thương trong vòng 1 lượt.
+soldier_skill_3_name,Agile Reflexes,Thân thủ nhanh nhẹn
+soldier_skill_3_des,Grants Agility for 2 turns. Each time the user successfully dodges, their attack power increases.,Nhận hiệu ứng nhanh nhẹn trong 2 lượt, cứ mỗi lần né thành công trong thời gian hiệu ứng, tăng sức tấn công.
+soldier_skill_4_name,Piercing Arrow,Phi tiễn
+soldier_skill_4_des,Fires an arrow that deals damage and causes Bleed for 1 turn.,Bắn một mũi tên vào mục tiêu gây một lượng sát thương, khiến mục tiêu bị chảy máu trong vòng 1 lượt.
+lancer_skill_1_name,Thrust,Phi đâm
+lancer_skill_1_des,Thrusts a spear forward, dealing damage and inflicting Weakness.,Đâm giáo thẳng về phía trước gây sát thương, khiến mục tiêu bị suy yếu.
+lancer_skill_2_name,Armor Piercer,Đâm xuyên phá
+lancer_skill_2_des,Powerfully thrusts at the enemy, dealing damage and ignoring part of their armor.,Đâm mạnh vào kẻ địch, gây một lượng sát thương, bỏ qua một lượng giáp của mục tiêu.
+lancer_skill_3_name,Elite Knight,Kỵ sĩ tinh nhuệ
+lancer_skill_3_des,Boosts morale of all allies, increasing their attack power for 2 turns.,Tăng cao tinh thần chiến đấu cho toàn bộ đồng minh, giúp đồng minh tăng sức tấn công trong vòng 2 lượt.
+lancer_skill_4_name,Flame Spear,Hỏa giáo
+lancer_skill_4_des,Channels fire into the spear and unleashes a critical strike that deals moderate damage, bypasses armor, and burns the target for 2 turns.,Niệm lửa vào cây giáo, tung đòn chí mạng về phía kẻ địch, gây kha khá sát thương, bỏ qua giáp của mục tiêu và khiến mục tiêu bị thiêu đốt trong vòng 2 lượt.
+knight_templar_skill_1_name,Piercing Thrust,Kích phá
+knight_templar_skill_1_des,Thrusts a spear forward, dealing a set amount of damage.,Đâm giáo thẳng về phía trước gây một lượng sát thương
+knight_templar_skill_2_name,Holy Lance,Thánh thương
+knight_templar_skill_2_des,Swings downward, dealing damage and inflicting Weakness for 1 turn.,Chém xuống, gây sát thương, khiến mục tiêu bị suy yếu trong 1 lượt.
+knight_templar_skill_3_name,Blessing of the Gods,Chúc phúc của thần
+knight_templar_skill_3_des,Blesses all allies, gradually healing their wounds and increasing their defense for 2 turns.,Chúc phúc cho toàn bộ đồng minh, từ từ chữa lành những vết thương của họ, đồng thời tăng sức phòng thủ cho toàn bộ đồng minh trong 2 lượt.
+knight_templar_skill_4_name,Crusade Command,Khẩu Lệnh Thánh Chiến
+knight_templar_skill_4_des,Taunts enemies, causing them to prioritize attacking the user. Each time the user takes damage, their defense increases.,Khiêu khích kẻ địch, khiến kẻ địch ưu tiên nhắm vào bản thân, với mỗi lần nhận sát thương tăng sức phòng thủ cho bản thân.
+armored_axeman_skill_1_name,Heavy Strike,Trọng kỹ
+armored_axeman_skill_1_des,Swings an axe downward, dealing a set amount of damage.,Bổ một nhát rìu vào mục tiêu, gây một lượng sát thương
+armored_axeman_skill_2_name,Whirlwind Destruction,Xoáy diệt
+armored_axeman_skill_2_des,Spins the axe, dealing damage twice and causing Bleed for 2 turns.,Xoay rìu, gây 2 lần sát thương, khiến mục tiêu bị chảy máu trong 2 lượt.
+armored_axeman_skill_3_name,Blood Curse,Huyết chú
+armored_axeman_skill_3_des,Imbues the axe with a blood curse, granting lifesteal and berserk effects for 2 turns.,Thi triển một ấn chú vào cây rìu, nhận hiệu ứng hút máu và cuồng nộ trong vòng 2 lượt.
+armored_axeman_skill_4_name,Iron Cleave,Thiết phủ trảm
+armored_axeman_skill_4_des,Swings the axe once, then smashes down for heavy damage. If the target is bleeding, inflicts Mortal Bleed for 3 turns.,Vung rìu một nhát sau đó giáng xuống một đòn cực mạnh gây kha khá sát thương, nếu mục tiêu đang bị chảy máu, gây tử huyết trong vòng 3 lượt.
+knight,Knight,Hiệp Sĩ
+archer,Archer,Cung Thủ
+priest,Priest,Tư Tế
+wizard,Wizard,Pháp Sư
+swordsman,Swordsman,Kiếm Sĩ
+soldier,Soldier,Binh Sĩ
+lancer,Lancer,Kỵ Sĩ
+knight_templar,Knight Templar,Thánh Hiệp Sĩ
+armored_axeman,Armored Axeman,Giáp Chiến Phu

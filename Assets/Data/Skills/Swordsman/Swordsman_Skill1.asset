@@ -14,8 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300019
   skillName: "T\u1ED1c Tr\u1EA3m"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927812
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "Ra m\u1ED9t \u0111\xF2n ch\xE9m nhanh, g\xE2y s\xE1t th\u01B0\u01A1ng
     c\u01A1 b\u1EA3n."
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927813
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  skillTypes: 00000000
   icon: {fileID: -4885373251318296212, guid: cc34db0e0dac2ce488bc648420048fd3, type: 3}
   mpCost: 0
   animation: {fileID: 7400000, guid: 8b1210d8aa848cf4a9921dc79247458f, type: 2}
@@ -23,3 +42,8 @@ MonoBehaviour:
   supportSkill: 0
   move: 1
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
+  references:
+    version: 2
+    RefIds: []

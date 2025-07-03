@@ -1,19 +1,23 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.SceneManagement;
 
 public class StageData : MonoBehaviour
 {
     public int stageID;
-    public string stageName;
+    public LocalizedString stageName;
     public List<Enemy> enemies;
     public List<Item> items;
+    public AudioClip bgmClip;
+    public AudioClip bgmLoop;
     public int goldReward;
     public int expGainForEachChar;
     public bool bossLevel;
     public bool isUnlock;
 
-    public static int currentStage = 500001;
+    public static int currentStage;
 
     void Start()
     {
@@ -24,12 +28,32 @@ public class StageData : MonoBehaviour
     {
         if (currentStage >= stageID)
         {
-            isUnlock = true;
+            if (SceneManager.GetActiveScene().name == "DUNGEON")
+            {
+                isUnlock = true;
+                transform.Find("Lock").gameObject.SetActive(false);
+            }
         }
     }
 
     public void UnlockNextStage()
     {
-        currentStage++;
+        if (stageID == currentStage)
+        {
+            currentStage++;
+            Debug.Log($"Unlock stage: {currentStage}");
+            Inventory.Instance.currentDataSave.currentStage = currentStage;    
+        }
+        Inventory.Instance.SaveGame();
+    }
+
+    public AudioClip GetBGMClip()
+    {
+        return bgmClip;
+    }
+
+    public AudioClip GetBGMLoop()
+    {
+        return bgmLoop;
     }
 }

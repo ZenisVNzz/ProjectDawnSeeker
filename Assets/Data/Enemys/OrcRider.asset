@@ -14,7 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100101
   characterName: Orc Rider
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 1
+  characterTags: 
   characterSprite: {fileID: -7304371395691662354, guid: c10e42932643c71408e0fa4684e92ddf, type: 3}
   characterAnimation: {fileID: 9100000, guid: 5428c5ee9ea7e554dbb588825d3a0d2e, type: 2}
   isBoss: 1
@@ -23,15 +33,17 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b785de65d5f775a4eae915b222e4f88a, type: 2}
   - {fileID: 11400000, guid: bfbfc38983aef4d488add7a40191ad36, type: 2}
   - {fileID: 11400000, guid: 096f798562f834649bdf2fde32905df8, type: 2}
-  level: 0
-  ATK: 6
-  HP: 190
-  DEF: 5
+  AI: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
+  currentTotalXP: 0
+  level: 1
+  ATK: 310
+  HP: 15000
+  DEF: 306
   MP: 6
   CR: 0.1
-  CD: 1.2
-  DC: 0.05
-  PC: 0.08
+  CD: 2
+  DC: 0
+  PC: 0.25
   maxLevel: 1
   currentXP: 0
   neededXP: 100
@@ -41,3 +53,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0
   CDPerLevel: 0
+  references:
+    version: 2
+    RefIds: []

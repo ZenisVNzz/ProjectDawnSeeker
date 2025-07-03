@@ -9,7 +9,7 @@ public class Heal : StatusEffect
     public override void OnApply(CharacterInBattle target)
     {
         float Amount = CasterATK * (percent / 100f);  
-        target.Heal(Amount);
+        target.Heal(Amount, false);
     }
     public override void OnTurn(CharacterInBattle target)
     {

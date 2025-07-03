@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19240d09d1abfd949a6d35d2681ffa3c, type: 3}
+  m_Name: Lancer_Skill1
+  m_EditorClassIdentifier: 
+  ID: 300032
+  skillName: "Phi \u0110\xE2m"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927828
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description: "\u0110\xE2m th\u01B0\u01A1ng th\u1EB3ng v\u1EC1 ph\xEDa tr\u01B0\u1EDBc
+    g\xE2y s\xE1t th\u01B0\u01A1ng th\u1EA5p, nh\u01B0ng khi\u1EBFn m\u1EE5c ti\xEAu
+    b\u1ECB suy y\u1EBFu trong 1 l\u01B0\u1EE3t"
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927829
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  skillTypes: 0000000002000000
+  icon: {fileID: -220206050914862790, guid: 1cbfa8ce388293d4098da957cc519da4, type: 3}
+  mpCost: 0
+  animation: {fileID: 7400000, guid: 3f7b90bc3bcc7fc4bb79d1546a0561c1, type: 2}
+  passiveSkill: 0
+  supportSkill: 0
+  move: 1
+  isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
+  ATKDown: {fileID: 11400000, guid: 59582a369391a444ba644770352db8f5, type: 2}
+  references:
+    version: 2
+    RefIds: []

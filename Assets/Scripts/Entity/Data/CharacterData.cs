@@ -1,20 +1,26 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using Unity.Behavior;
 using UnityEngine;
+using UnityEngine.Localization;
 
 public enum characterType { Player, Enemy }
+public enum Tags { Dps, Tank, Healer, Support }
 
 [CreateAssetMenu(fileName = "Character", menuName = "Characters/NewCharacter")]
 public class CharacterData : ScriptableObject
 {
     public int characterID;
     public string characterName;
+    public LocalizedString localizedCharacterName;
     public characterType characterType;
+    public List<Tags> characterTags;
     public Sprite characterSprite;
     public RuntimeAnimatorController characterAnimation;
     public bool isBoss = false;
 
     public List<SkillBase> skillList;
+    public BehaviorGraph AI;
     public int currentTotalXP = 0;
 
     [Header("Stats")]

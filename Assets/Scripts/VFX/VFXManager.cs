@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Linq;
 using System.Collections;
 using System;
+using System.Threading.Tasks;
 
 public class VFXManager : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class VFXManager : MonoBehaviour
         }
     }
 
-    public void PlayEffect(int ID, Vector3 position, CharacterInBattle character)
+    public async Task PlayEffect(int ID, Vector3 position, CharacterInBattle character)
     {
         if (effect.Any(e => e.ID == ID && !e.isMove))
         {
@@ -51,6 +52,11 @@ public class VFXManager : MonoBehaviour
             {
                 return;
             }
+
+            while (prefab.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
+            {
+                await Task.Yield();
+            }
         }
         else
         {
@@ -71,12 +77,12 @@ public class VFXManager : MonoBehaviour
                 };
                 effectMover.MoveToTarget();
             }
-        }    
+        }
     }
 
     public IEnumerator StopEffect(int charID, int effectID)
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         if (activeEffectVFX.ContainsKey(charID))
         {
             if (activeEffectVFX[charID].ContainsKey(effectID))

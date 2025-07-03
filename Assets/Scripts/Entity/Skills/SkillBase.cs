@@ -1,11 +1,19 @@
+using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.Rendering;
+
+public enum SkillType { Attack, Buff, Debuff, Heal, Aoe, Support, Charge}
 
 public abstract class SkillBase : ScriptableObject
 {
     public int ID;
     public string skillName;
+    public LocalizedString localizedSkillName;
     public string description;
+    public LocalizedString localizedDescription;
+    public List<SkillType> skillTypes;
     public Sprite icon;
     public int mpCost;
     public AnimationClip animation;
@@ -22,8 +30,8 @@ public abstract class SkillBase : ScriptableObject
         user.currentTarget = target;
         target.currentAttacker = user;
         user.currentMP -= mpCost;
-    }   
-    
+    }
+
     public virtual void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
     {
     }
@@ -36,17 +44,39 @@ public abstract class SkillBase : ScriptableObject
     {
     }
 
-    public virtual bool CheckSkillCondition(CharacterInBattle user, CharacterInBattle target)
+    public virtual bool CheckSkillCondition(CharacterInBattle user)
     {
         return true;
     }
 
-    public virtual void OnFailCharge(CharacterInBattle user, CharacterInBattle target)
+    public virtual void OnFailCharge(CharacterInBattle user)
     {
-    }    
+    }
 
     public virtual int GetChargeTurn()
     {
         return 0;
+    }
+
+    public virtual List<StatusEffect> GetBuffsFromSkill(SkillBase skill)
+    {
+        List<StatusEffect> result = new();
+
+        var type = skill.GetType();
+        var fields = type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+
+        foreach (var field in fields)
+        {
+            if (typeof(StatusEffect).IsAssignableFrom(field.FieldType))
+            {
+                var effect = field.GetValue(skill) as StatusEffect;
+                if (effect != null && effect.type == StatusType.Buff)
+                {
+                    result.Add(effect);
+                }
+            }
+        }
+
+        return result;
     }
 }

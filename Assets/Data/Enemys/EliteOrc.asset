@@ -14,7 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100108
   characterName: Elite Orc
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 1
+  characterTags: 
   characterSprite: {fileID: -1365949498890891276, guid: bbba4939ea140e342a3ddd2749d172ec, type: 3}
   characterAnimation: {fileID: 9100000, guid: 9177a50fbb07eb84f8e50ae9558a3bc9, type: 2}
   isBoss: 0
@@ -22,6 +32,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ae06a1a0ca22af441bab6381ca8a96d5, type: 2}
   - {fileID: 11400000, guid: 03e75ca63dec50c4aadd993f0042d826, type: 2}
   - {fileID: 11400000, guid: a73f773129f93a04ca4ea3133dba77ec, type: 2}
+  AI: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
+  currentTotalXP: 0
   level: 1
   ATK: 67
   HP: 580
@@ -29,9 +41,9 @@ MonoBehaviour:
   MP: 4
   CR: 0.1
   CD: 1.5
-  DC: 0.05
-  PC: 0.05
-  maxLevel: 100
+  DC: 0.03
+  PC: 0.03
+  maxLevel: 1000
   currentXP: 0
   neededXP: 100
   ATKPerLevel: 4.2
@@ -40,3 +52,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0
   CDPerLevel: 0
+  references:
+    version: 2
+    RefIds: []

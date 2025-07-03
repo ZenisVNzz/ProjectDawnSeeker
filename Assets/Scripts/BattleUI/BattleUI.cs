@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
 public class BattleUI : MonoBehaviour
@@ -19,6 +20,14 @@ public class BattleUI : MonoBehaviour
 
     void Start()
     {
+        LocalizeStringEvent text = turnTitle.transform.Find("Turn").GetComponent<LocalizeStringEvent>();
+        text.StringReference.Arguments = new object[] {
+        new {
+             turnIndex = currentTurn + 1
+            }
+        };
+        text.RefreshString();
+
         for (int i = activeCharacter.Count; i < CharPanel.Count; i++)
         {
             CharPanel[i].SetActive(false);
@@ -89,8 +98,13 @@ public class BattleUI : MonoBehaviour
 
     public void ChangeTurn()
     {
-        TextMeshProUGUI text = turnTitle.transform.Find("Turn").GetComponent<TextMeshProUGUI>();
-        text.text = $"LƯỢT {currentTurn}";
+        LocalizeStringEvent text = turnTitle.transform.Find("Turn").GetComponent<LocalizeStringEvent>();
+        text.StringReference.Arguments = new object[] {
+        new {
+             turnIndex = currentTurn
+            }
+        };
+        text.RefreshString();
     }
 
     public void ShowSkillUI(CharacterInBattle owner)
@@ -102,7 +116,7 @@ public class BattleUI : MonoBehaviour
             TextMeshProUGUI skillName = skillButtons[i].transform.Find("SkillName").GetComponent<TextMeshProUGUI>();
             TextMeshProUGUI mpCost = skillButtons[i].transform.Find("MpCost").GetComponent<TextMeshProUGUI>();
             SelectSkill selectSkill = skillButtons[i].GetComponentInChildren<SelectSkill>();
-            skillName.text = owner.skillList[i].skillName;
+            skillName.text = owner.skillList[i].localizedSkillName.GetLocalizedString();
             mpCost.text = $"{owner.skillList[i].mpCost} MP";
             selectSkill.skill = owner.skillList[i];
             image.sprite = owner.skillList[i].icon;

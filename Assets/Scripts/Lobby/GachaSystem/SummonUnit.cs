@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using TMPro;
 using Unity.VisualScripting;
@@ -16,12 +17,11 @@ public class SummonUnit : MonoBehaviour
 {
     public Inventory inventory;
     public List<SummonedCharStorage> SummonedCharStorage = new List<SummonedCharStorage>();
-    public List<Banner> banner;
     public Banner currentBanner;
     public GameObject summonedCharPrefab;
     public GameObject summoned10CharPrefab;
     public GameObject notEnoughGoldNotice;
-    private Canvas canvas;
+    public Canvas canvas;
     private bool isSkipping = false;
 
     private void Start()
@@ -30,12 +30,20 @@ public class SummonUnit : MonoBehaviour
         {
             inventory = Inventory.Instance;
         }
-        canvas = FindAnyObjectByType<Canvas>();
     }
 
     public void SummonCharacter()
     {
-        bool isEnoughGold = Inventory.Instance.SpendMoney(100);
+        bool isEnoughGold;
+        if (currentBanner.name == "StandardBanner")
+        {
+            isEnoughGold = Inventory.Instance.SpendMoney(100);
+        }
+        else
+        {
+            isEnoughGold = Inventory.Instance.SpendMoney(200);
+        }
+        
         if (isEnoughGold)
         {
             SummonedCharStorage.Clear();
@@ -52,18 +60,26 @@ public class SummonUnit : MonoBehaviour
                 return;
             }
 
-            int randomIndex = Random.Range(1, 101);
             CharacterData selectedCharacter;
-            if (randomIndex <= 75)
+
+            if (inventory.summonedCharacters.Count <= 0)
             {
-                int randomCharIndex = Random.Range(0, currentBanner.rateUpCharacter.Count);
-                selectedCharacter = currentBanner.rateUpCharacter[randomCharIndex];
+                selectedCharacter = currentBanner.rateUpCharacter[0];
             }
             else
             {
-                int randomCharIndex = Random.Range(0, currentBanner.poolCharacter.Count);
-                selectedCharacter = currentBanner.poolCharacter[randomCharIndex];
-            }
+                int randomIndex = Random.Range(1, 101);
+                if (randomIndex <= 50)
+                {
+                    int randomCharIndex = Random.Range(0, currentBanner.rateUpCharacter.Count);
+                    selectedCharacter = currentBanner.rateUpCharacter[randomCharIndex];
+                }
+                else
+                {
+                    int randomCharIndex = Random.Range(0, currentBanner.poolCharacter.Count);
+                    selectedCharacter = currentBanner.poolCharacter[randomCharIndex];
+                }
+            }         
 
             if (inventory == null)
             {
@@ -78,20 +94,22 @@ public class SummonUnit : MonoBehaviour
             OnClick onClick = summonedChar.GetComponent<OnClick>();
 
             charIMG.sprite = selectedCharacter.characterSprite;
-            charName.text = selectedCharacter.characterName;
+            charName.text = selectedCharacter.localizedCharacterName.GetLocalizedString();
 
-            onClick.graphicRaycaster = FindAnyObjectByType<GraphicRaycaster>();
+            onClick.graphicRaycaster = GameObject.Find("Canvas").GetComponent<GraphicRaycaster>();
             onClick.eventSystem = FindAnyObjectByType<EventSystem>();
             onClick.ButtonObject = null;
 
-            if (inventory.summonedCharacters.Contains(selectedCharacter))
+            if (inventory.summonedCharacters.Any(c => c.characterID == selectedCharacter.characterID))
             {
                 newText.SetActive(false);
+                inventory.AddMoney(50);
             }
             else
             {
                 newText.SetActive(true);
-                inventory.AddCharacter(selectedCharacter);
+                CharacterData newCharData = Instantiate(selectedCharacter);
+                inventory.AddCharacter(newCharData);
             }
 
             Debug.Log($"Da trieu hoi {selectedCharacter.characterName} ");
@@ -106,7 +124,15 @@ public class SummonUnit : MonoBehaviour
     {
         SummonedCharStorage.Clear();
         isSkipping = false;
-        bool isEnoughGold = Inventory.Instance.SpendMoney(1000);
+        bool isEnoughGold;
+        if (currentBanner.name == "StandardBanner")
+        {
+            isEnoughGold = Inventory.Instance.SpendMoney(1000);
+        }
+        else
+        {
+            isEnoughGold = Inventory.Instance.SpendMoney(2000);
+        }
         if (isEnoughGold)
         {
             await Summon10Character();
@@ -163,9 +189,9 @@ public class SummonUnit : MonoBehaviour
 
                 skipButton.SetActive(true);
                 charIMG.sprite = selectedCharacter.characterSprite;
-                charName.text = selectedCharacter.characterName;
+                charName.text = selectedCharacter.localizedCharacterName.GetLocalizedString();
 
-                onClick.graphicRaycaster = FindAnyObjectByType<GraphicRaycaster>();
+                onClick.graphicRaycaster = GameObject.Find("Canvas").GetComponent<GraphicRaycaster>();
                 onClick.eventSystem = FindAnyObjectByType<EventSystem>();
                 onClick.ButtonObject = skipButton;
 
@@ -176,7 +202,7 @@ public class SummonUnit : MonoBehaviour
                     TriggerEvent();
                 });
 
-                if (inventory.summonedCharacters.Contains(selectedCharacter))
+                if (inventory.summonedCharacters.Any(c => c.characterID == selectedCharacter.characterID))
                 {
                     newText.SetActive(false);
                 }
@@ -186,7 +212,7 @@ public class SummonUnit : MonoBehaviour
                 }
             }
 
-            if (inventory.summonedCharacters.Contains(selectedCharacter))
+            if (inventory.summonedCharacters.Any(c => c.characterID == selectedCharacter.characterID))
             {
                 SummonedCharStorage summoned = new SummonedCharStorage
                 {
@@ -205,7 +231,15 @@ public class SummonUnit : MonoBehaviour
                 SummonedCharStorage.Add(summoned);
             }
 
-            inventory.AddCharacter(selectedCharacter);        
+            if (inventory.summonedCharacters.Any(c => c.characterID == selectedCharacter.characterID))
+            {
+                inventory.AddMoney(50);
+            }
+            else
+            {
+                CharacterData newCharData = Instantiate(selectedCharacter);
+                inventory.AddCharacter(newCharData);
+            }
 
             Debug.Log($"Da trieu hoi {selectedCharacter.characterName} ");
 
@@ -228,7 +262,7 @@ public class SummonUnit : MonoBehaviour
                 GameObject newText = child.transform.Find("New").gameObject;
 
                 charIMG.sprite = SummonedCharStorage[i].CharacterData.characterSprite;
-                charName.text = SummonedCharStorage[i].CharacterData.characterName;
+                charName.text = SummonedCharStorage[i].CharacterData.localizedCharacterName.GetLocalizedString();
 
                 if (!SummonedCharStorage[i].alreadyHave)
                 {

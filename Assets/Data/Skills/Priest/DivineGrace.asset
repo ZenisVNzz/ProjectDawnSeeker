@@ -14,8 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300010
   skillName: "Th\xE1nh \xC2n"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927802
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "T\u1EA1o ra m\u1ED9t v\xF9ng \xE1nh s\xE1ng thi\xEAng, gi\xFAp thanh
     t\u1EA9y m\u1ECDi hi\u1EC7u \u1EE9ng b\u1EA5t l\u1EE3i."
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927803
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  skillTypes: 05000000
   icon: {fileID: 5444266203284193634, guid: 92a86945a7b41644fa709a98cb33f1f5, type: 3}
   mpCost: 5
   animation: {fileID: 7400000, guid: eeedfc4d936e2694eafac17dbf9cf257, type: 2}
@@ -23,4 +42,9 @@ MonoBehaviour:
   supportSkill: 0
   move: 0
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
   purify: {fileID: 11400000, guid: 938f8110bade56943abe95f59af25a89, type: 2}
+  references:
+    version: 2
+    RefIds: []

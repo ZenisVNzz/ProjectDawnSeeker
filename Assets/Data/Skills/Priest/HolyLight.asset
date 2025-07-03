@@ -14,8 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300007
   skillName: "Th\xE1nh Quang"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927796
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "Ph\xE1t \u0111\u1ED9ng m\u1ED9t ch\xF9m s\xE1ng \u1EDF ch\u1ED7 m\u1EE5c
     ti\xEAu, g\xE2y s\xE1t th\u01B0\u01A1ng c\u01A1 b\u1EA3n."
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927797
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  skillTypes: 00000000
   icon: {fileID: -3448573314377300975, guid: 812459494ec24354aa52b3cee0c9282e, type: 3}
   mpCost: 1
   animation: {fileID: 7400000, guid: d74467c624085574b828131827d1fe4d, type: 2}
@@ -23,3 +42,8 @@ MonoBehaviour:
   supportSkill: 0
   move: 0
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
+  references:
+    version: 2
+    RefIds: []

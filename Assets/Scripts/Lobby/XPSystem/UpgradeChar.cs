@@ -15,6 +15,8 @@ public class UpgradeChar : MonoBehaviour
     public Transform itemUsingContainer;
     public GameObject ItemPrefab;
     public Button upgradeButton;
+    public GameObject upgradeNotification;
+    public Transform Canvas;
     public Button addAllButton;
     public Button removeAllButton;
     public TextMeshProUGUI gold;
@@ -456,9 +458,10 @@ public class UpgradeChar : MonoBehaviour
                 UpdateCharInfo(character);
                 UpdateItem(character);
                 showInfoOnClick.ShowInfoCharacter();
-                GeneralDataSave generalDataSave = GameManager.Instance.currentDataSave;
-                generalDataSave.characters.Find(c => c.characterID == character.characterID).characterXP = character.currentTotalXP;
-                GameManager.Instance.saveManager.SaveGame(generalDataSave);
+                GameObject upgradeNotice = Instantiate(upgradeNotification, Canvas);
+                SFXManager.instance.Play("Upgrade");
+                Inventory.Instance.currentDataSave.characters.Find(c => c.characterID == character.characterID).characterXP = character.currentTotalXP;
+                Inventory.Instance.SaveGame();
             }  
             else if (!Inventory.Instance.SpendMoney(goldNeeded))
             {

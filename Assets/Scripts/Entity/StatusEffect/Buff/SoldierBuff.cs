@@ -14,9 +14,14 @@ public class SoldierBuff : StatusEffect
     public override void OnRemove(CharacterInBattle target)
     {
         target.isGetATKBuffWhenDodge = false;
-        if (target.activeStatusEffect.Any(x => x.ID == 200023))
+
+        var effectsToRemove = target.activeStatusEffect.Where(x => x.ID == 200023).ToList();
+
+        foreach (var effect in effectsToRemove)
         {
-            target.activeStatusEffect.RemoveAll(x => x.ID == 200023);
+            effect.OnRemove(target);
         }
+
+        target.activeStatusEffect.RemoveAll(x => x.ID == 200023);
     }
 }

@@ -11,25 +11,37 @@ public class ShowSkill : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     private TargetArrow targetArrow;
     private DataStorage dataStorage;
     private CanvasGroup canvasGroup;
+    private bool canPointerEnter;
 
     void Start()
     {
+        canPointerEnter = false;
         skill = parent.transform.Find("Skill").gameObject;
         panel = parent.transform.parent.transform.parent;
         targetArrow = FindAnyObjectByType<TargetArrow>();
         dataStorage = GetComponent<DataStorage>();
         canvasGroup = GetComponent<CanvasGroup>();
+        StartCoroutine(DelayPoiterEnter());
     }
+
+    IEnumerator DelayPoiterEnter()
+    {
+        yield return new WaitForSeconds(1f);
+        canPointerEnter = true;
+    }    
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        targetArrow.RemoveArrow();
-        skill.transform.SetParent(panel);
-        if (!dataStorage.isPassiveSkill)
+        if (canPointerEnter)
         {
-            targetArrow.MakeArrow(dataStorage.attacker, dataStorage.target, dataStorage.isTargetAlly);
-        }     
-        skill.SetActive(true);
+            targetArrow.RemoveArrow();
+            skill.transform.SetParent(panel);
+            if (dataStorage.attacker != dataStorage.target)
+            {
+                targetArrow.MakeArrow(dataStorage.attacker, dataStorage.target, dataStorage.isTargetAlly);
+            }
+            skill.SetActive(true);
+        }        
     }
 
     public void OnPointerExit(PointerEventData eventData)

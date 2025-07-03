@@ -7,7 +7,7 @@ public class Soldier_Skill4 : SkillBase
 
     public override void DoAction(CharacterInBattle user, CharacterInBattle target)
     {
-        target.TakeDamage(user.ATK * 1.2f, 1, user, target);
+        target.TakeDamage(user.ATK * 1.7f, 1, user, target);
         base.DoAction(user, target);
     }
 

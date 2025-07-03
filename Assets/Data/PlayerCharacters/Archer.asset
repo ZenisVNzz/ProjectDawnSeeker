@@ -14,12 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100002
   characterName: Archer
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060709122064
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 0
+  characterTags: 00000000
   characterSprite: {fileID: -7132172409892320828, guid: b1d41b7234cf99e4d9781e52324ca665, type: 3}
   characterAnimation: {fileID: 9100000, guid: 15e4d1c589805b144972eb24c85c11f4, type: 2}
+  isBoss: 0
   skillList:
   - {fileID: 11400000, guid: 302ab2e941207c74686dafc345364bbb, type: 2}
   - {fileID: 11400000, guid: dd2c418dd1e44594caac89693cf70afe, type: 2}
+  currentTotalXP: 0
   level: 1
   ATK: 55
   HP: 140
@@ -38,3 +50,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0.0067
   CDPerLevel: 0.025
+  references:
+    version: 2
+    RefIds: []

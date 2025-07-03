@@ -1,5 +1,8 @@
-﻿using TMPro;
+﻿using System.Collections;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
 public class OnEndStage : MonoBehaviour
@@ -10,6 +13,8 @@ public class OnEndStage : MonoBehaviour
     public GameObject charExpPrefab;
 
     private BattleManager battleManager;
+    private SaveManager saveManager;
+    private Queue<GameObject> itemQueue = new Queue<GameObject>();
 
     private void Start()
     {
@@ -24,31 +29,55 @@ public class OnEndStage : MonoBehaviour
             Transform itemContainer = victoryPanel.transform.Find("Information/Reward/ScrollView/Viewport/Content");
             Transform xpContainer = victoryPanel.transform.Find("Information/Exp/Viewport/Content");
             TextMeshProUGUI completedText = victoryPanel.transform.Find("Information/Completed").GetComponent<TextMeshProUGUI>();
+            LocalizeStringEvent localizeStringEvent = victoryPanel.transform.Find("Information/Completed").GetComponent<LocalizeStringEvent>();
             TextMeshProUGUI turnIndex = victoryPanel.transform.Find("Information/Turn/Number").GetComponent<TextMeshProUGUI>();
             TextMeshProUGUI goldIndex = victoryPanel.transform.Find("Information/GoldReward/Number").GetComponent<TextMeshProUGUI>();
 
             GameManager gameManager = FindAnyObjectByType<GameManager>();
             StageData stageData = gameManager.transform.Find("StageData").GetComponent<StageData>();
 
-            completedText.text = $"BẠN ĐÃ HOÀN THÀNH {stageData.stageName}";
+            localizeStringEvent.StringReference.Arguments = new object[] {
+            new {
+            floor = stageData.stageName.GetLocalizedString()
+            }};
+            localizeStringEvent.RefreshString();
+
             turnIndex.text = battleManager.GetCurrentTurn().ToString();
             goldIndex.text = stageData.goldReward.ToString();
-            Inventory.Instance.AddMoney(stageData.goldReward);
+            int goldReceived = stageData.goldReward;
+            if (stageData.stageID < StageData.currentStage)
+            {
+                goldReceived /= 2;
+            }
+            Inventory.Instance.AddMoney(goldReceived);
 
             foreach (Item item in stageData.items)
             {
                 ItemBase itemBase = item.item;
                 GameObject itemObj = Instantiate(itemPrefab, itemContainer);
+                itemObj.SetActive(false);
                 Image icon = itemObj.transform.Find("Icon").GetComponent<Image>();
                 TextMeshProUGUI itemQuantity = itemObj.transform.Find("Amount").GetComponent<TextMeshProUGUI>();
 
                 icon.sprite = itemBase.itemIcon;
-                itemQuantity.text = item.quantity.ToString();
-                for (int i = 0; i < item.quantity; i++)
+                int itemReceivedAmount = item.quantity;
+                if (stageData.stageID < StageData.currentStage)
+                {
+                    itemReceivedAmount /= 2;
+                }
+                if (itemReceivedAmount <= 0)
+                {
+                    Destroy(itemObj);
+                    continue;
+                }
+                for (int i = 0; i < itemReceivedAmount; i++)
                 {
                     Inventory.Instance.AddItem(itemBase);
                 }
+                itemQuantity.text = itemReceivedAmount.ToString();
+                itemQueue.Enqueue(itemObj);
             }
+            StartCoroutine(PlayItemVFX());
             foreach (CharacterData character in EquipedUnit.equipedUnit)
             {
                 character.AddXP(stageData.expGainForEachChar);
@@ -57,7 +86,9 @@ public class OnEndStage : MonoBehaviour
                 Image charIMG = charExpObj.transform.Find("CharIMG/IMG").GetComponent<Image>();
                 Slider expSlider = charExpObj.transform.Find("XPBar").GetComponent<Slider>();
                 TextMeshProUGUI levelText = charExpObj.transform.Find("XPBar/Level").GetComponent<TextMeshProUGUI>();
-                TextMeshProUGUI expText = charExpObj.transform.Find("XPBar/EP").GetComponent<TextMeshProUGUI>();
+                TextMeshProUGUI expText = charExpObj.transform.Find("XPBar/XP").GetComponent<TextMeshProUGUI>();
+                charIMG.sprite = character.characterSprite;
+                charName.text = character.characterName;
                 expSlider.maxValue = character.neededXP;
                 expSlider.value = character.currentXP;
                 levelText.text = $"Level {character.level}";
@@ -70,9 +101,29 @@ public class OnEndStage : MonoBehaviour
             GameManager gameManager = FindAnyObjectByType<GameManager>();
             StageData stageData = gameManager.transform.Find("StageData").GetComponent<StageData>();
             TextMeshProUGUI failedText = failedPanel.transform.Find("Failed").GetComponent<TextMeshProUGUI>();
-            TextMeshProUGUI turnIndex = victoryPanel.transform.Find("Turn/Number").GetComponent<TextMeshProUGUI>();
-            failedText.text = $"BẠN ĐÃ THẤT BẠI TRONG VIỆC CHINH PHỤC {stageData.stageName}";
+            LocalizeStringEvent localizeStringEvent = failedPanel.transform.Find("Failed").GetComponent<LocalizeStringEvent>();
+            TextMeshProUGUI turnIndex = failedPanel.transform.Find("Turn/Number").GetComponent<TextMeshProUGUI>();
+
+            localizeStringEvent.StringReference.Arguments = new object[] {
+            new {
+                floor = stageData.stageName.GetLocalizedString()
+            }};
+
             turnIndex.text = battleManager.GetCurrentTurn().ToString();
         }
     }
+
+    IEnumerator PlayItemVFX()
+    {
+        yield return new WaitForSeconds(1.3f);
+        while (itemQueue.Count > 0)
+        {
+            GameObject itemObj = itemQueue.Dequeue();
+            itemObj.SetActive(true);
+            Animator animator = itemObj.GetComponent<Animator>();
+            animator.Play("RewardPopUp");
+            SFXManager.instance.PlayWithCustomVol("RewardPopUp", 0.7f);
+            yield return new WaitForSeconds(0.85f);
+        }
+    }    
 }

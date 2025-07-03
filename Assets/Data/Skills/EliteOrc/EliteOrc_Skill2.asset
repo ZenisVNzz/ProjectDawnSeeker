@@ -14,8 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300040
   skillName: none
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: none
-  icon: {fileID: 0}
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  skillTypes: 00000000
+  icon: {fileID: 1139448167490094544, guid: 496790848355be643abc3dac47092fda, type: 3}
   mpCost: 2
   animation: {fileID: 7400000, guid: fbb03ce6983ff1a48a238ed027484083, type: 2}
   passiveSkill: 0
@@ -25,3 +44,6 @@ MonoBehaviour:
   isWaitForCharge: 0
   isUniqueSkill: 0
   berserk: {fileID: 11400000, guid: 0ed42a7214c4704448c691dbda677489, type: 2}
+  references:
+    version: 2
+    RefIds: []

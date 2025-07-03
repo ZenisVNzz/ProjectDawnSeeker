@@ -20,18 +20,21 @@ public class GreatSwordSkeleton_Skill4 : SkillBase
 
     public override void DoSpecialAction(CharacterInBattle user, CharacterInBattle target)
     {
-        float dmg = (user.ATK * 1.8f) * (1 + 0.1f * (target.DEF / 30));
+        float dmg = (user.ATK * 1.4f) * (1 + 0.1f * (target.DEF / 30));
         target.TakeDamage(dmg, 1, user, target);
+        user.isCharge = false;
+        user.isActionAble = true;
+        user.isMPRecoveryAble = true;
         base.DoAction(user, target);
     }
 
-    public override void OnFailCharge(CharacterInBattle user, CharacterInBattle target)
+    public override void OnFailCharge(CharacterInBattle user)
     {
         user.ApplyStatusEffect(paralysis, 1);
         user.ApplyStatusEffect(defDown, 1);
     }
 
-    public override bool CheckSkillCondition(CharacterInBattle user, CharacterInBattle target)
+    public override bool CheckSkillCondition(CharacterInBattle user)
     {
         if (user.savedTotalDmgHit >= user.HP * 0.2f)
         {

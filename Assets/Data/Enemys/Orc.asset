@@ -14,13 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100106
   characterName: Orc
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 1
+  characterTags: 
   characterSprite: {fileID: 3799508404887519019, guid: a0ef4b851c82efe418fd639b2b6fcf9d, type: 3}
   characterAnimation: {fileID: 9100000, guid: aca24b5e2dae20f4f90f77e15a7e2a4b, type: 2}
   isBoss: 0
   skillList:
   - {fileID: 11400000, guid: 748d1906295489d4a995743533d145c8, type: 2}
   - {fileID: 11400000, guid: 4fbe18f81f2a2cc40b8cf4a9d5dd4337, type: 2}
+  AI: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
+  currentTotalXP: 0
   level: 1
   ATK: 41
   HP: 250
@@ -28,9 +40,9 @@ MonoBehaviour:
   MP: 3
   CR: 0.1
   CD: 1.5
-  DC: 0.05
-  PC: 0.05
-  maxLevel: 100
+  DC: 0.03
+  PC: 0.03
+  maxLevel: 1000
   currentXP: 0
   neededXP: 100
   ATKPerLevel: 3.2
@@ -39,3 +51,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0
   CDPerLevel: 0
+  references:
+    version: 2
+    RefIds: []

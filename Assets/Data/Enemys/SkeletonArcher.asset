@@ -14,23 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100104
   characterName: Skeleton Archer
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 1
+  characterTags: 
   characterSprite: {fileID: 9041428293049349298, guid: 70a1dfd62b1157441aa67b7fc006f95a, type: 3}
   characterAnimation: {fileID: 9100000, guid: 962e0147c00585347aeb07ef675eb4e8, type: 2}
   isBoss: 0
   skillList:
   - {fileID: 11400000, guid: 5f91eb38cb1a98a4098f8bb02d7c1503, type: 2}
   - {fileID: 11400000, guid: a813a137f413d314b867f0b0ca058a1e, type: 2}
+  AI: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
+  currentTotalXP: 0
   level: 1
   ATK: 42
   HP: 99
   DEF: 6
-  MP: 2
+  MP: 3
   CR: 0.1
   CD: 1.5
-  DC: 0.05
-  PC: 0.05
-  maxLevel: 100
+  DC: 0.03
+  PC: 0.03
+  maxLevel: 1000
   currentXP: 0
   neededXP: 100
   ATKPerLevel: 4
@@ -39,3 +51,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0
   CDPerLevel: 0
+  references:
+    version: 2
+    RefIds: []

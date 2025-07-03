@@ -11,6 +11,8 @@ public class SelectSkill : MonoBehaviour
     public static CharacterInBattle characterInBattle;
     public SkillBase skill;
     public BattleManager battleManager;
+    public GameObject notification;
+    public Transform Canvas;
     public static bool isPlayerSelectingTarget = false;
     public static SkillBase selectedSkill;
     public static GameObject currentSkillBox;
@@ -24,7 +26,9 @@ public class SelectSkill : MonoBehaviour
     private GameObject skillBox;
 
     void Start()
-    {     
+    {
+        GameObject buttonPanel = GameObject.Find("ButtonPanel");
+        Animator buttonPanelAnimator = buttonPanel.GetComponent<Animator>();
         targetArrow = FindFirstObjectByType<TargetArrow>();
         Button button = GetComponentInParent<Button>();
         skillBox = transform.parent.gameObject;
@@ -50,6 +54,8 @@ public class SelectSkill : MonoBehaviour
                 if (characterInBattle.currentMP < this.skill.mpCost)
                 {
                     Debug.Log("Không đủ mana để sử dụng skill: " + this.skill.name);
+                    GameObject notificationInstance = Instantiate(notification, Canvas);
+                    SFXManager.instance.PlayWithCustomVol("Blocked", 0.8f);
                     return;
                 }
                 selectedSkill = this.skill;
@@ -59,6 +65,7 @@ public class SelectSkill : MonoBehaviour
                 if (this.skill.passiveSkill)
                 {
                     isPlayerSelectingTarget = false;
+                    battleManager.plannedActions.RemoveAll(a => a.Caster == characterInBattle);
                     battleManager.plannedActions.Add(new PlannedAction
                     {
                         Caster = characterInBattle,
@@ -67,6 +74,7 @@ public class SelectSkill : MonoBehaviour
                     });
                     selectedSkill = this.skill;
                     battleManager.actionOrderUI.AddAction(characterInBattle, characterInBattle, this.skill, false);
+                    buttonPanelAnimator.Play("Hide");
                 }
 
                 if (currentSkillBox != null && currentSkillBox != this.skillBox)
@@ -106,6 +114,7 @@ public class SelectSkill : MonoBehaviour
     
     public void SetOriginalParent()
     {
+        skillBoxList.RemoveAll(box => box == null);
         foreach (GameObject skillBox in skillBoxList)
         {
             if (siblingIndex.ContainsKey(skillBox))
@@ -144,7 +153,6 @@ public class SelectSkill : MonoBehaviour
 
     public void EnableSkillUI()
     {
-        canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1;
         foreach (GameObject skillBox in skillBoxList)
         {

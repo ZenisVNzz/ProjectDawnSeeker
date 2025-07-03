@@ -14,9 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300022
   skillName: "Li\xEAn Th\u1EE9c"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927818
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "\u0110\xE2m li\xEAn ti\u1EBFp 5 ph\xE1t v\xE0o m\u1EE5c ti\xEAu,
     g\xE2y s\xE1t th\u01B0\u01A1ng l\u1EDBn, sau m\u1ED7i l\u1EA7n \u0111\xE2m, t\u0103ng
     5% t\u1EC9 l\u1EC7 ch\xED m\u1EA1ng."
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927819
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  skillTypes: 00000000
   icon: {fileID: -7291191063366249875, guid: 8ec9b2d74fe2d4444af36a46714ed8c3, type: 3}
   mpCost: 3
   animation: {fileID: 7400000, guid: 3a694f1a64f15fd4790976e4a12d64b1, type: 2}
@@ -24,3 +43,8 @@ MonoBehaviour:
   supportSkill: 0
   move: 1
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
+  references:
+    version: 2
+    RefIds: []

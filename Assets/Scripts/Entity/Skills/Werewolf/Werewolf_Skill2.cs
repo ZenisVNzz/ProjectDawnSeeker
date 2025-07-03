@@ -12,6 +12,6 @@ public class Werewolf_Skill2 : SkillBase
 
     public override void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
     {
-        target.ApplyStatusEffect(lifeSteal, 2);
+        target.ApplyStatusEffect(lifeSteal, 3);
     }
 }

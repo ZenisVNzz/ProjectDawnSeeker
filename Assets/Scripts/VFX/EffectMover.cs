@@ -20,7 +20,7 @@ public class EffectMover : MonoBehaviour
         float duration = distance / speed;
 
         transform.DOMove(target + Vector3.left * 0.2f, duration)
-            .SetEase(Ease.InQuint)
+            .SetEase(Ease.OutExpo)
             .OnComplete(() =>
             {
                 onHit?.Invoke();

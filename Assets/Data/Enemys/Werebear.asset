@@ -14,15 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterID: 100110
   characterName: Werebear
+  localizedCharacterName:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   characterType: 1
+  characterTags: 
   characterSprite: {fileID: 4407900946912368253, guid: f934882d64bdaff40837b08f789729e8, type: 3}
   characterAnimation: {fileID: 9100000, guid: 4bdc12ab178491a499fb19049ca190b2, type: 2}
   isBoss: 1
   skillList:
   - {fileID: 11400000, guid: 54268e0b6031f974fabb87de4d32af26, type: 2}
-  - {fileID: 11400000, guid: 919937a86b828f44ab0ff7ce9a666357, type: 2}
   - {fileID: 11400000, guid: 86b74d03b18df2944a64a18269ba487e, type: 2}
   - {fileID: 11400000, guid: b3f9dee3f6d9e65429984ead5190cca4, type: 2}
+  AI: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
+  currentTotalXP: 0
   level: 1
   ATK: 420
   HP: 10000
@@ -30,9 +41,9 @@ MonoBehaviour:
   MP: 6
   CR: 0.3
   CD: 2
-  DC: 0.2
-  PC: 0.1
-  maxLevel: 100
+  DC: 0.1
+  PC: 0.05
+  maxLevel: 1
   currentXP: 0
   neededXP: 100
   ATKPerLevel: 0
@@ -41,3 +52,6 @@ MonoBehaviour:
   MPPerLevel: 0
   CRPerLevel: 0
   CDPerLevel: 0
+  references:
+    version: 2
+    RefIds: []

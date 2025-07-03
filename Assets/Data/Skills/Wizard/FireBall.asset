@@ -14,9 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300015
   skillName: "Di\u1EC5m H\u1ECFa"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927804
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: "T\u1EA1o m\u1ED9t qu\u1EA3 c\u1EA7u l\u1EEDa v\xE0 b\u1EAFn v\u1EC1
     ph\xEDa m\u1EE5c ti\xEAu, g\xE2y s\xE1t th\u01B0\u01A1ng kh\xE1, v\xE0 khi\u1EBFn
     m\u1EE5c ti\xEAu b\u1ECB thi\xEAu \u0111\u1ED1t trong v\xF2ng 2 l\u01B0\u1EE3t."
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927805
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  skillTypes: 0000000002000000
   icon: {fileID: 6598205815663478374, guid: 70234d40bc63c3e45b7eaf648d5766aa, type: 3}
   mpCost: 2
   animation: {fileID: 7400000, guid: a9d53610c51bc1849bc3d9dbff76f9b4, type: 2}
@@ -24,4 +43,9 @@ MonoBehaviour:
   supportSkill: 0
   move: 0
   isAOE: 0
+  isWaitForCharge: 0
+  isUniqueSkill: 0
   burn: {fileID: 11400000, guid: 7294eccf5beaba849a216cfecf684e44, type: 2}
+  references:
+    version: 2
+    RefIds: []

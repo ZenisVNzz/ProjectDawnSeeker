@@ -1,4 +1,6 @@
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -26,10 +28,11 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator LoadGameOnClickContinue()
     {
-        yield return StartCoroutine(WaitForInventory());
+        currentDataSave = saveManager.LoadSave();
+        yield return StartCoroutine(LoadSaved());
     }
 
-    IEnumerator WaitForInventory()
+    IEnumerator LoadSaved()
     {
         Debug.Log("Waiting for Inventory...");
         while ((inventory = FindAnyObjectByType<Inventory>()) == null)
@@ -37,9 +40,12 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
         Debug.Log("Inventory found");
-        inventory.currentDataSave = currentDataSave;
-        currentDataSave = saveManager.LoadSave();
-        foreach (ItemDataSave itemData in currentDataSave.items)
+        inventory.ClearData();
+        inventory.LoadSave(currentDataSave);
+        inventory.currentDataSave.characters.Clear();
+        inventory.currentDataSave.items.Clear();
+        StageData.currentStage = currentDataSave.currentStage;
+        foreach (ItemDataSave itemData in currentDataSave.items.ToList())
         {
             for (int i = 0; i < itemData.quantity; i++)
             {
@@ -47,13 +53,28 @@ public class GameManager : MonoBehaviour
                 inventory.AddItem(item);
             }
         }
+
         inventory.LoadGold(currentDataSave.gold);
-        foreach (CharacterDataSave characterData in currentDataSave.characters)
+        foreach (CharacterDataSave characterData in currentDataSave.characters.ToList())
         {
-            CharacterData character = characterDataStorage.GetCharacterByID(characterData.characterID);
+            CharacterData character = Instantiate(characterDataStorage.GetCharacterByID(characterData.characterID));
             character.AddXP(characterData.characterXP);
             inventory.AddCharacter(character);
         }
+
         Debug.Log("Load game successfully!");
     }
+
+    public void DisplaySettings()
+    {
+        GameObject settingsPanel = transform.Find("SettingsCanvas").gameObject;
+        if (settingsPanel.activeSelf)
+        {
+            settingsPanel.SetActive(false);
+        }
+        else
+        {
+            settingsPanel.SetActive(true);
+        }
+    } 
 }

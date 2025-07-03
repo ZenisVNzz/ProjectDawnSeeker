@@ -14,8 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 300028
   skillName: "Nh\u1EA5t K\xEDch"
+  localizedSkillName:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927820
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   description: " Ch\xE9m ngang, g\xE2y s\xE1t th\u01B0\u01A1ng c\u01A1 b\u1EA3n"
-  icon: {fileID: 0}
+  localizedDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:eb0335d9e92023648a0ab348974d019e
+    m_TableEntryReference:
+      m_KeyId: 3060704927821
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  skillTypes: 00000000
+  icon: {fileID: -8331494527713907237, guid: abf293a997860234c8cdbace4f367e99, type: 3}
   mpCost: 0
   animation: {fileID: 7400000, guid: d558c6b977ae28f4dbb8db21c71508ca, type: 2}
   passiveSkill: 0
@@ -24,3 +43,6 @@ MonoBehaviour:
   isAOE: 0
   isWaitForCharge: 0
   isUniqueSkill: 0
+  references:
+    version: 2
+    RefIds: []

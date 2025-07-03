@@ -40,6 +40,15 @@ public class OnClick : MonoBehaviour
             {
                 SummonUnit summonUnit = FindAnyObjectByType<SummonUnit>();
                 summonUnit.TriggerEvent();
+
+                GameManager gameManager = GameManager.Instance;
+                if (!Inventory.Instance.currentDataSave.isCompletedTarvenTutorial)
+                {
+                    Inventory.Instance.currentDataSave.isCompletedTarvenTutorial = true;
+                    Inventory.Instance.SaveGame();
+                    LobbyTutorialManager.FindAnyObjectByType<LobbyTutorialManager>().DoneTarvenTutorial();
+                }
+
                 Destroy(gameObject);
             }    
         }
