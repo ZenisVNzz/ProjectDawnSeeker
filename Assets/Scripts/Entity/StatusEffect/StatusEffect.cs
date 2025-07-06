@@ -13,15 +13,15 @@ public abstract class StatusEffect : ScriptableObject
     public int maxStack = 1;
     public bool isHeadVFX;
 
-    public abstract void OnApply(CharacterInBattle target);
-    public abstract void OnTurn(CharacterInBattle target);
-    public abstract void OnRemove(CharacterInBattle target);
-    public virtual CharacterInBattle Getprovocateur()
+    public abstract void OnApply(CharacterRuntime target);
+    public abstract void OnTurn(CharacterRuntime target);
+    public abstract void OnRemove(CharacterRuntime target);
+    public virtual CharacterRuntime Getprovocateur()
     {
         return null;
     }    
 
-    public void Tick(CharacterInBattle character)
+    public void Tick(CharacterRuntime character)
     {
         duration--;
         if (duration < 0)

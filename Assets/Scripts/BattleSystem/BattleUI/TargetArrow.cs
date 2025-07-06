@@ -17,7 +17,7 @@ public class TargetArrow : MonoBehaviour
         lineRenderer.positionCount = segmentCount + 1;
     }
 
-    public void MakeArrow(CharacterInBattle attacker, CharacterInBattle target, bool isTargetAlly)
+    public void MakeArrow(CharacterRuntime attacker, CharacterRuntime target, bool isTargetAlly)
     {
         if (attacker != null && target != null)
         {

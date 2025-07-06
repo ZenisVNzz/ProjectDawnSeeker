@@ -6,7 +6,7 @@ using UnityEngine;
 [Condition(name: "ImDead", story: "Check [mySelf] if I'm dead", category: "Conditions", id: "b36d76bdbbf393147710a67f14129dcd")]
 public partial class ImDeadCondition : Condition
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> MySelf;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> MySelf;
 
     public override bool IsTrue()
     {

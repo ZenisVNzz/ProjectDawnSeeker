@@ -7,15 +7,15 @@ public class ArmoredAxeman_Skill4_Effect : StatusEffect
 {
     public StatusEffect deadlyBlood;
 
-    public override void OnApply(CharacterInBattle target)
+    public override void OnApply(CharacterRuntime target)
     {
         target.ApplyStatusEffect(deadlyBlood, 99);
         target.isDealyBlood = true;
     }
-    public override void OnTurn(CharacterInBattle target)
+    public override void OnTurn(CharacterRuntime target)
     {
     }
-    public override void OnRemove(CharacterInBattle target)
+    public override void OnRemove(CharacterRuntime target)
     {
         target.isDealyBlood = false;
 

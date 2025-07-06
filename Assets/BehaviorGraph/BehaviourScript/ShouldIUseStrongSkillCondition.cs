@@ -7,8 +7,8 @@ using UnityEngine;
 [Condition(name: "ShouldIUseStrongSkill", story: "I should use strong skill, check [ChosenTarget] and [MySelf]", category: "Conditions", id: "e1b83d24b04a394a3951ba0898ff2da3")]
 public partial class ShouldIUseStrongSkillCondition : Condition
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> ChosenTarget;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> MySelf;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> ChosenTarget;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> MySelf;
 
     public override bool IsTrue()
     {

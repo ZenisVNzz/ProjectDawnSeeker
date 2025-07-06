@@ -8,12 +8,12 @@ using Unity.Properties;
 [NodeDescription(name: "TargetSelf", story: "This is a skill that buff my self, so i assign [mySelf] as the [ChosenTarget]", category: "Action", id: "1bd0c0c7b55c901bbc9f9a28bdcc77b2")]
 public partial class TargetSelfAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> ChosenTarget;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> ChosenTarget;
     [SerializeReference] public BlackboardVariable<GameObject> mySelf;
 
     protected override Status OnStart()
     {
-        CharacterInBattle character = mySelf.Value.GetComponent<CharacterInBattle>();
+        CharacterRuntime character = mySelf.Value.GetComponent<CharacterRuntime>();
         ChosenTarget.Value = character;
         return Status.Success;
     }

@@ -6,7 +6,7 @@ using UnityEngine;
 [Condition(name: "CheckIfCanAction", story: "Agent check [myRuntime] if i can action", category: "Conditions", id: "681e634291d9e55d0760a029fcb22232")]
 public partial class CheckIfCanActionCondition : Condition
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> MyRuntime;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> MyRuntime;
 
     public override bool IsTrue()
     {

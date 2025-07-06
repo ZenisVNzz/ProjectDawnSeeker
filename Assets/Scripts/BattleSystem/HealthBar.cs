@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class HealthBarController : MonoBehaviour
 {
     public Image healthBarImage;
-    public CharacterInBattle character;
+    public CharacterRuntime character;
 
     void Update()
     {

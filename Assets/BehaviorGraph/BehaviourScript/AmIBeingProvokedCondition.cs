@@ -7,7 +7,7 @@ using UnityEngine;
 [Condition(name: "AmIBeingProvoked", story: "[self] being provoked?", category: "Conditions", id: "6fcb7961a48aff0700e3672e62967ea8")]
 public partial class AmIBeingProvokedCondition : Condition
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Self;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Self;
 
     public override bool IsTrue()
     {

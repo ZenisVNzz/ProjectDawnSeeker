@@ -8,9 +8,9 @@ using Unity.Properties;
 [NodeDescription(name: "AddActionToTheUI", story: "Caster is [mySelf] - Skill is [ChosenSkill] - Target is [ChosenTarget] - Add all of this to the [ActionOrder] to display on the UI", category: "Action", id: "4862e9b7a95772126453c6b9d14c51c7")]
 public partial class AddActionToTheUiAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> MySelf;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> MySelf;
     [SerializeReference] public BlackboardVariable<SkillBase> ChosenSkill;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> ChosenTarget;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> ChosenTarget;
     [SerializeReference] public BlackboardVariable<ActionOrder> ActionOrder;
 
     protected override Status OnStart()

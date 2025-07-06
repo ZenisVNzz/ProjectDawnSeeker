@@ -4,18 +4,18 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "AggroUP", menuName = "StatusEffect/AggroUP")]
 public class AggroUP : StatusEffect
 {
-    public CharacterInBattle provocateur;
+    public CharacterRuntime provocateur;
 
-    public override void OnApply(CharacterInBattle target)
+    public override void OnApply(CharacterRuntime target)
     {
     }
-    public override void OnTurn(CharacterInBattle target)
+    public override void OnTurn(CharacterRuntime target)
     {
     }
-    public override void OnRemove(CharacterInBattle target)
+    public override void OnRemove(CharacterRuntime target)
     {
     }
-    public override CharacterInBattle Getprovocateur()
+    public override CharacterRuntime Getprovocateur()
     {
         return provocateur;
     }

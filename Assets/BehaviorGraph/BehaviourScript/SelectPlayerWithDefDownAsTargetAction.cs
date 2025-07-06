@@ -10,14 +10,14 @@ using System.Linq;
 [NodeDescription(name: "SelectPlayerWithDefDownAsTarget", story: "Select Player with DefDown as Target, assign [ChoosenTarget] from [PlayerTeam]", category: "Action", id: "b9b80e1907d692a8f7aa7466a4225482")]
 public partial class SelectPlayerWithDefDownAsTargetAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> ChoosenTarget;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> ChoosenTarget;
     [SerializeReference] public BlackboardVariable<List<GameObject>> PlayerTeam;
 
     protected override Status OnStart()
     {
-        List<CharacterInBattle> playerTeamCharacters = PlayerTeam.Value.ConvertAll(player => player.GetComponent<CharacterInBattle>());
+        List<CharacterRuntime> playerTeamCharacters = PlayerTeam.Value.ConvertAll(player => player.GetComponent<CharacterRuntime>());
         playerTeamCharacters.RemoveAll(character => !character.isAlive);
-        foreach (CharacterInBattle character in playerTeamCharacters)
+        foreach (CharacterRuntime character in playerTeamCharacters)
         {
             if (character.activeStatusEffect.Any(e => e.ID == 200011))
             {

@@ -4,14 +4,14 @@ using UnityEngine;
 public class Lancer_Skill4 : SkillBase
 {
     public StatusEffect Burn;
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         target.TakeDamage(user.ATK * 1.4f, 2, user, target);
         target.isFullPenetrating = true;
         base.DoAction(user, target);
     }
 
-    public override void ApplyEffectOnFinishedAttack(CharacterInBattle user, CharacterInBattle target)
+    public override void ApplyEffectOnFinishedAttack(CharacterRuntime user, CharacterRuntime target)
     {
         target.ApplyStatusEffect(Burn, 2);
     }

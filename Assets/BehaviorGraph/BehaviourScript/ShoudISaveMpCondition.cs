@@ -6,8 +6,8 @@ using UnityEngine;
 [Condition(name: "ShoudISaveMP", story: "I should save MP, check [ChosenTarget] and [MySelf]", category: "Conditions", id: "f6c7c314ca53cf5377a13c03b7a848f4")]
 public partial class ShoudISaveMpCondition : Condition
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> ChosenTarget;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> MySelf;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> ChosenTarget;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> MySelf;
 
     public override bool IsTrue()
     {

@@ -14,7 +14,7 @@ public class MarkHandle : MonoBehaviour
         Mark.OnMarkFailed -= HandleMarkFailed;
     }
 
-    private void HandleMarkFailed(CharacterInBattle caster)
+    private void HandleMarkFailed(CharacterRuntime caster)
     {
         caster.ApplyStatusEffect(defDown, 2);
     }

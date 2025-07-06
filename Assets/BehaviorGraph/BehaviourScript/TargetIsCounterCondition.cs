@@ -6,7 +6,7 @@ using UnityEngine;
 [Condition(name: "TargetIsCounter", story: "Check [ChosenTarget] if Target countered the attack", category: "Conditions", id: "38c34a9fbc1645651056d7bd80218bce")]
 public partial class TargetIsCounterCondition : Condition
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> ChosenTarget;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> ChosenTarget;
 
     public override bool IsTrue()
     {

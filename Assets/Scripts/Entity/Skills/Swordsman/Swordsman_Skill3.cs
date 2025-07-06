@@ -8,12 +8,12 @@ public class Swordsman_Skill3 : SkillBase
     public StatusEffect critUP;
     public StatusEffect atkUP;
 
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {     
         base.DoAction(user, target);
     }
 
-    public override void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
+    public override void ApplyEffectOnEnd(CharacterRuntime user, CharacterRuntime target)
     {
         user.ApplyStatusEffect(atkUP, 2);
         user.ApplyStatusEffect(critUP, 2);

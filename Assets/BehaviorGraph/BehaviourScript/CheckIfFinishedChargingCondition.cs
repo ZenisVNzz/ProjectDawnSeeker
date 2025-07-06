@@ -6,7 +6,7 @@ using UnityEngine;
 [Condition(name: "CheckIfFinishedCharging", story: "[I] finished charging", category: "Conditions", id: "a61181dd5e96ba4699e7170242652fa2")]
 public partial class CheckIfFinishedChargingCondition : Condition
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> I;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> I;
 
     public override bool IsTrue()
     {

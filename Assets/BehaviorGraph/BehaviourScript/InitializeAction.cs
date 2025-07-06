@@ -11,7 +11,7 @@ using Action = Unity.Behavior.Action;
 public partial class InitializeAction : Action
 {
     [SerializeReference] public BlackboardVariable<SkillBase> Skill;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> myRuntime;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> myRuntime;
     protected override Status OnStart()
     {
         Skill.Value = GetRandomSkill();

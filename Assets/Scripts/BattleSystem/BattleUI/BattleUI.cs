@@ -8,13 +8,13 @@ using UnityEngine.UI;
 public class BattleUI : MonoBehaviour
 {
     public GameObject turnTitle;
-    public List<CharacterInBattle> activeCharacter;
-    public List<CharacterInBattle> activeEnemyCharacter;
+    public List<CharacterRuntime> activeCharacter;
+    public List<CharacterRuntime> activeEnemyCharacter;
     public List<GameObject> CharPanel;
     public List<GameObject> skillButtons;
     public SelectSkill selectSkill;
-    private Dictionary<CharacterInBattle, float> oldHP = new Dictionary<CharacterInBattle, float>();
-    private Dictionary<CharacterInBattle, GameObject> CharPanelDict = new Dictionary<CharacterInBattle, GameObject>();
+    private Dictionary<CharacterRuntime, float> oldHP = new Dictionary<CharacterRuntime, float>();
+    private Dictionary<CharacterRuntime, GameObject> CharPanelDict = new Dictionary<CharacterRuntime, GameObject>();
     private GameObject oldCharPanel;
     private int currentTurn;
 
@@ -42,7 +42,7 @@ public class BattleUI : MonoBehaviour
     public void RefreshBattleUI()
     {
         int i = 0;
-        foreach (CharacterInBattle activeCharacter in activeCharacter)
+        foreach (CharacterRuntime activeCharacter in activeCharacter)
         {
             Slider healthSlider = CharPanel[i].transform.Find("HealthBar").transform.Find("Slider").GetComponent<Slider>();
             Slider manaSlider = CharPanel[i].transform.Find("ManaBar").transform.Find("Slider").GetComponent<Slider>();
@@ -82,7 +82,7 @@ public class BattleUI : MonoBehaviour
 
             i++;
         }
-        foreach (CharacterInBattle enemy in activeEnemyCharacter)
+        foreach (CharacterRuntime enemy in activeEnemyCharacter)
         {
             EnemyStatusBar enemyStatusBar = enemy.transform.Find("StatusBar").GetComponent<EnemyStatusBar>();
             enemyStatusBar.InitializeStatus();
@@ -107,7 +107,7 @@ public class BattleUI : MonoBehaviour
         text.RefreshString();
     }
 
-    public void ShowSkillUI(CharacterInBattle owner)
+    public void ShowSkillUI(CharacterRuntime owner)
     {
         selectSkill.SetOriginalParent();
         for (int i = 0; i < owner.skillList.Count; i++)
@@ -132,7 +132,7 @@ public class BattleUI : MonoBehaviour
         selectSkill.EnableGridLayout();
     }
 
-    public void SelectingCharacter(CharacterInBattle character)
+    public void SelectingCharacter(CharacterRuntime character)
     {
         if (CharPanelDict.ContainsKey(character))
         {

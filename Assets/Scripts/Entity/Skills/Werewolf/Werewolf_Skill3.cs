@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Werewolf_Skill3", menuName = "Skills/Werewolf/Werewolf_Skill3")]
 public class Werewolf_Skill3 : SkillBase
 {
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         if (target.activeStatusEffect.Any(e => e.ID == 200013))
         {

@@ -7,24 +7,24 @@ public class Werebear_Skill2 : SkillBase
 {
     public Mark mark;
 
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         mark.caster = user;
         base.DoAction(user, target);
     }
 
-    public override void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
+    public override void ApplyEffectOnEnd(CharacterRuntime user, CharacterRuntime target)
     {
-        CharacterInBattle choosen = GetLowestChar();
+        CharacterRuntime choosen = GetLowestChar();
         choosen.ApplyStatusEffect(mark, 2);
     }
 
-    public CharacterInBattle GetLowestChar()
+    public CharacterRuntime GetLowestChar()
     {
         BattleManager battleManager = FindAnyObjectByType<BattleManager>();
-        List<CharacterInBattle> aliveChar = battleManager.TeamPlayer.FindAll(c => c.isAlive).ToList();
-        CharacterInBattle lowestChar = aliveChar[0];
-        foreach (CharacterInBattle character in aliveChar)
+        List<CharacterRuntime> aliveChar = battleManager.TeamPlayer.FindAll(c => c.isAlive).ToList();
+        CharacterRuntime lowestChar = aliveChar[0];
+        foreach (CharacterRuntime character in aliveChar)
         {
             if (character.currentHP < lowestChar.currentHP)
             {

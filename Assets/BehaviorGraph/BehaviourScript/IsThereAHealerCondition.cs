@@ -12,9 +12,9 @@ public partial class IsThereAHealerCondition : Condition
 
     public override bool IsTrue()
     {
-        List<CharacterInBattle> playerTeamCharacters = PlayerTeam.Value.ConvertAll(player => player.GetComponent<CharacterInBattle>());
+        List<CharacterRuntime> playerTeamCharacters = PlayerTeam.Value.ConvertAll(player => player.GetComponent<CharacterRuntime>());
         playerTeamCharacters.RemoveAll(character => !character.isAlive);
-        foreach (CharacterInBattle character in playerTeamCharacters)
+        foreach (CharacterRuntime character in playerTeamCharacters)
         {
             if (character.characterTags.Any(tag => tag == Tags.Healer))
             {

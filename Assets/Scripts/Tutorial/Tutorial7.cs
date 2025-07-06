@@ -9,7 +9,7 @@ public class Tutorial7 : MonoBehaviour
 
     public void OnEnable()
     {
-        CharacterInBattle playerChar = FindFirstObjectByType<CharacterInBattle>();
+        CharacterRuntime playerChar = FindFirstObjectByType<CharacterRuntime>();
         CheckColliderClick addedCheckColliderClick = playerChar.gameObject.AddComponent<CheckColliderClick>();
         addedCheckColliderClick.currentTutorialUI = tutorial7UI;
         addedCheckColliderClick.nextTutorialUI = tutorial8UI;

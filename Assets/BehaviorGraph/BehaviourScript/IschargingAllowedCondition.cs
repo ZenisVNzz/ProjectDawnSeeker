@@ -6,7 +6,7 @@ using UnityEngine;
 [Condition(name: "IschargingAllowed", story: "Check If [I] can continue charging", category: "Conditions", id: "b09deaf01573dd009be89f042476bbc1")]
 public partial class IschargingAllowedCondition : Condition
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> I;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> I;
 
     public override bool IsTrue()
     {

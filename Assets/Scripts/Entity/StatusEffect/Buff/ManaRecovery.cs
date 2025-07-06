@@ -5,14 +5,14 @@ public class ManaRecovery : StatusEffect
 {
     public int MPPercentAmount;
 
-    public override void OnApply(CharacterInBattle target)
+    public override void OnApply(CharacterRuntime target)
     {
         target.MPRecovery(MPPercentAmount);
     }
-    public override void OnTurn(CharacterInBattle target)
+    public override void OnTurn(CharacterRuntime target)
     {      
     }
-    public override void OnRemove(CharacterInBattle target)
+    public override void OnRemove(CharacterRuntime target)
     {
     }
 }

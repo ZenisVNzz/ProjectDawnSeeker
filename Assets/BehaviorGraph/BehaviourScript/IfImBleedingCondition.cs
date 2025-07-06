@@ -6,7 +6,7 @@ using UnityEngine;
 [Condition(name: "IfImBleeding", story: "[Im] bleeding?", category: "Conditions", id: "93747afc1cf16f81bf03d689a26f3fd8")]
 public partial class IfImBleedingCondition : Condition
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Im;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Im;
 
     public override bool IsTrue()
     {

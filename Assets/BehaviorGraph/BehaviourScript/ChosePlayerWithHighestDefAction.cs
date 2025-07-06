@@ -12,13 +12,13 @@ using System.Linq;
 public partial class ChosePlayerWithHighestDefAction : Action
 {
     [SerializeReference] public BlackboardVariable<List<GameObject>> PlayerTeam;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Target;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Target;
 
     protected override Status OnStart()
     {
-        List<CharacterInBattle> playerTeam = PlayerTeam.Value.ConvertAll(c => c.GetComponent<CharacterInBattle>());
+        List<CharacterRuntime> playerTeam = PlayerTeam.Value.ConvertAll(c => c.GetComponent<CharacterRuntime>());
         playerTeam.RemoveAll(c => !c.isAlive);
-        CharacterInBattle HighestDefPlayer = playerTeam.OrderByDescending(c => c.DEF).FirstOrDefault();
+        CharacterRuntime HighestDefPlayer = playerTeam.OrderByDescending(c => c.DEF).FirstOrDefault();
         Target.Value = HighestDefPlayer;
         return Status.Success;
     }

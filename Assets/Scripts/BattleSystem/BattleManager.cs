@@ -10,8 +10,8 @@ using Action = System.Action;
 
 public class BattleManager : MonoBehaviour
 {
-    public List<CharacterInBattle> TeamPlayer = new List<CharacterInBattle>();
-    public List<CharacterInBattle> TeamAI = new List<CharacterInBattle>();
+    public List<CharacterRuntime> TeamPlayer = new List<CharacterRuntime>();
+    public List<CharacterRuntime> TeamAI = new List<CharacterRuntime>();
     public List<PlannedAction> plannedActions = new List<PlannedAction>();
     public List<EnemyPlannedAction> enemyPlannedAction = new List<EnemyPlannedAction>();
 
@@ -20,7 +20,7 @@ public class BattleManager : MonoBehaviour
 
     public List<BehaviorGraphAgent> behaviorGraphAgent;
 
-    private CharacterInBattle selectedCharacter = null;
+    private CharacterRuntime selectedCharacter = null;
     public BattleUI battleUI;
     public Button startTurnButton;
     public SelectSkill selectSkill;
@@ -37,7 +37,7 @@ public class BattleManager : MonoBehaviour
 
     void Start()
     {
-        foreach (CharacterInBattle characterInBattle in TeamPlayer)
+        foreach (CharacterRuntime characterInBattle in TeamPlayer)
         {
             characterInBattle.OnDeath += OnDeath;
         }     
@@ -79,7 +79,7 @@ public class BattleManager : MonoBehaviour
 
     private void InializeAI()
     {
-        foreach (CharacterInBattle characterRuntime in TeamAI)
+        foreach (CharacterRuntime characterRuntime in TeamAI)
         {
             if (characterRuntime.isBoss)
             {
@@ -106,11 +106,11 @@ public class BattleManager : MonoBehaviour
         StartCoroutine(InitializEnemyAction());
     }    
 
-    private void OnDeath(CharacterInBattle character)
+    private void OnDeath(CharacterRuntime character)
     {
     }    
 
-    public void OnCharacterClicked(CharacterInBattle character)
+    public void OnCharacterClicked(CharacterRuntime character)
     {
         GameObject buttonPanel = GameObject.Find("ButtonPanel");
         Animator buttonPanelAnimator = buttonPanel.GetComponent<Animator>();
@@ -190,11 +190,11 @@ public class BattleManager : MonoBehaviour
 
     void EnemyTurn()
     {          
-        foreach (CharacterInBattle character in TeamPlayer)
+        foreach (CharacterRuntime character in TeamPlayer)
         {
             character.OnEndTurn();
         }
-        foreach (CharacterInBattle character in TeamAI)
+        foreach (CharacterRuntime character in TeamAI)
         {
             character.StartTurn();
         }   
@@ -213,7 +213,7 @@ public class BattleManager : MonoBehaviour
         }    
     }    
 
-    public CharacterInBattle GetLowestHPAlive(List<CharacterInBattle> list)
+    public CharacterRuntime GetLowestHPAlive(List<CharacterRuntime> list)
     {
         var aliveList = list.Where(x => x.isAlive).ToList();
         if (aliveList.Count == 0) return null;
@@ -221,7 +221,7 @@ public class BattleManager : MonoBehaviour
         return aliveList.OrderBy(x => x.HP).FirstOrDefault();
     }
 
-    public CharacterInBattle GetHighestATKAlive(List<CharacterInBattle> list)
+    public CharacterRuntime GetHighestATKAlive(List<CharacterRuntime> list)
     {
         var aliveList = list.Where(x => x.isAlive).ToList();
         if (aliveList.Count == 0) return null;
@@ -230,7 +230,7 @@ public class BattleManager : MonoBehaviour
 
     
 
-    public IEnumerator AddEnemyAction(CharacterInBattle enemy, CharacterInBattle target, SkillBase skill)
+    public IEnumerator AddEnemyAction(CharacterRuntime enemy, CharacterRuntime target, SkillBase skill)
     {
         if (skill.supportSkill == true)
         {
@@ -243,7 +243,7 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
     }
 
-    CharacterInBattle GetFirstAlive(List<CharacterInBattle> team)
+    CharacterRuntime GetFirstAlive(List<CharacterRuntime> team)
     {
         foreach (var c in team)
         {
@@ -323,7 +323,7 @@ public class BattleManager : MonoBehaviour
         StopAllCoroutines();
     }
 
-    float GetTotalHP(List<CharacterInBattle> team)
+    float GetTotalHP(List<CharacterRuntime> team)
     {
         float totalHP = 0;
         foreach (var character in team)
@@ -474,11 +474,11 @@ public class BattleManager : MonoBehaviour
         isPlayerTurn = true;
         battleUI.RefreshTurnUI(CurrentTurn);
         EnablePlayerTeam(true);
-        foreach (CharacterInBattle character in TeamAI)
+        foreach (CharacterRuntime character in TeamAI)
         {
             character.OnEndTurn();
         }
-        foreach (CharacterInBattle character in TeamPlayer)
+        foreach (CharacterRuntime character in TeamPlayer)
         {
             character.StartTurn();
         }
@@ -514,7 +514,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    public IEnumerator MoveToTarget(CharacterInBattle attacker, CharacterInBattle target, float speed = 11f)
+    public IEnumerator MoveToTarget(CharacterRuntime attacker, CharacterRuntime target, float speed = 11f)
     {
         Vector3 startPos = attacker.transform.position;
         Vector3 targetPos;
@@ -545,7 +545,7 @@ public class BattleManager : MonoBehaviour
         attacker.transform.position = targetPos;
     }
 
-    public IEnumerator ReturnToOriginalPosition(CharacterInBattle attacker, Vector3 originalPos, float speed = 11f)
+    public IEnumerator ReturnToOriginalPosition(CharacterRuntime attacker, Vector3 originalPos, float speed = 11f)
     {
         Vector3 startPos = attacker.transform.position;
         float Timer = 0f;
@@ -566,7 +566,7 @@ public class BattleManager : MonoBehaviour
         attacker.OnAttackEnd();
     }
 
-    public IEnumerator WaitForParry(CharacterInBattle attacker, CharacterInBattle target)
+    public IEnumerator WaitForParry(CharacterRuntime attacker, CharacterRuntime target)
     {
         while (attacker.currentState != State.Idle)
         {

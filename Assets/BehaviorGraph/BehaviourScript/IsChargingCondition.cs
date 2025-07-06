@@ -6,7 +6,7 @@ using UnityEngine;
 [Condition(name: "IsCharging", story: "[Im] charging", category: "Conditions", id: "219c49e51543e7673868c89035c33121")]
 public partial class IsChargingCondition : Condition
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Im;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Im;
 
     public override bool IsTrue()
     {

@@ -5,7 +5,7 @@ public class EnchantmentSeal : SkillBase
 {
     public StatusEffect enchantmentEffect;
 
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         target.isEnchantment = true;
         target.ApplyStatusEffect(enchantmentEffect, 1);

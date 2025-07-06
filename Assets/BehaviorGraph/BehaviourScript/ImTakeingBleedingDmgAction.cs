@@ -8,7 +8,7 @@ using Unity.Properties;
 [NodeDescription(name: "ImTakeingBleedingDmg", story: "[Im] take bleeding damage", category: "Action", id: "30174b6e2f8203943dd5f7b64771c5fd")]
 public partial class ImTakeingBleedingDmgAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Im;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Im;
 
     protected override Status OnStart()
     {

@@ -8,13 +8,13 @@ using Unity.Properties;
 [NodeDescription(name: "ChangeTargetToProvocateur", story: "Change [ChosenTarget] to Provocateur", category: "Action", id: "2b074db554116318a40e6c063ee6f206")]
 public partial class ChangeTargetToProvocateurAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Self;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> ChosenTarget;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Self;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> ChosenTarget;
 
     protected override Status OnStart()
     {
         StatusEffect aggroUP = Self.Value.activeStatusEffect.Find(e => e.ID == 200009);
-        CharacterInBattle provocateur = aggroUP.Getprovocateur();
+        CharacterRuntime provocateur = aggroUP.Getprovocateur();
         ChosenTarget.Value = provocateur;
         return Status.Success;
     }

@@ -8,7 +8,7 @@ using Action = Unity.Behavior.Action;
 [NodeDescription(name: "ReturnToOriginalPosition", story: "[Im] return to [originalPosition]", category: "Action", id: "bba9c696a15787b107b7609a913fd76d")]
 public partial class ReturnToOriginalPositionAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Im;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Im;
     [SerializeReference] public BlackboardVariable<Vector3> OriginalPosition;
 
     private Vector3 startPos;

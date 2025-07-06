@@ -8,9 +8,9 @@ using Unity.Properties;
 [NodeDescription(name: "ApplyEffectOnFinishedAttack", story: "[Im] apply [skill] effect to [ChosenTarget]", category: "Action", id: "9c204e0163150525c49f7fff9596e187")]
 public partial class ApplyEffectOnFinishedAttackAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Im;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Im;
     [SerializeReference] public BlackboardVariable<SkillBase> Skill;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> ChosenTarget;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> ChosenTarget;
 
     protected override Status OnStart()
     {

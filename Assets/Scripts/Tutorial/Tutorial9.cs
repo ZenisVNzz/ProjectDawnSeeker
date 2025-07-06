@@ -4,7 +4,7 @@ public class Tutorial9 : MonoBehaviour
 {
     public GameObject tutorial9UI;
     public GameObject tutorial10UI;
-    public CharacterInBattle enemy;
+    public CharacterRuntime enemy;
 
     public void OnEnable()
     {

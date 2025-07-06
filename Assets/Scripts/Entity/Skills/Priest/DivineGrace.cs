@@ -5,10 +5,10 @@ public class DivineGrace : SkillBase
 {
     public StatusEffect purify;
 
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         BattleManager battleManager = GameObject.FindFirstObjectByType<BattleManager>();
-        foreach (CharacterInBattle ally in battleManager.TeamPlayer)
+        foreach (CharacterRuntime ally in battleManager.TeamPlayer)
         {
             ally.ApplyStatusEffect(purify, 1);
             ally.activeStatusEffect.RemoveAll(e => e.type == StatusType.Debuff);

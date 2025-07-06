@@ -8,7 +8,7 @@ using Unity.Jobs;
 
 public class SelectSkill : MonoBehaviour
 {
-    public static CharacterInBattle characterInBattle;
+    public static CharacterRuntime characterInBattle;
     public SkillBase skill;
     public BattleManager battleManager;
     public GameObject notification;

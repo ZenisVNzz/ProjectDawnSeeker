@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "OrcRider_Skill4", menuName = "Skills/OrcRider/OrcRider_Skill4")]
 public class OrcRider_Skill4 : SkillBase
 {
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         BattleManager battleManager = FindAnyObjectByType<BattleManager>();
         foreach (var player in battleManager.TeamPlayer)

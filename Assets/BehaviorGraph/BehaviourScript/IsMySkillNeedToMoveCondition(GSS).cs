@@ -7,7 +7,7 @@ using UnityEngine;
 public partial class IsMySkillNeedToMoveConditionGSS : Condition
 {
     [SerializeReference] public BlackboardVariable<SkillBase> ChosenSkill;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> MySelf;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> MySelf;
 
     public override bool IsTrue()
     {

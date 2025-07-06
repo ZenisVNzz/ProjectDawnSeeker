@@ -6,13 +6,13 @@ public class ArmoredAxeman_Skill4 : SkillBase
 {
     public StatusEffect deadlyBlood;
 
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         target.TakeDamage(user.ATK * 1.7f, 2, user, target);
         base.DoAction(user, target);
     }
 
-    public override void ApplyEffectOnFinishedAttack(CharacterInBattle user, CharacterInBattle target)
+    public override void ApplyEffectOnFinishedAttack(CharacterRuntime user, CharacterRuntime target)
     {
         if (target.activeStatusEffect.Any(effect => effect.ID == 200013))
         {

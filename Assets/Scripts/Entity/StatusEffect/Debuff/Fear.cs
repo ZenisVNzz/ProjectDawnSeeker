@@ -5,7 +5,7 @@ public class Fear : StatusEffect
 {
     public float PercentAmount;
 
-    public override void OnApply(CharacterInBattle target)
+    public override void OnApply(CharacterRuntime target)
     {
         target.DecreaseATK(PercentAmount);
         target.DecreaseDEF(PercentAmount);
@@ -14,10 +14,10 @@ public class Fear : StatusEffect
         target.DecreaseDC(PercentAmount);
         target.DecreasePC(PercentAmount);
     }
-    public override void OnTurn(CharacterInBattle target)
+    public override void OnTurn(CharacterRuntime target)
     {
     }
-    public override void OnRemove(CharacterInBattle target)
+    public override void OnRemove(CharacterRuntime target)
     {
         target.IncreaseATK(PercentAmount);
         target.IncreaseDEF(PercentAmount);

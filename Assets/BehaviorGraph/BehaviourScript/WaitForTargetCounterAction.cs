@@ -10,8 +10,8 @@ using System.Collections;
 [NodeDescription(name: "WaitForTargetCounter", story: "[Im] waiting for [target] to finish countering", category: "Action", id: "c3bfdcad91fb0d5cd2138f8c7c99721f")]
 public partial class WaitForTargetCounterAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Im;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Target;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Im;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Target;
     private bool attackerFinished = false;
     private bool targetFinished = false;
 

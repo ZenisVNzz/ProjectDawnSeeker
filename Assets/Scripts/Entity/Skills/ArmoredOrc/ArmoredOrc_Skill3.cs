@@ -5,7 +5,7 @@ public class ArmoredOrc_Skill3 : SkillBase
 {
     public StatusEffect defDown;
 
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         BattleManager battleManager = FindAnyObjectByType<BattleManager>();
         foreach (var player in battleManager.TeamPlayer)

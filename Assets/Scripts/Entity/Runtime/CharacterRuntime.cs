@@ -14,7 +14,7 @@ public enum State
     Dead
 }
 
-public class CharacterInBattle : MonoBehaviour
+public class CharacterRuntime : MonoBehaviour
 {
     public CharacterData characterData { get; private set; }
     public string charName { get; private set; }
@@ -58,7 +58,7 @@ public class CharacterInBattle : MonoBehaviour
 
     public List<StatusEffect> activeStatusEffect = new List<StatusEffect>();
 
-    public event Action<CharacterInBattle> OnDeath;
+    public event Action<CharacterRuntime> OnDeath;
 
     public void Initialize(CharacterData characterData) //Hàm khởi tạo
     {
@@ -92,7 +92,7 @@ public class CharacterInBattle : MonoBehaviour
     private bool dodgeSucces = false;
     public bool isPenetrating = false;
     public bool isFullPenetrating = false;
-    public CharacterInBattle markCaster;
+    public CharacterRuntime markCaster;
 
     public float savedDmg;
     public int savedHitCount;
@@ -100,8 +100,8 @@ public class CharacterInBattle : MonoBehaviour
     public bool isCrit;
     public float savedHeal;
     private Vector3 targetPosition;
-    public CharacterInBattle currentTarget;
-    public CharacterInBattle currentAttacker;
+    public CharacterRuntime currentTarget;
+    public CharacterRuntime currentAttacker;
     public State currentState;
     private int currentSkillID;
 
@@ -138,7 +138,7 @@ public class CharacterInBattle : MonoBehaviour
         isClickable = value;
     }
 
-    public void TakeDamage(float damage, int hitCount, CharacterInBattle attacker, CharacterInBattle target)
+    public void TakeDamage(float damage, int hitCount, CharacterRuntime attacker, CharacterRuntime target)
     {
         float totaldamage = damage;
         totaldamage = totaldamage / hitCount;
@@ -339,7 +339,7 @@ public class CharacterInBattle : MonoBehaviour
         return specialSkill;
     }    
 
-    public void Attack(CharacterInBattle attacker, CharacterInBattle target)
+    public void Attack(CharacterRuntime attacker, CharacterRuntime target)
     {
         SkillBase basicSkill = attacker.skillList[0];
         if (isAlive && target != null && target.isAlive)

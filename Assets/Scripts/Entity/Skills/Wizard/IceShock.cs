@@ -8,7 +8,7 @@ public class IceShock : SkillBase
     public StatusEffect paralysis;
     public StatusEffect heatShock;
 
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         if (target.activeStatusEffect.Any(e => e.ID == 200012))
         {
@@ -22,7 +22,7 @@ public class IceShock : SkillBase
         base.DoAction(user, target);
     }
 
-    public override void ApplyEffectOnFinishedAttack(CharacterInBattle user, CharacterInBattle target)
+    public override void ApplyEffectOnFinishedAttack(CharacterRuntime user, CharacterRuntime target)
     {
         if (target.activeStatusEffect.Any(e => e.ID == 200012))
         {

@@ -6,19 +6,19 @@ public class GreatSwordSkeleton_Skill3 : SkillBase
     public StatusEffect curse;
     public StatusEffect atkUP;
 
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         
     }
 
-    public override void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
+    public override void ApplyEffectOnEnd(CharacterRuntime user, CharacterRuntime target)
     {
         BattleManager battleManager = FindAnyObjectByType<BattleManager>();
-        foreach (CharacterInBattle character in battleManager.TeamPlayer)
+        foreach (CharacterRuntime character in battleManager.TeamPlayer)
         {
             character.ApplyStatusEffect(curse, 2);
         }
-        foreach (CharacterInBattle character in battleManager.TeamAI)
+        foreach (CharacterRuntime character in battleManager.TeamAI)
         {
             character.ApplyStatusEffect(atkUP, 1);
         }

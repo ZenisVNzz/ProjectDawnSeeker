@@ -11,12 +11,12 @@ public class InitializeCharacter : MonoBehaviour
     public GameObject BossWarning;
     public List<CharacterData> playerCharacter = new List<CharacterData>();
     public List<CharacterData> enemyCharacter = new List<CharacterData>();
-    public List<CharacterInBattle> playerCharacterInBattle = new List<CharacterInBattle>();
-    public List<CharacterInBattle> enemyCharacterInBattle = new List<CharacterInBattle>();
+    public List<CharacterRuntime> playerCharacterInBattle = new List<CharacterRuntime>();
+    public List<CharacterRuntime> enemyCharacterInBattle = new List<CharacterRuntime>();
     public BattleManager battleManager;
     public BattleUI battleUI;
 
-    private List<CharacterInBattle> nullCharacter = new List<CharacterInBattle>();
+    private List<CharacterRuntime> nullCharacter = new List<CharacterRuntime>();
     private StageData stageData;
 
     async Task Awake()
@@ -53,7 +53,7 @@ public class InitializeCharacter : MonoBehaviour
                 battleUI.activeCharacter.Remove(playerCharacterInBattle[i]);
                 nullCharacter.Add(playerCharacterInBattle[i]);
             }
-            foreach (CharacterInBattle character in nullCharacter)
+            foreach (CharacterRuntime character in nullCharacter)
             {
                 playerCharacterInBattle.Remove(character);
                 Destroy(character.gameObject);
@@ -67,7 +67,7 @@ public class InitializeCharacter : MonoBehaviour
                 battleUI.activeEnemyCharacter.Remove(enemyCharacterInBattle[i]);
                 nullCharacter.Add(enemyCharacterInBattle[i]);
             }
-            foreach (CharacterInBattle character in nullCharacter)
+            foreach (CharacterRuntime character in nullCharacter)
             {
                 enemyCharacterInBattle.Remove(character);
                 Destroy(character.gameObject);

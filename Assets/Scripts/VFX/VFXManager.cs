@@ -23,7 +23,7 @@ public class VFXManager : MonoBehaviour
         }
     }
 
-    public async Task PlayEffect(int ID, Vector3 position, CharacterInBattle character)
+    public async Task PlayEffect(int ID, Vector3 position, CharacterRuntime character)
     {
         if (effect.Any(e => e.ID == ID && !e.isMove))
         {

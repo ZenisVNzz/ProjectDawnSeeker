@@ -5,7 +5,7 @@ using UnityEngine;
 public class BlazingSlash : SkillBase
 {
     public StatusEffect burn;
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         if (target.activeStatusEffect.Any(effect => effect.ID == 200012))
         {
@@ -19,7 +19,7 @@ public class BlazingSlash : SkillBase
         base.DoAction(user, target);
     }
 
-    public override void ApplyEffectOnFinishedAttack(CharacterInBattle user, CharacterInBattle target)
+    public override void ApplyEffectOnFinishedAttack(CharacterRuntime user, CharacterRuntime target)
     {
         target.ApplyStatusEffect(burn, 2);
     }

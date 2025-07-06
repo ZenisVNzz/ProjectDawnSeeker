@@ -9,7 +9,7 @@ using Unity.Properties;
 public partial class ChooseBuffSkillAction : Action
 {
     [SerializeReference] public BlackboardVariable<SkillBase> ChoosenSkill;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Self;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Self;
 
     protected override Status OnStart()
     {

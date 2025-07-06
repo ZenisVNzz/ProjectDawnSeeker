@@ -8,7 +8,7 @@ using UnityEngine;
 [Condition(name: "ShouldIUseBuffSkill", story: "I Should use buff skill, check [self]", category: "Conditions", id: "f1414195b5be63cde27cf36851abb9e3")]
 public partial class ShouldIUseBuffSkillCondition : Condition
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Self;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Self;
 
     public override bool IsTrue()
     {

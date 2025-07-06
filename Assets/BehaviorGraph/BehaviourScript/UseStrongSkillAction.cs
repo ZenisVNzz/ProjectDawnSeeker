@@ -11,7 +11,7 @@ using System.Linq;
 public partial class UseStrongSkillAction : Action
 {
     [SerializeReference] public BlackboardVariable<SkillBase> ChosenSkill;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> MySelf;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> MySelf;
 
     protected override Status OnStart()
     {

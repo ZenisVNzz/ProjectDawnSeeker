@@ -4,7 +4,7 @@ using UnityEngine;
 public class Heals : SkillBase
 {
     public Heal heal;
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         heal.CasterATK = user.ATK;
         user.savedHeal = user.ATK * 2f;

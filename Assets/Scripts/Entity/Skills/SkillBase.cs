@@ -24,7 +24,7 @@ public abstract class SkillBase : ScriptableObject
     public bool isWaitForCharge = false;
     public bool isUniqueSkill = false;
 
-    public virtual void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public virtual void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         user.AttackState(animation);
         user.currentTarget = target;
@@ -32,24 +32,24 @@ public abstract class SkillBase : ScriptableObject
         user.currentMP -= mpCost;
     }
 
-    public virtual void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
+    public virtual void ApplyEffectOnEnd(CharacterRuntime user, CharacterRuntime target)
     {
     }
 
-    public virtual void ApplyEffectOnFinishedAttack(CharacterInBattle user, CharacterInBattle target)
+    public virtual void ApplyEffectOnFinishedAttack(CharacterRuntime user, CharacterRuntime target)
     {
     }
 
-    public virtual void DoSpecialAction(CharacterInBattle user, CharacterInBattle target)
+    public virtual void DoSpecialAction(CharacterRuntime user, CharacterRuntime target)
     {
     }
 
-    public virtual bool CheckSkillCondition(CharacterInBattle user)
+    public virtual bool CheckSkillCondition(CharacterRuntime user)
     {
         return true;
     }
 
-    public virtual void OnFailCharge(CharacterInBattle user)
+    public virtual void OnFailCharge(CharacterRuntime user)
     {
     }
 

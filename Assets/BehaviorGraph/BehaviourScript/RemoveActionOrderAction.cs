@@ -9,7 +9,7 @@ using Unity.Properties;
 public partial class RemoveActionOrderAction : Action
 {
     [SerializeReference] public BlackboardVariable<ActionOrder> ActionOrder;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> MySelf;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> MySelf;
     [SerializeReference] public BlackboardVariable<SkillBase> ChosenSkill;
 
     protected override Status OnStart()

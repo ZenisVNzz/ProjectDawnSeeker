@@ -5,13 +5,13 @@ public class HoverOutline : MonoBehaviour
     public Material defaultMat;
     public Material outlineMat;
     private SpriteRenderer render;
-    private CharacterInBattle characterInBattle;
+    private CharacterRuntime characterInBattle;
 
     void Start()
     {
         render = GetComponent<SpriteRenderer>();
         render.material = defaultMat;
-        characterInBattle = GetComponent<CharacterInBattle>();
+        characterInBattle = GetComponent<CharacterRuntime>();
     }
 
     private void OnMouseEnter()

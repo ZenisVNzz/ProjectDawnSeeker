@@ -7,7 +7,7 @@ public class Werebear_Skill4 : SkillBase
 {
     public StatusEffect bleed;
 
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         if (target.activeStatusEffect.Any(e => e.ID == 200013))
         {
@@ -20,10 +20,10 @@ public class Werebear_Skill4 : SkillBase
         base.DoAction(user, target);
     }
 
-    public override void ApplyEffectOnEnd(CharacterInBattle user, CharacterInBattle target)
+    public override void ApplyEffectOnEnd(CharacterRuntime user, CharacterRuntime target)
     {
         BattleManager battleManager = FindAnyObjectByType<BattleManager>();
-        foreach (CharacterInBattle character in battleManager.TeamPlayer)
+        foreach (CharacterRuntime character in battleManager.TeamPlayer)
         {
             character.ApplyStatusEffect(bleed, 2);
         }

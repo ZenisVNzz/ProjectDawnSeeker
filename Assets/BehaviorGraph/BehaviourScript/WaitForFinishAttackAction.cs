@@ -8,7 +8,7 @@ using Unity.Properties;
 [NodeDescription(name: "WaitForFinishAttack", story: "Wait until [i] finish action", category: "Action", id: "05ede25d5b78d00b637deb95f04924cd")]
 public partial class WaitForFinishAttackAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> I;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> I;
 
     protected override Status OnStart()
     {

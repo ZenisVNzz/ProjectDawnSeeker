@@ -8,7 +8,7 @@ using Unity.Properties;
 [NodeDescription(name: "OnFailedCharge", story: "[I] failed to charge", category: "Action", id: "c289ab2af408d21b969fb85e4eea1c44")]
 public partial class OnFailedChargeAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> I;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> I;
 
     protected override Status OnStart()
     {

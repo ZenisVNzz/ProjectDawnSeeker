@@ -9,7 +9,7 @@ using Unity.Properties;
 public partial class UseNormalSkillAction : Action
 {
     [SerializeReference] public BlackboardVariable<SkillBase> ChosenSkill;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> MySelf;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> MySelf;
 
     protected override Status OnStart()
     {

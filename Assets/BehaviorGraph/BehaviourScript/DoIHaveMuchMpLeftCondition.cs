@@ -6,7 +6,7 @@ using UnityEngine;
 [Condition(name: "DoIHaveMuchMpLeft", story: "Do I have much MP left, check [MySelf]", category: "Conditions", id: "b65bf81b63be2595a6ace2065711605c")]
 public partial class DoIHaveMuchMpLeftCondition : Condition
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> MySelf;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> MySelf;
 
     public override bool IsTrue()
     {

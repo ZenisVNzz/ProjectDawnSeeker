@@ -4,7 +4,7 @@ public class EnemyStatusBar : MonoBehaviour
 {
     public SpriteRenderer fillHP;
     public GameObject hpBarDelayPrefab;
-    private CharacterInBattle characterInBattle;
+    private CharacterRuntime characterInBattle;
 
     public float maxHPwidth;
     private float maxHP;
@@ -18,7 +18,7 @@ public class EnemyStatusBar : MonoBehaviour
 
     public void InitializeStatus()
     {
-        characterInBattle = GetComponentInParent<CharacterInBattle>();
+        characterInBattle = GetComponentInParent<CharacterRuntime>();
         if (characterInBattle != null)
         {
             maxHP = characterInBattle.HP;

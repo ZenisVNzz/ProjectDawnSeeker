@@ -10,19 +10,19 @@ using System.Linq;
 [NodeDescription(name: "SelectRandomPlayerAsTarget", story: "Select random Player as Target, assign [ChoosenTarget] from [PlayerTeam]", category: "Action", id: "5880229a79ace10869d1bdbc329fdfbd")]
 public partial class SelectRandomPlayerAsTargetAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> ChoosenTarget;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> ChoosenTarget;
     [SerializeReference] public BlackboardVariable<List<GameObject>> PlayerTeam;
 
     protected override Status OnStart()
     {
-        List<CharacterInBattle> playerTeamCharacters = PlayerTeam.Value.ConvertAll(player => player.GetComponent<CharacterInBattle>());
+        List<CharacterRuntime> playerTeamCharacters = PlayerTeam.Value.ConvertAll(player => player.GetComponent<CharacterRuntime>());
         playerTeamCharacters.RemoveAll(character => !character.isAlive);
         ChoosenTarget.Value = GetRandomAlive(playerTeamCharacters);
 
         return Status.Success;
     }
 
-    public CharacterInBattle GetRandomAlive(List<CharacterInBattle> list)
+    public CharacterRuntime GetRandomAlive(List<CharacterRuntime> list)
     {
         var aliveList = list.Where(x => x.isAlive).ToList();
         if (aliveList.Count == 0) return null;

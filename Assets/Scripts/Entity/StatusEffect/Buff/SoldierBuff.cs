@@ -4,14 +4,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "SoldierBuff", menuName = "StatusEffect/SoldierBuff")]
 public class SoldierBuff : StatusEffect
 {
-    public override void OnApply(CharacterInBattle target)
+    public override void OnApply(CharacterRuntime target)
     {
         target.isGetATKBuffWhenDodge = true;
     }
-    public override void OnTurn(CharacterInBattle target)
+    public override void OnTurn(CharacterRuntime target)
     {
     }
-    public override void OnRemove(CharacterInBattle target)
+    public override void OnRemove(CharacterRuntime target)
     {
         target.isGetATKBuffWhenDodge = false;
 

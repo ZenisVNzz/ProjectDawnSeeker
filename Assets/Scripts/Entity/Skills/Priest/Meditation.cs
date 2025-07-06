@@ -4,7 +4,7 @@ using UnityEngine;
 public class Meditation : SkillBase
 {
     public StatusEffect meditation;
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         user.ApplyStatusEffect(meditation, 1);
         base.DoAction(user, target);

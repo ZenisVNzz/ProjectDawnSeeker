@@ -11,7 +11,7 @@ public class ActionOrder : MonoBehaviour
     public Dictionary<int, List<GameObject>> currentAction = new Dictionary<int, List<GameObject>>();
     public Image skillIMG;
 
-    public void AddAction(CharacterInBattle character, CharacterInBattle target, SkillBase skill, bool isTargetAlly)
+    public void AddAction(CharacterRuntime character, CharacterRuntime target, SkillBase skill, bool isTargetAlly)
     {
         int charID = character.characterData.characterID;
 
@@ -62,7 +62,7 @@ public class ActionOrder : MonoBehaviour
     }
 
 
-    public void RemoveAction(CharacterInBattle character, SkillBase skill)
+    public void RemoveAction(CharacterRuntime character, SkillBase skill)
     {
         int charID = character.characterData.characterID;
 

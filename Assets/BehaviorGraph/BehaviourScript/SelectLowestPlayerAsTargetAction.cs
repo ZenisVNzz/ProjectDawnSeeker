@@ -10,15 +10,15 @@ using System.Linq;
 [NodeDescription(name: "SelectLowestPlayerAsTarget", story: "Select lowest player as target, assign [ChoosenTarget] from [PlayerTeam]", category: "Action", id: "37adf52a155767ce0bf8eb1642ee319d")]
 public partial class SelectLowestPlayerAsTargetAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> ChoosenTarget;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> ChoosenTarget;
     [SerializeReference] public BlackboardVariable<List<GameObject>> PlayerTeam;
 
     protected override Status OnStart()
     {
-        List<CharacterInBattle> playerTeamCharacters = PlayerTeam.Value.ConvertAll(player => player.GetComponent<CharacterInBattle>());
+        List<CharacterRuntime> playerTeamCharacters = PlayerTeam.Value.ConvertAll(player => player.GetComponent<CharacterRuntime>());
         playerTeamCharacters.RemoveAll(character => !character.isAlive);
 
-        CharacterInBattle lowestHPCharacter = playerTeamCharacters.OrderBy(character => character.currentHP).FirstOrDefault();
+        CharacterRuntime lowestHPCharacter = playerTeamCharacters.OrderBy(character => character.currentHP).FirstOrDefault();
         ChoosenTarget.Value = lowestHPCharacter;
         if (lowestHPCharacter == null)
         {

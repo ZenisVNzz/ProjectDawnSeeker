@@ -8,8 +8,8 @@ using Unity.Properties;
 [NodeDescription(name: "AssignMySelf", story: "Assign [MySelf] as [Target]", category: "Action", id: "285d0f265f6f2e00b01119f2f0c8507e")]
 public partial class AssignMySelfAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> MySelf;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Target;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> MySelf;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Target;
 
     protected override Status OnStart()
     {

@@ -4,12 +4,12 @@ using UnityEngine;
 public class ArmoredAxeman_Skill2 : SkillBase
 {
     public StatusEffect Bleed;
-    public override void DoAction(CharacterInBattle user, CharacterInBattle target)
+    public override void DoAction(CharacterRuntime user, CharacterRuntime target)
     {
         target.TakeDamage(user.ATK * 1.4f, 2, user, target);
         base.DoAction(user, target);
     }
-    public override void ApplyEffectOnFinishedAttack(CharacterInBattle user, CharacterInBattle target)
+    public override void ApplyEffectOnFinishedAttack(CharacterRuntime user, CharacterRuntime target)
     {
         target.ApplyStatusEffect(Bleed, 2);
     }

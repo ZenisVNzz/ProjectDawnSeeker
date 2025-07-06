@@ -8,8 +8,8 @@ using Unity.Properties;
 [NodeDescription(name: "DoAction", story: "I perform an Action where Skill is [ChosenSkill] Caster is [Myself] and Target is [ChosenTarget]", category: "Action", id: "8c284b1eba1116b7c63d4e31bdfa46a9")]
 public partial class DoAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Myself;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> ChosenTarget;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Myself;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> ChosenTarget;
     [SerializeReference] public BlackboardVariable<SkillBase> ChosenSkill;
 
     protected override Status OnStart()

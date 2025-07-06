@@ -8,8 +8,8 @@ using Action = Unity.Behavior.Action;
 [NodeDescription(name: "MoveToTarget", story: "[Im] move to [target]", category: "Action", id: "0f2de51d1db18faff83fb14d2c5f86b6")]
 public partial class MoveToTargetAction : Action
 {
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Im;
-    [SerializeReference] public BlackboardVariable<CharacterInBattle> Target;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Im;
+    [SerializeReference] public BlackboardVariable<CharacterRuntime> Target;
     [SerializeReference] public BlackboardVariable<Vector3> OriginalPosition;
 
     private Vector3 startPos;

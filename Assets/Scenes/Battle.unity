@@ -3674,13 +3674,21 @@ MonoBehaviour:
   m_Graph: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 7695452426028974333
-  - rid: 7695452426028974334
   - rid: 7695452437430403926
+  - rid: 3762647680929760101
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
     version: 2
     RefIds:
+    - rid: 3762647680929760101
+      type: {class: 'BlackboardVariable`1[[CharacterRuntime, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1467990117037085249
+          m_Value1: 13987727052842530888
+        Name: MySelf
+        m_Value: {fileID: 223460985}
     - rid: 7695452426028974333
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -3689,14 +3697,6 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 223460979}
-    - rid: 7695452426028974334
-      type: {class: 'BlackboardVariable`1[[CharacterInBattle, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 15075651137034947217
-          m_Value1: 9196110608612017384
-        Name: MySelf
-        m_Value: {fileID: 223460985}
     - rid: 7695452437430403926
       type: {class: 'BlackboardVariable`1[[ActionOrder, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -25246,13 +25246,21 @@ MonoBehaviour:
   m_Graph: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 7695452411424145695
-  - rid: 7695452426028974332
   - rid: 7695452437430403925
+  - rid: 3762647680929760100
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
     version: 2
     RefIds:
+    - rid: 3762647680929760100
+      type: {class: 'BlackboardVariable`1[[CharacterRuntime, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1467990117037085249
+          m_Value1: 13987727052842530888
+        Name: MySelf
+        m_Value: {fileID: 1172855266}
     - rid: 7695452411424145695
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -25261,14 +25269,6 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 1172855262}
-    - rid: 7695452426028974332
-      type: {class: 'BlackboardVariable`1[[CharacterInBattle, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 15075651137034947217
-          m_Value1: 9196110608612017384
-        Name: MySelf
-        m_Value: {fileID: 1172855266}
     - rid: 7695452437430403925
       type: {class: 'BlackboardVariable`1[[ActionOrder, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -32674,13 +32674,21 @@ MonoBehaviour:
   m_Graph: {fileID: 3481278844587513131, guid: 6dbdf7cff1f4c0b40b8be35892cd22a0, type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 7695452426028974335
-  - rid: 7695452426028974336
   - rid: 7695452437430403927
+  - rid: 3762647680929760099
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
     version: 2
     RefIds:
+    - rid: 3762647680929760099
+      type: {class: 'BlackboardVariable`1[[CharacterRuntime, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1467990117037085249
+          m_Value1: 13987727052842530888
+        Name: MySelf
+        m_Value: {fileID: 1483041557}
     - rid: 7695452426028974335
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -32689,14 +32697,6 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 1483041556}
-    - rid: 7695452426028974336
-      type: {class: 'BlackboardVariable`1[[CharacterInBattle, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 15075651137034947217
-          m_Value1: 9196110608612017384
-        Name: MySelf
-        m_Value: {fileID: 1483041557}
     - rid: 7695452437430403927
       type: {class: 'BlackboardVariable`1[[ActionOrder, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
