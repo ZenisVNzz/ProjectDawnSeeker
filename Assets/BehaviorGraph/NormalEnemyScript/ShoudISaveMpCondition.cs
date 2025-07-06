@@ -15,7 +15,7 @@ public partial class ShoudISaveMpCondition : Condition
         {
             return true;
         }    
-        if (MySelf.Value.currentHP <= MySelf.Value.HP * 0.3f)
+        if (MySelf.Value.currentHP <= MySelf.Value.HP * 0.42f)
         {
             return false;
         }
