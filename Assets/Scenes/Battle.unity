@@ -3659,6 +3659,7 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   currentAttacker: {fileID: 0}
   currentState: 0
+  isPlayingEffectAnimation: 0
 --- !u!114 &223460986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10884,6 +10885,7 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   currentAttacker: {fileID: 0}
   currentState: 0
+  isPlayingEffectAnimation: 0
 --- !u!95 &554530856
 Animator:
   serializedVersion: 7
@@ -16295,6 +16297,7 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   currentAttacker: {fileID: 0}
   currentState: 0
+  isPlayingEffectAnimation: 0
 --- !u!70 &808364463
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -25195,6 +25198,7 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   currentAttacker: {fileID: 0}
   currentState: 0
+  isPlayingEffectAnimation: 0
 --- !u!95 &1172855267
 Animator:
   serializedVersion: 7
@@ -27543,6 +27547,7 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   currentAttacker: {fileID: 0}
   currentState: 0
+  isPlayingEffectAnimation: 0
 --- !u!70 &1272054749
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -27986,6 +27991,7 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   currentAttacker: {fileID: 0}
   currentState: 0
+  isPlayingEffectAnimation: 0
 --- !u!70 &1283657989
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -32513,6 +32519,7 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   currentAttacker: {fileID: 0}
   currentState: 0
+  isPlayingEffectAnimation: 0
 --- !u!114 &1483041558
 MonoBehaviour:
   m_ObjectHideFlags: 0

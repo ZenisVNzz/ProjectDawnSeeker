@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Unity.Behavior;
 using UnityEngine;
 using Action = System.Action;
@@ -105,8 +106,8 @@ public class CharacterRuntime : MonoBehaviour
     public State currentState;
     private int currentSkillID;
 
-    private Queue<Action> effectAnimationQueue = new Queue<Action>();
-    private bool isPlayingEffectAnimation = false;
+    private Queue<Func<Task>> effectAnimationQueue = new Queue<Func<Task>>();
+    public bool isPlayingEffectAnimation = false;
 
     void Start()
     {
@@ -367,7 +368,7 @@ public class CharacterRuntime : MonoBehaviour
                 {
                     effectAnchor = transform.Find("HeadAnchor").gameObject;
                 }
-                EnqueueEffectAnimation(() => vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this));
+                EnqueueEffectAnimation(async () => await vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this));
                 Debug.Log($"{charName} đã nhận hiệu ứng {effect.name}");
             }
             else if (activeStatusEffect.Any(e => e.ID == effect.ID) && !effect.canStack)
@@ -388,7 +389,7 @@ public class CharacterRuntime : MonoBehaviour
                 {
                     effectAnchor = transform.Find("HeadAnchor").gameObject;
                 }
-                EnqueueEffectAnimation(() => vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this));
+                EnqueueEffectAnimation(async () => await vfxManager.PlayEffect(effect.ID, effectAnchor.transform.position, this));
             }
         }          
     }  
@@ -748,23 +749,25 @@ public class CharacterRuntime : MonoBehaviour
         spriteRenderer.DOFade(0f, 2.5f);      
     }    
 
-    public void EnqueueEffectAnimation(Action playEffectAnimation)
+    private async Task EnqueueEffectAnimation(Func<Task> playEffectAnimation)
     {
         effectAnimationQueue.Enqueue(playEffectAnimation);
         if (!isPlayingEffectAnimation)
         {
-            StartCoroutine(ProcessEffectAnimationQueue());
+            await ProcessEffectAnimationQueue();
         }
     }
 
-    private IEnumerator ProcessEffectAnimationQueue()
+     private async Task ProcessEffectAnimationQueue()
     {
         isPlayingEffectAnimation = true;
         while (effectAnimationQueue.Count > 0)
         {
             var playEffect = effectAnimationQueue.Dequeue();
-            playEffect?.Invoke();
-            yield return new WaitForSeconds(1f);
+            if (playEffect != null)
+            {
+                await playEffect();
+            }
         }
         isPlayingEffectAnimation = false;
     }

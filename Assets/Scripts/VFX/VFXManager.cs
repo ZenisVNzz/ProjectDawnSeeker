@@ -25,12 +25,14 @@ public class VFXManager : MonoBehaviour
 
     public async Task PlayEffect(int ID, Vector3 position, CharacterRuntime character)
     {
+        GameObject effectInstance;
+
         if (effect.Any(e => e.ID == ID && !e.isMove))
         {
             int charID = character.characterData.characterID;
             if (effectDictionary.TryGetValue(ID, out GameObject prefab))
             {
-                GameObject effectInstance = Instantiate(prefab, position, Quaternion.identity);
+                effectInstance = Instantiate(prefab, position, Quaternion.identity);
                 if (effect.Any(e => e.ID == ID && !e.duringEffect))
                 {
                     Destroy(effectInstance, 5f);
@@ -53,7 +55,8 @@ public class VFXManager : MonoBehaviour
                 return;
             }
 
-            while (prefab.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
+            Animator animator = effectInstance.GetComponent<Animator>();
+            while (animator != null && animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
             {
                 await Task.Yield();
             }
@@ -62,7 +65,7 @@ public class VFXManager : MonoBehaviour
         {
             if (effectDictionary.TryGetValue(ID, out GameObject prefab))
             {
-                GameObject effectInstance = Instantiate(prefab, character.transform.position + Vector3.right * 1.5f, Quaternion.identity);
+                effectInstance = Instantiate(prefab, character.transform.position + Vector3.right * 1.5f, Quaternion.identity);
                 Vector3 dir = position - effectInstance.transform.position;
                 float angleZ = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
                 effectInstance.transform.rotation = Quaternion.Euler(0, 0, angleZ);

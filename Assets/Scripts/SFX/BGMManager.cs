@@ -14,7 +14,7 @@ public class BGMManager : MonoBehaviour
 
     IEnumerator PlayBGM()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         if (audioSource != null && !audioSource.isPlaying)
         {
             StageData stageData = FindAnyObjectByType<StageData>();

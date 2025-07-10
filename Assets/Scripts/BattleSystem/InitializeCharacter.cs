@@ -92,6 +92,7 @@ public class InitializeCharacter : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         EventManager.Call("InitializeCompleted");
+        Debug.Log("Initialize AI Completed");
         if (stageData.bossLevel)
         {
             yield return new WaitForSeconds(0.5f);

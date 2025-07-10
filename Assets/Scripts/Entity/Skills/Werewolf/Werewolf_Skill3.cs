@@ -8,11 +8,11 @@ public class Werewolf_Skill3 : SkillBase
     {
         if (target.activeStatusEffect.Any(e => e.ID == 200013))
         {
-            target.TakeDamage(user.ATK * 1.2f, 5, user, target);
+            target.TakeDamage(user.ATK * 1.4f, 5, user, target);
         }
         else
         {
-            target.TakeDamage(user.ATK * 1.05f, 5, user, target);
+            target.TakeDamage(user.ATK * 1.2f, 5, user, target);
         }    
        
         base.DoAction(user, target);

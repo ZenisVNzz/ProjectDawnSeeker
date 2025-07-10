@@ -48,7 +48,7 @@ public class BattleManager : MonoBehaviour
             GameObject buttonPanel = GameObject.Find("ButtonPanel");
             Animator buttonPanelAnimator = buttonPanel.GetComponent<Animator>();
             int actionAble = TeamPlayer.Count(c => c.isActionAble);
-            Debug.Log("Thực thi hành động");
+            Debug.Log("Begin turn");
             Action();
             startTurnButton.interactable = false;
             if (buttonPanelAnimator.GetCurrentAnimatorStateInfo(0).IsName("Popup"))
@@ -79,6 +79,7 @@ public class BattleManager : MonoBehaviour
 
     private void InializeAI()
     {
+        Debug.Log("Initialize AI...");
         foreach (CharacterRuntime characterRuntime in TeamAI)
         {
             if (characterRuntime.isBoss)
@@ -94,6 +95,11 @@ public class BattleManager : MonoBehaviour
             .ToList();
         foreach (BehaviorGraphAgent agent in behaviorGraphAgent)
         {
+            if (agent.BlackboardReference.GetVariableValue<CharacterRuntime>("MySelf", out CharacterRuntime charRuntime) && charRuntime == null)
+            {
+                agent.BlackboardReference.SetVariableValue("MySelf", agent.gameObject.GetComponent<CharacterRuntime>());
+            }
+
             List<GameObject> playerObj = new List<GameObject>();
             playerObj = TeamPlayer.ConvertAll(character => character.gameObject);
             List<GameObject> enemyObj = new List<GameObject>();
@@ -419,7 +425,12 @@ public class BattleManager : MonoBehaviour
                     continue;
                 }
 
+                while (action.Caster.isPlayingEffectAnimation)
+                {
+                    yield return null;
+                }
                 yield return new WaitForSeconds(0.5f);
+                CheckWinLose();
             }
         }
         else
@@ -451,12 +462,13 @@ public class BattleManager : MonoBehaviour
     IEnumerator WaitForEnemyActionCompletion(BehaviorGraphAgent enemy)
     {
         bool isActionTurn;
-        while (enemy.BlackboardReference.GetVariableValue<bool>("OnFinishAction", out isActionTurn) && isActionTurn == false)
+        CharacterRuntime enemyRuntime;
+        while (enemy.BlackboardReference.GetVariableValue<bool>("OnFinishAction", out isActionTurn) && isActionTurn == false && enemy.BlackboardReference.GetVariableValue<CharacterRuntime>("MySelf", out enemyRuntime) && enemyRuntime.isPlayingEffectAnimation)
         {
             yield return null;
         }
 
-        yield return new WaitForSeconds(1.8f);
+        yield return new WaitForSeconds(1.5f);
         CheckWinLose();
         enemy.BlackboardReference.SetVariableValue("IsActionTurn", false);
         enemy.BlackboardReference.SetVariableValue("OnFinishAction", false);
